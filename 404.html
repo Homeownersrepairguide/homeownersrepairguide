@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found | HomeownersRepairGuide.com</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--navy-light:#234468;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;min-height:100vh;display:flex;flex-direction:column;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+
+  /* ── MAIN 404 AREA ── */
+  .error-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:64px 24px;}
+  .error-inner{max-width:640px;width:100%;text-align:center;}
+  .error-number{font-family:'Playfair Display',serif;font-size:clamp(100px,18vw,160px);font-weight:800;color:var(--gray-light);line-height:1;letter-spacing:-0.04em;margin-bottom:0;position:relative;}
+  .error-number::after{content:'';display:block;width:60px;height:4px;background:var(--rust);margin:0 auto 28px;}
+  .error-icon{font-size:48px;margin-bottom:16px;display:block;}
+  .error-title{font-family:'Playfair Display',serif;font-size:clamp(24px,4vw,32px);font-weight:700;color:var(--navy);line-height:1.2;margin-bottom:14px;letter-spacing:-0.02em;}
+  .error-desc{font-size:17px;color:var(--text-muted);line-height:1.65;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto;}
+
+  /* Search bar */
+  .error-search{display:flex;gap:0;max-width:440px;margin:0 auto 40px;}
+  .error-search input{flex:1;padding:13px 18px;border:2px solid var(--gray-light);border-right:none;border-radius:var(--radius) 0 0 var(--radius);background:var(--white);font-size:15px;font-family:'DM Sans',sans-serif;color:var(--text-dark);outline:none;transition:border-color 0.18s;}
+  .error-search input:focus{border-color:var(--rust);}
+  .error-search button{padding:13px 20px;background:var(--rust);color:var(--white);border:none;border-radius:0 var(--radius) var(--radius) 0;font-size:15px;font-weight:600;font-family:'DM Sans',sans-serif;cursor:pointer;transition:background 0.18s;white-space:nowrap;}
+  .error-search button:hover{background:var(--rust-light);}
+
+  /* Quick links */
+  .error-links-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px;}
+  .error-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:560px;margin:0 auto 40px;}
+  .error-link{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 12px;text-decoration:none;text-align:center;transition:box-shadow 0.18s,transform 0.15s,border-color 0.18s;}
+  .error-link:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);border-color:transparent;}
+  .error-link-icon{font-size:24px;margin-bottom:8px;display:block;}
+  .error-link-name{font-size:13px;font-weight:600;color:var(--navy);display:block;}
+  .error-home-btn{display:inline-flex;align-items:center;gap:8px;padding:13px 28px;background:var(--navy);color:var(--white);border-radius:var(--radius);text-decoration:none;font-size:15px;font-weight:600;transition:background 0.18s;}
+  .error-home-btn:hover{background:var(--navy-light);}
+
+  /* ── FOOTER ── */
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:20px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.error-links{grid-template-columns:repeat(2,1fr);}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="#">Plumbing</a>
+      <a href="#">Electrical</a>
+      <a href="#">HVAC</a>
+      <a href="#">Foundation</a>
+      <a href="#">Maintenance</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="error-wrap">
+  <div class="error-inner">
+
+    <div class="error-number">404</div>
+    <span class="error-icon">&#128295;</span>
+    <h1 class="error-title">This page needs a repair.</h1>
+    <p class="error-desc">The page you were looking for does not exist or may have moved. Try searching for what you need, or browse one of our categories below.</p>
+
+    <div class="error-search">
+      <input type="text" placeholder="Search for a repair topic..." id="searchInput" onkeydown="handleSearch(event)">
+      <button onclick="doSearch()">Search</button>
+    </div>
+
+    <div class="error-links-label">Browse by category</div>
+    <div class="error-links">
+      <a href="category-plumbing.html" class="error-link">
+        <span class="error-link-icon">&#128703;</span>
+        <span class="error-link-name">Plumbing</span>
+      </a>
+      <a href="#" class="error-link">
+        <span class="error-link-icon">&#9889;</span>
+        <span class="error-link-name">Electrical</span>
+      </a>
+      <a href="#" class="error-link">
+        <span class="error-link-icon">&#127777;&#65039;</span>
+        <span class="error-link-name">Heating &amp; Cooling</span>
+      </a>
+      <a href="#" class="error-link">
+        <span class="error-link-icon">&#127959;&#65039;</span>
+        <span class="error-link-name">Foundation</span>
+      </a>
+      <a href="#" class="error-link">
+        <span class="error-link-icon">&#128296;</span>
+        <span class="error-link-name">Maintenance</span>
+      </a>
+      <a href="#" class="error-link">
+        <span class="error-link-icon">&#127968;</span>
+        <span class="error-link-name">General Repair</span>
+      </a>
+    </div>
+
+    <a href="index.html" class="error-home-btn">&#8592; Back to Homepage</a>
+
+  </div>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="#">Plumbing</a>
+    <a href="#">Electrical &amp; Safety</a>
+    <a href="#">Heating &amp; Cooling</a>
+    <a href="#">Structure &amp; Foundation</a>
+    <a href="#">Home Maintenance</a>
+    <a href="#">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function doSearch() {
+    const q = document.getElementById('searchInput').value.trim();
+    if (q) window.location.href = 'index.html?s=' + encodeURIComponent(q);
+  }
+  function handleSearch(e) {
+    if (e.key === 'Enter') doSearch();
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete HVAC Guide: How Your System Works, What Goes Wrong, and How to Fix It | HomeownersRepairGuide.com</title>
+<meta name="description" content="A certified facility manager explains how HVAC systems actually behave in real homes, how to read early warning signs, what you can check yourself, and when to call a technician.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--navy-light:#234468;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--teal:#2a7a8c;--teal-light:#3a9ab0;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.15s;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .article-wrap{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+  .article-main{min-width:0;}
+  .article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;}
+  .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--teal);color:var(--white);}
+  .tag.hvac{background:var(--teal);}
+  .tag.diagnosis{background:#1a5a9a;}
+  .tag.safety{background:#c0402a;}
+  .tag.maintenance{background:#3a6b3a;}
+  .article-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);line-height:1.12;letter-spacing:-0.025em;margin-bottom:20px;}
+  .article-subtitle{font-size:18px;color:var(--text-muted);line-height:1.6;margin-bottom:28px;border-left:3px solid var(--teal);padding-left:16px;}
+  .article-byline{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:32px;}
+  .byline-avatar{width:48px;height:48px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);flex-shrink:0;}
+  .byline-info{flex:1;}
+  .byline-name{font-size:15px;font-weight:600;color:var(--text-dark);}
+  .byline-cred{font-size:12px;color:var(--text-muted);margin-top:2px;}
+  .byline-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:12px;color:var(--text-muted);text-align:right;}
+  .byline-meta strong{color:var(--text-dark);}
+  .article-hero-img{background:linear-gradient(135deg,#0d2030 0%,#163040 100%);border-radius:var(--radius-lg);height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:40px;gap:12px;border:1px solid var(--gray-light);position:relative;overflow:hidden;}
+  .article-hero-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(42,122,140,0.25) 0%,transparent 65%);}
+  .article-hero-img .img-icon{font-size:72px;opacity:0.5;position:relative;z-index:1;}
+  .article-hero-img .img-caption{font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;position:relative;z-index:1;}
+  .article-body{font-size:17px;line-height:1.75;color:var(--text-body);}
+  .article-body h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin:48px 0 16px;line-height:1.2;letter-spacing:-0.01em;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .article-body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy-mid);margin:32px 0 12px;line-height:1.25;}
+  .article-body p{margin-bottom:20px;}
+  .article-body ul,.article-body ol{margin:0 0 20px 0;padding-left:24px;}
+  .article-body li{margin-bottom:8px;}
+  .article-body strong{color:var(--text-dark);font-weight:600;}
+  .article-body a{color:var(--teal);text-decoration:underline;text-underline-offset:3px;}
+  /* Expert callout */
+  .expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0;display:flex;gap:18px;align-items:flex-start;}
+  .expert-callout-avatar{width:44px;height:44px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);flex-shrink:0;margin-top:2px;}
+  .expert-callout-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:6px;}
+  .expert-callout-text{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+  .expert-callout-attr{font-size:12px;color:rgba(255,255,255,0.45);margin-top:8px;}
+  /* Callout boxes */
+  .callout-box{border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+  .callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+  .callout-box.danger{background:#fef2f0;border:1px solid #e08070;}
+  .callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+  .callout-box.info{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .callout-icon{font-size:22px;flex-shrink:0;margin-top:1px;}
+  .callout-content{flex:1;}
+  .callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+  .callout-box.warning .callout-label{color:#b07800;}
+  .callout-box.danger .callout-label{color:#c0402a;}
+  .callout-box.tip .callout-label{color:#2a7a2a;}
+  .callout-box.info .callout-label{color:#1a5a9a;}
+  .callout-text{font-size:15px;line-height:1.6;color:var(--text-body);}
+  /* Symptom table */
+  .symptom-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .symptom-table th{background:var(--teal);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .symptom-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .symptom-table tr:last-child td{border-bottom:none;}
+  .symptom-table tr:nth-child(even) td{background:var(--cream);}
+  /* Odor guide */
+  .odor-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0;}
+  .odor-card{border-radius:var(--radius-lg);padding:18px 20px;display:flex;gap:12px;align-items:flex-start;}
+  .odor-card.danger-card{background:#fef2f0;border:1px solid #e08070;}
+  .odor-card.warning-card{background:#fff8e6;border:1px solid #f0c040;}
+  .odor-card.moderate-card{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .odor-icon{font-size:24px;flex-shrink:0;}
+  .odor-smell{font-size:13px;font-weight:700;color:var(--text-dark);margin-bottom:4px;}
+  .odor-cause{font-size:13px;color:var(--text-body);line-height:1.5;}
+  .odor-action{font-size:12px;font-weight:600;margin-top:6px;}
+  .odor-card.danger-card .odor-action{color:#c0402a;}
+  .odor-card.warning-card .odor-action{color:#b07800;}
+  .odor-card.moderate-card .odor-action{color:#1a5a9a;}
+  /* Severity */
+  .severity-block{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px;margin:36px 0;box-shadow:var(--shadow-card);}
+  .severity-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .severity-row{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+  .severity-label{font-size:13px;font-weight:600;width:120px;flex-shrink:0;}
+  .severity-bar-wrap{flex:1;height:10px;background:var(--gray-light);border-radius:5px;overflow:hidden;}
+  .severity-bar{height:100%;border-radius:5px;}
+  .sev-low .severity-bar{width:25%;background:#4caf50;}
+  .sev-medium .severity-bar{width:55%;background:var(--amber);}
+  .sev-high .severity-bar{width:82%;background:var(--rust);}
+  .sev-critical .severity-bar{width:100%;background:#c0392b;}
+  .severity-desc{font-size:12px;color:var(--text-muted);width:200px;flex-shrink:0;text-align:right;}
+  /* Cost table */
+  .cost-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .cost-table th{background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;}
+  .cost-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);background:var(--white);vertical-align:top;line-height:1.5;}
+  .cost-table tr:last-child td{border-bottom:none;}
+  .cost-table tr:nth-child(even) td{background:var(--cream);}
+  .cost-badge{font-family:'DM Mono',monospace;font-size:13px;font-weight:600;color:var(--navy);}
+  /* Reference tables */
+  .ref-table{width:100%;border-collapse:collapse;margin:16px 0 28px;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .ref-table th{background:var(--teal);color:var(--white);font-size:12px;font-weight:600;padding:10px 14px;text-align:left;letter-spacing:0.04em;}
+  .ref-table td{font-size:13px;padding:10px 14px;border-bottom:1px solid var(--gray-light);background:var(--white);}
+  .ref-table tr:last-child td{border-bottom:none;}
+  .ref-table tr:nth-child(even) td{background:var(--cream);}
+  /* DIY vs Pro */
+  .diy-pro-block{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:36px 0;}
+  .diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .diy-card-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+  .diy-badge{width:40px;height:40px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+  .diy-badge.diy{background:#e8f5e9;}
+  .diy-badge.pro{background:#fff3e0;}
+  .diy-card-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);}
+  .diy-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .diy-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-body);line-height:1.5;}
+  .diy-list li::before{content:'\2713';width:18px;height:18px;border-radius:50%;background:#e8f5e9;color:#2e7d32;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+  .pro-list li::before{content:'!';background:#fff3e0;color:#e65100;}
+  /* Checklist */
+  .checklist{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px 32px;margin:32px 0;box-shadow:var(--shadow-card);}
+  .checklist h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .checklist-section{margin-bottom:20px;}
+  .checklist-section:last-child{margin-bottom:0;}
+  .checklist-section h4{font-size:13px;font-weight:700;color:var(--text-dark);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--gray-light);}
+  .checklist-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+  .checklist-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-body);line-height:1.45;}
+  .checklist-list li::before{content:'';display:inline-block;width:16px;height:16px;border:2px solid var(--gray-mid);border-radius:3px;flex-shrink:0;margin-top:1px;}
+  /* Safety popout */
+  .safety-popout{background:linear-gradient(135deg,#c0392b,#a93226);border-radius:var(--radius-lg);padding:28px 32px;margin:40px 0;}
+  .safety-popout h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:14px;}
+  .safety-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .safety-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(255,255,255,0.9);line-height:1.5;}
+  .safety-list li::before{content:'!';width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,0.2);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+  /* FAQ */
+  .faq-block{margin:36px 0;}
+  .faq-item{border-bottom:1px solid var(--gray-light);}
+  .faq-question{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font-size:16px;font-weight:600;color:var(--navy);gap:16px;user-select:none;}
+  .faq-question:hover{color:var(--teal);}
+  .faq-chevron{font-size:18px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+  .faq-answer{font-size:15px;color:var(--text-body);line-height:1.7;padding-bottom:18px;display:none;}
+  .faq-item.open .faq-answer{display:block;}
+  .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--teal);}
+  /* Summary */
+  .summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px;margin:48px 0 36px;}
+  .summary-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .summary-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.55;}
+  .summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+  /* Tags & share */
+  .article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0;padding-top:32px;border-top:1px solid var(--gray-light);}
+  .article-tag-pill{font-size:12px;padding:5px 12px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+  .article-tag-pill:hover{background:var(--teal);color:var(--white);border-color:var(--teal);}
+  .share-bar{display:flex;align-items:center;gap:12px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:48px;flex-wrap:wrap;}
+  .share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+  .share-btn{padding:8px 16px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+  .share-btn:hover{opacity:0.85;}
+  .share-fb{background:#1877f2;color:white;}
+  .share-x{background:#000;color:white;}
+  .share-pin{background:#e60023;color:white;}
+  .share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+  /* Related */
+  .related{margin-top:48px;}
+  .related h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .related-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;}
+  .related-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+  .related-img{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px;}
+  .related-img.h{background:linear-gradient(135deg,#e6f4f6,#d0eaf0);}
+  .related-img.e{background:linear-gradient(135deg,#fff8e6,#faefd0);}
+  .related-img.m{background:linear-gradient(135deg,#eaf5ea,#d4ecd4);}
+  .related-body{padding:16px;}
+  .related-body .tag{font-size:10px;padding:3px 8px;margin-bottom:8px;}
+  .related-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:6px;}
+  .related-meta{font-size:11px;color:var(--text-muted);}
+  /* Sidebar */
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:24px;}
+  .sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .sidebar-card h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gray-light);}
+  .sidebar-expert{display:flex;gap:14px;align-items:flex-start;}
+  .sidebar-avatar{width:52px;height:52px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);flex-shrink:0;}
+  .sidebar-expert-name{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+  .sidebar-expert-title{font-size:12px;color:var(--teal);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
+  .sidebar-expert-bio{font-size:13px;color:var(--text-muted);line-height:1.55;}
+  .sidebar-creds{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;}
+  .cred-pill{font-size:10px;padding:3px 8px;background:var(--cream-dark);border-radius:2px;color:var(--text-muted);font-weight:600;}
+  .toc-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+  .toc-list li a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);text-decoration:none;padding:6px 8px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+  .toc-list li a:hover{background:var(--cream);color:var(--teal);}
+  .toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+  .toc-list li.active a{color:var(--teal);background:var(--cream);font-weight:600;}
+  .toc-list li.active a::before{background:var(--teal);width:6px;height:6px;}
+  .sidebar-newsletter{background:var(--teal);border-radius:var(--radius-lg);padding:24px;}
+  .sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:10px;}
+  .sidebar-newsletter p{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.55;margin-bottom:16px;}
+  .sidebar-input{width:100%;padding:11px 14px;border:2px solid rgba(255,255,255,0.3);border-radius:var(--radius);background:rgba(255,255,255,0.12);color:var(--white);font-size:14px;font-family:'DM Sans',sans-serif;outline:none;margin-bottom:10px;}
+  .sidebar-input::placeholder{color:rgba(255,255,255,0.5);}
+  .sidebar-input:focus{border-color:rgba(255,255,255,0.7);}
+  .sidebar-sub-btn{width:100%;padding:11px;background:var(--navy);color:var(--white);border:none;border-radius:var(--radius);font-size:14px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;}
+  .sidebar-sub-btn:hover{background:var(--navy-light);}
+  .ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:32px 16px;text-align:center;}
+  .ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:6px;}
+  .ad-placeholder .ad-size{font-size:13px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+  .pop-list{display:flex;flex-direction:column;gap:14px;}
+  .pop-item{display:flex;gap:12px;align-items:flex-start;text-decoration:none;}
+  .pop-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:28px;}
+  .pop-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.35;transition:color 0.15s;}
+  .pop-item:hover .pop-title{color:var(--teal);}
+  .pop-cat{font-size:11px;color:var(--text-muted);margin-top:3px;}
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:24px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+  @media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.related-grid{grid-template-columns:1fr 1fr;}.diy-pro-block{grid-template-columns:1fr;}.odor-grid{grid-template-columns:1fr;}}
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.related-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="#">Plumbing</a>
+      <a href="#">Electrical</a>
+      <a href="#" class="active">HVAC</a>
+      <a href="#">Foundation</a>
+      <a href="#">Maintenance</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">The Complete HVAC Guide</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag hvac">Heating &amp; Cooling</span>
+    <span class="tag diagnosis">Diagnosis</span>
+  </div>
+
+  <h1 class="article-title">The Complete HVAC Guide: How Your System Works, What Goes Wrong, and How to Fix It</h1>
+
+  <p class="article-subtitle">Most HVAC problems are not equipment problems &#8212; they are airflow problems. A certified facility manager who has managed heating and cooling systems across hospitals and commercial buildings explains what your system is actually doing, and how to read when it starts struggling.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Certified Facility Manager &amp; Life Safety Specialist</div>
+      <div class="byline-cred">CHFM &#183; CLSS-HC &#183; NFPA CFI-1 &#183; OSHA 30 &#183; Electrician &#8212; All Phases</div>
+    </div>
+    <div class="byline-meta">
+      <span><strong>Updated:</strong> January 2025</span>
+      <span>20 min read &#183; Fact-verified</span>
+    </div>
+  </div>
+
+  <div class="article-hero-img">
+    <div class="img-icon">&#127777;&#65039;</div>
+    <div class="img-caption">[Hero image &#8212; e.g. residential HVAC system with ductwork or technician performing diagnostics]</div>
+  </div>
+
+  <div class="article-body">
+
+    <p>When a homeowner calls about their HVAC system, the complaint is almost always framed as an equipment problem. The AC isn't cooling. The furnace isn't keeping up. But in the majority of cases I encounter &#8212; and I've managed HVAC systems in buildings far more complex than any house &#8212; the equipment is fine. The problem is in the ductwork, the airflow path, or the building itself.</p>
+
+    <p>Understanding this distinction is the most important thing a homeowner can know about their HVAC system. A brand-new air conditioner will underperform in a house with leaky ducts and blocked returns. A furnace will run constantly if the attic is poorly insulated. The equipment is only one part of a larger system that includes the ductwork, the building envelope, and the way air moves through the home.</p>
+
+    <div class="callout-box info">
+      <div class="callout-icon">&#128203;</div>
+      <div class="callout-content">
+        <div class="callout-label">The Most Important Principle</div>
+        <div class="callout-text"><strong>Airflow is everything.</strong> Strong, balanced airflow solves or prevents the majority of HVAC comfort problems. Sealing duct leaks often delivers more improvement than replacing equipment. If your system is struggling, suspect the ducts and the returns before assuming the machine is at fault.</div>
+      </div>
+    </div>
+
+    <h2 id="how-it-works">How Your HVAC System Actually Works</h2>
+
+    <p>Your heating and cooling system does four things: controls temperature, manages humidity, filters airborne particles, and circulates fresh conditioned air throughout the home. When it works well, you do not notice it. When any part of this chain breaks down, you feel it immediately.</p>
+
+    <p>The system has two sides. The <strong>supply side</strong> pushes conditioned air through ducts into each room. The <strong>return side</strong> pulls air back to be filtered and reconditioned. Both sides must work together. If supply is strong but return is restricted &#8212; by closed doors, blocked returns, or leaky return ducts &#8212; the system becomes unbalanced and performance drops across the whole house.</p>
+
+    <h3>The building interacts with the system constantly</h3>
+    <p>Heat flows from hot to cold. In summer, heat from outside pushes through walls, windows, and the attic into your home, and your AC must remove it. In winter, heat escapes from inside to outside, and your furnace must replace it. The amount of work your HVAC must do depends on how well your home's <strong>thermal envelope</strong> &#8212; insulation, windows, air sealing &#8212; controls these flows.</p>
+
+    <p>A poorly insulated attic or significant air leakage around windows and doors can make the HVAC system appear undersized when it is actually the correct size for a well-sealed home. Improving insulation and air sealing often delivers more comfort per dollar than upgrading equipment.</p>
+
+    <h3>Moisture is the overlooked variable</h3>
+    <p>Humidity control is one of the most important functions of your cooling system &#8212; and the one most homeowners do not think about until there is a problem. High indoor humidity makes rooms feel warmer than they are, increases the cooling load, and contributes to mold growth. A properly functioning AC removes moisture from the air as it cools it. When airflow is too low, when the system is oversized and short-cycles, or when return ducts pull in humid attic air, dehumidification suffers and the home feels uncomfortable even at the correct temperature.</p>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert</div>
+        <div class="expert-callout-text">"The most common HVAC complaint I hear is 'it runs all the time but never gets comfortable.' Nine times out of ten when I investigate, I find return air ducts that are undersized, leaking, or pulling air from the attic. The equipment is fine. The system is starving for return air. You can replace a perfectly good AC unit and have the exact same problem the next summer."</div>
+        <div class="expert-callout-attr">&#8212; T.A., Certified Healthcare Facility Manager &#183; Life Safety Consultant &#183; Electrician</div>
+      </div>
+    </div>
+
+    <h2 id="warning-signs">Reading the Warning Signs</h2>
+
+    <p>HVAC systems rarely fail suddenly. Most problems develop over weeks or months and reveal themselves through specific, identifiable patterns. Here is how to read what your system is telling you.</p>
+
+    <table class="symptom-table">
+      <thead>
+        <tr>
+          <th>What You're Noticing</th>
+          <th>Most Likely Cause</th>
+          <th>First Step</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Some rooms always warmer or cooler than others</td>
+          <td>Duct imbalance, leakage, or insufficient return airflow in that area</td>
+          <td>Check for blocked vents and returns; have ducts inspected</td>
+        </tr>
+        <tr>
+          <td>System runs constantly but doesn't reach setpoint</td>
+          <td>Duct leakage, undersized returns, refrigerant issues, or poor building envelope</td>
+          <td>Replace filter; check for leaking ducts; have system tested</td>
+        </tr>
+        <tr>
+          <td>House feels humid even with AC running</td>
+          <td>Low airflow, oversized equipment short-cycling, or return leaks pulling humid air in</td>
+          <td>Check filter; verify airflow; have static pressure tested</td>
+        </tr>
+        <tr>
+          <td>Ice forming on refrigerant lines or indoor coil</td>
+          <td>Dirty filter, blocked airflow, or low refrigerant charge</td>
+          <td>Shut off AC, let it thaw, replace filter &#8212; if it refreezes, call a tech</td>
+        </tr>
+        <tr>
+          <td>Energy bills rising without weather change</td>
+          <td>Duct leakage, mechanical strain, or declining equipment efficiency</td>
+          <td>Have system and ducts inspected</td>
+        </tr>
+        <tr>
+          <td>Dusty supply registers</td>
+          <td>Return-side duct leakage pulling dusty attic or crawlspace air in</td>
+          <td>Inspect return duct joints for gaps; have duct leakage tested</td>
+        </tr>
+        <tr>
+          <td>Unusual noises from equipment or ducts</td>
+          <td>Blower issues, loose components, duct pressure changes, or mechanical failure</td>
+          <td>See Odors &amp; Sounds section; call tech if mechanical noise persists</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="odors-sounds">Odors and Sounds: What Each One Means</h2>
+
+    <p>Odors are some of the most important diagnostic signals your HVAC system produces. Never ignore a smell coming from your vents or equipment.</p>
+
+    <div class="odor-grid">
+      <div class="odor-card danger-card">
+        <div class="odor-icon">&#128293;</div>
+        <div>
+          <div class="odor-smell">Rotten egg smell</div>
+          <div class="odor-cause">Natural gas or propane leak near the furnace. Gas utilities add this odorant specifically to alert you.</div>
+          <div class="odor-action">&#9888; Leave immediately. Call your gas utility from outside.</div>
+        </div>
+      </div>
+      <div class="odor-card danger-card">
+        <div class="odor-icon">&#9889;</div>
+        <div>
+          <div class="odor-smell">Burning or electrical smell</div>
+          <div class="odor-cause">Overheating motor, wiring fault, or burning dust on a furnace heat exchanger at first startup of the season.</div>
+          <div class="odor-action">&#9888; If persistent beyond first startup: shut off and call a technician.</div>
+        </div>
+      </div>
+      <div class="odor-card warning-card">
+        <div class="odor-icon">&#128166;</div>
+        <div>
+          <div class="odor-smell">Musty or moldy smell</div>
+          <div class="odor-cause">Moisture in the drain pan, on the evaporator coil, or in contaminated ductwork. A humidity or drainage problem.</div>
+          <div class="odor-action">&#9888; Check condensate drain; inspect coil; have ducts evaluated.</div>
+        </div>
+      </div>
+      <div class="odor-card warning-card">
+        <div class="odor-icon">&#128268;</div>
+        <div>
+          <div class="odor-smell">Sweet or chemical smell</div>
+          <div class="odor-cause">Refrigerant leak. Modern refrigerants can have a faintly sweet or chemical odor. High-pressure chemicals &#8212; requires licensed technician.</div>
+          <div class="odor-action">&#9888; Call a technician. Refrigerant requires EPA-certified handling.</div>
+        </div>
+      </div>
+      <div class="odor-card moderate-card">
+        <div class="odor-icon">&#128296;</div>
+        <div>
+          <div class="odor-smell">Sewage smell from vents</div>
+          <div class="odor-cause">Improper condensate drain routing or a dry trap somewhere allowing sewer gases to enter the duct system.</div>
+          <div class="odor-action">Inspect condensate drain routing; check nearby floor drain traps.</div>
+        </div>
+      </div>
+      <div class="odor-card moderate-card">
+        <div class="odor-icon">&#128168;</div>
+        <div>
+          <div class="odor-smell">Dusty smell at startup</div>
+          <div class="odor-cause">Normal at first startup after a long idle period &#8212; dust burning off the heat exchanger. Should clear within 30 minutes.</div>
+          <div class="odor-action">Normal if brief. Persistent burning smell requires evaluation.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Sounds and what they indicate</h3>
+    <p><strong>Banging or clunking</strong> at startup or shutdown often indicates a loose blower wheel or something caught in the fan assembly. <strong>Squealing or screeching</strong> from the air handler usually means a worn blower motor bearing. <strong>Rattling</strong> from ducts can be normal thermal expansion, but rattling from the equipment cabinet suggests loose components. <strong>Clicking that does not stop</strong> after startup can indicate a relay or igniter issue on a furnace. <strong>Hissing</strong> near refrigerant lines may indicate a refrigerant leak.</p>
+
+    <h2 id="severity">How Urgent Is Your Situation?</h2>
+
+    <div class="severity-block">
+      <div class="severity-title">HVAC Problem Urgency Scale</div>
+      <div class="severity-row sev-low">
+        <div class="severity-label" style="color:#4caf50;">Monitor</div>
+        <div class="severity-bar-wrap"><div class="severity-bar"></div></div>
+        <div class="severity-desc">Slight temp variation, first-season dust smell</div>
+      </div>
+      <div class="severity-row sev-medium">
+        <div class="severity-label" style="color:var(--amber);">Schedule Soon</div>
+        <div class="severity-bar-wrap"><div class="severity-bar"></div></div>
+        <div class="severity-desc">Runs constantly, high humidity, weak airflow</div>
+      </div>
+      <div class="severity-row sev-high">
+        <div class="severity-label" style="color:var(--rust);">Call Today</div>
+        <div class="severity-bar-wrap"><div class="severity-bar"></div></div>
+        <div class="severity-desc">Frozen coil, water leak, repeated breaker trips</div>
+      </div>
+      <div class="severity-row sev-critical">
+        <div class="severity-label" style="color:#c0392b;">Shut Down Now</div>
+        <div class="severity-bar-wrap"><div class="severity-bar"></div></div>
+        <div class="severity-desc">Gas smell, burning smell, CO alarm, no airflow</div>
+      </div>
+    </div>
+
+    <h2 id="homeowner-checks">What You Can Safely Check Yourself</h2>
+
+    <p>There is a meaningful set of checks a homeowner can perform without tools or technical training. These often reveal the source of a problem before a technician arrives.</p>
+
+    <p><strong>Check the filter first.</strong> A clogged filter is the single most common cause of HVAC underperformance and frozen coils. Hold it up to a light &#8212; if you cannot see light through it, replace it. Most homes need new filters every 1&#8211;3 months depending on filter type, pets, and occupancy.</p>
+
+    <p><strong>Walk every supply and return vent.</strong> Ensure all supply registers are open and unobstructed by furniture. Verify that return grilles are not blocked. Closing vents to "redirect" airflow increases duct pressure and can damage the system &#8212; this is a common misconception that causes real harm.</p>
+
+    <p><strong>Check the condensate drain.</strong> The small drain line from the air handler removes moisture the system extracts from the air. A clogged drain causes water backup, which can damage the air handler or trigger a safety shutoff. If water is pooling around the air handler, the drain is likely blocked.</p>
+
+    <p><strong>Inspect refrigerant line insulation outdoors.</strong> The large insulated line running into your condenser unit should have intact foam insulation. Deteriorated or missing insulation reduces system efficiency.</p>
+
+    <p><strong>Clear the outdoor condenser.</strong> Maintain 18&#8211;24 inches of clearance around the condenser unit. Remove debris, leaves, and vegetation that restrict airflow. Never spray water directly into the unit while it is running.</p>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Frozen Coil &#8212; Do This First</div>
+        <div class="callout-text">If your refrigerant lines or indoor coil are iced over, <strong>shut off the AC and switch the fan to ON</strong> to thaw the coil. Do not run the compressor while it is frozen &#8212; this can damage the compressor, which is the most expensive component in the system. Replace the filter. If it refreezes after thawing, you likely have a refrigerant issue and need a technician.</div>
+      </div>
+    </div>
+
+    <h2 id="diy-vs-pro">What You Can Fix vs. When to Call a Pro</h2>
+
+    <div class="diy-pro-block">
+      <div class="diy-card">
+        <div class="diy-card-head">
+          <div class="diy-badge diy">&#128296;</div>
+          <div class="diy-card-title">Safe to Handle Yourself</div>
+        </div>
+        <ul class="diy-list">
+          <li>Replacing air filters on the correct schedule</li>
+          <li>Clearing blocked or closed supply and return vents</li>
+          <li>Clearing debris from the outdoor condenser unit</li>
+          <li>Flushing a clogged condensate drain with diluted bleach</li>
+          <li>Replacing thermostat batteries</li>
+          <li>Noting and documenting symptoms before calling a tech</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-card-head">
+          <div class="diy-badge pro">&#9888;&#65039;</div>
+          <div class="diy-card-title">Call a Licensed Technician</div>
+        </div>
+        <ul class="diy-list pro-list">
+          <li>Any refrigerant-related work (EPA certification required)</li>
+          <li>Coil that refreezes after thawing and filter replacement</li>
+          <li>Any burning smell, gas smell, or CO alarm</li>
+          <li>Breaker that trips repeatedly on HVAC circuits</li>
+          <li>Blower motor, capacitor, or electrical component repair</li>
+          <li>Duct leakage testing, sealing, and balancing</li>
+          <li>Furnace combustion and heat exchanger evaluation</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="professional-diagnosis">What a Technician Does Differently</h2>
+
+    <p>Professional HVAC technicians use instruments that reveal what homeowners cannot observe or measure. The most important is <strong>static pressure measurement</strong> &#8212; a gauge that measures the resistance the blower faces as it pushes air through the duct system. High static pressure indicates a restriction &#8212; undersized ducts, leaking returns, dirty coils, or a too-restrictive filter &#8212; and is one of the most common hidden causes of HVAC underperformance.</p>
+
+    <p><strong>Refrigerant analysis</strong> measures the system's charge and the pressures on both the high and low side of the refrigerant circuit. Low refrigerant does not simply mean the system needs a refill &#8212; refrigerant does not disappear. If the charge is low, there is a leak that must be found and repaired before recharging.</p>
+
+    <p>For gas furnaces, <strong>combustion analysis</strong> measures the efficiency and safety of the burn process, and technicians inspect the heat exchanger &#8212; the component that separates combustion gases from the air you breathe. A cracked heat exchanger is a carbon monoxide hazard that requires immediate attention.</p>
+
+    <p><strong>Duct leakage testing</strong> (blower door testing) quantifies how much conditioned air is lost through duct gaps. Industry estimates suggest that typical homes lose 20&#8211;30% of conditioned air through duct leakage. Sealing those leaks is often the highest-return HVAC investment available.</p>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert</div>
+        <div class="expert-callout-text">"I managed HVAC systems in hospitals where we couldn't afford comfort complaints &#8212; patients and staff depended on precise temperature and humidity control around the clock. The systems that performed best were not the most expensive ones. They were the ones with properly sealed ducts, correctly sized returns, and filters changed on schedule. Those fundamentals matter more than the brand of equipment."</div>
+        <div class="expert-callout-attr">&#8212; T.A., Certified Healthcare Facility Manager &#183; Certified Life Safety Specialist &#183; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="common-scenarios">Common Scenarios and What They Mean</h2>
+
+    <h3>Second floor is always too hot in summer</h3>
+    <p>The most common HVAC complaint. Upper floors are hot for two reasons: heat rises naturally, and attic heat gain through the ceiling is enormous in summer. Solutions include sealing duct leaks that are dumping conditioned air into the attic before it reaches upper rooms, adding or enlarging return air pathways on the upper floor, and improving attic insulation. Zoning systems allow independent temperature control per floor for homes where duct work alone cannot solve the imbalance.</p>
+
+    <h3>AC runs constantly but the house still feels humid</h3>
+    <p>Humidity control requires sufficient <strong>airflow across the evaporator coil</strong>. If airflow is too low &#8212; from a dirty filter, undersized returns, or a failing blower &#8212; the coil cannot remove adequate moisture. If the system is oversized and short-cycles &#8212; reaching the temperature setpoint quickly and shutting off &#8212; it never runs long enough to dehumidify properly. Return duct leaks that pull in humid attic air are another major contributor. A technician can measure airflow and static pressure to identify which factor is dominant.</p>
+
+    <h3>Weak airflow at specific vents</h3>
+    <p>Localized airflow loss points to a crushed or kinked flex duct branch serving that area, a closed or partially closed damper, or a duct that has disconnected at a joint. Inspect flex duct runs visible in the attic or crawlspace for kinks &#8212; flex duct is easily compressed and should never be run in tight curves. A disconnected duct joint dumps conditioned air directly into the attic or crawlspace.</p>
+
+    <h3>Utility bills rising without explanation</h3>
+    <p>Rising energy costs typically reflect the system working harder &#8212; which means either it is moving less air (filter, blower, duct restriction) or losing conditioned air before it reaches the rooms (duct leakage). A refrigerant issue can also cause the compressor to run less efficiently. If bills are climbing and there has been no change in occupancy or thermostat settings, a system inspection is warranted.</p>
+
+    <h2 id="repairs">Repair Options and Typical Costs</h2>
+
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Repair Type</th>
+          <th>Typical Cost Range</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Duct sealing (aeroseal or mastic)</td>
+          <td><span class="cost-badge">$800 &#8211; $2,500</span></td>
+          <td>Often the highest-value HVAC improvement available</td>
+        </tr>
+        <tr>
+          <td>Return air improvement</td>
+          <td><span class="cost-badge">$300 &#8211; $1,200</span></td>
+          <td>Adding or enlarging return grilles and ducts</td>
+        </tr>
+        <tr>
+          <td>Evaporator coil cleaning</td>
+          <td><span class="cost-badge">$150 &#8211; $500</span></td>
+          <td>Should be done every 2&#8211;3 years in most climates</td>
+        </tr>
+        <tr>
+          <td>Refrigerant recharge (with leak repair)</td>
+          <td><span class="cost-badge">$400 &#8211; $1,500</span></td>
+          <td>Always includes leak detection &#8212; recharge alone is not a fix</td>
+        </tr>
+        <tr>
+          <td>Capacitor replacement</td>
+          <td><span class="cost-badge">$120 &#8211; $350</span></td>
+          <td>Common, inexpensive repair &#8212; often the cause of "won't start"</td>
+        </tr>
+        <tr>
+          <td>Blower motor replacement</td>
+          <td><span class="cost-badge">$400 &#8211; $1,800</span></td>
+          <td>Varies significantly by motor type (standard vs. ECM)</td>
+        </tr>
+        <tr>
+          <td>Compressor replacement</td>
+          <td><span class="cost-badge">$1,200 &#8211; $3,000+</span></td>
+          <td>Major repair &#8212; evaluate against system age before proceeding</td>
+        </tr>
+        <tr>
+          <td>Condensate drain cleaning</td>
+          <td><span class="cost-badge">$100 &#8211; $350</span></td>
+          <td>Simple and should be on annual maintenance schedule</td>
+        </tr>
+        <tr>
+          <td>Furnace igniter replacement</td>
+          <td><span class="cost-badge">$150 &#8211; $350</span></td>
+          <td>Common part failure &#8212; usually straightforward repair</td>
+        </tr>
+        <tr>
+          <td>Full system replacement (AC + furnace)</td>
+          <td><span class="cost-badge">$8,000 &#8211; $20,000+</span></td>
+          <td>Consider when system is 15&#8211;20 years old or facing major component failure</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box tip">
+      <div class="callout-icon">&#128179;</div>
+      <div class="callout-content">
+        <div class="callout-label">Repair vs. Replace Decision Rule</div>
+        <div class="callout-text">If a repair costs more than 30&#8211;40% of the replacement cost and the system is within 5 years of its expected lifespan, replacement is usually the better investment. AC and heat pump systems last 10&#8211;15 years. Furnaces last 15&#8211;20 years. A 12-year-old AC facing a $2,000 compressor repair is a strong replacement candidate.</div>
+      </div>
+    </div>
+
+    <h2 id="prevention">Maintenance: What Actually Extends System Life</h2>
+
+    <p>A well-maintained HVAC system lasts significantly longer and costs less to operate. The highest-leverage maintenance habits in priority order:</p>
+
+    <p><strong>Replace filters on schedule.</strong> Most homes need filter changes every 1&#8211;3 months. A clogged filter restricts airflow, strains the blower motor, reduces heat transfer efficiency, and can freeze the coil. This is the single most impactful thing a homeowner can do.</p>
+
+    <p><strong>Schedule professional tune-ups twice a year.</strong> Spring before cooling season and fall before heating season. A technician checks refrigerant charge, electrical components, airflow, and safety systems &#8212; and catches small problems before they become expensive failures.</p>
+
+    <p><strong>Keep the condensate drain clear.</strong> Pour a cup of diluted bleach (1:16 ratio) into the drain line access point every season to prevent algae buildup that causes clogs.</p>
+
+    <p><strong>Maintain humidity between 40&#8211;55%.</strong> This range protects both comfort and building materials. If your home regularly runs above 55% indoors with the AC running, there is a system performance issue or a moisture source that needs addressing.</p>
+
+    <p><strong>Never close supply vents.</strong> This is one of the most common homeowner mistakes. Closing vents does not redirect airflow &#8212; it increases duct pressure, stresses the blower, and can cause the coil to freeze.</p>
+
+    <h2 id="reference">Quick Reference: Targets and Lifespans</h2>
+
+    <table class="ref-table">
+      <thead><tr><th>Parameter</th><th>Target Range</th></tr></thead>
+      <tbody>
+        <tr><td>Indoor temperature (cooling)</td><td>72&#8211;76&#176;F</td></tr>
+        <tr><td>Indoor temperature (heating)</td><td>68&#8211;72&#176;F</td></tr>
+        <tr><td>Indoor humidity</td><td>40&#8211;55%</td></tr>
+        <tr><td>Airflow (AC/heat pump)</td><td>350&#8211;450 CFM per ton</td></tr>
+      </tbody>
+    </table>
+
+    <table class="ref-table">
+      <thead><tr><th>Component</th><th>Typical Lifespan</th></tr></thead>
+      <tbody>
+        <tr><td>Central AC or heat pump</td><td>10&#8211;15 years</td></tr>
+        <tr><td>Gas furnace</td><td>15&#8211;20 years</td></tr>
+        <tr><td>Ductwork</td><td>15&#8211;30 years (longer if sealed and maintained)</td></tr>
+        <tr><td>Blower motor</td><td>10&#8211;20 years</td></tr>
+        <tr><td>Capacitor</td><td>5&#8211;10 years</td></tr>
+      </tbody>
+    </table>
+
+    <h2 id="checklist">Seasonal HVAC Inspection Checklist</h2>
+
+    <div class="checklist">
+      <h3>&#128203; Run this every spring (cooling season) and every fall (heating season)</h3>
+      <div class="checklist-section">
+        <h4>Indoor Equipment</h4>
+        <ul class="checklist-list">
+          <li>Replace air filter &#8212; or confirm it was recently replaced</li>
+          <li>Confirm all supply vents are open and unobstructed</li>
+          <li>Confirm return grilles are unblocked and pulling air</li>
+          <li>Check for water pooling around the air handler or furnace</li>
+          <li>Inspect refrigerant lines for frost or ice buildup</li>
+          <li>Flush condensate drain with diluted bleach</li>
+          <li>Listen for new mechanical sounds at startup</li>
+        </ul>
+      </div>
+      <div class="checklist-section">
+        <h4>Outdoor Condenser</h4>
+        <ul class="checklist-list">
+          <li>Maintain 18&#8211;24 inches clearance on all sides</li>
+          <li>Remove leaves, debris, and vegetation from condenser fins</li>
+          <li>Check refrigerant line insulation for deterioration</li>
+          <li>Listen for unusual humming, buzzing, or rattling</li>
+        </ul>
+      </div>
+      <div class="checklist-section">
+        <h4>Duct System (visible sections)</h4>
+        <ul class="checklist-list">
+          <li>Check accessible duct joints in attic or crawlspace for gaps</li>
+          <li>Confirm flex ducts are not kinked or crushed</li>
+          <li>Look for dust streaks near duct joints &#8212; indicates leakage</li>
+        </ul>
+      </div>
+      <div class="checklist-section">
+        <h4>Home Environment</h4>
+        <ul class="checklist-list">
+          <li>Check indoor humidity with a hygrometer &#8212; target 40&#8211;55%</li>
+          <li>Walk all rooms and note any temperature inconsistencies</li>
+          <li>Check windows for condensation (indicates high humidity)</li>
+          <li>Note any odors from vents during first startup</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Should I close vents in rooms I don't use to save energy?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No. This is one of the most common misconceptions in home HVAC. Closing vents does not redirect airflow to other rooms &#8212; it increases static pressure throughout the entire duct system, stresses the blower motor, reduces airflow across the evaporator coil (which can cause freezing), and can cause supply ducts to leak more at their joints. Leave all vents open.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My AC runs all day. Does that mean it's undersized?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Usually not. Continuous runtime during peak summer heat is often normal &#8212; the system is simply keeping up with the heat load. The problem is when it runs constantly and still doesn't reach the setpoint. That typically indicates duct leakage, insufficient return air, a refrigerant issue, or a building envelope problem &#8212; not undersized equipment. Have the system tested before assuming the unit needs to be replaced.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How often should I change my air filter?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">For standard 1-inch filters, every 1&#8211;2 months in a home with pets or allergies, every 2&#8211;3 months otherwise. For thicker 4&#8211;5 inch media filters, every 6&#8211;12 months. The honest answer is: check it monthly and replace it when it is visibly dirty. A clogged filter is the most common cause of HVAC problems and the easiest to prevent.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does my house feel more humid than the thermostat temperature suggests?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Your AC removes humidity as a byproduct of cooling, but only when it runs long enough and with sufficient airflow across the coil. If the system is oversized and short-cycles (reaches temperature quickly and shuts off), it never runs long enough to dehumidify. If airflow is too low, the coil cannot remove adequate moisture. Return duct leaks that pull in humid attic air are another common cause. A technician can measure airflow and identify which factor is responsible.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What does it mean when my AC freezes up?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Ice on your refrigerant lines or indoor coil indicates either insufficient airflow (dirty filter, blocked returns, failing blower) or low refrigerant charge. In both cases, the evaporator coil drops below freezing and condensation turns to ice. Shut off the AC immediately and run the fan to thaw it. Replace the filter. If it refreezes, you have a refrigerant issue and need a technician &#8212; running a frozen AC can damage the compressor.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Are yearly tune-ups actually necessary?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes, particularly for gas furnaces and for AC systems in humid climates. A spring tune-up checks refrigerant charge, cleans the coil, inspects electrical components, and verifies airflow &#8212; catching small problems before they cause failures during peak demand. A fall furnace check includes combustion analysis and heat exchanger inspection. The cost of a tune-up is typically recouped in extended equipment life and prevented emergency service calls.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why are some rooms in my house always uncomfortable no matter what I do?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Persistently uncomfortable rooms almost always have a duct problem &#8212; undersized supply duct, insufficient return path, or a disconnected duct joint that is dumping conditioned air somewhere it can't reach you. In rare cases, the room itself has an envelope issue (poor insulation, large window facing west). Have a technician do airflow testing at that specific room to identify whether the problem is the duct serving the room or the room's own thermal characteristics.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">When should I replace my HVAC system instead of repairing it?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">The general guideline: if a repair costs more than 30&#8211;40% of replacement cost and the system is within 5 years of its expected lifespan, replacement is usually the better investment. AC systems last 10&#8211;15 years; furnaces 15&#8211;20. Also consider: if you have had multiple repairs in recent years, if the system uses R-22 refrigerant (phased out, expensive), or if comfort problems persist despite repairs, replacement may be appropriate regardless of age.</div>
+      </div>
+
+    </div>
+
+    <div class="safety-popout">
+      <h3>&#9888;&#65039; Critical Safety Warnings &#8212; Act Immediately</h3>
+      <ul class="safety-list">
+        <li><strong>Rotten egg smell</strong> &#8212; this is a gas leak. Leave the building immediately without operating any switches or electronics. Call your gas utility from outside or a neighbor's phone.</li>
+        <li><strong>CO detector alarm</strong> &#8212; carbon monoxide is odorless and potentially lethal. Evacuate immediately and call 911. Do not re-enter until cleared by emergency personnel.</li>
+        <li><strong>Burning or electrical smell that persists</strong> &#8212; shut off the system at the thermostat and the breaker. Call a technician. Do not run a system that smells like burning wires or overheated components.</li>
+        <li><strong>Water actively leaking from equipment</strong> &#8212; shut off the system to prevent water damage to the air handler and surrounding structure. Address the condensate drain before restarting.</li>
+        <li><strong>Breaker tripping on HVAC circuit</strong> &#8212; do not reset repeatedly. A tripping breaker on an HVAC circuit indicates an electrical fault in the equipment. Call a technician.</li>
+        <li>Refrigerant is a high-pressure chemical requiring EPA certification to handle. Never attempt to add refrigerant yourself.</li>
+      </ul>
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Most HVAC comfort problems are airflow and duct problems &#8212; not equipment problems. Suspect the duct system before replacing hardware.</li>
+        <li>Sealing duct leaks is often the highest-return HVAC investment available &#8212; typical homes lose 20&#8211;30% of conditioned air through duct leakage.</li>
+        <li>Never close vents to save energy &#8212; it increases pressure, strains the system, and reduces performance.</li>
+        <li>A frozen coil means insufficient airflow or low refrigerant &#8212; shut off the AC and let it thaw before diagnosing further.</li>
+        <li>Odors from vents are diagnostic signals. Rotten egg = gas. Burning = electrical. Musty = moisture. Each requires a different response.</li>
+        <li>A rotten egg smell means leave the building immediately and call your gas utility. Do not operate any switches.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="article-tag-pill">HVAC</a>
+      <a href="#" class="article-tag-pill">air conditioning</a>
+      <a href="#" class="article-tag-pill">furnace</a>
+      <a href="#" class="article-tag-pill">duct leakage</a>
+      <a href="#" class="article-tag-pill">frozen coil</a>
+      <a href="#" class="article-tag-pill">humidity control</a>
+      <a href="#" class="article-tag-pill">airflow</a>
+      <a href="#" class="article-tag-pill">static pressure</a>
+      <a href="#" class="article-tag-pill">refrigerant</a>
+      <a href="#" class="article-tag-pill">HVAC maintenance</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share this guide:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+
+  </div>
+
+  <div class="related">
+    <h3>More Heating &amp; Cooling Guides</h3>
+    <div class="related-grid">
+      <a href="#" class="related-card">
+        <div class="related-img h">&#127777;&#65039;</div>
+        <div class="related-body">
+          <span class="tag hvac">HVAC</span>
+          <div class="related-title">Complete Water Heater Guide: Tank, Tankless &amp; Troubleshooting</div>
+          <div class="related-meta">T.A. &amp; J.G. &#183; 24 min read</div>
+        </div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-img h">&#10052;&#65039;</div>
+        <div class="related-body">
+          <span class="tag hvac">HVAC</span>
+          <div class="related-title">Furnace Won't Ignite: Causes and What to Check First</div>
+          <div class="related-meta">T.A. &#183; 8 min read</div>
+        </div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-img m">&#128296;</div>
+        <div class="related-body">
+          <span class="tag" style="background:#3a6b3a;">Maintenance</span>
+          <div class="related-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="related-meta">T.A. &amp; M.A. &#183; 30 min read</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="sidebar-avatar">T.A.</div>
+      <div>
+        <div class="sidebar-expert-name">T.A.</div>
+        <div class="sidebar-expert-title">Facility Manager &amp; Life Safety</div>
+        <div class="sidebar-expert-bio">Certified Healthcare Facility Manager with experience managing HVAC systems across hospitals and commercial buildings. Also NFPA Certified Fire Inspector and electrician-trained. Runs a life safety consulting business.</div>
+        <div class="sidebar-creds">
+          <span class="cred-pill">CHFM</span>
+          <span class="cred-pill">CLSS-HC</span>
+          <span class="cred-pill">NFPA CFI-1</span>
+          <span class="cred-pill">OSHA 30</span>
+          <span class="cred-pill">Electrician</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#how-it-works">How HVAC Actually Works</a></li>
+      <li><a href="#warning-signs">Reading the Warning Signs</a></li>
+      <li><a href="#odors-sounds">Odors and Sounds</a></li>
+      <li><a href="#severity">How Urgent Is It?</a></li>
+      <li><a href="#homeowner-checks">What You Can Check</a></li>
+      <li><a href="#diy-vs-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#professional-diagnosis">What a Technician Does</a></li>
+      <li><a href="#common-scenarios">Common Scenarios</a></li>
+      <li><a href="#repairs">Repair Costs</a></li>
+      <li><a href="#prevention">Maintenance</a></li>
+      <li><a href="#reference">Quick Reference</a></li>
+      <li><a href="#checklist">Seasonal Checklist</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free expert advice</h4>
+    <p>Seasonal HVAC maintenance reminders and new guides from our certified facility manager.</p>
+    <input type="email" class="sidebar-input" placeholder="Your email address">
+    <button class="sidebar-sub-btn">Subscribe Free</button>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>Most Read This Week</h4>
+    <div class="pop-list">
+      <a href="breaker-tripping-guide.html" class="pop-item">
+        <div class="pop-num">01</div>
+        <div>
+          <div class="pop-title">Why Does My Circuit Breaker Keep Tripping?</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="foundation-guide.html" class="pop-item">
+        <div class="pop-num">02</div>
+        <div>
+          <div class="pop-title">Foundation Damage: What Every Crack Is Telling You</div>
+          <div class="pop-cat">Foundation &#183; C.M.</div>
+        </div>
+      </a>
+      <a href="drain-sewer-guide.html" class="pop-item">
+        <div class="pop-num">03</div>
+        <div>
+          <div class="pop-title">The Complete Drain &amp; Sewer Guide</div>
+          <div class="pop-cat">Plumbing &#183; M.A.</div>
+        </div>
+      </a>
+      <a href="#" class="pop-item">
+        <div class="pop-num">04</div>
+        <div>
+          <div class="pop-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="pop-cat">Maintenance &#183; T.A. &amp; M.A.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="#">Plumbing</a>
+    <a href="#">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="#">Structure &amp; Foundation</a>
+    <a href="#">Home Maintenance</a>
+    <a href="#">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{
+      li.classList.remove('active');
+      if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

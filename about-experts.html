@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meet Our Experts | HomeownersRepairGuide.com</title>
+<meta name="description" content="The licensed trade professionals behind HomeownersRepairGuide.com — over 130 years of combined field experience in plumbing, electrical, foundation, and facility management.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0f2236;
+    --navy-mid: #1a3550;
+    --navy-light: #234468;
+    --rust: #c8441a;
+    --rust-light: #e05a2b;
+    --amber: #f0a500;
+    --cream: #faf7f2;
+    --cream-dark: #f0ebe2;
+    --white: #ffffff;
+    --gray-light: #e8e4de;
+    --gray-mid: #9a9490;
+    --text-dark: #1a1612;
+    --text-body: #3d3830;
+    --text-muted: #7a7570;
+    --shadow-soft: 0 4px 24px rgba(15,34,54,0.08);
+    --shadow-card: 0 2px 12px rgba(15,34,54,0.10);
+    --shadow-hover: 0 8px 32px rgba(15,34,54,0.16);
+    --radius: 4px;
+    --radius-lg: 8px;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text-body); line-height: 1.6; overflow-x: hidden; }
+
+  /* ── TOPBAR ── */
+  .topbar { background: var(--navy); padding: 8px 0; font-size: 12px; color: rgba(255,255,255,0.6); }
+  .topbar .inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+  .topbar a { color: rgba(255,255,255,0.6); text-decoration: none; }
+  .topbar a:hover { color: var(--amber); }
+  .topbar-links { display: flex; gap: 20px; }
+
+  /* ── HEADER ── */
+  header { background: var(--white); border-bottom: 1px solid var(--gray-light); position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow-soft); }
+  .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; max-width: 1200px; margin: 0 auto; }
+  .logo { display: flex; flex-direction: column; text-decoration: none; line-height: 1.1; }
+  .logo-main { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 800; color: var(--navy); letter-spacing: -0.02em; }
+  .logo-main span { color: var(--rust); }
+  .logo-sub { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray-mid); font-weight: 500; }
+  nav { display: flex; align-items: center; gap: 4px; }
+  nav a { font-size: 13px; font-weight: 600; color: var(--text-dark); text-decoration: none; padding: 8px 14px; border-radius: var(--radius); transition: background 0.18s, color 0.18s; }
+  nav a:hover { background: var(--cream); color: var(--rust); }
+  .nav-cta { background: var(--rust) !important; color: var(--white) !important; padding: 8px 18px !important; margin-left: 8px; }
+  .nav-cta:hover { background: var(--rust-light) !important; }
+
+  /* ── BREADCRUMB ── */
+  .breadcrumb { background: var(--cream-dark); border-bottom: 1px solid var(--gray-light); padding: 12px 0; }
+  .breadcrumb .inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-muted); }
+  .breadcrumb a { color: var(--text-muted); text-decoration: none; transition: color 0.15s; }
+  .breadcrumb a:hover { color: var(--rust); }
+  .breadcrumb .sep { color: var(--gray-light); }
+  .breadcrumb .current { color: var(--text-dark); font-weight: 500; }
+
+  /* ── PAGE HERO ── */
+  .page-hero { background: var(--navy); padding: 64px 0 56px; position: relative; overflow: hidden; }
+  .page-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 80% at 90% 50%, rgba(200,68,26,0.18) 0%, transparent 65%),
+                radial-gradient(ellipse 40% 60% at 5% 80%, rgba(240,165,0,0.07) 0%, transparent 60%);
+  }
+  .page-hero-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+  .page-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); margin-bottom: 14px; display: flex; align-items: center; gap: 10px; }
+  .page-eyebrow::before { content: ''; display: block; width: 28px; height: 2px; background: var(--amber); }
+  .page-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(32px, 4vw, 48px); font-weight: 800; color: var(--white); line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 16px; }
+  .page-hero h1 em { font-style: normal; color: var(--rust-light); }
+  .page-hero-desc { font-size: 18px; color: rgba(255,255,255,0.7); line-height: 1.65; max-width: 640px; margin-bottom: 36px; }
+  .hero-trust-row { display: flex; gap: 32px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.12); flex-wrap: wrap; }
+  .hero-trust-item { display: flex; align-items: center; gap: 10px; font-size: 14px; color: rgba(255,255,255,0.7); }
+  .hero-trust-icon { width: 36px; height: 36px; background: rgba(255,255,255,0.08); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+
+  /* ── COMBINED EXPERIENCE BAR ── */
+  .exp-bar { background: var(--rust); padding: 20px 0; }
+  .exp-bar-inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: center; gap: 56px; flex-wrap: wrap; }
+  .exp-stat { text-align: center; }
+  .exp-num { font-family: 'Playfair Display', serif; font-size: 30px; font-weight: 800; color: var(--white); line-height: 1; }
+  .exp-label { font-size: 12px; color: rgba(255,255,255,0.75); margin-top: 4px; letter-spacing: 0.04em; }
+
+  /* ── MAIN CONTENT ── */
+  .page-wrap { max-width: 900px; margin: 0 auto; padding: 64px 24px; }
+
+  /* Intro */
+  .intro-block { margin-bottom: 56px; }
+  .intro-block h2 { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: var(--navy); margin-bottom: 16px; letter-spacing: -0.02em; }
+  .intro-block p { font-size: 17px; color: var(--text-body); line-height: 1.75; margin-bottom: 16px; }
+  .intro-block p:last-child { margin-bottom: 0; }
+
+  /* ── EXPERT CARDS ── */
+  .experts-list { display: flex; flex-direction: column; gap: 48px; margin-bottom: 64px; }
+
+  .expert-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    border: 1px solid var(--gray-light);
+  }
+  .expert-card-header {
+    background: var(--navy);
+    padding: 32px 36px;
+    display: flex;
+    gap: 28px;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+  }
+  .expert-card-header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 100% at 100% 50%, rgba(200,68,26,0.15) 0%, transparent 65%);
+  }
+  .expert-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--white);
+    flex-shrink: 0;
+    border: 3px solid rgba(255,255,255,0.15);
+    position: relative;
+    z-index: 1;
+  }
+  .expert-header-info { flex: 1; position: relative; z-index: 1; }
+  .expert-initials-badge {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 6px;
+  }
+  .expert-name { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 800; color: var(--white); line-height: 1.1; margin-bottom: 4px; }
+  .expert-title { font-size: 14px; color: rgba(255,255,255,0.6); font-weight: 500; margin-bottom: 16px; }
+  .expert-cred-row { display: flex; flex-wrap: wrap; gap: 6px; }
+  .cred-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 2px;
+    background: rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.75);
+    letter-spacing: 0.03em;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+  .expert-card-body { padding: 32px 36px; }
+  .expert-bio-text { font-size: 16px; color: var(--text-body); line-height: 1.75; margin-bottom: 24px; }
+  .expert-bio-text p { margin-bottom: 16px; }
+  .expert-bio-text p:last-child { margin-bottom: 0; }
+
+  .expertise-areas { margin-bottom: 24px; }
+  .expertise-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--rust); margin-bottom: 12px; }
+  .expertise-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .expertise-item { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--text-body); line-height: 1.4; }
+  .expertise-item::before { content: '✓'; width: 18px; height: 18px; border-radius: 50%; background: #eaf5ea; color: #2e7d32; font-size: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+
+  .expert-articles-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 11px 20px;
+    background: var(--cream-dark);
+    border: 1.5px solid var(--gray-light);
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--navy);
+    text-decoration: none;
+    transition: all 0.18s;
+  }
+  .expert-articles-link:hover { background: var(--navy); color: var(--white); border-color: var(--navy); }
+
+  /* ── WHY WE USE INITIALS ── */
+  .privacy-note {
+    background: var(--cream-dark);
+    border: 1px solid var(--gray-light);
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    margin-bottom: 56px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+  }
+  .privacy-note-icon { font-size: 28px; flex-shrink: 0; margin-top: 2px; }
+  .privacy-note h3 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+  .privacy-note p { font-size: 15px; color: var(--text-body); line-height: 1.65; }
+
+  /* ── OUR EDITORIAL PROCESS ── */
+  .process-block { margin-bottom: 56px; }
+  .process-block h2 { font-family: 'Playfair Display', serif; font-size: 26px; font-weight: 700; color: var(--navy); margin-bottom: 24px; letter-spacing: -0.015em; }
+  .process-steps { display: flex; flex-direction: column; gap: 0; }
+  .process-step { display: flex; gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--gray-light); }
+  .process-step:last-child { border-bottom: none; }
+  .step-num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: var(--white);
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .step-content h4 { font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .step-content p { font-size: 15px; color: var(--text-body); line-height: 1.65; }
+
+  /* ── CONTACT CTA ── */
+  .contact-cta {
+    background: var(--navy);
+    border-radius: var(--radius-lg);
+    padding: 40px 44px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(200,68,26,0.15) 0%, transparent 60%);
+  }
+  .contact-cta h3 { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: var(--white); margin-bottom: 12px; position: relative; z-index: 1; }
+  .contact-cta p { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto; position: relative; z-index: 1; }
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 28px;
+    background: var(--rust);
+    color: var(--white);
+    border-radius: var(--radius);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.18s;
+    position: relative;
+    z-index: 1;
+  }
+  .cta-btn:hover { background: var(--rust-light); }
+
+  /* ── FOOTER ── */
+  footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 0; margin-top: 0; }
+  .footer-nav { background: var(--navy-mid); padding: 24px 0; }
+  .footer-nav .inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; gap: 32px; flex-wrap: wrap; }
+  .footer-nav a { color: rgba(255,255,255,0.55); text-decoration: none; font-size: 14px; transition: color 0.15s; }
+  .footer-nav a:hover { color: var(--amber); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding: 20px 24px; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: rgba(255,255,255,0.35); flex-wrap: wrap; gap: 12px; }
+  .footer-bottom a { color: rgba(255,255,255,0.35); text-decoration: none; margin-left: 20px; }
+  .footer-bottom a:hover { color: rgba(255,255,255,0.6); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 768px) {
+    nav { display: none; }
+    .topbar .topbar-links { display: none; }
+    .expert-card-header { flex-direction: column; gap: 20px; }
+    .expertise-grid { grid-template-columns: 1fr; }
+    .exp-bar-inner { gap: 28px; }
+    .hero-trust-row { gap: 18px; }
+    .contact-cta { padding: 32px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html" style="color:var(--amber);">About Our Experts</a>
+      <a href="#">How We Verify</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="#">Plumbing</a>
+      <a href="#">Electrical</a>
+      <a href="#">HVAC</a>
+      <a href="#">Foundation</a>
+      <a href="#">Maintenance</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">›</span>
+    <span class="current">Meet Our Experts</span>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-eyebrow">Who's Behind the Advice</div>
+    <h1>Real Tradespeople.<br><em>Real Experience.</em></h1>
+    <p class="page-hero-desc">Every article on this site is written with the direct input and oversight of licensed professionals who have spent their careers in the field — not content writers researching topics online.</p>
+    <div class="hero-trust-row">
+      <div class="hero-trust-item">
+        <div class="hero-trust-icon">🪪</div>
+        <span>All contributors are licensed or certified in their trade</span>
+      </div>
+      <div class="hero-trust-item">
+        <div class="hero-trust-icon">🔍</div>
+        <span>Every article reviewed for technical accuracy</span>
+      </div>
+      <div class="hero-trust-item">
+        <div class="hero-trust-icon">🛡️</div>
+        <span>Safety-first approach to every recommendation</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EXPERIENCE BAR -->
+<div class="exp-bar">
+  <div class="exp-bar-inner">
+    <div class="exp-stat">
+      <div class="exp-num">130+</div>
+      <div class="exp-label">Combined Years of Field Experience</div>
+    </div>
+    <div class="exp-stat">
+      <div class="exp-num">4</div>
+      <div class="exp-label">Licensed Trade Professionals</div>
+    </div>
+    <div class="exp-stat">
+      <div class="exp-num">6</div>
+      <div class="exp-label">Trade Disciplines Covered</div>
+    </div>
+    <div class="exp-stat">
+      <div class="exp-num">500+</div>
+      <div class="exp-label">Articles Written & Verified</div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="page-wrap">
+
+  <!-- INTRO -->
+  <div class="intro-block">
+    <h2>Why expert authorship matters</h2>
+    <p>The internet is full of home repair advice written by people who have never held a pipe wrench, diagnosed an electrical fault, or stood in a basement watching a foundation crack grow. Most of it is technically accurate enough to avoid lawsuits but practically useless when you're standing in front of an actual problem.</p>
+    <p>Every article on this site is developed with the direct input of the professionals below. Their job is to make sure the diagnostic steps are real, the warnings are genuine, and the "call a pro" guidance reflects what they would actually tell a neighbor.</p>
+  </div>
+
+  <!-- PRIVACY NOTE -->
+  <div class="privacy-note">
+    <div class="privacy-note-icon">🔒</div>
+    <div>
+      <h3>A note on privacy — why we use initials</h3>
+      <p>Our contributors are active professionals with businesses, licenses, and reputations to protect. In an era of online harassment and privacy concerns, they've chosen to contribute under their initials rather than full names. This is a deliberate decision we respect and support. Their credentials, experience levels, and trade specializations are fully accurate and verifiable through their respective licensing boards.</p>
+    </div>
+  </div>
+
+  <!-- EXPERT CARDS -->
+  <div class="experts-list">
+
+    <!-- M.A. -->
+    <div class="expert-card">
+      <div class="expert-card-header">
+        <div class="expert-avatar" style="background:var(--rust);">M.A.</div>
+        <div class="expert-header-info">
+          <div class="expert-initials-badge">Plumbing & Water Restoration</div>
+          <div class="expert-name">M.A.</div>
+          <div class="expert-title">Owner & Operator, Roto-Rooter Plumbing & Water Cleanup · Pacific Northwest</div>
+          <div class="expert-cred-row">
+            <span class="cred-badge">Licensed Plumber</span>
+            <span class="cred-badge">Roto-Rooter Franchise Owner</span>
+            <span class="cred-badge">Water Damage Restoration</span>
+            <span class="cred-badge">MBA — Gonzaga University</span>
+            <span class="cred-badge">U.S. Air Force (Lt. Colonel, Ret.) — 23 Years</span>
+          </div>
+        </div>
+      </div>
+      <div class="expert-card-body">
+        <div class="expert-bio-text">
+          <p>M.A. owns and operates a Roto-Rooter Plumbing & Water Cleanup franchise in the Pacific Northwest, handling residential and commercial drain service, plumbing repairs, and water damage restoration day in and day out. He knows what actually fails in real homes — not what textbooks say should fail.</p>
+          <p>Before the trades, he spent 23 years in the U.S. Air Force as a fighter pilot and unmanned systems operator, retiring as a Lieutenant Colonel. That career built a systematic, no-nonsense approach to diagnosis that shows in everything he writes. His MBA keeps his cost and DIY guidance grounded in financial reality.</p>
+        </div>
+        <div class="expertise-areas">
+          <div class="expertise-label">Areas of Expertise</div>
+          <div class="expertise-grid">
+            <div class="expertise-item">Residential & commercial drain systems</div>
+            <div class="expertise-item">Sewer line diagnosis & repair</div>
+            <div class="expertise-item">Water damage assessment & restoration</div>
+            <div class="expertise-item">Plumbing system troubleshooting</div>
+            <div class="expertise-item">DIY vs professional cost analysis</div>
+            <div class="expertise-item">Emergency plumbing response</div>
+          </div>
+        </div>
+        <a href="#" class="expert-articles-link">Read M.A.'s Articles →</a>
+      </div>
+    </div>
+
+    <!-- T.A. -->
+    <div class="expert-card">
+      <div class="expert-card-header">
+        <div class="expert-avatar" style="background:var(--amber); color:var(--navy);">T.A.</div>
+        <div class="expert-header-info">
+          <div class="expert-initials-badge">Electrical, Fire Safety & Facility Operations</div>
+          <div class="expert-name">T.A.</div>
+          <div class="expert-title">Principal, Life Safety Consulting · Pacific Northwest</div>
+          <div class="expert-cred-row">
+            <span class="cred-badge">NFPA Certified Fire Inspector (CFI-1)</span>
+            <span class="cred-badge">Certified Healthcare Facility Manager (CHFM)</span>
+            <span class="cred-badge">Certified Life Safety Specialist (CLSS-HC)</span>
+            <span class="cred-badge">Safety Trained Supervisor (STS)</span>
+            <span class="cred-badge">OSHA 30 Certified</span>
+            <span class="cred-badge">Electrician — All Phases</span>
+          </div>
+        </div>
+      </div>
+      <div class="expert-card-body">
+        <div class="expert-bio-text">
+          <p>T.A. started as an electrician — full apprenticeship, all phases, residential through industrial. He then built one of the most unusual credential stacks in the trades: NFPA Certified Fire Inspector, Certified Healthcare Facility Manager, and Certified Life Safety Specialist, giving him authority across electrical systems, fire safety, building codes, and regulatory compliance simultaneously.</p>
+          <p>He has managed the full plant operations of a hospital — electrical, plumbing, HVAC, structural — and now runs a life safety consulting business, conducting regulatory readiness assessments for healthcare and commercial organizations. When he writes about electrical safety or code compliance, it comes from someone who has been on both sides of the inspection clipboard.</p>
+        </div>
+        <div class="expertise-areas">
+          <div class="expertise-label">Areas of Expertise</div>
+          <div class="expertise-grid">
+            <div class="expertise-item">Residential & commercial electrical systems</div>
+            <div class="expertise-item">GFCI, AFCI & circuit protection</div>
+            <div class="expertise-item">Fire safety & detection systems</div>
+            <div class="expertise-item">NFPA, IBC, IFC & OSHA code compliance</div>
+            <div class="expertise-item">HVAC systems & troubleshooting</div>
+            <div class="expertise-item">Facility maintenance & operations</div>
+          </div>
+        </div>
+        <a href="#" class="expert-articles-link">Read T.A.'s Articles →</a>
+      </div>
+    </div>
+
+    <!-- C.M. -->
+    <div class="expert-card">
+      <div class="expert-card-header">
+        <div class="expert-avatar" style="background:#5a4a3a;">C.M.</div>
+        <div class="expert-header-info">
+          <div class="expert-initials-badge">Excavation, Foundation & Structural</div>
+          <div class="expert-name">C.M.</div>
+          <div class="expert-title">Principal, Construction Consulting Firm · Nevada</div>
+          <div class="expert-cred-row">
+            <span class="cred-badge">Foundation Repair Specialist — 30+ Years</span>
+            <span class="cred-badge">Certified — Major Pier Systems</span>
+            <span class="cred-badge">Certified — Foundation Repair Methods</span>
+            <span class="cred-badge">Certified — Retaining Wall Systems</span>
+            <span class="cred-badge">Structural Consultant</span>
+          </div>
+        </div>
+      </div>
+      <div class="expert-card-body">
+        <div class="expert-bio-text">
+          <p>C.M. has 30+ years in excavation, foundation systems, and structural repair, certified in virtually every major pier system, repair method, and retaining wall system used in residential construction. He has seen every way a foundation can fail — and every way a repair can be oversold.</p>
+          <p>Critically, he runs a consulting firm rather than a repair company, which means he gets called in specifically because he has no financial stake in recommending a particular fix. His job is accurate diagnosis. That independence makes his assessments — and his articles — unusually honest about when a problem is serious versus when a homeowner is being upsold.</p>
+        </div>
+        <div class="expertise-areas">
+          <div class="expertise-label">Areas of Expertise</div>
+          <div class="expertise-grid">
+            <div class="expertise-item">Foundation crack diagnosis & classification</div>
+            <div class="expertise-item">Pier systems & underpinning</div>
+            <div class="expertise-item">Drainage-related structural damage</div>
+            <div class="expertise-item">Retaining wall systems</div>
+            <div class="expertise-item">Excavation & site preparation</div>
+            <div class="expertise-item">Repair design validation</div>
+          </div>
+        </div>
+        <a href="#" class="expert-articles-link">Read C.M.'s Articles →</a>
+      </div>
+    </div>
+
+    <!-- J.G. -->
+    <div class="expert-card">
+      <div class="expert-card-header">
+        <div class="expert-avatar" style="background:#2a7a8c;">J.G.</div>
+        <div class="expert-header-info">
+          <div class="expert-initials-badge">Master Plumber — Residential & Commercial</div>
+          <div class="expert-name">J.G.</div>
+          <div class="expert-title">Licensed Journeyman Plumber · ~50 Years Experience</div>
+          <div class="expert-cred-row">
+            <span class="cred-badge">Licensed Journeyman Plumber</span>
+            <span class="cred-badge">~50 Years Field Experience</span>
+            <span class="cred-badge">Residential & Commercial</span>
+            <span class="cred-badge">New Construction</span>
+            <span class="cred-badge">Complex System Diagnosis</span>
+          </div>
+        </div>
+      </div>
+      <div class="expert-card-body">
+        <div class="expert-bio-text">
+          <p>J.G. has been a licensed plumber for nearly 50 years across residential, commercial, and new construction — long enough to have worked with every pipe material, code era, and installation method in use today. Most plumbers can install to a plan. Far fewer can trace a symptom through decades of modifications and repairs to find the actual root cause.</p>
+          <p>That diagnostic depth is what makes his contributions here valuable. When J.G. says a symptom is serious, it's because he has seen what happens when it's ignored. When he says something is a safe DIY repair, it's because he has done it himself more times than he can count.</p>
+        </div>
+        <div class="expertise-areas">
+          <div class="expertise-label">Areas of Expertise</div>
+          <div class="expertise-grid">
+            <div class="expertise-item">Whole-house plumbing systems</div>
+            <div class="expertise-item">Complex system failure diagnosis</div>
+            <div class="expertise-item">New construction plumbing</div>
+            <div class="expertise-item">Water supply & pressure systems</div>
+            <div class="expertise-item">Commercial plumbing installations</div>
+            <div class="expertise-item">Code compliance & installation standards</div>
+          </div>
+        </div>
+        <a href="#" class="expert-articles-link">Read J.G.'s Articles →</a>
+      </div>
+    </div>
+
+  </div><!-- /experts-list -->
+
+  <div class="process-block">
+    <h2>How our articles are developed</h2>
+    <p style="font-size:17px; line-height:1.75; color:var(--text-body);">Every article is developed with direct expert input, reviewed for technical accuracy before publication, and updated on a regular schedule as codes and standards change. For a full explanation of our editorial and verification process, see our <a href="how-we-verify.html" style="color:var(--rust);">How We Verify Information</a> page.</p>
+  </div>
+
+  <!-- CONTACT CTA -->
+  <div class="contact-cta">
+    <h3>Have a question our articles don't answer?</h3>
+    <p>Use our contact form and we'll do our best to point you toward the right resource — or tell you honestly when your situation requires a local professional assessment.</p>
+    <a href="contact.html" class="cta-btn">Contact Us →</a>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<!-- FOOTER -->
+<div class="footer-nav">
+  <div class="inner">
+    <a href="#">Plumbing</a>
+    <a href="#">Electrical & Safety</a>
+    <a href="#">Heating & Cooling</a>
+    <a href="#">Structure & Foundation</a>
+    <a href="#">Home Maintenance</a>
+    <a href="#">General Repair</a>
+    <a href="#">All Guides</a>
+    <a href="about-experts.html">About Our Experts</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>© 2025 HomeownersRepairGuide.com · All rights reserved</span>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

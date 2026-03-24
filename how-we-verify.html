@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How We Verify Our Information | HomeownersRepairGuide.com</title>
+<meta name="description" content="How HomeownersRepairGuide.com ensures every article is technically accurate, safety-reviewed, and kept current. Our editorial and verification process explained.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy:#0f2236;--navy-mid:#1a3550;--navy-light:#234468;
+    --rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;
+    --cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;
+    --gray-light:#e8e4de;--gray-mid:#9a9490;
+    --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+    --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+    --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+    --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+    --radius:4px;--radius-lg:8px;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .page-hero{background:var(--navy);padding:64px 0 56px;position:relative;overflow:hidden;}
+  .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 90% 50%,rgba(200,68,26,0.18) 0%,transparent 65%);}
+  .page-hero-inner{max-width:760px;margin:0 auto;padding:0 24px;position:relative;z-index:1;}
+  .page-eyebrow{font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--amber);margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+  .page-eyebrow::before{content:'';display:block;width:28px;height:2px;background:var(--amber);}
+  .page-hero h1{font-family:'Playfair Display',serif;font-size:clamp(30px,4vw,44px);font-weight:800;color:var(--white);line-height:1.12;letter-spacing:-0.025em;margin-bottom:16px;}
+  .page-hero h1 em{font-style:normal;color:var(--rust-light);}
+  .page-hero-desc{font-size:18px;color:rgba(255,255,255,0.72);line-height:1.65;}
+  .page-wrap{max-width:760px;margin:0 auto;padding:64px 24px 80px;}
+  .prose h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin:48px 0 16px;letter-spacing:-0.015em;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .prose h2:first-child{margin-top:0;border-top:none;padding-top:0;}
+  .prose p{font-size:17px;color:var(--text-body);line-height:1.78;margin-bottom:18px;}
+  .prose p:last-child{margin-bottom:0;}
+  .prose a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+  .prose strong{color:var(--text-dark);font-weight:600;}
+
+  /* Process steps */
+  .process-steps{display:flex;flex-direction:column;gap:0;margin:32px 0;}
+  .process-step{display:flex;gap:24px;padding:28px 0;border-bottom:1px solid var(--gray-light);}
+  .process-step:last-child{border-bottom:none;}
+  .step-num{width:44px;height:44px;border-radius:50%;background:var(--navy);color:var(--white);font-family:'Playfair Display',serif;font-size:18px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+  .step-body h4{font-size:17px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3;}
+  .step-body p{font-size:15px;color:var(--text-body);line-height:1.68;margin:0;}
+
+  /* Standards sources */
+  .sources-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:28px 0;}
+  .source-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 20px;display:flex;align-items:center;gap:14px;box-shadow:var(--shadow-card);}
+  .source-icon{font-size:24px;flex-shrink:0;}
+  .source-name{font-size:14px;font-weight:600;color:var(--navy);line-height:1.3;}
+  .source-desc{font-size:12px;color:var(--text-muted);margin-top:2px;}
+
+  /* Correction box */
+  .correction-box{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px;margin:40px 0;}
+  .correction-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:10px;}
+  .correction-box p{font-size:15px;color:rgba(255,255,255,0.72);line-height:1.68;margin-bottom:16px;}
+  .correction-box p:last-child{margin-bottom:0;}
+  .correction-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;background:var(--rust);color:var(--white);border-radius:var(--radius);font-size:14px;font-weight:600;text-decoration:none;transition:background 0.18s;}
+  .correction-btn:hover{background:var(--rust-light);}
+
+  /* Limits note */
+  .limits-box{background:var(--cream-dark);border:1px solid var(--gray-light);border-left:4px solid var(--amber);border-radius:var(--radius-lg);padding:24px 28px;margin:32px 0;}
+  .limits-box h3{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+  .limits-box p{font-size:15px;color:var(--text-body);line-height:1.65;margin-bottom:0;}
+
+  /* CTA row */
+  .cta-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px;}
+  .cta-card{border-radius:var(--radius-lg);padding:28px;text-decoration:none;display:flex;flex-direction:column;gap:8px;transition:transform 0.18s,box-shadow 0.18s;}
+  .cta-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover);}
+  .cta-card.dark{background:var(--navy);}
+  .cta-card.rust{background:var(--rust);}
+  .cta-card-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.55);}
+  .cta-card-title{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);line-height:1.2;}
+  .cta-card-arrow{font-size:20px;color:rgba(255,255,255,0.5);margin-top:4px;transition:transform 0.15s;}
+  .cta-card:hover .cta-card-arrow{transform:translateX(4px);color:var(--white);}
+
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:24px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+  @media(max-width:640px){nav{display:none;}.topbar .topbar-links{display:none;}.sources-grid,.cta-row{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html" style="color:var(--amber);">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="#">Plumbing</a>
+      <a href="#">Electrical</a>
+      <a href="#">HVAC</a>
+      <a href="#">Foundation</a>
+      <a href="#">Maintenance</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">How We Verify Our Information</span>
+  </div>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-eyebrow">Editorial Standards</div>
+    <h1>How we make sure<br><em>the advice is right.</em></h1>
+    <p class="page-hero-desc">Our verification process starts with who writes the content &#8212; and doesn't end until a licensed professional has signed off on the technical accuracy.</p>
+  </div>
+</div>
+
+<div class="page-wrap">
+  <div class="prose">
+
+    <h2>Our core approach</h2>
+    <p>Most content sites verify information by cross-referencing other websites. We verify information by asking licensed professionals who do this work for a living. That is a fundamentally different standard &#8212; and it is the only one that actually produces reliable home repair guidance.</p>
+    <p>Every article on this site goes through a consistent process before it is published and on a regular schedule afterward. Here is exactly what that looks like.</p>
+
+    <h2>Our verification process</h2>
+    <div class="process-steps">
+
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h4>Topics come from real field experience</h4>
+          <p>Article topics are identified by our expert contributors based on the questions and problems they encounter most often in their professional work. If homeowners keep asking the same question in the field, it becomes an article. This ensures we are covering problems that actually occur &#8212; not just topics that generate search traffic.</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h4>Expert input drives the technical content</h4>
+          <p>Each article is developed with direct input from the relevant licensed professional. The diagnostic steps, warning signs, severity assessments, DIY vs professional guidance, and cost estimates all originate from field experience. This is not a review step &#8212; the expert is the primary source.</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h4>Technical accuracy review before publication</h4>
+          <p>Before any article goes live, the contributing expert reviews the final content for technical accuracy. Safety information and diagnostic procedures are held to the highest standard &#8212; any guidance that could lead a homeowner toward an unsafe action is revised or removed, regardless of how clearly it is written.</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h4>Cost estimates are current and regional</h4>
+          <p>Labor and material costs vary significantly by region and change over time. Our cost ranges are reviewed and updated based on current market rates, not industry averages from several years ago. Every cost estimate includes context about what drives the range, so readers understand what pushes a job toward the high or low end.</p>
+        </div>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h4>Regular updates as codes and standards change</h4>
+          <p>Electrical codes, plumbing standards, and building regulations are updated on regular cycles. Articles are reviewed on an ongoing schedule to ensure the guidance reflects current requirements. The last reviewed and updated date is displayed on every article so readers know how current the information is.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <h2>Standards and codes we reference</h2>
+    <p>Our contributors verify technical guidance against the applicable professional standards for their trade. These include:</p>
+    <div class="sources-grid">
+      <div class="source-item">
+        <div class="source-icon">&#9889;</div>
+        <div>
+          <div class="source-name">National Electrical Code (NEC)</div>
+          <div class="source-desc">NFPA 70 &#8212; Electrical standards &amp; code compliance</div>
+        </div>
+      </div>
+      <div class="source-item">
+        <div class="source-icon">&#128293;</div>
+        <div>
+          <div class="source-name">NFPA Standards</div>
+          <div class="source-desc">Fire safety, life safety &amp; building systems</div>
+        </div>
+      </div>
+      <div class="source-item">
+        <div class="source-icon">&#128268;</div>
+        <div>
+          <div class="source-name">International Plumbing Code (IPC)</div>
+          <div class="source-desc">Plumbing system standards &amp; installation requirements</div>
+        </div>
+      </div>
+      <div class="source-item">
+        <div class="source-icon">&#127968;</div>
+        <div>
+          <div class="source-name">International Building Code (IBC)</div>
+          <div class="source-desc">Structural, foundation &amp; building requirements</div>
+        </div>
+      </div>
+      <div class="source-item">
+        <div class="source-icon">&#127757;</div>
+        <div>
+          <div class="source-name">International Residential Code (IRC)</div>
+          <div class="source-desc">Residential construction standards nationwide</div>
+        </div>
+      </div>
+      <div class="source-item">
+        <div class="source-icon">&#128295;</div>
+        <div>
+          <div class="source-name">Manufacturer specifications</div>
+          <div class="source-desc">Product-specific installation &amp; safety requirements</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="limits-box">
+      <h3>An important limitation to understand</h3>
+      <p>Our articles provide general guidance based on common conditions and standard code requirements. Local codes vary &#8212; your jurisdiction may have requirements that differ from the national standards we reference. For any permitted work, always verify requirements with your local building department. Our guidance is a starting point for understanding a problem, not a substitute for a licensed professional assessment of your specific situation.</p>
+    </div>
+
+    <h2>How we handle AI-assisted content</h2>
+    <p>Like most modern content publishers, we use AI writing tools to help draft and structure articles efficiently. We are transparent about this because it matters to how you should evaluate what you read here.</p>
+    <p>AI tools are used to write and organize content based on expert input. They are <strong>not</strong> used to generate technical guidance independently. Every diagnostic procedure, safety warning, cost estimate, and professional recommendation in our articles originates from our licensed contributors &#8212; the AI helps communicate that knowledge clearly, it does not create it.</p>
+    <p>Every article is reviewed for technical accuracy by the credited expert before publication. The expert's name and credentials appear on each article precisely because they are accountable for its accuracy.</p>
+
+    <div class="correction-box">
+      <h3>Found something that needs correcting?</h3>
+      <p>We take accuracy seriously. If you find information in one of our articles that appears to be incorrect, outdated, or conflicts with current code requirements in your area, please let us know. We review every correction request and update articles when warranted.</p>
+      <a href="contact.html" class="correction-btn">Submit a Correction &#8594;</a>
+    </div>
+
+  </div>
+
+  <div class="cta-row">
+    <a href="about-experts.html" class="cta-card dark">
+      <div class="cta-card-label">Learn more</div>
+      <div class="cta-card-title">Meet Our Expert Contributors</div>
+      <div class="cta-card-arrow">&#8594;</div>
+    </a>
+    <a href="about-site.html" class="cta-card rust">
+      <div class="cta-card-label">Learn more</div>
+      <div class="cta-card-title">About This Site</div>
+      <div class="cta-card-arrow">&#8594;</div>
+    </a>
+  </div>
+
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="#">Plumbing</a>
+    <a href="#">Electrical &amp; Safety</a>
+    <a href="#">Heating &amp; Cooling</a>
+    <a href="#">Structure &amp; Foundation</a>
+    <a href="#">Home Maintenance</a>
+    <a href="#">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

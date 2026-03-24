@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Drain & Sewer Guide: How to Diagnose Any Problem | HomeownersRepairGuide.com</title>
+<meta name="description" content="A Roto-Rooter owner and licensed plumber explain how your drain system works, how to read symptoms, what's safe to check yourself, and when to call a professional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--navy-light:#234468;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.15s;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .article-wrap{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+  .article-main{min-width:0;}
+  .article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;}
+  .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--rust);color:var(--white);}
+  .tag.plumbing{background:var(--rust);}
+  .tag.diagnosis{background:#1a5a9a;color:var(--white);}
+  .tag.safety{background:#c0402a;color:var(--white);}
+  .tag.diy{background:#2a7a2a;color:var(--white);}
+  .article-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);line-height:1.12;letter-spacing:-0.025em;margin-bottom:20px;}
+  .article-subtitle{font-size:18px;color:var(--text-muted);line-height:1.6;margin-bottom:28px;border-left:3px solid var(--rust);padding-left:16px;}
+  .article-byline{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:32px;}
+  .byline-avatar{width:48px;height:48px;border-radius:50%;background:var(--rust);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);flex-shrink:0;}
+  .byline-info{flex:1;}
+  .byline-name{font-size:15px;font-weight:600;color:var(--text-dark);}
+  .byline-cred{font-size:12px;color:var(--text-muted);margin-top:2px;}
+  .byline-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:12px;color:var(--text-muted);text-align:right;}
+  .byline-meta strong{color:var(--text-dark);}
+  .article-hero-img{background:linear-gradient(135deg,#1a2a3a 0%,#0f2236 100%);border-radius:var(--radius-lg);height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:40px;gap:12px;border:1px solid var(--gray-light);position:relative;overflow:hidden;}
+  .article-hero-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(200,68,26,0.18) 0%,transparent 65%);}
+  .article-hero-img .img-icon{font-size:72px;opacity:0.5;position:relative;z-index:1;}
+  .article-hero-img .img-caption{font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;position:relative;z-index:1;}
+  .article-body{font-size:17px;line-height:1.75;color:var(--text-body);}
+  .article-body h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin:48px 0 16px;line-height:1.2;letter-spacing:-0.01em;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .article-body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy-mid);margin:32px 0 12px;line-height:1.25;}
+  .article-body p{margin-bottom:20px;}
+  .article-body ul,.article-body ol{margin:0 0 20px 0;padding-left:24px;}
+  .article-body li{margin-bottom:8px;}
+  .article-body strong{color:var(--text-dark);font-weight:600;}
+  .article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+  /* Expert callout */
+  .expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0;display:flex;gap:18px;align-items:flex-start;}
+  .expert-callout-avatar{width:44px;height:44px;border-radius:50%;background:var(--rust);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+  .expert-callout-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:6px;}
+  .expert-callout-text{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+  .expert-callout-attr{font-size:12px;color:rgba(255,255,255,0.45);margin-top:8px;}
+  /* Callout boxes */
+  .callout-box{border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+  .callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+  .callout-box.danger{background:#fef2f0;border:1px solid #e08070;}
+  .callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+  .callout-box.info{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .callout-icon{font-size:22px;flex-shrink:0;margin-top:1px;}
+  .callout-content{flex:1;}
+  .callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+  .callout-box.warning .callout-label{color:#b07800;}
+  .callout-box.danger .callout-label{color:#c0402a;}
+  .callout-box.tip .callout-label{color:#2a7a2a;}
+  .callout-box.info .callout-label{color:#1a5a9a;}
+  .callout-text{font-size:15px;line-height:1.6;color:var(--text-body);}
+  /* Symptom diagnosis table */
+  .diag-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .diag-table th{background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .diag-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .diag-table tr:last-child td{border-bottom:none;}
+  .diag-table tr:nth-child(even) td{background:var(--cream);}
+  .severity-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle;}
+  .dot-low{background:#4caf50;}
+  .dot-medium{background:var(--amber);}
+  .dot-high{background:var(--rust);}
+  .dot-critical{background:#c0392b;}
+  /* Severity block */
+  .severity-block{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px;margin:36px 0;box-shadow:var(--shadow-card);}
+  .severity-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .severity-row{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+  .severity-label{font-size:13px;font-weight:600;width:80px;flex-shrink:0;}
+  .severity-bar-wrap{flex:1;height:10px;background:var(--gray-light);border-radius:5px;overflow:hidden;}
+  .severity-bar{height:100%;border-radius:5px;}
+  .sev-low .severity-bar{width:25%;background:#4caf50;}
+  .sev-medium .severity-bar{width:55%;background:var(--amber);}
+  .sev-high .severity-bar{width:85%;background:var(--rust);}
+  .sev-critical .severity-bar{width:100%;background:#c0392b;}
+  .severity-desc{font-size:12px;color:var(--text-muted);width:200px;flex-shrink:0;text-align:right;}
+  /* Cost table */
+  .cost-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .cost-table th{background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;}
+  .cost-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);background:var(--white);vertical-align:top;line-height:1.5;}
+  .cost-table tr:last-child td{border-bottom:none;}
+  .cost-table tr:nth-child(even) td{background:var(--cream);}
+  .cost-badge{display:inline-block;font-family:'DM Mono',monospace;font-size:13px;font-weight:600;color:var(--navy);}
+  /* DIY vs Pro */
+  .diy-pro-block{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:36px 0;}
+  .diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .diy-card-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+  .diy-badge{width:40px;height:40px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+  .diy-badge.diy{background:#e8f5e9;}
+  .diy-badge.pro{background:#fff3e0;}
+  .diy-card-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);}
+  .diy-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .diy-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-body);line-height:1.5;}
+  .diy-list li::before{content:'\2713';width:18px;height:18px;border-radius:50%;background:#e8f5e9;color:#2e7d32;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+  .pro-list li::before{content:'!';background:#fff3e0;color:#e65100;}
+  /* FAQ */
+  .faq-block{margin:36px 0;}
+  .faq-item{border-bottom:1px solid var(--gray-light);}
+  .faq-question{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font-size:16px;font-weight:600;color:var(--navy);gap:16px;user-select:none;}
+  .faq-question:hover{color:var(--rust);}
+  .faq-chevron{font-size:18px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+  .faq-answer{font-size:15px;color:var(--text-body);line-height:1.7;padding-bottom:18px;display:none;}
+  .faq-item.open .faq-answer{display:block;}
+  .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--rust);}
+  /* Summary */
+  .summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px;margin:48px 0 36px;}
+  .summary-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .summary-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.55;}
+  .summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+  /* Safety popout */
+  .safety-popout{background:linear-gradient(135deg,#c0392b,#a93226);border-radius:var(--radius-lg);padding:28px 32px;margin:40px 0;}
+  .safety-popout h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:14px;display:flex;align-items:center;gap:10px;}
+  .safety-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .safety-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(255,255,255,0.9);line-height:1.5;}
+  .safety-list li::before{content:'!';width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,0.2);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+  /* Tags & share */
+  .article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0;padding-top:32px;border-top:1px solid var(--gray-light);}
+  .article-tag-pill{font-size:12px;padding:5px 12px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+  .article-tag-pill:hover{background:var(--rust);color:var(--white);border-color:var(--rust);}
+  .share-bar{display:flex;align-items:center;gap:12px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:48px;flex-wrap:wrap;}
+  .share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+  .share-btn{padding:8px 16px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+  .share-btn:hover{opacity:0.85;}
+  .share-fb{background:#1877f2;color:white;}
+  .share-x{background:#000;color:white;}
+  .share-pin{background:#e60023;color:white;}
+  .share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+  /* Related */
+  .related{margin-top:48px;}
+  .related h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .related-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;}
+  .related-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+  .related-img{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px;}
+  .related-img.p{background:linear-gradient(135deg,#fce8e0,#f8d8cc);}
+  .related-img.m{background:linear-gradient(135deg,#eaf5ea,#d4ecd4);}
+  .related-body{padding:16px;}
+  .related-body .tag{font-size:10px;padding:3px 8px;margin-bottom:8px;}
+  .related-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:6px;}
+  .related-meta{font-size:11px;color:var(--text-muted);}
+  /* Sidebar */
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:24px;}
+  .sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .sidebar-card h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gray-light);}
+  .sidebar-expert{display:flex;gap:14px;align-items:flex-start;}
+  .sidebar-avatar{width:52px;height:52px;border-radius:50%;background:var(--rust);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);flex-shrink:0;}
+  .sidebar-expert-name{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+  .sidebar-expert-title{font-size:12px;color:var(--rust);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
+  .sidebar-expert-bio{font-size:13px;color:var(--text-muted);line-height:1.55;}
+  .sidebar-creds{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;}
+  .cred-pill{font-size:10px;padding:3px 8px;background:var(--cream-dark);border-radius:2px;color:var(--text-muted);font-weight:600;}
+  .toc-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+  .toc-list li a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);text-decoration:none;padding:6px 8px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+  .toc-list li a:hover{background:var(--cream);color:var(--rust);}
+  .toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+  .toc-list li.active a{color:var(--rust);background:var(--cream);font-weight:600;}
+  .toc-list li.active a::before{background:var(--rust);width:6px;height:6px;}
+  .sidebar-newsletter{background:var(--rust);border-radius:var(--radius-lg);padding:24px;}
+  .sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:10px;}
+  .sidebar-newsletter p{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.55;margin-bottom:16px;}
+  .sidebar-input{width:100%;padding:11px 14px;border:2px solid rgba(255,255,255,0.3);border-radius:var(--radius);background:rgba(255,255,255,0.12);color:var(--white);font-size:14px;font-family:'DM Sans',sans-serif;outline:none;margin-bottom:10px;}
+  .sidebar-input::placeholder{color:rgba(255,255,255,0.5);}
+  .sidebar-input:focus{border-color:rgba(255,255,255,0.7);}
+  .sidebar-sub-btn{width:100%;padding:11px;background:var(--navy);color:var(--white);border:none;border-radius:var(--radius);font-size:14px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;transition:background 0.2s;}
+  .sidebar-sub-btn:hover{background:var(--navy-light);}
+  .ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:32px 16px;text-align:center;}
+  .ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:6px;}
+  .ad-placeholder .ad-size{font-size:13px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+  .pop-list{display:flex;flex-direction:column;gap:14px;}
+  .pop-item{display:flex;gap:12px;align-items:flex-start;text-decoration:none;}
+  .pop-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:28px;}
+  .pop-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.35;transition:color 0.15s;}
+  .pop-item:hover .pop-title{color:var(--rust);}
+  .pop-cat{font-size:11px;color:var(--text-muted);margin-top:3px;}
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:24px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+  @media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.related-grid{grid-template-columns:1fr 1fr;}.diy-pro-block{grid-template-columns:1fr;}}
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.related-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="#" class="active">Plumbing</a>
+      <a href="#">Electrical</a>
+      <a href="#">HVAC</a>
+      <a href="#">Foundation</a>
+      <a href="#">Maintenance</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-plumbing.html">Plumbing</a>
+    <span class="sep">&#8250;</span>
+    <a href="#">Drains &amp; Sewers</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">The Complete Drain &amp; Sewer Guide</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag plumbing">Plumbing</span>
+    <span class="tag diagnosis">Diagnosis</span>
+  </div>
+
+  <h1 class="article-title">The Complete Drain &amp; Sewer Guide: How to Read Any Symptom and What to Do About It</h1>
+
+  <p class="article-subtitle">Drain problems almost never appear without warning. Your system gives you signals weeks or months before a real failure. A Roto-Rooter owner and licensed plumber explain how to read them &#8212; and what to do before a slow drain becomes a sewage backup.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">M.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">M.A. &#8212; Roto-Rooter Owner &amp; Licensed Plumber</div>
+      <div class="byline-cred">Plumbing &amp; Drain Systems &#183; Water Damage Restoration &#183; MBA &#183; Pacific Northwest</div>
+    </div>
+    <div class="byline-meta">
+      <span><strong>Reviewed by:</strong> J.G., Licensed Plumber (~50 yrs)</span>
+      <span><strong>Updated:</strong> January 2025</span>
+      <span>22 min read &#183; Fact-verified</span>
+    </div>
+  </div>
+
+  <div class="article-hero-img">
+    <div class="img-icon">&#128268;</div>
+    <div class="img-caption">[Hero image &#8212; e.g. drain pipe cross-section or sewer camera inspection]</div>
+  </div>
+
+  <div class="article-body">
+
+    <p>A slow drain is easy to ignore. You run the water, it takes a little longer than usual to clear, and you move on. But a slow drain is not a minor inconvenience &#8212; it is your plumbing system telling you that something is building up, shifting, or deteriorating somewhere downstream. By the time a drain backs up completely, the underlying problem has usually been developing for months.</p>
+
+    <p>The good news is that drain and sewer systems are remarkably communicative. The pattern of your symptoms &#8212; which fixtures are affected, when they act up, and how they interact with each other &#8212; tells a very specific story about where the problem is and how serious it has become. This guide teaches you how to read that story.</p>
+
+    <div class="callout-box info">
+      <div class="callout-icon">&#128203;</div>
+      <div class="callout-content">
+        <div class="callout-label">Quick Summary</div>
+        <div class="callout-text">How many fixtures are affected tells you where the problem is. <strong>One fixture slow</strong> &#8212; local clog. <strong>Multiple fixtures in one room</strong> &#8212; branch line. <strong>Whole house symptoms</strong> &#8212; main drain or sewer line. The pattern is the diagnosis.</div>
+      </div>
+    </div>
+
+    <h2 id="how-it-works">How the Drain-Waste-Vent System Works</h2>
+
+    <p>Your home's drain system &#8212; formally called the drain-waste-vent (DWV) system &#8212; operates on two principles: gravity moves waste out, and air moves freely through the pipes to equalize pressure. Every component serves one of these two purposes.</p>
+
+    <p>Each fixture connects to a <strong>trap</strong> &#8212; that curved pipe section under your sink. The trap holds a permanent water seal that blocks sewer gases from entering your home. Beyond the trap, branch lines connect groups of fixtures in the same area. All branch lines eventually feed into the <strong>main building drain</strong>, which carries everything to the municipal sewer or your septic system. Meanwhile, <strong>vent pipes</strong> exit through the roof, allowing air to enter the system and keep pressure balanced so water flows smoothly.</p>
+
+    <p>When all of this works correctly, drains are silent, water clears immediately, and no odors enter your home. When any part fails &#8212; a trap dries out, a branch line builds up, a vent gets blocked &#8212; the system starts behaving differently. Those behavioral changes are your diagnostic signals.</p>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">M.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert</div>
+        <div class="expert-callout-text">"In this business, the calls I dread most are the ones that start with 'it's been doing this for a while.' Slow drains and gurgling sounds are not normal &#8212; they're the system asking for attention. The homeowners who catch it early spend a few hundred dollars. The ones who wait can spend several thousand, and sometimes deal with sewage in their basement."</div>
+        <div class="expert-callout-attr">&#8212; M.A., Roto-Rooter Owner &amp; Licensed Plumber &#183; Pacific Northwest</div>
+      </div>
+    </div>
+
+    <h2 id="symptom-map">Reading Your Symptoms: The Diagnostic Map</h2>
+
+    <p>The single most powerful diagnostic tool you have is counting how many fixtures are affected and observing how they interact. Here is how to interpret what you see.</p>
+
+    <table class="diag-table">
+      <thead>
+        <tr>
+          <th>What You're Seeing</th>
+          <th>Most Likely Location</th>
+          <th>Urgency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>One fixture drains slowly, no other symptoms</td>
+          <td>Local trap or nearby pipe section</td>
+          <td><span class="severity-dot dot-low"></span>Low &#8212; address soon</td>
+        </tr>
+        <tr>
+          <td>Multiple fixtures in same room slow or interact</td>
+          <td>Branch line restriction</td>
+          <td><span class="severity-dot dot-medium"></span>Moderate &#8212; professional clearing needed</td>
+        </tr>
+        <tr>
+          <td>Toilet bubbles when shower drains</td>
+          <td>Branch line restriction downstream of both</td>
+          <td><span class="severity-dot dot-medium"></span>Moderate &#8212; call a plumber</td>
+        </tr>
+        <tr>
+          <td>Gurgling across multiple floors or rooms</td>
+          <td>Main drain restriction or vent blockage</td>
+          <td><span class="severity-dot dot-high"></span>High &#8212; professional evaluation soon</td>
+        </tr>
+        <tr>
+          <td>Lowest fixtures backing up during laundry</td>
+          <td>Main drain or sewer line restriction</td>
+          <td><span class="severity-dot dot-high"></span>High &#8212; call today</td>
+        </tr>
+        <tr>
+          <td>Sewage backing into tub or basement floor drain</td>
+          <td>Main sewer line blockage or failure</td>
+          <td><span class="severity-dot dot-critical"></span>Critical &#8212; stop using water, call immediately</td>
+        </tr>
+        <tr>
+          <td>Sewer odors without slow drains</td>
+          <td>Dry trap, cracked vent, or failed air admittance valve</td>
+          <td><span class="severity-dot dot-medium"></span>Moderate &#8212; investigate promptly</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="fixture-level">Fixture-Level Problems</h2>
+
+    <p>Most drain issues start here. Bathroom sinks accumulate hair, soap residue, and personal care products. Showers and tubs collect hair mats and mineral deposits. Kitchen sinks deal with grease, food particles, and emulsified fats that cool and solidify on pipe walls.</p>
+
+    <p>The key diagnostic indicator for a fixture-level problem is simple: <strong>only one drain is affected</strong>. If flushing the toilet causes the shower to bubble, the problem is not at the fixture &#8212; it is downstream in the branch line. A fixture-level problem stays local. It does not cause other fixtures to react.</p>
+
+    <div class="callout-box tip">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">DIY-Friendly</div>
+        <div class="callout-text">Removing visible hair from shower drains, cleaning pop-up assemblies in bathroom sinks, and rinsing P-traps are safe homeowner tasks. A simple plastic hair-removal tool from any hardware store handles most shower clogs before they need a plumber.</div>
+      </div>
+    </div>
+
+    <h2 id="branch-lines">Branch Line Problems</h2>
+
+    <p>Branch lines connect groups of fixtures in the same area &#8212; a bathroom group (sink, toilet, tub), a kitchen group (sink and dishwasher), or a laundry group (washer and utility sink). When a branch line restricts, you will see symptoms across multiple fixtures in that group simultaneously.</p>
+
+    <p>In a bathroom, a branch restriction often causes the shower to drain slowly <em>and</em> the toilet to flush weakly <em>and</em> the sink to gurgle after use. Fixtures start interacting &#8212; flushing the toilet causes the shower drain to bubble because compressed air is forced through the nearest available trap. In a kitchen, grease buildup on branch line walls eventually causes the dishwasher to back up into the sink during drain cycles.</p>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar" style="background:#2a7a8c;">J.G.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert</div>
+        <div class="expert-callout-text">"Kitchen grease is patient. It coats the inside of the pipe a little bit at a time &#8212; every time you rinse a greasy pan, every dishwasher cycle. You won't notice it for years. Then one day the pipe diameter is half what it was and the dishwasher is backing into the sink. I've seen pipes that were supposed to be 3-inch lines with barely an inch of opening left."</div>
+        <div class="expert-callout-attr">&#8212; J.G., Licensed Plumber &#183; ~50 Years Experience</div>
+      </div>
+    </div>
+
+    <h2 id="main-drain">Main Drain and Sewer Line Problems</h2>
+
+    <p>When symptoms spread across the whole house &#8212; fixtures on different floors, in different rooms &#8212; the problem is in the main drain or the sewer line. This is the most serious category because the main drain carries the collective output of every fixture in your home. Even a partial blockage creates system-wide effects.</p>
+
+    <p>The most telling sign of main drain trouble is <strong>symptoms at the lowest fixtures first</strong>. Basement floor drains, first-floor tubs, and ground-floor toilets show trouble before upper floors because wastewater seeks the lowest exit point when it cannot move forward through a restricted line. A washing machine running while the dishwasher drains may be enough to overwhelm a partially blocked main drain.</p>
+
+    <p>Sewer line failures are the most severe scenario. Tree root intrusion is the leading cause in older neighborhoods &#8212; roots find cracks and joints in older clay and cast iron pipes and grow inward, forming dense networks that trap debris. Other causes include pipe collapse, corrosion, improper slope from soil settlement, and foreign objects. When the sewer line fails, sewage reverses and emerges from the lowest available opening in your home.</p>
+
+    <div class="callout-box danger">
+      <div class="callout-icon">&#128721;</div>
+      <div class="callout-content">
+        <div class="callout-label">Sewer Backup &#8212; Stop Using Water</div>
+        <div class="callout-text">If sewage is backing into your basement floor drain, tub, or toilet, stop using all water in the home immediately. Every flush and every drain makes the situation worse. Call a plumber now &#8212; this is not a wait-and-see situation.</div>
+      </div>
+    </div>
+
+    <h2 id="venting">Vent Problems &#8212; The Diagnosis People Miss</h2>
+
+    <p>Vent pipes exit through the roof and allow air to enter the drain system, keeping pressure balanced so water flows smoothly and traps stay full. When a vent is blocked &#8212; by leaves, ice, bird nests, or deteriorated piping &#8212; air cannot enter freely. The result looks exactly like a clog but behaves differently.</p>
+
+    <p>The diagnostic clue is that vent problems do not always correlate with usage volume. A single toilet flush can cause gurgling elsewhere when the vent system cannot equalize pressure fast enough. And unlike a grease buildup that gets worse over time, vent symptoms can fluctuate &#8212; better in summer, worse in winter when ice can partially seal a roof vent stack.</p>
+
+    <p>If you have widespread gurgling but no actual slow drains, suspect venting before assuming a main line restriction. A plumber can confirm with smoke testing &#8212; a harmless smoke is introduced into the system and any point where it escapes identifies the leak or blockage.</p>
+
+    <h2 id="severity">How Serious Is Your Situation?</h2>
+
+    <div class="severity-block">
+      <div class="severity-title">Drain Problem Severity Scale</div>
+      <div class="severity-row sev-low">
+        <div class="severity-label" style="color:#4caf50;">Low</div>
+        <div class="severity-bar-wrap"><div class="severity-bar"></div></div>
+        <div class="severity-desc">One slow fixture, no interaction</div>
+      </div>
+      <div class="severity-row sev-medium">
+        <div class="severity-label" style="color:var(--amber);">Moderate</div>
+        <div class="severity-bar-wrap"><div class="severity-bar"></div></div>
+        <div class="severity-desc">Branch line symptoms, fixture interaction</div>
+      </div>
+      <div class="severity-row sev-high">
+        <div class="severity-label" style="color:var(--rust);">High</div>
+        <div class="severity-bar-wrap"><div class="severity-bar"></div></div>
+        <div class="severity-desc">Whole-house symptoms, lowest drain backing up</div>
+      </div>
+      <div class="severity-row sev-critical">
+        <div class="severity-label" style="color:#c0392b;">Critical</div>
+        <div class="severity-bar-wrap"><div class="severity-bar"></div></div>
+        <div class="severity-desc">Sewage backup &#8212; stop all water use immediately</div>
+      </div>
+    </div>
+
+    <h2 id="homeowner-checks">What You Can Safely Check Yourself</h2>
+
+    <p>There is a useful set of diagnostic steps a homeowner can perform without opening drain lines or handling sewage.</p>
+
+    <p><strong>Count your affected fixtures.</strong> Run every drain in the house. Note which ones are slow and which are normal. This tells you immediately whether you have a fixture problem, a branch problem, or a system-wide problem.</p>
+
+    <p><strong>Observe fixture interactions.</strong> Flush the toilet and watch the shower drain. Run the sink and watch the toilet water level. If fixtures react to each other, the restriction is downstream of both of them.</p>
+
+    <p><strong>Check for dry traps.</strong> A floor drain in a rarely used bathroom or laundry room may emit sewer odors simply because the trap has dried out. Pour a cup of water into it. If the odor disappears, that was the problem.</p>
+
+    <p><strong>Remove hair from bathroom drains.</strong> A simple plastic drain snake tool &#8212; available for under $5 &#8212; removes hair accumulations from shower and tub drains. This handles a significant percentage of fixture-level bathroom clogs.</p>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Do Not Use Chemical Drain Cleaners</div>
+        <div class="callout-text">Chemical drain cleaners damage PVC and corrode metal pipes, harm septic systems, and create hazardous chemical reactions. They rarely clear deeper obstructions and frequently make the underlying condition worse. A professional drain cleaning costs less than the pipe damage chemicals can cause over time.</div>
+      </div>
+    </div>
+
+    <h2 id="diy-vs-pro">What You Can Handle vs. When to Call a Pro</h2>
+
+    <div class="diy-pro-block">
+      <div class="diy-card">
+        <div class="diy-card-head">
+          <div class="diy-badge diy">&#128296;</div>
+          <div class="diy-card-title">Safe to Handle Yourself</div>
+        </div>
+        <ul class="diy-list">
+          <li>Removing hair from bathroom drains with a plastic tool</li>
+          <li>Cleaning bathroom sink pop-up assemblies</li>
+          <li>Pouring water into dry floor drain traps</li>
+          <li>Using a plunger on a single slow toilet or sink</li>
+          <li>Observing and documenting symptom patterns</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-card-head">
+          <div class="diy-badge pro">&#9888;&#65039;</div>
+          <div class="diy-card-title">Call a Licensed Plumber</div>
+        </div>
+        <ul class="diy-list pro-list">
+          <li>Any symptoms involving more than one fixture</li>
+          <li>Kitchen drain clogs (grease contamination risk)</li>
+          <li>Any backup at a basement floor drain or tub</li>
+          <li>Persistent sewer odors that do not clear</li>
+          <li>Mechanical snaking, opening cleanouts, or camera inspection</li>
+          <li>Any suspected sewer line involvement</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="professional-tools">What a Professional Does</h2>
+
+    <p>Professional plumbers use tools and procedures that go far beyond what a homeowner can safely attempt. The most important is the <strong>camera inspection</strong> &#8212; a high-resolution camera fed into the line that shows root intrusion, scale buildup, pipe cracks, sagging sections, and joint misalignment in real time. It is the only way to know with certainty what is inside your pipes and whether the pipe is structurally sound after cleaning.</p>
+
+    <p><strong>Hydro-jetting</strong> is the professional standard for clearing serious buildup. Unlike snaking, which punches a hole through an obstruction, jetting uses high-pressure water to thoroughly scour pipe walls &#8212; removing hardened grease, mineral scale, and root systems. For older cast iron or severely scaled lines, a hydro-jet cleaning can add years to a pipe's functional life.</p>
+
+    <p><strong>Smoke testing</strong> identifies vent problems by introducing harmless smoke into the system. Any point where smoke escapes indicates a leak, improper connection, or cracked pipe. For intermittent sewer odors without slow drains, smoke testing is often the only reliable diagnostic method.</p>
+
+    <h2 id="repairs">Repair Options and What They Cost</h2>
+
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Typical Cost Range</th>
+          <th>When It's Needed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fixture-level clearing</td>
+          <td><span class="cost-badge">$75 &#8211; $300</span></td>
+          <td>Single slow fixture, trap or local pipe</td>
+        </tr>
+        <tr>
+          <td>Branch line cleaning</td>
+          <td><span class="cost-badge">$200 &#8211; $500</span></td>
+          <td>Multiple fixtures in one area slow or interacting</td>
+        </tr>
+        <tr>
+          <td>Main line snaking</td>
+          <td><span class="cost-badge">$200 &#8211; $500</span></td>
+          <td>Whole-house symptoms, main drain restriction</td>
+        </tr>
+        <tr>
+          <td>Hydro-jetting</td>
+          <td><span class="cost-badge">$400 &#8211; $900</span></td>
+          <td>Heavy grease, scale, root masses</td>
+        </tr>
+        <tr>
+          <td>Camera inspection</td>
+          <td><span class="cost-badge">$150 &#8211; $450</span></td>
+          <td>Recurring problems, before any sewer repair</td>
+        </tr>
+        <tr>
+          <td>Sewer spot repair</td>
+          <td><span class="cost-badge">$1,500 &#8211; $4,000</span></td>
+          <td>Localized crack, root intrusion, small collapse</td>
+        </tr>
+        <tr>
+          <td>Full sewer replacement</td>
+          <td><span class="cost-badge">$5,000 &#8211; $25,000+</span></td>
+          <td>Extensive damage, severe corrosion, slope failure</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box info">
+      <div class="callout-icon">&#128179;</div>
+      <div class="callout-content">
+        <div class="callout-label">Trenchless Options</div>
+        <div class="callout-text">Many sewer line repairs no longer require digging up your yard. Cured-in-place pipe (CIPP) lining installs a new seamless interior inside the existing pipe. Pipe bursting pulls new pipe into place by fracturing the old one outward. Ask your plumber whether trenchless methods are appropriate for your situation before approving excavation.</div>
+      </div>
+    </div>
+
+    <h2 id="prevention">Prevention: What Actually Works</h2>
+
+    <p>Most drain and sewer problems are preventable with consistent habits. In the kitchen, <strong>grease is the enemy</strong>. Scrape plates before rinsing, never pour cooking oil down the drain, and flush the kitchen drain with hot water after heavy cooking. Your garbage disposal is not a food waste system &#8212; limit what goes in and run it with plenty of water.</p>
+
+    <p>In bathrooms, <strong>hair catchers</strong> in showers and tubs are the single most effective prevention investment &#8212; a $5 tool that prevents $300 service calls. Only toilet paper should go down the toilet. Wipes, cotton products, and hygiene items &#8212; including those marketed as flushable &#8212; do not break down quickly and are one of the most common causes of sewer line blockages.</p>
+
+    <p>For older homes with cast iron, galvanized, or clay sewer lines, <strong>periodic camera inspections every 2&#8211;3 years</strong> are worth the cost. Early-stage root intrusion is inexpensive to clear. The same root mass two years later may require partial line replacement.</p>
+
+    <div class="callout-box tip">
+      <div class="callout-icon">&#127968;</div>
+      <div class="callout-content">
+        <div class="callout-label">Buying a Home?</div>
+        <div class="callout-text">Always get a sewer line camera inspection before closing. Sewer line repairs are among the most expensive surprises in homeownership &#8212; ranging from a few thousand to over $20,000. A pre-purchase inspection costs $150&#8211;$450 and can be used as a negotiating tool or a reason to walk away.</div>
+      </div>
+    </div>
+
+    <h2 id="scenarios">Real-World Scenarios and What They Mean</h2>
+
+    <h3>Toilet bubbles when the shower drains</h3>
+    <p>The shower sends water into a restricted branch line. As water navigates the restriction, it compresses air in the pipe. That air escapes through the nearest available trap &#8212; the toilet. This is a branch-level restriction, not a single-fixture problem, and it needs professional clearing.</p>
+
+    <h3>Dishwasher backs up into the kitchen sink</h3>
+    <p>Grease has narrowed the kitchen branch line. When the dishwasher discharges a surge of water, the restriction prevents forward flow and water reverses through the sink drain. Hydro-jetting is the most effective fix &#8212; snaking alone will not remove hardened grease from pipe walls.</p>
+
+    <h3>Basement floor drain overflows during laundry</h3>
+    <p>The washing machine's rapid discharge overwhelms a partially blocked main drain or sewer line. Water seeks the lowest exit point &#8212; the basement floor drain. This is a high-priority warning sign of downstream restriction. Do not ignore it.</p>
+
+    <h3>Gurgling throughout the house, but no actual backups yet</h3>
+    <p>This pattern indicates either a vent blockage or early-stage main drain restriction. The system is struggling to equalize pressure as water moves through. Professional evaluation now costs far less than waiting until it escalates.</p>
+
+    <h3>Sewer odors only on humid days or during storms</h3>
+    <p>Stormwater infiltrating damaged sewer lines increases system pressure and pushes gases backward through vents and drains. Seasonal odors that correlate with weather are a strong indicator of a cracked or deteriorated sewer line that needs camera inspection.</p>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Are flushable wipes actually safe to flush?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No. Despite marketing claims, flushable wipes do not break down quickly in drain systems. They accumulate in bends, joints, and low spots, forming dense mats that cause blockages. They are one of the most common causes of sewer line and branch line problems we see in the field. Only toilet paper should be flushed.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does my drain clog even though I'm careful about what goes down it?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Even with good habits, drains accumulate residue over time. Soap scum, minerals from hard water, and microscopic food particles gradually narrow pipe interiors. Older pipes &#8212; especially cast iron or galvanized &#8212; accumulate scale that accelerates the process. Periodic professional cleaning is the only long-term solution.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can sewer gases make people sick?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes. Hydrogen sulfide and methane are the primary gases in sewer systems. Low-level exposure causes headaches, nausea, and respiratory irritation. Higher concentrations can be more serious. Persistent sewer odors inside the home are not just unpleasant &#8212; they warrant professional evaluation for your family's health.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How do I know if I need a camera inspection?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Any recurring clog, multi-fixture slowdown, backup at lower-level fixtures, or persistent sewer odor warrants a camera inspection. It is also essential before any sewer repair &#8212; clearing a blockage without knowing the pipe's condition can result in paying for a cleaning on a pipe that actually needs replacement.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does water back up in the tub when I flush the toilet?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">The tub is typically the lowest fixture in a bathroom group. When the branch line has a restriction, the toilet flush displaces water and air that cannot move forward through the restricted section. The tub drain is the easiest outlet for that displaced material. This is a branch-level problem that needs professional clearing.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How often should a sewer line be inspected or cleaned?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Homes with mature trees, older pipe materials (clay, cast iron, Orangeburg), or a history of sewer issues should have the line camera-inspected every 2&#8211;3 years. Preventative jetting on the same schedule prevents buildup that leads to major blockages and keeps older pipes functional longer.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why do sewer odors appear during storms or heavy rain?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Stormwater can infiltrate damaged sewer lines through cracks and joints, increasing pressure within the system and forcing gases backward through home vents and drains. Storm-correlated sewer odors are a strong indicator of a cracked or deteriorated line that needs camera inspection.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What is the lifespan of different sewer pipe materials?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Clay pipes last 50&#8211;70 years. Cast iron runs 50&#8211;100 years depending on soil conditions and maintenance. Orangeburg pipe &#8212; common in mid-century homes &#8212; has a lifespan of only 30&#8211;50 years and frequently fails earlier. PVC and ABS, used in modern construction, are rated for 75+ years. If your home is over 50 years old, knowing your pipe material is important.</div>
+      </div>
+
+    </div>
+
+    <div class="safety-popout">
+      <h3>&#9888;&#65039; Critical Safety Warnings</h3>
+      <ul class="safety-list">
+        <li>Never handle or attempt to clean sewage backups without proper protective equipment &#8212; raw sewage contains bacteria, viruses, and pathogens that cause serious illness.</li>
+        <li>Never open a cleanout or drain line if you suspect a full sewer backup &#8212; pressurized sewage can discharge forcefully and contaminate large areas.</li>
+        <li>Never use a shop vacuum to remove sewage &#8212; it aerosolizes contaminated particles and spreads pathogens through the air.</li>
+        <li>Never use chemical drain cleaners &#8212; they damage pipes, harm septic systems, and create hazardous reactions when mixed with other substances.</li>
+        <li>If sewage is backing into your home, stop all water use immediately and call a licensed plumber &#8212; every flush makes the situation worse.</li>
+      </ul>
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>The number of affected fixtures tells you exactly where the problem is &#8212; one fixture is local, a room is branch-level, the whole house is main drain or sewer.</li>
+        <li>Fixtures that react to each other (toilet bubbles when shower drains) indicate a branch restriction downstream of both.</li>
+        <li>Backups at the lowest fixtures &#8212; basement floor drains, first-floor tubs &#8212; are the clearest sign of main drain or sewer line trouble.</li>
+        <li>Sewer odors without slow drains usually mean a dry trap, cracked vent, or failed air admittance valve &#8212; not a clog.</li>
+        <li>Never use chemical drain cleaners. Never handle sewage without proper protection.</li>
+        <li>A camera inspection before any sewer repair is not optional &#8212; it is how you avoid paying for a cleaning on a pipe that needs replacement.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="article-tag-pill">drain problems</a>
+      <a href="#" class="article-tag-pill">sewer line</a>
+      <a href="#" class="article-tag-pill">DWV system</a>
+      <a href="#" class="article-tag-pill">slow drain</a>
+      <a href="#" class="article-tag-pill">sewer backup</a>
+      <a href="#" class="article-tag-pill">hydro jetting</a>
+      <a href="#" class="article-tag-pill">camera inspection</a>
+      <a href="#" class="article-tag-pill">tree roots sewer</a>
+      <a href="#" class="article-tag-pill">plumbing diagnosis</a>
+      <a href="#" class="article-tag-pill">drain maintenance</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share this guide:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+
+  </div>
+
+  <div class="related">
+    <h3>More Plumbing Guides</h3>
+    <div class="related-grid">
+      <a href="breaker-tripping-guide.html" class="related-card">
+        <div class="related-img p">&#128268;</div>
+        <div class="related-body">
+          <span class="tag plumbing">Plumbing</span>
+          <div class="related-title">Why Your Water Pressure Drops When Someone Flushes</div>
+          <div class="related-meta">J.G. &#183; 8 min read</div>
+        </div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-img p">&#127777;&#65039;</div>
+        <div class="related-body">
+          <span class="tag plumbing">Plumbing</span>
+          <div class="related-title">Complete Water Heater Guide: Tank, Tankless &amp; Troubleshooting</div>
+          <div class="related-meta">J.G. &#183; 24 min read</div>
+        </div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-img m">&#128296;</div>
+        <div class="related-body">
+          <span class="tag" style="background:#3a6b3a;">Maintenance</span>
+          <div class="related-title">Annual Plumbing Maintenance: What to Check Every Year</div>
+          <div class="related-meta">M.A. &#183; 9 min read</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="sidebar-avatar">M.A.</div>
+      <div>
+        <div class="sidebar-expert-name">M.A.</div>
+        <div class="sidebar-expert-title">Roto-Rooter Owner &amp; Plumber</div>
+        <div class="sidebar-expert-bio">Owns and operates a Roto-Rooter franchise in the Pacific Northwest. Day-to-day work covers residential and commercial drain service, sewer line diagnosis, and water damage restoration.</div>
+        <div class="sidebar-creds">
+          <span class="cred-pill">Licensed Plumber</span>
+          <span class="cred-pill">Roto-Rooter Owner</span>
+          <span class="cred-pill">Water Restoration</span>
+          <span class="cred-pill">MBA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#how-it-works">How the DWV System Works</a></li>
+      <li><a href="#symptom-map">Reading Your Symptoms</a></li>
+      <li><a href="#fixture-level">Fixture-Level Problems</a></li>
+      <li><a href="#branch-lines">Branch Line Problems</a></li>
+      <li><a href="#main-drain">Main Drain &amp; Sewer Line</a></li>
+      <li><a href="#venting">Vent Problems</a></li>
+      <li><a href="#severity">How Serious Is It?</a></li>
+      <li><a href="#homeowner-checks">What You Can Check</a></li>
+      <li><a href="#diy-vs-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#repairs">Repair Costs</a></li>
+      <li><a href="#prevention">Prevention</a></li>
+      <li><a href="#scenarios">Real-World Scenarios</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free expert advice</h4>
+    <p>New plumbing guides and seasonal maintenance reminders from our licensed pros.</p>
+    <input type="email" class="sidebar-input" placeholder="Your email address">
+    <button class="sidebar-sub-btn">Subscribe Free</button>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>Most Read This Week</h4>
+    <div class="pop-list">
+      <a href="#" class="pop-item">
+        <div class="pop-num">01</div>
+        <div>
+          <div class="pop-title">Why Does My Circuit Breaker Keep Tripping?</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="#" class="pop-item">
+        <div class="pop-num">02</div>
+        <div>
+          <div class="pop-title">Foundation Cracks: Which Are Dangerous and Which Are Cosmetic</div>
+          <div class="pop-cat">Foundation &#183; C.M.</div>
+        </div>
+      </a>
+      <a href="#" class="pop-item">
+        <div class="pop-num">03</div>
+        <div>
+          <div class="pop-title">Why Your AC Runs but Doesn't Cool</div>
+          <div class="pop-cat">HVAC &#183; Expert Team</div>
+        </div>
+      </a>
+      <a href="#" class="pop-item">
+        <div class="pop-num">04</div>
+        <div>
+          <div class="pop-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="pop-cat">Maintenance &#183; T.A. &amp; M.A.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="#">Electrical &amp; Safety</a>
+    <a href="#">Heating &amp; Cooling</a>
+    <a href="#">Structure &amp; Foundation</a>
+    <a href="#">Home Maintenance</a>
+    <a href="#">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{
+      li.classList.remove('active');
+      if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
