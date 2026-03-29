@@ -948,6 +948,28 @@
     .category-grid { grid-template-columns: repeat(2, 1fr); }
     .topbar .topbar-links { display: none; }
   }
+
+  /* Mobile nav dropdown */
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: var(--white);
+    border-top: 1px solid var(--gray-light);
+    padding: 8px 0;
+    box-shadow: var(--shadow-soft);
+  }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav a {
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--gray-light);
+    transition: background 0.15s, color 0.15s;
+  }
+  .mobile-nav a:last-child { border-bottom: none; }
+  .mobile-nav a:hover { background: var(--cream); color: var(--rust); }
 </style>
 <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
 </head>
@@ -981,9 +1003,20 @@
       <a href="category-general-repair.html">General Repair</a>
       <a href="#" class="nav-cta">Free Newsletter</a>
     </nav>
-    <div class="hamburger" onclick="this.classList.toggle('open')">
+    <div class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
       <span></span><span></span><span></span>
     </div>
+  </div>
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="contact.html">Contact</a>
   </div>
 </header>
 
@@ -1028,7 +1061,7 @@
           <div class="hero-card-meta">
             <span><strong>J.G.</strong> · Licensed Plumber · ~50 yrs experience</span>
           </div>
-          <a href="#" class="read-link">Read the full guide →</a>
+          <a href="foundation-guide.html" class="read-link">Read the full guide →</a>
         </div>
       </div>
     </div>
@@ -1111,7 +1144,7 @@
         <div class="section-eyebrow">Latest Guides</div>
         <div class="section-title">Fresh from the experts</div>
       </div>
-      <a href="#" class="section-link">View all articles →</a>
+      <a href="category-plumbing.html" class="section-link">View all articles →</a>
     </div>
 
     <div class="articles-hero-grid">
@@ -1132,7 +1165,7 @@
       </a>
 
       <div class="articles-sidebar">
-        <a href="breaker-tripping-guide.html" class="article-card-sm">
+        <a href="drain-sewer-guide.html" class="article-card-sm">
           <div class="article-card-sm-img plumbing">🚰</div>
           <div class="article-card-sm-body">
             <span class="tag plumbing">Plumbing</span>
@@ -1199,14 +1232,14 @@
         <div class="section-eyebrow">Who's Behind the Advice</div>
         <div class="section-title">Real professionals. Real experience.</div>
       </div>
-      <a href="#" class="section-link" style="color:var(--amber);border-color:var(--amber);">Meet all our experts →</a>
+      <a href="about-experts.html" class="section-link" style="color:var(--amber);border-color:var(--amber);">Meet all our experts →</a>
     </div>
     <div class="experts-grid">
       <div class="expert-card">
         <div class="expert-avatar">M.A.</div>
         <div class="expert-name">M.A.</div>
         <div class="expert-title">Plumbing & Water Restoration</div>
-        <div class="expert-bio">Owner and operator of a Roto-Rooter Plumbing & Water Cleanup franchise in the Pacific Northwest. Background includes DoD test and evaluation program management and U.S. Air Force leadership — bringing the same precision and systematic thinking to diagnosing home plumbing and water damage issues.</div>
+        <div class="expert-bio">Owner and operator of a Roto-Rooter Plumbing & Water Cleanup franchise in Spokane Valley. Background includes DoD test and evaluation program management and U.S. Air Force leadership — bringing the same precision and systematic thinking to diagnosing home plumbing and water damage issues.</div>
         <div class="expert-credentials">
           <span class="credential-badge">Roto-Rooter Owner/Operator</span>
           <span class="credential-badge">Plumbing & Drain Systems</span>
@@ -1311,7 +1344,7 @@
         <div class="section-eyebrow">Flagship Resources</div>
         <div class="section-title">Our most comprehensive guides</div>
       </div>
-      <a href="#" class="section-link">Browse all guides →</a>
+      <a href="category-plumbing.html" class="section-link">Browse all guides →</a>
     </div>
     <div class="guides-grid">
       <a href="drain-sewer-guide.html" class="guide-card plumbing">
@@ -1325,8 +1358,8 @@
       <a href="breaker-tripping-guide.html" class="guide-card electrical">
         <div class="guide-icon">⚡</div>
         <div class="guide-content">
-          <div class="guide-title">Complete Guide to GFCI & AFCI Protection</div>
-          <div class="guide-desc">What every homeowner must know about circuit protection</div>
+          <div class="guide-title">Why Does My Circuit Breaker Keep Tripping?</div>
+          <div class="guide-desc">Every cause of breaker trips and exactly what to do about each one</div>
         </div>
         <div class="guide-arrow">→</div>
       </a>
@@ -1338,27 +1371,27 @@
         </div>
         <div class="guide-arrow">→</div>
       </a>
-      <a href="drain-sewer-guide.html" class="guide-card water">
-        <div class="guide-icon">🌊</div>
+      <a href="exterior-repair-guide.html" class="guide-card water">
+        <div class="guide-icon">🏠</div>
         <div class="guide-content">
-          <div class="guide-title">Complete Drain & Sewer Master Guide</div>
-          <div class="guide-desc">From slow drains to full sewer line diagnosis and solutions</div>
+          <div class="guide-title">The Complete Guide to Exterior Home Repairs</div>
+          <div class="guide-desc">Why exterior repairs keep failing — and how to stop the cycle</div>
         </div>
         <div class="guide-arrow">→</div>
       </a>
       <a href="hvac-guide.html" class="guide-card hvac">
         <div class="guide-icon">🌡️</div>
         <div class="guide-content">
-          <div class="guide-title">Complete Water Heater Guide</div>
-          <div class="guide-desc">Tank vs tankless, troubleshooting, maintenance, and replacement</div>
+          <div class="guide-title">The Complete HVAC Guide</div>
+          <div class="guide-desc">How your system works, what goes wrong, and how to fix it</div>
         </div>
         <div class="guide-arrow">→</div>
       </a>
       <a href="maintenance-guide.html" class="guide-card maintenance">
         <div class="guide-icon">🏠</div>
         <div class="guide-content">
-          <div class="guide-title">Complete Guide to Residential Structural Integrity</div>
-          <div class="guide-desc">Understanding your home's structure from foundation to roof</div>
+          <div class="guide-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="guide-desc">The framework professionals use to prevent expensive home failures</div>
         </div>
         <div class="guide-arrow">→</div>
       </a>
@@ -1402,9 +1435,9 @@
         <h4>Categories</h4>
         <ul class="footer-links">
           <li><a href="category-plumbing.html">Plumbing</a></li>
-          <li><a href="#">Electrical & Safety</a></li>
-          <li><a href="#">Heating & Cooling</a></li>
-          <li><a href="#">Structure & Foundation</a></li>
+          <li><a href="category-electrical.html">Electrical &amp; Safety</a></li>
+          <li><a href="category-hvac.html">Heating &amp; Cooling</a></li>
+          <li><a href="category-foundation.html">Structure &amp; Foundation</a></li>
           <li><a href="category-maintenance.html">Home Maintenance</a></li>
           <li><a href="category-general-repair.html">General Repair</a></li>
         </ul>
@@ -1412,12 +1445,12 @@
       <div class="footer-col">
         <h4>Resources</h4>
         <ul class="footer-links">
-          <li><a href="#">All Guides</a></li>
-          <li><a href="#">DIY vs Pro Tool</a></li>
-          <li><a href="#">Cost Estimators</a></li>
-          <li><a href="#">Safety Checklists</a></li>
-          <li><a href="#">Product Reviews</a></li>
-          <li><a href="#">Newsletter</a></li>
+          <li><a href="category-plumbing.html">All Guides</a></li>
+          <li><a href="how-we-verify.html">DIY vs Pro</a></li>
+          <li><a href="category-plumbing.html">Cost Guides</a></li>
+          <li><a href="category-electrical.html">Safety Guides</a></li>
+          <li><a href="category-maintenance.html">Maintenance</a></li>
+          <li><a href="about-experts.html">Newsletter</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -1426,8 +1459,8 @@
           <li><a href="about-site.html">About the Site</a></li>
           <li><a href="about-experts.html">Meet Our Experts</a></li>
           <li><a href="how-we-verify.html">How We Verify</a></li>
-          <li><a href="#">Advertise</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="contact.html">Advertise</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -1437,11 +1470,17 @@
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>
         <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
-        <a href="#">Accessibility</a>
+        <a href="contact.html">Accessibility</a>
       </div>
     </div>
   </div>
 </footer>
 
+<script>
+function toggleMobileMenu(){
+  document.getElementById('mobileNav').classList.toggle('open');
+  document.getElementById('hamburger').classList.toggle('open');
+}
+</script>
 </body>
 </html>
