@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Guide to Home Electrical Systems: How It All Works | HomeownersRepairGuide.com</title>
+<meta name="description" content="A certified fire inspector and licensed electrician explains your home's entire electrical system — from the utility connection through the panel, branch circuits, wiring types, failure modes, and how to diagnose every symptom safely.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--navy-light:#234468;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.15s;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .article-wrap{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+  .article-main{min-width:0;}
+  .article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;}
+  .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--amber);color:var(--navy);}
+  .tag.safety{background:#c0402a;color:var(--white);}
+  .tag.diagnosis{background:#1a5a9a;color:var(--white);}
+  .article-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);line-height:1.12;letter-spacing:-0.025em;margin-bottom:20px;}
+  .article-subtitle{font-size:18px;color:var(--text-muted);line-height:1.6;margin-bottom:28px;border-left:3px solid var(--amber);padding-left:16px;}
+  .article-byline{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:32px;}
+  .byline-avatar{width:48px;height:48px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);flex-shrink:0;}
+  .byline-info{flex:1;}
+  .byline-name{font-size:15px;font-weight:600;color:var(--text-dark);}
+  .byline-cred{font-size:12px;color:var(--text-muted);margin-top:2px;}
+  .byline-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:12px;color:var(--text-muted);text-align:right;}
+  .byline-meta strong{color:var(--text-dark);}
+  .article-hero-img{background:linear-gradient(135deg,#060810 0%,#0d1220 100%);border-radius:var(--radius-lg);height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:40px;gap:12px;border:1px solid var(--gray-light);position:relative;overflow:hidden;}
+  .article-hero-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 60% 50%,rgba(240,165,0,0.12) 0%,transparent 70%);}
+  .article-hero-img .img-icon{font-size:72px;opacity:0.45;position:relative;z-index:1;}
+  .article-hero-img .img-caption{font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;position:relative;z-index:1;}
+  .article-body{font-size:17px;line-height:1.75;color:var(--text-body);}
+  .article-body h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin:48px 0 16px;line-height:1.2;letter-spacing:-0.01em;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .article-body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy-mid);margin:32px 0 12px;line-height:1.25;}
+  .article-body p{margin-bottom:20px;}
+  .article-body ul,.article-body ol{margin:0 0 20px 0;padding-left:24px;}
+  .article-body li{margin-bottom:8px;}
+  .article-body strong{color:var(--text-dark);font-weight:600;}
+  .article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+  /* System flow diagram */
+  .system-flow{display:flex;align-items:stretch;gap:0;margin:28px 0;overflow-x:auto;}
+  .flow-step{background:var(--white);border:1px solid var(--gray-light);padding:18px 16px;flex:1;min-width:110px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;position:relative;}
+  .flow-step:first-child{border-radius:var(--radius-lg) 0 0 var(--radius-lg);}
+  .flow-step:last-child{border-radius:0 var(--radius-lg) var(--radius-lg) 0;}
+  .flow-step:not(:last-child)::after{content:'→';position:absolute;right:-14px;top:50%;transform:translateY(-50%);font-size:18px;color:var(--amber);z-index:1;font-weight:700;}
+  .flow-icon{font-size:24px;}
+  .flow-title{font-size:12px;font-weight:700;color:var(--navy);letter-spacing:0.04em;}
+  .flow-note{font-size:11px;color:var(--text-muted);line-height:1.4;}
+  /* Expert callout */
+  .expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0;display:flex;gap:18px;align-items:flex-start;}
+  .expert-callout-avatar{width:44px;height:44px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);flex-shrink:0;margin-top:2px;}
+  .expert-callout-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:6px;}
+  .expert-callout-text{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+  .expert-callout-attr{font-size:12px;color:rgba(255,255,255,0.45);margin-top:8px;}
+  /* Callout boxes */
+  .callout-box{border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+  .callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+  .callout-box.danger{background:#fef2f0;border:1px solid #e08070;}
+  .callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+  .callout-box.info{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .callout-icon{font-size:22px;flex-shrink:0;margin-top:1px;}
+  .callout-content{flex:1;}
+  .callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+  .callout-box.warning .callout-label{color:#b07800;}
+  .callout-box.danger .callout-label{color:#c0402a;}
+  .callout-box.tip .callout-label{color:#2a7a2a;}
+  .callout-box.info .callout-label{color:#1a5a9a;}
+  .callout-text{font-size:15px;line-height:1.6;color:var(--text-body);}
+  /* Wiring table */
+  .wiring-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .wiring-table th{background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .wiring-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .wiring-table tr:last-child td{border-bottom:none;}
+  .wiring-table tr:nth-child(even) td{background:var(--cream);}
+  .wiring-table td:first-child{font-weight:600;color:var(--text-dark);}
+  .status-good{color:#2a7a2a;font-weight:600;}
+  .status-watch{color:#b07800;font-weight:600;}
+  .status-bad{color:#c0402a;font-weight:600;}
+  /* Failure modes */
+  .failure-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:28px 0;}
+  .failure-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+  .failure-icon{font-size:24px;margin-bottom:8px;}
+  .failure-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .failure-trip{font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:2px;display:inline-block;margin-bottom:8px;}
+  .trip-instant{background:#fef2f0;color:#c0402a;}
+  .trip-delayed{background:#fff8e6;color:#b07800;}
+  .trip-random{background:#e8f0fb;color:#1a5a9a;}
+  .trip-none{background:#eaf5ea;color:#2a7a2a;}
+  .failure-desc{font-size:13px;color:var(--text-body);line-height:1.55;}
+  .failure-clues{font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.5;}
+  /* Symptom table */
+  .symptom-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .symptom-table th{background:var(--amber);color:var(--navy);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .symptom-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .symptom-table tr:last-child td{border-bottom:none;}
+  .symptom-table tr:nth-child(even) td{background:var(--cream);}
+  /* Severity */
+  .severity-block{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px;margin:36px 0;box-shadow:var(--shadow-card);}
+  .severity-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .severity-row{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;}
+  .severity-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:3px;}
+  .sev-low .severity-dot{background:#4caf50;}
+  .sev-medium .severity-dot{background:var(--amber);}
+  .sev-high .severity-dot{background:var(--rust);}
+  .sev-critical .severity-dot{background:#c0392b;}
+  .severity-label{font-size:13px;font-weight:700;width:130px;flex-shrink:0;}
+  .sev-low .severity-label{color:#4caf50;}
+  .sev-medium .severity-label{color:var(--amber);}
+  .sev-high .severity-label{color:var(--rust);}
+  .sev-critical .severity-label{color:#c0392b;}
+  .severity-content{flex:1;}
+  .severity-examples{font-size:13px;color:var(--text-body);line-height:1.55;}
+  /* Scenario cards */
+  .scenario-list{display:flex;flex-direction:column;gap:14px;margin:28px 0;}
+  .scenario-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px 24px;box-shadow:var(--shadow-card);display:flex;gap:16px;align-items:flex-start;}
+  .scenario-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:30px;}
+  .scenario-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:5px;line-height:1.3;}
+  .scenario-body{font-size:14px;color:var(--text-body);line-height:1.55;margin-bottom:6px;}
+  .scenario-action{font-size:13px;font-weight:600;color:var(--rust);}
+  /* Do/Don't */
+  .do-dont{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:28px 0;}
+  .do-card,.dont-card{border-radius:var(--radius-lg);padding:22px;border:1px solid;}
+  .do-card{background:#eaf5ea;border-color:#80c080;}
+  .dont-card{background:#fef2f0;border-color:#e08070;}
+  .do-card h4{font-size:14px;font-weight:700;color:#2a7a2a;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;}
+  .dont-card h4{font-size:14px;font-weight:700;color:#c0402a;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:14px;}
+  .do-list,.dont-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+  .do-list li,.dont-list li{font-size:14px;line-height:1.45;display:flex;align-items:flex-start;gap:8px;}
+  .do-list li::before{content:'\2713';color:#2a7a2a;font-weight:700;flex-shrink:0;}
+  .dont-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+  /* Annual checklist */
+  .checklist{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px 32px;margin:28px 0;box-shadow:var(--shadow-card);}
+  .checklist h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .checklist-section{margin-bottom:18px;}
+  .checklist-section:last-child{margin-bottom:0;}
+  .checklist-section h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dark);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--gray-light);}
+  .check-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+  .check-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-body);line-height:1.45;}
+  .check-list li::before{content:'';display:inline-block;width:16px;height:16px;border:2px solid var(--gray-mid);border-radius:3px;flex-shrink:0;margin-top:1px;}
+  /* Glossary */
+  .glossary-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:28px 0;}
+  .glossary-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;}
+  .glossary-term{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+  .glossary-def{font-size:13px;color:var(--text-muted);line-height:1.5;}
+  /* Safety popout */
+  .safety-popout{background:linear-gradient(135deg,#c0392b,#a93226);border-radius:var(--radius-lg);padding:28px 32px;margin:40px 0;}
+  .safety-popout h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:14px;}
+  .safety-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .safety-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(255,255,255,0.9);line-height:1.55;}
+  .safety-list li::before{content:'!';width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,0.2);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+  .safety-warn-title{font-weight:700;color:var(--white);display:block;margin-bottom:2px;}
+  /* Summary */
+  .summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px;margin:48px 0 36px;}
+  .summary-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .summary-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.55;}
+  .summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+  /* FAQ */
+  .faq-block{margin:36px 0;}
+  .faq-item{border-bottom:1px solid var(--gray-light);}
+  .faq-question{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font-size:16px;font-weight:600;color:var(--navy);gap:16px;user-select:none;}
+  .faq-question:hover{color:var(--amber);}
+  .faq-chevron{font-size:18px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+  .faq-answer{font-size:15px;color:var(--text-body);line-height:1.7;padding-bottom:18px;display:none;}
+  .faq-item.open .faq-answer{display:block;}
+  .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--amber);}
+  /* Tags & share */
+  .article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0;padding-top:32px;border-top:1px solid var(--gray-light);}
+  .article-tag-pill{font-size:12px;padding:5px 12px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+  .article-tag-pill:hover{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+  .share-bar{display:flex;align-items:center;gap:12px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:48px;flex-wrap:wrap;}
+  .share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+  .share-btn{padding:8px 16px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+  .share-btn:hover{opacity:0.85;}
+  .share-fb{background:#1877f2;color:white;}
+  .share-x{background:#000;color:white;}
+  .share-pin{background:#e60023;color:white;}
+  .share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+  /* Related */
+  .related{margin-top:48px;}
+  .related h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .related-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;}
+  .related-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+  .related-img{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px;}
+  .related-img.e{background:linear-gradient(135deg,#fff8e6,#faefd0);}
+  .related-img.m{background:linear-gradient(135deg,#eaf5ea,#d4ecd4);}
+  .related-body{padding:16px;}
+  .related-body .tag{font-size:10px;padding:3px 8px;margin-bottom:8px;}
+  .related-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:6px;}
+  .related-meta{font-size:11px;color:var(--text-muted);}
+  /* Sidebar */
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:24px;}
+  .sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .sidebar-card h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gray-light);}
+  .sidebar-expert{display:flex;gap:14px;align-items:flex-start;}
+  .sidebar-avatar{width:52px;height:52px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);flex-shrink:0;}
+  .sidebar-expert-name{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+  .sidebar-expert-title{font-size:12px;color:var(--amber);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
+  .sidebar-expert-bio{font-size:13px;color:var(--text-muted);line-height:1.55;}
+  .sidebar-creds{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;}
+  .cred-pill{font-size:10px;padding:3px 8px;background:var(--cream-dark);border-radius:2px;color:var(--text-muted);font-weight:600;}
+  .toc-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+  .toc-list li a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);text-decoration:none;padding:6px 8px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+  .toc-list li a:hover{background:var(--cream);color:var(--amber);}
+  .toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+  .toc-list li.active a{color:var(--amber);background:var(--cream);font-weight:600;}
+  .toc-list li.active a::before{background:var(--amber);width:6px;height:6px;}
+  .sidebar-newsletter{background:var(--amber);border-radius:var(--radius-lg);padding:24px;}
+  .sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+  .sidebar-newsletter p{font-size:13px;color:rgba(15,34,54,0.7);line-height:1.55;margin-bottom:16px;}
+  .ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:32px 16px;text-align:center;}
+  .ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:6px;}
+  .ad-placeholder .ad-size{font-size:13px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+  .pop-list{display:flex;flex-direction:column;gap:14px;}
+  .pop-item{display:flex;gap:12px;align-items:flex-start;text-decoration:none;}
+  .pop-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:28px;}
+  .pop-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.35;transition:color 0.15s;}
+  .pop-item:hover .pop-title{color:var(--amber);}
+  .pop-cat{font-size:11px;color:var(--text-muted);margin-top:3px;}
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:24px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+  @media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.related-grid{grid-template-columns:1fr 1fr;}.failure-grid{grid-template-columns:1fr;}.do-dont{grid-template-columns:1fr;}.glossary-grid{grid-template-columns:1fr;}.system-flow{flex-direction:column;}.flow-step{border-radius:0 !important;}.flow-step:not(:last-child)::after{content:'↓';right:50%;bottom:-14px;top:auto;transform:translateX(50%);}}
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.related-grid{grid-template-columns:1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">The Complete Guide to Home Electrical Systems</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Electrical</span>
+    <span class="tag safety">Safety</span>
+    <span class="tag diagnosis">Diagnosis</span>
+  </div>
+
+  <h1 class="article-title">The Complete Guide to Home Electrical Systems: How It All Works</h1>
+
+  <p class="article-subtitle">Most homeowners interact with electricity only through switches, outlets, and breakers. The wiring behind them is far more complex &#8212; and far more important &#8212; than it appears. A certified fire inspector and licensed electrician maps the entire system, explains every failure mode, and shows you exactly how to read what your home is telling you.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Certified Facility Manager &amp; Life Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 &#183; CHFM &#183; CLSS-HC &#183; OSHA 30 &#183; Electrician &#8212; All Phases</div>
+    </div>
+    <div class="byline-meta">
+      <span><strong>Updated:</strong> January 2025</span>
+      <span>32 min read &#183; Fact-verified</span>
+    </div>
+  </div>
+
+  <div class="article-hero-img">
+    <div class="img-icon">&#9889;</div>
+    <div class="img-caption">[Hero image &#8212; e.g. residential electrical panel with labeled breakers or wiring diagram]</div>
+  </div>
+
+  <div class="article-body">
+
+    <p>A healthy electrical system is quiet. No heat, no smell, no buzzing &#8212; just stable power everywhere you need it. When symptoms appear, they are never random. Every flicker, every trip, every warm outlet is the system communicating something specific about what is happening inside the walls.</p>
+
+    <p>The gap between homeowners who handle electrical problems well and those who end up with expensive, dangerous situations comes down to one thing: understanding how the system is structured. You cannot read symptoms accurately if you do not know what is upstream of what, why certain circuits behave differently, or why the same symptom in two different contexts means two completely different things.</p>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Before You Read Anything Else</div>
+        <div class="callout-text"><strong>If you see or smell burning, hear crackling, or a breaker trips instantly and will not reset &#8212; leave it OFF.</strong> Repeated reset attempts worsen arcing and heat damage. Warm outlets, buzzing, or any burning smell are stop-now conditions. Turn the circuit off and do not use it until a licensed electrician has inspected it.</div>
+      </div>
+    </div>
+
+    <h2 id="how-power-flows">How Power Flows Through Your Home</h2>
+
+    <p>Residential wiring is not just the cable in the walls. It is a complete system with multiple layers, each serving a specific purpose and each capable of failing in specific ways. Understanding the path power takes &#8212; and where it can go wrong at each step &#8212; is the foundation of every diagnostic decision.</p>
+
+    <div class="system-flow">
+      <div class="flow-step">
+        <div class="flow-icon">&#127981;</div>
+        <div class="flow-title">Utility</div>
+        <div class="flow-note">Power plant → transformer → your street</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">&#128268;</div>
+        <div class="flow-title">Service Drop</div>
+        <div class="flow-note">Overhead or underground to your meter</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">&#128267;</div>
+        <div class="flow-title">Meter</div>
+        <div class="flow-note">Always energized &#8212; never open this</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">&#9889;</div>
+        <div class="flow-title">Main Panel</div>
+        <div class="flow-note">Main breaker + branch circuit breakers</div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-icon">&#128161;</div>
+        <div class="flow-title">Branch Circuits</div>
+        <div class="flow-note">Wiring to outlets, lights, appliances</div>
+      </div>
+    </div>
+
+    <p>The meter and service conductors are upstream of your main breaker &#8212; meaning they remain energized even when everything inside your panel is off. This is why homeowners must never open service equipment. Your main breaker controls everything downstream of it. The utility controls everything upstream.</p>
+
+    <h3>Hot, Neutral, and Ground &#8212; the most confused topic in residential wiring</h3>
+
+    <p>These three conductors are not interchangeable, and confusing them is one of the most common sources of dangerous DIY mistakes.</p>
+
+    <ul>
+      <li><strong>Hot (black or red):</strong> Carries energy from the panel to the load. Always energized when the circuit is on.</li>
+      <li><strong>Neutral (white):</strong> The normal return path back to the panel. Carries current during normal operation. A loose neutral is dangerous &#8212; not just inconvenient.</li>
+      <li><strong>Equipment ground (bare or green):</strong> A safety path only. Should carry current only during a fault. Bonds metal enclosures so faults trip the breaker quickly.</li>
+    </ul>
+
+    <div class="callout-box danger">
+      <div class="callout-icon">&#128680;</div>
+      <div class="callout-content">
+        <div class="callout-label">Loose Neutral &#8212; Treat as Urgent</div>
+        <div class="callout-text">A loose neutral can cause symptoms that look random &#8212; flicker, lights brightening in one area when a heavy load starts elsewhere, electronics behaving strangely, multiple circuits acting abnormal simultaneously. This is not a minor issue. Neutral failures can damage equipment, create overheating, and cause fires. If you observe whole-home or multi-room brightness shifts or widespread flicker, call a licensed electrician promptly.</div>
+      </div>
+    </div>
+
+    <h2 id="wiring-types">What's Inside the Walls &#8212; Wiring Types and What They Mean</h2>
+
+    <p>Different eras and regions used different wiring methods. Knowing what you have is not just interesting trivia &#8212; it changes what symptoms mean, what repairs look like, and what risks to take seriously.</p>
+
+    <table class="wiring-table">
+      <thead>
+        <tr>
+          <th>Wiring Type</th>
+          <th>Era / Where Found</th>
+          <th>Key Characteristics</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>NM-B cable (Romex)</td>
+          <td>Modern wood-framed homes</td>
+          <td>Plastic-sheathed, for dry indoor locations; most common residential wiring today</td>
+          <td><span class="status-good">Standard</span></td>
+        </tr>
+        <tr>
+          <td>Conduit (EMT/PVC)</td>
+          <td>Basements, garages, commercial</td>
+          <td>Protects conductors; makes future wire pulls easier; required in many exposed locations</td>
+          <td><span class="status-good">Standard</span></td>
+        </tr>
+        <tr>
+          <td>Cloth-insulated cable</td>
+          <td>Pre-1950s homes</td>
+          <td>Insulation becomes brittle over decades of heat cycling; terminations may loosen</td>
+          <td><span class="status-watch">Monitor closely</span></td>
+        </tr>
+        <tr>
+          <td>Knob-and-tube</td>
+          <td>Pre-1940s</td>
+          <td>Ungrounded; incompatible with modern insulation; cannot be covered with insulation</td>
+          <td><span class="status-bad">Evaluate for replacement</span></td>
+        </tr>
+        <tr>
+          <td>Aluminum branch wiring</td>
+          <td>Mid-1960s to early 1970s</td>
+          <td>Safe only with correct CO/ALR-rated devices; prone to loose connections if treated like copper</td>
+          <td><span class="status-bad">Requires evaluation</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Wire Size and Breaker Size Are Paired &#8212; Never Upsize a Breaker</div>
+        <div class="callout-text">A 15-amp circuit uses 14 AWG copper. A 20-amp circuit uses 12 AWG copper. The breaker is chosen to protect the wire. If you install a larger breaker to stop nuisance trips, you allow the wire to overheat without tripping &#8212; one of the most common DIY fire setups. The fix is never a bigger breaker. The fix is finding why the circuit is tripping.</div>
+      </div>
+    </div>
+
+    <h2 id="circuit-types">Circuit Types &#8212; Why Different Rooms Behave Differently</h2>
+
+    <h3>General-purpose circuits</h3>
+    <p>These feed typical outlets and lights in living areas. Modern code requires AFCI protection for most of these circuits because many residential fires begin with arcing in cords, devices, or hidden splices in these spaces.</p>
+
+    <h3>Dedicated circuits</h3>
+    <p>Certain loads need their own circuit: refrigerators, microwaves, dishwashers, garbage disposals, washing machines, dryers, well pumps, HVAC equipment, and EV chargers. Dedicated circuits prevent nuisance trips from load stacking, reduce heat stress on wiring, and simplify troubleshooting dramatically &#8212; if the dedicated circuit trips, you immediately know which load to investigate.</p>
+
+    <h3>Kitchen small-appliance circuits</h3>
+    <p>Kitchen countertop receptacles are on 20-amp small-appliance circuits because kitchen loads are heavy and simultaneous. GFCI protection is required because water is present. Many jurisdictions now require both AFCI and GFCI for kitchens, met with dual-function breakers.</p>
+
+    <h3>Multi-wire branch circuits (MWBCs)</h3>
+    <p>An MWBC uses two hot conductors on opposite phases sharing one neutral. When installed correctly with a tied two-pole breaker, it works well. When the shared neutral loosens or someone modifies the wiring incorrectly, you can get severe voltage imbalance &#8212; lights brightening in one area while dimming in another, electronics failures, and flickering across rooms. If you suspect MWBC issues, do not continue DIY work. This requires professional evaluation.</p>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert</div>
+        <div class="expert-callout-text">"The pattern I see most often in older homes is MWBCs that were installed correctly but then modified incorrectly during a remodel or upgrade. Someone separated the circuits onto non-tied breakers, or moved both legs to the same phase. Now the shared neutral is carrying the combined current from two circuits instead of the difference. It overheats. The symptoms look random &#8212; flicker across rooms, electronics behaving oddly, mystery trips &#8212; because the homeowner doesn't know the circuit topology. That's why when I see multi-room flicker with opposite behavior in different areas, an MWBC issue is at the top of my list."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA Certified Fire Inspector &#183; Certified Healthcare Facility Manager &#183; Electrician &#8212; All Phases</div>
+      </div>
+    </div>
+
+    <h2 id="protection-devices">Protection Devices &#8212; What Each One Actually Does</h2>
+
+    <p>Standard breakers, GFCIs, AFCIs, and dual-function breakers all protect against different hazards. Understanding their distinct roles is essential to reading trip patterns correctly.</p>
+
+    <p><strong>Standard breakers</strong> have two protection modes. Thermal protection (delayed trip) responds to overloads &#8212; too much current for too long. The breaker warms and trips after seconds to minutes. Magnetic protection (instant trip) responds to large fault currents like short circuits. This timing difference is diagnostic gold: instant trips mean short or ground fault; delayed trips mean overload or heat buildup.</p>
+
+    <p><strong>GFCIs</strong> protect people from shock by detecting current imbalance between hot and neutral. Standard breakers do not protect against shock at the low current levels that can kill &#8212; GFCIs do.</p>
+
+    <p><strong>AFCIs</strong> protect against fire by detecting the waveform signatures of dangerous arcing &#8212; loose connections, damaged cords, deteriorating insulation. A breaker that does not trip and a GFCI that does not trip can both miss an arcing condition that an AFCI catches.</p>
+
+    <p><strong>Surge protective devices (SPDs)</strong> reduce damage from voltage spikes. They do not prevent outages and do not fix flicker from loose connections. For homes with significant electronics, EV chargers, or sensitive HVAC controls, a panel-mounted SPD is a practical upgrade.</p>
+
+    <h2 id="failure-modes">How Wiring Systems Fail &#8212; Every Failure Mode Explained</h2>
+
+    <div class="failure-grid">
+      <div class="failure-card">
+        <div class="failure-icon">&#128293;</div>
+        <div class="failure-title">Overload</div>
+        <span class="failure-trip trip-delayed">Delayed trip</span>
+        <div class="failure-desc">Too much current for the circuit's rated capacity. Space heaters, hair dryers, microwaves, and portable AC units on shared circuits are classic triggers.</div>
+        <div class="failure-clues">Clues: Warm cords, warm outlets, delayed breaker trips after minutes of use, circuit trips reliably under specific load combinations.</div>
+      </div>
+      <div class="failure-card">
+        <div class="failure-icon">&#9889;</div>
+        <div class="failure-title">Short Circuit</div>
+        <span class="failure-trip trip-instant">Instant trip</span>
+        <div class="failure-desc">Hot touches neutral or another hot conductor, creating a sudden surge of current. Occurs in damaged cords, pinched fixture wires, failed sockets, and DIY replacements where a conductor contacts metal.</div>
+        <div class="failure-clues">Clues: Breaker trips the instant a switch is turned on or a device is plugged in.</div>
+      </div>
+      <div class="failure-card">
+        <div class="failure-icon">&#128167;</div>
+        <div class="failure-title">Ground Fault</div>
+        <span class="failure-trip trip-instant">Instant trip (GFCI)</span>
+        <div class="failure-desc">Current leaves the intended path and flows through grounded metal, damp materials, or a person. Most common in wet locations, outdoor fixtures, and older appliances with degraded insulation.</div>
+        <div class="failure-clues">Clues: GFCI trips when a specific appliance runs, trips in wet weather, or trips in damp locations.</div>
+      </div>
+      <div class="failure-card">
+        <div class="failure-icon">&#128293;</div>
+        <div class="failure-title">High-Resistance Connection</div>
+        <span class="failure-trip trip-none">May not trip at all</span>
+        <div class="failure-desc">A loose termination or weak splice acts as a bottleneck. The circuit still works but the connection heats. Heat oxidizes the metal, increasing resistance, increasing heat &#8212; a feedback loop that ends in arcing or fire.</div>
+        <div class="failure-clues">Clues: Warm cover plates, flicker that changes when a switch is toggled, buzzing from a dimmer or receptacle under load, discoloration or faint burning smell.</div>
+      </div>
+      <div class="failure-card">
+        <div class="failure-icon">&#9889;</div>
+        <div class="failure-title">Arc Fault</div>
+        <span class="failure-trip trip-random">Random or load-triggered (AFCI)</span>
+        <div class="failure-desc">Damaged wiring, loose connections, or deteriorating insulation generates arcing that can ignite surrounding materials long before a standard breaker trips. Detected only by AFCIs.</div>
+        <div class="failure-clues">Clues: AFCI trips when specific appliances start, random trips at night with low load, crackling at switches or outlets.</div>
+      </div>
+      <div class="failure-card">
+        <div class="failure-icon">&#9888;&#65039;</div>
+        <div class="failure-title">Neutral Problem</div>
+        <span class="failure-trip trip-random">Irregular; may not trip</span>
+        <div class="failure-desc">A loose neutral &#8212; at a device box, junction box, panel, or service connection &#8212; creates an unstable return path. Voltage can rise on parts of the system while dropping elsewhere. Can damage electronics and create fire risk.</div>
+        <div class="failure-clues">Clues: Lights brighten in one area when heavy loads start elsewhere, opposite brightness behavior across rooms, widespread flicker, electronics rebooting when appliances cycle.</div>
+      </div>
+    </div>
+
+    <h2 id="symptom-diagnosis">Reading What Your Home Is Telling You</h2>
+
+    <p>The same symptom in different contexts means completely different things. Scope and timing are your two primary diagnostic tools. Define the scope first (one fixture, one room, multiple rooms, whole home), then look at timing (instant, delayed, weather-related, appliance-triggered). These two dimensions narrow the cause dramatically before anyone opens a panel.</p>
+
+    <table class="symptom-table">
+      <thead>
+        <tr>
+          <th>Symptom</th>
+          <th>Scope / Timing</th>
+          <th>Most Likely Cause</th>
+          <th>Urgency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Flickering lights</strong></td>
+          <td>One bulb</td>
+          <td>Failing LED driver, loose lamp socket contact, incompatible dimmer</td>
+          <td>Low — swap bulb and monitor</td>
+        </tr>
+        <tr>
+          <td><strong>Flickering lights</strong></td>
+          <td>One room or circuit</td>
+          <td>Loose splice in junction box, failing switch/dimmer, shared neutral within circuit</td>
+          <td>Schedule service</td>
+        </tr>
+        <tr>
+          <td><strong>Flickering lights</strong></td>
+          <td>Multiple rooms / whole home</td>
+          <td>Loose service or panel neutral, voltage sag from large loads, MWBC imbalance</td>
+          <td>Urgent &#8212; call electrician</td>
+        </tr>
+        <tr>
+          <td><strong>Breaker trips</strong></td>
+          <td>Instantly when switched on</td>
+          <td>Short circuit or ground fault in fixture, switch box, or cable</td>
+          <td>High &#8212; leave off, inspect</td>
+        </tr>
+        <tr>
+          <td><strong>Breaker trips</strong></td>
+          <td>After minutes of use</td>
+          <td>Overload, heat buildup, motor drawing elevated current</td>
+          <td>Reduce load; evaluate circuit</td>
+        </tr>
+        <tr>
+          <td><strong>Breaker trips</strong></td>
+          <td>Randomly, no clear cause</td>
+          <td>Loose termination, failing device, failing breaker/panel connection</td>
+          <td>Schedule service</td>
+        </tr>
+        <tr>
+          <td><strong>Breaker won't reset</strong></td>
+          <td>Any</td>
+          <td>Active fault still present; do not force it</td>
+          <td>High &#8212; leave off, call pro</td>
+        </tr>
+        <tr>
+          <td><strong>Warm outlet or switch plate</strong></td>
+          <td>Any</td>
+          <td>High-resistance connection, overloaded circuit, failing device</td>
+          <td>High &#8212; stop using, inspect</td>
+        </tr>
+        <tr>
+          <td><strong>Dead outlets in part of a room</strong></td>
+          <td>Breaker not tripped</td>
+          <td>Failed pass-through receptacle (back-stabbed), loose upstream splice</td>
+          <td>Schedule service</td>
+        </tr>
+        <tr>
+          <td><strong>Lights brighten opposite each other</strong></td>
+          <td>Different rooms/circuits</td>
+          <td>MWBC neutral imbalance &#8212; treat as urgent</td>
+          <td>Urgent &#8212; call electrician</td>
+        </tr>
+        <tr>
+          <td><strong>LEDs glow faintly when off</strong></td>
+          <td>Specific switch</td>
+          <td>Smart switch leaking current through load to power its electronics</td>
+          <td>Low &#8212; compatibility fix</td>
+        </tr>
+        <tr>
+          <td><strong>Burning smell or crackling</strong></td>
+          <td>Any</td>
+          <td>Arcing or overheating conductors &#8212; stop now</td>
+          <td>Emergency &#8212; turn off, evacuate</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="severity">Urgency Classification</h2>
+
+    <div class="severity-block">
+      <div class="severity-title">How to Classify What You're Seeing</div>
+      <div class="severity-row sev-low">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Monitor</div>
+        <div class="severity-content">
+          <div class="severity-examples">One LED bulb flickers and the issue follows the bulb to another fixture. One GFCI trips once and resets normally with no repeat. Breaker trips after clearly overloading a circuit and does not repeat after load reduction.</div>
+        </div>
+      </div>
+      <div class="severity-row sev-medium">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Schedule Service</div>
+        <div class="severity-content">
+          <div class="severity-examples">Repeated flicker in one room that doesn't follow the bulb. AFCI or GFCI trips that repeat with a specific device. Partial room outages pointing to upstream device failure. Flicker only when dimmers are at certain levels.</div>
+        </div>
+      </div>
+      <div class="severity-row sev-high">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Stop &amp; Call Today</div>
+        <div class="severity-content">
+          <div class="severity-examples">Warm outlets or switch plates. Repeated breaker trips with no clear load cause. Outdoor GFCI trips correlating with moisture. Any symptom that is worsening over days or weeks. AFCI trips randomly at night with minimal load.</div>
+        </div>
+      </div>
+      <div class="severity-row sev-critical">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Emergency</div>
+        <div class="severity-content">
+          <div class="severity-examples">Burning smell, smoke, crackling, or visible arcing. Breaker trips instantly and will not hold reset. Whole-home flicker or major brightness shifts when loads start. Water intrusion near electrical equipment. Lights brightening dramatically in opposite areas.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="scenarios">Real-World Scenarios</h2>
+
+    <div class="scenario-list">
+
+      <div class="scenario-card">
+        <div class="scenario-num">01</div>
+        <div>
+          <div class="scenario-title">Bedroom circuit trips at night after 10 minutes of space heater use</div>
+          <div class="scenario-body">The delayed timing is the key diagnostic clue — this is a thermal trip, which means overload. The circuit is doing more than it was rated for. A space heater alone can consume most of a 15-amp circuit's safe continuous capacity. Move the heater to a different circuit as a temporary fix. Long-term, the home likely needs a dedicated circuit for heating loads.</div>
+          <div class="scenario-action">Short-term: redistribute loads. Long-term: dedicated circuit. If the breaker is hot or trips under small loads, a weak breaker or poor bus connection may also be present.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-num">02</div>
+        <div>
+          <div class="scenario-title">Several recessed lights in a row went out but others in the same room still work</div>
+          <div class="scenario-body">Recessed lighting is almost always daisy-chained — one feeds the next. A single failed upstream connection kills everything downstream. Most likely causes: a failed splice in the first dead fixture's junction box, a loose connection at the last working fixture, or a thermal-protected recessed can that overheated and shut down. The breaker is still on because the fault is not a short — it's a loss of continuity.</div>
+          <div class="scenario-action">Check whether the first dead fixture is a thermal-protected can — allow it to cool, then try again. If that's not the issue, an electrician should trace the connection from the last working fixture forward.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-num">03</div>
+        <div>
+          <div class="scenario-title">Lights flicker across multiple rooms when the HVAC system starts</div>
+          <div class="scenario-body">This is a voltage sag event — the HVAC's motor draws high inrush current at startup, momentarily pulling the voltage down across the whole system. If it's brief and occurs only at startup, this is often normal. If it's getting worse over time, affects many rooms noticeably, or occurs with other appliances too, the issue is likely a weak or loose neutral connection at the panel or service entrance.</div>
+          <div class="scenario-action">Document scope and frequency. If the flicker is worsening or occurs with multiple appliance startups, call an electrician to evaluate panel and service neutral connections.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-num">04</div>
+        <div>
+          <div class="scenario-title">A breaker trips the instant a light switch is turned on</div>
+          <div class="scenario-body">Instant trip is the breaker's magnetic protection responding to a large fault current — a short circuit or ground fault. The problem is in the fixture, the switch box, or the cable between them. This often follows a recent light fixture replacement where a conductor was pinched or contacted a metal part of the fixture housing.</div>
+          <div class="scenario-action">Leave the breaker off. Do not reset repeatedly — each trip can worsen arc damage. Have the fixture and switch box inspected before restoring power.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-num">05</div>
+        <div>
+          <div class="scenario-title">Lights in two different rooms brighten and dim in opposite directions</div>
+          <div class="scenario-body">Classic MWBC neutral imbalance. When the shared neutral is loose or misrouted, voltage on one leg rises while the other drops. You see the exact behavior described: one set of lights gets brighter while another dims, simultaneously. This is a high-priority condition because voltage swings can damage electronics and the loose neutral itself is a heating point.</div>
+          <div class="scenario-action">Turn off sensitive electronics on both circuits. This is not a homeowner repair. Call a licensed electrician immediately.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-num">06</div>
+        <div>
+          <div class="scenario-title">One outlet is dead but the breaker isn't tripped</div>
+          <div class="scenario-body">The most common cause is a failed pass-through receptacle — an outlet that was used as a connection point to feed other outlets downstream. When the device fails (particularly common with back-stabbed connections where the wire was pushed into the back of the outlet rather than secured with a screw), everything it was feeding loses power even though the breaker is fine. Also check for a tripped GFCI upstream — often in another room.</div>
+          <div class="scenario-action">Press RESET on any GFCI outlets on the circuit, including in bathrooms, garage, kitchen, and exterior. If none are tripped, a failed pass-through receptacle is the likely cause.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-num">07</div>
+        <div>
+          <div class="scenario-title">Smart switch makes LED bulbs glow faintly when switched off</div>
+          <div class="scenario-body">Many smart switches without a neutral wire steal a tiny current through the light load to power their internal electronics. Some LED drivers interpret that small current as an "on" signal and produce a faint glow. This is a compatibility issue between the switch and the bulb/driver, not a wiring fault.</div>
+          <div class="scenario-action">Best fix: replace the smart switch with a neutral-required model and wire it correctly. Alternative: use LED bulbs or fixtures listed as compatible with the specific switch model. Some manufacturers offer a listed bypass device installed at the fixture.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-num">08</div>
+        <div>
+          <div class="scenario-title">AFCI trips randomly overnight with minimal load running</div>
+          <div class="scenario-body">Random nighttime AFCI trips with low load are one of the clearest indicators of loose wiring generating series arcs. The most common causes: a loose wire nut in a junction box, a loose terminal screw at an outlet or switch, or temperature-related movement of wiring inside the wall. These are real fire hazards — not nuisance trips.</div>
+          <div class="scenario-action">Turn the circuit off. Do not dismiss this as a "sensitive breaker." Have a licensed electrician inspect every outlet, switch, and accessible junction point on the circuit before restoring power.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 id="homeowner-safe">What You Can Safely Check &#8212; and What You Cannot</h2>
+
+    <div class="do-dont">
+      <div class="do-card">
+        <h4>&#10003; Safe Homeowner Actions</h4>
+        <ul class="do-list">
+          <li>Define scope &#8212; which rooms or fixtures are affected</li>
+          <li>Note timing &#8212; instant trip, delayed, weather-related, appliance-triggered</li>
+          <li>Reset a breaker once using the correct protocol: fully to OFF, then firmly to ON</li>
+          <li>Reset upstream GFCI devices that may be feeding dead outlets</li>
+          <li>Unplug devices to isolate plug-in loads; reconnect one at a time</li>
+          <li>Use a plug-in outlet tester to map where power stops</li>
+          <li>Inspect outdoor covers for cracking, moisture, or missing weather seals</li>
+          <li>Swap a bulb to determine whether flicker follows the bulb or stays at the fixture</li>
+          <li>Press TEST/RESET on GFCI outlets; replace any that fail to trip or reset</li>
+          <li>Document breaker positions and labels with photos</li>
+          <li>Note heat at cover plates with a light touch (dry hands)</li>
+        </ul>
+      </div>
+      <div class="dont-card">
+        <h4>&#10007; Do Not Attempt</h4>
+        <ul class="dont-list">
+          <li>Open the panel cover &#8212; portions remain live even with main breaker off</li>
+          <li>Replace a breaker with a larger amperage to stop nuisance trips</li>
+          <li>Keep resetting a breaker that trips instantly &#8212; each reset worsens arc damage</li>
+          <li>Bypass or replace tripping AFCI/GFCI with standard breakers</li>
+          <li>Remove devices from electrical boxes for inspection</li>
+          <li>Work in wet areas unless circuit is GFCI-protected and power is confirmed off</li>
+          <li>Bury splices outside of accessible junction boxes</li>
+          <li>Use extension cords or power strips as permanent wiring solutions</li>
+          <li>Ignore warm outlets, buzzing, or burning smells</li>
+          <li>Touch or work near service equipment (meter, service conductors)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="annual-checklist">The 30-Minute Annual Electrical Health Check</h2>
+
+    <p>You do not need to inspect wiring the way a professional does. But a quick systematic walk-through once or twice a year catches obvious risk signals early and creates a useful notes list for an electrician if needed. Everything below stays outside energized equipment &#8212; no covers removed, no devices pulled from boxes.</p>
+
+    <div class="checklist">
+      <h3>&#128203; Annual Electrical Health Check &#8212; Safe &amp; Non-Invasive</h3>
+      <div class="checklist-section">
+        <h4>Exterior &amp; Wet Locations First</h4>
+        <ul class="check-list">
+          <li>Press TEST and RESET on all outdoor, garage, bathroom, and basement GFCI outlets. Any that won't reset or trip immediately &#8212; leave off and schedule service.</li>
+          <li>Inspect outdoor outlet covers for cracked gaskets, missing weather seals, or visible corrosion</li>
+          <li>Check for any evidence of moisture inside exterior boxes or conduit entries</li>
+        </ul>
+      </div>
+      <div class="checklist-section">
+        <h4>Panel Buttons</h4>
+        <ul class="check-list">
+          <li>Test AFCI breakers using their built-in TEST button. Should trip and reset normally. If it won't reset, call an electrician before restoring power.</li>
+          <li>Scan the breaker directory &#8212; update any unlabeled or inaccurate labels you can verify</li>
+        </ul>
+      </div>
+      <div class="checklist-section">
+        <h4>Heat and Sound Checks</h4>
+        <ul class="check-list">
+          <li>With dry hands, lightly touch cover plates at frequently used outlets &#8212; especially kitchen, space heater circuits, and home office. Warm = schedule service. Hot = turn off immediately.</li>
+          <li>Listen at dimmers for buzzing, at receptacles for crackling, and at the panel for unusual humming that changes with load</li>
+        </ul>
+      </div>
+      <div class="checklist-section">
+        <h4>Visual Red Flags</h4>
+        <ul class="check-list">
+          <li>Discolored outlet or switch cover plates &#8212; yellowing or scorch marks near devices</li>
+          <li>Outlets that don't grip plugs firmly &#8212; loose contact creates heat and arcing; replace promptly</li>
+          <li>Damaged or brittle extension cords anywhere in regular use</li>
+          <li>Areas that rely permanently on power strips or extension cords &#8212; these need permanent receptacles or new circuits</li>
+        </ul>
+      </div>
+      <div class="checklist-section">
+        <h4>Patterns Worth Noting</h4>
+        <ul class="check-list">
+          <li>Flicker when HVAC or refrigerator starts &#8212; note frequency and scope</li>
+          <li>Frequent bulb failures in the same fixture &#8212; heat or voltage issue</li>
+          <li>Any tingling sensation at sinks, tubs, or appliances &#8212; report immediately</li>
+          <li>Breakers that have tripped more than once in the past year &#8212; note the pattern</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="upgrades">Upgrades That Reduce Problems Long-Term</h2>
+
+    <p>Many recurring electrical problems are not wiring defects &#8212; they are design mismatches between how the home was wired and how it is now used. Modern lifestyles put heavy, continuous demand on wiring layouts designed for a different era.</p>
+
+    <ul>
+      <li><strong>Dedicated circuits for high-demand loads:</strong> Space heaters, microwaves, portable AC units, home office equipment, and EV chargers should not share general-purpose circuits. Adding dedicated circuits reduces nuisance trips and heat stress on existing wiring.</li>
+      <li><strong>LED-compatible dimmers:</strong> Replacing incandescent-era dimmers with LED-rated models and setting minimum trim levels eliminates most LED flicker and driver failure issues.</li>
+      <li><strong>Neutral-required smart switches:</strong> Smart switches that steal current through the load cause LED glow-when-off problems. Switches wired to a neutral do not.</li>
+      <li><strong>Whole-home surge protection:</strong> A panel-mounted SPD protects electronics from transient voltage spikes from utility switching, nearby lightning, and load switching. Does not fix wiring defects, but reduces equipment damage from events it cannot control.</li>
+      <li><strong>Circuit mapping and labeling:</strong> Accurate panel labels are cheap and high-value. In an emergency, you need to shut off the right circuit quickly. Poor labels mean guessing &#8212; and in electrical emergencies, guessing costs time you don't have.</li>
+      <li><strong>Aluminum wiring remediation:</strong> Homes with aluminum branch circuits built in the mid-1960s to early 1970s need correct CO/ALR-rated devices or listed connectors at every termination. This is not optional maintenance &#8212; it is a safety requirement.</li>
+    </ul>
+
+    <h2 id="led-dimmers">The LED Flicker Problem &#8212; Wiring Issue or Compatibility Issue?</h2>
+
+    <p>A large number of reported "wiring problems" are actually control-device and LED-driver compatibility problems. Incandescent bulbs were tolerant of imperfect waveforms. LED drivers are not &#8212; they react instantly to small changes.</p>
+
+    <p>The test that separates a wiring problem from a compatibility problem is simple: if the flicker follows one bulb when you move it to another fixture, it is the bulb or driver. If the flicker stays at the original fixture regardless of bulb, it is the fixture, dimmer, or circuit. If flicker is synchronized across multiple rooms and correlates with appliance startup, it is a voltage sag or neutral issue &#8212; not a bulb problem.</p>
+
+    <h2 id="post-remodel">Why Problems Often Start Right After Remodels</h2>
+
+    <p>A surprising number of electrical problems begin after a lighting upgrade, kitchen remodel, or outlet swap. Not because the new device is bad &#8212; because the work disturbed older connections or changed how current returns through neutrals.</p>
+
+    <p>Common post-remodel problems: neutrals from different circuits tied together in a junction box; MWBC circuits separated onto non-tied breakers or moved to the same phase; overfilled boxes where splices are crammed and wire nuts come loose; incorrect dimmer selection (incandescent dimmer on LED loads); loose grounding conductors left disconnected during device changes.</p>
+
+    <p>If your symptoms started right after work was done &#8212; even professional work &#8212; say that up front when you call an electrician. It tells them exactly where to look first: the last modified boxes, new splices, and any neutral or ground connections that were touched.</p>
+
+    <h2 id="safety">Critical Safety Warnings</h2>
+
+    <div class="safety-popout">
+      <h3>&#9888;&#65039; Stop-Now Conditions &#8212; These Are Not Optional</h3>
+      <ul class="safety-list">
+        <li><span class="safety-warn-title">Burning smell, smoke, crackling, or visible arcing</span>Turn off the circuit at the breaker immediately. Do not restore power. Leave the building if the source is not identified quickly. Call a licensed electrician before re-energizing anything.</li>
+        <li><span class="safety-warn-title">Breaker that trips instantly and won't hold reset</span>Do not keep trying to reset it. An active fault is present. Leave it off. Repeated resets worsen arc and heat damage at the fault location.</li>
+        <li><span class="safety-warn-title">Warm or hot outlet or switch cover</span>Turn off the circuit. Do not continue using that outlet. This is a high-resistance connection generating heat &#8212; the precursor to arcing.</li>
+        <li><span class="safety-warn-title">Whole-home brightness shifts or widespread flicker</span>Treat as a potential neutral failure. Unplug sensitive electronics. Call a licensed electrician promptly. This condition can damage appliances and create fire risk.</li>
+        <li><span class="safety-warn-title">Any electrical problem in the presence of water</span>Do not re-energize any circuit near flooding, water intrusion, or wet equipment without professional evaluation.</li>
+      </ul>
+    </div>
+
+    <h2 id="glossary">Key Terms Reference</h2>
+
+    <div class="glossary-grid">
+      <div class="glossary-item">
+        <div class="glossary-term">AFCI</div>
+        <div class="glossary-def">Arc-Fault Circuit Interrupter. Detects arc patterns associated with fire risk and trips the circuit. Installed in the panel as a breaker.</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">GFCI</div>
+        <div class="glossary-def">Ground-Fault Circuit Interrupter. Trips quickly when current leaks to ground. Protects people from shock in wet and damp locations.</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">MWBC</div>
+        <div class="glossary-def">Multi-Wire Branch Circuit. Two hot conductors sharing one neutral. Requires correct breaker pairing and neutral integrity to operate safely.</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">High-resistance connection</div>
+        <div class="glossary-def">A loose or oxidized termination that heats under load. The circuit still works, but the connection can progress to arcing. The quiet fire starter.</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Voltage sag</div>
+        <div class="glossary-def">Temporary voltage drop when a large load starts. Shows up as brief LED flicker when HVAC, refrigerator, or other motor loads cycle on.</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Floating neutral</div>
+        <div class="glossary-def">A loose neutral creating an unstable return path. Can cause voltage to rise on one circuit while dropping on another. Whole-home symptoms warrant immediate professional evaluation.</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Dedicated circuit</div>
+        <div class="glossary-def">A circuit serving a single major load. Prevents overload, simplifies troubleshooting, and reduces heat stress on wiring.</div>
+      </div>
+      <div class="glossary-item">
+        <div class="glossary-term">Bonding</div>
+        <div class="glossary-def">Connecting metal components to share the same electrical potential. Ensures fault current has a low-resistance path that trips the breaker quickly.</div>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is flickering always dangerous?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Not always. One LED bulb flickering at a specific fixture can simply be a failing driver or a compatibility issue with the dimmer. But flicker across multiple fixtures or rooms — especially with brightness shifts in opposite directions — can indicate loose connections or neutral instability, which is hazardous. Use scope and timing to decide urgency: one bulb is low priority; whole-home brightness shifts are a call-today condition.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Do breakers protect me from shock?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Standard breakers do not. They protect wiring from overheating and respond to large fault currents — but they do not trip reliably at the small current levels that can injure or kill a person. GFCI protection is the primary shock defense in residential systems. The absence of a tripped breaker does not mean a circuit is safe.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does my breaker trip the instant I turn on a light?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Instant trips are the breaker's magnetic protection responding to a large fault current — a short circuit or ground fault. The problem is in the fixture, switch box, or cable. Leave the breaker off. Do not keep resetting it — each attempt can worsen arc damage at the fault location. Have the circuit inspected before restoring power.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can a bad breaker cause flickering lights?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Usually not — flickering is far more commonly caused by loose connections, neutral issues, or voltage sag from motor loads. Breaker-related flicker can happen if the breaker is making poor contact to the panel bus, but that's a panel service issue that requires a licensed electrician. Don't start by assuming the breaker is the problem.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What is a floating neutral and why is it dangerous?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A floating (loose) neutral is an unstable return path. Voltage can rise dramatically on one part of the system while dropping on another, which can damage electronics and create serious overheating risks. In a 240V system, a loose neutral can cause one half to run at much higher than normal voltage. Whole-home symptoms — especially lights brightening and dimming in opposite directions — warrant immediate professional evaluation.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Should I replace a nuisance-tripping AFCI breaker?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Sometimes the breaker itself is the issue, but more often it is detecting a real arcing condition or reacting to noise from failing electronics. Isolate loads first: unplug everything on the circuit and see if it stays on. If it trips with no loads connected, you have a wiring problem — not a breaker problem. Have an electrician evaluate wiring and the breaker before simply swapping the device.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why do some outlets feel loose when I plug things in?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Receptacle contact springs wear over time. Loose contact creates heat and arcing at the connection point — this is a common fire-starting failure mode. Replace the receptacle promptly. This is one of the few device-level repairs within homeowner capability when done correctly with the circuit de-energized and verified with a non-contact voltage tester.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can rodents cause electrical problems?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes — and this is an underappreciated hazard. Rodents chew through insulation, exposing conductors that can contact each other or the grounded metal of enclosures. Chewed insulation creates intermittent arcing that AFCIs may detect before any other symptom is visible. If you have unexplained AFCI trips and suspect rodent activity, professional inspection of accessible wiring and attic/crawlspace areas is important.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Do I need a panel upgrade to add an EV charger?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Often yes, depending on existing service capacity and available spaces. Level 2 EV chargers are a continuous 40–50 amp load, which is significant. A load calculation by a licensed electrician determines whether your current service can support the addition. If the panel is already near capacity or has no available spaces, a service upgrade is typically part of the project.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What should I do after a power surge or outage?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Reset clocks, check GFCIs and AFCIs, and observe any changes to flicker, buzzing, or device heat over the following days. Surges can weaken LED drivers and damage electronics in ways that don't show up immediately. If you notice new symptoms after a significant event — particularly flicker that wasn't there before — don't ignore it. The surge may have degraded connections that were already marginal.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>A healthy electrical system is quiet. Heat, smell, buzzing, flickering, and pattern-based failures are the system communicating stress, degradation, or misuse.</li>
+        <li>Scope and timing are your two primary diagnostic tools. One bulb flickering and whole-home brightness shifts are completely different problems that require completely different responses.</li>
+        <li>Instant breaker trips mean short or ground fault. Delayed trips mean overload or heat buildup. Random trips mean loose connections or failing components.</li>
+        <li>Multi-room flicker or lights that brighten and dim in opposite directions is a neutral problem until proven otherwise. Treat it as urgent.</li>
+        <li>Standard breakers protect wiring. GFCI protects people. AFCI protects against fire. All three are different devices doing different jobs. None replaces the others.</li>
+        <li>The panel is not homeowner territory. Leave it off and call a licensed electrician when the problem involves heat, burning smell, crackling, instant trips that won't hold, or any whole-home instability.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="article-tag-pill">home electrical system</a>
+      <a href="#" class="article-tag-pill">circuit breaker</a>
+      <a href="#" class="article-tag-pill">electrical wiring</a>
+      <a href="#" class="article-tag-pill">flickering lights</a>
+      <a href="#" class="article-tag-pill">electrical panel</a>
+      <a href="#" class="article-tag-pill">GFCI AFCI</a>
+      <a href="#" class="article-tag-pill">loose neutral</a>
+      <a href="#" class="article-tag-pill">aluminum wiring</a>
+      <a href="#" class="article-tag-pill">electrical safety</a>
+      <a href="#" class="article-tag-pill">home wiring diagnosis</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share this guide:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+
+  </div>
+
+  <div class="related">
+    <h3>More Electrical &amp; Safety Guides</h3>
+    <div class="related-grid">
+      <a href="breaker-tripping-guide.html" class="related-card">
+        <div class="related-img e">&#9889;</div>
+        <div class="related-body">
+          <span class="tag">Electrical</span>
+          <div class="related-title">Why Does My Circuit Breaker Keep Tripping?</div>
+          <div class="related-meta">T.A. &#183; 28 min read</div>
+        </div>
+      </a>
+      <a href="gfci-afci-guide.html" class="related-card">
+        <div class="related-img e">&#128268;</div>
+        <div class="related-body">
+          <span class="tag">Electrical</span>
+          <div class="related-title">The Complete Guide to GFCI &amp; AFCI Protection</div>
+          <div class="related-meta">T.A. &#183; 28 min read</div>
+        </div>
+      </a>
+      <a href="maintenance-guide.html" class="related-card">
+        <div class="related-img m">&#128296;</div>
+        <div class="related-body">
+          <span class="tag" style="background:#3a6b3a;color:white;">Maintenance</span>
+          <div class="related-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="related-meta">T.A. &amp; M.A. &#183; 28 min read</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="sidebar-avatar">T.A.</div>
+      <div>
+        <div class="sidebar-expert-name">T.A.</div>
+        <div class="sidebar-expert-title">Fire Inspector &amp; Facility Manager</div>
+        <div class="sidebar-expert-bio">NFPA Certified Fire Inspector and Certified Healthcare Facility Manager. Electrician-trained with decades of experience managing complex electrical systems across hospitals, commercial buildings, and residential properties.</div>
+        <div class="sidebar-creds">
+          <span class="cred-pill">NFPA CFI-1</span>
+          <span class="cred-pill">CHFM</span>
+          <span class="cred-pill">CLSS-HC</span>
+          <span class="cred-pill">OSHA 30</span>
+          <span class="cred-pill">Electrician</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#how-power-flows">How Power Flows</a></li>
+      <li><a href="#wiring-types">Wiring Types</a></li>
+      <li><a href="#circuit-types">Circuit Types</a></li>
+      <li><a href="#protection-devices">Protection Devices</a></li>
+      <li><a href="#failure-modes">How Systems Fail</a></li>
+      <li><a href="#symptom-diagnosis">Symptom Diagnosis</a></li>
+      <li><a href="#severity">Urgency Classification</a></li>
+      <li><a href="#scenarios">Real-World Scenarios</a></li>
+      <li><a href="#homeowner-safe">What You Can Check</a></li>
+      <li><a href="#annual-checklist">Annual Health Check</a></li>
+      <li><a href="#upgrades">Smart Upgrades</a></li>
+      <li><a href="#led-dimmers">LED &amp; Dimmer Issues</a></li>
+      <li><a href="#post-remodel">Post-Remodel Problems</a></li>
+      <li><a href="#safety">Safety Warnings</a></li>
+      <li><a href="#glossary">Key Terms</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free expert advice</h4>
+    <p>Electrical safety guides and seasonal maintenance reminders from our certified fire inspector.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0px;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>Most Read This Week</h4>
+    <div class="pop-list">
+      <a href="breaker-tripping-guide.html" class="pop-item">
+        <div class="pop-num">01</div>
+        <div>
+          <div class="pop-title">Why Does My Circuit Breaker Keep Tripping?</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="gfci-afci-guide.html" class="pop-item">
+        <div class="pop-num">02</div>
+        <div>
+          <div class="pop-title">The Complete Guide to GFCI &amp; AFCI Protection</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="foundation-guide.html" class="pop-item">
+        <div class="pop-num">03</div>
+        <div>
+          <div class="pop-title">Foundation Damage: What Every Crack Is Telling You</div>
+          <div class="pop-cat">Foundation &#183; C.M.</div>
+        </div>
+      </a>
+      <a href="maintenance-guide.html" class="pop-item">
+        <div class="pop-num">04</div>
+        <div>
+          <div class="pop-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="pop-cat">Maintenance &#183; T.A. &amp; M.A.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{
+      li.classList.remove('active');
+      if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
