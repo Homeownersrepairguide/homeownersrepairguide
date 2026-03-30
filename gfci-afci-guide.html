@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Guide to GFCI & AFCI Protection: Safety, Diagnostics & Troubleshooting | HomeownersRepairGuide.com</title>
+<meta name="description" content="A certified fire inspector and licensed electrician explains exactly what GFCI and AFCI devices do, why they trip, how to diagnose every pattern, and when to stop troubleshooting and call a pro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--navy-light:#234468;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.15s;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .article-wrap{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+  .article-main{min-width:0;}
+  .article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;}
+  .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--amber);color:var(--navy);}
+  .tag.electrical{background:var(--amber);color:var(--navy);}
+  .tag.safety{background:#c0402a;color:var(--white);}
+  .tag.diagnosis{background:#1a5a9a;color:var(--white);}
+  .article-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);line-height:1.12;letter-spacing:-0.025em;margin-bottom:20px;}
+  .article-subtitle{font-size:18px;color:var(--text-muted);line-height:1.6;margin-bottom:28px;border-left:3px solid var(--amber);padding-left:16px;}
+  .article-byline{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:32px;}
+  .byline-avatar{width:48px;height:48px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);flex-shrink:0;}
+  .byline-info{flex:1;}
+  .byline-name{font-size:15px;font-weight:600;color:var(--text-dark);}
+  .byline-cred{font-size:12px;color:var(--text-muted);margin-top:2px;}
+  .byline-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:12px;color:var(--text-muted);text-align:right;}
+  .byline-meta strong{color:var(--text-dark);}
+  .article-hero-img{background:linear-gradient(135deg,#0a0a14 0%,#121228 100%);border-radius:var(--radius-lg);height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:40px;gap:12px;border:1px solid var(--gray-light);position:relative;overflow:hidden;}
+  .article-hero-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 70% 50%,rgba(240,165,0,0.15) 0%,transparent 65%);}
+  .article-hero-img .img-icon{font-size:72px;opacity:0.5;position:relative;z-index:1;}
+  .article-hero-img .img-caption{font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;position:relative;z-index:1;}
+  .article-body{font-size:17px;line-height:1.75;color:var(--text-body);}
+  .article-body h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin:48px 0 16px;line-height:1.2;letter-spacing:-0.01em;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .article-body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy-mid);margin:32px 0 12px;line-height:1.25;}
+  .article-body p{margin-bottom:20px;}
+  .article-body ul,.article-body ol{margin:0 0 20px 0;padding-left:24px;}
+  .article-body li{margin-bottom:8px;}
+  .article-body strong{color:var(--text-dark);font-weight:600;}
+  .article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+  /* Quick summary cards */
+  .quick-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:28px 0;}
+  .quick-card{border-radius:var(--radius-lg);padding:24px;border:1px solid var(--gray-light);}
+  .quick-card.gfci{background:linear-gradient(135deg,#fff8e6,#fffaed);border-color:#f0c040;}
+  .quick-card.afci{background:linear-gradient(135deg,#fef2f0,#fdf5f4);border-color:#e08070;}
+  .quick-card.dual{background:linear-gradient(135deg,#e8f0fb,#eef4fc);border-color:#90b0d8;grid-column:1/-1;}
+  .quick-card-icon{font-size:28px;margin-bottom:10px;}
+  .quick-card-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .quick-card-subtitle{font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;}
+  .quick-card.gfci .quick-card-subtitle{color:#b07800;}
+  .quick-card.afci .quick-card-subtitle{color:#c0402a;}
+  .quick-card.dual .quick-card-subtitle{color:#1a5a9a;}
+  .quick-list{list-style:none;display:flex;flex-direction:column;gap:6px;}
+  .quick-list li{display:flex;align-items:flex-start;gap:8px;font-size:14px;color:var(--text-body);line-height:1.45;}
+  .quick-list li::before{content:'•';font-weight:700;flex-shrink:0;}
+  .quick-card.gfci .quick-list li::before{color:#b07800;}
+  .quick-card.afci .quick-list li::before{color:#c0402a;}
+  .quick-card.dual .quick-list li::before{color:#1a5a9a;}
+  /* Expert callout */
+  .expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0;display:flex;gap:18px;align-items:flex-start;}
+  .expert-callout-avatar{width:44px;height:44px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);flex-shrink:0;margin-top:2px;}
+  .expert-callout-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:6px;}
+  .expert-callout-text{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+  .expert-callout-attr{font-size:12px;color:rgba(255,255,255,0.45);margin-top:8px;}
+  /* Callout boxes */
+  .callout-box{border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+  .callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+  .callout-box.danger{background:#fef2f0;border:1px solid #e08070;}
+  .callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+  .callout-box.info{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .callout-icon{font-size:22px;flex-shrink:0;margin-top:1px;}
+  .callout-content{flex:1;}
+  .callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+  .callout-box.warning .callout-label{color:#b07800;}
+  .callout-box.danger .callout-label{color:#c0402a;}
+  .callout-box.tip .callout-label{color:#2a7a2a;}
+  .callout-box.info .callout-label{color:#1a5a9a;}
+  .callout-text{font-size:15px;line-height:1.6;color:var(--text-body);}
+  /* Comparison table */
+  .comp-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .comp-table th{background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .comp-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .comp-table tr:last-child td{border-bottom:none;}
+  .comp-table tr:nth-child(even) td{background:var(--cream);}
+  .comp-table td:first-child{font-weight:600;color:var(--text-dark);}
+  /* Trip pattern table */
+  .trip-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .trip-table th{background:var(--amber);color:var(--navy);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .trip-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .trip-table tr:last-child td{border-bottom:none;}
+  .trip-table tr:nth-child(even) td{background:var(--cream);}
+  /* Location table */
+  .loc-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .loc-table th{background:#2a4a2a;color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .loc-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;background:var(--white);}
+  .loc-table tr:last-child td{border-bottom:none;}
+  .loc-table tr:nth-child(even) td{background:var(--cream);}
+  .yes{color:#2a7a2a;font-weight:700;}
+  .no{color:var(--text-muted);}
+  .sometimes{color:#b07800;font-weight:600;}
+  /* Cost table */
+  .cost-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .cost-table th{background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;}
+  .cost-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);background:var(--white);vertical-align:top;}
+  .cost-table tr:last-child td{border-bottom:none;}
+  .cost-table tr:nth-child(even) td{background:var(--cream);}
+  .cost-badge{font-family:'DM Mono',monospace;font-size:13px;font-weight:600;color:var(--navy);}
+  /* Severity */
+  .severity-block{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px;margin:36px 0;box-shadow:var(--shadow-card);}
+  .severity-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .severity-row{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+  .severity-label{font-size:13px;font-weight:600;width:120px;flex-shrink:0;}
+  .severity-bar-wrap{flex:1;height:10px;background:var(--gray-light);border-radius:5px;overflow:hidden;}
+  .severity-bar{height:100%;border-radius:5px;}
+  .sev-low .severity-bar{width:25%;background:#4caf50;}
+  .sev-medium .severity-bar{width:55%;background:var(--amber);}
+  .sev-high .severity-bar{width:82%;background:var(--rust);}
+  .sev-critical .severity-bar{width:100%;background:#c0392b;}
+  .severity-desc{font-size:12px;color:var(--text-muted);width:230px;flex-shrink:0;text-align:right;}
+  /* Scenario cards */
+  .scenario-list{display:flex;flex-direction:column;gap:16px;margin:28px 0;}
+  .scenario-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:22px 24px;box-shadow:var(--shadow-card);}
+  .scenario-header{display:flex;gap:14px;align-items:flex-start;margin-bottom:12px;}
+  .scenario-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:30px;}
+  .scenario-title{font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;}
+  .scenario-device{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:2px 8px;border-radius:2px;display:inline-block;margin-top:4px;}
+  .scenario-device.gfci{background:#fff8e6;color:#b07800;}
+  .scenario-device.afci{background:#fef2f0;color:#c0402a;}
+  .scenario-device.both{background:#e8f0fb;color:#1a5a9a;}
+  .scenario-cause{font-size:14px;color:var(--text-body);line-height:1.55;margin-bottom:8px;}
+  .scenario-action{font-size:13px;font-weight:600;color:var(--rust);}
+  /* DIY vs Pro */
+  .diy-pro-block{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:36px 0;}
+  .diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .diy-card-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+  .diy-badge{width:40px;height:40px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+  .diy-badge.diy{background:#e8f5e9;}
+  .diy-badge.pro{background:#fff3e0;}
+  .diy-card-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);}
+  .diy-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .diy-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-body);line-height:1.5;}
+  .diy-list li::before{content:'\2713';width:18px;height:18px;border-radius:50%;background:#e8f5e9;color:#2e7d32;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+  .pro-list li::before{content:'!';background:#fff3e0;color:#e65100;}
+  /* Safety popout */
+  .safety-popout{background:linear-gradient(135deg,#c0392b,#a93226);border-radius:var(--radius-lg);padding:28px 32px;margin:40px 0;}
+  .safety-popout h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:14px;}
+  .safety-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .safety-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(255,255,255,0.9);line-height:1.55;}
+  .safety-list li::before{content:'!';width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,0.2);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+  .safety-warn-title{font-weight:700;color:var(--white);display:block;margin-bottom:2px;}
+  /* Diagnostic steps */
+  .diag-steps{display:flex;flex-direction:column;gap:0;margin:28px 0;}
+  .diag-step{display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--gray-light);}
+  .diag-step:last-child{border-bottom:none;}
+  .diag-step-num{width:36px;height:36px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);flex-shrink:0;margin-top:2px;}
+  .diag-step-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .diag-step-body{font-size:14px;color:var(--text-body);line-height:1.6;}
+  .diag-step-stop{font-size:13px;font-weight:700;color:#c0402a;margin-top:8px;}
+  /* FAQ */
+  .faq-block{margin:36px 0;}
+  .faq-item{border-bottom:1px solid var(--gray-light);}
+  .faq-question{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font-size:16px;font-weight:600;color:var(--navy);gap:16px;user-select:none;}
+  .faq-question:hover{color:var(--amber);}
+  .faq-chevron{font-size:18px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+  .faq-answer{font-size:15px;color:var(--text-body);line-height:1.7;padding-bottom:18px;display:none;}
+  .faq-item.open .faq-answer{display:block;}
+  .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--amber);}
+  /* Summary */
+  .summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px;margin:48px 0 36px;}
+  .summary-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .summary-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.55;}
+  .summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+  /* Tags & share */
+  .article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0;padding-top:32px;border-top:1px solid var(--gray-light);}
+  .article-tag-pill{font-size:12px;padding:5px 12px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+  .article-tag-pill:hover{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+  .share-bar{display:flex;align-items:center;gap:12px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:48px;flex-wrap:wrap;}
+  .share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+  .share-btn{padding:8px 16px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+  .share-btn:hover{opacity:0.85;}
+  .share-fb{background:#1877f2;color:white;}
+  .share-x{background:#000;color:white;}
+  .share-pin{background:#e60023;color:white;}
+  .share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+  /* Related */
+  .related{margin-top:48px;}
+  .related h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .related-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;}
+  .related-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+  .related-img{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px;}
+  .related-img.e{background:linear-gradient(135deg,#fff8e6,#faefd0);}
+  .related-img.m{background:linear-gradient(135deg,#eaf5ea,#d4ecd4);}
+  .related-body{padding:16px;}
+  .related-body .tag{font-size:10px;padding:3px 8px;margin-bottom:8px;}
+  .related-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:6px;}
+  .related-meta{font-size:11px;color:var(--text-muted);}
+  /* Sidebar */
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:24px;}
+  .sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .sidebar-card h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gray-light);}
+  .sidebar-expert{display:flex;gap:14px;align-items:flex-start;}
+  .sidebar-avatar{width:52px;height:52px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);flex-shrink:0;}
+  .sidebar-expert-name{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+  .sidebar-expert-title{font-size:12px;color:var(--amber);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
+  .sidebar-expert-bio{font-size:13px;color:var(--text-muted);line-height:1.55;}
+  .sidebar-creds{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;}
+  .cred-pill{font-size:10px;padding:3px 8px;background:var(--cream-dark);border-radius:2px;color:var(--text-muted);font-weight:600;}
+  .toc-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+  .toc-list li a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);text-decoration:none;padding:6px 8px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+  .toc-list li a:hover{background:var(--cream);color:var(--amber);}
+  .toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+  .toc-list li.active a{color:var(--amber);background:var(--cream);font-weight:600;}
+  .toc-list li.active a::before{background:var(--amber);width:6px;height:6px;}
+  .sidebar-newsletter{background:var(--amber);border-radius:var(--radius-lg);padding:24px;}
+  .sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+  .sidebar-newsletter p{font-size:13px;color:rgba(15,34,54,0.7);line-height:1.55;margin-bottom:16px;}
+  .sidebar-input{width:100%;padding:11px 14px;border:2px solid rgba(15,34,54,0.2);border-radius:var(--radius);background:rgba(255,255,255,0.5);color:var(--navy);font-size:14px;font-family:'DM Sans',sans-serif;outline:none;margin-bottom:10px;}
+  .sidebar-input::placeholder{color:rgba(15,34,54,0.4);}
+  .sidebar-input:focus{border-color:var(--navy);background:var(--white);}
+  .sidebar-sub-btn{width:100%;padding:11px;background:var(--navy);color:var(--white);border:none;border-radius:var(--radius);font-size:14px;font-weight:700;font-family:'DM Sans',sans-serif;cursor:pointer;}
+  .sidebar-sub-btn:hover{background:var(--navy-light);}
+  .ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:32px 16px;text-align:center;}
+  .ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:6px;}
+  .ad-placeholder .ad-size{font-size:13px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+  .pop-list{display:flex;flex-direction:column;gap:14px;}
+  .pop-item{display:flex;gap:12px;align-items:flex-start;text-decoration:none;}
+  .pop-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:28px;}
+  .pop-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.35;transition:color 0.15s;}
+  .pop-item:hover .pop-title{color:var(--amber);}
+  .pop-cat{font-size:11px;color:var(--text-muted);margin-top:3px;}
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:24px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+  @media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.related-grid{grid-template-columns:1fr 1fr;}.diy-pro-block{grid-template-columns:1fr;}.quick-cards{grid-template-columns:1fr;}.quick-card.dual{grid-column:1;}}
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.related-grid{grid-template-columns:1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">The Complete Guide to GFCI &amp; AFCI Protection</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag electrical">Electrical</span>
+    <span class="tag safety">Safety</span>
+    <span class="tag diagnosis">Diagnosis</span>
+  </div>
+
+  <h1 class="article-title">The Complete Guide to GFCI &amp; AFCI Protection: Safety, Diagnostics &amp; Troubleshooting</h1>
+
+  <p class="article-subtitle">GFCIs and AFCIs are the two most important &#8212; and most misunderstood &#8212; safety devices in your home's electrical system. A certified fire inspector and licensed electrician explains what each one does, why they trip, and exactly how to diagnose every pattern.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Certified Facility Manager &amp; Life Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 &#183; CHFM &#183; CLSS-HC &#183; OSHA 30 &#183; Electrician &#8212; All Phases</div>
+    </div>
+    <div class="byline-meta">
+      <span><strong>Updated:</strong> January 2025</span>
+      <span>28 min read &#183; Fact-verified</span>
+    </div>
+  </div>
+
+  <div class="article-hero-img">
+    <div class="img-icon">&#9889;</div>
+    <div class="img-caption">[Hero image &#8212; e.g. GFCI outlet with TEST/RESET buttons or electrical panel with AFCI breakers]</div>
+  </div>
+
+  <div class="article-body">
+
+    <p>Most homeowners treat GFCI and AFCI devices as annoyances &#8212; things that trip at inconvenient times and need to be reset. That is exactly backwards. These are the devices that stand between your family and two of the most dangerous electrical failures in residential buildings: shock and fire.</p>
+
+    <p>They serve completely different purposes, detect completely different hazards, and require completely different diagnostic approaches when they trip. Confusing them &#8212; or assuming any trip is a "nuisance" &#8212; is one of the most common and costly mistakes homeowners make with their electrical systems.</p>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">The Most Important Principle in This Guide</div>
+        <div class="callout-text"><strong>Repeated trips are rarely the device's fault.</strong> In the vast majority of cases, a GFCI or AFCI that trips repeatedly is detecting a real hazard &#8212; moisture, a failing appliance, damaged wiring, or a loose connection. Replacing the device without diagnosing the cause leaves the hazard in place.</div>
+      </div>
+    </div>
+
+    <h2 id="at-a-glance">GFCI vs. AFCI vs. Dual-Function &#8212; At a Glance</h2>
+
+    <div class="quick-cards">
+      <div class="quick-card gfci">
+        <div class="quick-card-icon">&#128167;</div>
+        <div class="quick-card-title">GFCI Protection</div>
+        <div class="quick-card-subtitle">Shock Protection &#183; Protects People</div>
+        <ul class="quick-list">
+          <li>Detects current imbalance between hot and neutral wires</li>
+          <li>Trips in 1/30th of a second at just 4&#8211;6 milliamps of leakage</li>
+          <li>Required in kitchens, bathrooms, garages, outdoors, basements, laundry</li>
+          <li>Installed as receptacles (outlets with TEST/RESET buttons) or breakers</li>
+          <li>One GFCI outlet can protect multiple downstream outlets on the same circuit</li>
+        </ul>
+      </div>
+      <div class="quick-card afci">
+        <div class="quick-card-icon">&#128293;</div>
+        <div class="quick-card-title">AFCI Protection</div>
+        <div class="quick-card-subtitle">Fire Protection &#183; Protects Homes</div>
+        <ul class="quick-list">
+          <li>Detects abnormal arcing signatures in electrical waveforms</li>
+          <li>Uses digital signal processing &#8212; not simple current measurement</li>
+          <li>Required in bedrooms, living rooms, hallways, closets, laundry, most general circuits</li>
+          <li>Almost always installed as breakers in the electrical panel</li>
+          <li>Expanding requirements &#8212; newer homes need AFCI on most 15A and 20A circuits</li>
+        </ul>
+      </div>
+      <div class="quick-card dual">
+        <div class="quick-card-icon">&#9889;</div>
+        <div class="quick-card-title">Dual-Function Breakers &#8212; Both in One</div>
+        <div class="quick-card-subtitle">Shock + Fire Protection &#183; Used in New Construction and Upgrades</div>
+        <ul class="quick-list">
+          <li>Combines GFCI and AFCI protection in a single panel breaker</li>
+          <li>Increasingly required by code in most new construction and panel upgrades</li>
+          <li>Higher cost ($60&#8211;$120) but simplifies compliance considerably</li>
+          <li>Slightly harder to diagnose which protection type triggered a trip</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="how-gfci-works">How GFCI Protection Works</h2>
+
+    <p>A GFCI constantly monitors the difference between current flowing out on the hot wire and current returning on the neutral wire. Under normal conditions, these should be identical. If as little as <strong>4&#8211;6 milliamps</strong> goes missing &#8212; flowing instead through a person, a puddle, or any unintended path &#8212; the GFCI interprets it as a ground fault and cuts power in under 30 milliseconds.</p>
+
+    <p>That response time matters. A standard circuit breaker protects wiring &#8212; it trips at amperage levels far too high to protect a person. By the time a breaker responds, serious injury or death can occur. A GFCI responds at current levels the human body can survive &#8212; but only if it trips fast enough. At 4&#8211;6 mA, the body feels a shock but survives. At higher currents without GFCI protection, the outcome is different.</p>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert</div>
+        <div class="expert-callout-text">"I've inspected a lot of buildings &#8212; hospitals, commercial properties, residential. The pattern I see with GFCIs is homeowners treating them like light switches they have to reset. They don't ask why it tripped. They just push the button and move on. But a GFCI that trips repeatedly in the same location is telling you something specific: there is current going somewhere it shouldn't. That somewhere is often through water, a failing appliance, or degraded insulation. It is not a malfunction. It is the system working exactly as designed."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA Certified Fire Inspector &#183; Certified Healthcare Facility Manager &#183; Electrician &#8212; All Phases</div>
+      </div>
+    </div>
+
+    <h2 id="where-required">Where Each Device Is Required</h2>
+
+    <table class="loc-table">
+      <thead>
+        <tr>
+          <th>Location</th>
+          <th>GFCI Required</th>
+          <th>AFCI Required</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bathrooms</td>
+          <td><span class="yes">Yes</span></td>
+          <td><span class="no">No</span></td>
+          <td>All receptacles</td>
+        </tr>
+        <tr>
+          <td>Kitchens &#8212; countertop</td>
+          <td><span class="yes">Yes</span></td>
+          <td><span class="sometimes">Often</span></td>
+          <td>Code depends on jurisdiction and NEC edition</td>
+        </tr>
+        <tr>
+          <td>Bedrooms</td>
+          <td><span class="no">Usually no</span></td>
+          <td><span class="yes">Yes</span></td>
+          <td>AFCI protects sleeping areas from arc-induced fire</td>
+        </tr>
+        <tr>
+          <td>Garages</td>
+          <td><span class="yes">Yes</span></td>
+          <td><span class="sometimes">Sometimes</span></td>
+          <td>Moisture exposure makes GFCI essential</td>
+        </tr>
+        <tr>
+          <td>Outdoors</td>
+          <td><span class="yes">Yes</span></td>
+          <td><span class="no">No</span></td>
+          <td>Must be weather-resistant GFCI receptacles</td>
+        </tr>
+        <tr>
+          <td>Unfinished basements</td>
+          <td><span class="yes">Yes</span></td>
+          <td><span class="sometimes">Often</span></td>
+          <td>Damp environment requires GFCI</td>
+        </tr>
+        <tr>
+          <td>Laundry areas</td>
+          <td><span class="yes">Yes</span></td>
+          <td><span class="sometimes">Often</span></td>
+          <td>Both frequently required in modern code</td>
+        </tr>
+        <tr>
+          <td>Living rooms, hallways</td>
+          <td><span class="no">No</span></td>
+          <td><span class="yes">Yes</span></td>
+          <td>AFCI coverage expanding in newer code editions</td>
+        </tr>
+        <tr>
+          <td>Pool and spa equipment</td>
+          <td><span class="yes">Yes</span></td>
+          <td><span class="no">No</span></td>
+          <td>Strict GFCI requirements; specialized installation</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box info">
+      <div class="callout-icon">&#128203;</div>
+      <div class="callout-content">
+        <div class="callout-label">A Note on Code Requirements</div>
+        <div class="callout-text">The National Electrical Code updates every three years and each state may adopt different editions. Requirements listed here reflect common NEC applications. Your jurisdiction may require more or less protection depending on which code edition it has adopted. When in doubt, consult a licensed electrician familiar with your local code.</div>
+      </div>
+    </div>
+
+    <h2 id="how-afci-works">How AFCI Protection Works &#8212; and Why It's Different</h2>
+
+    <p>Where GFCIs measure current imbalance &#8212; a straightforward comparison &#8212; AFCIs do something far more sophisticated. They monitor the <strong>electrical waveform signature</strong> of the circuit in real time and use digital signal processing to distinguish between normal electrical noise and the specific signatures produced by dangerous arcs.</p>
+
+    <p>There are two types of arc fault. A <strong>parallel arc</strong> occurs between the hot and neutral (or hot and ground) conductors &#8212; essentially a tiny sustained lightning bolt. A <strong>series arc</strong> occurs along a single conductor at a point where it is damaged or has a loose connection &#8212; behaving more like a glowing resistive gap that generates intense heat without triggering a breaker. Both are fire risks. Neither would be detected by a standard breaker or a GFCI.</p>
+
+    <p>This is why AFCIs are the code requirement specifically for living spaces where wiring runs inside walls and behind finishes for decades, subject to nail punctures, rodent damage, staple compression, age, and thermal cycling. The wiring in a 30-year-old bedroom wall has endured an enormous amount of stress that may not be visible &#8212; but an AFCI can detect it when it begins to arc.</p>
+
+    <h2 id="trip-patterns">Reading Trip Patterns &#8212; The Diagnostic Key</h2>
+
+    <p>The timing and context of a trip is your most valuable diagnostic tool. The pattern of when and how a device trips almost always points directly to the cause.</p>
+
+    <table class="trip-table">
+      <thead>
+        <tr>
+          <th>Symptom Pattern</th>
+          <th>Device</th>
+          <th>Most Likely Cause</th>
+          <th>Urgency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Trips during or after rain</td>
+          <td>GFCI</td>
+          <td>Moisture intrusion in outdoor box or conduit &#8212; device is working correctly</td>
+          <td>Inspect and seal; not urgent unless persistent</td>
+        </tr>
+        <tr>
+          <td>Trips when specific appliance plugged in</td>
+          <td>GFCI</td>
+          <td>Appliance is developing internal leakage &#8212; motor, heating element, or cord</td>
+          <td>Replace or repair appliance</td>
+        </tr>
+        <tr>
+          <td>Won't reset at all, even with nothing plugged in</td>
+          <td>GFCI</td>
+          <td>No upstream power, line/load miswiring, active ground fault, or device failure</td>
+          <td>Call electrician if wiring is suspected</td>
+        </tr>
+        <tr>
+          <td>Trips immediately when breaker is turned on</td>
+          <td>AFCI</td>
+          <td>Damaged wiring, pinched cable, miswired circuit, or shared neutral problem</td>
+          <td>High priority &#8212; call electrician</td>
+        </tr>
+        <tr>
+          <td>Trips when vacuum, hair dryer, or treadmill starts</td>
+          <td>AFCI</td>
+          <td>Motor brush arcing &#8212; may be normal on older appliances or indicate appliance deterioration</td>
+          <td>Test on non-AFCI circuit; replace if old</td>
+        </tr>
+        <tr>
+          <td>Trips randomly with no load change</td>
+          <td>AFCI</td>
+          <td>Loose wire connections, aging wiring insulation, or rodent damage &#8212; real hazard</td>
+          <td>Turn off circuit; call electrician</td>
+        </tr>
+        <tr>
+          <td>Trips when light switch is flipped</td>
+          <td>AFCI</td>
+          <td>Loose switch terminal or backstabbed wiring creating series arc</td>
+          <td>Professional inspection required</td>
+        </tr>
+        <tr>
+          <td>Trips with no clear trigger on dual-function breaker</td>
+          <td>Both</td>
+          <td>Either ground fault or arc fault &#8212; isolate loads first, then inspect wiring</td>
+          <td>Follow GFCI isolation logic first</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="gfci-diagnostic">Diagnosing a GFCI Problem &#8212; Step by Step</h2>
+
+    <p>GFCI troubleshooting follows a specific sequence. Work through these steps in order before concluding the device has failed.</p>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="diag-step-num">1</div>
+        <div>
+          <div class="diag-step-title">Check whether the GFCI has upstream power</div>
+          <div class="diag-step-body">A GFCI cannot reset without power on its LINE terminals. Check whether the breaker feeding this circuit has tripped. Also check whether there is another GFCI upstream — in many homes, one GFCI outlet protects several downstream outlets that look like normal outlets. Find and reset any upstream devices first.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">2</div>
+        <div>
+          <div class="diag-step-title">Remove all connected loads and try to reset</div>
+          <div class="diag-step-body">Unplug every device from every outlet on this circuit. Attempt to reset the GFCI with nothing connected. If it resets cleanly with no load, a downstream appliance, cord, or outlet is the source of the ground fault.</div>
+          <div class="diag-step-body">Reconnect devices one at a time, resetting between each. The device that causes the trip is leaking current. That device needs repair or replacement — not the GFCI.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">3</div>
+        <div>
+          <div class="diag-step-title">Check for moisture in outdoor or damp locations</div>
+          <div class="diag-step-body">Water is the most common cause of unexplained or intermittent GFCI trips. Inspect the outlet cover and box for moisture. Check whether sprinklers are hitting the outlet, whether condensation has formed inside conduit, or whether the in-use cover is damaged. A GFCI tripping because of moisture is working correctly — the moisture is the hazard, not the device.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">4</div>
+        <div>
+          <div class="diag-step-title">Consider appliance leakage on older equipment</div>
+          <div class="diag-step-body">Refrigerators, freezers, pool pumps, pressure washers, treadmills, and space heaters all develop internal leakage as they age. If a specific appliance consistently triggers the GFCI — especially one that has motors or heating elements — the appliance is likely the source. Test it: plug it into a non-GFCI outlet. If it works there but trips the GFCI, the appliance is leaking current.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">5</div>
+        <div>
+          <div class="diag-step-title">Evaluate the GFCI device itself</div>
+          <div class="diag-step-body">GFCIs have a service life — typically 7 to 10 years in harsh environments, 10 to 15 years indoors. Signs of device failure: the RESET button pops immediately with nothing connected, the device feels unusually warm, the TEST button fails to trip the device, or the device will not stay reset under any condition. If these symptoms appear after completing the prior steps, replace the device.</div>
+          <div class="diag-step-body">Also consider line/load miswiring — a GFCI that appears powered but refuses to reset is often wired with LINE and LOAD terminals reversed. This is an installation error requiring professional correction.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">6</div>
+        <div>
+          <div class="diag-step-title">Stop and call an electrician</div>
+          <div class="diag-step-body">Stop troubleshooting and call a licensed electrician if: the GFCI trips the moment power is applied with nothing connected; wiring appears damaged or corroded inside the box; water intrusion is present inside the electrical box; there is any burning smell or visible arcing; or downstream outlets behave erratically even after the GFCI resets.</div>
+          <div class="diag-step-stop">These conditions indicate wiring faults that go beyond appliance replacement or device swaps.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="afci-diagnostic">Diagnosing an AFCI Problem &#8212; Step by Step</h2>
+
+    <p>AFCI diagnosis requires a different mindset. AFCIs do not trip on overloads or simple short circuits &#8212; standard breakers handle those. AFCIs trip specifically when they detect <strong>abnormal arcing signatures</strong>, which can be intermittent, subtle, and hidden inside walls. Many AFCI trips involve genuine hazards that homeowners cannot see.</p>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="diag-step-num">1</div>
+        <div>
+          <div class="diag-step-title">Determine the exact trip pattern</div>
+          <div class="diag-step-body"><strong>Trips immediately when breaker is turned on:</strong> Damaged wiring, pinched or pierced cable, exposed conductors, miswired circuit, or improperly shared neutrals. High priority — turn the breaker off and do not turn it back on until a professional has evaluated the circuit.<br><br><strong>Trips when a specific appliance starts:</strong> Motor brush arcing, particularly from older vacuums, treadmills, hair dryers, or space heaters. May not indicate a wiring hazard, but the appliance may be deteriorating.<br><br><strong>Trips randomly with no load changes:</strong> Loose wire nuts, loose outlet screws, aging wiring insulation, or rodent damage. These correlate strongly with real fire hazards and must be investigated.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">2</div>
+        <div>
+          <div class="diag-step-title">Isolate the circuit</div>
+          <div class="diag-step-body">Turn off the AFCI breaker. Unplug every device on the circuit. Turn the breaker back on. If it stays on, the problem is appliance-related — reconnect devices one at a time to identify the trigger. If it trips with no loads connected, you are dealing with a wiring or device problem that requires professional evaluation.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">3</div>
+        <div>
+          <div class="diag-step-title">Check for shared neutrals</div>
+          <div class="diag-step-body">A major cause of AFCI headaches in older homes is improperly shared neutrals — two circuits sharing a single neutral return path. This creates parallel current paths that AFCI sensors interpret as dangerous arc signatures even when no real hazard exists. This is an electrician-level diagnosis and correction, not a homeowner task.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">4</div>
+        <div>
+          <div class="diag-step-title">Stop and call an electrician</div>
+          <div class="diag-step-body">Stop immediately if: the breaker trips instantly with no loads connected; any crackling, buzzing, or heat is present at outlets or switches; odors suggest burning insulation; wiring appears brittle, frayed, or rodent-damaged; or you suspect shared neutrals or incorrect panel wiring.</div>
+          <div class="diag-step-stop">AFCI trips from these causes represent genuine fire hazards. Do not restore power until a licensed electrician has evaluated the circuit.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="severity">How Urgent Is Your Situation?</h2>
+
+    <div class="severity-block">
+      <div class="severity-title">Trip Urgency Scale</div>
+      <div class="severity-row sev-low">
+        <div class="severity-label" style="color:#4caf50;">Monitor</div>
+        <div class="severity-bar-wrap"><div class="severity-bar"></div></div>
+        <div class="severity-desc">Seasonal weather-related trips; appliance-triggered AFCI on old vacuum</div>
+      </div>
+      <div class="severity-row sev-medium">
+        <div class="severity-label" style="color:var(--amber);">Schedule Service</div>
+        <div class="severity-bar-wrap"><div class="severity-bar"></div></div>
+        <div class="severity-desc">Recurring trips from identified aging appliance; GFCI won't reset</div>
+      </div>
+      <div class="severity-row sev-high">
+        <div class="severity-label" style="color:var(--rust);">Call Today</div>
+        <div class="severity-bar-wrap"><div class="severity-bar"></div></div>
+        <div class="severity-desc">AFCI trips randomly at night; GFCI won't reset with no load connected</div>
+      </div>
+      <div class="severity-row sev-critical">
+        <div class="severity-label" style="color:#c0392b;">Emergency</div>
+        <div class="severity-bar-wrap"><div class="severity-bar"></div></div>
+        <div class="severity-desc">Burning smell, crackling at outlets, AFCI trips instantly on breaker reset</div>
+      </div>
+    </div>
+
+    <h2 id="scenarios">Real-World Scenarios</h2>
+
+    <div class="scenario-list">
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">01</div>
+          <div>
+            <div class="scenario-title">Outdoor GFCI trips during or after rain</div>
+            <span class="scenario-device gfci">GFCI</span>
+          </div>
+        </div>
+        <div class="scenario-cause">Your GFCI is working correctly. Water is entering somewhere in the circuit — inside the outlet box, through a damaged in-use cover, through conduit, or from a nearby sprinkler. A GFCI that resets when dry and trips when wet is detecting exactly the hazard it was designed to catch.</div>
+        <div class="scenario-action">Dry the outlet, inspect and replace damaged covers, seal conduit entries. If tripping continues after sealing, call an electrician to evaluate box integrity and weatherproofing.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">02</div>
+          <div>
+            <div class="scenario-title">Kitchen GFCI trips when using toaster and coffee maker together</div>
+            <span class="scenario-device gfci">GFCI</span>
+          </div>
+        </div>
+        <div class="scenario-cause">The circuit is either overloaded for a 15A circuit, or the combined small leakage currents from two older heating appliances are exceeding the GFCI threshold. Heating elements develop internal leakage as they age.</div>
+        <div class="scenario-action">Move one appliance to a different circuit. If the GFCI trips with either appliance individually, that appliance is developing internal leakage and should be replaced.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">03</div>
+          <div>
+            <div class="scenario-title">Bathroom GFCI won't reset after hair dryer use</div>
+            <span class="scenario-device gfci">GFCI</span>
+          </div>
+        </div>
+        <div class="scenario-cause">Either steam and moisture are present in the outlet box from shower use, or the hair dryer itself is developing internal leakage. Hair dryers with worn heating elements are frequent GFCI triggers.</div>
+        <div class="scenario-action">Wait for the area to dry. Unplug everything. Attempt to reset with nothing connected. If it resets with the dryer unplugged but trips when it's plugged in — the dryer is failing, not the GFCI.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">04</div>
+          <div>
+            <div class="scenario-title">AFCI breaker trips when vacuum cleaner starts</div>
+            <span class="scenario-device afci">AFCI</span>
+          </div>
+        </div>
+        <div class="scenario-cause">Brush-type motors in older vacuums naturally produce electrical arcing as the brushes make and break contact at high speed. The AFCI is detecting that arcing. On a newer, functioning vacuum this may be a compatibility issue with older AFCI generations. On an old vacuum, the brush wear has worsened to a point the AFCI correctly flags.</div>
+        <div class="scenario-action">Test the vacuum on a non-AFCI circuit. If it works fine there and is relatively new, the AFCI breaker may need replacement. If the vacuum is old or shows signs of wear, replace it.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">05</div>
+          <div>
+            <div class="scenario-title">AFCI breaker trips randomly overnight with minimal load</div>
+            <span class="scenario-device afci">AFCI</span>
+          </div>
+        </div>
+        <div class="scenario-cause">Random nighttime trips with low load are a serious diagnostic signal. Likely causes: a loose wire nut or loose terminal screw somewhere on the circuit generating intermittent series arcs; temperature-related expansion and contraction of wiring creating arc conditions; or rodent damage to wiring inside the wall.</div>
+        <div class="scenario-action">Turn the circuit off. This pattern correlates strongly with genuine fire hazards. Call a licensed electrician to inspect every outlet, switch, and junction point on the circuit before restoring power.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">06</div>
+          <div>
+            <div class="scenario-title">AFCI trips when a specific light switch is flipped</div>
+            <span class="scenario-device afci">AFCI</span>
+          </div>
+        </div>
+        <div class="scenario-cause">A loose terminal screw on the switch, a backstabbed wiring connection, or a failing lamp or fixture is generating a series arc at the moment the switch makes contact. Loose switch screws are one of the most common fire hazards in residential wiring.</div>
+        <div class="scenario-action">Professional inspection required. Do not attempt to open the switch box and tighten screws without first turning off the breaker and verifying the circuit is de-energized. Call a licensed electrician.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">07</div>
+          <div>
+            <div class="scenario-title">Garage GFCI trips when the garage door opener runs</div>
+            <span class="scenario-device gfci">GFCI</span>
+          </div>
+        </div>
+        <div class="scenario-cause">Inductive motor loads like garage door openers can produce leakage current, particularly as they age. A failing capacitor in the opener motor is a common specific cause.</div>
+        <div class="scenario-action">Have the opener serviced. If the opener is older than 10&#8211;15 years and causing persistent GFCI trips, replacement may be the most practical solution.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">08</div>
+          <div>
+            <div class="scenario-title">Dual-function breaker trips without a clear cause</div>
+            <span class="scenario-device both">GFCI + AFCI</span>
+          </div>
+        </div>
+        <div class="scenario-cause">Dual-function breakers protect against both ground faults and arc faults, which makes diagnosing the trigger slightly more complex. Either type of hazard could be responsible.</div>
+        <div class="scenario-action">Start with GFCI isolation logic: unplug all loads and attempt to reset. If it stays on, reconnect devices one at a time. If it trips with no loads, you likely have a wiring issue — follow AFCI logic and call an electrician if the circuit trips without any connected loads.</div>
+      </div>
+
+    </div>
+
+    <h2 id="costs">Device Costs and Installation Costs</h2>
+
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Device</th>
+          <th>Hardware Cost</th>
+          <th>Installed Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GFCI receptacle (standard)</td>
+          <td><span class="cost-badge">$15&#8211;$30</span></td>
+          <td><span class="cost-badge">$90&#8211;$200</span></td>
+        </tr>
+        <tr>
+          <td>GFCI receptacle (weather-resistant)</td>
+          <td><span class="cost-badge">$25&#8211;$40</span></td>
+          <td><span class="cost-badge">$100&#8211;$220</span></td>
+        </tr>
+        <tr>
+          <td>GFCI breaker</td>
+          <td><span class="cost-badge">$45&#8211;$90</span></td>
+          <td><span class="cost-badge">$120&#8211;$250</span></td>
+        </tr>
+        <tr>
+          <td>AFCI breaker</td>
+          <td><span class="cost-badge">$40&#8211;$80</span></td>
+          <td><span class="cost-badge">$120&#8211;$250</span></td>
+        </tr>
+        <tr>
+          <td>Dual-function breaker</td>
+          <td><span class="cost-badge">$60&#8211;$120</span></td>
+          <td><span class="cost-badge">$140&#8211;$300</span></td>
+        </tr>
+        <tr>
+          <td>Shared neutral correction</td>
+          <td>&#8212;</td>
+          <td><span class="cost-badge">$150&#8211;$800</span></td>
+        </tr>
+        <tr>
+          <td>Wiring fault trace and repair</td>
+          <td>&#8212;</td>
+          <td><span class="cost-badge">$300&#8211;$1,200+</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box info">
+      <div class="callout-icon">&#128203;</div>
+      <div class="callout-content">
+        <div class="callout-label">Hidden Cost Note</div>
+        <div class="callout-text">Older panels may only accept breakers from their original manufacturer — not universally interchangeable. If your panel brand is discontinued, compatible AFCI or dual-function breakers may be harder to source and more expensive. A licensed electrician can advise on availability before you budget for upgrades.</div>
+      </div>
+    </div>
+
+    <h2 id="diy-vs-pro">What You Can Safely Do vs. When to Call a Professional</h2>
+
+    <div class="diy-pro-block">
+      <div class="diy-card">
+        <div class="diy-card-head">
+          <div class="diy-badge diy">&#128247;</div>
+          <div class="diy-card-title">Safe Homeowner Actions</div>
+        </div>
+        <ul class="diy-list">
+          <li>Press TEST and RESET buttons on GFCI outlets to verify function</li>
+          <li>Unplug devices and isolate loads to identify a tripping appliance</li>
+          <li>Inspect outdoor outlet covers and boxes for visible moisture or damage</li>
+          <li>Identify whether other GFCIs on the circuit are tripped upstream</li>
+          <li>Test the AFCI breaker button and observe trip patterns</li>
+          <li>Replace identified failing appliances that consistently cause trips</li>
+          <li>Note and document trip patterns — when, what load, weather conditions</li>
+          <li>Check the panel for tripped breakers (visual observation only)</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-card-head">
+          <div class="diy-badge pro">&#9888;&#65039;</div>
+          <div class="diy-card-title">Licensed Electrician Required</div>
+        </div>
+        <ul class="diy-list pro-list">
+          <li>Any work inside the electrical panel &#8212; even with main breaker off, portions remain live</li>
+          <li>Installing or replacing AFCI or dual-function breakers</li>
+          <li>Correcting shared neutral (multi-wire branch circuit) problems</li>
+          <li>Repairing loose terminations or damaged wiring inside boxes or walls</li>
+          <li>Diagnosing or repairing damaged conductors inside walls</li>
+          <li>Replacing corroded outdoor wiring or underground conduit faults</li>
+          <li>Any situation where burning odor, crackling, or visible arcing is present</li>
+          <li>GFCI receptacle replacement &#8212; unless you are experienced with safe wiring practices</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="safety">Critical Safety Warnings</h2>
+
+    <div class="safety-popout">
+      <h3>&#9888;&#65039; Electrical Safety &#8212; These Are Not Optional</h3>
+      <ul class="safety-list">
+        <li><span class="safety-warn-title">Never work inside an energized panel</span>Even with the main breaker off, the wires feeding power into the top of the panel remain live at all times. Arc flash, shock, or fire can occur. Panel work requires a licensed electrician.</li>
+        <li><span class="safety-warn-title">Never bypass or replace protection devices with standard breakers</span>Replacing a tripping AFCI or GFCI with a standard breaker removes the protection entirely, is illegal in most jurisdictions, and significantly increases fire and shock risk. If a device trips repeatedly, diagnose the cause — do not eliminate the protection.</li>
+        <li><span class="safety-warn-title">Repeated trips are not nuisances until proven otherwise</span>Most repeated GFCI and AFCI trips indicate real hazards — moisture, failing appliances, damaged wiring, or loose connections. Treat every repeat trip as a diagnostic signal until you identify the cause.</li>
+        <li><span class="safety-warn-title">Burning smell or ozone odor means stop immediately</span>Electrical burning or ozone odors indicate arcing or overheating conductors. Turn off the circuit at the breaker. Do not restore power. Call a licensed electrician.</li>
+        <li><span class="safety-warn-title">Outdoor boxes must be weatherproof</span>Standard indoor boxes and covers are not adequate for outdoor electrical installations. Weather-resistant GFCI outlets with in-use covers are required where outlets may be exposed to rain or moisture while in use.</li>
+      </ul>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does my GFCI trip only when it rains?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Moisture is entering the circuit somewhere — inside the outlet box, through a damaged in-use cover, through conduit, or from a nearby sprinkler. This is correct GFCI behavior. The device is detecting a real leakage path. Dry the outlet, inspect and replace damaged covers, and seal any conduit entries. If tripping continues after sealing, an electrician should evaluate the integrity of the box and wiring.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can my refrigerator or freezer be on a GFCI circuit?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Current NEC code requires GFCI protection on garage and basement outlets, which is where many refrigerators and freezers are located. However, older refrigerators and freezers often develop internal leakage that causes nuisance GFCI trips — risking food loss if the GFCI trips while you are away. If this is a problem, consult a licensed electrician about code-compliant options for your specific jurisdiction, which may include dedicated circuits or appliance-grade GFCI breakers with different sensitivity levels.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How long do GFCI devices last?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Typically 7&#8211;10 years in outdoor or harsh environments, 10&#8211;15 years in indoor protected locations. Most modern GFCIs have internal self-testing that permanently disables the outlet when the device fails — you will notice because the outlet stops working even when reset. If you have GFCIs that are more than 10 years old, particularly in bathrooms or outdoors, proactive replacement is a reasonable maintenance step.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does my vacuum cleaner trip the AFCI breaker?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Brush-type vacuum motors produce arcing as part of normal operation — the motor brushes make and break contact at high speed. AFCIs are designed to distinguish between normal motor arcing and dangerous arc faults, but older AFCI generations had more difficulty with this. If the vacuum is old or shows signs of wear, it should be replaced. If it is relatively new and the AFCI is also new, the combination may simply be incompatible — a licensed electrician can advise on solutions.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What is a shared neutral and why does it cause AFCI problems?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A shared neutral (also called a multi-wire branch circuit) is a wiring configuration where two circuits share a single neutral return wire. When properly wired on a double-pole breaker, this is acceptable. When improperly configured, current from one circuit can return through the other circuit's neutral, creating a parallel path that AFCI sensors interpret as a dangerous arc condition — causing persistent trips even when no real hazard exists. Correcting shared neutrals requires an electrician.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How often should I test my GFCI and AFCI devices?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Monthly is the manufacturer recommendation for most devices. At minimum, test quarterly and after any major weather event. For GFCIs, press the TEST button — the outlet should lose power — then press RESET. For AFCI breakers, press the TEST button — the breaker should trip — then reset. A GFCI that does not respond to the TEST button has failed and must be replaced regardless of whether it appears to be working otherwise.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I replace a GFCI outlet myself?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">GFCI receptacle replacement is within the capability of homeowners who are comfortable with basic wiring practices and who understand how to safely work on de-energized circuits. Always turn off the breaker, verify the circuit is de-energized with a non-contact voltage tester, and photograph the existing wiring before disconnecting anything. The LINE and LOAD terminals must be wired correctly — reversal will prevent the device from resetting. If there are any uncertainties about the wiring configuration, hire a licensed electrician.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I replace an AFCI breaker myself?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No — not safely. AFCI breakers are installed inside the electrical panel, where even with the main breaker off, the feed wires at the top of the panel remain live. Panel work requires a licensed electrician in virtually all jurisdictions, and for good reason. The arc flash risk from an energized panel is serious and not something that protective equipment alone adequately addresses for untrained homeowners.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>GFCIs protect people from shock by detecting current imbalance. AFCIs protect homes from fire by detecting arc signatures. They serve completely different purposes and require different diagnostic approaches.</li>
+        <li>Repeated trips are almost never the device's fault. They are the device detecting a real hazard — moisture, a failing appliance, damaged wiring, or a loose connection. Diagnose before you replace.</li>
+        <li>The timing of an AFCI trip is your most valuable diagnostic clue. Trips when breaker is reset (wiring fault), trips when appliance starts (appliance issue), random trips (loose connections or aging wiring).</li>
+        <li>AFCI trips at random times with no load change correlate strongly with genuine fire hazards — loose wire terminations or damaged wiring generating series arcs. Turn off the circuit and call an electrician.</li>
+        <li>Never replace a tripping GFCI or AFCI with a standard breaker. You remove the protection entirely. Diagnose the cause instead.</li>
+        <li>Panel work — replacing AFCI or dual-function breakers — requires a licensed electrician. The panel is not safe for homeowner work even with the main breaker off.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="article-tag-pill">GFCI</a>
+      <a href="#" class="article-tag-pill">AFCI</a>
+      <a href="#" class="article-tag-pill">ground fault circuit interrupter</a>
+      <a href="#" class="article-tag-pill">arc fault circuit interrupter</a>
+      <a href="#" class="article-tag-pill">GFCI won't reset</a>
+      <a href="#" class="article-tag-pill">AFCI nuisance trips</a>
+      <a href="#" class="article-tag-pill">electrical safety</a>
+      <a href="#" class="article-tag-pill">dual function breaker</a>
+      <a href="#" class="article-tag-pill">electrical code</a>
+      <a href="#" class="article-tag-pill">home electrical safety</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share this guide:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+
+  </div>
+
+  <div class="related">
+    <h3>More Electrical &amp; Safety Guides</h3>
+    <div class="related-grid">
+      <a href="breaker-tripping-guide.html" class="related-card">
+        <div class="related-img e">&#9889;</div>
+        <div class="related-body">
+          <span class="tag electrical">Electrical</span>
+          <div class="related-title">Why Does My Circuit Breaker Keep Tripping?</div>
+          <div class="related-meta">T.A. &#183; 28 min read</div>
+        </div>
+      </a>
+      <a href="maintenance-guide.html" class="related-card">
+        <div class="related-img m">&#128296;</div>
+        <div class="related-body">
+          <span class="tag" style="background:#3a6b3a;color:white;">Maintenance</span>
+          <div class="related-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="related-meta">T.A. &amp; M.A. &#183; 28 min read</div>
+        </div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-img e">&#128268;</div>
+        <div class="related-body">
+          <span class="tag electrical">Electrical</span>
+          <div class="related-title">The Complete Electrical Panel Guide</div>
+          <div class="related-meta">T.A. &#183; Coming soon</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="sidebar-avatar">T.A.</div>
+      <div>
+        <div class="sidebar-expert-name">T.A.</div>
+        <div class="sidebar-expert-title">Fire Inspector &amp; Facility Manager</div>
+        <div class="sidebar-expert-bio">NFPA Certified Fire Inspector and Certified Healthcare Facility Manager. Electrician-trained with decades of experience managing electrical systems across hospitals and commercial buildings. Runs a life safety consulting business.</div>
+        <div class="sidebar-creds">
+          <span class="cred-pill">NFPA CFI-1</span>
+          <span class="cred-pill">CHFM</span>
+          <span class="cred-pill">CLSS-HC</span>
+          <span class="cred-pill">OSHA 30</span>
+          <span class="cred-pill">Electrician</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#at-a-glance">GFCI vs. AFCI at a Glance</a></li>
+      <li><a href="#how-gfci-works">How GFCI Works</a></li>
+      <li><a href="#where-required">Where Each Is Required</a></li>
+      <li><a href="#how-afci-works">How AFCI Works</a></li>
+      <li><a href="#trip-patterns">Reading Trip Patterns</a></li>
+      <li><a href="#gfci-diagnostic">GFCI Diagnostic Steps</a></li>
+      <li><a href="#afci-diagnostic">AFCI Diagnostic Steps</a></li>
+      <li><a href="#severity">Urgency Scale</a></li>
+      <li><a href="#scenarios">Real-World Scenarios</a></li>
+      <li><a href="#costs">Device &amp; Installation Costs</a></li>
+      <li><a href="#diy-vs-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#safety">Safety Warnings</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free expert advice</h4>
+    <p>Electrical safety guides and seasonal maintenance reminders from our certified fire inspector.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0px;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>Most Read This Week</h4>
+    <div class="pop-list">
+      <a href="breaker-tripping-guide.html" class="pop-item">
+        <div class="pop-num">01</div>
+        <div>
+          <div class="pop-title">Why Does My Circuit Breaker Keep Tripping?</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="foundation-guide.html" class="pop-item">
+        <div class="pop-num">02</div>
+        <div>
+          <div class="pop-title">Foundation Damage: What Every Crack Is Telling You</div>
+          <div class="pop-cat">Foundation &#183; C.M.</div>
+        </div>
+      </a>
+      <a href="maintenance-guide.html" class="pop-item">
+        <div class="pop-num">03</div>
+        <div>
+          <div class="pop-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="pop-cat">Maintenance &#183; T.A. &amp; M.A.</div>
+        </div>
+      </a>
+      <a href="hvac-guide.html" class="pop-item">
+        <div class="pop-num">04</div>
+        <div>
+          <div class="pop-title">The Complete HVAC Guide</div>
+          <div class="pop-cat">HVAC &#183; T.A.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{
+      li.classList.remove('active');
+      if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
