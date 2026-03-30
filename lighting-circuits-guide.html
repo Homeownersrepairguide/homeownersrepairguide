@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Guide to Home Lighting Circuits: Failures, Diagnostics & Solutions | HomeownersRepairGuide.com</title>
+<meta name="description" content="A certified fire inspector and licensed electrician explains why lighting circuits fail, how to read every symptom pattern, and exactly what separates a bulb problem from a wiring emergency.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--navy-light:#234468;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.15s;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .article-wrap{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+  .article-main{min-width:0;}
+  .article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;}
+  .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--amber);color:var(--navy);}
+  .tag.safety{background:#c0402a;color:var(--white);}
+  .tag.diagnosis{background:#1a5a9a;color:var(--white);}
+  .article-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);line-height:1.12;letter-spacing:-0.025em;margin-bottom:20px;}
+  .article-subtitle{font-size:18px;color:var(--text-muted);line-height:1.6;margin-bottom:28px;border-left:3px solid var(--amber);padding-left:16px;}
+  .article-byline{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:32px;}
+  .byline-avatar{width:48px;height:48px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);flex-shrink:0;}
+  .byline-info{flex:1;}
+  .byline-name{font-size:15px;font-weight:600;color:var(--text-dark);}
+  .byline-cred{font-size:12px;color:var(--text-muted);margin-top:2px;}
+  .byline-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:12px;color:var(--text-muted);text-align:right;}
+  .byline-meta strong{color:var(--text-dark);}
+  .article-hero-img{background:linear-gradient(135deg,#0a0806 0%,#18140a 100%);border-radius:var(--radius-lg);height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:40px;gap:12px;border:1px solid var(--gray-light);position:relative;overflow:hidden;}
+  .article-hero-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 55% 45%,rgba(240,165,0,0.14) 0%,transparent 70%);}
+  .article-hero-img .img-icon{font-size:72px;opacity:0.45;position:relative;z-index:1;}
+  .article-hero-img .img-caption{font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;position:relative;z-index:1;}
+  .article-body{font-size:17px;line-height:1.75;color:var(--text-body);}
+  .article-body h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin:48px 0 16px;line-height:1.2;letter-spacing:-0.01em;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .article-body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy-mid);margin:32px 0 12px;line-height:1.25;}
+  .article-body p{margin-bottom:20px;}
+  .article-body ul,.article-body ol{margin:0 0 20px 0;padding-left:24px;}
+  .article-body li{margin-bottom:8px;}
+  .article-body strong{color:var(--text-dark);font-weight:600;}
+  .article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+  /* Circuit layout cards */
+  .layout-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:28px 0;}
+  .layout-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+  .layout-letter{width:36px;height:36px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+  .layout-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .layout-note{font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:8px;}
+  .layout-card.modern .layout-note{color:#2a7a2a;}
+  .layout-card.older .layout-note{color:#b07800;}
+  .layout-card.daisy .layout-note{color:#1a5a9a;}
+  .layout-card.multiway .layout-note{color:var(--rust);}
+  .layout-desc{font-size:13px;color:var(--text-body);line-height:1.5;margin-bottom:8px;}
+  .layout-fail{font-size:12px;color:var(--text-muted);line-height:1.5;}
+  /* Expert callout */
+  .expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0;display:flex;gap:18px;align-items:flex-start;}
+  .expert-callout-avatar{width:44px;height:44px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);flex-shrink:0;margin-top:2px;}
+  .expert-callout-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:6px;}
+  .expert-callout-text{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+  .expert-callout-attr{font-size:12px;color:rgba(255,255,255,0.45);margin-top:8px;}
+  /* Callout boxes */
+  .callout-box{border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+  .callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+  .callout-box.danger{background:#fef2f0;border:1px solid #e08070;}
+  .callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+  .callout-box.info{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .callout-icon{font-size:22px;flex-shrink:0;margin-top:1px;}
+  .callout-content{flex:1;}
+  .callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+  .callout-box.warning .callout-label{color:#b07800;}
+  .callout-box.danger .callout-label{color:#c0402a;}
+  .callout-box.tip .callout-label{color:#2a7a2a;}
+  .callout-box.info .callout-label{color:#1a5a9a;}
+  .callout-text{font-size:15px;line-height:1.6;color:var(--text-body);}
+  /* Symptom decoder table */
+  .symptom-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .symptom-table th{background:var(--amber);color:var(--navy);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .symptom-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .symptom-table tr:last-child td{border-bottom:none;}
+  .symptom-table tr:nth-child(even) td{background:var(--cream);}
+  .symptom-table td:first-child{font-weight:600;color:var(--text-dark);}
+  /* Failure reason cards */
+  .reason-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0;}
+  .reason-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:18px 20px;box-shadow:var(--shadow-card);}
+  .reason-icon{font-size:22px;margin-bottom:8px;}
+  .reason-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .reason-desc{font-size:13px;color:var(--text-body);line-height:1.55;}
+  /* Severity */
+  .severity-block{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px;margin:36px 0;box-shadow:var(--shadow-card);}
+  .severity-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .severity-row{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;}
+  .severity-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:3px;}
+  .sev-low .severity-dot{background:#4caf50;}
+  .sev-medium .severity-dot{background:var(--amber);}
+  .sev-high .severity-dot{background:var(--rust);}
+  .sev-critical .severity-dot{background:#c0392b;}
+  .severity-label{font-size:13px;font-weight:700;width:130px;flex-shrink:0;}
+  .sev-low .severity-label{color:#4caf50;}
+  .sev-medium .severity-label{color:var(--amber);}
+  .sev-high .severity-label{color:var(--rust);}
+  .sev-critical .severity-label{color:#c0392b;}
+  .severity-examples{font-size:13px;color:var(--text-body);line-height:1.55;flex:1;}
+  /* Diagnostic steps */
+  .diag-steps{display:flex;flex-direction:column;gap:0;margin:28px 0;}
+  .diag-step{display:flex;gap:18px;align-items:flex-start;padding:18px 0;border-bottom:1px solid var(--gray-light);}
+  .diag-step:last-child{border-bottom:none;}
+  .diag-step-num{width:36px;height:36px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);flex-shrink:0;margin-top:2px;}
+  .diag-step-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .diag-step-body{font-size:14px;color:var(--text-body);line-height:1.6;}
+  .diag-step-stop{font-size:13px;font-weight:700;color:#c0402a;margin-top:8px;}
+  /* Scenario cards */
+  .scenario-list{display:flex;flex-direction:column;gap:14px;margin:28px 0;}
+  .scenario-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:22px 24px;box-shadow:var(--shadow-card);}
+  .scenario-header{display:flex;gap:14px;align-items:flex-start;margin-bottom:12px;}
+  .scenario-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:30px;}
+  .scenario-title{font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;}
+  .scenario-urgency{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:2px 8px;border-radius:2px;display:inline-block;margin-top:4px;}
+  .urg-low{background:#eaf5ea;color:#2a7a2a;}
+  .urg-medium{background:#fff8e6;color:#b07800;}
+  .urg-high{background:#fef2f0;color:#c0402a;}
+  .urg-critical{background:#c0392b;color:white;}
+  .scenario-cause{font-size:14px;color:var(--text-body);line-height:1.55;margin-bottom:8px;}
+  .scenario-action{font-size:13px;font-weight:600;color:var(--rust);}
+  /* Cost table */
+  .cost-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .cost-table th{background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;}
+  .cost-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);background:var(--white);vertical-align:top;line-height:1.5;}
+  .cost-table tr:last-child td{border-bottom:none;}
+  .cost-table tr:nth-child(even) td{background:var(--cream);}
+  .cost-badge{font-family:'DM Mono',monospace;font-size:13px;font-weight:600;color:var(--navy);}
+  /* Prevention checklist */
+  .prev-checklist{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px 32px;margin:28px 0;box-shadow:var(--shadow-card);}
+  .prev-checklist h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .prev-section{margin-bottom:18px;}
+  .prev-section:last-child{margin-bottom:0;}
+  .prev-section h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dark);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--gray-light);}
+  .check-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+  .check-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-body);line-height:1.45;}
+  .check-list li::before{content:'';display:inline-block;width:16px;height:16px;border:2px solid var(--gray-mid);border-radius:3px;flex-shrink:0;margin-top:1px;}
+  /* DIY vs Pro */
+  .diy-pro-block{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:36px 0;}
+  .diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .diy-card-head{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
+  .diy-badge{width:40px;height:40px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+  .diy-badge.diy{background:#e8f5e9;}
+  .diy-badge.pro{background:#fff3e0;}
+  .diy-card-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);}
+  .diy-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .diy-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-body);line-height:1.5;}
+  .diy-list li::before{content:'\2713';width:18px;height:18px;border-radius:50%;background:#e8f5e9;color:#2e7d32;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+  .pro-list li::before{content:'!';background:#fff3e0;color:#e65100;}
+  /* Safety popout */
+  .safety-popout{background:linear-gradient(135deg,#c0392b,#a93226);border-radius:var(--radius-lg);padding:28px 32px;margin:40px 0;}
+  .safety-popout h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:14px;}
+  .safety-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .safety-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(255,255,255,0.9);line-height:1.55;}
+  .safety-list li::before{content:'!';width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,0.2);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+  .safety-warn-title{font-weight:700;color:var(--white);display:block;margin-bottom:2px;}
+  /* FAQ */
+  .faq-block{margin:36px 0;}
+  .faq-item{border-bottom:1px solid var(--gray-light);}
+  .faq-question{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font-size:16px;font-weight:600;color:var(--navy);gap:16px;user-select:none;}
+  .faq-question:hover{color:var(--amber);}
+  .faq-chevron{font-size:18px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+  .faq-answer{font-size:15px;color:var(--text-body);line-height:1.7;padding-bottom:18px;display:none;}
+  .faq-item.open .faq-answer{display:block;}
+  .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--amber);}
+  /* Summary */
+  .summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px;margin:48px 0 36px;}
+  .summary-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .summary-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.55;}
+  .summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+  /* Tags & share */
+  .article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0;padding-top:32px;border-top:1px solid var(--gray-light);}
+  .article-tag-pill{font-size:12px;padding:5px 12px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+  .article-tag-pill:hover{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+  .share-bar{display:flex;align-items:center;gap:12px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:48px;flex-wrap:wrap;}
+  .share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+  .share-btn{padding:8px 16px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+  .share-btn:hover{opacity:0.85;}
+  .share-fb{background:#1877f2;color:white;}
+  .share-x{background:#000;color:white;}
+  .share-pin{background:#e60023;color:white;}
+  .share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+  /* Related */
+  .related{margin-top:48px;}
+  .related h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .related-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;}
+  .related-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+  .related-img{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px;}
+  .related-img.e{background:linear-gradient(135deg,#fff8e6,#faefd0);}
+  .related-img.m{background:linear-gradient(135deg,#eaf5ea,#d4ecd4);}
+  .related-body{padding:16px;}
+  .related-body .tag{font-size:10px;padding:3px 8px;margin-bottom:8px;}
+  .related-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:6px;}
+  .related-meta{font-size:11px;color:var(--text-muted);}
+  /* Sidebar */
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:24px;}
+  .sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .sidebar-card h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gray-light);}
+  .sidebar-expert{display:flex;gap:14px;align-items:flex-start;}
+  .sidebar-avatar{width:52px;height:52px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);flex-shrink:0;}
+  .sidebar-expert-name{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+  .sidebar-expert-title{font-size:12px;color:var(--amber);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
+  .sidebar-expert-bio{font-size:13px;color:var(--text-muted);line-height:1.55;}
+  .sidebar-creds{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;}
+  .cred-pill{font-size:10px;padding:3px 8px;background:var(--cream-dark);border-radius:2px;color:var(--text-muted);font-weight:600;}
+  .toc-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+  .toc-list li a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);text-decoration:none;padding:6px 8px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+  .toc-list li a:hover{background:var(--cream);color:var(--amber);}
+  .toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+  .toc-list li.active a{color:var(--amber);background:var(--cream);font-weight:600;}
+  .toc-list li.active a::before{background:var(--amber);width:6px;height:6px;}
+  .sidebar-newsletter{background:var(--amber);border-radius:var(--radius-lg);padding:24px;}
+  .sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+  .sidebar-newsletter p{font-size:13px;color:rgba(15,34,54,0.7);line-height:1.55;margin-bottom:16px;}
+  .ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:32px 16px;text-align:center;}
+  .ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:6px;}
+  .ad-placeholder .ad-size{font-size:13px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+  .pop-list{display:flex;flex-direction:column;gap:14px;}
+  .pop-item{display:flex;gap:12px;align-items:flex-start;text-decoration:none;}
+  .pop-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:28px;}
+  .pop-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.35;transition:color 0.15s;}
+  .pop-item:hover .pop-title{color:var(--amber);}
+  .pop-cat{font-size:11px;color:var(--text-muted);margin-top:3px;}
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:24px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+  @media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.related-grid{grid-template-columns:1fr 1fr;}.layout-grid{grid-template-columns:1fr;}.reason-grid{grid-template-columns:1fr;}.diy-pro-block{grid-template-columns:1fr;}}
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.related-grid{grid-template-columns:1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">The Complete Guide to Home Lighting Circuits</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Electrical</span>
+    <span class="tag safety">Safety</span>
+    <span class="tag diagnosis">Diagnosis</span>
+  </div>
+
+  <h1 class="article-title">The Complete Guide to Home Lighting Circuits: Failures, Diagnostics &amp; Solutions</h1>
+
+  <p class="article-subtitle">Lighting failures are rarely just a bulb problem. Flicker, dead fixtures, buzzing dimmers, and circuits that go dark without tripping a breaker are the electrical system's early warning language. A certified fire inspector and licensed electrician explains exactly how to read it.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Certified Facility Manager &amp; Life Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 &#183; CHFM &#183; CLSS-HC &#183; OSHA 30 &#183; Electrician &#8212; All Phases</div>
+    </div>
+    <div class="byline-meta">
+      <span><strong>Updated:</strong> January 2025</span>
+      <span>26 min read &#183; Fact-verified</span>
+    </div>
+  </div>
+
+  <div class="article-hero-img">
+    <div class="img-icon">&#128161;</div>
+    <div class="img-caption">[Hero image &#8212; e.g. recessed lighting in ceiling or dimmer switch installation]</div>
+  </div>
+
+  <div class="article-body">
+
+    <p>Lighting is the electrical system most homeowners interact with every single day &#8212; and the one most frequently misdiagnosed. A flickering light gets a new bulb. A dead fixture gets a new fixture. A buzzing dimmer gets turned down. The underlying cause goes unaddressed.</p>
+
+    <p>That matters because lighting circuits don't fail at random. They follow predictable patterns that reveal exactly where the failure is, whether it's isolated or systemic, and &#8212; most importantly &#8212; whether what looks like an inconvenience is actually an early warning of a wiring problem that is progressing toward something dangerous.</p>
+
+    <div class="callout-box info">
+      <div class="callout-icon">&#128203;</div>
+      <div class="callout-content">
+        <div class="callout-label">The Core Diagnostic Principle</div>
+        <div class="callout-text"><strong>How many fixtures are affected determines what is wrong.</strong> One bulb or one fixture points to a component failure. A group of fixtures that went out together points to an upstream splice or junction. Multiple rooms flickering simultaneously points to a neutral or panel problem. The scope of the symptom is your first and most important diagnostic clue.</div>
+      </div>
+    </div>
+
+    <h2 id="how-circuits-work">How Lighting Circuits Are Wired</h2>
+
+    <p>Every lighting circuit follows the same functional sequence: power leaves the panel through a hot conductor, travels to a switch that controls the flow, energizes the fixture, and returns via the neutral conductor. The grounding conductor provides a safety path for fault current.</p>
+
+    <p>What makes diagnosis interesting is that this sequence can be physically arranged several different ways &#8212; and the arrangement determines where failures tend to occur and what symptoms they produce.</p>
+
+    <div class="layout-grid">
+      <div class="layout-card modern">
+        <div class="layout-letter">A</div>
+        <div class="layout-title">Power → Switch → Light</div>
+        <div class="layout-note">Modern Standard</div>
+        <div class="layout-desc">Hot power enters the switch box first. Simplest configuration for smart switch installation and troubleshooting.</div>
+        <div class="layout-fail">Failures: switch, first fixture after switch, or upstream junction box.</div>
+      </div>
+      <div class="layout-card older">
+        <div class="layout-letter">B</div>
+        <div class="layout-title">Power → Light → Switch Loop</div>
+        <div class="layout-note">Common Pre-2011</div>
+        <div class="layout-desc">Power enters at the fixture first. No neutral in the switch box. Smart switches often won't function. Miswiring risk during DIY work is high.</div>
+        <div class="layout-fail">Failures: often after DIY fixture changes, aging splice at fixture, or incorrect neutral handling.</div>
+      </div>
+      <div class="layout-card daisy">
+        <div class="layout-letter">C</div>
+        <div class="layout-title">Daisy-Chained Fixtures</div>
+        <div class="layout-note">Recessed, Track &amp; Vanity</div>
+        <div class="layout-desc">A run of fixtures depends on a single upstream splice. When one junction fails, every downstream fixture loses power simultaneously.</div>
+        <div class="layout-fail">Classic symptom: "Three recessed lights stopped working at once but the breaker didn't trip."</div>
+      </div>
+      <div class="layout-card multiway">
+        <div class="layout-letter">D</div>
+        <div class="layout-title">3-Way / 4-Way Switching</div>
+        <div class="layout-note">Multi-Switch Control</div>
+        <div class="layout-desc">Fixtures controlled from two or more locations use traveler conductors. More complex routing means more potential failure points.</div>
+        <div class="layout-fail">Symptoms: light works from one switch but not the other, or behavior depends on which switch was used last.</div>
+      </div>
+    </div>
+
+    <h3>Why the neutral matters more in lighting than anywhere else</h3>
+
+    <p>LED fixtures and smart lighting controls are extraordinarily sensitive to voltage fluctuations. A compromised neutral &#8212; loose, corroded, or high-resistance &#8212; creates an unstable return path that causes LED outputs to vary rapidly. The result looks like flicker, but it is not a bulb problem, a dimmer problem, or a driver problem. It is a wiring problem that will worsen over time.</p>
+
+    <p>A loose neutral can behave normally for years before temperature swings, vibration from attic movement, or gradual wirenut fatigue finally bring the weakness to the surface. When it does, the symptoms often appear random because they correlate with temperature or loading conditions that aren't obviously connected to lighting.</p>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert</div>
+        <div class="expert-callout-text">"The lighting call I take most seriously is the one where the homeowner says lights are flickering in different rooms at different times with no obvious pattern. That description &#8212; multiple rooms, no consistent trigger &#8212; immediately tells me to think about neutral integrity before I think about anything else. A loose neutral in an attic junction box or at the panel can produce exactly that kind of widespread, apparently random behavior. It's the electrical problem that looks like ten small problems instead of one big one. And it's the one where replacing bulbs and dimmers accomplishes nothing."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA Certified Fire Inspector &#183; Certified Healthcare Facility Manager &#183; Electrician &#8212; All Phases</div>
+      </div>
+    </div>
+
+    <h2 id="why-lighting-fails">Why Lighting Circuits Fail More Often Than Other Circuits</h2>
+
+    <div class="reason-grid">
+      <div class="reason-card">
+        <div class="reason-icon">&#128260;</div>
+        <div class="reason-title">Thousands of Switching Cycles Per Year</div>
+        <div class="reason-desc">A bedroom light switch may cycle 2,000&#8211;4,000 times annually. Mechanical contacts wear, dimmers lose internal stability, and each cycle can generate a small arc that gradually degrades the contact surface.</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-icon">&#127777;&#65039;</div>
+        <div class="reason-title">Heat at the Fixture</div>
+        <div class="reason-desc">Recessed cans, enclosed globes, and vanity fixtures create sustained heat environments. Heat is the primary enemy of LED drivers, socket contact springs, and wiring insulation &#8212; all of which are concentrated at the fixture.</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-icon">&#9889;</div>
+        <div class="reason-title">Sensitive LED Electronics</div>
+        <div class="reason-desc">Modern lighting depends on drivers, capacitors, regulators, and microcontrollers that are far more sensitive to voltage irregularities than incandescent bulbs ever were. The efficiency gain comes with a sensitivity cost.</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-icon">&#128268;</div>
+        <div class="reason-title">Dimmer Incompatibility</div>
+        <div class="reason-desc">Most dimmers installed before 2015 were designed for incandescent loads. They require minimum wattage to regulate properly. LEDs draw so little current that old dimmers can't stay stable &#8212; causing flicker, buzzing, and premature driver failure.</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-icon">&#128040;</div>
+        <div class="reason-title">Shared Neutrals &amp; Upstream Dependencies</div>
+        <div class="reason-desc">Lighting circuits often share neutrals across multiple fixtures. A single loose splice in an attic junction box can kill every fixture downstream while the breaker remains untouched.</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-icon">&#128268;</div>
+        <div class="reason-title">AFCI Sensitivity to Wiring Defects</div>
+        <div class="reason-desc">Modern code requires AFCI protection on most lighting circuits. This means failing drivers, degrading dimmers, and loose connections will show up as AFCI trips earlier than they would otherwise. This is the AFCI working correctly &#8212; not a nuisance.</div>
+      </div>
+    </div>
+
+    <h2 id="symptom-table">Symptom Decoder &#8212; What Your Lighting Is Telling You</h2>
+
+    <table class="symptom-table">
+      <thead>
+        <tr>
+          <th>Symptom</th>
+          <th>Scope / When</th>
+          <th>Most Likely Cause</th>
+          <th>Urgency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Flicker</td>
+          <td>One bulb only</td>
+          <td>Failing LED driver, incompatible dimmer, poor lamp socket contact</td>
+          <td>Low &#8212; swap bulb</td>
+        </tr>
+        <tr>
+          <td>Flicker</td>
+          <td>Only when dimming</td>
+          <td>Dimmer incompatibility &#8212; incandescent dimmer on LED load</td>
+          <td>Low &#8212; replace dimmer</td>
+        </tr>
+        <tr>
+          <td>Flicker</td>
+          <td>One room, multiple fixtures</td>
+          <td>Loose splice in upstream junction, failing switch, shared neutral within circuit</td>
+          <td>Schedule service</td>
+        </tr>
+        <tr>
+          <td>Flicker</td>
+          <td>Multiple rooms when appliances start</td>
+          <td>Voltage sag or weak/floating neutral &#8212; treat as urgent</td>
+          <td>Urgent &#8212; call today</td>
+        </tr>
+        <tr>
+          <td>Lights brighten/dim opposite each other</td>
+          <td>Different rooms simultaneously</td>
+          <td>MWBC neutral imbalance &#8212; dangerous wiring condition</td>
+          <td>Critical &#8212; call immediately</td>
+        </tr>
+        <tr>
+          <td>Group of fixtures dead, breaker on</td>
+          <td>Recessed run or daisy chain</td>
+          <td>Failed upstream junction, loose wirenut at first can, thermal limiter tripped</td>
+          <td>Schedule service</td>
+        </tr>
+        <tr>
+          <td>Light turns off after several minutes</td>
+          <td>Recessed or enclosed fixture</td>
+          <td>Thermal limiter activation &#8212; overheating LED driver or recessed can</td>
+          <td>Medium &#8212; reduce heat or upgrade fixture</td>
+        </tr>
+        <tr>
+          <td>Flicker worsens when fixture is touched</td>
+          <td>One fixture</td>
+          <td>Loose wirenut in fixture box, failing socket spring, intermittent arcing</td>
+          <td>Schedule service &#8212; arcing present</td>
+        </tr>
+        <tr>
+          <td>GFCI trips when lights turn on</td>
+          <td>During rain or high humidity</td>
+          <td>Moisture intrusion into exterior fixture, corroded socket, water in junction box</td>
+          <td>High &#8212; real shock hazard</td>
+        </tr>
+        <tr>
+          <td>AFCI trips with specific dimmer setting</td>
+          <td>Load-triggered</td>
+          <td>Dimmer waveform distortion or failing dimmer electronics</td>
+          <td>Schedule service</td>
+        </tr>
+        <tr>
+          <td>LEDs glow faintly when switched off</td>
+          <td>Smart switch or 3-way circuit</td>
+          <td>Residual current through smart switch electronics; LED driver sensitivity</td>
+          <td>Low &#8212; compatibility fix</td>
+        </tr>
+        <tr>
+          <td>Buzzing at switch or dimmer</td>
+          <td>Under load</td>
+          <td>Dimmer overload, incompatible load, or failing dimmer internals</td>
+          <td>Medium &#8212; replace dimmer</td>
+        </tr>
+        <tr>
+          <td>Warm switch plate</td>
+          <td>Any</td>
+          <td>Overloaded dimmer, loose terminal, or high-resistance connection</td>
+          <td>High &#8212; stop using, inspect</td>
+        </tr>
+        <tr>
+          <td>Burning smell at fixture or switch</td>
+          <td>Any</td>
+          <td>Arcing or overheating conductors &#8212; stop now</td>
+          <td>Emergency &#8212; turn off circuit</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="severity">How Urgent Is Your Situation?</h2>
+
+    <div class="severity-block">
+      <div class="severity-title">Lighting Problem Urgency Scale</div>
+      <div class="severity-row sev-low">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Monitor</div>
+        <div class="severity-examples">One bulb flickering that follows the bulb when moved. Dimmer buzzing only at very low settings. LEDs glowing faintly when off on a smart switch circuit.</div>
+      </div>
+      <div class="severity-row sev-medium">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Schedule Service</div>
+        <div class="severity-examples">Flicker in one room across multiple fixtures. AFCI trips tied to a specific fixture or dimmer. Recessed lights cutting out after warm-up. 3-way switch working from only one location.</div>
+      </div>
+      <div class="severity-row sev-high">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Call Today</div>
+        <div class="severity-examples">Warm switch or dimmer plate. GFCI trips when lights are switched on. AFCI trips randomly without an obvious load trigger. Flicker across multiple rooms correlating with appliance startup.</div>
+      </div>
+      <div class="severity-row sev-critical">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Emergency</div>
+        <div class="severity-examples">Burning smell at any switch or fixture. Lights brightening and dimming in opposite directions across rooms. Crackling or sizzling sounds. Visible scorch marks or melted plastic. Tingle when touching a switch.</div>
+      </div>
+    </div>
+
+    <h2 id="homeowner-diagnostic">Homeowner-Safe Diagnostic Steps</h2>
+
+    <p>These steps are specifically limited to what is safe without opening energized boxes or working on live wiring. The goal is to gather useful information before calling a professional &#8212; not to fix the problem yourself.</p>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="diag-step-num">1</div>
+        <div>
+          <div class="diag-step-title">Confirm the bulb first &#8212; eliminate the simplest cause</div>
+          <div class="diag-step-body">Replace the bulb with a known-good one of the same type. Verify it is dimmable if the fixture is on a dimmer circuit. Confirm the wattage does not exceed the fixture's maximum rating. If the problem disappears, the original bulb's driver was failing. If the problem persists, the bulb was not the cause.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">2</div>
+        <div>
+          <div class="diag-step-title">Observe the switch for physical warning signs</div>
+          <div class="diag-step-body">Without opening the box, note: does the switch feel loose or spongy? Does toggling it produce flicker? Is there audible buzzing or crackling? Does the switch plate feel warm after several minutes of use? A loose switch, buzzing dimmer, or warm plate are all high-priority signals regardless of whether the lights are working.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">3</div>
+        <div>
+          <div class="diag-step-title">Check the breaker, AFCI, and any upstream GFCIs</div>
+          <div class="diag-step-body">Locate the breaker for the affected circuit. Move it fully to OFF, then firmly to ON. If the circuit has an AFCI breaker, press its TEST button and then RESET. Check whether any GFCI outlets on the circuit are tripped &#8212; in many homes a single GFCI in the garage, bathroom, or kitchen feeds multiple downstream outlets and fixtures that appear unrelated.</div>
+          <div class="diag-step-body">If the breaker or AFCI trips immediately on reset: leave it off. An active fault is present. Do not keep resetting.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">4</div>
+        <div>
+          <div class="diag-step-title">Map the scope and timing of the symptom</div>
+          <div class="diag-step-body">Note exactly how many fixtures are affected, which specific fixtures, and whether the problem correlates with anything else: HVAC startup, microwave use, rain, or dimming. This information is diagnostic gold for the electrician you call &#8212; and it often narrows the cause before anyone opens a box. Flicker that follows a specific appliance's startup points to voltage sag or neutral instability. Flicker only at certain dimmer settings points to dimmer incompatibility. Flicker that appeared right after a remodel points to the last modified junction.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">5</div>
+        <div>
+          <div class="diag-step-title">Inspect visible fixtures and exterior covers without opening boxes</div>
+          <div class="diag-step-body">Look for: burn marks around sockets, melted or discolored plastic, condensation inside fixture glass, rust or corrosion in exterior fixtures, loose trim rings on recessed cans, or any evidence of moisture. These visible clues help determine whether the fixture itself needs replacement or whether the problem is upstream.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">6</div>
+        <div>
+          <div class="diag-step-title">Stop and call an electrician</div>
+          <div class="diag-step-body">Stop troubleshooting and call a licensed electrician immediately if: any breaker or AFCI trips immediately upon reset; lights are brightening and dimming spontaneously; burning smells or melted plastic are present; there is any sensation of tingling when touching switches or fixtures; multiple rooms are flickering simultaneously; or any moisture is near electrical equipment.</div>
+          <div class="diag-step-stop">These conditions indicate elevated electrical hazard. Do not continue diagnosing.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="scenarios">Real-World Scenarios</h2>
+
+    <div class="scenario-list">
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">01</div>
+          <div>
+            <div class="scenario-title">A group of recessed lights suddenly goes out but the breaker didn't trip</div>
+            <span class="scenario-urgency urg-medium">Schedule Service</span>
+          </div>
+        </div>
+        <div class="scenario-cause">Recessed fixtures are almost always daisy-chained &#8212; each one feeds the next. When the upstream splice fails, every fixture downstream loses power while the breaker remains on because there is no fault current, just a loss of continuity. Most likely: a failed wirenut at the first can in the sequence, an overheated socket harness, or a loose connection in the attic junction feeding the run. The flicker that often precedes total failure is the connection intermittently making and breaking contact.</div>
+        <div class="scenario-action">Homeowner: breaker check only. All other diagnosis requires opening ceiling boxes &#8212; call a licensed electrician.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">02</div>
+          <div>
+            <div class="scenario-title">Lights flicker every time the HVAC, refrigerator, or microwave starts</div>
+            <span class="scenario-urgency urg-high">Call Today</span>
+          </div>
+        </div>
+        <div class="scenario-cause">Large appliances draw heavy startup (inrush) current. On a healthy system with a solid neutral, this causes only a brief, barely noticeable flicker. When the flicker is significant, persistent, or affects multiple rooms, the system is telling you something: either the neutral connection is weak, the circuit is overloaded, or a loose neutral exists somewhere between the panel and the affected area. LEDs make this highly visible because they respond to voltage changes that incandescent bulbs would have smoothed through.</div>
+        <div class="scenario-action">Document which appliances trigger it and how many rooms are affected. This is a high-priority condition &#8212; a weak neutral is a fire risk. Call a licensed electrician.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">03</div>
+          <div>
+            <div class="scenario-title">Recessed lights turn on normally then shut off after 5&#8211;10 minutes</div>
+            <span class="scenario-urgency urg-medium">Schedule Service</span>
+          </div>
+        </div>
+        <div class="scenario-cause">This is a thermal protection event. Modern recessed fixtures have internal thermal limiters that cut power when the housing reaches a critical temperature. Most common causes: inadequate airflow around the housing (often insulation packed directly against a non-IC-rated can), a LED retrofit bulb that generates more heat than the driver was designed to dissipate, or a dimmer that is creating excess heat load on the driver electronics.</div>
+        <div class="scenario-action">If the fixtures resume after cooling: upgrade to IC-rated LED retrofit modules or reduce wattage. If heat persists after upgrading fixtures, a professional evaluation is needed to assess airflow and wiring conditions.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">04</div>
+          <div>
+            <div class="scenario-title">Bathroom or exterior lights fail when it rains</div>
+            <span class="scenario-urgency urg-high">Call Today</span>
+          </div>
+        </div>
+        <div class="scenario-cause">Your GFCI is working correctly &#8212; it is detecting a real leakage current caused by moisture entering the circuit. Common entry points: a damaged gasket at the fixture housing, a cracked lens, water inside an exterior junction box, condensation inside conduit, or corrosion on lamp socket contacts allowing moisture to bridge the conductors. This is not a nuisance trip. Moisture in a lighting circuit is a genuine shock hazard.</div>
+        <div class="scenario-action">Leave the circuit off until dry. Inspect the fixture and cover for visible damage. Replace any cracked or failed weatherproofing. If the GFCI continues tripping after the fixture dries, a professional needs to inspect the fixture housing and junction box.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">05</div>
+          <div>
+            <div class="scenario-title">Lights in two different rooms brighten and dim in opposite directions</div>
+            <span class="scenario-urgency urg-critical">Emergency</span>
+          </div>
+        </div>
+        <div class="scenario-cause">This is classic MWBC neutral imbalance. When the shared neutral in a multi-wire branch circuit is loose or improperly routed, voltage on one leg rises while the other drops. You see it as lights getting brighter in one area while simultaneously dimming in another. This is a dangerous wiring condition. The loose neutral is a heating point, voltage swings can damage electronics, and the instability can progress.</div>
+        <div class="scenario-action">Turn off sensitive electronics on both circuits. This is not a homeowner repair under any circumstances. Call a licensed electrician immediately.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">06</div>
+          <div>
+            <div class="scenario-title">A 3-way controlled light works from one switch but not the other</div>
+            <span class="scenario-urgency urg-medium">Schedule Service</span>
+          </div>
+        </div>
+        <div class="scenario-cause">3-way switches rely on two traveler conductors that synchronize the switching between locations. If either traveler connection loosens &#8212; particularly common with backstabbed connections that lose spring tension over time &#8212; the circuit becomes unreliable. A miswired replacement switch is another frequent cause, especially after DIY work.</div>
+        <div class="scenario-action">Professional switch replacement is the correct repair. Avoid DIY work on 3-way circuits unless you are experienced with traveler wiring.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">07</div>
+          <div>
+            <div class="scenario-title">AFCI breaker trips when a specific dimmer is set to a low level</div>
+            <span class="scenario-urgency urg-medium">Schedule Service</span>
+          </div>
+        </div>
+        <div class="scenario-cause">Dimmers modify the AC waveform to reduce power. Failing dimmer electronics or a dimmer that is incompatible with the connected LED load can produce waveform distortion that AFCI sensors interpret as arcing signatures. In older dimmers, this often indicates the dimmer itself is degrading. The AFCI is detecting a real problem &#8212; it is just that the problem is in the dimmer, not the wiring.</div>
+        <div class="scenario-action">Replace the dimmer with a modern LED-rated model. If tripping continues after replacement, the wiring or connected fixtures need professional evaluation.</div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-header">
+          <div class="scenario-num">08</div>
+          <div>
+            <div class="scenario-title">LEDs glow faintly when the switch is off</div>
+            <span class="scenario-urgency urg-low">Low &#8212; Compatibility Fix</span>
+          </div>
+        </div>
+        <div class="scenario-cause">Smart switches and some dimmers that lack a neutral wire need a small amount of current to power their internal electronics. They obtain this by passing a tiny current through the light load. Some LED drivers interpret this as an "on" signal and produce a faint glow. This is a compatibility problem, not a wiring fault &#8212; but it indicates the switch was installed without a neutral, which limits smart switch options going forward.</div>
+        <div class="scenario-action">Best fix: replace with a smart switch model that requires a neutral wire and wire it correctly. Alternatively, use LED bulbs or fixtures listed as compatible with the specific switch. Some manufacturers offer a listed bypass device installed at the fixture.</div>
+      </div>
+
+    </div>
+
+    <h2 id="costs">Repair and Upgrade Cost Reference</h2>
+
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Typical Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic diagnostic visit</td>
+          <td><span class="cost-badge">$125&#8211;$250</span></td>
+        </tr>
+        <tr>
+          <td>Advanced diagnostic (thermal imaging, tracing)</td>
+          <td><span class="cost-badge">$200&#8211;$450</span></td>
+        </tr>
+        <tr>
+          <td>Standard switch replacement</td>
+          <td><span class="cost-badge">$90&#8211;$180</span></td>
+        </tr>
+        <tr>
+          <td>3-way switch replacement</td>
+          <td><span class="cost-badge">$120&#8211;$220</span></td>
+        </tr>
+        <tr>
+          <td>LED-rated dimmer replacement</td>
+          <td><span class="cost-badge">$140&#8211;$300</span></td>
+        </tr>
+        <tr>
+          <td>Smart switch installation</td>
+          <td><span class="cost-badge">$180&#8211;$450</span></td>
+        </tr>
+        <tr>
+          <td>Standard fixture replacement</td>
+          <td><span class="cost-badge">$120&#8211;$300</span></td>
+        </tr>
+        <tr>
+          <td>Recessed can &#8192;LED retrofit (per fixture + labor)</td>
+          <td><span class="cost-badge">$105&#8211;$260 each</span></td>
+        </tr>
+        <tr>
+          <td>Exterior fixture replacement</td>
+          <td><span class="cost-badge">$150&#8211;$350</span></td>
+        </tr>
+        <tr>
+          <td>Repair loose junction in accessible box</td>
+          <td><span class="cost-badge">$150&#8211;$350</span></td>
+        </tr>
+        <tr>
+          <td>Trace and repair hidden junction</td>
+          <td><span class="cost-badge">$350&#8211;$900</span></td>
+        </tr>
+        <tr>
+          <td>Correct MWBC / shared neutral issue</td>
+          <td><span class="cost-badge">$200&#8211;$700</span></td>
+        </tr>
+        <tr>
+          <td>Install new dedicated lighting circuit</td>
+          <td><span class="cost-badge">$800&#8211;$2,000+</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box tip">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">When to Replace Rather Than Repair</div>
+        <div class="callout-text">Integrated LED fixtures with failed drivers, fixtures with heat-damaged sockets, and older recessed cans with unreliable thermal limiters are almost always better replaced than repaired. If repair costs approach 40&#8211;50% of replacement cost &#8212; replace. The new fixture comes with a full lifespan and eliminates the failure point entirely.</div>
+      </div>
+    </div>
+
+    <h2 id="diy-vs-pro">What You Can Do vs. When to Call a Professional</h2>
+
+    <div class="diy-pro-block">
+      <div class="diy-card">
+        <div class="diy-card-head">
+          <div class="diy-badge diy">&#128161;</div>
+          <div class="diy-card-title">Safe Homeowner Actions</div>
+        </div>
+        <ul class="diy-list">
+          <li>Replace bulbs with known-good equivalents to eliminate the simplest cause</li>
+          <li>Check breaker, AFCI, and GFCI resets using the correct protocol</li>
+          <li>Note and document symptom scope, timing, and any correlating events</li>
+          <li>Observe switch plates for warmth, buzzing, or crackling without opening boxes</li>
+          <li>Inspect visible fixture exteriors for burn marks, moisture, or corrosion</li>
+          <li>Install smart bulbs into existing sockets &#8212; no wiring involved</li>
+          <li>Clean fixture lenses and trim rings</li>
+          <li>Check for moisture in exterior fixtures after rain events</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-card-head">
+          <div class="diy-badge pro">&#9888;&#65039;</div>
+          <div class="diy-card-title">Licensed Electrician Required</div>
+        </div>
+        <ul class="diy-list pro-list">
+          <li>Replacing switches, dimmers, and smart switches &#8212; switch boxes contain live wiring</li>
+          <li>Opening or repairing any junction box &#8212; boxes contain energized conductors upstream</li>
+          <li>Diagnosing or correcting MWBC or shared neutral problems</li>
+          <li>Tracing and repairing failed or hidden upstream splices</li>
+          <li>Replacing recessed lighting housings or fixture wiring harnesses</li>
+          <li>Correcting moisture-compromised wiring or fixture installations</li>
+          <li>Installing new circuits, AFCI breakers, or panel-mounted devices</li>
+          <li>Any situation with burning smell, arcing, or visible heat damage</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="prevention">Prevention &#8212; What Actually Reduces Lighting Failures Long-Term</h2>
+
+    <div class="prev-checklist">
+      <h3>&#128203; Lighting System Prevention Checklist</h3>
+      <div class="prev-section">
+        <h4>Dimmer &amp; Bulb Compatibility</h4>
+        <ul class="check-list">
+          <li>Replace any incandescent-era dimmers with LED-rated models &#8212; this single upgrade eliminates most LED flicker complaints</li>
+          <li>Match dimmers to the specific bulb types they will control &#8212; consult the manufacturer's compatibility list</li>
+          <li>Avoid mixing LED brands within the same fixture group on a dimmed circuit</li>
+          <li>Verify all dimmable fixtures are paired with dimmable bulbs</li>
+        </ul>
+      </div>
+      <div class="prev-section">
+        <h4>Heat Management in Fixtures</h4>
+        <ul class="check-list">
+          <li>Replace older recessed cans with sealed IC-rated LED retrofit modules &#8212; eliminates thermal limiter trips and socket failures</li>
+          <li>Ensure insulation is not packed directly over non-IC-rated recessed housings</li>
+          <li>Use LED bulbs rated for enclosed fixtures in enclosed globes and vanity fixtures</li>
+          <li>Do not exceed fixture maximum wattage ratings &#8212; even with LEDs</li>
+        </ul>
+      </div>
+      <div class="prev-section">
+        <h4>Exterior &amp; Wet Location Fixtures</h4>
+        <ul class="check-list">
+          <li>Inspect exterior fixture gaskets annually &#8212; replace if cracked or compressed flat</li>
+          <li>Check housing for cracks, corroded sockets, and mineral deposits annually</li>
+          <li>Verify weatherproof covers are fully functional and seal completely</li>
+          <li>Reseal any siding or conduit penetrations showing gaps or cracking</li>
+        </ul>
+      </div>
+      <div class="prev-section">
+        <h4>Smart Lighting &amp; Surge Protection</h4>
+        <ul class="check-list">
+          <li>Install smart switches only in boxes with a neutral wire &#8212; no-neutral smart switches cause driver glow and compatibility issues</li>
+          <li>Use bulbs and fixtures listed as compatible with your specific smart switch or dimmer model</li>
+          <li>Install whole-home surge protection &#8212; voltage spikes from utility or lightning are a leading cause of LED driver and dimmer failures</li>
+        </ul>
+      </div>
+      <div class="prev-section">
+        <h4>Periodic Electrical Inspection</h4>
+        <ul class="check-list">
+          <li>Schedule an electrical inspection every 5 years for homes over 25 years old</li>
+          <li>Every 3 years if the home has aluminum branch wiring</li>
+          <li>Immediately after persistent flickering, dimming, or AFCI trips that don't have a clear cause</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="safety">Critical Safety Warnings</h2>
+
+    <div class="safety-popout">
+      <h3>&#9888;&#65039; Do Not Ignore These &#8212; Lighting Circuits Reveal Real Hazards</h3>
+      <ul class="safety-list">
+        <li><span class="safety-warn-title">Turning off the switch does NOT de-energize the fixture box</span>Power may still be present upstream of the switch. Never open a ceiling or wall fixture box assuming it is safe simply because the switch is off. Always turn off the circuit breaker and verify with a non-contact voltage tester before opening any electrical box.</li>
+        <li><span class="safety-warn-title">Persistent flicker after confirming bulbs and dimmer compatibility is a wiring problem</span>Continuing to replace bulbs and dimmers when flicker persists doesn't fix the cause &#8212; it delays diagnosis of a loose connection or neutral problem that is progressing.</li>
+        <li><span class="safety-warn-title">Warm switches, burning smell, or melted plastic require immediate shutdown</span>Turn off the circuit at the breaker. Do not continue using the fixture or switch. These are high-resistance connection symptoms &#8212; the precursor to arcing.</li>
+        <li><span class="safety-warn-title">Neutral failures can damage electronics and create fire risk</span>A floating neutral can cause voltage swings severe enough to destroy appliances and smart devices. Whole-home brightness shifts require immediate professional evaluation.</li>
+        <li><span class="safety-warn-title">Hidden junction boxes are code violations and fire risks</span>Every splice must be in an accessible, properly covered junction box. Splices buried in walls, ceilings, or attics without a box are both illegal and genuinely dangerous. If you know of any, report them to the electrician you call.</li>
+      </ul>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why do brand-new LED bulbs flicker?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">The most common causes are an incompatible dimmer (particularly an incandescent-era dimmer on an LED load), a low-quality driver in the bulb itself, mixing brands within a dimmed fixture group, or a loose neutral somewhere on the circuit. Start by confirming the dimmer is LED-rated and the bulb is listed as compatible with that dimmer. If flicker persists across different bulbs, the circuit itself needs evaluation.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why do LEDs glow faintly when the switch is off?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">LED drivers are sensitive to extremely small amounts of current &#8212; far less than would illuminate an incandescent bulb. Smart switches and no-neutral dimmers pass a tiny current through the load to power their electronics, and some LED drivers respond by producing a faint glow. The fix is a neutral-required smart switch, a compatible bulb, or a listed bypass device. This is not a wiring fault, but it signals that your switch installation lacks a neutral.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can a single bad fixture cause problems with other fixtures?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; in two ways. First, if fixtures are daisy-chained, a failed connection at one fixture cuts power to everything downstream. Second, a failing LED driver can inject electrical noise back onto the circuit that causes AFCI trips or flicker at other fixtures sharing the same branch. If an AFCI is tripping and you cannot identify a clear cause, an aging or failing driver somewhere on the circuit is a legitimate suspect.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why do recessed lights turn off by themselves?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Recessed fixtures have internal thermal limiters that cut power when the housing reaches a critical temperature. This happens when airflow around the housing is blocked by insulation, when the LED driver generates more heat than the housing was designed to dissipate, or when the dimmer is running the driver inefficiently at partial power settings. Upgrading to IC-rated sealed LED retrofit modules and checking that insulation is not packed against the housing usually resolves this.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What is the most common cause of lighting failure?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">For single-fixture failures, a failing LED driver or dimmer incompatibility is most common. For circuit-wide or multi-fixture failures &#8212; the category that matters most from a safety perspective &#8212; the most consistent root cause is loose or heat-damaged wiring connections, particularly at neutral splices. The neutral is the weak point in most lighting circuits because it is shared across multiple fixtures and subject to thermal cycling over years of use.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How long should LED fixtures last?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Quality integrated LED fixtures are rated for 10&#8211;15 years under normal conditions. Low-cost fixtures often fail far earlier due to cheap drivers and inadequate thermal management. Retrofit LED bulbs in open fixtures typically last 7&#8211;12 years. The biggest factors affecting lifespan: heat (enclosed fixtures shorten driver life significantly), voltage stability (loose neutrals and frequent spikes degrade drivers), and dimmer compatibility (incompatible dimmers stress drivers every time the light is used).</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Are smart bulbs or smart switches better?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Smart bulbs are simpler for retrofit applications &#8212; no wiring changes needed. But they require that the wall switch stay on at all times, which is counterintuitive for household members. Smart switches provide conventional switch behavior and control any bulb in the fixture, but they require either a neutral wire in the switch box or a compatible no-neutral installation. For long-term installations, smart switches in switch boxes with a neutral are the more reliable and user-friendly approach.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why should lighting circuits have AFCI protection?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Lighting circuits contain multiple high-cycle mechanical components (switches, dimmers), heat-stressed connections at fixtures, long cable runs through attics and walls, and often older wiring in homes that have been renovated multiple times. All of these are sources of arc faults. AFCI protection detects arcing signatures before a standard breaker would trip and before any visible symptom appears. It is the best technology available for preventing electrical fires in living spaces.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>The scope of the symptom is your first diagnostic clue. One bulb = component failure. A group of fixtures = upstream splice. Multiple rooms = neutral or panel problem.</li>
+        <li>Lighting circuits fail more often than other circuits because of high switching cycles, heat at fixtures, LED driver sensitivity, dimmer incompatibility, and upstream neutral dependencies.</li>
+        <li>Persistent flicker after confirming bulb and dimmer compatibility is almost always a wiring problem &#8212; loose connection, weak neutral, or overloaded circuit. Replacing bulbs does not fix wiring.</li>
+        <li>Lights brightening and dimming in opposite directions across rooms is an MWBC neutral problem. Treat it as an emergency and call a licensed electrician.</li>
+        <li>AFCI trips on a lighting circuit are not nuisances. They are the protection system detecting arcing, failing drivers, degraded dimmers, or loose connections. Diagnose the cause before replacing the breaker.</li>
+        <li>Turning off the wall switch does not de-energize the fixture box. Always turn off the breaker and verify with a non-contact voltage tester before opening any electrical enclosure.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="article-tag-pill">lighting circuits</a>
+      <a href="#" class="article-tag-pill">flickering lights</a>
+      <a href="#" class="article-tag-pill">LED dimmer compatibility</a>
+      <a href="#" class="article-tag-pill">recessed lighting</a>
+      <a href="#" class="article-tag-pill">AFCI lighting</a>
+      <a href="#" class="article-tag-pill">smart switch neutral</a>
+      <a href="#" class="article-tag-pill">3-way switch</a>
+      <a href="#" class="article-tag-pill">LED driver failure</a>
+      <a href="#" class="article-tag-pill">loose neutral</a>
+      <a href="#" class="article-tag-pill">home electrical safety</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share this guide:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+
+  </div>
+
+  <div class="related">
+    <h3>More Electrical &amp; Safety Guides</h3>
+    <div class="related-grid">
+      <a href="electrical-systems-guide.html" class="related-card">
+        <div class="related-img e">&#9889;</div>
+        <div class="related-body">
+          <span class="tag">Electrical</span>
+          <div class="related-title">The Complete Guide to Home Electrical Systems</div>
+          <div class="related-meta">T.A. &#183; 32 min read</div>
+        </div>
+      </a>
+      <a href="gfci-afci-guide.html" class="related-card">
+        <div class="related-img e">&#128268;</div>
+        <div class="related-body">
+          <span class="tag">Electrical</span>
+          <div class="related-title">The Complete Guide to GFCI &amp; AFCI Protection</div>
+          <div class="related-meta">T.A. &#183; 28 min read</div>
+        </div>
+      </a>
+      <a href="breaker-tripping-guide.html" class="related-card">
+        <div class="related-img e">&#9889;</div>
+        <div class="related-body">
+          <span class="tag">Electrical</span>
+          <div class="related-title">Why Does My Circuit Breaker Keep Tripping?</div>
+          <div class="related-meta">T.A. &#183; 28 min read</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="sidebar-avatar">T.A.</div>
+      <div>
+        <div class="sidebar-expert-name">T.A.</div>
+        <div class="sidebar-expert-title">Fire Inspector &amp; Facility Manager</div>
+        <div class="sidebar-expert-bio">NFPA Certified Fire Inspector and Certified Healthcare Facility Manager. Electrician-trained with decades of experience managing electrical systems across hospitals, commercial buildings, and residential properties.</div>
+        <div class="sidebar-creds">
+          <span class="cred-pill">NFPA CFI-1</span>
+          <span class="cred-pill">CHFM</span>
+          <span class="cred-pill">CLSS-HC</span>
+          <span class="cred-pill">OSHA 30</span>
+          <span class="cred-pill">Electrician</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#how-circuits-work">How Circuits Are Wired</a></li>
+      <li><a href="#why-lighting-fails">Why Lighting Fails More Often</a></li>
+      <li><a href="#symptom-table">Symptom Decoder</a></li>
+      <li><a href="#severity">Urgency Scale</a></li>
+      <li><a href="#homeowner-diagnostic">Homeowner Diagnostics</a></li>
+      <li><a href="#scenarios">Real-World Scenarios</a></li>
+      <li><a href="#costs">Repair Cost Reference</a></li>
+      <li><a href="#diy-vs-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#prevention">Prevention Checklist</a></li>
+      <li><a href="#safety">Safety Warnings</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free expert advice</h4>
+    <p>Electrical safety guides and seasonal maintenance reminders from our certified fire inspector.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0px;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>Most Read This Week</h4>
+    <div class="pop-list">
+      <a href="electrical-systems-guide.html" class="pop-item">
+        <div class="pop-num">01</div>
+        <div>
+          <div class="pop-title">The Complete Guide to Home Electrical Systems</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="breaker-tripping-guide.html" class="pop-item">
+        <div class="pop-num">02</div>
+        <div>
+          <div class="pop-title">Why Does My Circuit Breaker Keep Tripping?</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="gfci-afci-guide.html" class="pop-item">
+        <div class="pop-num">03</div>
+        <div>
+          <div class="pop-title">The Complete Guide to GFCI &amp; AFCI Protection</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="foundation-guide.html" class="pop-item">
+        <div class="pop-num">04</div>
+        <div>
+          <div class="pop-title">Foundation Damage: What Every Crack Is Telling You</div>
+          <div class="pop-cat">Foundation &#183; C.M.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{
+      li.classList.remove('active');
+      if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
