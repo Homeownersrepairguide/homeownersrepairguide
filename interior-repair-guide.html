@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Homeowner's Guide to Interior Wear, Damage & Repair | HomeownersRepairGuide.com</title>
+<meta name="description" content="Why interior damage keeps repeating — and how to stop it. A surface-by-surface diagnostic guide to walls, ceilings, floors, doors, and trim, organized by root cause rather than repair product.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--slate:#4a6080;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .article-wrap{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+  .article-main{min-width:0;}
+  .article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;}
+  .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--slate);color:var(--white);}
+  .tag.safety{background:#c0402a;color:var(--white);}
+  .tag.diagnosis{background:#1a5a9a;color:var(--white);}
+  .tag.maintenance{background:#3a6b3a;color:var(--white);}
+  .article-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);line-height:1.12;letter-spacing:-0.025em;margin-bottom:20px;}
+  .article-subtitle{font-size:18px;color:var(--text-muted);line-height:1.6;margin-bottom:28px;border-left:3px solid var(--slate);padding-left:16px;}
+  .article-byline{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:32px;flex-wrap:wrap;}
+  .byline-avatars{display:flex;gap:8px;flex-shrink:0;}
+  .byline-avatar{width:44px;height:44px;border-radius:50%;background:var(--slate);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);}
+  .byline-info{flex:1;}
+  .byline-name{font-size:15px;font-weight:600;color:var(--text-dark);}
+  .byline-cred{font-size:12px;color:var(--text-muted);margin-top:2px;}
+  .byline-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:12px;color:var(--text-muted);text-align:right;}
+  .byline-meta strong{color:var(--text-dark);}
+  .article-hero-img{background:linear-gradient(135deg,#0a0808 0%,#1a1210 100%);border-radius:var(--radius-lg);height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:40px;gap:12px;border:1px solid var(--gray-light);position:relative;overflow:hidden;}
+  .article-hero-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 55% 50%,rgba(74,96,128,0.18) 0%,transparent 65%);}
+  .article-hero-img .img-icon{font-size:72px;opacity:0.45;position:relative;z-index:1;}
+  .article-hero-img .img-caption{font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;position:relative;z-index:1;}
+  .article-body{font-size:17px;line-height:1.75;color:var(--text-body);}
+  .article-body h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin:48px 0 16px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .article-body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy-mid);margin:32px 0 12px;}
+  .article-body p{margin-bottom:20px;}
+  .article-body ul,.article-body ol{margin:0 0 20px 0;padding-left:24px;}
+  .article-body li{margin-bottom:8px;}
+  .article-body strong{color:var(--text-dark);font-weight:600;}
+  .article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+  /* Four drivers */
+  .driver-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0;}
+  .driver-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:18px;box-shadow:var(--shadow-card);}
+  .driver-card.moisture{border-top:3px solid #1a5a9a;}
+  .driver-card.movement{border-top:3px solid var(--amber);}
+  .driver-card.thermal{border-top:3px solid var(--rust);}
+  .driver-card.impact{border-top:3px solid #3a6b3a;}
+  .driver-icon{font-size:22px;margin-bottom:8px;}
+  .driver-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+  .driver-tag{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;}
+  .driver-card.moisture .driver-tag{color:#1a5a9a;}
+  .driver-card.movement .driver-tag{color:#b07800;}
+  .driver-card.thermal .driver-tag{color:var(--rust);}
+  .driver-card.impact .driver-tag{color:#3a6b3a;}
+  .driver-desc{font-size:13px;color:var(--text-body);line-height:1.5;margin-bottom:6px;}
+  .driver-signals{font-size:12px;color:var(--text-muted);font-style:italic;}
+  /* Expert callout */
+  .expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0;display:flex;gap:18px;align-items:flex-start;}
+  .expert-callout-avatar{width:44px;height:44px;border-radius:50%;background:var(--slate);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+  .expert-callout-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:6px;}
+  .expert-callout-text{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+  .expert-callout-attr{font-size:12px;color:rgba(255,255,255,0.45);margin-top:8px;}
+  /* Callout boxes */
+  .callout-box{border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+  .callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+  .callout-box.danger{background:#fef2f0;border:1px solid #e08070;}
+  .callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+  .callout-box.info{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .callout-icon{font-size:22px;flex-shrink:0;margin-top:1px;}
+  .callout-content{flex:1;}
+  .callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+  .callout-box.warning .callout-label{color:#b07800;}
+  .callout-box.danger .callout-label{color:#c0402a;}
+  .callout-box.tip .callout-label{color:#2a7a2a;}
+  .callout-box.info .callout-label{color:#1a5a9a;}
+  .callout-text{font-size:15px;line-height:1.6;color:var(--text-body);}
+  /* Surface sections */
+  .surface-tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:28px 0;}
+  .surface-tab{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 10px;text-align:center;box-shadow:var(--shadow-card);cursor:pointer;}
+  .surface-tab-icon{font-size:20px;margin-bottom:6px;}
+  .surface-tab-label{font-size:12px;font-weight:700;color:var(--navy);}
+  /* Crack type table */
+  .crack-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .crack-table th{background:var(--slate);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .crack-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .crack-table tr:last-child td{border-bottom:none;}
+  .crack-table tr:nth-child(even) td{background:var(--cream);}
+  .crack-table td:first-child{font-weight:600;color:var(--text-dark);}
+  .risk-pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:2px;letter-spacing:0.05em;}
+  .risk-low{background:#eaf5ea;color:#2a7a2a;}
+  .risk-medium{background:#fff8e6;color:#b07800;}
+  .risk-high{background:#fef2f0;color:#c0402a;}
+  .risk-escalate{background:#c0392b;color:white;}
+  /* Decision tree */
+  .dtree{display:flex;flex-direction:column;gap:10px;margin:28px 0;}
+  .dtree-step{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .dtree-q{background:var(--navy);padding:11px 16px;font-size:14px;font-weight:700;color:var(--white);display:flex;gap:10px;align-items:center;}
+  .dtree-qnum{width:22px;height:22px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--navy);flex-shrink:0;}
+  .dtree-answers{padding:10px 16px;display:flex;flex-direction:column;gap:7px;}
+  .dtree-answer{display:flex;gap:10px;font-size:13px;color:var(--text-body);line-height:1.5;}
+  .dtree-arrow{color:var(--slate);font-weight:700;flex-shrink:0;margin-top:1px;}
+  /* Scenario cards */
+  .scenario-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:28px 0;}
+  .scenario-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+  .scenario-letter{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--slate);margin-bottom:6px;}
+  .scenario-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px;line-height:1.3;}
+  .scenario-steps{list-style:none;display:flex;flex-direction:column;gap:5px;}
+  .scenario-steps li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:8px;}
+  .scenario-steps li::before{content:'→';color:var(--slate);font-weight:700;flex-shrink:0;}
+  /* Severity */
+  .severity-block{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px;margin:36px 0;box-shadow:var(--shadow-card);}
+  .severity-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .severity-row{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;}
+  .severity-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:3px;}
+  .sev-low .severity-dot{background:#4caf50;}
+  .sev-medium .severity-dot{background:var(--amber);}
+  .sev-high .severity-dot{background:var(--rust);}
+  .sev-critical .severity-dot{background:#c0392b;}
+  .severity-label{font-size:13px;font-weight:700;width:160px;flex-shrink:0;}
+  .sev-low .severity-label{color:#4caf50;}
+  .sev-medium .severity-label{color:var(--amber);}
+  .sev-high .severity-label{color:var(--rust);}
+  .sev-critical .severity-label{color:#c0392b;}
+  .severity-examples{font-size:13px;color:var(--text-body);line-height:1.55;flex:1;}
+  /* Tool kit */
+  .toolkit-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:28px 0;}
+  .tool-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;box-shadow:var(--shadow-card);}
+  .tool-name{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+  .tool-use{font-size:12px;color:var(--text-muted);line-height:1.45;}
+  /* Safety popout */
+  .safety-popout{background:linear-gradient(135deg,#c0392b,#a93226);border-radius:var(--radius-lg);padding:28px 32px;margin:40px 0;}
+  .safety-popout h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:14px;}
+  .safety-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .safety-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(255,255,255,0.9);line-height:1.55;}
+  .safety-list li::before{content:'!';width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,0.2);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+  .safety-warn-title{font-weight:700;color:var(--white);display:block;margin-bottom:2px;}
+  /* Humidity guide */
+  .humidity-bar{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:24px 28px;margin:28px 0;box-shadow:var(--shadow-card);}
+  .humidity-bar h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+  .humidity-scale{display:flex;height:24px;border-radius:var(--radius);overflow:hidden;margin-bottom:12px;}
+  .humidity-zone{display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--white);}
+  .hz-too-low{background:#1a5a9a;flex:30;}
+  .hz-good{background:#2a7a2a;flex:25;}
+  .hz-caution{background:var(--amber);flex:15;}
+  .hz-risk{background:var(--rust);flex:30;}
+  .humidity-labels{display:flex;font-size:11px;color:var(--text-muted);gap:2px;}
+  .humidity-labels span{flex:1;text-align:center;}
+  /* FAQ */
+  .faq-block{margin:36px 0;}
+  .faq-item{border-bottom:1px solid var(--gray-light);}
+  .faq-question{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font-size:16px;font-weight:600;color:var(--navy);gap:16px;user-select:none;}
+  .faq-question:hover{color:var(--slate);}
+  .faq-chevron{font-size:18px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+  .faq-answer{font-size:15px;color:var(--text-body);line-height:1.7;padding-bottom:18px;display:none;}
+  .faq-item.open .faq-answer{display:block;}
+  .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--slate);}
+  /* Summary */
+  .summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px;margin:48px 0 36px;}
+  .summary-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .summary-list li{display:flex;gap:12px;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.55;}
+  .summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+  /* Tags & share */
+  .article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0;padding-top:32px;border-top:1px solid var(--gray-light);}
+  .article-tag-pill{font-size:12px;padding:5px 12px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+  .article-tag-pill:hover{background:var(--slate);color:var(--white);border-color:var(--slate);}
+  .share-bar{display:flex;align-items:center;gap:12px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:48px;flex-wrap:wrap;}
+  .share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+  .share-btn{padding:8px 16px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+  .share-btn:hover{opacity:0.85;}
+  .share-fb{background:#1877f2;color:white;}
+  .share-x{background:#000;color:white;}
+  .share-pin{background:#e60023;color:white;}
+  .share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+  /* Related */
+  .related{margin-top:48px;}
+  .related h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .related-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;}
+  .related-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+  .related-img{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px;}
+  .related-img.g{background:linear-gradient(135deg,#e8eaf0,#d4d8e4);}
+  .related-img.f{background:linear-gradient(135deg,#ede8e0,#ddd4c8);}
+  .related-body{padding:16px;}
+  .related-body .tag{font-size:10px;padding:3px 8px;margin-bottom:8px;}
+  .related-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:6px;}
+  .related-meta{font-size:11px;color:var(--text-muted);}
+  /* Sidebar */
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:24px;}
+  .sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .sidebar-card h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gray-light);}
+  .sidebar-experts{display:flex;flex-direction:column;gap:14px;}
+  .sidebar-expert{display:flex;gap:12px;align-items:flex-start;}
+  .sidebar-avatar{width:44px;height:44px;border-radius:50%;background:var(--slate);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);flex-shrink:0;}
+  .sidebar-expert-name{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+  .sidebar-expert-title{font-size:11px;color:var(--slate);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+  .sidebar-expert-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+  .toc-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+  .toc-list li a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);text-decoration:none;padding:6px 8px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+  .toc-list li a:hover{background:var(--cream);color:var(--slate);}
+  .toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+  .toc-list li.active a{color:var(--slate);background:var(--cream);font-weight:600;}
+  .toc-list li.active a::before{background:var(--slate);width:6px;height:6px;}
+  .sidebar-newsletter{background:var(--slate);border-radius:var(--radius-lg);padding:24px;}
+  .sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:10px;}
+  .sidebar-newsletter p{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.55;margin-bottom:16px;}
+  .ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:32px 16px;text-align:center;}
+  .ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:6px;}
+  .ad-placeholder .ad-size{font-size:13px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+  .pop-list{display:flex;flex-direction:column;gap:14px;}
+  .pop-item{display:flex;gap:12px;align-items:flex-start;text-decoration:none;}
+  .pop-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:28px;}
+  .pop-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.35;transition:color 0.15s;}
+  .pop-item:hover .pop-title{color:var(--slate);}
+  .pop-cat{font-size:11px;color:var(--text-muted);margin-top:3px;}
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:24px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+  @media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.related-grid{grid-template-columns:1fr 1fr;}.driver-grid{grid-template-columns:1fr;}.scenario-grid{grid-template-columns:1fr;}.toolkit-grid{grid-template-columns:1fr;}.surface-tabs{grid-template-columns:repeat(3,1fr);}}
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.related-grid{grid-template-columns:1fr;}.surface-tabs{grid-template-columns:repeat(2,1fr);}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html" class="active">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-general-repair.html">General Repair</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">The Complete Guide to Interior Wear, Damage &amp; Repair</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">General Repair</span>
+    <span class="tag diagnosis">Diagnosis</span>
+    <span class="tag maintenance">Prevention</span>
+  </div>
+
+  <h1 class="article-title">The Complete Homeowner's Guide to Interior Wear, Damage &amp; Repair</h1>
+
+  <p class="article-subtitle">Your interior finishes are the home's instrument panel &#8212; cracks, stains, squeaks, and swelling are warning signals. This guide teaches you to read them correctly so you repair the driver, not just the surface.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatars">
+      <div class="byline-avatar">M.A.</div>
+      <div class="byline-avatar">T.A.</div>
+    </div>
+    <div class="byline-info">
+      <div class="byline-name">M.A. &amp; T.A. &#8212; Licensed Contractor &amp; Certified Facility Manager</div>
+      <div class="byline-cred">M.A.: Roto-Rooter Owner &#183; USAF Lt. Col. (Ret.) &#183; MBA Gonzaga &#8212; T.A.: NFPA CFI-1 &#183; CHFM &#183; OSHA 30</div>
+    </div>
+    <div class="byline-meta">
+      <span><strong>Updated:</strong> January 2025</span>
+      <span>28 min read &#183; Fact-verified</span>
+    </div>
+  </div>
+
+  <div class="article-hero-img">
+    <div class="img-icon">&#127968;</div>
+    <div class="img-caption">[Hero image &#8212; e.g. drywall crack near door frame, moisture stain on ceiling, or hardwood floor inspection]</div>
+  </div>
+
+  <div class="article-body">
+
+    <p>Interior damage that keeps coming back is not a product problem. It is a diagnosis problem. When a crack reappears in the exact same place after repair, the home is telling you the force creating it was never addressed. When a ceiling stain returns after painting, the moisture source is still active. The repair itself was fine &#8212; but it was applied to a symptom, not a cause.</p>
+
+    <p>This guide treats your interior surfaces as what they actually are: a symptom-reporting system. Walls, ceilings, floors, doors, and trim are the finishes that record what the house is experiencing &#8212; movement, moisture, thermal change, and impact. Learn to read them that way, and you stop repair stacking.</p>
+
+    <div class="callout-box info">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">The Single Most Important Diagnostic Principle</div>
+        <div class="callout-text"><strong>Damage that reappears in the exact same location after repair is almost always driven by movement or moisture &#8212; not poor patching.</strong> The house has preferred failure zones: corners of openings, ceiling-wall joints, long hallway seams. If you repair the surface without addressing the driver, the house will reproduce the symptom.</div>
+      </div>
+    </div>
+
+    <h2 id="four-drivers">The Four Primary Damage Drivers</h2>
+
+    <p>Most interior problems trace back to one or more of these four forces. Identifying the correct driver before you choose a repair product is the most important step in the entire process.</p>
+
+    <div class="driver-grid">
+      <div class="driver-card moisture">
+        <div class="driver-icon">&#128167;</div>
+        <div class="driver-title">Moisture</div>
+        <div class="driver-tag">Leaks &#183; Condensation &#183; Vapor &#183; High Humidity</div>
+        <div class="driver-desc">The fastest way to turn normal wear into expensive damage. Moisture is often intermittent &#8212; the stain dries, the damage fades &#8212; so homeowners chronically underestimate it. It accelerates every other driver.</div>
+        <div class="driver-signals">Signals: stains, swelling, softness, musty odor, bubbling paint, cupped hardwood, efflorescence on basement walls</div>
+      </div>
+      <div class="driver-card movement">
+        <div class="driver-icon">&#128200;</div>
+        <div class="driver-title">Movement</div>
+        <div class="driver-tag">Settlement &#183; Seasonal &#183; Structural Deflection</div>
+        <div class="driver-desc">Framing moves first; finishes record that movement. Wood expands with humidity, soils shift under load, trusses lift in winter. Brittle assemblies (drywall, tile, plaster) crack when movement exceeds their tolerance.</div>
+        <div class="driver-signals">Signals: recurring cracks near openings, doors changing alignment seasonally, gaps that open and close, squeaks that worsen</div>
+      </div>
+      <div class="driver-card thermal">
+        <div class="driver-icon">&#127777;&#65039;</div>
+        <div class="driver-title">Temperature &amp; Humidity Cycling</div>
+        <div class="driver-tag">Expansion &#183; Contraction &#183; HVAC Cycling</div>
+        <div class="driver-desc">Seasonal humidity swings cause wood to swell and shrink. Temperature cycling stresses sealants and joints. Extreme indoor RH swings &#8212; common in homes with aggressive HVAC setbacks &#8212; amplify cracking and gapping.</div>
+        <div class="driver-signals">Signals: gaps that open in winter and close in summer, caulk splits that reappear, hardwood gapping in dry seasons</div>
+      </div>
+      <div class="driver-card impact">
+        <div class="driver-icon">&#128175;</div>
+        <div class="driver-title">Vibration &amp; Impact</div>
+        <div class="driver-tag">Slamming &#183; Traffic &#183; Equipment</div>
+        <div class="driver-desc">Slamming doors, exercise equipment, heavy appliances, and repeated foot traffic create fatigue damage at fasteners and joints. Often dismissed as "just wear" but can accelerate dramatically when combined with poor fastening into drywall rather than framing.</div>
+        <div class="driver-signals">Signals: fasteners backing out, trim separating at joints, recurring loose hardware, new squeaks after appliance installation</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">M.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert &#8212; On the Repair Stacking Trap</div>
+        <div class="expert-callout-text">"The most expensive interior repair cycle I see is the one where a homeowner patches, paints, watches it fail in six months, patches again, fails again, and three years later calls me to fix what's now a much larger problem. In every one of those cases, the patch itself was done correctly. The material was applied right. But the moisture source was still active, or the framing was still moving, or the fastening was still into drywall instead of studs. The finish kept failing because the driver kept driving. My rule is simple: don't pick up a putty knife until you can answer 'what is causing this?' If you can't answer that, you're not ready to repair. You're in the investigation phase."</div>
+        <div class="expert-callout-attr">&#8212; M.A., Roto-Rooter Owner &#183; USAF Lt. Colonel (Ret.) &#183; MBA Gonzaga</div>
+      </div>
+    </div>
+
+    <h2 id="walls">Walls &#8212; Drywall, Plaster, and Surface Failures</h2>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Diagnostic Shortcut</div>
+        <div class="callout-text">Staining, softness, bubbling paint, or musty odor should be treated as <strong>moisture until proven otherwise</strong>. Do not patch and repaint until the moisture source is identified and corrected.</div>
+      </div>
+    </div>
+
+    <p>Wall damage is the most common interior complaint because walls combine multiple stressors &#8212; framing movement, door and window openings that concentrate stress, thermal changes near exterior walls, and daily impact. The most important step before choosing any repair product is classifying the crack type.</p>
+
+    <table class="crack-table">
+      <thead>
+        <tr>
+          <th>Crack Type</th>
+          <th>What It Usually Means</th>
+          <th>Risk Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hairline at drywall seams</td>
+          <td>Normal initial shrinkage or joint tape detachment. Stable once house finishes drying and settling.</td>
+          <td><span class="risk-pill risk-low">Cosmetic</span></td>
+        </tr>
+        <tr>
+          <td>Vertical crack aligned with studs</td>
+          <td>Framing shrinkage, joint movement, or fastener pattern issues. Usually stable once lumber dries.</td>
+          <td><span class="risk-pill risk-low">Cosmetic</span></td>
+        </tr>
+        <tr>
+          <td>Diagonal crack at door or window corner</td>
+          <td>Stress concentration at openings from seasonal movement, settlement, or racking. Common &#8212; but if recurring or widening, investigate.</td>
+          <td><span class="risk-pill risk-medium">Monitor</span></td>
+        </tr>
+        <tr>
+          <td>Crack crossing wall-to-ceiling corner</td>
+          <td>Often truss uplift &#8212; a seasonal movement of roof framing that pulls ceiling drywall at interior walls. Most common in newer homes in winter.</td>
+          <td><span class="risk-pill risk-medium">Monitor</span></td>
+        </tr>
+        <tr>
+          <td>Step cracks in plaster along joints</td>
+          <td>Movement of the substrate or lath/key failure in older homes. Surface skim coat may fail if the mechanical bond behind the plaster is compromised.</td>
+          <td><span class="risk-pill risk-medium">Investigate</span></td>
+        </tr>
+        <tr>
+          <td>Crack with offset (one side higher than the other)</td>
+          <td>Differential movement across the crack. More serious than a simple opening &#8212; indicates vertical displacement.</td>
+          <td><span class="risk-pill risk-high">Escalate</span></td>
+        </tr>
+        <tr>
+          <td>Wide, rapidly growing diagonal crack near multiple openings</td>
+          <td>Possible structural movement, significant settlement, or racking. Especially concerning if paired with sticking doors/windows or sloping floors.</td>
+          <td><span class="risk-pill risk-escalate">Call a Pro</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Wall Repair Decision Tree</h3>
+
+    <div class="dtree">
+      <div class="dtree-step">
+        <div class="dtree-q"><div class="dtree-qnum">1</div>Is there any staining, softness, bubbling paint, or musty odor?</div>
+        <div class="dtree-answers">
+          <div class="dtree-answer"><span class="dtree-arrow">→</span><span><strong>Yes</strong> &#8212; treat as moisture. Find and fix the source first. Do not patch or paint until the area is dry and the source is confirmed corrected.</span></div>
+          <div class="dtree-answer"><span class="dtree-arrow">→</span><span><strong>No</strong> &#8212; continue to Step 2.</span></div>
+        </div>
+      </div>
+      <div class="dtree-step">
+        <div class="dtree-q"><div class="dtree-qnum">2</div>Does the crack or gap reappear in the same location after repair, or open/close seasonally?</div>
+        <div class="dtree-answers">
+          <div class="dtree-answer"><span class="dtree-arrow">→</span><span><strong>Yes</strong> &#8212; treat as movement. Choose a flexible repair strategy (embedding tape, flexible caulk in movement zones) and investigate whether framing, humidity swings, or truss uplift is the driver.</span></div>
+          <div class="dtree-answer"><span class="dtree-arrow">→</span><span><strong>No &#8212; stable and one-time</strong> &#8212; continue to Step 3.</span></div>
+        </div>
+      </div>
+      <div class="dtree-step">
+        <div class="dtree-q"><div class="dtree-qnum">3</div>Is the crack wide, offset, rapidly changing, or paired with door/window misalignment?</div>
+        <div class="dtree-answers">
+          <div class="dtree-answer"><span class="dtree-arrow">→</span><span><strong>Yes</strong> &#8212; escalate. Document with dated photos and measurements. Call a structural or foundation professional before attempting cosmetic repair.</span></div>
+          <div class="dtree-answer"><span class="dtree-arrow">→</span><span><strong>No</strong> &#8212; stable cosmetic defect. Repair the surface correctly with appropriate compound, tape, prime, and paint.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Durable Drywall Repair &#8212; What Actually Works</h3>
+    <p>For stable hairline cracks: slightly open the crack with a utility knife to remove loose edges. Use setting-type compound (hot mud) for first coats &#8212; it cures chemically rather than only drying, making it harder and less prone to shrinkage. Embed paper tape for strength. Feather out multiple coats to avoid a ridge. <strong>Prime patched areas before paint</strong> so the patch doesn't "flash" through the finish with a different sheen.</p>
+    <p>For nail pops: the lasting repair is not "cover it with mud." Set or remove the popped fastener and add new screws into solid framing to re-clamp the drywall. Then patch, sand, prime, and paint. If nail pops are widespread across many rooms, investigate whether the home is experiencing unusual humidity swings.</p>
+
+    <h2 id="ceilings">Ceilings &#8212; Stains, Sagging, and Separation</h2>
+
+    <div class="callout-box danger">
+      <div class="callout-icon">&#128680;</div>
+      <div class="callout-content">
+        <div class="callout-label">Misdiagnosis Warning</div>
+        <div class="callout-text">A ceiling problem is rarely "just cosmetic" until you confirm moisture is not involved. Painting over stains without correcting moisture almost guarantees return &#8212; and may trap mold growth behind the new finish.</div>
+      </div>
+    </div>
+
+    <h3>Reading Ceiling Stains as a Diagnostic Map</h3>
+    <p>A ceiling stain is not just a discoloration &#8212; it is a history of wetting and drying. <strong>Yellow-brown ring stains</strong> commonly indicate repeated cycles: the leak occurs, dries, and occurs again. The ring forms as minerals are deposited at the expanding edge of the wet area each time. A single short event usually leaves more uniform discoloration without a pronounced ring.</p>
+    <p><strong>Location tells you where to look first.</strong> Stains near bathrooms may be plumbing or condensation from a disconnected bath fan duct. Stains near exterior walls may be ice damming, roof flashing issues, or attic ventilation problems. Stains directly under HVAC supply ducts can be condensation dripping from uninsulated ductwork &#8212; not a roof leak at all.</p>
+    <p><strong>Dark ghosting lines that trace framing members</strong> are thermal ghosting, not mold. Airborne particles preferentially settle on slightly cooler areas where insulation is thin or where thermal bridging occurs at framing. The fix is improved filtration and insulation, not bleach.</p>
+
+    <h3>Truss Uplift &#8212; Why Winter Ceiling Cracks Return</h3>
+    <p>In many newer homes, seasonal truss uplift causes drywall seams and wall-to-ceiling corners to open in winter and close in summer. This is not structural failure &#8212; it is predictable wood movement in roof trusses as temperature and humidity change seasonally. The best cosmetic approach for existing homes is movement-tolerant detailing: flexible caulk in corners rather than rigid joint compound. Rigid repairs in these zones will crack again.</p>
+
+    <h2 id="floors">Floors &#8212; Unevenness, Softness, and Noise</h2>
+
+    <p>Floors communicate structural performance and moisture history more clearly than almost any other interior surface. The right diagnosis depends on separating "global" issues from "local" issues. A uniform slope across a room may be historic settlement that is stable. A localized soft spot or a dip that appeared recently is a much higher-priority investigation.</p>
+
+    <h3>Flooring Symptom Guide</h3>
+    <ul>
+      <li><strong>Hardwood cupping (edges higher than center):</strong> moisture from below or high indoor humidity. The fix is moisture control first &#8212; not sanding. Sanding a cupped floor while it is still wet from below can create crowning when it dries.</li>
+      <li><strong>Hardwood gapping between boards:</strong> low indoor humidity in dry seasons. Persistent wide gapping can indicate chronic low humidity or poor acclimation at installation. Avoid filling with rigid fillers that will crush or pop when wood expands.</li>
+      <li><strong>Laminate or LVP separation or peaking:</strong> inadequate expansion clearance at walls, uneven subfloor, or moisture intrusion. Floating floors must have room to move &#8212; tight edges against walls cause pressure buildup that lifts the floor at seams.</li>
+      <li><strong>Tile cracks or grout cracking in a pattern:</strong> floor deflection exceeding what the tile assembly can tolerate. Tile is unforgiving of movement &#8212; the fix is rarely "better tile." It is stiffening the subfloor system.</li>
+      <li><strong>Soft spot near a toilet, sink, or appliance:</strong> stop-and-investigate immediately. Slow plumbing leaks under fixtures are the most common cause of subfloor damage. If the subfloor is compromised, replacing finish flooring without repairing it will fail quickly.</li>
+    </ul>
+
+    <h3>Floor Squeaks &#8212; What They Actually Are</h3>
+    <p>A squeak is a friction event. It is the subfloor rubbing on a fastener shank, the subfloor sliding slightly on the joist, or tongue-and-groove edges moving against each other. Squeaks that worsen in winter (when wood dries and shrinks) confirm this is a fastening and movement issue. The effective fix depends on access: from below, construction adhesive at the subfloor-joist interface plus screws; from above, specialty screws pulled tight into joists. Random screws without hitting joists do nothing and can create new friction points.</p>
+
+    <h2 id="doors-windows">Doors &amp; Windows &#8212; Operational Failures</h2>
+
+    <p>Doors and windows require tight dimensional tolerances to operate correctly. Small changes in geometry show up as rubbing, latch misalignment, drafts, and binding long before any other interior surface reveals the same movement. When a single door changes, it is usually a hinge or humidity issue. When <strong>multiple doors change at the same time</strong>, suspect movement driven by soil moisture changes, foundation behavior, or a significant humidity event.</p>
+
+    <h3>Fast Door Diagnostics</h3>
+    <ul>
+      <li><strong>Tighten hinge screws first.</strong> Replace at least one screw per hinge leaf with a 3-inch screw that reaches the framing &#8212; not just the door jamb &#8212; to re-anchor loose hinges properly.</li>
+      <li><strong>Check the reveal:</strong> is the gap around the door even on all sides? A tight top corner often indicates jamb racking or header movement, not a door problem.</li>
+      <li><strong>Parallelogram gap pattern</strong> (tight in one top corner, wide in the opposite bottom corner) suggests frame racking &#8212; investigate whether floor movement or settlement is involved.</li>
+      <li><strong>Seasonal sticking:</strong> if the door sticks only in humid months and swings free in winter, indoor moisture control may solve it without any planing.</li>
+    </ul>
+
+    <h3>Window Symptom Guide</h3>
+    <ul>
+      <li><strong>Condensation between window panes:</strong> the insulated glass unit (IGU) seal has failed. This is a unit failure &#8212; not an indoor humidity problem. The fix is IGU replacement or window replacement, not dehumidification.</li>
+      <li><strong>Condensation on the interior glass surface:</strong> indoor humidity too high, or glass too cold due to poor installation air sealing. The fix is humidity control and air sealing &#8212; not window replacement.</li>
+      <li><strong>Binding at one corner:</strong> frame racking or shimming issues &#8212; investigate whether adjacent floor or foundation movement is involved.</li>
+      <li><strong>Drafts:</strong> failed weatherstripping (replace), poor original caulking (seal), or missing installation flashing (professional reinstall).</li>
+    </ul>
+
+    <h2 id="moisture">Moisture &#8212; The Repair Hierarchy</h2>
+
+    <p>Moisture is the fastest accelerator of all other interior damage. The repair hierarchy is non-negotiable: <strong>Stop water → Control movement → Repair surface.</strong> Reversing this order causes repeat failure every time.</p>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert &#8212; On Why Moisture Investigation Comes First</div>
+        <div class="expert-callout-text">"In facility management, we have a rule: you don't close the ceiling until you know where the water came from. It seems obvious, but in residential repair it gets violated constantly. Homeowners see a stain, they dry it out, it looks fine, they patch and paint. Six months later the stain is back, and now there's mold behind the drywall that wasn't there before because the new surface trapped moisture against the original wet area. The 48-hour drying rule exists for a reason &#8212; material that gets wet and stays wet for more than 48 hours is in mold risk territory. Your first 48 hours after discovering water damage should be aggressive: remove wet insulation and porous materials, run fans and dehumidifiers, and find the source. The cosmetic repair comes last."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA CFI-1 &#183; Certified Healthcare Facility Manager &#183; OSHA 30</div>
+      </div>
+    </div>
+
+    <h3>Common Interior Moisture Sources</h3>
+    <ul>
+      <li><strong>Plumbing leaks:</strong> supply lines, drain connections, wax rings, shower pans, tub overflows, refrigerator water lines, dishwasher connections</li>
+      <li><strong>Roof and flashing failures:</strong> penetrations, valleys, chimney flashing, ice dams &#8212; often appear as ceiling stains that correlate with rain events</li>
+      <li><strong>Condensation:</strong> uninsulated ducts, cold water pipes in warm spaces, poorly ventilated bathrooms, cold corners behind furniture</li>
+      <li><strong>Bulk water intrusion:</strong> basement seepage, window installation failures, siding and caulk failures at penetrations</li>
+      <li><strong>Disconnected bath fan ducts:</strong> exhausting warm moist air into the attic rather than outside &#8212; produces ceiling staining that mimics roof leaks</li>
+    </ul>
+
+    <div class="humidity-bar">
+      <h3>&#128327; Indoor Humidity Target Guide</h3>
+      <div class="humidity-scale">
+        <div class="humidity-zone hz-too-low" style="flex:30">Below 30%</div>
+        <div class="humidity-zone hz-good" style="flex:25">30&#8211;55%</div>
+        <div class="humidity-zone hz-caution" style="flex:15">55&#8211;60%</div>
+        <div class="humidity-zone hz-risk" style="flex:30">Above 60%</div>
+      </div>
+      <div class="humidity-labels">
+        <span style="flex:30;color:#1a5a9a;font-weight:600">Wood shrinks, gaps open</span>
+        <span style="flex:25;color:#2a7a2a;font-weight:600">Target range</span>
+        <span style="flex:15;color:#b07800;font-weight:600">Caution</span>
+        <span style="flex:30;color:var(--rust);font-weight:600">Mold &amp; movement risk</span>
+      </div>
+      <p style="font-size:13px;color:var(--text-muted);margin-top:12px;margin-bottom:0">A basic hygrometer (under $20) is one of the most cost-effective diagnostic tools you can own. Many interior problems &#8212; recurring cracks, sticking doors, floor gapping, peeling paint &#8212; trace directly to RH swings outside this range. In cold climates, target the lower end (30&#8211;40%) to prevent window condensation.</p>
+    </div>
+
+    <h2 id="scenarios">Six Real-World Scenarios</h2>
+
+    <div class="scenario-grid">
+
+      <div class="scenario-card">
+        <div class="scenario-letter">Scenario A</div>
+        <div class="scenario-title">Ceiling stain appears or grows within 24&#8211;48 hours of rain</div>
+        <ul class="scenario-steps">
+          <li>Confirm timing correlation with rain events over multiple storms</li>
+          <li>Inspect attic if accessible: look for wet insulation, darkened wood, or a drip path on framing</li>
+          <li>Check roof penetrations above: vents, flashing, chimneys, valleys</li>
+          <li>Dry thoroughly, then seal stain with stain-blocking primer; repair ceiling <em>only after</em> the leak is confirmed resolved</li>
+        </ul>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-letter">Scenario B</div>
+        <div class="scenario-title">Diagonal cracks above doors keep returning after repair</div>
+        <ul class="scenario-steps">
+          <li>Check door operation and reveals &#8212; is the top corner tightening seasonally or progressively?</li>
+          <li>Note whether cracks worsen in winter (truss uplift / low humidity) or summer (swelling)</li>
+          <li>Reinforce repair with paper tape and a wider feather area rather than a skim coat alone</li>
+          <li>If cracks are paired with door misalignment or appear in multiple rooms, escalate to professional evaluation</li>
+        </ul>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-letter">Scenario C</div>
+        <div class="scenario-title">Soft floor spot near toilet or plumbing fixture</div>
+        <ul class="scenario-steps">
+          <li>Check whether the toilet rocks &#8212; movement can break the wax seal and cause ongoing leakage</li>
+          <li>Look for staining at the base, swelling trim, or musty odor</li>
+          <li>If accessible from below, inspect subfloor for darkening, mold, or rot</li>
+          <li>Fix the leak first (new wax ring, tighten supply, etc.), repair subfloor, <em>then</em> replace finish flooring</li>
+        </ul>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-letter">Scenario D</div>
+        <div class="scenario-title">Multiple doors start sticking suddenly or within days of each other</div>
+        <ul class="scenario-steps">
+          <li>Check indoor humidity immediately &#8212; a significant spike can swell wood frames across the house</li>
+          <li>Look for a recent moisture event: wet basement, plumbing leak, heavy rain season, HVAC failure</li>
+          <li>Inspect floors in the affected area for new slope or softness</li>
+          <li>If multiple openings changed quickly with no humidity explanation and you see new cracks, escalate to professional structural assessment</li>
+        </ul>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-letter">Scenario E</div>
+        <div class="scenario-title">New floor squeaks after installing flooring</div>
+        <ul class="scenario-steps">
+          <li>Determine whether squeaks are in the subfloor/joists or within the new flooring system itself</li>
+          <li>For floating floors: verify expansion gaps and underlayment condition &#8212; tight edges against walls cause peak pressure at seams</li>
+          <li>For nailed or glued: verify fastening pattern and whether subfloor seams are supported at the panel edges</li>
+          <li>From below, add construction adhesive and blocking where subfloor-to-joist interface is loose</li>
+        </ul>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-letter">Scenario F</div>
+        <div class="scenario-title">Paint bubbles on interior of an exterior wall</div>
+        <ul class="scenario-steps">
+          <li>Check for plumbing in that wall and inspect for active leaks</li>
+          <li>Check whether furniture blocks airflow at that wall &#8212; cold corners behind furniture collect condensation</li>
+          <li>Look for exterior water entry: failed caulk, missing flashing, gutter overflow against the wall</li>
+          <li>Dry the wall fully, identify and correct the moisture source, then repaint using appropriate primer</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+
+    <div class="severity-block">
+      <div class="severity-title">Interior Damage Urgency Scale</div>
+      <div class="severity-row sev-low">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Cosmetic &#8212; Monitor</div>
+        <div class="severity-examples">Small scuffs and dents. Hairline cracks stable for more than a year. Minor nail pops that don't recur after proper fastening. Seasonal wood gapping that closes in humid seasons. Repair as convenient; no urgency.</div>
+      </div>
+      <div class="severity-row sev-medium">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Functional &#8212; Repair Soon</div>
+        <div class="severity-examples">Recurring cracks in the same location after repair. Ceiling stains or bubbling paint. Soft floor spots. Doors or windows sticking progressively. Swollen baseboards near plumbing. Investigate the driver; repair surface after correction.</div>
+      </div>
+      <div class="severity-row sev-high">
+        <div class="severity-dot"></div>
+        <div class="severity-label">High Priority &#8212; Act Now</div>
+        <div class="severity-examples">Cracks that are measurably widening or show offset. Multiple openings misaligning simultaneously. Sagging ceilings with softness or ongoing moisture. Suspected rot in subfloor or framing. Widespread mold odor. Call a professional before beginning repair work.</div>
+      </div>
+      <div class="severity-row sev-critical">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Emergency</div>
+        <div class="severity-examples">Active water intrusion you cannot stop. Sagging ceiling with bulging or cracking (collapse risk). Water near electrical fixtures or panels. Sudden dramatic door/window misalignment with floor slope changes. Evacuate the area and call immediately.</div>
+      </div>
+    </div>
+
+    <h2 id="safety">Safety Warnings &#8212; Before You Start Any Work</h2>
+
+    <div class="safety-popout">
+      <h3>&#9888;&#65039; Interior Repair Safety &#8212; Your Hard Stop Lines</h3>
+      <ul class="safety-list">
+        <li><span class="safety-warn-title">Homes built before 1978 may contain lead paint</span>Assume lead is present unless tested. Do not dry-sand painted surfaces &#8212; use wet methods, HEPA vacuuming, and containment. Consider professional testing before significant sanding or demolition.</li>
+        <li><span class="safety-warn-title">Older textured ceilings and floor tiles may contain asbestos</span>Do not sand, drill, or disturb popcorn ceilings or old resilient floor tiles without lab testing first. Disturbing asbestos-containing materials without proper controls creates health hazards far more serious and expensive than the repair.</li>
+        <li><span class="safety-warn-title">Water near electrical components is an electrocution hazard</span>Before investigating ceiling stains or wall moisture near outlets, switches, or light fixtures, shut off power to the affected circuits at the breaker. Never touch wet electrical components.</li>
+        <li><span class="safety-warn-title">Do not seal over suspected mold with paint or compound</span>Painting over mold without moisture control is temporary and traps growth behind the new surface. If you find widespread mold or persistent musty odor after drying attempts, professional assessment and remediation are warranted before any cosmetic repair.</li>
+        <li><span class="safety-warn-title">Do not stand beneath a sagging or bulging ceiling</span>Saturated drywall can fail without warning under its own weight. If the ceiling is sagging or cracking, clear the area and assess from a safe distance before any inspection or repair attempt.</li>
+      </ul>
+    </div>
+
+    <h2 id="toolkit">Homeowner Diagnostic Toolkit</h2>
+
+    <div class="toolkit-grid">
+      <div class="tool-card">
+        <div class="tool-name">&#128247; Smartphone camera + notes app</div>
+        <div class="tool-use">Creates a dated record of crack width, stain growth, and door reveals. This is your baseline for "is it changing?" &#8212; more valuable than any repair product for recurring problems.</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">&#128200; Hygrometer (humidity meter)</div>
+        <div class="tool-use">Under $20. Tells you whether seasonal swelling, shrinkage, or condensation is likely. Many interior problems trace directly to RH outside the 30&#8211;55% target range.</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">&#128336; 4&#8211;6 ft level or straightedge</div>
+        <div class="tool-use">Distinguishes a uniform slope (often historic stable settlement) from a localized dip (often active damage). Also reveals subfloor ridges and humps before tile installation.</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">&#128267; Non-contact voltage tester</div>
+        <div class="tool-use">Safety tool when working near outlets, switches, and ceiling fixtures while investigating stains or sagging. Confirms power is off before any contact with potentially wet wiring.</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">&#128270; Pin-type moisture meter</div>
+        <div class="tool-use">Most useful for comparing areas: "this wall base is wetter than that one." Helps confirm whether an area is drying or still actively wet before closing up with new finishes.</div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-name">&#128296; Utility knife and 5-in-1 painter tool</div>
+        <div class="tool-use">For opening cracks cleanly before patching, removing loose tape or compound, probing for soft drywall, and applying caulk. Allows proper surface prep that determines whether a patch lasts.</div>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does a crack return in the exact same location every time I patch it?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Because the stress path in the framing hasn't changed. Houses have preferred failure zones &#8212; corners of openings, ceiling-wall joints, long hallway seams &#8212; where movement or stress concentrates. Seasonal framing movement, humidity swings, truss uplift, and foundation settlement all repeat on predictable cycles. The patch was likely applied correctly, but the driver kept driving. For recurring cracks, the durable approach is embedding paper tape with setting compound (stronger than skim coat alone), widening the feather area, and &#8212; most importantly &#8212; controlling the driver through humidity management or flexible detailing in movement zones.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is condensation between window panes caused by indoor humidity?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No &#8212; and this is one of the most common window misdiagnoses. Condensation between the panes of an insulated glass unit means the sealed gas space between the panes has been breached &#8212; the IGU seal has failed. This allows moisture to enter the airspace. No amount of indoor humidity control will fix it. The fix is IGU replacement (the glass unit itself) or full window replacement. Condensation on the interior glass surface &#8212; on the room side of the glass &#8212; is a separate issue caused by high indoor humidity or poorly insulated/sealed window frames, and is addressed with humidity control and air sealing.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Do I need to replace drywall after a leak?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Not always &#8212; but the decision depends on what happened to the drywall. If it dried fully within 24&#8211;48 hours and remains firm without crumbling, sagging, or mold odor, you can often seal and refinish. If the drywall is soft, crumbly, sagging, or shows mold growth, replacement is almost always smarter than trying to save it. Wet drywall that stays wet longer than 48 hours enters mold risk territory &#8212; and drywall that was wet long enough to sag has lost structural integrity. The key question is: how long was it wet, and what is the condition now?</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My door sticks only in summer. Do I need to plane it?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Probably not &#8212; and planing without understanding the seasonal pattern first is a common mistake. If the door sticks only during humid months and swings freely in winter, the cause is humidity-driven wood expansion. Planing the door in summer creates a gap in winter that allows drafts. The better approach: improve indoor humidity control (bath fans, dehumidifier if needed, whole-house ventilation strategy), confirm the door is hung with long screws into framing rather than just the jamb, and then evaluate whether planing is still needed after a full seasonal cycle.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I install tile over a bouncy floor if I use a thick enough underlayment?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No. Underlayment reduces minor surface imperfections, but it cannot compensate for excessive floor deflection. Tile and grout are brittle &#8212; they crack when the subfloor flexes beyond what the tile assembly can tolerate, regardless of underlayment thickness. The industry standard for tile-ready floors is L/360 &#8212; meaning deflection under design load should not exceed the span divided by 360. A bouncy floor needs structural intervention: additional joists, blocking, sistering, or span reduction. Once the floor system is adequately stiff, then the correct underlayment goes down.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">When should I stop DIY and call a professional?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Use the three-factor test: consequence, detectability, and reversibility. If the consequence of getting it wrong is high (structural members, active water near electrical, extensive mold), the hidden damage is likely (you can't see what's inside the wall or under the floor), or the work is hard to reverse (structural modifications, full subfloor replacement) &#8212; professional involvement is usually the right call. Specifically: call a pro for active water you cannot locate or stop, cracks that are widening or showing offset, suspected rot in joists or sill plates, widespread mold, and any time multiple symptoms are clustering in one area of the home.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways &#8212; The Interior Repair Action Plan</h3>
+      <ul class="summary-list">
+        <li>Interior finishes are the instrument panel of the home &#8212; they record what the house is experiencing. Damage that returns in the same location after repair means the driver is still active, not that the repair was done wrong.</li>
+        <li>Classify the driver before choosing a product: Moisture, Movement, Temperature/Humidity cycling, or Impact/Vibration. The wrong repair for the right driver fails predictably.</li>
+        <li>Moisture is always the first driver to eliminate. Find and fix the source, dry thoroughly, then repair the surface. Reversing this order guarantees repeat failure.</li>
+        <li>Target indoor humidity of 30&#8211;55%. Many recurring interior problems &#8212; door sticking, floor gapping, paint bubbling, wall cracking &#8212; trace directly to RH outside this range.</li>
+        <li>Multiple symptoms clustering in one area (walls, ceilings, and floors all affected) almost always indicate a shared driver, not multiple unrelated problems. Escalate to professional assessment.</li>
+        <li>Homes built before 1978 may contain lead paint; older textured ceilings may contain asbestos. Test before sanding, drilling, or disturbing these materials.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="article-tag-pill">interior repair</a>
+      <a href="#" class="article-tag-pill">drywall repair</a>
+      <a href="#" class="article-tag-pill">ceiling stain</a>
+      <a href="#" class="article-tag-pill">floor squeak</a>
+      <a href="#" class="article-tag-pill">door sticking</a>
+      <a href="#" class="article-tag-pill">wall crack</a>
+      <a href="#" class="article-tag-pill">moisture damage</a>
+      <a href="#" class="article-tag-pill">hardwood cupping</a>
+      <a href="#" class="article-tag-pill">truss uplift</a>
+      <a href="#" class="article-tag-pill">home repair</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share this guide:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+
+  </div>
+
+  <div class="related">
+    <h3>More General Repair Guides</h3>
+    <div class="related-grid">
+      <a href="everyday-repairs-guide.html" class="related-card">
+        <div class="related-img g">&#128296;</div>
+        <div class="related-body">
+          <span class="tag">General Repair</span>
+          <div class="related-title">The Complete Guide to Everyday Repairs &amp; Quick-Fix Myths</div>
+          <div class="related-meta">M.A. &#183; 28 min read</div>
+        </div>
+      </a>
+      <a href="roof-leak-guide.html" class="related-card">
+        <div class="related-img g">&#127959;&#65039;</div>
+        <div class="related-body">
+          <span class="tag">General Repair</span>
+          <div class="related-title">The Complete Guide to Roof Leak Diagnosis &amp; Repair</div>
+          <div class="related-meta">T.A. &#183; 26 min read</div>
+        </div>
+      </a>
+      <a href="foundation-guide.html" class="related-card">
+        <div class="related-img f">&#127959;&#65039;</div>
+        <div class="related-body">
+          <span class="tag">Foundation</span>
+          <div class="related-title">Foundation Damage: What Every Crack Is Telling You</div>
+          <div class="related-meta">C.M. &#183; 25 min read</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>About the Authors</h4>
+    <div class="sidebar-experts">
+      <div class="sidebar-expert">
+        <div class="sidebar-avatar">M.A.</div>
+        <div>
+          <div class="sidebar-expert-name">M.A.</div>
+          <div class="sidebar-expert-title">Licensed Contractor</div>
+          <div class="sidebar-expert-bio">Roto-Rooter owner, Pacific Northwest. USAF Lt. Colonel (Ret.) with 23 years of service. MBA from Gonzaga University.</div>
+        </div>
+      </div>
+      <div class="sidebar-expert">
+        <div class="sidebar-avatar">T.A.</div>
+        <div>
+          <div class="sidebar-expert-name">T.A.</div>
+          <div class="sidebar-expert-title">Certified Facility Manager</div>
+          <div class="sidebar-expert-bio">NFPA CFI-1, CHFM, CLSS-HC, OSHA 30, Electrician. Decades of experience managing building systems and moisture-related failures in commercial and healthcare facilities.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#four-drivers">The 4 Damage Drivers</a></li>
+      <li><a href="#walls">Walls &amp; Drywall</a></li>
+      <li><a href="#ceilings">Ceilings</a></li>
+      <li><a href="#floors">Floors</a></li>
+      <li><a href="#doors-windows">Doors &amp; Windows</a></li>
+      <li><a href="#moisture">Moisture Repair Hierarchy</a></li>
+      <li><a href="#scenarios">6 Real Scenarios</a></li>
+      <li><a href="#severity">Urgency Scale</a></li>
+      <li><a href="#safety">Safety Warnings</a></li>
+      <li><a href="#toolkit">Diagnostic Toolkit</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free homeowner advice</h4>
+    <p>Interior repair guides and seasonal maintenance reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0px;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>Most Read This Week</h4>
+    <div class="pop-list">
+      <a href="everyday-repairs-guide.html" class="pop-item">
+        <div class="pop-num">01</div>
+        <div>
+          <div class="pop-title">The Complete Guide to Everyday Repairs &amp; Quick-Fix Myths</div>
+          <div class="pop-cat">General Repair &#183; M.A.</div>
+        </div>
+      </a>
+      <a href="roof-leak-guide.html" class="pop-item">
+        <div class="pop-num">02</div>
+        <div>
+          <div class="pop-title">The Complete Guide to Roof Leak Diagnosis &amp; Repair</div>
+          <div class="pop-cat">General Repair &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="foundation-guide.html" class="pop-item">
+        <div class="pop-num">03</div>
+        <div>
+          <div class="pop-title">Foundation Damage: What Every Crack Is Telling You</div>
+          <div class="pop-cat">Foundation &#183; C.M.</div>
+        </div>
+      </a>
+      <a href="maintenance-guide.html" class="pop-item">
+        <div class="pop-num">04</div>
+        <div>
+          <div class="pop-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="pop-cat">Maintenance &#183; T.A. &amp; M.A.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{
+      li.classList.remove('active');
+      if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
