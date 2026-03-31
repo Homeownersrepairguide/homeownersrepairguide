@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Home Air Conditioning Guide: How AC Works, Why It Fails & What to Do | HomeownersRepairGuide.com</title>
+<meta name="description" content="A certified facility manager and HVAC specialist explains the refrigerant cycle, every AC failure mode, homeowner-safe diagnostic steps, and how to tell when repair vs. replacement makes sense.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--teal:#2a7a8c;--teal-light:#3a9ab0;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.15s;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .article-wrap{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+  .article-main{min-width:0;}
+  .article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;}
+  .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--teal);color:var(--white);}
+  .tag.safety{background:#c0402a;color:var(--white);}
+  .tag.diagnosis{background:#1a5a9a;color:var(--white);}
+  .tag.maintenance{background:#3a6b3a;color:var(--white);}
+  .article-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);line-height:1.12;letter-spacing:-0.025em;margin-bottom:20px;}
+  .article-subtitle{font-size:18px;color:var(--text-muted);line-height:1.6;margin-bottom:28px;border-left:3px solid var(--teal);padding-left:16px;}
+  .article-byline{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:32px;}
+  .byline-avatar{width:48px;height:48px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);flex-shrink:0;}
+  .byline-info{flex:1;}
+  .byline-name{font-size:15px;font-weight:600;color:var(--text-dark);}
+  .byline-cred{font-size:12px;color:var(--text-muted);margin-top:2px;}
+  .byline-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:12px;color:var(--text-muted);text-align:right;}
+  .byline-meta strong{color:var(--text-dark);}
+  .article-hero-img{background:linear-gradient(135deg,#040e12 0%,#08202a 100%);border-radius:var(--radius-lg);height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:40px;gap:12px;border:1px solid var(--gray-light);position:relative;overflow:hidden;}
+  .article-hero-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 55% 50%,rgba(42,122,140,0.22) 0%,transparent 65%);}
+  .article-hero-img .img-icon{font-size:72px;opacity:0.45;position:relative;z-index:1;}
+  .article-hero-img .img-caption{font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;position:relative;z-index:1;}
+  .article-body{font-size:17px;line-height:1.75;color:var(--text-body);}
+  .article-body h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin:48px 0 16px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .article-body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy-mid);margin:32px 0 12px;}
+  .article-body p{margin-bottom:20px;}
+  .article-body ul,.article-body ol{margin:0 0 20px 0;padding-left:24px;}
+  .article-body li{margin-bottom:8px;}
+  .article-body strong{color:var(--text-dark);font-weight:600;}
+  .article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+  /* Refrigerant cycle */
+  .cycle-flow{display:flex;flex-direction:column;gap:0;margin:28px 0;background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .cycle-step{display:flex;align-items:flex-start;gap:16px;padding:16px 20px;border-bottom:1px solid var(--gray-light);position:relative;}
+  .cycle-step:last-child{border-bottom:none;}
+  .cycle-num{width:30px;height:30px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+  .cycle-label{font-size:14px;font-weight:700;color:var(--navy);width:170px;flex-shrink:0;margin-top:2px;}
+  .cycle-desc{font-size:13px;color:var(--text-body);line-height:1.55;}
+  .cycle-arrow{font-size:11px;color:var(--gray-mid);margin:0 20px 0 12px;margin-top:2px;}
+  /* Component cards */
+  .component-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0;}
+  .component-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);border-top:3px solid var(--teal);}
+  .component-icon{font-size:22px;margin-bottom:8px;}
+  .component-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .component-desc{font-size:13px;color:var(--text-body);line-height:1.55;margin-bottom:8px;}
+  .component-fail{font-size:12px;color:var(--rust);font-weight:600;}
+  /* Expert callout */
+  .expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0;display:flex;gap:18px;align-items:flex-start;}
+  .expert-callout-avatar{width:44px;height:44px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+  .expert-callout-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:6px;}
+  .expert-callout-text{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+  .expert-callout-attr{font-size:12px;color:rgba(255,255,255,0.45);margin-top:8px;}
+  /* Callout boxes */
+  .callout-box{border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+  .callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+  .callout-box.danger{background:#fef2f0;border:1px solid #e08070;}
+  .callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+  .callout-box.info{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .callout-icon{font-size:22px;flex-shrink:0;margin-top:1px;}
+  .callout-content{flex:1;}
+  .callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+  .callout-box.warning .callout-label{color:#b07800;}
+  .callout-box.danger .callout-label{color:#c0402a;}
+  .callout-box.tip .callout-label{color:#2a7a2a;}
+  .callout-box.info .callout-label{color:#1a5a9a;}
+  .callout-text{font-size:15px;line-height:1.6;color:var(--text-body);}
+  /* Failure category table */
+  .failure-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .failure-table th{background:var(--teal);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .failure-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .failure-table tr:last-child td{border-bottom:none;}
+  .failure-table tr:nth-child(even) td{background:var(--cream);}
+  .failure-table td:first-child{font-weight:600;color:var(--text-dark);}
+  /* Severity */
+  .severity-block{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px;margin:36px 0;box-shadow:var(--shadow-card);}
+  .severity-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .severity-row{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;}
+  .severity-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:3px;}
+  .sev-low .severity-dot{background:#4caf50;}
+  .sev-medium .severity-dot{background:var(--amber);}
+  .sev-high .severity-dot{background:var(--rust);}
+  .sev-critical .severity-dot{background:#c0392b;}
+  .severity-label{font-size:13px;font-weight:700;width:130px;flex-shrink:0;}
+  .sev-low .severity-label{color:#4caf50;}
+  .sev-medium .severity-label{color:var(--amber);}
+  .sev-high .severity-label{color:var(--rust);}
+  .sev-critical .severity-label{color:#c0392b;}
+  .severity-examples{font-size:13px;color:var(--text-body);line-height:1.55;flex:1;}
+  /* Diagnostic steps */
+  .diag-steps{display:flex;flex-direction:column;gap:0;margin:28px 0;}
+  .diag-step{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid var(--gray-light);}
+  .diag-step:last-child{border-bottom:none;}
+  .diag-step-num{width:36px;height:36px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+  .diag-step-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .diag-step-body{font-size:14px;color:var(--text-body);line-height:1.6;}
+  .diag-step-stop{font-size:13px;font-weight:700;color:#c0402a;margin-top:8px;}
+  /* Scenario cards */
+  .scenario-list{display:flex;flex-direction:column;gap:14px;margin:28px 0;}
+  .scenario-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:22px 24px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+  .scenario-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:30px;}
+  .scenario-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;line-height:1.3;}
+  .scenario-body{font-size:14px;color:var(--text-body);line-height:1.55;margin-bottom:8px;}
+  .scenario-action{font-size:13px;font-weight:600;color:var(--rust);}
+  /* Cost table */
+  .cost-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .cost-table th{background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;}
+  .cost-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);background:var(--white);vertical-align:top;line-height:1.5;}
+  .cost-table tr:last-child td{border-bottom:none;}
+  .cost-table tr:nth-child(even) td{background:var(--cream);}
+  .cost-table td:first-child{font-weight:600;color:var(--text-dark);}
+  .cost-badge{font-family:'DM Mono',monospace;font-size:13px;font-weight:600;color:var(--navy);}
+  /* Maintenance checklist */
+  .maint-checklist{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px 32px;margin:28px 0;box-shadow:var(--shadow-card);}
+  .maint-checklist h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .maint-section{margin-bottom:18px;}
+  .maint-section:last-child{margin-bottom:0;}
+  .maint-section h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-dark);margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid var(--gray-light);}
+  .check-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+  .check-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-body);line-height:1.45;}
+  .check-list li::before{content:'';display:inline-block;width:16px;height:16px;border:2px solid var(--gray-mid);border-radius:3px;flex-shrink:0;margin-top:1px;}
+  /* DIY vs Pro */
+  .diy-pro-block{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:28px 0;}
+  .diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:22px;box-shadow:var(--shadow-card);}
+  .diy-card-head{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+  .diy-badge{width:40px;height:40px;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:20px;}
+  .diy-badge.diy{background:#e8f5e9;}
+  .diy-badge.pro{background:#fff3e0;}
+  .diy-card-title{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);}
+  .diy-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+  .diy-list li{font-size:14px;color:var(--text-body);line-height:1.45;display:flex;gap:8px;}
+  .diy-list li::before{content:'\2713';color:#2a7a2a;font-weight:700;flex-shrink:0;}
+  .pro-list li::before{content:'!';color:#e65100;}
+  /* Safety popout */
+  .safety-popout{background:linear-gradient(135deg,#c0392b,#a93226);border-radius:var(--radius-lg);padding:28px 32px;margin:40px 0;}
+  .safety-popout h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:14px;}
+  .safety-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .safety-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(255,255,255,0.9);line-height:1.55;}
+  .safety-list li::before{content:'!';width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,0.2);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+  .safety-warn-title{font-weight:700;color:var(--white);display:block;margin-bottom:2px;}
+  /* FAQ */
+  .faq-block{margin:36px 0;}
+  .faq-item{border-bottom:1px solid var(--gray-light);}
+  .faq-question{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font-size:16px;font-weight:600;color:var(--navy);gap:16px;user-select:none;}
+  .faq-question:hover{color:var(--teal);}
+  .faq-chevron{font-size:18px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+  .faq-answer{font-size:15px;color:var(--text-body);line-height:1.7;padding-bottom:18px;display:none;}
+  .faq-item.open .faq-answer{display:block;}
+  .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--teal);}
+  /* Summary */
+  .summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px;margin:48px 0 36px;}
+  .summary-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .summary-list li{display:flex;gap:12px;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.55;}
+  .summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+  /* Tags & share */
+  .article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0;padding-top:32px;border-top:1px solid var(--gray-light);}
+  .article-tag-pill{font-size:12px;padding:5px 12px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+  .article-tag-pill:hover{background:var(--teal);color:var(--white);border-color:var(--teal);}
+  .share-bar{display:flex;align-items:center;gap:12px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:48px;flex-wrap:wrap;}
+  .share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+  .share-btn{padding:8px 16px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+  .share-btn:hover{opacity:0.85;}
+  .share-fb{background:#1877f2;color:white;}
+  .share-x{background:#000;color:white;}
+  .share-pin{background:#e60023;color:white;}
+  .share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+  /* Related */
+  .related{margin-top:48px;}
+  .related h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .related-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;}
+  .related-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+  .related-img{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px;}
+  .related-img.h{background:linear-gradient(135deg,#e6f4f6,#cce8ec);}
+  .related-img.m{background:linear-gradient(135deg,#eaf5ea,#d4ecd4);}
+  .related-body{padding:16px;}
+  .related-body .tag{font-size:10px;padding:3px 8px;margin-bottom:8px;}
+  .related-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:6px;}
+  .related-meta{font-size:11px;color:var(--text-muted);}
+  /* Sidebar */
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:24px;}
+  .sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .sidebar-card h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gray-light);}
+  .sidebar-expert{display:flex;gap:14px;align-items:flex-start;}
+  .sidebar-avatar{width:52px;height:52px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);flex-shrink:0;}
+  .sidebar-expert-name{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+  .sidebar-expert-title{font-size:12px;color:var(--teal);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
+  .sidebar-expert-bio{font-size:13px;color:var(--text-muted);line-height:1.55;}
+  .sidebar-creds{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;}
+  .cred-pill{font-size:10px;padding:3px 8px;background:var(--cream-dark);border-radius:2px;color:var(--text-muted);font-weight:600;}
+  .toc-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+  .toc-list li a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);text-decoration:none;padding:6px 8px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+  .toc-list li a:hover{background:var(--cream);color:var(--teal);}
+  .toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+  .toc-list li.active a{color:var(--teal);background:var(--cream);font-weight:600;}
+  .toc-list li.active a::before{background:var(--teal);width:6px;height:6px;}
+  .sidebar-newsletter{background:var(--teal);border-radius:var(--radius-lg);padding:24px;}
+  .sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:10px;}
+  .sidebar-newsletter p{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.55;margin-bottom:16px;}
+  .ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:32px 16px;text-align:center;}
+  .ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:6px;}
+  .ad-placeholder .ad-size{font-size:13px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+  .pop-list{display:flex;flex-direction:column;gap:14px;}
+  .pop-item{display:flex;gap:12px;align-items:flex-start;text-decoration:none;}
+  .pop-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:28px;}
+  .pop-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.35;transition:color 0.15s;}
+  .pop-item:hover .pop-title{color:var(--teal);}
+  .pop-cat{font-size:11px;color:var(--text-muted);margin-top:3px;}
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:24px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+  @media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.related-grid{grid-template-columns:1fr 1fr;}.component-grid{grid-template-columns:1fr;}.diy-pro-block{grid-template-columns:1fr;}}
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.related-grid{grid-template-columns:1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">The Complete Home Air Conditioning Guide</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">HVAC</span>
+    <span class="tag diagnosis">Diagnosis</span>
+    <span class="tag maintenance">Maintenance</span>
+  </div>
+
+  <h1 class="article-title">The Complete Home Air Conditioning Guide: How It Works, Why It Fails &amp; What to Do</h1>
+
+  <p class="article-subtitle">Most AC failures don't happen suddenly &#8212; they build slowly from restricted airflow, degraded electrical components, or ignored drainage issues. A certified facility manager and HVAC specialist walks through every failure mode and how to read the symptoms correctly.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Certified Facility Manager &amp; Life Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 &#183; CHFM &#183; CLSS-HC &#183; OSHA 30 &#183; Electrician &#8212; All Phases</div>
+    </div>
+    <div class="byline-meta">
+      <span><strong>Updated:</strong> January 2025</span>
+      <span>26 min read &#183; Fact-verified</span>
+    </div>
+  </div>
+
+  <div class="article-hero-img">
+    <div class="img-icon">&#10052;&#65039;</div>
+    <div class="img-caption">[Hero image &#8212; e.g. outdoor condenser unit or indoor air handler inspection]</div>
+  </div>
+
+  <div class="article-body">
+
+    <p>Air conditioning systems are more than comfort appliances &#8212; they control humidity, filter air, and protect the home's building envelope from moisture-driven damage. When an AC system fails, the consequences extend well beyond a hot afternoon. Mold can begin forming on an iced evaporator coil within days. A backed-up condensate line can damage ceilings and flooring. A neglected compressor running outside its design parameters doesn't just fail &#8212; it fails expensively.</p>
+
+    <p>The good news: the vast majority of AC failures are predictable and preventable. Systems that appear to "break down overnight" have almost always been operating at the edge of their limits for months, signaling trouble through symptoms most homeowners have learned to ignore. This guide teaches you to stop ignoring them.</p>
+
+    <div class="callout-box danger">
+      <div class="callout-icon">&#128680;</div>
+      <div class="callout-content">
+        <div class="callout-label">If You See Water Stains on the Ceiling Below the Air Handler</div>
+        <div class="callout-text"><strong>Turn off the system immediately.</strong> A primary or secondary drain pan has overflowed. Every hour the system continues running increases the risk of structural water damage, mold formation, and potential electrical hazards from water near components. This is not a "check it later" situation.</div>
+      </div>
+    </div>
+
+    <h2 id="how-it-works">How Your AC System Actually Works</h2>
+
+    <p>Every air conditioning system &#8212; whether a central split system, a heat pump, or a packaged unit &#8212; operates on the same principle: heat is absorbed indoors and released outdoors using a closed loop of refrigerant moving through precisely controlled pressure and temperature states. Understanding this cycle is the foundation for interpreting every symptom your system produces.</p>
+
+    <div class="cycle-flow">
+      <div class="cycle-step">
+        <div class="cycle-num">1</div>
+        <div class="cycle-label">Evaporator Coil</div>
+        <div class="cycle-desc">Warm indoor air passes over the cold coil. Refrigerant inside evaporates at low pressure, absorbing heat and moisture from the air. Water condenses on the coil and drains away. <strong>If airflow is restricted, the coil freezes.</strong></div>
+      </div>
+      <div class="cycle-step">
+        <div class="cycle-num">2</div>
+        <div class="cycle-label">Blower Motor</div>
+        <div class="cycle-desc">Moves conditioned air through the duct system. High static pressure &#8212; from undersized returns, dirty filters, or restrictive ducts &#8212; reduces airflow, stresses the motor, and triggers coil freeze.</div>
+      </div>
+      <div class="cycle-step">
+        <div class="cycle-num">3</div>
+        <div class="cycle-label">Refrigerant Lines</div>
+        <div class="cycle-desc">The refrigerant travels from the indoor coil to the outdoor unit carrying absorbed heat. The suction line (larger, insulated) returns low-pressure vapor. The liquid line returns high-pressure liquid.</div>
+      </div>
+      <div class="cycle-step">
+        <div class="cycle-num">4</div>
+        <div class="cycle-label">Compressor</div>
+        <div class="cycle-desc">The heart of the system. Raises refrigerant pressure and temperature so the heat can be released outdoors. <strong>The most expensive component to replace.</strong> Runs outside its design envelope when refrigerant is wrong or airflow is restricted.</div>
+      </div>
+      <div class="cycle-step">
+        <div class="cycle-num">5</div>
+        <div class="cycle-label">Condenser Coil &amp; Fan</div>
+        <div class="cycle-desc">Outdoor fan moves air across the condenser coil, releasing the absorbed heat outside. Blocked airflow from vegetation, debris, or fencing raises head pressure and strains the compressor.</div>
+      </div>
+      <div class="cycle-step">
+        <div class="cycle-num">6</div>
+        <div class="cycle-label">Condensate Drain</div>
+        <div class="cycle-desc">Removes the moisture pulled from indoor air. Algae, silt, and debris clog the line over time. When it backs up, the safety float switch shuts the system down &#8212; or water overflows and damages the home.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert &#8212; On Why Airflow Is the Root of Most AC Problems</div>
+        <div class="expert-callout-text">"If I could give homeowners one piece of knowledge that would prevent the majority of AC service calls, it would be this: the evaporator coil needs continuous, adequate airflow to function. Everything downstream &#8212; refrigerant pressure, compressor health, humidity removal, energy efficiency &#8212; depends on that airflow being right. A dirty filter is not just inconvenient. It starts a cascade: the coil gets too cold, it ices over, the ice blocks airflow further, and now you have a system that runs continuously and delivers almost nothing. I've seen brand-new systems fail within a year because nobody changed the filter. And I've seen 15-year-old systems still performing well because the airflow was always maintained. It's that fundamental."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA CFI-1 &#183; Certified Healthcare Facility Manager &#183; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="failure-modes">AC Failure Modes &#8212; The Six Categories</h2>
+
+    <table class="failure-table">
+      <thead>
+        <tr>
+          <th>Failure Category</th>
+          <th>What Causes It</th>
+          <th>What You Notice</th>
+          <th>Homeowner Fix?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Airflow restriction</td>
+          <td>Dirty filter, blocked returns, closed registers, dirty evaporator coil, failing blower motor</td>
+          <td>Iced coil, weak airflow from vents, system runs constantly, little cooling</td>
+          <td>Partial &#8212; filter/registers yes; coil cleaning is professional</td>
+        </tr>
+        <tr>
+          <td>Refrigerant imbalance</td>
+          <td>Slow leak at coil, line set, or flare connection; improper charge from last service</td>
+          <td>Warm air despite long run times, coil freezing, bubbling/hissing at service valves, high energy bills</td>
+          <td>No &#8212; requires licensed technician and EPA certification</td>
+        </tr>
+        <tr>
+          <td>Electrical degradation</td>
+          <td>Weakened capacitors, pitted contactors, motor bearing wear &#8212; accelerated by heat waves and age</td>
+          <td>Outdoor fan runs but compressor won't start, clicking/humming, breaker trips, system won't start at all</td>
+          <td>No &#8212; high-voltage components; capacitors store dangerous charge even when off</td>
+        </tr>
+        <tr>
+          <td>Drainage failure</td>
+          <td>Algae buildup in condensate line, cracked drain pan, improper pitch, frozen coil melting rapidly</td>
+          <td>System shuts off (float switch), water stains on ceiling, standing water in drain pan</td>
+          <td>Partial &#8212; flush drain line; cracked pan and float switch testing are professional</td>
+        </tr>
+        <tr>
+          <td>Control/thermostat problem</td>
+          <td>Poor placement, dead batteries, loose low-voltage wiring, smart thermostat configuration errors</td>
+          <td>Short cycling, long cycles, system doesn't respond, setpoint never reached in one area</td>
+          <td>Yes &#8212; verify settings, replace batteries, check placement</td>
+        </tr>
+        <tr>
+          <td>Component aging</td>
+          <td>Normal wear over 12&#8211;15 year lifespan &#8212; compressor, motors, coils, bearings all degrade</td>
+          <td>Steadily declining efficiency, new noises, increasing repair frequency, R-22 refrigerant system</td>
+          <td>No &#8212; professional evaluation for repair vs. replacement decision</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="components">Key Components and Their Failure Signatures</h2>
+
+    <div class="component-grid">
+      <div class="component-card">
+        <div class="component-icon">&#10052;&#65039;</div>
+        <div class="component-title">Evaporator Coil</div>
+        <div class="component-desc">Absorbs heat and moisture from indoor air. Lives inside the air handler cabinet. Cannot be inspected without removing the access panel.</div>
+        <div class="component-fail">Failure signs: icing, reduced airflow, musty odor, poor humidity removal</div>
+      </div>
+      <div class="component-card">
+        <div class="component-icon">&#128268;</div>
+        <div class="component-title">Capacitors</div>
+        <div class="component-desc">Give the compressor and fan motors the electrical kick to start. Weaken over time. Most common electrical repair on any AC system.</div>
+        <div class="component-fail">Failure signs: outdoor fan runs, compressor won't start; or compressor hums and trips breaker</div>
+      </div>
+      <div class="component-card">
+        <div class="component-icon">&#9889;</div>
+        <div class="component-title">Contactor</div>
+        <div class="component-desc">High-voltage switch that connects power to the compressor and condenser fan when the thermostat calls for cooling. Contact surfaces pit and burn over time.</div>
+        <div class="component-fail">Failure signs: clicking at the outdoor unit, system won't start, or stuck-closed contactor runs the system continuously</div>
+      </div>
+      <div class="component-card">
+        <div class="component-icon">&#128165;</div>
+        <div class="component-title">Compressor</div>
+        <div class="component-desc">The most expensive component. Pumps refrigerant through the cycle. Damaged by low refrigerant, high head pressure, dirty coils, or running with a failed start capacitor.</div>
+        <div class="component-fail">Failure signs: loud knocking, system trips breaker, no cooling despite outdoor fan running, hot compressor shell</div>
+      </div>
+      <div class="component-card">
+        <div class="component-icon">&#127754;</div>
+        <div class="component-title">Condensate Drain System</div>
+        <div class="component-desc">Primary drain line, drain pan, and float safety switch. Algae and biofilm build up in the drain line in humid climates, eventually causing backups.</div>
+        <div class="component-fail">Failure signs: system shuts off unexpectedly, water in secondary pan, ceiling stains below air handler</div>
+      </div>
+      <div class="component-card">
+        <div class="component-icon">&#127777;&#65039;</div>
+        <div class="component-title">Thermostat</div>
+        <div class="component-desc">Controls when the system runs. Placement near windows, supply vents, or heat sources causes misreads. Smart thermostats require a C-wire for stable operation.</div>
+        <div class="component-fail">Failure signs: short cycling, system runs constantly in one zone, setpoint accuracy issues, display errors</div>
+      </div>
+    </div>
+
+    <h2 id="severity">How Urgent Is the Problem?</h2>
+
+    <div class="severity-block">
+      <div class="severity-title">AC Problem Urgency Scale</div>
+      <div class="severity-row sev-low">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Monitor / DIY</div>
+        <div class="severity-examples">Dirty filter. One closed register causing uneven cooling. Thermostat set incorrectly. Outdoor unit with light debris on fins. Mild algae smell when first started.</div>
+      </div>
+      <div class="severity-row sev-medium">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Schedule Service</div>
+        <div class="severity-examples">System runs but can't reach setpoint. Outdoor unit louder than previous seasons. Drain line flushing needed. Short cycling with no obvious cause. System struggling during mild weather.</div>
+      </div>
+      <div class="severity-row sev-high">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Call Today</div>
+        <div class="severity-examples">Ice on the refrigerant lines or indoor unit. System won't start. Outdoor fan running but no cooling. Float switch repeatedly tripping. Rising energy bills with declining performance.</div>
+      </div>
+      <div class="severity-row sev-critical">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Emergency</div>
+        <div class="severity-examples">Water stains appearing on ceiling. Burning smell from air handler or outdoor unit. Loud knocking or grinding from the compressor. Breaker that won't hold after reset. Electrical burning smell.</div>
+      </div>
+    </div>
+
+    <h2 id="homeowner-diagnostics">Homeowner-Safe Diagnostic Steps</h2>
+
+    <p>These steps are specifically limited to what is safe to do without opening electrical panels or disconnecting refrigerant components. The goal is to either resolve the issue or gather clear information before calling a professional.</p>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="diag-step-num">1</div>
+        <div>
+          <div class="diag-step-title">Check and replace the air filter</div>
+          <div class="diag-step-body">This is always step one. A dirty filter is the single most common cause of AC performance complaints and coil freeze-ups. Replace with a correctly sized filter of appropriate MERV rating &#8212; ultra-restrictive MERV 13+ filters can increase static pressure enough to cause the same airflow problems as a dirty filter. While you're there, confirm all supply registers are open and no furniture or drapes are blocking return grilles.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">2</div>
+        <div>
+          <div class="diag-step-title">Inspect the outdoor condenser unit</div>
+          <div class="diag-step-body">Walk around the unit and look for vegetation growing into the coil, grass clippings packed into the fins, debris on top of the unit, or objects placed within 2&#8211;3 feet that restrict airflow. With the disconnect pulled (power off), you can gently rinse the coil from the top down with a garden hose at low pressure. Avoid high-pressure spraying which bends fins and reduces heat transfer area.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">3</div>
+        <div>
+          <div class="diag-step-title">Verify thermostat settings and operation</div>
+          <div class="diag-step-body">Confirm the thermostat is set to Cool, the setpoint is below current room temperature, and the fan is set to Auto. Replace batteries if applicable. Observe the system's response over a full cycle &#8212; does the outdoor unit start within a minute or two of the thermostat calling for cooling? Does the blower engage indoors? Check for any error codes or warnings on smart thermostat displays.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">4</div>
+        <div>
+          <div class="diag-step-title">Look for ice on the refrigerant lines or indoor unit</div>
+          <div class="diag-step-body">Ice on the larger insulated suction line near the air handler, or visible frost on the indoor unit cabinet, means the evaporator coil is below freezing. <strong>Turn the system off and switch the fan to "On"</strong> to let the coil defrost &#8212; this can take 1&#8211;4 hours. Once defrosted, check whether a dirty filter or blocked vent was the cause. If freezing returns after the fix, the problem is refrigerant-related and requires professional diagnosis.</div>
+          <div class="diag-step-stop">Do not run the system with a frozen coil. The ice progressively blocks airflow and the compressor can be damaged from slugging liquid refrigerant back from the coil.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">5</div>
+        <div>
+          <div class="diag-step-title">Inspect the condensate drain pans</div>
+          <div class="diag-step-body">If accessible without opening the air handler cabinet, look into the primary drain pan (under the coil) and secondary drain pan (below the air handler). Standing water in either pan signals a blocked drain line or tripped float switch. You can attempt to flush the primary drain line by pouring a cup of water into the cleanout port or access cap if one is installed. Do not attempt to reset a float switch without first clearing the water &#8212; it tripped for a reason.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-step-num">6</div>
+        <div>
+          <div class="diag-step-title">Document sounds, smells, and runtime patterns</div>
+          <div class="diag-step-body">Listen at both the indoor unit and the outdoor unit during startup, steady operation, and shutdown. Grinding, squealing, repeated clicking, or loud humming are all diagnostic signals. Note when sounds occur. Also document runtime patterns &#8212; is the system short cycling (running 2&#8211;3 minutes at a time)? Running continuously without reaching the setpoint? Performance significantly worse in the afternoon vs. morning? This information cuts diagnostic time significantly when a technician arrives.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="scenarios">Real-World Scenarios</h2>
+
+    <div class="scenario-list">
+
+      <div class="scenario-card">
+        <div class="scenario-num">01</div>
+        <div>
+          <div class="scenario-title">System runs constantly on a very hot day but the house never catches up</div>
+          <div class="scenario-body">On extreme heat days, the gap between outdoor temperature and setpoint may simply exceed what the system was sized to handle &#8212; especially if the home has significant solar gain from unshaded windows. But if this is a new behavior compared to previous summers, look harder: dirty evaporator coil reducing heat transfer, duct leaks in the attic pulling in hot air, a partially-failed compressor, or low refrigerant charge can all produce this symptom. The first checks are filter condition and duct accessibility in unconditioned spaces.</div>
+          <div class="scenario-action">Check filter and outdoor unit first. If performance is new-this-year and the system is over 10 years old, schedule a professional efficiency evaluation including duct leakage assessment.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-num">02</div>
+        <div>
+          <div class="scenario-title">System cycles on and off every 2&#8211;3 minutes</div>
+          <div class="scenario-body">Short cycling is both a symptom and a cause of further damage &#8212; each start cycle stresses capacitors, contactors, and the compressor. Most common cause is an oversized system that cools the air rapidly but doesn't run long enough to remove humidity &#8212; resulting in a home that's "cool but clammy." Other causes: thermostat in a drafty hallway or directly in a supply register's airstream, a failing low-pressure safety switch tripping the system, or a refrigerant overcharge causing abnormally high pressures.</div>
+          <div class="scenario-action">Check thermostat location relative to supply registers and exterior walls. If location is sound, this requires professional diagnosis &#8212; short cycling accelerates component wear and should not be left unaddressed.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-num">03</div>
+        <div>
+          <div class="scenario-title">Outdoor fan is running but no cold air is coming from the vents</div>
+          <div class="scenario-body">The condenser fan running while the compressor doesn't start is the most classic capacitor failure presentation. The run capacitor provides the phase-shift energy to keep the compressor running &#8212; when it weakens below spec, the compressor hums, draws excessive current, and either trips the breaker or activates the internal thermal overload. A failed contactor can produce similar symptoms. This is a same-day service call during summer &#8212; a compressor repeatedly trying to start against a failed capacitor will eventually fail itself.</div>
+          <div class="scenario-action">Turn the system off to protect the compressor. Call a licensed HVAC technician same day if temperatures are dangerous. Capacitor replacement is typically a quick repair.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-num">04</div>
+        <div>
+          <div class="scenario-title">Water stains appearing on the ceiling directly below the air handler</div>
+          <div class="scenario-body">The primary drain pan has overflowed, or the condensate line has backed up enough to bypass the float safety switch. This is the worst-case drainage scenario because water has already left the drain system. Common causes: completely blocked drain line, cracked primary pan, torn or displaced insulation directing condensate outside the pan, or a coil that froze and then thawed rapidly producing more water than the drain system could handle.</div>
+          <div class="scenario-action">Turn off the system immediately. The longer it runs, the more water accumulates. Call for service today &#8212; water damage and mold risk escalate quickly. While waiting, if accessible, check the secondary pan and shut off power at the disconnect.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-num">05</div>
+        <div>
+          <div class="scenario-title">Ice forming on the refrigerant lines during normal operation</div>
+          <div class="scenario-body">Coil freeze has two causes: airflow and refrigerant. Start with airflow &#8212; replace the filter, open all registers, and make sure no returns are blocked. If the system freezes again after you've ruled out airflow restrictions, the refrigerant charge is low. A slowly leaking coil or line-set connection is the most common culprit. Simply "topping off" refrigerant without finding the leak is not a repair &#8212; the system will lose charge again, and the compressor may be damaged from running with abnormal pressures.</div>
+          <div class="scenario-action">Defrost the coil (fan on, compressor off for 1&#8211;4 hours), fix any airflow issues, then restart. If it freezes again, the system needs professional leak detection and refrigerant service.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 id="maintenance">Maintenance That Extends System Life</h2>
+
+    <div class="maint-checklist">
+      <h3>&#128203; AC Maintenance Checklist</h3>
+      <div class="maint-section">
+        <h4>Monthly (Homeowner)</h4>
+        <ul class="check-list">
+          <li>Check the air filter &#8212; replace if visibly dirty or at manufacturer's interval</li>
+          <li>Confirm all supply registers are open and unobstructed</li>
+          <li>Glance at the refrigerant lines near the air handler for ice or unusual frost</li>
+        </ul>
+      </div>
+      <div class="maint-section">
+        <h4>Seasonal Startup (Homeowner)</h4>
+        <ul class="check-list">
+          <li>Replace or clean the filter before first startup</li>
+          <li>Inspect the outdoor unit for debris, nests, and winter damage</li>
+          <li>Verify at least 2&#8211;3 feet of clearance around the outdoor unit on all sides</li>
+          <li>Pour water into the condensate drain pan to verify the drain flows freely</li>
+          <li>Confirm comfortable air is reaching all rooms within 15&#8211;20 minutes of first startup</li>
+          <li>Listen for any new sounds at both the indoor and outdoor unit on first startup</li>
+        </ul>
+      </div>
+      <div class="maint-section">
+        <h4>Annual (Professional)</h4>
+        <ul class="check-list">
+          <li>Clean or chemically wash the outdoor condenser coil</li>
+          <li>Inspect and clean the indoor evaporator coil</li>
+          <li>Check refrigerant levels against target values using superheat/subcooling measurements</li>
+          <li>Test and measure capacitors &#8212; replace any below spec</li>
+          <li>Inspect contactor for pitting or arcing damage</li>
+          <li>Test condensate drain line and verify float switch operation</li>
+          <li>Measure blower motor amperage and test for bearing wear</li>
+          <li>Verify thermostat calibration and control wiring</li>
+          <li>Measure temperature split across the evaporator coil</li>
+        </ul>
+      </div>
+      <div class="maint-section">
+        <h4>Drain Line Maintenance (Homeowner)</h4>
+        <ul class="check-list">
+          <li>Flush with clean water or a mild vinegar solution every 1&#8211;3 months in humid climates</li>
+          <li>If a cleanout tee is installed, use it &#8212; do not pour directly into the air handler</li>
+          <li>Test the float switch annually by adding water to the secondary pan</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert &#8212; On Annual Maintenance vs. Reactive Repair</div>
+        <div class="expert-callout-text">"The most expensive AC repair I see isn't a compressor failure &#8212; it's a compressor failure that was caused by something that a $150 annual tune-up would have caught. A capacitor that tests at 70% of its rated value during a maintenance visit gets replaced for $80. That same capacitor failing during a July heat wave &#8212; while the homeowner is away &#8212; means the compressor starts hard against it repeatedly until the thermal overload trips, the compressor overheats, and now you're looking at $1,500 to $3,000. The math on annual maintenance is not subtle. What I tell people is: one compressor replacement pays for twenty years of tune-ups. Skip the tune-ups and you're betting against the house."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA CFI-1 &#183; Certified Healthcare Facility Manager &#183; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="costs">Repair and Replacement Cost Reference</h2>
+
+    <table class="cost-table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Typical Cost Range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Annual professional maintenance</td>
+          <td><span class="cost-badge">$100&#8211;$200</span></td>
+        </tr>
+        <tr>
+          <td>Capacitor replacement</td>
+          <td><span class="cost-badge">$150&#8211;$400</span></td>
+        </tr>
+        <tr>
+          <td>Contactor replacement</td>
+          <td><span class="cost-badge">$150&#8211;$350</span></td>
+        </tr>
+        <tr>
+          <td>Condenser fan motor replacement</td>
+          <td><span class="cost-badge">$300&#8211;$650</span></td>
+        </tr>
+        <tr>
+          <td>Blower motor replacement</td>
+          <td><span class="cost-badge">$400&#8211;$900</span></td>
+        </tr>
+        <tr>
+          <td>Condensate drain clearing &amp; pan inspection</td>
+          <td><span class="cost-badge">$75&#8211;$250</span></td>
+        </tr>
+        <tr>
+          <td>Refrigerant leak detection</td>
+          <td><span class="cost-badge">$150&#8211;$400</span></td>
+        </tr>
+        <tr>
+          <td>Refrigerant recharge (after leak repair)</td>
+          <td><span class="cost-badge">$200&#8211;$600 depending on refrigerant type</span></td>
+        </tr>
+        <tr>
+          <td>Evaporator coil cleaning</td>
+          <td><span class="cost-badge">$200&#8211;$500</span></td>
+        </tr>
+        <tr>
+          <td>Evaporator coil replacement</td>
+          <td><span class="cost-badge">$800&#8211;$2,500+</span></td>
+        </tr>
+        <tr>
+          <td>Compressor replacement</td>
+          <td><span class="cost-badge">$1,200&#8211;$3,500+</span></td>
+        </tr>
+        <tr>
+          <td>Full system replacement (14&#8211;18 SEER2)</td>
+          <td><span class="cost-badge">$4,500&#8211;$12,000+ depending on system size and complexity</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">When Replacement Beats Repair</div>
+        <div class="callout-text">If the system is over 12&#8211;15 years old, uses R-22 refrigerant (phased out and expensive), has a failed compressor or evaporator coil, or comfort issues persist despite multiple repairs &#8212; get a replacement quote before authorizing a major repair. A rule of thumb: if the repair exceeds 50% of replacement cost on a system older than 10 years, replacement is usually the better investment.</div>
+      </div>
+    </div>
+
+    <h2 id="diy-vs-pro">What You Can Handle vs. What Requires a Professional</h2>
+
+    <div class="diy-pro-block">
+      <div class="diy-card">
+        <div class="diy-card-head">
+          <div class="diy-badge diy">&#128161;</div>
+          <div class="diy-card-title">Safe Homeowner Actions</div>
+        </div>
+        <ul class="diy-list">
+          <li>Replace air filters monthly or per schedule</li>
+          <li>Open blocked registers and clear return grilles</li>
+          <li>Rinse the outdoor condenser coil with a garden hose (low pressure, power off)</li>
+          <li>Clear vegetation and debris from around the outdoor unit</li>
+          <li>Defrost an iced coil by switching to fan-only mode</li>
+          <li>Flush condensate drain lines with water or dilute vinegar</li>
+          <li>Verify thermostat settings, replace batteries, check placement</li>
+          <li>Document sounds, smells, and runtime patterns for the technician</li>
+          <li>Perform seasonal startup inspection per checklist above</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-card-head">
+          <div class="diy-badge pro">&#9888;&#65039;</div>
+          <div class="diy-card-title">Requires a Licensed HVAC Technician</div>
+        </div>
+        <ul class="diy-list pro-list">
+          <li>Any refrigerant handling &#8212; federal law requires EPA Section 608 certification</li>
+          <li>Electrical component replacement (capacitors, contactors, motors, control boards)</li>
+          <li>Evaporator coil cleaning &#8212; requires coil-safe chemicals and cabinet access</li>
+          <li>Duct static pressure testing and balancing</li>
+          <li>Refrigerant leak detection and repair</li>
+          <li>Compressor diagnosis and replacement</li>
+          <li>Load calculations for replacement sizing</li>
+          <li>Float switch testing and drain pan replacement</li>
+          <li>Any work requiring panel removal at the air handler or outdoor unit</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="safety">Critical Safety Warnings</h2>
+
+    <div class="safety-popout">
+      <h3>&#9888;&#65039; AC Safety &#8212; Know These Before You Touch Anything</h3>
+      <ul class="safety-list">
+        <li><span class="safety-warn-title">Capacitors store lethal voltage even when power is off</span>Capacitors in the outdoor unit can hold a dangerous charge for hours after the system is disconnected. Never reach into the outdoor unit cabinet without professional training and proper discharge tools.</li>
+        <li><span class="safety-warn-title">Never remove panels from the air handler or outdoor unit</span>Both units contain high-voltage components. The only homeowner-safe access is the filter slot. Everything behind access panels requires a licensed technician.</li>
+        <li><span class="safety-warn-title">Refrigerant is federally regulated &#8212; and dangerous</span>Only EPA Section 608 certified technicians may purchase or handle refrigerants. Refrigerant can cause frostbite on contact and respiratory irritation. Do not attempt to connect gauges, add refrigerant, or handle refrigerant lines.</li>
+        <li><span class="safety-warn-title">A burning smell from any component is an emergency</span>Turn the system off at the thermostat and then at the breaker. A burning smell indicates electrical arcing or overheating that can progress to fire. Do not restart until professionally inspected.</li>
+        <li><span class="safety-warn-title">Condensate overflow near electrical components is a shock hazard</span>If water is dripping near the air handler's electrical connections or near any outlet, shut off power at the breaker before any inspection. Do not touch wet electrical components.</li>
+      </ul>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does my AC freeze up during hot weather?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Coil freezing during hot weather is almost always an airflow or refrigerant problem, not a temperature problem. The evaporator coil runs below freezing whenever refrigerant is at low pressure &#8212; adequate airflow keeps it from building up ice. When airflow drops (dirty filter, blocked vent, failing blower) the coil gets colder than intended and ice accumulates. Low refrigerant charge has the same effect &#8212; lower refrigerant pressure means lower evaporating temperature. Start by replacing the filter and opening all registers. If freezing returns, the system needs a professional refrigerant check.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is refrigerant "topping off" normal maintenance?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No. Refrigerant operates in a closed loop &#8212; it is not consumed under normal operation. If a technician says the system is "low on refrigerant," that means there is a leak somewhere in the system. Adding refrigerant without finding and repairing the leak is a temporary measure that delays diagnosis, allows the leak to continue, and &#8212; if the leak is large enough &#8212; will result in compressor damage as the system runs with increasingly incorrect pressures. Always ask where the refrigerant went before authorizing a recharge.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does my AC smell musty when it first turns on?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Musty odor on startup is almost always microbial growth &#8212; mold, mildew, or bacteria &#8212; on the evaporator coil surfaces, in the drain pan, or in the drain line. The coil is a perfect environment for growth: cool, dark, and perpetually moist. A brief musty smell that clears within a few minutes may just be the first startup of the season burning off dust. Persistent musty odor throughout operation typically indicates the coil or drain pan needs professional cleaning. Left unaddressed, this can degrade indoor air quality and accelerate component corrosion.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Should I close supply vents in unused rooms to save energy?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No. This is one of the most common homeowner mistakes. Closing supply registers does not redirect air to other rooms &#8212; it increases static pressure throughout the entire duct system. Higher static pressure reduces airflow across the evaporator coil, increasing freeze risk and blower motor stress. It also increases duct leakage in the pressurized supply ducts. The system was designed to operate with all or nearly all registers open. If certain rooms are consistently too warm or too cold, the solution is duct balancing or zoning &#8212; not closing registers.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Do I really need annual professional maintenance?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; and the economics are straightforward. A capacitor found at 65% of rated value during a $150 tune-up costs $80 to replace. That same capacitor failing during peak summer heat leads to a compressor that repeatedly tries to start against it, eventually overheating &#8212; turning an $80 part into a potential $1,500&#8211;$3,000 repair. Annual maintenance also catches refrigerant charge drift before it damages the compressor, finds drain line blockages before they overflow, and identifies contactor pitting before it causes a no-start. Systems with documented annual maintenance also typically last 2&#8211;4 years longer than neglected ones.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My breaker trips when the AC tries to start. What does that mean?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A breaker that trips on AC startup almost always indicates a failed or weakened start/run capacitor, a compressor beginning to fail and drawing excessive locked-rotor current, shorted wiring, or a weak breaker that can no longer hold the startup inrush. Reset the breaker once only &#8212; if it trips again immediately, leave it off. Repeated resets against an active fault can damage the compressor and wiring, turning a $150&#8211;400 capacitor repair into a $2,000+ compressor replacement. Call a licensed HVAC technician for same-day service during cooling season.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What's the difference between an oversized and an undersized AC system?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">An oversized system cools the air temperature quickly but runs in short cycles &#8212; it doesn't run long enough to remove humidity effectively, leaving the home feeling cold and clammy. Short cycling also stresses components with frequent startup loads. An undersized system runs continuously without reaching the setpoint and provides inadequate cooling on hot days. Both are sizing errors that require a proper Manual J load calculation to correct. A responsible contractor will perform this calculation before recommending equipment &#8212; not just replace "like for like."</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Airflow is the foundation of AC performance. A dirty filter starts a cascade: coil freeze, blocked airflow, compressor stress. Checking the filter monthly prevents the majority of AC service calls.</li>
+        <li>Most AC failures give weeks of warning symptoms before becoming emergencies. Short cycling, declining performance, new sounds, and rising energy bills are the system communicating that something is wrong.</li>
+        <li>Refrigerant is never consumed. "Low on refrigerant" means there is a leak. Adding refrigerant without finding the leak is not a repair.</li>
+        <li>Capacitors are the most common electrical repair on any AC system. A failed capacitor left unaddressed can destroy the compressor &#8212; turning a $150&#8211;400 repair into a $2,000+ one.</li>
+        <li>Never close supply registers to redirect airflow. It increases static pressure, stresses the system, and causes the exact problems it's meant to solve.</li>
+        <li>Annual professional maintenance pays for itself. One compressor failure costs more than 15&#8211;20 years of tune-ups. The math on annual maintenance is not subtle.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="article-tag-pill">air conditioning</a>
+      <a href="#" class="article-tag-pill">AC repair</a>
+      <a href="#" class="article-tag-pill">coil freeze</a>
+      <a href="#" class="article-tag-pill">AC not cooling</a>
+      <a href="#" class="article-tag-pill">HVAC maintenance</a>
+      <a href="#" class="article-tag-pill">capacitor failure</a>
+      <a href="#" class="article-tag-pill">condensate drain</a>
+      <a href="#" class="article-tag-pill">refrigerant leak</a>
+      <a href="#" class="article-tag-pill">short cycling</a>
+      <a href="#" class="article-tag-pill">AC replacement</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share this guide:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+
+  </div>
+
+  <div class="related">
+    <h3>More HVAC Guides</h3>
+    <div class="related-grid">
+      <a href="hvac-guide.html" class="related-card">
+        <div class="related-img h">&#127777;&#65039;</div>
+        <div class="related-body">
+          <span class="tag">HVAC</span>
+          <div class="related-title">The Complete HVAC System Guide</div>
+          <div class="related-meta">T.A. &#183; 30 min read</div>
+        </div>
+      </a>
+      <a href="maintenance-guide.html" class="related-card">
+        <div class="related-img m">&#128296;</div>
+        <div class="related-body">
+          <span class="tag maintenance">Maintenance</span>
+          <div class="related-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="related-meta">T.A. &amp; M.A. &#183; 28 min read</div>
+        </div>
+      </a>
+      <a href="electrical-fire-prevention-guide.html" class="related-card">
+        <div class="related-img h">&#128293;</div>
+        <div class="related-body">
+          <span class="tag safety">Fire Safety</span>
+          <div class="related-title">The Complete Home Electrical Fire Prevention Guide</div>
+          <div class="related-meta">T.A. &#183; 30 min read</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="sidebar-avatar">T.A.</div>
+      <div>
+        <div class="sidebar-expert-name">T.A.</div>
+        <div class="sidebar-expert-title">HVAC &amp; Life Safety Specialist</div>
+        <div class="sidebar-expert-bio">NFPA Certified Fire Inspector and Certified Healthcare Facility Manager with decades of experience managing HVAC systems across hospitals, commercial facilities, and residential properties.</div>
+        <div class="sidebar-creds">
+          <span class="cred-pill">NFPA CFI-1</span>
+          <span class="cred-pill">CHFM</span>
+          <span class="cred-pill">CLSS-HC</span>
+          <span class="cred-pill">OSHA 30</span>
+          <span class="cred-pill">Electrician</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#how-it-works">How AC Works</a></li>
+      <li><a href="#failure-modes">The 6 Failure Categories</a></li>
+      <li><a href="#components">Key Components</a></li>
+      <li><a href="#severity">Urgency Scale</a></li>
+      <li><a href="#homeowner-diagnostics">Homeowner Diagnostics</a></li>
+      <li><a href="#scenarios">Real-World Scenarios</a></li>
+      <li><a href="#maintenance">Maintenance Checklist</a></li>
+      <li><a href="#costs">Repair Cost Reference</a></li>
+      <li><a href="#diy-vs-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#safety">Safety Warnings</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free expert advice</h4>
+    <p>HVAC guides and seasonal maintenance reminders from our certified facility manager.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0px;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>Most Read This Week</h4>
+    <div class="pop-list">
+      <a href="hvac-guide.html" class="pop-item">
+        <div class="pop-num">01</div>
+        <div>
+          <div class="pop-title">The Complete HVAC System Guide</div>
+          <div class="pop-cat">HVAC &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="electrical-fire-prevention-guide.html" class="pop-item">
+        <div class="pop-num">02</div>
+        <div>
+          <div class="pop-title">The Complete Home Electrical Fire Prevention Guide</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="maintenance-guide.html" class="pop-item">
+        <div class="pop-num">03</div>
+        <div>
+          <div class="pop-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="pop-cat">Maintenance &#183; T.A. &amp; M.A.</div>
+        </div>
+      </a>
+      <a href="gfci-afci-guide.html" class="pop-item">
+        <div class="pop-num">04</div>
+        <div>
+          <div class="pop-title">The Complete Guide to GFCI &amp; AFCI Protection</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{
+      li.classList.remove('active');
+      if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
