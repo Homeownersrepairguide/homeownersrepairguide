@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Guide to Roof Leak Diagnosis & Repair | HomeownersRepairGuide.com</title>
+<meta name="description" content="A roof leak rarely starts where the stain appears. Learn the timing, location, and behavior filters that pinpoint the true entry point — and how to decide between repair and replacement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--slate:#4a6080;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .article-wrap{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+  .article-main{min-width:0;}
+  .article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;}
+  .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--slate);color:var(--white);}
+  .tag.safety{background:#c0402a;color:var(--white);}
+  .tag.diagnosis{background:#1a5a9a;color:var(--white);}
+  .tag.maintenance{background:#3a6b3a;color:var(--white);}
+  .article-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);line-height:1.12;letter-spacing:-0.025em;margin-bottom:20px;}
+  .article-subtitle{font-size:18px;color:var(--text-muted);line-height:1.6;margin-bottom:28px;border-left:3px solid var(--slate);padding-left:16px;}
+  .article-byline{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:32px;}
+  .byline-avatar{width:48px;height:48px;border-radius:50%;background:var(--slate);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);flex-shrink:0;}
+  .byline-info{flex:1;}
+  .byline-name{font-size:15px;font-weight:600;color:var(--text-dark);}
+  .byline-cred{font-size:12px;color:var(--text-muted);margin-top:2px;}
+  .byline-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:12px;color:var(--text-muted);text-align:right;}
+  .byline-meta strong{color:var(--text-dark);}
+  .article-hero-img{background:linear-gradient(135deg,#060c10 0%,#0c1820 100%);border-radius:var(--radius-lg);height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:40px;gap:12px;border:1px solid var(--gray-light);position:relative;overflow:hidden;}
+  .article-hero-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 55% 50%,rgba(74,96,128,0.2) 0%,transparent 65%);}
+  .article-hero-img .img-icon{font-size:72px;opacity:0.45;position:relative;z-index:1;}
+  .article-hero-img .img-caption{font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;position:relative;z-index:1;}
+  .article-body{font-size:17px;line-height:1.75;color:var(--text-body);}
+  .article-body h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin:48px 0 16px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .article-body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy-mid);margin:32px 0 12px;}
+  .article-body p{margin-bottom:20px;}
+  .article-body ul,.article-body ol{margin:0 0 20px 0;padding-left:24px;}
+  .article-body li{margin-bottom:8px;}
+  .article-body strong{color:var(--text-dark);font-weight:600;}
+  .article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+  /* Roof anatomy */
+  .anatomy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0;}
+  .anatomy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px;box-shadow:var(--shadow-card);}
+  .anatomy-num{width:26px;height:26px;border-radius:50%;background:var(--slate);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--white);margin-bottom:8px;}
+  .anatomy-title{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+  .anatomy-desc{font-size:12px;color:var(--text-body);line-height:1.5;}
+  /* Three-filter diagnostic */
+  .filter-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0;}
+  .filter-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+  .filter-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--slate);margin-bottom:8px;}
+  .filter-title{font-size:16px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+  .filter-list{list-style:none;display:flex;flex-direction:column;gap:6px;}
+  .filter-list li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:8px;}
+  .filter-list li::before{content:'→';color:var(--slate);font-weight:700;flex-shrink:0;}
+  /* Expert callout */
+  .expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0;display:flex;gap:18px;align-items:flex-start;}
+  .expert-callout-avatar{width:44px;height:44px;border-radius:50%;background:var(--slate);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+  .expert-callout-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:6px;}
+  .expert-callout-text{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+  .expert-callout-attr{font-size:12px;color:rgba(255,255,255,0.45);margin-top:8px;}
+  /* Callout boxes */
+  .callout-box{border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+  .callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+  .callout-box.danger{background:#fef2f0;border:1px solid #e08070;}
+  .callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+  .callout-box.info{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .callout-icon{font-size:22px;flex-shrink:0;margin-top:1px;}
+  .callout-content{flex:1;}
+  .callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+  .callout-box.warning .callout-label{color:#b07800;}
+  .callout-box.danger .callout-label{color:#c0402a;}
+  .callout-box.tip .callout-label{color:#2a7a2a;}
+  .callout-box.info .callout-label{color:#1a5a9a;}
+  .callout-text{font-size:15px;line-height:1.6;color:var(--text-body);}
+  /* Scenario triage table */
+  .triage-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .triage-table th{background:var(--slate);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .triage-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .triage-table tr:last-child td{border-bottom:none;}
+  .triage-table tr:nth-child(even) td{background:var(--cream);}
+  .triage-table td:first-child{font-weight:600;color:var(--text-dark);}
+  .urgency-pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:2px;letter-spacing:0.05em;}
+  .urg-medium{background:#fff8e6;color:#b07800;}
+  .urg-high{background:#fef2f0;color:#c0402a;}
+  .urg-immediate{background:#c0392b;color:white;}
+  .urg-varies{background:var(--cream-dark);color:var(--text-muted);}
+  /* Failure mode cards */
+  .failure-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0;}
+  .failure-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:18px 20px;box-shadow:var(--shadow-card);}
+  .failure-icon{font-size:22px;margin-bottom:8px;}
+  .failure-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+  .failure-desc{font-size:13px;color:var(--text-body);line-height:1.5;margin-bottom:6px;}
+  .failure-signal{font-size:12px;font-weight:600;color:var(--slate);font-style:italic;}
+  /* Severity */
+  .severity-block{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px;margin:36px 0;box-shadow:var(--shadow-card);}
+  .severity-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .severity-row{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;}
+  .severity-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:3px;}
+  .sev-low .severity-dot{background:#4caf50;}
+  .sev-medium .severity-dot{background:var(--amber);}
+  .sev-high .severity-dot{background:var(--rust);}
+  .sev-critical .severity-dot{background:#c0392b;}
+  .severity-label{font-size:13px;font-weight:700;width:130px;flex-shrink:0;}
+  .sev-low .severity-label{color:#4caf50;}
+  .sev-medium .severity-label{color:var(--amber);}
+  .sev-high .severity-label{color:var(--rust);}
+  .sev-critical .severity-label{color:#c0392b;}
+  .severity-examples{font-size:13px;color:var(--text-body);line-height:1.55;flex:1;}
+  /* Repair vs replace */
+  .decision-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:28px 0;}
+  .decision-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:22px;box-shadow:var(--shadow-card);}
+  .decision-card-head{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+  .decision-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+  .decision-list li{font-size:14px;color:var(--text-body);line-height:1.45;display:flex;gap:8px;}
+  .repair-list li::before{content:'✓';color:#2a7a2a;font-weight:700;flex-shrink:0;}
+  .replace-list li::before{content:'→';color:var(--rust);font-weight:700;flex-shrink:0;}
+  /* Lifespan table */
+  .life-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .life-table th{background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;}
+  .life-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);background:var(--white);vertical-align:top;line-height:1.5;}
+  .life-table tr:last-child td{border-bottom:none;}
+  .life-table tr:nth-child(even) td{background:var(--cream);}
+  .life-table td:first-child{font-weight:600;color:var(--text-dark);}
+  .life-badge{font-family:'DM Mono',monospace;font-size:13px;font-weight:600;color:var(--navy);}
+  /* Maintenance checklist */
+  .maint-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0;}
+  .maint-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:18px;box-shadow:var(--shadow-card);}
+  .maint-season{font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--slate);margin-bottom:8px;}
+  .maint-focus{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:8px;}
+  .maint-list{list-style:none;display:flex;flex-direction:column;gap:5px;}
+  .maint-list li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:8px;}
+  .maint-list li::before{content:'';display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--slate);flex-shrink:0;margin-top:6px;}
+  /* Safety popout */
+  .safety-popout{background:linear-gradient(135deg,#c0392b,#a93226);border-radius:var(--radius-lg);padding:28px 32px;margin:40px 0;}
+  .safety-popout h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:14px;}
+  .safety-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .safety-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(255,255,255,0.9);line-height:1.55;}
+  .safety-list li::before{content:'!';width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,0.2);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+  .safety-warn-title{font-weight:700;color:var(--white);display:block;margin-bottom:2px;}
+  /* Glossary */
+  .glossary-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:28px 0;}
+  .glossary-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius);padding:12px 14px;}
+  .glossary-term{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+  .glossary-def{font-size:12px;color:var(--text-muted);line-height:1.5;}
+  /* FAQ */
+  .faq-block{margin:36px 0;}
+  .faq-item{border-bottom:1px solid var(--gray-light);}
+  .faq-question{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font-size:16px;font-weight:600;color:var(--navy);gap:16px;user-select:none;}
+  .faq-question:hover{color:var(--slate);}
+  .faq-chevron{font-size:18px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+  .faq-answer{font-size:15px;color:var(--text-body);line-height:1.7;padding-bottom:18px;display:none;}
+  .faq-item.open .faq-answer{display:block;}
+  .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--slate);}
+  /* Summary */
+  .summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px;margin:48px 0 36px;}
+  .summary-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .summary-list li{display:flex;gap:12px;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.55;}
+  .summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+  /* Tags & share */
+  .article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0;padding-top:32px;border-top:1px solid var(--gray-light);}
+  .article-tag-pill{font-size:12px;padding:5px 12px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+  .article-tag-pill:hover{background:var(--slate);color:var(--white);border-color:var(--slate);}
+  .share-bar{display:flex;align-items:center;gap:12px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:48px;flex-wrap:wrap;}
+  .share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+  .share-btn{padding:8px 16px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+  .share-btn:hover{opacity:0.85;}
+  .share-fb{background:#1877f2;color:white;}
+  .share-x{background:#000;color:white;}
+  .share-pin{background:#e60023;color:white;}
+  .share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+  /* Related */
+  .related{margin-top:48px;}
+  .related h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .related-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;}
+  .related-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+  .related-img{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px;}
+  .related-img.g{background:linear-gradient(135deg,#e8eaf0,#d4d8e4);}
+  .related-img.f{background:linear-gradient(135deg,#ede8e0,#ddd4c8);}
+  .related-img.m{background:linear-gradient(135deg,#eaf5ea,#d4ecd4);}
+  .related-body{padding:16px;}
+  .related-body .tag{font-size:10px;padding:3px 8px;margin-bottom:8px;}
+  .related-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:6px;}
+  .related-meta{font-size:11px;color:var(--text-muted);}
+  /* Sidebar */
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:24px;}
+  .sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .sidebar-card h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gray-light);}
+  .sidebar-expert{display:flex;gap:14px;align-items:flex-start;}
+  .sidebar-avatar{width:52px;height:52px;border-radius:50%;background:var(--slate);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);flex-shrink:0;}
+  .sidebar-expert-name{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+  .sidebar-expert-title{font-size:12px;color:var(--slate);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
+  .sidebar-expert-bio{font-size:13px;color:var(--text-muted);line-height:1.55;}
+  .sidebar-creds{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;}
+  .cred-pill{font-size:10px;padding:3px 8px;background:var(--cream-dark);border-radius:2px;color:var(--text-muted);font-weight:600;}
+  .toc-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+  .toc-list li a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);text-decoration:none;padding:6px 8px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+  .toc-list li a:hover{background:var(--cream);color:var(--slate);}
+  .toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+  .toc-list li.active a{color:var(--slate);background:var(--cream);font-weight:600;}
+  .toc-list li.active a::before{background:var(--slate);width:6px;height:6px;}
+  .sidebar-newsletter{background:var(--slate);border-radius:var(--radius-lg);padding:24px;}
+  .sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:10px;}
+  .sidebar-newsletter p{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.55;margin-bottom:16px;}
+  .ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:32px 16px;text-align:center;}
+  .ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:6px;}
+  .ad-placeholder .ad-size{font-size:13px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+  .pop-list{display:flex;flex-direction:column;gap:14px;}
+  .pop-item{display:flex;gap:12px;align-items:flex-start;text-decoration:none;}
+  .pop-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:28px;}
+  .pop-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.35;transition:color 0.15s;}
+  .pop-item:hover .pop-title{color:var(--slate);}
+  .pop-cat{font-size:11px;color:var(--text-muted);margin-top:3px;}
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:24px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+  @media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.related-grid{grid-template-columns:1fr 1fr;}.anatomy-grid{grid-template-columns:repeat(2,1fr);}.filter-grid{grid-template-columns:1fr;}.failure-grid{grid-template-columns:1fr;}.decision-grid{grid-template-columns:1fr;}.maint-grid{grid-template-columns:1fr;}.glossary-grid{grid-template-columns:1fr;}}
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.related-grid{grid-template-columns:1fr;}.anatomy-grid{grid-template-columns:1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html" class="active">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-general-repair.html">General Repair</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">The Complete Guide to Roof Leak Diagnosis &amp; Repair</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">General Repair</span>
+    <span class="tag diagnosis">Diagnosis</span>
+    <span class="tag safety">Safety</span>
+  </div>
+
+  <h1 class="article-title">The Complete Guide to Roof Leak Diagnosis &amp; Repair</h1>
+
+  <p class="article-subtitle">A roof leak rarely starts where the water stain appears. Water travels along rafters, fasteners, and seams &#8212; sometimes several feet from the real entry point. This guide gives you the timing, location, and behavior filters to find the true source.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Certified Facility Manager &amp; Life Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 &#183; CHFM &#183; CLSS-HC &#183; OSHA 30 &#183; Electrician &#8212; All Phases</div>
+    </div>
+    <div class="byline-meta">
+      <span><strong>Updated:</strong> January 2025</span>
+      <span>26 min read &#183; Fact-verified</span>
+    </div>
+  </div>
+
+  <div class="article-hero-img">
+    <div class="img-icon">&#127959;&#65039;</div>
+    <div class="img-caption">[Hero image &#8212; e.g. attic inspection for moisture, roof flashing detail, or ceiling stain]</div>
+  </div>
+
+  <div class="article-body">
+
+    <p>By the time moisture shows up on your drywall, it has usually traveled a significant distance &#8212; along rafters, deck seams, fasteners, or underlayment &#8212; from its actual entry point. Wind direction, roof pitch, flashing design, shingle condition, and attic ventilation all influence how water behaves once it gets past the outer surface. Effective leak diagnosis doesn't start on the roof. It starts with reading the leak's behavior.</p>
+
+    <p>This guide teaches you to apply three diagnostic filters &#8212; <strong>timing, location, and behavior</strong> &#8212; to any leak event. Apply them in sequence and you can eliminate most possible causes before anyone sets foot on your roof.</p>
+
+    <div class="callout-box danger">
+      <div class="callout-icon">&#128680;</div>
+      <div class="callout-content">
+        <div class="callout-label">Immediate Safety Priorities Before Any Diagnosis</div>
+        <div class="callout-text"><strong>Stay clear of bulging or sagging ceilings &#8212; saturated drywall can fail suddenly.</strong> Shut off power to any rooms where water is near electrical fixtures. Do not climb onto a wet roof or attempt exterior repairs during a storm. Capture water with buckets and plastic sheeting. Document everything with photos &#8212; this is critical for insurance.</div>
+      </div>
+    </div>
+
+    <h2 id="anatomy">How the Roof System Works &#8212; and Where Water Gets In</h2>
+
+    <p>A residential roof is not a single material &#8212; it is a layered assembly where each component has a specific role. Understanding the assembly is essential for understanding where failures occur and why a stain on your ceiling may have nothing to do with the shingles directly above it.</p>
+
+    <div class="anatomy-grid">
+      <div class="anatomy-card">
+        <div class="anatomy-num">1</div>
+        <div class="anatomy-title">Roof Covering</div>
+        <div class="anatomy-desc">Shingles, metal panels, tile, or slate. The first line of defense. Most homeowners focus here, but most leaks originate in the layers below or at transitions.</div>
+      </div>
+      <div class="anatomy-card">
+        <div class="anatomy-num">2</div>
+        <div class="anatomy-title">Underlayment</div>
+        <div class="anatomy-desc">The secondary moisture barrier beneath the surface covering. When this layer fails, leaks become diffuse and appear far from the actual surface defect.</div>
+      </div>
+      <div class="anatomy-card">
+        <div class="anatomy-num">3</div>
+        <div class="anatomy-title">Roof Decking</div>
+        <div class="anatomy-desc">Plywood or OSB sheathing that supports the entire assembly. Chronic moisture causes swelling, delamination, and altered drainage paths that create new leak routes.</div>
+      </div>
+      <div class="anatomy-card">
+        <div class="anatomy-num">4</div>
+        <div class="anatomy-title">Flashing Assemblies</div>
+        <div class="anatomy-desc">Metal or membrane components at chimneys, walls, skylights, and valleys. Flashing failures cause more leaks than shingle wear alone &#8212; and are the most frequently misdiagnosed category.</div>
+      </div>
+      <div class="anatomy-card">
+        <div class="anatomy-num">5</div>
+        <div class="anatomy-title">Ventilation</div>
+        <div class="anatomy-desc">Soffit intake and ridge/gable exhaust vents regulating attic air. Poor ventilation causes condensation on roof decking that mimics active leaks &#8212; without any roof failure.</div>
+      </div>
+      <div class="anatomy-card">
+        <div class="anatomy-num">6</div>
+        <div class="anatomy-title">Drainage System</div>
+        <div class="anatomy-desc">Gutters, downspouts, and drip edge managing runoff. Overflow and backflow during heavy downpours can force water beneath shingles at eaves and valleys.</div>
+      </div>
+    </div>
+
+    <div class="callout-box info">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">Why Ceiling Stains Are Misleading</div>
+        <div class="callout-text">Water follows the path of least resistance inside a roof assembly &#8212; rafters, deck seams, and mechanical fasteners all redirect it before it enters the living space. <strong>The ceiling stain shows you where the water exited the assembly, not where it entered the roof.</strong> Diagnosing from the stain alone and going directly to the roof above it is one of the most common and expensive mistakes in roof repair.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert &#8212; On Why Flashing Causes More Leaks Than Shingles</div>
+        <div class="expert-callout-text">"The majority of roof leaks I've investigated in commercial and residential buildings don't start at shingles. They start at transitions &#8212; step flashing at a dormer, counter-flashing at a chimney, a kick-out flashing that was never installed, or a siding-to-roof intersection that was caulked instead of properly flashed. These are the locations where multiple materials meet, where water is directed and concentrated, and where incorrect installation sequencing produces a perfect leak channel that no amount of sealant will permanently fix. If a contractor quotes you a roof repair and doesn't discuss flashing in detail, that's your first red flag."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA CFI-1 &#183; Certified Healthcare Facility Manager &#183; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="three-filters">The Three Diagnostic Filters &#8212; Timing, Location, and Behavior</h2>
+
+    <p>Apply these three filters in sequence to any leak event. Each filter eliminates broad categories of possible causes. By the time you've applied all three, the likely failure mechanism is usually clear &#8212; even before anyone inspects the roof surface.</p>
+
+    <div class="filter-grid">
+      <div class="filter-card">
+        <div class="filter-label">Filter 1</div>
+        <div class="filter-title">&#128336; Timing</div>
+        <ul class="filter-list">
+          <li><strong>Steady rain only</strong> &#8212; surface shingle or underlayment issue</li>
+          <li><strong>Wind-driven rain only</strong> &#8212; flashing or transition failure</li>
+          <li><strong>Hours after storm ends</strong> &#8212; underlayment saturation or masonry absorption</li>
+          <li><strong>Winter/freeze-thaw only</strong> &#8212; ice dam or attic condensation</li>
+          <li><strong>No rain at all</strong> &#8212; HVAC duct condensation or plumbing &#8212; not a roof leak</li>
+        </ul>
+      </div>
+      <div class="filter-card">
+        <div class="filter-label">Filter 2</div>
+        <div class="filter-title">&#128205; Location</div>
+        <ul class="filter-list">
+          <li><strong>Center of ceiling</strong> &#8212; vent boot, field shingle defect, or attic condensation</li>
+          <li><strong>Near exterior walls</strong> &#8212; step flashing, gutter overflow, or ice dam</li>
+          <li><strong>Near chimney</strong> &#8212; counter-flashing or masonry absorption</li>
+          <li><strong>Near skylight</strong> &#8212; curb flashing or glazing seal failure</li>
+          <li><strong>Near bathroom/interior wall</strong> &#8212; HVAC duct condensation, not a roof defect</li>
+        </ul>
+      </div>
+      <div class="filter-card">
+        <div class="filter-label">Filter 3</div>
+        <div class="filter-title">&#128167; Behavior</div>
+        <ul class="filter-list">
+          <li><strong>Slow drip</strong> &#8212; small, constrained entry point</li>
+          <li><strong>Rapid flow during intense storms</strong> &#8212; major displacement or overflow</li>
+          <li><strong>Wide, diffuse stain</strong> &#8212; underlayment saturation or deck-level spread</li>
+          <li><strong>Stain location moves over time</strong> &#8212; water tracking along framing</li>
+          <li><strong>Multiple rooms in same storm</strong> &#8212; systemic failure, not isolated defects</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="scenario-table">Scenario Triage &#8212; Match Your Symptoms to the Likely Cause</h2>
+
+    <table class="triage-table">
+      <thead>
+        <tr>
+          <th>What You Observe</th>
+          <th>Most Likely Cause</th>
+          <th>Urgency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Moisture near walls/chimney only during wind-driven rain</td>
+          <td>Step flashing, counter-flashing, or siding-to-roof transition failure. Wind forces water uphill past flashings not designed for lateral pressure.</td>
+          <td><span class="urgency-pill urg-medium">Schedule Soon</span></td>
+        </tr>
+        <tr>
+          <td>Slow drip during long steady rain, stops when rain stops</td>
+          <td>Surface shingle defect, vent boot failure, or nail penetration. Exposure duration rather than wind pressure determines when water enters.</td>
+          <td><span class="urgency-pill urg-medium">Schedule Soon</span></td>
+        </tr>
+        <tr>
+          <td>Rapid water flow during intense downpours</td>
+          <td>Valley overflow, gutter backflow, or significantly displaced shingles. Hydraulic overload &#8212; not a small defect.</td>
+          <td><span class="urgency-pill urg-high">Prompt Action</span></td>
+        </tr>
+        <tr>
+          <td>Dripping starts hours after the storm ends</td>
+          <td>Underlayment saturation or masonry absorption (chimney, parapet). Assembly stored water and is releasing it. Delayed leaks indicate systemic conditions.</td>
+          <td><span class="urgency-pill urg-high">Prompt Action</span></td>
+        </tr>
+        <tr>
+          <td>Dripping continues for days after rain ends</td>
+          <td>Saturated attic insulation or moisture trapped within flat roof insulation layers. Broad system moisture retention.</td>
+          <td><span class="urgency-pill urg-high">Prompt Action</span></td>
+        </tr>
+        <tr>
+          <td>Leaks only during freeze-thaw periods, near exterior walls</td>
+          <td>Ice dam forcing meltwater beneath shingles onto underlayment. Often combined with warm attic from inadequate insulation or air sealing.</td>
+          <td><span class="urgency-pill urg-medium">Schedule Soon</span></td>
+        </tr>
+        <tr>
+          <td>Multiple rooms show leaks from same storm</td>
+          <td>Systemic underlayment failure, systemic ice dam infiltration, or deck-level moisture migration. Almost never multiple independent small defects.</td>
+          <td><span class="urgency-pill urg-high">Prompt Action</span></td>
+        </tr>
+        <tr>
+          <td>Moisture with no recent rain, worse after showers</td>
+          <td>Attic condensation or disconnected bath fan duct exhausting into attic. This is a ventilation/ducting problem, not a roof failure.</td>
+          <td><span class="urgency-pill urg-varies">Diagnose First</span></td>
+        </tr>
+        <tr>
+          <td>Water droplets on nail tips or underside of decking on cold mornings</td>
+          <td>Attic condensation. Warm, moist interior air reaching cold roof decking. Ventilation or air-sealing deficiency &#8212; not a roof covering failure.</td>
+          <td><span class="urgency-pill urg-medium">Schedule Soon</span></td>
+        </tr>
+        <tr>
+          <td>Ceiling sagging, bulging, or cracking near the stain</td>
+          <td>Severe moisture saturation &#8212; structural drywall failure is imminent. Emergency mitigation required.</td>
+          <td><span class="urgency-pill urg-immediate">Emergency</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="failure-modes">Common Failure Modes &#8212; Where Leaks Actually Start</h2>
+
+    <div class="failure-grid">
+      <div class="failure-card">
+        <div class="failure-icon">&#127783;&#65039;</div>
+        <div class="failure-title">Step Flashing &amp; Wall Transitions</div>
+        <div class="failure-desc">Each step piece must integrate with each shingle course and overlap correctly with housewrap. Incorrect sequencing is responsible for the majority of flashing-related leaks. Missing kick-out flashing where roof edges meet vertical walls is one of the most common installation omissions.</div>
+        <div class="failure-signal">Diagnostic signal: leak appears near an exterior wall only during wind-driven rain</div>
+      </div>
+      <div class="failure-card">
+        <div class="failure-icon">&#128682;</div>
+        <div class="failure-title">Chimney &amp; Counter-Flashing</div>
+        <div class="failure-desc">Counter-flashing must overlap step flashing; step flashing must integrate with shingles. Masonry chimneys can also absorb water and release it slowly &#8212; producing leaks hours after rain ends that mimic roof failure.</div>
+        <div class="failure-signal">Diagnostic signal: leak near chimney correlates with storm duration rather than wind direction</div>
+      </div>
+      <div class="failure-card">
+        <div class="failure-icon">&#128221;</div>
+        <div class="failure-title">Vent Boots &amp; Penetrations</div>
+        <div class="failure-desc">Rubber vent boot collars crack and separate from the pipe as they age &#8212; particularly from UV exposure and thermal cycling. A failed boot produces slow dripping at the center of a ceiling during steady rain, often attributed incorrectly to shingles.</div>
+        <div class="failure-signal">Diagnostic signal: center-ceiling stain with slow drip during rain, no relationship to wind</div>
+      </div>
+      <div class="failure-card">
+        <div class="failure-icon">&#128052;</div>
+        <div class="failure-title">Valley Failures</div>
+        <div class="failure-desc">Valleys concentrate high water volumes. Debris accumulation, undersized valley metal, and improper shingle-to-valley integration all cause overflow. High-intensity downpours can overwhelm even correctly installed valleys.</div>
+        <div class="failure-signal">Diagnostic signal: rapid leak during heavy downpours specifically; may be dry during normal rain</div>
+      </div>
+      <div class="failure-card">
+        <div class="failure-icon">&#128274;</div>
+        <div class="failure-title">Underlayment Failure</div>
+        <div class="failure-desc">Underlayment that has become brittle or chronically saturated fails to shed water to the eaves. Once this secondary barrier fails, leaks appear far from surface defects and often present as wide, diffuse staining across multiple areas. Underlayment failure is the primary replacement trigger.</div>
+        <div class="failure-signal">Diagnostic signal: multiple diffuse stains appearing after the same storm event</div>
+      </div>
+      <div class="failure-card">
+        <div class="failure-icon">&#9968;&#65039;</div>
+        <div class="failure-title">Fastener Failures</div>
+        <div class="failure-desc">High-nailing misses the reinforced nail strip and allows shingle uplift. Backed-out nails create micro-gaps that produce intermittent leaks. Corroded fasteners accelerate deck deterioration around each penetration point.</div>
+        <div class="failure-signal">Diagnostic signal: intermittent drips that don't correlate clearly with wind or sustained rain</div>
+      </div>
+      <div class="failure-card">
+        <div class="failure-icon">&#127976;</div>
+        <div class="failure-title">Attic Condensation (Not a Roof Leak)</div>
+        <div class="failure-desc">Warm, moist interior air entering the attic through unsealed penetrations condenses on cold roof decking. Disconnected bath fan ducts exhausting into the attic are a frequent cause. The symptom is identical to a leak &#8212; but the fix is completely different.</div>
+        <div class="failure-signal">Diagnostic signal: moisture with no rain, frost on nail tips, worse after showers or cold nights</div>
+      </div>
+      <div class="failure-card">
+        <div class="failure-icon">&#127956;&#65039;</div>
+        <div class="failure-title">Ice Dams</div>
+        <div class="failure-desc">Warm attic air melts snow unevenly, creating runoff that refreezes at the cold eave overhang and forms an ice dam. Meltwater pools behind the dam and migrates beneath shingles onto underlayment &#8212; entering several feet inward from the exterior wall.</div>
+        <div class="failure-signal">Diagnostic signal: leaks near exterior walls only during freeze-thaw periods; visible ice at eaves</div>
+      </div>
+    </div>
+
+    <h2 id="condensation-vs-leak">Condensation vs. Actual Roof Leak</h2>
+
+    <p>This is one of the most important distinctions in roof diagnosis &#8212; and one of the most commonly missed. Attic condensation can produce ceiling stains, dripping, and damp insulation that are indistinguishable from a roof leak to the naked eye. The fix for condensation (ventilation, air sealing, duct correction) is completely different from the fix for a roof leak.</p>
+
+    <p><strong>Signs pointing toward condensation rather than a roof leak:</strong></p>
+    <ul>
+      <li>Moisture appears without recent rainfall &#8212; or is worse several hours after rain when the roof should be drying</li>
+      <li>Water droplets forming on the tips of roofing nails or frost on the underside of the decking on cold mornings</li>
+      <li>Symptoms are worse after showers, cooking, or laundry &#8212; high interior moisture generation</li>
+      <li>Mold streaks or staining on attic decking in a pattern that doesn't match any single roof penetration above</li>
+      <li>Damp insulation that is not localized to one drip point but spread broadly</li>
+      <li>A bathroom fan duct that exhausts into the attic rather than through the roof or soffit</li>
+    </ul>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Don't Repair the Wrong System</div>
+        <div class="callout-text">Replacing shingles or resealing flashings will not fix an attic condensation problem. Conversely, adding attic ventilation will not fix a failed step flashing. Misidentifying condensation as a leak &#8212; or vice versa &#8212; leads to expensive work that leaves the real problem untouched. Apply the timing and behavior filters before authorizing any repair.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">How Serious Is the Leak?</h2>
+
+    <div class="severity-block">
+      <div class="severity-title">Roof Leak Severity Classification</div>
+      <div class="severity-row sev-low">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Level 1 &#8212; Targeted</div>
+        <div class="severity-examples">Small, localized stain. No structural impact. Single leak point. First-time event with no recurring history. Insulation dry. Prompt repair before damage spreads.</div>
+      </div>
+      <div class="severity-row sev-medium">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Level 2 &#8212; Recurring</div>
+        <div class="severity-examples">Same area leaks across multiple storms. Insulation saturation or expanding stain. More than one interior location affected. Professional evaluation warranted &#8212; may indicate underlayment or systemic issue.</div>
+      </div>
+      <div class="severity-row sev-high">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Level 3 &#8212; Structural</div>
+        <div class="severity-examples">Sagging ceilings or soft decking. Mold odor from attic. Multiple rooms affected. Water near electrical fixtures. Deck delamination or rot. This level requires emergency mitigation and professional assessment &#8212; possibly including insurance involvement.</div>
+      </div>
+      <div class="severity-row sev-critical">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Emergency</div>
+        <div class="severity-examples">Ceiling bulging or actively cracking. Water near any electrical component. Active flooding into living space. Suspected ceiling collapse risk. Shut off power to affected rooms. Do not stand beneath sagging areas.</div>
+      </div>
+    </div>
+
+    <h2 id="repair-vs-replace">Repair vs. Replacement &#8212; How to Decide</h2>
+
+    <div class="decision-grid">
+      <div class="decision-card">
+        <div class="decision-card-head">✓ Repair Is Appropriate When</div>
+        <ul class="decision-list repair-list">
+          <li>Damage is confined to one transition or penetration and surrounding material is healthy</li>
+          <li>Shingles or tiles remain flexible, not brittle or curling</li>
+          <li>Roof age is within the lower half of the material's expected lifespan</li>
+          <li>Only one or two isolated leak events, no pattern of recurrence</li>
+          <li>Underlayment shows no evidence of broad saturation or failure</li>
+          <li>Decking is firm &#8212; no soft spots, no delamination, no sagging planes</li>
+        </ul>
+      </div>
+      <div class="decision-card">
+        <div class="decision-card-head">→ Replacement Makes More Sense When</div>
+        <ul class="decision-list replace-list">
+          <li>Underlayment failure is confirmed &#8212; diffuse stains, delayed leaks, multi-plane moisture spread</li>
+          <li>Multiple leak events despite multiple localized repairs</li>
+          <li>Roof age is at or beyond the expected lifespan for the material type</li>
+          <li>Decking is soft, delaminating, or sagging &#8212; structural deck repair is required</li>
+          <li>System uses an obsolete or unavailable material (R-22 refrigerant equivalents exist in roofing too)</li>
+          <li>Mold odor, persistent moisture, or moisture migrating across multiple planes</li>
+        </ul>
+      </div>
+    </div>
+
+    <table class="life-table">
+      <thead>
+        <tr>
+          <th>Material</th>
+          <th>Typical Lifespan</th>
+          <th>Primary End-of-Life Indicator</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Asphalt shingles</td>
+          <td><span class="life-badge">15&#8211;30 years</span></td>
+          <td>Granule loss, curling, seal-strip fatigue, underlayment deterioration</td>
+        </tr>
+        <tr>
+          <td>Metal roofing</td>
+          <td><span class="life-badge">40&#8211;70 years</span></td>
+          <td>Fastener back-out, washer degradation, seam separation at thermal stress points</td>
+        </tr>
+        <tr>
+          <td>Tile and slate</td>
+          <td><span class="life-badge">50&#8211;100+ years</span></td>
+          <td>Underlayment failure beneath intact tiles &#8212; surface appearance is unreliable indicator</td>
+        </tr>
+        <tr>
+          <td>Flat membranes (TPO, EPDM)</td>
+          <td><span class="life-badge">15&#8211;30 years</span></td>
+          <td>Seam separation, membrane blistering, ponding water at blocked drains</td>
+        </tr>
+        <tr>
+          <td>Composite/synthetic shingles</td>
+          <td><span class="life-badge">30&#8211;50 years</span></td>
+          <td>Fastener corrosion, panel separation, thermal distortion</td>
+        </tr>
+        <tr>
+          <td>Wood shakes/shingles</td>
+          <td><span class="life-badge">20&#8211;30 years</span></td>
+          <td>Warping, splitting, fungal decay, widening gaps at staggered joints</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="safety">Critical Safety Warnings</h2>
+
+    <div class="safety-popout">
+      <h3>&#9888;&#65039; Roof Leak Safety &#8212; Your Hard Stop Lines</h3>
+      <ul class="safety-list">
+        <li><span class="safety-warn-title">Never get on a wet roof or work near roof edges during a storm</span>Wet roofing surfaces are extremely slippery. Roof work during or immediately after a storm creates fall risk that no repair justifies. Wait for dry conditions and use appropriate fall protection.</li>
+        <li><span class="safety-warn-title">Shut off power before water reaches electrical fixtures</span>Water and electricity near ceiling fixtures, junction boxes, or attic wiring is an electrocution hazard. Turn off power to affected circuits at the breaker before attempting any interior mitigation.</li>
+        <li><span class="safety-warn-title">Do not stand beneath a sagging or bulging ceiling</span>Saturated drywall can fail without warning under its own weight. If a ceiling is bulging, clear the area immediately. If controlled drainage is necessary, shut off power first and use a small puncture at the lowest point of the bulge &#8212; from the side, not directly beneath.</li>
+        <li><span class="safety-warn-title">Attic entry during active leaks requires specific precautions</span>Never step on drywall &#8212; step only on joists. Shut off attic circuit breakers when water is present. Watch for unprotected junction boxes and open wiring. Wear an N95 if insulation is disturbed. If mold is suspected, stop and consult a professional.</li>
+        <li><span class="safety-warn-title">Professional tarping &#8212; do not DIY in unsafe conditions</span>Emergency tarps must extend at least 3 feet upslope of the suspected entry point and be secured with minimal additional fastener penetration. This is professional-level work in most conditions. Attempting it in wet or windy conditions creates fall risk that exceeds the damage it prevents.</li>
+      </ul>
+    </div>
+
+    <h2 id="maintenance">Annual Maintenance &#8212; Seasonal Inspection Plan</h2>
+
+    <div class="maint-grid">
+      <div class="maint-card">
+        <div class="maint-season">&#127804; Spring</div>
+        <div class="maint-focus">Focus: Winter damage assessment</div>
+        <ul class="maint-list">
+          <li>Inspect shingles for cracking, uplift, or granule loss from freeze-thaw cycles</li>
+          <li>Check all valleys and flashings for corrosion or separation</li>
+          <li>Inspect attic for frost residues, moisture staining, or damp insulation</li>
+          <li>Verify vent boot integrity on all penetrations</li>
+          <li>Check fascia and soffit for rot or pest damage from winter moisture</li>
+        </ul>
+      </div>
+      <div class="maint-card">
+        <div class="maint-season">&#9728;&#65039; Summer</div>
+        <div class="maint-focus">Focus: UV and heat damage</div>
+        <ul class="maint-list">
+          <li>Inspect vent boots and rubber seals for UV cracking and shrinkage</li>
+          <li>Check ridge cap shingles and sealants for heat-driven degradation</li>
+          <li>Verify attic ventilation is functioning &#8212; excessive attic heat accelerates shingle aging</li>
+          <li>Inspect caulked penetrations on sun-facing roof planes</li>
+          <li>Note any new granule accumulation in gutters &#8212; signals accelerated shingle wear</li>
+        </ul>
+      </div>
+      <div class="maint-card">
+        <div class="maint-season">&#127810; Fall</div>
+        <div class="maint-focus">Focus: Storm preparation</div>
+        <ul class="maint-list">
+          <li>Clear gutters and valley channels of leaves and debris</li>
+          <li>Verify downspout discharge is directed away from the foundation</li>
+          <li>Inspect soffit intake vents for blockage</li>
+          <li>Check chimney mortar, cap, and flashing integrity before freeze season</li>
+          <li>Confirm skylights are properly sealed and curb flashing is intact</li>
+        </ul>
+      </div>
+      <div class="maint-card">
+        <div class="maint-season">&#10052;&#65039; Winter</div>
+        <div class="maint-focus">Focus: Ice and condensation</div>
+        <ul class="maint-list">
+          <li>Watch for ice dam formation at eaves after significant snowfall</li>
+          <li>Monitor attic humidity and temperature if accessible</li>
+          <li>Note any ceiling moisture that appears without rain &#8212; condensation indicator</li>
+          <li>Watch areas above bathrooms and kitchens particularly closely</li>
+          <li>Avoid roof entry &#8212; ice and snow conditions create severe fall hazard</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert &#8212; On Reading the Contractor Proposal</div>
+        <div class="expert-callout-text">"Before you sign any roofing contract, ask the contractor three questions: What is the failure mechanism &#8212; exactly where and how is water entering? How will the repair prevent recurrence? And what will you photograph to show me that the flashing was installed correctly? A contractor who can answer all three clearly, with specific technical detail, has actually diagnosed the problem. One who gives you vague answers about 'bad shingles' or 'aging' and jumps straight to a replacement quote without discussing flashings or underlayment is selling you a scope, not solving your problem. The red flags are refusing to enter the attic before quoting, providing no written scope, or using caulk-only solutions at step flashing locations."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA CFI-1 &#183; Certified Healthcare Facility Manager &#183; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="glossary">Key Terms in Plain Language</h2>
+
+    <div class="glossary-grid">
+      <div class="glossary-item"><div class="glossary-term">Step Flashing</div><div class="glossary-def">Individual L-shaped metal pieces integrated with each shingle course at roof-to-wall intersections. Each piece must overlap the one below. Incorrectly installed step flashing causes wind-driven leaks at wall lines.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Counter-Flashing</div><div class="glossary-def">Metal flashing embedded into masonry (chimney, parapet) that overlaps step flashing. Separates from the mortar joint as it ages, allowing wind-driven water behind the step flashing.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Kick-Out Flashing</div><div class="glossary-def">Required where a roof edge meets a vertical wall. Diverts water away from the siding rather than allowing it to run behind. One of the most frequently missing details in residential roofing.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Underlayment Saturation</div><div class="glossary-def">Condition where underlayment has absorbed water beyond its capacity to repel it. Produces delayed, diffuse leaks that appear hours after storms and may not correlate with any specific surface defect.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Ice Dam</div><div class="glossary-def">Ridge of ice forming along eaves when warm attic air melts roof snow unevenly. Meltwater pools behind the dam and migrates beneath shingles. The root cause is warm attic conditions, not the ice itself.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Rafter Tracking</div><div class="glossary-def">Water following the underside of rafters, trusses, or framing from the true entry point before dripping into the living space. Explains why ceiling stains often appear far from the actual roof defect.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Thermal Cycling</div><div class="glossary-def">Repeated expansion and contraction driven by temperature swings. Fatigues fasteners, sealants, and seams over time. Metal roofs and south-facing planes experience the most thermal cycling stress.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Capillary Action</div><div class="glossary-def">Water movement through narrow gaps driven by surface tension &#8212; it can move upward against gravity. Explains how water can migrate beneath shingles or into narrow flashing gaps even without wind pressure.</div></div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">The stain is in the center of the ceiling. Does that mean there's a hole in the shingles directly above it?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Not necessarily &#8212; and assuming it does is one of the most common roof diagnosis mistakes. Water follows the path of least resistance inside the assembly: along rafters, deck seams, and fasteners. It can travel several feet before dripping into the living space. A center-ceiling stain is more commonly caused by a vent boot failure, an attic condensation problem, or a nail penetration than by a shingle hole directly above the stain. Always apply the timing and behavior filters before assuming a surface defect at the stain location.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My ceiling is wet but it hasn't rained in days. Is it still a roof leak?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Probably not. Moisture appearing without recent rainfall is a strong indicator of attic condensation &#8212; warm, moist interior air reaching cold roof decking &#8212; or a disconnected HVAC duct or bath fan exhausting into the attic. Check whether the moisture is worse after showers or on cold mornings. Look in the attic for frost on nail tips, damp insulation in a broad pattern rather than a single drip point, or a duct connection that terminates inside the attic space rather than outside. These are ventilation and ducting problems, not roof failures.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does my leak only happen when it's windy?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Wind-only leaks are almost always flashing-related. Wind forces rain laterally against roof-to-wall intersections, chimney sides, and siding transitions &#8212; locations where the roof covering alone doesn't manage water because these areas depend on properly installed flashing assemblies. When step flashing is installed incorrectly, counter-flashing has separated from the chimney mortar, or kick-out flashing is missing at a wall intersection, wind drives water past these points in ways that gravity-fed rain does not. Shingle damage rarely produces a strictly wind-correlated leak pattern.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My roof is only 8 years old. Can it really have a significant problem?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; age is not the primary determinant of roof health. Installation quality, particularly at flashing details, is. A roof installed with incorrect step flashing sequencing, missing kick-out flashing, or improperly integrated siding transitions will leak in the first few years regardless of shingle quality or age. Similarly, a disconnected vent boot or improperly caulked penetration can produce a leak within months of installation. When a relatively new roof leaks, installation detail failures and specific penetration issues are the highest-probability cause &#8212; not material aging.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Should I repair or replace my roof?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">The primary decision driver is underlayment health. If the underlayment is failing &#8212; indicated by delayed leaks, diffuse staining across multiple areas, or leaks that don't correlate clearly with any surface defect &#8212; repair is a temporary measure. Once the secondary moisture barrier is compromised, surface repairs will not hold reliably. Secondary factors include roof age relative to the material's expected lifespan, decking condition (soft spots or delamination indicate structural moisture damage), and the frequency of leak events. A roof that has required multiple localized repairs in the same season is communicating that the system is failing, not that it needs one more patch.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What should I look for when hiring a roofing contractor?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Verify licensing, liability insurance, and workers' compensation before anything else. Then evaluate the diagnostic quality of the proposal: did the contractor enter the attic before quoting? Can they explain specifically where water is entering and why? Do they describe the flashing system, underlayment grade, and installation sequencing? Ask for stage-by-stage photographic documentation as part of the contract. Red flags include a replacement quote without attic inspection, caulk-only solutions at step flashing locations, vague scope descriptions that don't identify a specific failure mechanism, and reluctance to explain how recurrence will be prevented.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>The ceiling stain shows where water exited the assembly &#8212; not where it entered the roof. Apply timing, location, and behavior filters before assuming the leak source is directly above the stain.</li>
+        <li>Flashing failures cause more leaks than shingle wear. Wind-only leaks almost always implicate step flashing, counter-flashing, or siding-to-roof transition failures &#8212; not surface shingles.</li>
+        <li>Moisture without recent rainfall is not a roof leak. Attic condensation from poor ventilation, disconnected bath fans, or air-sealing failures produces identical symptoms and requires a completely different fix.</li>
+        <li>Underlayment health is the primary replacement trigger. Once the secondary moisture barrier fails, diffuse leaks appear that localized surface repairs cannot reliably address.</li>
+        <li>Delayed leaks &#8212; appearing hours after a storm ends &#8212; indicate underlayment saturation or masonry absorption. These are systemic conditions, not single-point failures.</li>
+        <li>A good roofing contractor enters the attic before quoting, explains the specific failure mechanism, describes the flashing system in detail, and documents work photographically at each stage.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="article-tag-pill">roof leak</a>
+      <a href="#" class="article-tag-pill">roof leak diagnosis</a>
+      <a href="#" class="article-tag-pill">roof repair</a>
+      <a href="#" class="article-tag-pill">step flashing</a>
+      <a href="#" class="article-tag-pill">ice dam</a>
+      <a href="#" class="article-tag-pill">attic condensation</a>
+      <a href="#" class="article-tag-pill">roof replacement</a>
+      <a href="#" class="article-tag-pill">ceiling stain</a>
+      <a href="#" class="article-tag-pill">roofing contractor</a>
+      <a href="#" class="article-tag-pill">underlayment failure</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share this guide:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+
+  </div>
+
+  <div class="related">
+    <h3>More General Repair Guides</h3>
+    <div class="related-grid">
+      <a href="everyday-repairs-guide.html" class="related-card">
+        <div class="related-img g">&#128296;</div>
+        <div class="related-body">
+          <span class="tag">General Repair</span>
+          <div class="related-title">The Complete Guide to Everyday Repairs &amp; Quick-Fix Myths</div>
+          <div class="related-meta">M.A. &#183; 28 min read</div>
+        </div>
+      </a>
+      <a href="exterior-repair-guide.html" class="related-card">
+        <div class="related-img g">&#127968;</div>
+        <div class="related-body">
+          <span class="tag">General Repair</span>
+          <div class="related-title">The Complete Exterior Home Repair Guide</div>
+          <div class="related-meta">T.A. &#183; 25 min read</div>
+        </div>
+      </a>
+      <a href="maintenance-guide.html" class="related-card">
+        <div class="related-img m">&#128640;</div>
+        <div class="related-body">
+          <span class="tag maintenance">Maintenance</span>
+          <div class="related-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="related-meta">T.A. &amp; M.A. &#183; 28 min read</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="sidebar-avatar">T.A.</div>
+      <div>
+        <div class="sidebar-expert-name">T.A.</div>
+        <div class="sidebar-expert-title">Certified Facility Manager &amp; Life Safety Specialist</div>
+        <div class="sidebar-expert-bio">NFPA Certified Fire Inspector and Certified Healthcare Facility Manager with decades of experience assessing building envelope failures, moisture intrusion, and life safety systems across commercial and residential properties.</div>
+        <div class="sidebar-creds">
+          <span class="cred-pill">NFPA CFI-1</span>
+          <span class="cred-pill">CHFM</span>
+          <span class="cred-pill">CLSS-HC</span>
+          <span class="cred-pill">OSHA 30</span>
+          <span class="cred-pill">Electrician</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#anatomy">Roof System Anatomy</a></li>
+      <li><a href="#three-filters">The 3 Diagnostic Filters</a></li>
+      <li><a href="#scenario-table">Scenario Triage Table</a></li>
+      <li><a href="#failure-modes">Common Failure Modes</a></li>
+      <li><a href="#condensation-vs-leak">Condensation vs. Real Leak</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#repair-vs-replace">Repair vs. Replacement</a></li>
+      <li><a href="#safety">Safety Warnings</a></li>
+      <li><a href="#maintenance">Annual Maintenance</a></li>
+      <li><a href="#glossary">Glossary</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free homeowner advice</h4>
+    <p>Roof inspection checklists and seasonal maintenance reminders from our certified facility manager.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0px;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>Most Read This Week</h4>
+    <div class="pop-list">
+      <a href="everyday-repairs-guide.html" class="pop-item">
+        <div class="pop-num">01</div>
+        <div>
+          <div class="pop-title">The Complete Guide to Everyday Repairs &amp; Quick-Fix Myths</div>
+          <div class="pop-cat">General Repair &#183; M.A.</div>
+        </div>
+      </a>
+      <a href="exterior-repair-guide.html" class="pop-item">
+        <div class="pop-num">02</div>
+        <div>
+          <div class="pop-title">The Complete Exterior Home Repair Guide</div>
+          <div class="pop-cat">General Repair &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="hvac-noise-guide.html" class="pop-item">
+        <div class="pop-num">03</div>
+        <div>
+          <div class="pop-title">The Complete Guide to HVAC System Noise</div>
+          <div class="pop-cat">HVAC &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="furnace-heating-guide.html" class="pop-item">
+        <div class="pop-num">04</div>
+        <div>
+          <div class="pop-title">The Complete Guide to Furnace Heating Problems</div>
+          <div class="pop-cat">HVAC &#183; T.A.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{
+      li.classList.remove('active');
+      if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
