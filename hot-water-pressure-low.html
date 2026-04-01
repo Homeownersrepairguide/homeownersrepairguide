@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Hot Water Pressure Is Low (But Cold Is Fine) | HomeownersRepairGuide.com</title>
+<meta name="description" content="When cold water pressure is normal but hot water is weak, the restriction is on the hot side — not the supply. Here's how to trace it from the fixture back to the water heater and find the cause.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hot-water-pressure-low.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hot-water-pressure-low.html">
+<meta property="og:title" content="Why Your Hot Water Pressure Is Low (But Cold Is Fine) | HomeownersRepairGuide.com">
+<meta property="og:description" content="When cold is fine but hot is weak, the restriction is on the hot side — not the supply. Here's how to trace it from the fixture back to the water heater.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Your Hot Water Pressure Is Low (But Cold Is Fine) | HomeownersRepairGuide.com">
+<meta name="twitter:description" content="When cold is fine but hot is weak, the restriction is on the hot side — not the supply. Here's how to trace it from fixture back to the water heater.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--plumbing:#1a6a9a;--hot:#c0402a;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+  .article-main{min-width:0;}
+  .article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+  .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--plumbing);color:var(--white);}
+  .tag.hot{background:var(--hot);color:var(--white);}
+  .article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+  .article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hot);padding-left:14px;}
+  .article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+  .byline-avatars{display:flex;gap:6px;}
+  .byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--plumbing);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);}
+  .byline-info{flex:1;}
+  .byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+  .byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+  .byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+  .byline-meta strong{color:var(--text-dark);}
+  .article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+  .article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .article-body p{margin-bottom:18px;}
+  .article-body ul{margin:0 0 18px 0;padding-left:22px;}
+  .article-body li{margin-bottom:7px;}
+  .article-body strong{color:var(--text-dark);font-weight:600;}
+  .article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+  .quick-summary{background:var(--hot);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+  .quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+  .quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+  .quick-summary li{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.45;display:flex;gap:8px;}
+  .quick-summary li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;}
+  /* Hot-side path visual */
+  .path-list{display:flex;flex-direction:column;gap:0;margin:24px 0;}
+  .path-item{display:flex;gap:0;position:relative;}
+  .path-left{display:flex;flex-direction:column;align-items:center;width:44px;flex-shrink:0;}
+  .path-dot{width:14px;height:14px;border-radius:50%;background:var(--hot);flex-shrink:0;z-index:1;margin-top:16px;}
+  .path-line{width:2px;background:rgba(192,64,42,0.3);flex:1;margin:4px 0;}
+  .path-item:last-child .path-line{display:none;}
+  .path-content{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 16px;margin-bottom:8px;flex:1;box-shadow:var(--shadow-card);}
+  .path-location{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+  .path-cause{font-size:13px;color:var(--text-body);line-height:1.5;margin-bottom:4px;}
+  .path-signal{font-size:12px;color:var(--hot);font-weight:600;font-style:italic;}
+  /* Diag flow */
+  .diag-flow{display:flex;flex-direction:column;gap:0;margin:24px 0;}
+  .diag-step{display:flex;gap:0;position:relative;}
+  .diag-left{display:flex;flex-direction:column;align-items:center;width:44px;flex-shrink:0;}
+  .diag-num{width:32px;height:32px;border-radius:50%;background:var(--hot);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;z-index:1;}
+  .diag-line{width:2px;background:var(--gray-light);flex:1;margin:4px 0;}
+  .diag-step:last-child .diag-line{display:none;}
+  .diag-content{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 16px;margin-bottom:8px;flex:1;box-shadow:var(--shadow-card);}
+  .diag-action{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+  .diag-detail{font-size:13px;color:var(--text-body);line-height:1.5;}
+  .diag-result{font-size:12px;color:var(--hot);font-weight:600;margin-top:4px;font-style:italic;}
+  /* Callout boxes */
+  .callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+  .callout-box.danger{background:#fef2f0;border:1px solid #e08070;}
+  .callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+  .callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+  .callout-box.info{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+  .callout-content{flex:1;}
+  .callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+  .callout-box.danger .callout-label{color:#c0402a;}
+  .callout-box.warning .callout-label{color:#b07800;}
+  .callout-box.tip .callout-label{color:#2a7a2a;}
+  .callout-box.info .callout-label{color:#1a5a9a;}
+  .callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+  /* Diag table */
+  .diag-table{width:100%;border-collapse:collapse;margin:24px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .diag-table th{background:var(--hot);color:var(--white);font-size:13px;font-weight:600;padding:11px 14px;text-align:left;}
+  .diag-table td{font-size:13px;padding:11px 14px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .diag-table tr:last-child td{border-bottom:none;}
+  .diag-table tr:nth-child(even) td{background:var(--cream);}
+  .diag-table td:first-child{font-weight:600;color:var(--text-dark);}
+  /* Severity */
+  .severity-compact{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:24px 0;}
+  .sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;box-shadow:var(--shadow-card);}
+  .sev-dot-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+  .sev-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+  .sev-label{font-size:12px;font-weight:700;}
+  .sev-item.low .sev-dot{background:#4caf50;} .sev-item.low .sev-label{color:#4caf50;}
+  .sev-item.moderate .sev-dot{background:var(--amber);} .sev-item.moderate .sev-label{color:#b07800;}
+  .sev-item.high .sev-dot{background:var(--rust);} .sev-item.high .sev-label{color:var(--rust);}
+  .sev-item.critical .sev-dot{background:#c0392b;} .sev-item.critical .sev-label{color:#c0392b;}
+  .sev-desc{font-size:12px;color:var(--text-body);line-height:1.45;}
+  /* Expert callout */
+  .expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+  .expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hot);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+  .expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+  .expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+  .expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+  /* Do/Don't */
+  .diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+  .diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+  .diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+  .diy-head.safe{color:#2a7a2a;} .diy-head.stop{color:#c0402a;}
+  .diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+  .diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+  .diy-items.safe-list li::before{content:'\2713';color:#2a7a2a;font-weight:700;flex-shrink:0;}
+  .diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+  /* FAQ */
+  .faq-block{margin:28px 0;}
+  .faq-item{border-bottom:1px solid var(--gray-light);}
+  .faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+  .faq-question:hover{color:var(--hot);}
+  .faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+  .faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+  .faq-item.open .faq-answer{display:block;}
+  .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hot);}
+  /* Summary */
+  .summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+  .summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+  .summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+  .summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+  .article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+  .tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+  .tag-pill:hover{background:var(--hot);color:var(--white);border-color:var(--hot);}
+  .share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+  .share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+  .share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+  .share-btn:hover{opacity:0.85;}
+  .share-fb{background:#1877f2;color:white;} .share-x{background:#000;color:white;} .share-pin{background:#e60023;color:white;}
+  .share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+  .related{margin-top:36px;}
+  .related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+  .related-list{display:flex;flex-direction:column;gap:10px;}
+  .related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+  .related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+  .related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+  .related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+  .related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+  .related-item:hover .related-arrow{color:var(--hot);}
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+  .sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+  .sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+  .toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+  .toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+  .toc-list li a:hover{background:var(--cream);color:var(--hot);}
+  .toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+  .toc-list li.active a{color:var(--hot);background:var(--cream);font-weight:600;}
+  .toc-list li.active a::before{background:var(--hot);width:6px;height:6px;}
+  .sidebar-expert{display:flex;gap:10px;align-items:flex-start;margin-bottom:12px;}
+  .sidebar-expert:last-child{margin-bottom:0;}
+  .s-avatar{width:40px;height:40px;border-radius:50%;background:var(--plumbing);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+  .s-name{font-size:13px;font-weight:700;color:var(--navy);}
+  .s-title{font-size:11px;color:var(--plumbing);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+  .s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+  .sidebar-newsletter{background:var(--hot);border-radius:var(--radius-lg);padding:20px;}
+  .sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+  .sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.78);line-height:1.55;margin-bottom:14px;}
+  .ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+  .ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+  .ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:20px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+  @media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.severity-compact{grid-template-columns:1fr 1fr;}.diy-pro{grid-template-columns:1fr;}}
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-compact{grid-template-columns:1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html" class="active">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-plumbing.html">Plumbing</a>
+    <span class="sep">&#8250;</span>
+    <a href="#">Water Pressure</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Hot Water Pressure Is Low</span>
+  </div>
+</div>
+<div class="article-wrap">
+<article class="article-main">
+  <div class="article-category">
+    <span class="tag">Water Pressure</span>
+    <span class="tag hot">Hot Side</span>
+  </div>
+  <h1 class="article-title">Why Your Hot Water Pressure Is Low (But Cold Is Fine)</h1>
+  <p class="article-subtitle">When cold water flows normally but hot water is weak, the supply system is not the problem &#8212; the restriction is somewhere along the hot-water path between the water heater and your fixtures.</p>
+  <div class="article-byline">
+    <div class="byline-avatars">
+      <div class="byline-avatar">M.A.</div>
+      <div class="byline-avatar">J.G.</div>
+    </div>
+    <div class="byline-info">
+      <div class="byline-name">M.A. &amp; J.G. &#8212; Licensed Plumbing Professionals</div>
+      <div class="byline-cred">M.A.: Roto-Rooter Owner &#183; J.G.: Licensed Plumber, 50+ Years Commercial &amp; Residential</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &#183; 9 min read</div>
+  </div>
+  <div class="article-body">
+    <div class="quick-summary">
+      <h3>&#128293; Quick Summary</h3>
+      <ul>
+        <li>Cold normal, hot weak = restriction is on the hot-water path &#8212; not the supply system</li>
+        <li>If only one fixture is affected, start with the aerator and cartridge at that fixture</li>
+        <li>If all hot fixtures are weak, the restriction is at or inside the water heater &#8212; heat-trap nipple, sediment, or dip tube</li>
+        <li>Test hot-side flow at a tub spout (no aerator) to confirm whether the issue is upstream or fixture-level</li>
+        <li>Cloudy or spurting hot water = dip tube debris &#8212; fragments circulating through your fixtures</li>
+      </ul>
+    </div>
+    <p>Both your hot and cold supply lines originate from the same incoming pressure. When cold flows at normal pressure and hot is weak at one or more fixtures, the supply itself is fine &#8212; something on the hot-water path is restricting flow. That restriction can be at the fixture (aerator, cartridge), in the hot-side branch piping, or at the water heater itself (heat-trap nipple, sediment accumulation, or a failing dip tube).</p>
+    <p>The diagnostic strategy is straightforward: start at the fixture and work backward toward the heater, ruling out each possible restriction location in sequence.</p>
+    <div class="callout-box info">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">Hot vs. Cold — The Key Confirmation Test</div>
+        <div class="callout-text">At the kitchen faucet, run hot-only for 30 seconds, then cold-only. <strong>If cold is noticeably stronger than hot, the problem is confirmed to be on the hot-water path.</strong> If both are equally weak, it is a supply-side issue &#8212; see our <a href="low-water-pressure.html">whole-home low pressure guide</a>. If both are equally strong, the problem may be temperature-related, not pressure-related.</div>
+      </div>
+    </div>
+    <h2 id="hot-path">Where Restrictions Occur on the Hot-Water Path</h2>
+    <p>Trace from the fixture back to the heater. The restriction is at one of these points:</p>
+    <div class="path-list">
+      <div class="path-item">
+        <div class="path-left"><div class="path-dot"></div><div class="path-line"></div></div>
+        <div class="path-content">
+          <div class="path-location">&#127748; Fixture aerator and cartridge</div>
+          <div class="path-cause">Mineral scale accumulates faster on the hot side because heat accelerates precipitation. A faucet that flows well on cold may be significantly restricted on hot through the same aerator. Pressure-balance cartridges in shower valves can seize internally, restricting hot-side delivery.</div>
+          <div class="path-signal">Pattern: one fixture affected, others normal. First check.</div>
+        </div>
+      </div>
+      <div class="path-item">
+        <div class="path-left"><div class="path-dot"></div><div class="path-line"></div></div>
+        <div class="path-content">
+          <div class="path-location">&#128268; Hot-side branch piping</div>
+          <div class="path-cause">In hard-water areas, scale accumulates inside hot-water supply pipes faster than cold because high temperatures dramatically accelerate mineral precipitation. In older homes with galvanized hot-side risers, interior corrosion can reduce effective pipe diameter by 50% or more.</div>
+          <div class="path-signal">Pattern: all fixtures in one area are weak on hot; cold is normal. More common in homes over 20 years old.</div>
+        </div>
+      </div>
+      <div class="path-item">
+        <div class="path-left"><div class="path-dot"></div><div class="path-line"></div></div>
+        <div class="path-content">
+          <div class="path-location">&#128260; Isolation valve at water heater outlet</div>
+          <div class="path-cause">The valve on the hot-water outlet of the heater may be internally stuck even though the handle appears fully open. Old gate valves are particularly prone to this &#8212; the internal gate can partially detach and restrict flow while the stem still turns freely.</div>
+          <div class="path-signal">Pattern: whole-home hot weakness. Confirm by feeling the outlet pipe &#8212; it should be warm immediately after running hot water.</div>
+        </div>
+      </div>
+      <div class="path-item">
+        <div class="path-left"><div class="path-dot"></div><div class="path-line"></div></div>
+        <div class="path-content">
+          <div class="path-location">&#128293; Heat-trap nipple (most common whole-home cause)</div>
+          <div class="path-cause">Heat-trap nipples are short fittings installed at the heater inlet and outlet to prevent heat loss through convection. They contain a small internal check mechanism that can accumulate debris over time. A blocked heat-trap nipple at the outlet restricts flow to the entire hot-water system without any visible external sign.</div>
+          <div class="path-signal">Pattern: whole-home hot weakness, no debris in aerators. This is the most overlooked cause of global hot-side pressure loss. Requires professional replacement.</div>
+        </div>
+      </div>
+      <div class="path-item">
+        <div class="path-left"><div class="path-dot"></div><div class="path-line"></div></div>
+        <div class="path-content">
+          <div class="path-location">&#127754; Sediment in the water heater tank</div>
+          <div class="path-cause">Years of mineral precipitation settle at the bottom of tank water heaters. Heavy sediment accumulation can obstruct the internal flow path and reduce outlet pressure. Flushing the heater annually prevents this &#8212; but if the tank has never been flushed, sediment may be so compacted that flushing causes little improvement.</div>
+          <div class="path-signal">Pattern: whole-home hot weakness, especially in hard-water areas. Popping or rumbling sounds from the heater confirm significant sediment.</div>
+        </div>
+      </div>
+      <div class="path-item">
+        <div class="path-left"><div class="path-dot"></div></div>
+        <div class="path-content">
+          <div class="path-location">&#127384; Dip tube deterioration (debris in all fixtures)</div>
+          <div class="path-cause">The dip tube directs cold inlet water to the bottom of the tank. When it deteriorates, fragments circulate through the hot-water system and accumulate in aerators, cartridges, and pressure-balance valves &#8212; simultaneously restricting multiple fixtures. A manufacturing defect in certain late-1990s heaters caused widespread dip tube failures.</div>
+          <div class="path-signal">Pattern: multiple fixtures simultaneously restricted; white or grey plastic fragments visible in aerators; spurting or cloudy hot water.</div>
+        </div>
+      </div>
+    </div>
+    <h2 id="diagnostic">How to Diagnose &#8212; Work Fixture-to-Heater</h2>
+    <div class="diag-flow">
+      <div class="diag-step">
+        <div class="diag-left"><div class="diag-num">1</div><div class="diag-line"></div></div>
+        <div class="diag-content">
+          <div class="diag-action">Test multiple fixtures &#8212; identify scope</div>
+          <div class="diag-detail">Run hot-only at the kitchen faucet, a bathroom faucet, and a tub spout. Determine whether the weakness is at one fixture, one area, or everywhere.</div>
+          <div class="diag-result">One fixture only: fixture-level restriction. Multiple fixtures: branch or heater-side restriction. All fixtures: heater outlet, heat-trap nipple, or sediment.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-left"><div class="diag-num">2</div><div class="diag-line"></div></div>
+        <div class="diag-content">
+          <div class="diag-action">Remove and inspect aerators for debris type</div>
+          <div class="diag-detail">Remove aerators from the affected faucets. Rinse screens and examine debris under good light. Note color and texture of any particles.</div>
+          <div class="diag-result">White mineral scale = hard-water buildup. Small grey or white plastic fragments = dip tube deterioration (replace the heater's dip tube). Brown flakes = corrosion from galvanized piping upstream.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-left"><div class="diag-num">3</div><div class="diag-line"></div></div>
+        <div class="diag-content">
+          <div class="diag-action">Test flow at a tub spout (no aerator)</div>
+          <div class="diag-detail">Tub spouts have no aerator or cartridge restriction. Running hot-only at a tub spout gives the clearest reading of true hot-side supply pressure without fixture-level interference.</div>
+          <div class="diag-result">Strong at tub spout but weak at faucets = aerator and cartridge restriction at the faucets. Weak at the tub spout too = restriction is upstream, in the branch or at the heater.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-left"><div class="diag-num">4</div><div class="diag-line"></div></div>
+        <div class="diag-content">
+          <div class="diag-action">Confirm the heater outlet isolation valve is fully open</div>
+          <div class="diag-detail">Find the hot-water outlet valve on top of the water heater. A ball valve should have its handle parallel to the pipe. A gate valve should turn counterclockwise until fully open &#8212; do not force old gate valves.</div>
+          <div class="diag-result">Valve was partially closed? Opening it may restore pressure. If the handle turns freely but pressure doesn't improve, the gate may be broken internally &#8212; requires valve replacement by a plumber.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-left"><div class="diag-num">5</div><div class="diag-line"></div></div>
+        <div class="diag-content">
+          <div class="diag-action">Test flow at the heater drain valve</div>
+          <div class="diag-detail">Attach a hose to the heater's drain valve and open it briefly. Observe both the flow rate and what comes out.</div>
+          <div class="diag-result">Weak flow from the drain valve confirms internal heater restriction (sediment). Strong flow from drain but weak at fixtures = restriction is downstream of the heater, in the hot-side piping or heat-trap nipple.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="diag-left"><div class="diag-num">6</div><div class="diag-line"></div></div>
+        <div class="diag-content">
+          <div class="diag-action">If all above are normal &#8212; heat-trap nipple is likely</div>
+          <div class="diag-detail">If tub spout is weak, drain valve is strong, and outlet valve is confirmed fully open, the most likely remaining cause is an obstructed heat-trap nipple at the heater outlet. This requires a plumber to replace the fitting.</div>
+          <div class="diag-result">Heat-trap nipple replacement is a relatively quick plumber service that restores whole-home hot-water pressure. It is commonly overlooked because there is no external indication of blockage.</div>
+        </div>
+      </div>
+    </div>
+    <h2 id="symptom-table">Symptom Quick Reference</h2>
+    <table class="diag-table">
+      <thead>
+        <tr><th>What You Observe</th><th>Most Likely Location</th><th>First Action</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>One faucet weak on hot, others normal</td><td>Aerator or cartridge at that fixture</td><td>Clean aerator; replace cartridge if needed</td></tr>
+        <tr><td>One bathroom area all weak on hot</td><td>Branch-line restriction or zone valve</td><td>Test at tub spout; confirm branch valve is open</td></tr>
+        <tr><td>All fixtures weak on hot, cold normal</td><td>Heat-trap nipple, sediment, or outlet valve</td><td>Test at tub spout and drain valve; call plumber</td></tr>
+        <tr><td>Plastic fragments in aerators</td><td>Dip tube deterioration</td><td>Call plumber for dip tube replacement</td></tr>
+        <tr><td>Spurting or cloudy hot water</td><td>Dip tube fragments or significant sediment</td><td>Call plumber &#8212; do not ignore</td></tr>
+        <tr><td>Hot weak only after long periods of no use</td><td>Sediment settled and blocking outlet temporarily</td><td>Flush heater; schedule professional service</td></tr>
+        <tr><td>Shower pressure drops when toilet flushes</td><td>Pressure-balance valve seizing on hot side</td><td>Pressure-balance cartridge replacement</td></tr>
+      </tbody>
+    </table>
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Do Not Confuse Low Hot Pressure With Low Hot Temperature</div>
+        <div class="callout-text">These are different problems. Low <em>pressure</em> means the hot water stream is weak even when it reaches the correct temperature. Low <em>temperature</em> means the water flows well but is not hot enough. A failing heating element or thermostat causes low temperature, not low pressure. If your hot water is warm but not hot, see our <a href="why-you-have-no-hot-water.html">water heater guide</a> &#8212; the fix is completely different.</div>
+      </div>
+    </div>
+    <div class="expert-callout">
+      <div class="expert-avatar">J.G.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"Heat-trap nipples are the single most underdiagnosed cause of whole-home hot water pressure loss that I see. Homeowners spend weeks cleaning aerators and checking valves, and the pressure never comes back &#8212; because the nipple at the heater outlet is blocked and no amount of fixture-level work is going to fix that. The nipple is a four-inch fitting with a small internal check valve. When it gets clogged with debris or scale, it restricts everything downstream. I can usually replace one in under an hour. But homeowners never think to check it because it looks like a plain pipe fitting. If your aerators are clean, your valves are open, and your cold pressure is fine but hot is globally weak &#8212; that nipple is where I start."</div>
+        <div class="expert-attr">&#8212; J.G., Licensed Plumber &#183; 50+ Years Commercial &amp; Residential Service Work</div>
+      </div>
+    </div>
+    <h2 id="severity">How Serious Is It?</h2>
+    <div class="severity-compact">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Minor &#8212; One Fixture</div></div>
+        <div class="sev-desc">Aerator or cartridge restriction. Clean or replace. Homeowner-accessible repair.</div>
+      </div>
+      <div class="sev-item moderate">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate &#8212; Multiple Fixtures</div></div>
+        <div class="sev-desc">Branch or partial heater-side restriction. Schedule plumber &#8212; getting worse over time.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major &#8212; All Hot Fixtures</div></div>
+        <div class="sev-desc">Heat-trap nipple, sediment, or outlet valve. Call a plumber &#8212; professional diagnosis needed.</div>
+      </div>
+      <div class="sev-item critical">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical &#8212; Debris in Water</div></div>
+        <div class="sev-desc">Dip tube or heater failure. Plastic fragments damaging fixtures throughout the home. Call immediately.</div>
+      </div>
+    </div>
+    <h2 id="diy-pro">What You Can Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Safe</div>
+        <ul class="diy-items safe-list">
+          <li>Remove and clean all aerators; note debris type and color</li>
+          <li>Test hot-side flow at a tub spout (no aerator) to identify scope</li>
+          <li>Confirm water heater outlet valve is fully open</li>
+          <li>Test flow at the heater drain valve to assess internal restriction</li>
+          <li>Flush several gallons from the heater to observe sediment output</li>
+          <li>Compare hot vs. cold at multiple fixtures to confirm scope</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Requires a Licensed Plumber</div>
+        <ul class="diy-items stop-list">
+          <li>Heat-trap nipple replacement &#8212; specialized fitting removal under pressure</li>
+          <li>Dip tube replacement &#8212; requires draining the heater and internal access</li>
+          <li>Pressure-balance cartridge replacement in shower valves &#8212; water must be isolated</li>
+          <li>Galvanized piping assessment and replacement</li>
+          <li>Chemical descaling of the heater &#8212; can damage components if done incorrectly</li>
+          <li>Gate valve replacement when internal gate has failed</li>
+        </ul>
+      </div>
+    </div>
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What is a heat-trap nipple and why does it cause pressure loss?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A heat-trap nipple is a short threaded fitting installed at the inlet and outlet connections of the water heater. It contains a small internal check valve or flapper that prevents hot water from thermosiphoning back out of the tank when no fixture is running &#8212; improving efficiency. Over time, mineral scale, sediment, or debris can accumulate on this internal mechanism, partially or fully obstructing flow. Because the nipple looks like an ordinary pipe fitting from the outside, there is no visual indication of blockage. A plumber can replace it with a standard dielectric nipple or a new heat-trap nipple in under an hour. Pressure usually improves immediately after replacement.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">I found plastic fragments in my faucet aerators. What does that mean?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Small plastic fragments &#8212; typically white or grey, irregular in shape &#8212; in faucet aerators almost always indicate dip tube deterioration. The dip tube is a plastic pipe inside the water heater that directs cold incoming water to the bottom of the tank. When it deteriorates (from age, chemistry, or a manufacturing defect common in certain late-1990s units), fragments circulate through the hot-water system and accumulate wherever flow slows: aerators, cartridge inlets, pressure-balance valves. The fix is dip tube replacement, which requires a plumber to drain and access the heater interior. Until it's replaced, continue cleaning aerators regularly but expect recurrence.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Will flushing the water heater restore hot-side pressure?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Sometimes &#8212; it depends on the degree of sediment accumulation and how long it has been since the last flush. If the tank has been flushed annually and only moderate sediment has accumulated, flushing can meaningfully improve outlet flow. If the tank has never been flushed over many years of use in a hard-water area, the sediment may be compacted and partially calcified &#8212; flushing may produce little improvement in this case and heater replacement may be the more economical solution. Flushing is worth trying first because it is low cost, but it is not a guaranteed fix for serious sediment accumulation.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My hot water pressure is fine at the tub but weak at the bathroom faucet. Why?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">This is a classic fixture-level restriction. The tub spout has no aerator or cartridge, so it gives an unobstructed reading of the hot-side supply pressure. The bathroom faucet has both an aerator and a cartridge, either of which can be restricting hot-side flow due to mineral scale or debris accumulation. Remove and clean the aerator first. If the faucet is still weak after cleaning, remove the cartridge and inspect the inlet port for scale or fragments. In hard-water areas, cartridges may need replacement every 3&#8211;5 years as mineral buildup degrades their internal O-rings and restricts flow passages.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I just replace the water heater to fix this?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Sometimes that is the right answer, but it is not always necessary and often not the first step. If the restriction is in a heat-trap nipple, the fix is a $15 fitting and an hour of labor &#8212; not a new heater. If the restriction is a dip tube, it is a similarly affordable repair. If the heater is over 12 years old and showing multiple symptoms (pressure loss, rumbling sounds, reduced recovery), replacement may be the most economical choice. But for a heater that is otherwise functioning well, diagnosing the specific restriction point before committing to replacement saves significant money in most cases.</div>
+      </div>
+    </div>
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Cold normal, hot weak = restriction is on the hot-water path. The supply system is not the problem.</li>
+        <li>Test at a tub spout (no aerator) to determine whether the restriction is at the fixture or upstream. Strong at tub = fixture issue. Weak at tub = branch or heater restriction.</li>
+        <li>Plastic fragments in aerators = dip tube deterioration. All fixtures will progressively worsen until the dip tube is replaced.</li>
+        <li>Whole-home hot weakness with clean aerators and an open outlet valve = heat-trap nipple most likely. Requires professional replacement but is a quick affordable fix.</li>
+        <li>Do not confuse low hot pressure (weak stream) with low hot temperature (lukewarm water). These are different problems with different causes.</li>
+      </ul>
+    </div>
+    <div class="article-tags">
+      <a href="#" class="tag-pill">hot water pressure low</a>
+      <a href="#" class="tag-pill">low hot water pressure</a>
+      <a href="#" class="tag-pill">hot water weak cold normal</a>
+      <a href="#" class="tag-pill">heat trap nipple</a>
+      <a href="#" class="tag-pill">dip tube deterioration</a>
+      <a href="#" class="tag-pill">water heater pressure</a>
+    </div>
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+  <div class="related">
+    <h3>More Water Pressure Guides</h3>
+    <div class="related-list">
+      <a href="low-water-pressure.html" class="related-item">
+        <div><div class="related-item-title">Why Your Home Has Low Water Pressure</div><div class="related-item-meta">M.A. &amp; J.G. &#183; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="why-you-have-no-hot-water.html" class="related-item">
+        <div><div class="related-item-title">Why You Have No Hot Water</div><div class="related-item-meta">M.A. &amp; J.G. &#183; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="water-heater-guide.html" class="related-item">
+        <div><div class="related-item-title">The Complete Water Heater Guide</div><div class="related-item-meta">J.G. &amp; M.A. &#183; 28 min read &#183; Flagship</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+</article>
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#hot-path">Where Restrictions Occur</a></li>
+      <li><a href="#diagnostic">Fixture-to-Heater Diagnostic</a></li>
+      <li><a href="#symptom-table">Symptom Quick Reference</a></li>
+      <li><a href="#severity">Severity Scale</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+  <div class="sidebar-card">
+    <h4>About the Authors</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">M.A.</div>
+      <div><div class="s-name">M.A.</div><div class="s-title">Roto-Rooter Owner</div><div class="s-bio">Licensed contractor and Roto-Rooter franchise owner, Pacific Northwest. USAF Lt. Colonel (Ret.), MBA Gonzaga.</div></div>
+    </div>
+    <div class="sidebar-expert">
+      <div class="s-avatar">J.G.</div>
+      <div><div class="s-name">J.G.</div><div class="s-title">Licensed Plumber</div><div class="s-bio">50+ years of commercial, residential, and service plumbing across the Pacific Northwest.</div></div>
+    </div>
+  </div>
+  <div class="sidebar-newsletter">
+    <h4>Free plumbing advice</h4>
+    <p>Practical guides and seasonal maintenance reminders from our licensed plumbing professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>
