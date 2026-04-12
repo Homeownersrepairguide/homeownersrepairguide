@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Recessed Lights Shut Off by Themselves | HomeownersRepairGuide.com</title>
+<meta name="description" content="Recessed lights that turn off by themselves are almost always responding to heat. A thermal limiter tripped, the LED driver overheated, or insulation is blocking airflow. Here's how to find which one.">
+<link rel="canonical" href="https://homeownersrepairguide.com/recessed-lights-shut-off.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/recessed-lights-shut-off.html">
+<meta property="og:title" content="Why Recessed Lights Shut Off by Themselves | HomeownersRepairGuide.com">
+<meta property="og:description" content="Recessed lights that turn off on their own are protecting themselves from heat. Here's how to identify the cause and whether it's a fire hazard.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --electrical:#b08a00;--electrical-dark:#7a5f00;--electrical-light:#fdf6e3;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}
+.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--electrical);color:var(--white);}
+.tag.urgent{background:#7a1010;color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--electrical);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+.article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+.quick-summary{background:var(--electrical);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+.safety-box{background:#7a1010;border-radius:var(--radius-lg);padding:18px 22px;margin:0 0 28px;}
+.safety-box h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.safety-box p{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.55;}
+/* Timing decoder */
+.timing-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:24px 0;}
+.timing-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 15px;box-shadow:var(--shadow-card);text-align:center;}
+.timing-card.fast{border-top:3px solid #c0392b;}
+.timing-card.mid{border-top:3px solid var(--electrical);}
+.timing-card.random{border-top:3px solid #5a3a7a;}
+.tc-time{font-size:16px;font-weight:800;font-family:'Playfair Display',serif;margin-bottom:5px;}
+.timing-card.fast .tc-time{color:#c0392b;}
+.timing-card.mid .tc-time{color:var(--electrical-dark);}
+.timing-card.random .tc-time{color:#5a3a7a;}
+.tc-label{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.tc-cause{font-size:12px;color:var(--text-muted);line-height:1.4;}
+/* IC explainer */
+.ic-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.ic-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:15px 17px;box-shadow:var(--shadow-card);}
+.ic-card.ic{border-top:3px solid #3a6b3a;}
+.ic-card.non-ic{border-top:3px solid #c0392b;}
+.ic-type{font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:5px;}
+.ic-card.ic .ic-type{color:#2a7a2a;}
+.ic-card.non-ic .ic-type{color:#c0402a;}
+.ic-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.ic-desc{font-size:13px;color:var(--text-body);line-height:1.5;}
+/* Cause cards */
+.cause-list{display:flex;flex-direction:column;gap:12px;margin:24px 0;}
+.cause-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 20px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.cause-card.high{border-left:4px solid #c0392b;}
+.cause-card.medium{border-left:4px solid var(--electrical);}
+.cause-card.pro{border-left:4px solid #5a3a7a;}
+.cause-card.low{border-left:4px solid #3a6b3a;}
+.cause-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gray-light);width:28px;flex-shrink:0;line-height:1.2;margin-top:1px;}
+.cause-body{flex:1;}
+.cause-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.cause-desc{font-size:13px;color:var(--text-body);line-height:1.55;margin-bottom:6px;}
+.cause-pattern{font-size:12px;color:var(--text-muted);font-style:italic;}
+.cause-badge{font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:2px;flex-shrink:0;margin-top:3px;}
+.cause-card.high .cause-badge{background:#fef2f0;color:#c0402a;}
+.cause-card.medium .cause-badge{background:var(--electrical-light);color:var(--electrical-dark);}
+.cause-card.pro .cause-badge{background:#f4eef8;color:#5a3a7a;}
+.cause-card.low .cause-badge{background:#eaf5ea;color:#2a7a2a;}
+/* Diagnostic steps */
+.diag-steps{display:flex;flex-direction:column;gap:10px;margin:24px 0;}
+.diag-step{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--electrical);color:var(--white);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step-body{flex:1;}
+.step-action{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.step-detail{font-size:13px;color:var(--text-muted);line-height:1.5;}
+.step-result{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;}
+.step-if{font-size:12px;padding:4px 10px;border-radius:2px;line-height:1.4;}
+.step-if.yes{background:#eaf5ea;color:#2a7a2a;}
+.step-if.no{background:#fef2f0;color:#c0402a;}
+/* Diag table */
+.diag-table{width:100%;border-collapse:collapse;margin:24px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.diag-table th{background:var(--electrical);color:var(--white);font-size:13px;font-weight:600;padding:11px 14px;text-align:left;}
+.diag-table td{font-size:13px;padding:11px 14px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+.diag-table tr:last-child td{border-bottom:none;}
+.diag-table tr:nth-child(even) td{background:var(--cream);}
+.diag-table td:first-child{font-weight:600;color:var(--text-dark);}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}
+.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* Callout */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--electrical);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--electrical);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--electrical);color:var(--white);border-color:var(--electrical);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;} .share-x{background:#000;color:white;} .share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--electrical);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--electrical);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--electrical);background:var(--electrical-light);font-weight:600;}
+.toc-list li.active a::before{background:var(--electrical);width:6px;height:6px;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--electrical);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--electrical);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.timing-grid{grid-template-columns:1fr;}.ic-compare{grid-template-columns:1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical</a>
+    <span class="sep">&#8250;</span>
+    <a href="electrical-lighting.html">Lighting &amp; Fixtures</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Recessed Lights Shut Off by Themselves</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Lighting &amp; Fixtures</span>
+    <span class="tag urgent">&#9888; Fire Risk if Unresolved</span>
+  </div>
+
+  <h1 class="article-title">Why Recessed Lights Shut Off by Themselves</h1>
+  <p class="article-subtitle">A recessed light that turns off after a few minutes &#8212; then comes back on when it cools &#8212; is not malfunctioning. It's protecting itself and your home from a heat condition that could start a fire. The thermal limiter inside the fixture tripped, the LED driver overheated, or insulation is blocking airflow. Here's how to find which one.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Licensed Electrician &amp; Fire Investigator</div>
+      <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Licensed Electrician</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="safety-box">
+      <h3>&#9888;&#65039; Insulation Touching a Non-IC Recessed Can Is an Active Fire Hazard</h3>
+      <p>If your recessed light housing is not IC-rated (Insulation Contact rated) and attic insulation is touching or covering it, this is a fire hazard regardless of whether the light is currently shutting off. The thermal limiter may be preventing ignition for now &#8212; but repeated cycling under those conditions damages the limiter and insulation over time. Have the housing replaced with an IC-rated fixture or the insulation cleared before the circuit is used further.</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>&#9889; Quick Summary</h3>
+      <ul>
+        <li>The on&#8211;off&#8211;on cycling pattern = thermal limiter tripping &#8212; the fixture's built-in heat protection is working; find out <em>why</em> it's overheating</li>
+        <li>First check: is the fixture IC-rated? If insulation is nearby and the housing is non-IC, that's the likely cause and a fire hazard</li>
+        <li>Second check: is the LED rated for enclosed/recessed fixtures? LED bulbs not rated for enclosed use run significantly hotter in a recessed can</li>
+        <li>How quickly it shuts off tells you the severity: under 5 minutes = severe heat issue; 5&#8211;15 minutes = LED driver or airflow; random timing = wiring or voltage issue</li>
+        <li>A single light shutting off while others stay on confirms the issue is localized to that fixture &#8212; not the circuit</li>
+      </ul>
+    </div>
+
+    <h2 id="how-thermal-protection-works">How Thermal Protection Works in Recessed Fixtures</h2>
+    <p>Recessed light housings operate inside ceiling cavities &#8212; partially enclosed spaces where heat builds up faster than in open fixtures. Every recessed can manufactured for residential use contains a <strong>thermal protection device</strong>, typically a bi-metallic thermostat or electronic cutoff switch, positioned at the hottest point inside the housing.</p>
+    <p>When internal temperature exceeds the device's threshold, it opens the circuit &#8212; cutting power to the bulb. The light goes dark, the housing cools down, the thermal protector resets automatically, and the light comes back on. If the heat condition is still present, the cycle repeats. This on&#8211;off cycling is the thermal protector doing exactly what it was designed to do: preventing the fixture from reaching ignition temperature.</p>
+    <p>The thermal protector is not the problem. The <em>reason</em> the fixture is reaching thermal protection temperature is the problem &#8212; and that's what needs to be corrected.</p>
+
+    <h2 id="timing-clues">How Quickly It Shuts Off Tells You the Severity</h2>
+
+    <div class="timing-grid">
+      <div class="timing-card fast">
+        <div class="tc-time">Under 5 min</div>
+        <div class="tc-label">Severe Overheating</div>
+        <div class="tc-cause">Insulation covering a non-IC housing, or completely blocked airflow. The fixture is reaching dangerous temperatures very rapidly. This is a fire hazard &#8212; stop using the fixture and address the cause before next use.</div>
+      </div>
+      <div class="timing-card mid">
+        <div class="tc-time">5&#8211;15 min</div>
+        <div class="tc-label">LED Driver or Airflow Issue</div>
+        <div class="tc-cause">LED bulb not rated for enclosed use, incorrect trim restricting ventilation, or driver degradation. Less urgent than sub-5-minute trips, but still needs correction to prevent fixture damage and premature driver failure.</div>
+      </div>
+      <div class="timing-card random">
+        <div class="tc-time">Random</div>
+        <div class="tc-label">Wiring or Voltage Issue</div>
+        <div class="tc-cause">Irregular timing that doesn't correlate with how long the light has been on points to a loose connection generating heat under load, voltage instability, or an intermittent fault. Requires professional evaluation.</div>
+      </div>
+    </div>
+
+    <h2 id="ic-rating">The IC Rating: The Most Important Thing to Know</h2>
+    <p>Every recessed light housing is rated either IC (Insulation Contact) or Non-IC. This rating determines whether attic insulation can safely contact the housing.</p>
+
+    <div class="ic-compare">
+      <div class="ic-card ic">
+        <div class="ic-type">&#9989; IC-Rated Housing</div>
+        <div class="ic-title">Safe for insulation contact</div>
+        <div class="ic-desc">IC-rated housings are designed and tested to operate safely when completely covered by insulation. They use tighter thermal control and sealed construction that prevents heat from migrating into surrounding materials. Required by code for any recessed fixture in an insulated ceiling.</div>
+      </div>
+      <div class="ic-card non-ic">
+        <div class="ic-type">&#9888; Non-IC Rated Housing</div>
+        <div class="ic-title">Requires 3-inch clearance from insulation</div>
+        <div class="ic-desc">Non-IC housings require a minimum 3-inch air gap between the housing and any insulation material. Contact with insulation traps heat, drives up internal temperature rapidly, and creates a fire ignition risk at the wood framing around the fixture. If insulation has been added since the fixture was installed &#8212; by renovation, energy upgrade, or settling &#8212; clearance may have been compromised.</div>
+      </div>
+    </div>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">How to Find Your Housing's IC Rating</div>
+        <div class="callout-text">The IC rating is printed on a label inside the housing &#8212; accessible by removing the trim ring and looking at the interior of the can. IC-rated housings are typically labeled "IC" or "Type IC." Non-IC housings may be labeled "Non-IC" or "Type Non-IC," or may simply not have an IC designation. If you have attic access, you can also look for a dam (a metal or cardboard barrier) installed around the housing &#8212; these are required around non-IC housings to maintain clearance. No dam around an older housing in an insulated attic is a strong indicator the clearance requirement isn't being met.</div>
+      </div>
+    </div>
+
+    <h2 id="causes">4 Causes of Recessed Lights Shutting Off</h2>
+
+    <div class="cause-list">
+
+      <div class="cause-card high">
+        <div class="cause-num">01</div>
+        <div class="cause-body">
+          <div class="cause-title">Thermal Limiter Triggered by Insulation Contact &#8212; Most Serious</div>
+          <div class="cause-desc">A non-IC housing with insulation touching it is the most urgent cause. Attic insulation is an excellent thermal insulator &#8212; which means it also prevents the fixture from dissipating heat. Internal temperatures rise rapidly, the thermal limiter trips within minutes of turn-on, and the wood framing around the fixture is being exposed to elevated temperatures each time the light is used. The thermal limiter is preventing ignition for now, but repeated thermal stress on the surrounding framing increases risk over time.</div>
+          <div class="cause-pattern">Pattern: shuts off very quickly (under 5 minutes); fixture is in an upper-floor or attic-adjacent ceiling; insulation was recently added or upgraded; attic access shows insulation covering the housing. Requires replacing the housing with an IC-rated fixture or installing an insulation dam &#8212; licensed electrician work.</div>
+        </div>
+        <span class="cause-badge">Fire Hazard</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">02</div>
+        <div class="cause-body">
+          <div class="cause-title">LED Bulb Not Rated for Enclosed or Recessed Use</div>
+          <div class="cause-desc">LED bulbs dissipate a significant portion of their heat through the base and into the socket &#8212; which means they rely on airflow around the base to cool the driver. In an enclosed recessed housing, that airflow is restricted. An LED bulb not specifically rated for "enclosed" or "recessed" use runs substantially hotter in this environment, causing the driver to overheat and either shut down itself or drive the housing temperature high enough to trip the thermal limiter. This is extremely common when standard A19 LED bulbs are used in recessed cans.</div>
+          <div class="cause-pattern">Pattern: shuts off 5&#8211;15 minutes after turn-on; light bulb packaging doesn't specify "enclosed fixture rated" or "recessed use"; the housing has adequate clearance from insulation. Fix: replace with an LED bulb specifically rated for enclosed fixtures, or use an LED retrofit kit designed for the specific housing size.</div>
+        </div>
+        <span class="cause-badge">Most Common Fix</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">03</div>
+        <div class="cause-body">
+          <div class="cause-title">Restricted Airflow from Incorrect Trim or Housing Configuration</div>
+          <div class="cause-desc">Recessed can trims are designed to allow a specific amount of ventilation while maintaining the finished appearance. Installing the wrong trim type &#8212; particularly a trim designed for a different housing size or brand &#8212; can block ventilation slots in the housing. Similarly, an oversized LED retrofit module that sits too high in the housing, or a conversion kit not matched to the housing dimensions, can restrict the airflow the housing relies on for thermal management.</div>
+          <div class="cause-pattern">Pattern: problem started after a trim replacement or LED retrofit installation; trim was from a different manufacturer than the housing; LED retrofit kit was generic rather than housing-specific. Verify that the trim and LED module are compatible with the specific housing model.</div>
+        </div>
+        <span class="cause-badge">Investigate</span>
+      </div>
+
+      <div class="cause-card pro">
+        <div class="cause-num">04</div>
+        <div class="cause-body">
+          <div class="cause-title">Loose Wiring or Heat-Weakened Connections</div>
+          <div class="cause-desc">A loose connection at the fixture's junction box or at the wire connector inside the housing creates resistance under load, generating heat at the connection point. This heat adds to the thermal load the fixture is already managing &#8212; potentially pushing it over the thermal limiter's threshold when it otherwise wouldn't. Irregular, unpredictable shutdown timing &#8212; not correlated with how long the light has been on &#8212; points to this cause rather than the steady-state heat buildup that insulation or LED issues produce.</div>
+          <div class="cause-pattern">Pattern: random shutdown timing (not consistent); other fixtures on the circuit briefly flicker or dim when this one shuts off; fixture junction box or trim ring runs unusually warm. Requires a licensed electrician to inspect and re-terminate wiring connections.</div>
+        </div>
+        <span class="cause-badge">Call Pro</span>
+      </div>
+
+    </div>
+
+    <h2 id="diagnostic">Step-by-Step Diagnostic</h2>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-action">Confirm it's only one fixture (or a specific group) &#8212; not the circuit</div>
+          <div class="step-detail">If only one recessed light shuts off while others on the same circuit stay on, the cause is localized to that fixture's heat conditions. If all lights on the circuit go off simultaneously, the cause is upstream &#8212; check the breaker and see the companion circuit-tripping articles.</div>
+          <div class="step-result">
+            <span class="step-if yes">One fixture only &#8594; Heat condition at that fixture &#8212; continue</span>
+            <span class="step-if no">All lights off &#8594; Circuit issue &#8212; check breaker first</span>
+          </div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-action">Check the IC rating of the housing</div>
+          <div class="step-detail">With the circuit off, remove the trim ring and look inside the housing for the rating label. "IC" or "Type IC" = can safely contact insulation. No IC designation or "Non-IC" = requires 3-inch clearance. If you have attic access, check whether insulation is touching the housing.</div>
+          <div class="step-result">
+            <span class="step-if no">Non-IC + insulation contact &#8594; Fire hazard &#8212; stop using, call electrician</span>
+          </div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-action">Check whether the LED bulb is rated for enclosed or recessed use</div>
+          <div class="step-detail">Look at the bulb packaging or the bulb itself for "enclosed fixture rated," "recessed use," or similar language. If no such designation: replace with an LED that carries this rating and test. This resolves the majority of 5&#8211;15 minute shutdown issues immediately.</div>
+          <div class="step-result">
+            <span class="step-if yes">LED not rated for enclosed use &#8594; Replace with enclosed-rated LED</span>
+          </div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-action">Verify trim and LED module compatibility with the housing</div>
+          <div class="step-detail">Check the housing brand and model (printed inside the can). Confirm the trim and any LED retrofit kit are listed as compatible with that housing. Generic retrofit kits that block ventilation slots or sit too high in the housing are a common cause of overheating in otherwise correctly installed fixtures.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <div class="step-action">Note shutdown timing and any other circuit symptoms</div>
+          <div class="step-detail">If the light shuts off randomly (not correlated with run time) or if other lights on the circuit flicker when it shuts off &#8212; a wiring fault is the likely cause. Turn off the circuit and call a licensed electrician. Don't continue using the fixture.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="pattern-table">What Your Pattern Tells You</h2>
+    <table class="diag-table">
+      <thead>
+        <tr><th>What You Observe</th><th>Most Likely Cause</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Shuts off under 5 minutes, insulation nearby</td><td>Non-IC housing in contact with insulation</td><td>Stop using. Call electrician to replace housing or install dam.</td></tr>
+        <tr><td>Shuts off 5&#8211;15 min, standard A19 LED installed</td><td>LED not rated for enclosed/recessed use</td><td>Replace with enclosed-fixture-rated LED. Test run time.</td></tr>
+        <tr><td>Shuts off after trim or retrofit kit installation</td><td>Incompatible trim blocking ventilation</td><td>Verify trim and retrofit compatibility with housing model.</td></tr>
+        <tr><td>Random shutdown timing, not correlated with run time</td><td>Loose wiring or voltage irregularity</td><td>Turn off circuit. Call electrician.</td></tr>
+        <tr><td>All recessed lights on circuit go off together</td><td>Circuit-level issue &#8212; not individual fixture heat</td><td>Check circuit breaker. See breaker tripping articles.</td></tr>
+        <tr><td>Light comes back on after 5&#8211;10 minutes, repeats</td><td>Thermal limiter cycling &#8212; confirms heat condition</td><td>The thermal limiter is working. Find and fix the heat source.</td></tr>
+        <tr><td>Ceiling surface around fixture is warm</td><td>Significant heat escaping through ceiling drywall</td><td>Check insulation contact and LED compatibility. May need attic inspection.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The IC rating situation is one of the most important things homeowners in older homes need to understand about their recessed lighting. Many homes built in the 1980s and 1990s had non-IC housings installed before attic insulation was added or upgraded. When homeowners later added insulation for energy efficiency &#8212; a good thing &#8212; they often inadvertently covered non-IC housings without anyone realizing it. The thermal limiter prevents fires in the short term. But if that limiter fails &#8212; which it can, especially after years of repeated thermal cycling &#8212; there's nothing between the 200-degree-plus housing and the wood framing directly surrounding it. I've investigated structure fires where the origin was a non-IC recessed can that had been covered by insulation for years. The right fix is replacing the housing with an IC-rated unit &#8212; a job that takes an electrician a few hours per fixture &#8212; not relying on the thermal limiter as a permanent protective device. The other issue I see constantly is standard A19 LEDs in recessed cans. The 'enclosed fixture rated' marking on LED packaging exists for exactly this reason. If your LED isn't marked for enclosed use, it's running hotter than its driver was designed for, and your thermal limiter is doing double duty protecting against the driver heat as well as the fixture heat."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Do vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible</div>
+        <ul class="diy-items safe-list">
+          <li>Check the IC rating label inside the housing (circuit off, trim removed)</li>
+          <li>Replace LED with one specifically rated for enclosed/recessed fixtures</li>
+          <li>Verify trim and LED retrofit kit are compatible with the housing model</li>
+          <li>Check attic for insulation contact with housing (observation only, don't move wiring)</li>
+          <li>Note shutdown timing and correlation with other circuit behavior</li>
+          <li>Confirm whether only one fixture is affected or all fixtures on the circuit</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Licensed Electrician Required</div>
+        <ul class="diy-items stop-list">
+          <li>Non-IC housing in contact with insulation &#8212; housing replacement or dam installation</li>
+          <li>Inspecting or re-terminating internal fixture wiring</li>
+          <li>Random shutdown timing indicating wiring or voltage fault</li>
+          <li>Any fixture with heat discoloration on ceiling surface, housing, or wiring</li>
+          <li>Converting non-IC cans to IC-rated fixtures in finished ceilings</li>
+          <li>Diagnosing thermal limiter failure vs. heat condition</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My recessed light comes back on after about 10 minutes. Does that mean it's fine?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No &#8212; the automatic reset means the thermal limiter is functioning, not that the underlying heat condition is acceptable. The light is cycling through a thermal protection sequence: heat accumulates &#8192; limiter trips &#8192; housing cools &#8192; limiter resets &#8192; cycle repeats. Each cycle stresses the thermal limiter, the fixture wiring, and the surrounding ceiling materials. Thermal limiters do wear out after thousands of cycles and can eventually fail to trip &#8212; at which point there's nothing between the overheating fixture and the surrounding wood framing. The correct response to an automatic-cycling recessed light is to find and fix the heat cause (LED compatibility, insulation contact, airflow restriction), not to accept the cycling as normal operation.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">I just replaced my halogen bulbs with LEDs and the lights started shutting off. What happened?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">This is a very common scenario with a specific explanation. Halogen bulbs dissipate most of their energy as heat radiated outward from the bulb &#8212; much of which exits through the open face of the recessed can. LED bulbs dissipate their heat downward through the base into the socket and housing. In an enclosed recessed housing, this concentrated base heat has nowhere to go except into the housing itself, raising internal temperatures significantly. A housing that ran fine with halogens may overheat with a standard A19 LED. The fix is using an LED specifically rated for enclosed or recessed fixtures &#8212; these bulbs are designed to manage their thermal output in restricted airflow. Alternatively, LED retrofit kits designed specifically for the housing model are engineered with the thermal environment in mind and generally perform better than generic A19 bulbs.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I just put a lower-wattage LED in to fix the overheating?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Lower wattage reduces heat output and may extend the time before shutdown &#8212; but it doesn't address whether the bulb is engineered to manage its heat properly in an enclosed environment. An 8-watt LED not designed for enclosed use may still overheat the driver and housing more than a 10-watt LED that is specifically rated for enclosed fixtures, because the driver design and thermal management are different. The "enclosed fixture rated" designation means the bulb has been tested and confirmed to operate safely within enclosed fixture temperature ranges &#8212; it's a design specification, not just a wattage issue. Use this rating as your primary selection criterion, with wattage as a secondary consideration for light output.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How can I tell if my recessed lights are IC-rated without attic access?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Turn off the circuit breaker, let the fixture cool, and remove the trim ring. Look inside the housing for a label &#8212; it's usually on the inside wall of the can or on the mounting frame. Look for the words "IC," "Type IC," or "Insulation Contact." If you see "Non-IC" or "Type Non-IC," or if there's no IC designation at all, treat it as non-IC. On many older fixtures, the label has faded &#8212; in that case, look for ventilation slots in the housing body. IC-rated housings typically have fewer or no ventilation slots because they're designed to be sealed against insulation contact. Non-IC housings typically have visible ventilation slots or perforations around the upper portion of the can to allow air circulation. If still uncertain, have an electrician evaluate &#8212; or if you have attic access, check whether a dam (a metal or cardboard barrier) was installed around the fixture.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>A recessed light that cycles on and off has a working thermal limiter doing its job. The problem is the heat condition that's triggering it &#8212; the fixture is protecting you from a fire hazard.</li>
+        <li>Check the IC rating first. A non-IC housing in contact with insulation is a fire hazard that needs to be corrected by a licensed electrician &#8212; not just managed with the thermal limiter.</li>
+        <li>The most common fixable cause: an LED bulb not rated for enclosed or recessed use. Replace with one that carries the "enclosed fixture rated" designation. This solves most 5&#8211;15 minute shutdown cycles immediately.</li>
+        <li>How quickly it shuts off tells you the severity: under 5 minutes = serious heat problem, likely insulation or severe airflow restriction; 5&#8211;15 minutes = LED or trim issue; random = wiring fault.</li>
+        <li>Don't accept automatic cycling as normal &#8212; thermal limiters wear out. Find and fix the heat source before the limiter fails and there's nothing between the overheating fixture and your ceiling framing.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">recessed lights turn off by themselves</a>
+      <a href="#" class="tag-pill">can lights shutting off</a>
+      <a href="#" class="tag-pill">recessed light thermal protector</a>
+      <a href="#" class="tag-pill">LED recessed light overheating</a>
+      <a href="#" class="tag-pill">IC rated recessed light</a>
+      <a href="#" class="tag-pill">recessed light turns off after few minutes</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Electrical Guides</h3>
+    <div class="related-list">
+      <a href="led-lights-flicker.html" class="related-item">
+        <div><div class="related-item-title">Why Your LED Lights Flicker</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="breaker-trips-lights.html" class="related-item">
+        <div><div class="related-item-title">Why Your Breaker Trips When You Turn the Lights On</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="lighting-circuits-guide.html" class="related-item">
+        <div><div class="related-item-title">Home Lighting Circuits: The Complete Guide</div><div class="related-item-meta">T.A. &middot; 22 min read &middot; Flagship</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#how-thermal-protection-works">How Thermal Protection Works</a></li>
+      <li><a href="#timing-clues">What Timing Tells You</a></li>
+      <li><a href="#ic-rating">IC Rating &#8212; What It Means</a></li>
+      <li><a href="#causes">4 Causes</a></li>
+      <li><a href="#diagnostic">Step-by-Step Diagnostic</a></li>
+      <li><a href="#pattern-table">Pattern Reference</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">Licensed Electrician &amp; Fire Investigator</div>
+        <div class="s-bio">NFPA Certified Fire Investigator (CFI-1), Certified Healthcare Facility Manager (CHFM), CLSS-HC, OSHA 30, and licensed electrician. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>Electrical safety guides and seasonal home maintenance reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

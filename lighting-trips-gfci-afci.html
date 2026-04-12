@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Lighting Trips GFCI or AFCI Breakers | HomeownersRepairGuide.com</title>
+<meta name="description" content="Lights that trip GFCI or AFCI breakers aren't usually faulty fixtures — they're revealing wiring conditions: shared neutral imbalance, arcing at loose connections, moisture leakage, or LED driver noise. Here's how to tell which one.">
+<link rel="canonical" href="https://homeownersrepairguide.com/lighting-trips-gfci-afci.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/lighting-trips-gfci-afci.html">
+<meta property="og:title" content="Why Lighting Trips GFCI or AFCI Breakers | HomeownersRepairGuide.com">
+<meta property="og:description" content="Lighting that trips protective breakers reveals real electrical conditions — not bulb problems. Here's the diagnostic for each trip type.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --electrical:#b08a00;--electrical-dark:#7a5f00;--electrical-light:#fdf6e3;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}
+.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--electrical);color:var(--white);}
+.tag.urgent{background:#7a1010;color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--electrical);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+.article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+.quick-summary{background:var(--electrical);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+.safety-box{background:#7a1010;border-radius:var(--radius-lg);padding:18px 22px;margin:0 0 28px;}
+.safety-box h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.safety-box p{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.55;}
+/* GFCI vs AFCI explainer */
+.device-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.dev-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:15px 17px;box-shadow:var(--shadow-card);}
+.dev-card.gfci{border-top:3px solid #1a6a9a;}
+.dev-card.afci{border-top:3px solid var(--electrical);}
+.dev-type{font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:5px;}
+.dev-card.gfci .dev-type{color:#1a6a9a;}
+.dev-card.afci .dev-type{color:var(--electrical-dark);}
+.dev-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.dev-detects{font-size:13px;color:var(--text-body);line-height:1.5;margin-bottom:5px;}
+.dev-lighting{font-size:12px;color:var(--text-muted);font-style:italic;}
+/* Timing decoder */
+.timing-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:24px 0;}
+.timing-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 15px;box-shadow:var(--shadow-card);}
+.timing-card.instant{border-top:3px solid #c0392b;}
+.timing-card.flicker{border-top:3px solid var(--electrical);}
+.timing-card.led-only{border-top:3px solid #3a6b3a;}
+.tc-when{font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:5px;}
+.timing-card.instant .tc-when{color:#c0392b;}
+.timing-card.flicker .tc-when{color:var(--electrical-dark);}
+.timing-card.led-only .tc-when{color:#2a7a2a;}
+.tc-label{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.tc-cause{font-size:12px;color:var(--text-muted);line-height:1.4;}
+/* Cause cards */
+.cause-list{display:flex;flex-direction:column;gap:12px;margin:24px 0;}
+.cause-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 20px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.cause-card.high{border-left:4px solid #c0392b;}
+.cause-card.medium{border-left:4px solid var(--electrical);}
+.cause-card.pro{border-left:4px solid #5a3a7a;}
+.cause-card.low{border-left:4px solid #3a6b3a;}
+.cause-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gray-light);width:28px;flex-shrink:0;line-height:1.2;margin-top:1px;}
+.cause-body{flex:1;}
+.cause-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.cause-desc{font-size:13px;color:var(--text-body);line-height:1.55;margin-bottom:6px;}
+.cause-pattern{font-size:12px;color:var(--text-muted);font-style:italic;}
+.cause-badge{font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:2px;flex-shrink:0;margin-top:3px;}
+.cause-card.high .cause-badge{background:#fef2f0;color:#c0402a;}
+.cause-card.medium .cause-badge{background:var(--electrical-light);color:var(--electrical-dark);}
+.cause-card.pro .cause-badge{background:#f4eef8;color:#5a3a7a;}
+.cause-card.low .cause-badge{background:#eaf5ea;color:#2a7a2a;}
+/* Diagnostic steps */
+.diag-steps{display:flex;flex-direction:column;gap:10px;margin:24px 0;}
+.diag-step{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--electrical);color:var(--white);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step-body{flex:1;}
+.step-action{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.step-detail{font-size:13px;color:var(--text-muted);line-height:1.5;}
+.step-result{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;}
+.step-if{font-size:12px;padding:4px 10px;border-radius:2px;line-height:1.4;}
+.step-if.yes{background:#eaf5ea;color:#2a7a2a;}
+.step-if.no{background:#fef2f0;color:#c0402a;}
+/* Pattern table */
+.diag-table{width:100%;border-collapse:collapse;margin:24px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.diag-table th{background:var(--electrical);color:var(--white);font-size:13px;font-weight:600;padding:11px 14px;text-align:left;}
+.diag-table td{font-size:13px;padding:11px 14px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+.diag-table tr:last-child td{border-bottom:none;}
+.diag-table tr:nth-child(even) td{background:var(--cream);}
+.diag-table td:first-child{font-weight:600;color:var(--text-dark);}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}
+.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* Callout */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--electrical);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--electrical);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--electrical);color:var(--white);border-color:var(--electrical);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;} .share-x{background:#000;color:white;} .share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--electrical);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--electrical);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--electrical);background:var(--electrical-light);font-weight:600;}
+.toc-list li.active a::before{background:var(--electrical);width:6px;height:6px;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--electrical);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--electrical);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.device-compare{grid-template-columns:1fr;}.timing-cards{grid-template-columns:1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical</a>
+    <span class="sep">&#8250;</span>
+    <a href="electrical-lighting.html">Lighting &amp; Fixtures</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Lighting Trips GFCI or AFCI Breakers</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Lighting &amp; Fixtures</span>
+    <span class="tag urgent">&#9888; Investigate</span>
+  </div>
+
+  <h1 class="article-title">Why Lighting Trips GFCI or AFCI Breakers</h1>
+  <p class="article-subtitle">When a light causes a GFCI or AFCI breaker to trip, the fixture is almost never the actual problem &#8212; it's the messenger. The trip reveals a wiring condition: a neutral shared improperly between circuits, arcing at a loose connection, moisture creating a leakage path, or LED driver noise that the AFCI's detection circuit interprets as an arc signature. Here's how to read the symptom pattern and find the actual cause.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Licensed Electrician &amp; Fire Investigator</div>
+      <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Licensed Electrician</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="safety-box">
+      <h3>&#9888;&#65039; Repeated GFCI or AFCI Trips Are Not Nuisance Trips</h3>
+      <p>A GFCI that trips when a light is switched on detected a current imbalance &#8212; current not returning via neutral the way it should. An AFCI that trips at switch closure detected an arc-fault waveform. Neither device generates false positives as a baseline behavior. Every repeated trip is detecting something real. Do not repeatedly reset without identifying what triggered the detection. The most common wiring causes &#8212; shared neutral faults and loose connections with arcing &#8212; are both fire and shock hazards.</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>&#9889; Quick Summary</h3>
+      <ul>
+        <li><strong>GFCI trips at switch closure</strong> &#8212; shared neutral imbalance or moisture leakage; the neutral return current doesn't match the hot current</li>
+        <li><strong>AFCI trips at switch closure with brief flicker first</strong> &#8212; arcing at a loose connection in the switch or fixture wiring</li>
+        <li><strong>AFCI trips only with specific LED fixtures</strong> &#8212; may be LED driver noise; test with a standard bulb to confirm</li>
+        <li><strong>Trips correlate with humidity or after rain</strong> &#8212; moisture leakage in the fixture or wiring</li>
+        <li>If the incandescent bulb test stops AFCI trips entirely: LED driver compatibility; if not: wiring fault regardless of bulb type</li>
+      </ul>
+    </div>
+
+    <h2 id="gfci-vs-afci">What Each Device Detects &#8212; and Why Lighting Triggers It</h2>
+    <p>GFCI and AFCI breakers protect against fundamentally different hazards and respond to different electrical conditions. Understanding which device is tripping &#8212; and what it's designed to detect &#8212; immediately narrows the diagnostic field.</p>
+
+    <div class="device-compare">
+      <div class="dev-card gfci">
+        <div class="dev-type">&#128167; GFCI &#8212; Ground Fault Protection</div>
+        <div class="dev-title">Detects current imbalance between hot and neutral</div>
+        <div class="dev-detects">Trips when current leaving on the hot conductor doesn't match current returning on the neutral &#8212; indicating current is taking an unintended path (through ground, through water, through a person). Threshold: 4&#8211;6 milliamps.</div>
+        <div class="dev-lighting">Why lighting triggers it: a shared neutral creates a return path imbalance; moisture creates a leakage path to ground; a neutral touching a grounding conductor produces current asymmetry.</div>
+      </div>
+      <div class="dev-card afci">
+        <div class="dev-type">&#9889; AFCI &#8212; Arc Fault Protection</div>
+        <div class="dev-title">Detects arc-fault signatures in the current waveform</div>
+        <div class="dev-detects">Trips when the current waveform matches the irregular pattern produced by electrical arcing &#8212; the spark that occurs when current jumps an air gap at a loose connection or through damaged insulation. Does not respond to current balance.</div>
+        <div class="dev-lighting">Why lighting triggers it: switch closure creates a load transition that stresses loose connections and produces arc signatures; LED drivers produce waveform noise that resembles arc patterns; aging insulation generates leakage with arc-like characteristics.</div>
+      </div>
+    </div>
+
+    <h2 id="timing">The Trip Timing Tells You Which Category</h2>
+
+    <div class="timing-cards">
+      <div class="timing-card instant">
+        <div class="tc-when">&#9889; Instant at Switch Closure</div>
+        <div class="tc-label">GFCI: Shared neutral or leakage path</div>
+        <div class="tc-cause">The moment the circuit energizes, the GFCI detects a hot-neutral current mismatch. No delay, no flicker &#8212; the imbalance exists the instant current flows. For AFCI: a parallel arc fault or neutral-ground contact.</div>
+      </div>
+      <div class="timing-card flicker">
+        <div class="tc-when">&#128293; After Brief Flicker</div>
+        <div class="tc-label">AFCI: Arcing at loose connection</div>
+        <div class="tc-cause">Flicker then trip = the current waveform distorted before the arc-fault threshold was reached. A loose connection arced briefly as load came on, generating the arc waveform that tripped the AFCI. This is a real arcing fault.</div>
+      </div>
+      <div class="timing-card led-only">
+        <div class="tc-when">&#128161; Only With LED Fixtures</div>
+        <div class="tc-label">AFCI: Possible driver compatibility</div>
+        <div class="tc-cause">If switching to an incandescent bulb stops the AFCI trip entirely, LED driver noise is the trigger &#8212; a compatibility issue rather than a hazardous wiring fault. If AFCI still trips with incandescent: wiring fault, not the LED.</div>
+      </div>
+    </div>
+
+    <h2 id="causes">5 Causes of Lighting-Triggered GFCI/AFCI Trips</h2>
+
+    <div class="cause-list">
+
+      <div class="cause-card pro">
+        <div class="cause-num">01</div>
+        <div class="cause-body">
+          <div class="cause-title">Shared or Improper Neutral &#8212; Most Common GFCI Trigger</div>
+          <div class="cause-desc">A GFCI measures the balance between hot and neutral current. Anything that disrupts this balance &#8212; including current from another circuit returning through the same neutral &#8212; triggers an immediate trip. In older wiring where neutral conductors were shared between circuits, or in MWBC configurations where the neutral is improperly routed, energizing a lighting circuit introduces a neutral imbalance the GFCI detects instantly. The light coming on is what creates the load that reveals the pre-existing imbalance.</div>
+          <div class="cause-pattern">Pattern: GFCI trips the instant a specific light switch is thrown; other switches on adjacent circuits may also affect the GFCI; problem appears on circuits in the same area; other circuits flicker simultaneously. Requires a licensed electrician to trace and isolate the neutral cross-connection.</div>
+        </div>
+        <span class="cause-badge">Most Common GFCI</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">02</div>
+        <div class="cause-body">
+          <div class="cause-title">Loose Connection Arcing &#8212; Most Common AFCI Trigger</div>
+          <div class="cause-desc">Any loose conductor &#8212; a back-stabbed switch terminal that has lost grip, a wirenut splice that has loosened, a screw terminal that has backed out &#8212; creates a gap that arcs when the circuit is energized or when load changes. The AFCI analyzes the current waveform and trips when it detects the irregular pattern of arc discharge. Lighting circuits are particularly susceptible because switch closure creates a current transition that stresses loose connections. The brief flicker before the trip is the arc beginning before it reaches the trip threshold.</div>
+          <div class="cause-pattern">Pattern: brief flicker immediately before the AFCI trips; trip occurs precisely at switch toggle; switch plate or fixture housing may be warm; condition worsened gradually over months. Requires a licensed electrician to open and inspect switch and fixture boxes.</div>
+        </div>
+        <span class="cause-badge">Most Common AFCI</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">03</div>
+        <div class="cause-body">
+          <div class="cause-title">Moisture Leakage &#8212; Bathrooms, Exterior, Damp Areas</div>
+          <div class="cause-desc">Bathroom fixtures, exterior lights, and basement or crawlspace wiring are exposed to moisture that creates partial conductivity between wiring components &#8212; a leakage path to ground that GFCI devices detect as a ground fault. Even minor humidity elevation from a shower can temporarily increase leakage current enough to trip a GFCI when the lighting circuit is energized. Metal fixture housings that accumulate condensation from temperature differentials are common sources.</div>
+          <div class="cause-pattern">Pattern: trip correlates with recent shower use, rain, or humidity change; only specific fixtures in damp locations are affected; trip clears when the area dries; metal trim feels slightly cool or damp. Fix: dry the area; replace degraded weatherstripping or fixture seals; correct the moisture source.</div>
+        </div>
+        <span class="cause-badge">GFCI Trigger</span>
+      </div>
+
+      <div class="cause-card low">
+        <div class="cause-num">04</div>
+        <div class="cause-body">
+          <div class="cause-title">LED Driver Noise &#8212; AFCI Compatibility Issue</div>
+          <div class="cause-desc">Some LED drivers regulate current through electronic switching that produces high-frequency waveform noise. Certain AFCI breaker models &#8212; particularly older designs &#8212; interpret this noise as arc-fault signatures and trip. This is a compatibility issue between the LED driver's output and the AFCI's detection algorithm, not a hazardous wiring fault. The diagnostic test is straightforward: if replacing the LED with an incandescent bulb stops the AFCI trip entirely, the driver is the trigger &#8212; not the wiring.</div>
+          <div class="cause-pattern">Pattern: AFCI trips only with specific LED fixtures; no flicker before the trip; incandescent bulb does not cause AFCI to trip on the same circuit; different LED brands behave differently. Fix: use LED fixtures from the AFCI manufacturer's compatibility list; or upgrade to a newer AFCI design with improved discrimination.</div>
+        </div>
+        <span class="cause-badge">Compatibility Issue</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">05</div>
+        <div class="cause-body">
+          <div class="cause-title">Aging or Damaged Wiring Insulation</div>
+          <div class="cause-desc">Older cloth-insulated wiring, or NM cable that has become brittle from decades of heat cycling, develops micro-cracks and leakage paths that both GFCI and AFCI devices detect. When a light is switched on and current flows, the insulation degradation produces leakage to ground (GFCI trigger) or arc-like current irregularities (AFCI trigger) that weren't present when the wiring was new. The problem is intermittent &#8212; appearing under load when current flows through the degraded section &#8212; which can make it seem unrelated to the light that triggered it.</div>
+          <div class="cause-pattern">Pattern: intermittent trips at irregular intervals, not always at switch closure; may correlate with temperature or humidity changes; home has original wiring from the 1940s&#8211;1960s; other circuits show similar intermittent behavior. Requires professional evaluation of the wiring condition and replacement of deteriorated sections.</div>
+        </div>
+        <span class="cause-badge">Fire &amp; Shock Hazard</span>
+      </div>
+
+    </div>
+
+    <h2 id="diagnostic">Step-by-Step Diagnostic</h2>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-action">Identify which device is tripping &#8212; GFCI or AFCI</div>
+          <div class="step-detail">A GFCI breaker or outlet has TEST/RESET buttons on its face. An AFCI breaker typically has a TEST button only (no RESET button on the outlet face &#8212; the breaker itself resets). Knowing which device is tripping focuses the diagnostic: GFCI = current imbalance / leakage; AFCI = arc-fault waveform / noise.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-action">Note the exact trip timing</div>
+          <div class="step-detail">Instant at switch closure = GFCI imbalance (shared neutral or leakage) or AFCI parallel arc fault. After brief flicker = AFCI arc-fault from loose connection. Only with specific LED = possible AFCI compatibility. Weather-dependent = moisture leakage.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-action">For AFCI trips: test with an incandescent bulb</div>
+          <div class="step-detail">Replace the LED with a standard incandescent or halogen bulb and test the switch. If the AFCI no longer trips: the LED driver is generating noise the AFCI interprets as arcing. If the AFCI still trips with the incandescent: the wiring itself is the source &#8212; not the LED.</div>
+          <div class="step-result">
+            <span class="step-if yes">AFCI stops tripping with incandescent &#8594; LED driver compatibility issue</span>
+            <span class="step-if no">AFCI still trips with incandescent &#8594; Wiring fault &#8212; call electrician</span>
+          </div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-action">Check whether other circuits or switches affect the same GFCI</div>
+          <div class="step-detail">If toggling switches on adjacent or unrelated circuits also causes the GFCI to trip, the neutral from those circuits may be cross-connected &#8212; an MWBC configuration issue. Note exactly which combinations trigger the trip and report to the electrician.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <div class="step-action">Observe whether the trip correlates with humidity or weather</div>
+          <div class="step-detail">If the trip occurs more frequently after showers, after rain, or during humid weather &#8212; and the affected fixture is in a bathroom, exterior, or damp location &#8212; moisture leakage is the trigger. Allow the area to dry completely and see if trips become less frequent. The moisture source still needs to be corrected.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="pattern-table">What Your Pattern Tells You</h2>
+    <table class="diag-table">
+      <thead>
+        <tr><th>Pattern Observed</th><th>Device</th><th>Most Likely Cause</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Trips instantly at switch closure</td><td>GFCI</td><td>Shared neutral imbalance or moisture leakage</td><td>Call electrician to trace neutral. Check fixture for moisture.</td></tr>
+        <tr><td>Flicker then trip at switch closure</td><td>AFCI</td><td>Arcing at loose connection in switch or fixture</td><td>Stop using. Call electrician to open boxes and inspect.</td></tr>
+        <tr><td>Only with specific LED, not incandescent</td><td>AFCI</td><td>LED driver noise &#8212; compatibility issue</td><td>Switch to compatible LED from AFCI manufacturer list.</td></tr>
+        <tr><td>Trip correlates with shower or rain</td><td>GFCI</td><td>Moisture leakage in fixture or wiring</td><td>Dry area. Correct moisture source. Replace degraded fixtures.</td></tr>
+        <tr><td>Triggering another switch also trips GFCI</td><td>GFCI</td><td>Cross-connected neutral from adjacent circuit</td><td>Call electrician &#8212; MWBC or neutral wiring error.</td></tr>
+        <tr><td>Intermittent, irregular, not always at switch closure</td><td>Either</td><td>Aging wiring insulation breakdown</td><td>Call electrician for wiring condition evaluation.</td></tr>
+        <tr><td>Trip persists after LED replacement with incandescent</td><td>AFCI</td><td>Wiring fault &#8212; not LED-related</td><td>Call electrician. The arc source is in the wiring, not the fixture.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Why the Incandescent Bulb Test Matters</div>
+        <div class="callout-text">The single most useful homeowner diagnostic for an AFCI trip on a lighting circuit is replacing the LED with an incandescent and testing again. If the AFCI trips with incandescent too, the arc source is in the wiring &#8212; the LED was just making it visible because LED drivers reveal wiring conditions that incandescent bulbs mask. If the AFCI only trips with the LED, the driver is generating electrical noise. Both findings have very different implications and remedies &#8212; and this test determines which path you're on before calling anyone.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The most common thing I see with GFCI trips on lighting circuits is the shared neutral situation. A homeowner replaces a fixture in a bathroom or kitchen, the GFCI starts tripping when the light is turned on, and they assume the fixture is wired wrong. Usually it's fine &#8212; the new fixture is drawing current that the original fixture didn't, and that load is now sufficient to reveal a pre-existing neutral imbalance that the old fixture's lower draw wasn't enough to expose. The test: if the GFCI trips the instant the switch is thrown &#8212; zero flicker, instant trip &#8212; that's almost never the fixture. That's a hot-neutral current mismatch that exists the moment current tries to flow. Trace the neutral. For AFCI trips on lighting, the incandescent test resolves maybe 30% of cases as LED compatibility. The other 70% is wiring: loose back-stab connections at the switch, a wirenut in the ceiling box that's backed out slightly, aging insulation on a conductor inside the fixture housing. All of those produce the arc-waveform signature the AFCI correctly trips on."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Do vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible</div>
+        <ul class="diy-items safe-list">
+          <li>Identify whether the tripping device is a GFCI or AFCI</li>
+          <li>Note exact trip timing: instant, after flicker, or only with LED</li>
+          <li>Test AFCI with an incandescent bulb to rule out LED driver noise</li>
+          <li>Observe whether adjacent circuits affect the same GFCI</li>
+          <li>Check whether trips correlate with humidity or weather</li>
+          <li>Try a different LED brand from the AFCI manufacturer's compatibility list</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Licensed Electrician Required</div>
+        <ul class="diy-items stop-list">
+          <li>GFCI trips instantly at switch closure &#8212; neutral fault diagnosis</li>
+          <li>AFCI trips with both LED and incandescent &#8212; wiring arc fault</li>
+          <li>AFCI trips with flicker before trip &#8212; loose connection arcing</li>
+          <li>Trips that correlate with adjacent circuit activation &#8212; MWBC neutral issue</li>
+          <li>Opening switch boxes or fixture junction boxes to inspect connections</li>
+          <li>Repairing shared neutral faults, MWBC misconfigurations, or aging wiring</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">I installed a new bathroom light and now the GFCI trips every time I turn it on. Did I wire it wrong?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Not necessarily &#8212; and in most cases the new fixture isn't the issue at all. The new fixture's increased current draw (compared to the old fixture it replaced) may have been enough to expose a pre-existing neutral imbalance that the old fixture's lower draw never triggered. A shared neutral that wasn't causing visible problems before &#8212; because the current was too small to create a detectable imbalance &#8212; is now being stressed by the higher draw of the new fixture. The GFCI is detecting the imbalance correctly. The fix is identifying and correcting the neutral configuration, not replacing the new fixture with something with lower draw. Call an electrician to trace the neutral on the circuit &#8212; this is common in older homes and bathrooms where the neutral wiring predates GFCI requirements.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can the same problem cause both GFCI and AFCI trips?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; loose wiring that arcs can produce both an arc-fault waveform (AFCI trigger) and a current path to ground through the arc (GFCI trigger) simultaneously. In circuits with combination AFCI/GFCI breakers &#8212; now common in bathrooms, kitchens, and other protected locations &#8212; a loose connection that arcs and leaks current to ground will trip the combination breaker for both reasons at once. The practical implication: in a circuit with a combination breaker, don't try to determine which hazard (arc-fault or ground-fault) caused the trip. Treat it as both. The arcing fault requires finding and re-terminating the loose connection, and the ground-fault aspect requires confirming there's no unintended ground path at the same location.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My AFCI only trips with one specific LED brand. Does that mean that brand is defective?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Not necessarily defective &#8212; it may be an incompatibility with your specific AFCI model. Different LED drivers produce different waveform signatures, and older AFCI models have less sophisticated discrimination algorithms that are more likely to interpret LED driver noise as an arc-fault signature. Some LED brands produce higher-frequency switching noise that specific AFCI designs flag as arcing; others produce cleaner waveforms. The most reliable fix is to consult the AFCI breaker manufacturer's compatibility list for tested LED brands. If you're replacing the LED with a compatible brand and it solves the problem, the original brand isn't necessarily unsafe &#8212; it just produced waveform noise that your specific AFCI model couldn't discriminate from arcing. Newer AFCI models have improved algorithms that reduce these compatibility issues.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Know which device is tripping: GFCI detects current imbalance (neutral fault, leakage); AFCI detects arc-fault waveforms (loose connection arcing, LED driver noise).</li>
+        <li>Trip timing narrows the cause: instant = GFCI neutral imbalance; after flicker = AFCI arcing at loose connection; LED-specific only = AFCI compatibility issue; weather-dependent = moisture leakage.</li>
+        <li>The incandescent bulb test is the key homeowner diagnostic for AFCI trips: if it stops tripping with incandescent, the LED driver is the trigger; if it still trips, the wiring has an arc fault regardless of bulb type.</li>
+        <li>A GFCI that trips the instant a switch is thrown almost never means the fixture is wired wrong &#8212; it means a neutral imbalance existed before the fixture was installed. Trace the neutral.</li>
+        <li>AFCI trips with flicker before the trip = arcing at a loose connection &#8212; a fire hazard. This requires a licensed electrician to open boxes and locate the arc source.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">lighting trips GFCI breaker</a>
+      <a href="#" class="tag-pill">light switch trips AFCI</a>
+      <a href="#" class="tag-pill">LED trips AFCI breaker</a>
+      <a href="#" class="tag-pill">bathroom light trips GFCI</a>
+      <a href="#" class="tag-pill">AFCI trips when light turned on</a>
+      <a href="#" class="tag-pill">GFCI trips when switch thrown</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Electrical Guides</h3>
+    <div class="related-list">
+      <a href="gfci-keeps-tripping.html" class="related-item">
+        <div><div class="related-item-title">Why Your GFCI Breaker Keeps Tripping</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="afci-keeps-tripping.html" class="related-item">
+        <div><div class="related-item-title">Why Your AFCI Breaker Keeps Tripping</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="mwbc-shared-neutral-flicker.html" class="related-item">
+        <div><div class="related-item-title">Why Shared Neutrals and MWBC Wiring Cause Flicker</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#gfci-vs-afci">What Each Device Detects</a></li>
+      <li><a href="#timing">Trip Timing Tells You</a></li>
+      <li><a href="#causes">5 Causes</a></li>
+      <li><a href="#diagnostic">Step-by-Step Diagnostic</a></li>
+      <li><a href="#pattern-table">Pattern Reference</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">Licensed Electrician &amp; Fire Investigator</div>
+        <div class="s-bio">NFPA Certified Fire Investigator (CFI-1), Certified Healthcare Facility Manager (CHFM), CLSS-HC, OSHA 30, and licensed electrician. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>Electrical safety guides and seasonal home maintenance reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

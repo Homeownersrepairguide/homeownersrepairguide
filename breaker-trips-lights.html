@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Breaker Trips When You Turn the Lights On | HomeownersRepairGuide.com</title>
+<meta name="description" content="A breaker that trips when you flip a light switch is detecting a fault the moment the circuit energizes — fixture short, failing LED driver, arcing splice, or moisture. Here's how to read the pattern and find the cause.">
+<link rel="canonical" href="https://homeownersrepairguide.com/breaker-trips-lights.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/breaker-trips-lights.html">
+<meta property="og:title" content="Why Your Breaker Trips When You Turn the Lights On | HomeownersRepairGuide.com">
+<meta property="og:description" content="Lighting circuit trips are almost never a bad breaker. Here's how to read the timing and find the real cause.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;--navy-light:#234468;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --electrical:#b08a00;--electrical-dark:#7a5f00;--electrical-light:#fdf6e3;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}
+.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--electrical);color:var(--white);}
+.tag.urgent{background:#7a1010;color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--electrical);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+.article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+.quick-summary{background:var(--electrical);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+.safety-box{background:#7a1010;border-radius:var(--radius-lg);padding:18px 22px;margin:0 0 28px;}
+.safety-box h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.safety-box p{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.55;}
+/* Timing split */
+.trip-split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.trip-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.trip-card.instant{border-top:3px solid #c0392b;}
+.trip-card.delayed{border-top:3px solid var(--electrical);}
+.trip-type{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;}
+.trip-card.instant .trip-type{color:#c0392b;}
+.trip-card.delayed .trip-type{color:var(--electrical-dark);}
+.trip-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.trip-desc{font-size:13px;color:var(--text-body);line-height:1.5;}
+/* Cause cards */
+.cause-list{display:flex;flex-direction:column;gap:12px;margin:24px 0;}
+.cause-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 20px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.cause-card.high{border-left:4px solid #c0392b;}
+.cause-card.medium{border-left:4px solid var(--electrical);}
+.cause-card.pro{border-left:4px solid #5a3a7a;}
+.cause-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gray-light);width:28px;flex-shrink:0;line-height:1.2;margin-top:1px;}
+.cause-body{flex:1;}
+.cause-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.cause-desc{font-size:13px;color:var(--text-body);line-height:1.55;margin-bottom:6px;}
+.cause-pattern{font-size:12px;color:var(--text-muted);font-style:italic;}
+.cause-badge{font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:2px;flex-shrink:0;margin-top:3px;}
+.cause-card.high .cause-badge{background:#fef2f0;color:#c0402a;}
+.cause-card.medium .cause-badge{background:var(--electrical-light);color:var(--electrical-dark);}
+.cause-card.pro .cause-badge{background:#f4eef8;color:#5a3a7a;}
+/* Diagnostic steps */
+.diag-steps{display:flex;flex-direction:column;gap:10px;margin:24px 0;}
+.diag-step{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--electrical);color:var(--white);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step-body{flex:1;}
+.step-action{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.step-detail{font-size:13px;color:var(--text-muted);line-height:1.5;}
+/* Diag table */
+.diag-table{width:100%;border-collapse:collapse;margin:24px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.diag-table th{background:var(--electrical);color:var(--white);font-size:13px;font-weight:600;padding:11px 14px;text-align:left;}
+.diag-table td{font-size:13px;padding:11px 14px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+.diag-table tr:last-child td{border-bottom:none;}
+.diag-table tr:nth-child(even) td{background:var(--cream);}
+.diag-table td:first-child{font-weight:600;color:var(--text-dark);}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}
+.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* Callout */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Expert callout */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--electrical);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--electrical);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--electrical);color:var(--white);border-color:var(--electrical);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}
+.share-x{background:#000;color:white;}
+.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--electrical);}
+/* Sidebar */
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--electrical);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--electrical);background:var(--electrical-light);font-weight:600;}
+.toc-list li.active a::before{background:var(--electrical);width:6px;height:6px;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--electrical);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--electrical);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.trip-split{grid-template-columns:1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical</a>
+    <span class="sep">&#8250;</span>
+    <a href="electrical-breakers-panels.html">Breakers &amp; Panels</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Breaker Trips When You Turn the Lights On</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Breakers &amp; Panels</span>
+    <span class="tag urgent">&#9888; Fire Risk</span>
+  </div>
+
+  <h1 class="article-title">Why Your Breaker Trips When You Turn the Lights On</h1>
+  <p class="article-subtitle">Lighting circuits go from zero to fully energized the instant you flip a switch &#8212; and that sudden transition exposes any hidden fault immediately. A trip at switch closure almost always means a short, arcing connection, or failing LED driver, not a bad breaker. Here's how to read the timing and find the source.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Licensed Electrician &amp; Fire Investigator</div>
+      <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Licensed Electrician</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="safety-box">
+      <h3>&#9888;&#65039; Hardwired Faults Escalate Faster Than Plug-In Faults</h3>
+      <p>Because lighting circuits are hardwired &#8212; not plug-in &#8212; faults inside fixtures, junction boxes, and switch boxes sit in concealed spaces where heat accumulates. A lighting circuit that trips repeatedly with visible arcing, burning smell, or unusual fixture heat has an active hazard. Stop using the circuit and call a licensed electrician before the next use.</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>&#9889; Quick Summary</h3>
+      <ul>
+        <li><strong>Instant trip at switch closure</strong> = magnetic trip = short circuit, ground fault, or arcing inside fixture or switch box</li>
+        <li><strong>Delayed trip after lights have been on</strong> = thermal trip = overload, failing LED driver, or ballast breaking down under heat</li>
+        <li>In LED-equipped homes, a failing LED driver is the single most common cause</li>
+        <li>Exterior, bathroom, and garage fixtures: check for moisture intrusion first &#8212; water creating a leakage path is a fast diagnosis</li>
+        <li>Two breakers tripping at once, or lights dimming on an adjacent circuit = MWBC shared-neutral fault &#8212; call an electrician</li>
+      </ul>
+    </div>
+
+    <h2 id="timing">Instant Trip vs. Delayed Trip &#8212; What the Timing Tells You</h2>
+    <p>The single most important observation is whether the breaker trips <em>instantly</em> at switch closure or <em>after the lights have been on for some time</em>. These correspond to two different mechanisms and two different sets of causes.</p>
+
+    <div class="trip-split">
+      <div class="trip-card instant">
+        <div class="trip-type">&#9889; Instant &#8212; Milliseconds After Switch</div>
+        <div class="trip-title">Short circuit, ground fault, or arcing</div>
+        <div class="trip-desc">The magnetic trip mechanism fires within a millisecond. The fault exists at the moment of switch closure &#8212; a conductor touching metal, a short inside the fixture, moisture creating a leakage path, or arcing at a worn switch terminal. This is the more serious scenario: the hazard is present every time the circuit is energized.</div>
+      </div>
+      <div class="trip-card delayed">
+        <div class="trip-type">&#128293; Delayed &#8212; Seconds to Minutes After Switch</div>
+        <div class="trip-title">Overload, failing driver, or heat buildup</div>
+        <div class="trip-desc">The thermal mechanism responds to sustained heat building in the circuit. Failing LED drivers produce startup surges that grow worse as capacitors degrade. Overloaded circuits with too many high-wattage fixtures exceed breaker capacity under sustained load. The fault worsens over time &#8212; the trip tells you the circuit is approaching or exceeding its rated capacity.</div>
+      </div>
+    </div>
+
+    <h2 id="causes">8 Causes of Lighting-Triggered Breaker Trips</h2>
+
+    <div class="cause-list">
+
+      <div class="cause-card high">
+        <div class="cause-num">01</div>
+        <div class="cause-body">
+          <div class="cause-title">Fixture or Switch-Box Short Circuit</div>
+          <div class="cause-desc">Internal wiring inside fixtures is compressed by mounting hardware, canopy plates, and frame edges. Years of heat cycling cause insulation to become brittle and crack, allowing energized conductors to contact the metal fixture body. Recessed can fixtures are particularly prone to this &#8212; their thermal limit switches, loose socket cups, and restricted airflow accelerate insulation degradation. Switch boxes with back-stabbed terminals or overcrowded conductors can also arc at the point of connection.</div>
+          <div class="cause-pattern">Pattern: instant trip the moment that specific light switch is toggled. Other lights on the same circuit may work fine. Requires an electrician to open the fixture and inspect wiring.</div>
+        </div>
+        <span class="cause-badge">High Risk</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">02</div>
+        <div class="cause-body">
+          <div class="cause-title">Failing LED Driver (Most Common in Modern Homes)</div>
+          <div class="cause-desc">LED drivers degrade in predictable stages: first flicker during warm-up, then delayed turn-on, then buzzing, then heat around the driver housing. The electrolytic capacitors inside the driver age and fail, producing increasingly severe startup current spikes. When failure becomes advanced, the inrush surge resembles a near-short circuit and trips the breaker. This is the most common lighting trip cause in homes that have converted to LED fixtures.</div>
+          <div class="cause-pattern">Pattern: preceded by weeks or months of flicker or delayed startup in the same fixture. Trip may be instant or slightly delayed. Replacing the fixture or the driver (if replaceable) resolves it.</div>
+        </div>
+        <span class="cause-badge">Most Common</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">03</div>
+        <div class="cause-body">
+          <div class="cause-title">Moisture or Ground Fault in Damp/Exterior Fixtures</div>
+          <div class="cause-desc">Exterior sconces, porch lights, landscape fixtures, and bathroom vanity lights frequently accumulate moisture internally as gaskets dry out and seals fail. Water bridging conductor paths creates a leakage current or direct ground fault. GFCIs respond immediately to leakage as small as 5 milliamps. Standard breakers will also trip if moisture creates a low-resistance path to ground or neutral.</div>
+          <div class="cause-pattern">Pattern: trips occur after rain, overnight, or in humid weather. The affected fixture is exterior, in a bathroom, or in an unheated space. Reset an upstream GFCI &#8212; if it trips immediately, moisture is the likely cause.</div>
+        </div>
+        <span class="cause-badge">High Risk</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">04</div>
+        <div class="cause-body">
+          <div class="cause-title">Loose or Arcing Switch Loop Connections</div>
+          <div class="cause-desc">Older switch loops use back-stabbed or push-in terminal connections that loosen from heat cycling over years. As the connection loosens, the switch creates a brief arc every time it's toggled &#8212; a small but sharp fault waveform that AFCI breakers detect and trip on. Standard breakers may also trip if arcing is severe. The symptom occurs precisely at switch closure because that's when the faulty connection is stressed.</div>
+          <div class="cause-pattern">Pattern: crackling or hesitation noticed when toggling the switch. Trip is instant at closure. Replacing the switch with a screwdown-terminal switch (not back-stabbed) often resolves it.</div>
+        </div>
+        <span class="cause-badge">Investigate</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">05</div>
+        <div class="cause-body">
+          <div class="cause-title">Loose Splices in Daisy-Chained Junction Boxes</div>
+          <div class="cause-desc">Lighting circuits typically daisy-chain through multiple ceiling and wall boxes. A single weak wirenut or failing splice anywhere in the chain can destabilize the entire branch. When a light energizes and draws current, the splice is stressed &#8212; producing a voltage drop, arc, or outright open that the breaker or AFCI detects. Loose neutrals in the chain produce the additional symptom of flicker or dimming in other fixtures on the same circuit.</div>
+          <div class="cause-pattern">Pattern: multiple fixtures behave erratically; some flicker when others switch on. The circuit is unreliable across multiple locations, not just one fixture.</div>
+        </div>
+        <span class="cause-badge">Investigate</span>
+      </div>
+
+      <div class="cause-card pro">
+        <div class="cause-num">06</div>
+        <div class="cause-body">
+          <div class="cause-title">MWBC Shared-Neutral Instability</div>
+          <div class="cause-desc">Multi-wire branch circuits share one neutral between two hot legs. A loose neutral splice causes return current to become unstable when a lighting load energizes, creating momentary voltage imbalance. AFCI breakers trip on the resulting waveform distortion. The diagnostic signature is distinctive: two breakers trip simultaneously, or lights on an apparently unrelated circuit dim noticeably when you switch on a light.</div>
+          <div class="cause-pattern">Pattern: two breakers trip at the same time, or lights elsewhere dim when this switch is toggled. Do not reset either breaker without professional evaluation. This is a shock and fire hazard.</div>
+        </div>
+        <span class="cause-badge">Call Pro</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">07</div>
+        <div class="cause-body">
+          <div class="cause-title">Overloaded Lighting Circuit</div>
+          <div class="cause-desc">While LEDs dramatically reduce per-fixture wattage, older homes may have high-wattage decorative lighting, attic or garage loads tied into the same 15-amp branch, or ceiling fan/light combinations with motor inrush. If the circuit is already loaded when a light is switched on, the additional startup surge can briefly exceed rated capacity &#8212; producing a delayed rather than instant trip.</div>
+          <div class="cause-pattern">Pattern: delayed trip (seconds after switch), circuit serves many fixtures, the specific trip happens when multiple lights are already on. Reducing circuit load or adding a dedicated circuit resolves it.</div>
+        </div>
+        <span class="cause-badge">Investigate</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">08</div>
+        <div class="cause-body">
+          <div class="cause-title">Fluorescent Ballast Failure</div>
+          <div class="cause-desc">Magnetic and electronic fluorescent ballasts fail with age, producing capacitor breakdown, internal shorts, or severe startup surges. The failure is often preceded by buzzing, flickering, slow warm-up, or a burning odor from the fixture. When the ballast reaches terminal failure, the startup current spike is enough to trip the breaker.</div>
+          <div class="cause-pattern">Pattern: applies to fluorescent fixtures only. Preceded by audible buzzing or flicker. Replacing the ballast or converting the fixture to LED resolves it.</div>
+        </div>
+        <span class="cause-badge">Investigate</span>
+      </div>
+
+    </div>
+
+    <h2 id="diagnostic">Step-by-Step Diagnostic Guide</h2>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-action">Note whether the trip is instant or delayed</div>
+          <div class="step-detail">Instant = magnetic trip = short, arcing, or ground fault. Delayed = thermal trip = overload or failing component. This single observation cuts the cause list in half before you do anything else.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-action">Identify which switch triggers the trip</div>
+          <div class="step-detail">If only one specific switch trips the breaker while others on the same circuit work normally, the fault is localized to that switch, its switch box, or the fixture it controls. If every switch on the circuit trips it, the fault is upstream &#8212; in the panel, main feed, or a shared junction box.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-action">Replace the bulb with a known-good LED</div>
+          <div class="step-detail">If the problem is a failing LED driver integrated into the bulb itself (common in cheap bulbs), replacing it with a quality LED bulb resolves it. If tripping continues with a new bulb, the fault is in the fixture wiring, driver, or switch &#8212; not the bulb.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-action">For exterior or bathroom fixtures: reset the upstream GFCI first</div>
+          <div class="step-detail">Exterior, garage, bathroom, and outdoor circuits are often protected by a GFCI outlet located elsewhere &#8212; in a garage, utility room, or other bathroom. Find and reset that GFCI. If the light works after resetting, the GFCI detected a ground fault (likely moisture). The cause should still be investigated &#8212; don't ignore repeated GFCI trips on the same fixture.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <div class="step-action">Inspect accessible fixtures for moisture, rust, or heat</div>
+          <div class="step-detail">With the circuit off, look inside the fixture globe or housing for condensation, rust staining, or water marks. Check whether the fixture housing feels unusually warm after the brief moment it was on. Any signs of moisture or overheating point directly to the cause.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <div class="step-action">Watch for circuit-wide symptoms</div>
+          <div class="step-detail">If other lights on the same circuit flicker or dim when the problematic switch is toggled, a loose neutral or failing splice somewhere in the daisy chain is the likely cause. If lights on a different circuit also dim or flicker, MWBC shared-neutral instability is the more likely diagnosis &#8212; call an electrician.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">7</div>
+        <div class="step-body">
+          <div class="step-action">Stop if two breakers trip simultaneously</div>
+          <div class="step-detail">Two breakers tripping at the same time when a light is switched on is the signature of MWBC shared-neutral failure. Do not reset either breaker. This is a shock hazard and requires an electrician before the circuits are used again.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="pattern-table">What Your Pattern Tells You</h2>
+    <table class="diag-table">
+      <thead>
+        <tr><th>What Happens</th><th>Most Likely Cause</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Instant trip, one specific switch only</td><td>Short or arcing in that fixture or switch box</td><td>Stop using that circuit. Have an electrician open the fixture.</td></tr>
+        <tr><td>Delayed trip after lights run for a few minutes</td><td>Failing LED driver or overloaded circuit</td><td>Replace suspect bulbs/fixtures. Check circuit load count.</td></tr>
+        <tr><td>Trip preceded by weeks of flicker or buzzing</td><td>LED driver or ballast at end of life</td><td>Replace the fixture or driver. Often homeowner-accessible.</td></tr>
+        <tr><td>Exterior/bathroom light trips after rain or overnight</td><td>Moisture intrusion creating ground fault</td><td>Reset upstream GFCI. Inspect fixture for water ingress.</td></tr>
+        <tr><td>Other lights flicker when this switch is toggled</td><td>Loose splice or neutral in shared daisy chain</td><td>Call an electrician to inspect junction boxes on the circuit.</td></tr>
+        <tr><td>Two breakers trip at the same time</td><td>MWBC shared-neutral fault</td><td>Do not reset. Call a licensed electrician immediately.</td></tr>
+        <tr><td>Burning smell or visible scorch on fixture/switch</td><td>Active arcing &#8212; fire hazard</td><td>Leave circuit off. Call an electrician today.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Recessed Can Lights: Higher Risk Than Standard Fixtures</div>
+        <div class="callout-text">Recessed fixtures (can lights) run hotter than surface-mounted fixtures and have a thermal limit switch that cuts power if overheating occurs &#8212; a symptom sometimes mistaken for a breaker trip. More importantly, their internal wiring is exposed to high temperatures over years, making insulation breakdown more common. If a recessed fixture is the source of repeated trips, have an electrician verify whether it's rated for insulation contact (IC-rated) if attic insulation is nearby, and inspect internal wiring for heat damage.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The LED driver issue has become the most common lighting trip I see in the last few years, and it catches homeowners off guard because LEDs are supposed to last 20 years. The bulb itself usually does &#8212; it's the driver that fails first, especially in cheap integrated fixtures. The pattern is always the same: the homeowner noticed flicker six months ago, then delayed turn-on, then it started tripping the breaker. By the time I arrive, the driver is completely failed. The fix is replacing the fixture or, if it's a separate driver, replacing that component. What concerns me more is when a lighting circuit trips with no preceding flicker &#8212; that's usually a wiring fault or moisture, and those require opening the fixture and the box to find. I've found corroded wire nuts in damp exterior fixture boxes that were arcing on every switch closure. The homeowner had been resetting the breaker for months."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Do vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible</div>
+        <ul class="diy-items safe-list">
+          <li>Note timing (instant vs. delayed) and which specific switch triggers the trip</li>
+          <li>Replace bulbs with known-good LEDs to rule out a failing integrated driver</li>
+          <li>Reset upstream GFCI outlets for exterior, bathroom, or garage circuits</li>
+          <li>Visually inspect accessible fixtures for moisture, rust, or heat discoloration (circuit off)</li>
+          <li>Replace a fluorescent fixture with an LED fixture if ballast failure is suspected</li>
+          <li>Document the pattern &#8212; timing, which switch, whether other lights flicker &#8212; for the electrician</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Licensed Electrician Required</div>
+        <ul class="diy-items stop-list">
+          <li>Opening fixtures to inspect or repair internal wiring</li>
+          <li>Accessing junction boxes to locate loose splices or failing wirenuts</li>
+          <li>Diagnosing or repairing MWBC shared-neutral faults</li>
+          <li>Any circuit producing burning smell, visible scorch marks, or repeated arcing</li>
+          <li>Correcting back-stabbed switch connections or replacing switch loop wiring</li>
+          <li>Two breakers tripping simultaneously &#8212; do not reset, call immediately</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My light worked fine for years and now trips the breaker. What changed?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Several things change gradually over time in a lighting circuit. LED driver capacitors degrade over thousands of hours of operation, eventually producing startup surges that trip breakers &#8212; this is the most common reason a previously reliable LED fixture starts tripping. Fixture wiring insulation becomes brittle from years of heat cycling, eventually cracking and allowing conductors to contact metal. Wirenut connections in junction boxes loosen from thermal expansion and contraction. Switch terminal connections fatigue. None of these failures happen suddenly &#8212; they develop over years and cross a threshold where the breaker starts responding. The problem has usually been developing for a long time before the first trip.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Could the dimmer switch be causing the trip?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; dimmer switches are a frequently overlooked cause of lighting circuit trips. Dimmers that aren't rated for the LED fixtures they control can produce unstable waveforms and current spikes that AFCI breakers detect as arcing. Dimmers loaded beyond their rated wattage overheat internally and may fail in ways that trip the circuit. Older dimmers designed for incandescent loads produce incompatible waveforms when driving LEDs. If your tripping started after installing a new dimmer or converting to LED bulbs with an existing dimmer, the dimmer is a strong suspect. Replace with an LED-compatible dimmer rated for the load.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is it safe to use a different light on that circuit while I wait for an electrician?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">It depends on what you've been able to isolate. If you've confirmed the fault is in one specific fixture &#8212; for example, it trips only when that fixture's switch is toggled and not when others on the same circuit are used &#8212; then using the circuit for other fixtures while avoiding that one switch is relatively low risk. However, if the fault source is unknown, if the trip is circuit-wide (all switches trip it), or if there's any burning smell or evidence of arcing anywhere in the circuit, don't use any part of it. Faults in concealed junction boxes can affect the entire branch even when only one fixture is obviously symptomatic.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My outdoor light keeps tripping its GFCI after rain. Do I need a new GFCI or a new fixture?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Almost certainly a new fixture, not a new GFCI. If the GFCI trips reliably after rain or in humid conditions, it's detecting real moisture-induced ground-fault leakage inside the fixture &#8212; which is exactly what it's supposed to do. Replacing the GFCI would just give you a new device detecting the same fault. The fix is identifying and eliminating the moisture path: replacing deteriorated weatherstripping or gaskets, resealing the fixture, replacing a fixture whose housing has cracked with age, or relocating a fixture that's accumulating water inside. If the fixture is old and not rated for wet locations (look for a "wet location" UL listing on the label), it needs to be replaced with one that is.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Timing is your first and most useful clue: instant = magnetic trip (short, arcing, ground fault); delayed = thermal trip (overload, failing driver).</li>
+        <li>In LED-equipped homes, a failing LED driver is the single most common cause &#8212; usually preceded by weeks of flicker or delayed startup before tripping begins.</li>
+        <li>Exterior and bathroom fixtures that trip after rain have moisture intrusion. Reset the upstream GFCI; if it trips immediately, the fixture needs inspection or replacement.</li>
+        <li>Two breakers tripping simultaneously when a light is switched on = MWBC shared-neutral fault. Do not reset. Call a licensed electrician.</li>
+        <li>Because lighting circuits are hardwired, arcing faults in concealed boxes are a fire risk. Don't keep resetting a trip without identifying the cause first.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">breaker trips when lights on</a>
+      <a href="#" class="tag-pill">light switch trips breaker</a>
+      <a href="#" class="tag-pill">LED fixture trips breaker</a>
+      <a href="#" class="tag-pill">lighting circuit breaker</a>
+      <a href="#" class="tag-pill">breaker trips when I flip switch</a>
+      <a href="#" class="tag-pill">outdoor light trips GFCI</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Electrical Guides</h3>
+    <div class="related-list">
+      <a href="breaker-trips-randomly.html" class="related-item">
+        <div><div class="related-item-title">Why Your Breaker Trips Randomly</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="breaker-trips-plug-in.html" class="related-item">
+        <div><div class="related-item-title">Why Your Breaker Trips When You Plug Something In</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="breaker-tripping-guide.html" class="related-item">
+        <div><div class="related-item-title">The Complete Breaker Tripping Master Guide</div><div class="related-item-meta">T.A. &middot; 25 min read &middot; Flagship</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#timing">Instant vs. Delayed Trip</a></li>
+      <li><a href="#causes">8 Causes</a></li>
+      <li><a href="#diagnostic">Step-by-Step Diagnosis</a></li>
+      <li><a href="#pattern-table">Pattern Reference Table</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">Licensed Electrician &amp; Fire Investigator</div>
+        <div class="s-bio">NFPA Certified Fire Investigator (CFI-1), Certified Healthcare Facility Manager (CHFM), CLSS-HC, OSHA 30, and licensed electrician. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>Electrical safety guides and seasonal home maintenance reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

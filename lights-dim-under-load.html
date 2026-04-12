@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Lights Dim When Appliances Turn On | HomeownersRepairGuide.com</title>
+<meta name="description" content="Lights dimming when appliances start is a sign of electrical stress — voltage drop from motor inrush, loose connections, shared neutral imbalance, or a service-level problem. Here's how to read the scope and find the cause.">
+<link rel="canonical" href="https://homeownersrepairguide.com/lights-dim-under-load.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/lights-dim-under-load.html">
+<meta property="og:title" content="Why Your Lights Dim When Appliances Turn On | HomeownersRepairGuide.com">
+<meta property="og:description" content="Lights that dim under load signal voltage drop, loose connections, or a neutral fault. Here's how to read the scope and find the cause.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --electrical:#b08a00;--electrical-dark:#7a5f00;--electrical-light:#fdf6e3;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}
+.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--electrical);color:var(--white);}
+.tag.urgent{background:#7a1010;color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--electrical);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+.article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+.quick-summary{background:var(--electrical);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+.safety-box{background:#7a1010;border-radius:var(--radius-lg);padding:18px 22px;margin:0 0 28px;}
+.safety-box h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.safety-box p{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.55;}
+/* Scope finder */
+.scope-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:24px 0;}
+.scope-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;box-shadow:var(--shadow-card);text-align:center;}
+.scope-card.s1{border-top:3px solid #3a6b3a;}
+.scope-card.s2{border-top:3px solid var(--electrical);}
+.scope-card.s3{border-top:3px solid #c0392b;}
+.sc-icon{font-size:20px;margin-bottom:7px;}
+.sc-label{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.sc-cause{font-size:12px;color:var(--text-muted);line-height:1.4;}
+/* Neutral failure highlight */
+.neutral-warning{background:var(--navy);border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;}
+.neutral-warning h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--amber);margin-bottom:10px;}
+.neutral-warning p{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.6;}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;} .sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--electrical);} .sev-item.mod .sev-label{color:var(--electrical-dark);}
+.sev-item.high .sev-dot{background:var(--rust);} .sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:#c0392b;} .sev-item.crit .sev-label{color:#c0392b;}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+/* Cause cards */
+.cause-list{display:flex;flex-direction:column;gap:12px;margin:24px 0;}
+.cause-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 20px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.cause-card.high{border-left:4px solid #c0392b;}
+.cause-card.medium{border-left:4px solid var(--electrical);}
+.cause-card.pro{border-left:4px solid #5a3a7a;}
+.cause-card.low{border-left:4px solid #3a6b3a;}
+.cause-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gray-light);width:28px;flex-shrink:0;line-height:1.2;margin-top:1px;}
+.cause-body{flex:1;}
+.cause-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.cause-desc{font-size:13px;color:var(--text-body);line-height:1.55;margin-bottom:6px;}
+.cause-pattern{font-size:12px;color:var(--text-muted);font-style:italic;}
+.cause-badge{font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:2px;flex-shrink:0;margin-top:3px;}
+.cause-card.high .cause-badge{background:#fef2f0;color:#c0402a;}
+.cause-card.medium .cause-badge{background:var(--electrical-light);color:var(--electrical-dark);}
+.cause-card.pro .cause-badge{background:#f4eef8;color:#5a3a7a;}
+.cause-card.low .cause-badge{background:#eaf5ea;color:#2a7a2a;}
+/* Diagnostic steps */
+.diag-steps{display:flex;flex-direction:column;gap:10px;margin:24px 0;}
+.diag-step{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--electrical);color:var(--white);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step-body{flex:1;}
+.step-action{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.step-detail{font-size:13px;color:var(--text-muted);line-height:1.5;}
+/* Diag table */
+.diag-table{width:100%;border-collapse:collapse;margin:24px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.diag-table th{background:var(--electrical);color:var(--white);font-size:13px;font-weight:600;padding:11px 14px;text-align:left;}
+.diag-table td{font-size:13px;padding:11px 14px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+.diag-table tr:last-child td{border-bottom:none;}
+.diag-table tr:nth-child(even) td{background:var(--cream);}
+.diag-table td:first-child{font-weight:600;color:var(--text-dark);}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}
+.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* Callout */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--electrical);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--electrical);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--electrical);color:var(--white);border-color:var(--electrical);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;} .share-x{background:#000;color:white;} .share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--electrical);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--electrical);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--electrical);background:var(--electrical-light);font-weight:600;}
+.toc-list li.active a::before{background:var(--electrical);width:6px;height:6px;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--electrical);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--electrical);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.scope-cards{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical</a>
+    <span class="sep">&#8250;</span>
+    <a href="electrical-lighting.html">Lighting &amp; Fixtures</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Lights Dim When Appliances Turn On</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Lighting &amp; Fixtures</span>
+    <span class="tag urgent">&#9888; Investigate</span>
+  </div>
+
+  <h1 class="article-title">Why Your Lights Dim When Appliances Turn On</h1>
+  <p class="article-subtitle">Lights that visibly dim when a large appliance starts are showing you a voltage drop event &#8212; but the scope tells you how serious it is. A brief dip on one circuit when the AC turns on is different from whole-home dimming that lingers. Here's how to read the pattern and determine whether it's a normal inrush condition or a developing electrical hazard.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Licensed Electrician &amp; Fire Investigator</div>
+      <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Licensed Electrician</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="safety-box">
+      <h3>&#9888;&#65039; Some Lights Dim While Others Get Brighter &#8212; Call an Electrician Now</h3>
+      <p>If some lights dim while others in the house simultaneously get brighter, or if dimming is accompanied by buzzing, burning smell, or electronics behaving erratically, you have a failing neutral conductor. A failed neutral can create dangerously high voltage on some circuits while dropping voltage on others, damaging appliances and creating a fire hazard. Stop using high-draw appliances and call a licensed electrician immediately.</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>&#9889; Quick Summary</h3>
+      <ul>
+        <li><strong>Brief dip in one room, instant recovery</strong> &#8212; normal motor inrush on a loaded circuit; usually acceptable</li>
+        <li><strong>Multiple rooms dim simultaneously</strong> &#8212; shared neutral imbalance, loose main neutral, or service voltage sag; call an electrician</li>
+        <li><strong>Dimming worsens over time or lasts more than 1&#8211;2 seconds</strong> &#8212; resistance increasing at a loose connection; call an electrician</li>
+        <li><strong>Some lights dim while others get brighter</strong> &#8212; failing neutral conductor; emergency &#8212; call an electrician today</li>
+        <li><strong>Electronics reset or malfunction during dimming events</strong> &#8212; voltage sag is severe enough to affect sensitive electronics; professional evaluation needed</li>
+      </ul>
+    </div>
+
+    <h2 id="why-it-happens">Why Lights Dim Under Electrical Load</h2>
+    <p>Every conductor in your home's electrical system has some resistance &#8212; it's unavoidable. Under normal conditions, this resistance is low enough that its effect on voltage is negligible. But when a large motor starts and briefly draws 3&#8211;8 times its normal operating current, even small amounts of resistance create a measurable voltage drop. LEDs respond to that voltage drop instantly and visibly.</p>
+    <p>The key relationship: voltage drop = current × resistance (V = I × R). When current spikes at motor startup, any resistance in the circuit &#8212; a loose lug, a corroded splice, a weakened neutral &#8212; produces a proportionally larger voltage drop. As connections deteriorate over time, that resistance increases, and the dimming gets progressively worse on the same loads.</p>
+
+    <h2 id="scope">Read the Scope First</h2>
+    <p>The single most important observation is how many lights are affected simultaneously. This directly maps to where the fault lies in the electrical system.</p>
+
+    <div class="scope-cards">
+      <div class="scope-card s1">
+        <div class="sc-icon">&#128161;</div>
+        <div class="sc-label">One Room or Circuit</div>
+        <div class="sc-cause">Motor inrush on a loaded circuit, or a loose connection specifically on that branch. Brief and recovers quickly = likely normal. Worsening or prolonged = loose connection developing.</div>
+      </div>
+      <div class="scope-card s2">
+        <div class="sc-icon">&#127968;&#127968;</div>
+        <div class="sc-label">Multiple Rooms</div>
+        <div class="sc-cause">Shared neutral imbalance, a loose main neutral in the panel, or a service-entry voltage sag. Not normal regardless of how brief. Requires professional evaluation.</div>
+      </div>
+      <div class="scope-card s3">
+        <div class="sc-icon">&#9888;</div>
+        <div class="sc-label">Some Dim + Some Brighten</div>
+        <div class="sc-cause">Failing neutral conductor — one of the most dangerous electrical conditions. Voltage redistributes unpredictably across the two legs of the service. Emergency — call an electrician today.</div>
+      </div>
+    </div>
+
+    <div class="neutral-warning">
+      <h3>&#9888; The "Some Dim, Some Brighten" Warning Sign</h3>
+      <p>A home's 240V service is split into two 120V legs. Under normal operation, the neutral conductor carries the difference between the two legs &#8212; keeping voltages balanced. When the neutral partially fails, that balancing function breaks down. Loads on the overloaded leg see lower voltage (lights dim), while loads on the underloaded leg see higher-than-normal voltage (lights and appliances get brighter or burn out). This overvoltage condition can destroy refrigerators, TVs, computers, and other appliances in minutes &#8212; and the high-resistance failure point on the neutral is generating enough heat to initiate a fire. This is not a watch-and-wait situation.</p>
+    </div>
+
+    <h2 id="severity">How Serious Is It?</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Brief, single-room dip at large appliance startup. Recovers in under 1 second. Only one circuit affected.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Multiple rooms affected. Dimming lasts 1&#8211;3 seconds. Worsening over weeks. Electronics reset during events.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">High</div></div>
+        <div class="sev-desc">Sustained dimming. Motors sound strained. Dimming worsens with higher loads. Panel or service connection suspected.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Some lights dim while others brighten. Buzzing. Burning smell. Appliances damaged. Failing neutral &#8212; call electrician now.</div>
+      </div>
+    </div>
+
+    <h2 id="causes">Common Causes of Dimming Under Load</h2>
+
+    <div class="cause-list">
+
+      <div class="cause-card low">
+        <div class="cause-num">01</div>
+        <div class="cause-body">
+          <div class="cause-title">Motor Inrush on a Loaded Circuit (Often Normal)</div>
+          <div class="cause-desc">HVAC blowers, refrigerators, well pumps, and dishwashers draw 3&#8211;8x their operating current during the first fraction of a second of startup. This inrush momentarily drops voltage across the home's electrical system. A brief, sub-second dip that recovers immediately &#8212; affecting only the circuit or room where the appliance is running &#8212; is a normal consequence of motor physics and is generally considered acceptable.</div>
+          <div class="cause-pattern">Pattern: brief dip (under 1 second) when one specific large appliance starts; affects one room or circuit; recovers completely; has not worsened over time. If all of these are true, no action needed unless bothersome.</div>
+        </div>
+        <span class="cause-badge">Often Normal</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">02</div>
+        <div class="cause-body">
+          <div class="cause-title">Loose Neutral Conductor</div>
+          <div class="cause-desc">The neutral conductor is the return path for current from all circuits in the home. A loose or corroded neutral connection &#8212; at the panel neutral bar, at a junction box splice, at the meter base, or at the service entrance &#8212; creates resistance that produces voltage drop and instability under load. A partially failed neutral is one of the most dangerous conditions in residential electrical systems: it can produce overvoltage on some circuits while dropping voltage on others, and the failure point itself generates heat that can initiate a fire.</div>
+          <div class="cause-pattern">Pattern: multiple circuits affected simultaneously; dimming is worse than a brief dip; some lights may brighten while others dim; worsens during heavy load periods. This is not a homeowner diagnostic &#8212; call an electrician.</div>
+        </div>
+        <span class="cause-badge">High Risk</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">03</div>
+        <div class="cause-body">
+          <div class="cause-title">Loose or Corroded Connection at Panel or Meter</div>
+          <div class="cause-desc">The main breaker lugs, bus bar connections, and meter base connections carry the full current of the home. Even a small amount of resistance at these points &#8212; from corrosion, thermal cycling fatigue, or improper torquing &#8212; creates significant voltage drop and heat under load. Meter base lug overheating is a known failure mode that often produces dimming complaints before visible damage occurs. These connections can only be safely inspected and corrected by a licensed electrician.</div>
+          <div class="cause-pattern">Pattern: whole-home or multi-circuit dimming; gets worse during high-demand periods (summer AC, winter heating); panel may feel warm or hum audibly. Do not open the panel yourself &#8212; the main lugs remain energized even with the main breaker off.</div>
+        </div>
+        <span class="cause-badge">High Risk</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">04</div>
+        <div class="cause-body">
+          <div class="cause-title">MWBC Shared-Neutral Imbalance</div>
+          <div class="cause-desc">Multi-wire branch circuits share one neutral return between two hot legs. When loads on the two legs become significantly unbalanced &#8212; or when the shared neutral becomes loose &#8212; the neutral carries more current than designed for. This creates voltage drop on the neutral return that manifests as dimming on one leg and potentially overvoltage on the other. The dimming pattern often involves two circuits simultaneously, since both share the neutral.</div>
+          <div class="cause-pattern">Pattern: two specific circuits dim together when loads on those circuits increase; may be associated with lights dimming on one circuit when an appliance on a nearby circuit starts. Requires a licensed electrician to verify MWBC configuration and neutral integrity.</div>
+        </div>
+        <span class="cause-badge">Investigate</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">05</div>
+        <div class="cause-body">
+          <div class="cause-title">Overloaded Branch Circuit</div>
+          <div class="cause-desc">A branch circuit running near its rated capacity &#8212; or a 15-amp circuit serving loads that would be better suited to a 20-amp dedicated circuit &#8212; produces sustained voltage drop during high-load periods. Unlike a brief motor-inrush dip, an overloaded circuit shows dimming that tracks continuously with load rather than recovering in under a second. Window AC units, space heaters, and microwave ovens on shared circuits are common contributors.</div>
+          <div class="cause-pattern">Pattern: dimming that tracks with how many devices are running simultaneously on one circuit; sustained rather than brief; affects only one room or area; improves when devices are redistributed to other circuits.</div>
+        </div>
+        <span class="cause-badge">Investigate</span>
+      </div>
+
+      <div class="cause-card pro">
+        <div class="cause-num">06</div>
+        <div class="cause-body">
+          <div class="cause-title">Service-Entry or Utility-Side Voltage Sag</div>
+          <div class="cause-desc">The utility transformer serving a neighborhood, the service drop conductors from the pole to the meter, or the service entrance conductors can all contribute to voltage sag &#8212; particularly in older neighborhoods or during peak demand periods. Utility-side voltage sag typically affects the entire home simultaneously and may correlate with neighborhood-wide conditions. If whole-home dimming occurs and the electrician finds no internal fault, the utility company may need to investigate transformer capacity.</div>
+          <div class="cause-pattern">Pattern: whole-home dimming; no internal fault found after professional evaluation; neighbors report similar conditions; problem worse during summer peak cooling demand or winter peak heating demand.</div>
+        </div>
+        <span class="cause-badge">Utility Issue</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">07</div>
+        <div class="cause-body">
+          <div class="cause-title">Undersized Conductors or Long Wire Runs</div>
+          <div class="cause-desc">Wire resistance is proportional to length and inversely proportional to cross-sectional area. Circuits with very long runs &#8212; to detached garages, outbuildings, or across large floor plans &#8212; have more resistance than short runs of the same gauge. When high-current loads operate on undersized or long-run circuits, the voltage at the end of the run can drop noticeably. This is a design or installation issue rather than a failure, but it produces the same dimming symptom.</div>
+          <div class="cause-pattern">Pattern: dimming affects only the area served by a long circuit run; most notable for outbuilding or garage circuits; may have been present since initial installation rather than developing gradually.</div>
+        </div>
+        <span class="cause-badge">Design Issue</span>
+      </div>
+
+    </div>
+
+    <h2 id="diagnostic">Step-by-Step Diagnostic</h2>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-action">Determine scope: one room or multiple rooms</div>
+          <div class="step-detail">Walk through the house when the dimming event occurs. If it's limited to one room or circuit, the cause is local. If multiple rooms dim simultaneously, the fault is in a shared component &#8212; a shared neutral, the panel, or the service entrance.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-action">Note which appliance triggers the event</div>
+          <div class="step-detail">Identify the specific appliance that causes dimming. Note: does it affect only the room where the appliance is? Or does turning on the HVAC in the basement cause lights to dim throughout the house? The answer significantly changes the diagnosis.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-action">Time the duration of the dip</div>
+          <div class="step-detail">A brief dip under 1 second that immediately recovers is consistent with normal motor inrush. A dip that lasts 2&#8211;5+ seconds, or dimming that doesn't fully recover until the appliance turns off, indicates a resistance or load problem that needs attention.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-action">Check whether it's getting worse over time</div>
+          <div class="step-detail">If you noticed the dimming occasionally a year ago and it's now happening on every AC cycle, the resistance at a connection point is increasing. Progressive worsening is the signature of a developing fault &#8212; it will not improve on its own. Call an electrician before it becomes a critical failure.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <div class="step-action">Watch for the "brighten while dimming" symptom anywhere in the home</div>
+          <div class="step-detail">While one area dims, walk to other rooms and observe whether any lights there are noticeably brighter than normal. Any simultaneous dimming in one location and brightening in another = failing neutral. Stop using large appliances and call an electrician immediately.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="pattern-table">What Your Pattern Tells You</h2>
+    <table class="diag-table">
+      <thead>
+        <tr><th>Pattern Observed</th><th>Most Likely Cause</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Brief dip in one room, instant recovery, only at HVAC startup</td><td>Normal motor inrush &#8212; acceptable</td><td>No action needed unless dimming is pronounced or worsening.</td></tr>
+        <tr><td>Same dip but getting worse over months</td><td>Resistance increasing at loose connection</td><td>Call an electrician before it becomes a fault or fire hazard.</td></tr>
+        <tr><td>Multiple rooms dim simultaneously</td><td>Loose main neutral, panel connection, or service voltage sag</td><td>Call an electrician. This is not a single-circuit issue.</td></tr>
+        <tr><td>Some lights dim while others get brighter</td><td>Failing neutral conductor &#8212; emergency</td><td>Stop using high-draw appliances. Call electrician today.</td></tr>
+        <tr><td>Dimming lasts more than 1&#8211;2 seconds</td><td>Circuit overloaded or high-resistance connection</td><td>Call an electrician for load and connection evaluation.</td></tr>
+        <tr><td>Electronics reset during dimming events</td><td>Voltage sag severe enough to affect sensitive loads</td><td>Call an electrician. Electronics are being stressed and may be damaged.</td></tr>
+        <tr><td>Dimming only in outbuilding or garage circuit</td><td>Long run, undersized wire, or loose connection on that circuit</td><td>Call an electrician to evaluate wire gauge and connection quality.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Dimming That Worsens Over Time Is Not "Just the Way It Is"</div>
+        <div class="callout-text">Many homeowners who describe severe dimming problems say the same thing: "It's been doing this for years." Dimming that gradually worsens over months or years indicates a resistance fault that is progressing &#8212; a loose connection generating more heat with each load cycle, corroding and expanding the fault. These do not stabilize on their own. Each load cycle advances the damage. By the time dimming is severe and sustained, the connection point is generating substantial heat. The question isn't whether to have it evaluated &#8212; it's whether you'll address it before or after it causes a more serious failure.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"When I arrive on a lights-dimming call, the first thing I ask is whether any lights are getting brighter while others are getting dimmer. That answer tells me immediately whether I'm dealing with a branch circuit issue or a neutral failure &#8212; two completely different levels of urgency. A loose main neutral is one of the most dangerous conditions I encounter, because it can put 180&#8211;200 volts on circuits rated for 120 volts, destroying appliances rapidly. The dimming in one part of the house looks like the same problem as the brightening elsewhere &#8212; and the homeowner often doesn't connect them. The second thing I ask is whether it's gotten worse over time. Progressive dimming is almost always a resistance fault developing at a connection point. Thermal cycling &#8212; the daily heating and cooling of connections as circuits load and unload &#8212; slowly loosens terminations and accelerates oxidation. By the time the dimming is noticeable, the connection is already generating significant heat. A quick panel inspection with a thermal camera usually shows exactly where."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Do vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible</div>
+        <ul class="diy-items safe-list">
+          <li>Note which appliance triggers the dimming and which rooms are affected</li>
+          <li>Time how long the dip lasts and observe whether it's worsening over time</li>
+          <li>Check whether any lights get brighter while others dim (neutral failure sign)</li>
+          <li>Check whether electronics reset during dimming events</li>
+          <li>Replace bulbs to rule out a failing LED driver as the sole culprit</li>
+          <li>Report findings clearly to the electrician: what triggers it, scope, duration, trend</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Licensed Electrician Required</div>
+        <ul class="diy-items stop-list">
+          <li>Any situation where some lights dim and others simultaneously brighten</li>
+          <li>Multi-room dimming &#8212; neutral, panel, or service-entry issue</li>
+          <li>Dimming that lasts more than 1&#8211;2 seconds or that is progressive</li>
+          <li>Any work inside the electrical panel &#8212; including inspecting lugs</li>
+          <li>Electronics resetting or being damaged during dimming events</li>
+          <li>Buzzing, burning smell, or warm areas near the panel</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My lights dim briefly every time the AC kicks on. Is that normal?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A brief, sub-second dip specifically when the AC compressor starts &#8212; affecting only the room or circuit near the unit &#8212; and recovering immediately is generally considered a normal consequence of motor inrush current. HVAC compressors are among the highest-inrush loads in a residential system, briefly drawing 3&#8211;5x their operating current. If the dip is brief, complete recovery is fast, only one circuit is affected, and it hasn't worsened over time &#8212; it's typically acceptable. The concern thresholds are: multiple rooms affected simultaneously, dip lasting more than 1&#8211;2 seconds, any lights getting brighter elsewhere in the home, electronics resetting, and dimming that has progressively worsened over months. If any of those apply, what seemed like a normal AC dip is actually a developing fault.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why do my lights dim when the refrigerator compressor starts?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Refrigerator compressors are motor loads that draw approximately 3&#8211;6x their running current during startup. If the refrigerator is on a shared kitchen circuit that is also serving other loads &#8212; lighting, small appliances, a microwave &#8212; the combined load during compressor startup can push the circuit voltage down noticeably. If it's only a brief dip affecting only the kitchen area, it's often a circuit capacity issue rather than a fault. Two things make it more concerning: if it affects lights in other rooms simultaneously (suggesting a neutral or panel issue), or if the dimming has gotten worse recently (suggesting a developing connection fault or a compressor motor that is struggling and drawing more current than it should). A refrigerator with a failing compressor can draw locked-rotor current &#8212; a sustained overload &#8212; rather than just a brief startup surge.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can dimming damage my appliances?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Sustained undervoltage &#8212; not brief dips but prolonged low voltage &#8212; causes motors to draw higher than normal current, which accelerates winding insulation breakdown and shortens motor life. Refrigerators, HVAC systems, washing machines, and other motor-driven appliances are most susceptible. More significantly, if dimming is being caused by a partially failed neutral conductor, the resulting voltage redistribution can cause overvoltage on some circuits &#8212; putting 150&#8211;200 volts on circuits and devices rated for 120 volts. This can destroy TVs, computers, refrigerators, and other sensitive electronics quickly. Brief normal inrush dips don't cause this type of damage &#8212; but a failing neutral situation, or a situation where electronics are resetting during load events, warrants immediate professional evaluation.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My neighbor has the same dimming problem. Could it be a utility issue?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; if multiple homes on the same utility transformer experience the same dimming pattern, the transformer may be undersized for the neighborhood load, particularly during summer peak cooling demand or winter peak heating. Transformer capacity issues are the utility's responsibility to address. The process: have a licensed electrician verify that no internal fault exists in your home first (a professional inspection with voltage measurement under load rules out your home as the source). If the home checks out clean and neighbors confirm the same pattern, contact your utility's power quality reporting line and describe the voltage sag pattern and timing. Utilities have engineering departments that can measure transformer loading and dispatch a crew if the transformer is overloaded.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Scope determines urgency: one room = local issue; multiple rooms = shared neutral, panel, or service problem; some dim + some brighten = failing neutral emergency.</li>
+        <li>A brief sub-second dip at HVAC startup affecting one circuit is often normal motor inrush. Dimming that lasts longer, affects multiple rooms, or is getting worse is not normal.</li>
+        <li>Progressive worsening over months is the signature of an increasing resistance fault at a connection point. It will not stabilize &#8212; it will worsen.</li>
+        <li>Some lights dimming while others simultaneously brighten means a neutral conductor is failing. Stop using large appliances and call an electrician today &#8212; overvoltage is damaging electronics right now.</li>
+        <li>Do not open the panel to investigate dimming causes yourself. The main lugs remain energized even with the main breaker off and require professional handling.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">lights dim when appliances turn on</a>
+      <a href="#" class="tag-pill">lights flicker when AC starts</a>
+      <a href="#" class="tag-pill">voltage drop home electrical</a>
+      <a href="#" class="tag-pill">lights dim under load</a>
+      <a href="#" class="tag-pill">neutral conductor failure</a>
+      <a href="#" class="tag-pill">lights dim whole house</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Electrical Guides</h3>
+    <div class="related-list">
+      <a href="led-lights-flicker.html" class="related-item">
+        <div><div class="related-item-title">Why Your LED Lights Flicker</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="breakers-keep-tripping.html" class="related-item">
+        <div><div class="related-item-title">Why Your Circuit Breaker Keeps Tripping</div><div class="related-item-meta">T.A. &middot; 10 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="electrical-systems-guide.html" class="related-item">
+        <div><div class="related-item-title">Home Electrical Systems: The Complete Guide</div><div class="related-item-meta">T.A. &middot; 30 min read &middot; Flagship</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#why-it-happens">Why Lights Dim Under Load</a></li>
+      <li><a href="#scope">Read the Scope First</a></li>
+      <li><a href="#severity">How Serious Is It?</a></li>
+      <li><a href="#causes">Causes</a></li>
+      <li><a href="#diagnostic">Step-by-Step Diagnostic</a></li>
+      <li><a href="#pattern-table">Pattern Reference</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">Licensed Electrician &amp; Fire Investigator</div>
+        <div class="s-bio">NFPA Certified Fire Investigator (CFI-1), Certified Healthcare Facility Manager (CHFM), CLSS-HC, OSHA 30, and licensed electrician. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>Electrical safety guides and seasonal home maintenance reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

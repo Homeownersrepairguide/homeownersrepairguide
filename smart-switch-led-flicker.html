@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Smart Switches Cause LED Flicker | HomeownersRepairGuide.com</title>
+<meta name="description" content="Smart switches leak a small trickle of current through LEDs even when off — enough to cause flicker, ghost glow, or buzzing. Here's why it happens, how to diagnose which issue you have, and the right fix for each.">
+<link rel="canonical" href="https://homeownersrepairguide.com/smart-switch-led-flicker.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/smart-switch-led-flicker.html">
+<meta property="og:title" content="Why Smart Switches Cause LED Flicker | HomeownersRepairGuide.com">
+<meta property="og:description" content="Smart switch LED flicker, ghost glow, and buzzing have four distinct causes — each with a different fix. Here's the diagnostic.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --electrical:#b08a00;--electrical-dark:#7a5f00;--electrical-light:#fdf6e3;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}
+.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--electrical);color:var(--white);}
+.tag.info{background:#1a6a9a;color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--electrical);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+.article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+.quick-summary{background:var(--electrical);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* Safety box */
+.safety-box{background:#7a1010;border-radius:var(--radius-lg);padding:18px 22px;margin:0 0 28px;}
+.safety-box h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.safety-box p{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.55;}
+/* How smart switches differ */
+.switch-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.sw-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:15px 17px;box-shadow:var(--shadow-card);}
+.sw-card.standard{border-top:3px solid #3a6b3a;}
+.sw-card.smart{border-top:3px solid var(--electrical);}
+.sw-type{font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:5px;}
+.sw-card.standard .sw-type{color:#2a7a2a;}
+.sw-card.smart .sw-type{color:var(--electrical-dark);}
+.sw-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.sw-desc{font-size:13px;color:var(--text-body);line-height:1.5;}
+/* Symptom cards */
+.symptom-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0;}
+.symptom-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.symptom-card.glow{border-left:4px solid var(--electrical);}
+.symptom-card.buzz{border-left:4px solid #5a3a7a;}
+.symptom-card.voltage{border-left:4px solid #c0392b;}
+.symptom-card.wiring{border-left:4px solid #1a6a9a;}
+.sym-label{font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:5px;}
+.symptom-card.glow .sym-label{color:var(--electrical-dark);}
+.symptom-card.buzz .sym-label{color:#5a3a7a;}
+.symptom-card.voltage .sym-label{color:#c0392b;}
+.symptom-card.wiring .sym-label{color:#1a6a9a;}
+.sym-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.sym-signs{font-size:13px;color:var(--text-body);line-height:1.5;margin-bottom:6px;}
+.sym-fix{font-size:12px;color:var(--text-muted);font-style:italic;}
+/* Diagnostic steps */
+.diag-steps{display:flex;flex-direction:column;gap:10px;margin:24px 0;}
+.diag-step{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--electrical);color:var(--white);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step-body{flex:1;}
+.step-action{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.step-detail{font-size:13px;color:var(--text-muted);line-height:1.5;}
+.step-result{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;}
+.step-if{font-size:12px;padding:4px 10px;border-radius:2px;line-height:1.4;}
+.step-if.yes{background:#eaf5ea;color:#2a7a2a;}
+.step-if.no{background:#fef2f0;color:#c0402a;}
+/* Fix table */
+.diag-table{width:100%;border-collapse:collapse;margin:24px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.diag-table th{background:var(--electrical);color:var(--white);font-size:13px;font-weight:600;padding:11px 14px;text-align:left;}
+.diag-table td{font-size:13px;padding:11px 14px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+.diag-table tr:last-child td{border-bottom:none;}
+.diag-table tr:nth-child(even) td{background:var(--cream);}
+.diag-table td:first-child{font-weight:600;color:var(--text-dark);}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}
+.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* Callout */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-box.info{background:#e8f0fa;border:1px solid #90b0d8;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-box.info .callout-label{color:#1a5a9a;}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--electrical);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--electrical);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--electrical);color:var(--white);border-color:var(--electrical);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;} .share-x{background:#000;color:white;} .share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--electrical);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--electrical);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--electrical);background:var(--electrical-light);font-weight:600;}
+.toc-list li.active a::before{background:var(--electrical);width:6px;height:6px;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--electrical);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--electrical);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.switch-compare{grid-template-columns:1fr;}.symptom-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical</a>
+    <span class="sep">&#8250;</span>
+    <a href="electrical-lighting.html">Lighting &amp; Fixtures</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Smart Switches Cause LED Flicker</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Lighting &amp; Fixtures</span>
+    <span class="tag info">&#9889; Compatibility</span>
+  </div>
+
+  <h1 class="article-title">Why Smart Switches Cause LED Flicker</h1>
+  <p class="article-subtitle">Smart switches stay powered at all times &#8212; even when the light is "off." That always-on state requires a small trickle of current that flows through the LED, and LED drivers are sensitive enough to react to it. The result: flicker, ghost glow, buzzing, or unstable dimming that looks like a bulb problem but isn't. Here's how to identify which issue you have and what fixes it.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Licensed Electrician &amp; Fire Investigator</div>
+      <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Licensed Electrician</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="safety-box">
+      <h3>&#9888;&#65039; Flicker That Correlates With Appliance Startup or Affects Multiple Circuits &#8212; Stop Here</h3>
+      <p>If your LED flicker occurs when large appliances start, affects lights on multiple circuits simultaneously, or is accompanied by some lights getting brighter while others dim &#8212; that is not a smart switch compatibility issue. That is a voltage instability or failing neutral conductor problem. Stop troubleshooting the smart switch and read the companion article on <a href="lights-dim-under-load.html">lights dimming under load</a> instead. A failing neutral is a fire hazard that requires an electrician.</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>&#9889; Quick Summary</h3>
+      <ul>
+        <li><strong>Ghost glow when switch is off</strong> &#8212; trickle current through a no-neutral smart switch; fix with neutral-required switch or compatible bulbs</li>
+        <li><strong>Flicker or buzz when dimmed</strong> &#8212; smart dimmer waveform incompatibility with the LED bulb; fix with LED-compatible dimmer or dimmable bulbs</li>
+        <li><strong>Works fine with a standard switch but flickers with smart switch</strong> &#8212; confirms the smart switch is the cause, not the wiring</li>
+        <li><strong>Flicker only on very low-wattage single-bulb circuits</strong> &#8212; smart switch below minimum load threshold; use a bypass device or add load</li>
+        <li>Voltage instability and neutral faults are <em>not</em> smart switch issues &#8212; they look similar but require an electrician, not a switch swap</li>
+      </ul>
+    </div>
+
+    <h2 id="why-different">Why Smart Switches Are Different From Standard Switches</h2>
+    <p>A standard mechanical switch is the simplest electrical device in the home: it either completes the circuit (light on) or breaks it (light off). When a standard switch is off, zero current flows through the circuit. That's the key difference with smart switches.</p>
+
+    <div class="switch-compare">
+      <div class="sw-card standard">
+        <div class="sw-type">&#128994; Standard Mechanical Switch</div>
+        <div class="sw-title">Fully opens the circuit when off</div>
+        <div class="sw-desc">When off, the circuit is completely interrupted &#8212; zero current flows through the load. The switch has no electronics to power, no radio to maintain, no microcontroller to keep running. The LED is completely de-energized.</div>
+      </div>
+      <div class="sw-card smart">
+        <div class="sw-type">&#9889; Smart Switch / Smart Dimmer</div>
+        <div class="sw-title">Must stay powered at all times</div>
+        <div class="sw-desc">A smart switch contains a microcontroller, Wi-Fi or Z-Wave radio, and often a small display &#8212; all of which need continuous power. Even when the light is "off," the switch needs to remain powered to receive commands, report status, and respond instantly. That power has to come from somewhere.</div>
+      </div>
+    </div>
+
+    <p>In older switch loops (which are the majority of residential light switch wiring), there is no neutral wire in the switch box &#8212; only a hot and a switched-hot. A no-neutral smart switch gets its operating power by passing a tiny trickle current through the load &#8212; the LED. This trickle is too small to produce meaningful light, but it's enough to partially energize an LED driver and produce ghost glow, flicker, or pulsing.</p>
+    <p>Smart switches with a neutral wire connection resolve this differently: they draw their operating power directly from the neutral, independent of the load. The LED circuit is fully de-energized when off. This is why neutral-required smart switches have virtually no trickle-current LED compatibility issues.</p>
+
+    <h2 id="symptoms">The 4 Symptom Patterns and What Fixes Each</h2>
+
+    <div class="symptom-grid">
+      <div class="symptom-card glow">
+        <div class="sym-label">&#128161; Most Common</div>
+        <div class="sym-title">Ghost Glow or Faint Pulse When Off</div>
+        <div class="sym-signs">LED glows faintly, pulses slowly, or flickers at random intervals when the smart switch is in the off position. Worse with low-wattage LEDs. More pronounced in dark rooms.</div>
+        <div class="sym-fix">Cause: trickle current from no-neutral smart switch. Fix: switch to neutral-required smart switch, or use LED bulbs rated for no-neutral smart switch compatibility.</div>
+      </div>
+      <div class="symptom-card buzz">
+        <div class="sym-label">&#128308; Common with Dimmers</div>
+        <div class="sym-title">Buzzing, Humming, or Flicker When Dimmed</div>
+        <div class="sym-signs">Smart dimmer produces flicker, buzzing, or pulsing &#8212; especially at low brightness settings. Different LED brands behave differently on the same dimmer. Works fine at full brightness.</div>
+        <div class="sym-fix">Cause: smart dimmer waveform incompatibility or LED not rated for dimming. Fix: use dimmable LED bulbs matched to the dimmer's compatibility list; raise the minimum dim threshold in the app.</div>
+      </div>
+      <div class="symptom-card voltage">
+        <div class="sym-label">&#9888; Requires Electrician</div>
+        <div class="sym-title">Voltage Instability &#8212; Looks Like Smart Switch Issue</div>
+        <div class="sym-signs">Flicker when appliances start, multiple circuits affected, or some lights dim while others brighten. Smart switch flicker plus these symptoms = not a switch issue.</div>
+        <div class="sym-fix">Cause: loose neutral conductor, MWBC instability, or service voltage sag. Fix: licensed electrician evaluation. Not resolved by changing the switch or bulbs.</div>
+      </div>
+      <div class="symptom-card wiring">
+        <div class="sym-label">&#128309; Wiring Limitation</div>
+        <div class="sym-title">No-Neutral Switch Loop Limitations</div>
+        <div class="sym-signs">Flicker or glow that persists despite trying multiple LED brands. Single-bulb low-wattage circuit. Smart switch is installed in an older switch loop without a neutral wire.</div>
+        <div class="sym-fix">Cause: smart switch operating below its minimum load threshold. Fix: add a bypass resistor/capacitor device, add load (use a higher-wattage fixture), or run a neutral wire to the switch box.</div>
+      </div>
+    </div>
+
+    <h2 id="the-test">The Definitive Test: Standard Switch Swap</h2>
+    <p>Before adjusting settings or buying new bulbs, confirm the smart switch is the cause with one simple test.</p>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-action">Replace the smart switch temporarily with a standard mechanical switch</div>
+          <div class="step-detail">Install a basic toggle switch in place of the smart switch for testing. This takes about 10 minutes with the circuit breaker off. Leave the same LED bulbs in the fixture.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-action">Observe whether flicker, glow, or buzzing stops completely</div>
+          <div class="step-detail">Test for ghost glow when the switch is off, flicker when on, and buzzing. If all symptoms disappear with the standard switch, the smart switch is definitively the cause.</div>
+          <div class="step-result">
+            <span class="step-if yes">All symptoms stop &#8594; Smart switch confirmed cause &#8212; proceed to fix</span>
+            <span class="step-if no">Flicker persists with standard switch &#8594; Wiring or bulb issue &#8212; not the smart switch</span>
+          </div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-action">If confirmed: check whether the switch box has a neutral wire</div>
+          <div class="step-detail">With the circuit off, look for a white wire in the switch box that is capped off or bundled but not connected to the switch terminals. This is the neutral. If present, a neutral-required smart switch will solve the trickle-current problem entirely.</div>
+          <div class="step-result">
+            <span class="step-if yes">Neutral present &#8594; Switch to neutral-required smart switch</span>
+            <span class="step-if no">No neutral &#8594; Use compatible LED bulbs or install bypass device</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="fixes">The Right Fix for Each Situation</h2>
+
+    <table class="diag-table">
+      <thead>
+        <tr><th>Situation</th><th>Fix</th><th>Notes</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Ghost glow when off, neutral wire available in box</td><td>Replace with a neutral-required smart switch</td><td>Eliminates trickle current entirely. Most reliable long-term solution.</td></tr>
+        <tr><td>Ghost glow when off, no neutral in switch box</td><td>Use LED bulbs rated for no-neutral smart switches</td><td>Check manufacturer compatibility lists. Higher-quality LEDs with better filtering work better.</td></tr>
+        <tr><td>Ghost glow when off, no neutral, bulb swaps haven't helped</td><td>Install a load-balancing bypass device (e.g., Lutron LUT-MLC)</td><td>Small bypass capacitor added at the fixture or switch box provides the smart switch a small load independent of the LED driver.</td></tr>
+        <tr><td>Flicker or buzz when dimmed, at low brightness only</td><td>Raise minimum dim threshold in smart switch app; verify LED is dimmable</td><td>Most smart dimmers allow min/max dim adjustment. Non-dimmable LEDs must not be used on any dimmer.</td></tr>
+        <tr><td>Flicker or buzz at all dim levels</td><td>Replace with dimmable LED from switch manufacturer's compatibility list</td><td>Compatibility varies significantly by brand combination. Use the specific list, not generic "LED dimmable."</td></tr>
+        <tr><td>Works fine with standard switch but flickers with smart switch</td><td>Try a different (higher-quality) LED with a more robust driver</td><td>Budget LEDs with simplified drivers are more sensitive to smart switch trickle current and waveform distortion.</td></tr>
+        <tr><td>Single-bulb low-wattage circuit that flickers regardless of bulb</td><td>Add bypass device or increase fixture wattage</td><td>Smart switch may be below minimum load threshold. Some require 25&#8211;40W minimum to operate reliably.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box tip">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">Always Check the Compatibility List</div>
+        <div class="callout-text">Every major smart switch and smart dimmer manufacturer publishes a compatibility list of tested LED bulbs. Lutron, Leviton, GE Enbrighten, and Caséta all maintain these lists on their websites. "Dimmable LED" on the bulb packaging does not mean compatible with your specific smart dimmer &#8212; it means the driver can respond to dimming signals, not that it's been tested with your switch. Checking the compatibility list before buying bulbs saves the most common round of trial and error.</div>
+      </div>
+    </div>
+
+    <div class="callout-box info">
+      <div class="callout-icon">&#9432;</div>
+      <div class="callout-content">
+        <div class="callout-label">The Neutral Wire Situation in Older Homes</div>
+        <div class="callout-text">Most residential light switches installed before roughly 2000 use a "switch loop" wiring configuration: only two conductors run to the switch (a hot and a switched-hot), with no neutral present. This is perfectly correct wiring &#8212; a standard mechanical switch doesn't need a neutral. But most smart switches do. If you're planning to install smart switches throughout an older home and want the best long-term performance, have an electrician evaluate whether neutral wires can be added to switch boxes, or select smart switches specifically designed for no-neutral switch loops (like Lutron Caséta). Retrofitting a neutral to a switch box typically requires fishing a new wire from the nearest junction box and is a licensed electrical job.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"Smart switch LED compatibility is one of the more common service calls I see now &#8212; homeowners installed everything correctly, all the devices are working, but the LEDs flicker or glow when they should be off. The neutral wire question is the first thing I check. If there's a neutral available in the switch box and it just wasn't connected to the smart switch, connecting it properly solves the problem immediately. If there's no neutral, the fix depends on how sensitive the LED driver is to the trickle current &#8212; and that varies a lot by bulb manufacturer. The bypass device approach works reliably when bulb swaps don't. The situation that concerns me is when someone reports flicker and attributes it to the smart switch, but when I ask whether multiple circuits are affected or if it correlates with the HVAC running &#8212; and the answer is yes &#8212; that's not a compatibility issue. That's a wiring problem that could be a neutral fault. I've seen a few cases where a homeowner installed a smart switch, noticed flicker, assumed compatibility, kept swapping bulbs for six months &#8212; and the actual cause was a loose main neutral at the panel that was developing over the same period. The flicker symptom is the same. The cause and urgency are completely different."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Do vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible</div>
+        <ul class="diy-items safe-list">
+          <li>Swap smart switch for a standard switch to confirm the switch is the cause</li>
+          <li>Check smart switch app for minimum dim threshold and adjust it upward</li>
+          <li>Replace LED bulbs with compatible bulbs from the manufacturer's list</li>
+          <li>Verify the LED is dimmable before connecting it to any dimmer</li>
+          <li>Install a bypass device (e.g., Lutron LUT-MLC) at the fixture or switch box</li>
+          <li>Check whether a neutral wire is capped off and unused in the switch box</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Licensed Electrician Required</div>
+        <ul class="diy-items stop-list">
+          <li>Running a neutral wire to a switch box without one</li>
+          <li>Flicker that correlates with appliance startup or affects multiple circuits</li>
+          <li>Any situation where some lights dim while others get brighter</li>
+          <li>Voltage instability or service-level issues that look like smart switch problems</li>
+          <li>Diagnosing or correcting neutral conductor faults at the panel or service entry</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My LED glows faintly when the smart switch is off. Is that harmful?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">The ghost glow itself isn't harmful to the bulb or the wiring &#8212; it's an annoyance caused by the trickle current partially energizing the LED driver. However, it does indicate that the LED driver is being partially powered continuously when it should be completely off. Over time, this keeps the driver's capacitors and electronics from fully discharging, which can accelerate driver aging compared to a properly de-energized bulb. It's worth fixing for both the cosmetic reason (a glowing light when you want darkness) and the slightly reduced bulb longevity. The fix is straightforward: a neutral-required smart switch eliminates the trickle current entirely, or a bypass device provides the trickle current with an alternative path that doesn't go through the LED driver.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">I installed a smart dimmer but my LED says "dimmable" on the box. Why does it still flicker?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">"Dimmable" on LED packaging means the bulb's driver can respond to dimming control signals &#8212; but it doesn't specify which dimming technology or which specific dimmers it's been tested with. Smart dimmers use several different dimming methods (leading-edge, trailing-edge, PWM), and the LED driver must be engineered to work smoothly with the specific waveform your dimmer produces. A bulb that's dimmable on a standard leading-edge incandescent dimmer may flicker on a trailing-edge smart dimmer, or vice versa. The only reliable way to confirm compatibility is to cross-reference the specific bulb model number against the specific dimmer's published compatibility list. Most major smart dimmer manufacturers maintain these lists on their websites, and they're searchable by bulb brand and model.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I install a smart switch myself, or do I need an electrician?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Replacing a standard switch with a smart switch is generally a homeowner-accessible task in the same category as replacing a standard switch: turn off the circuit breaker, confirm power is off with a non-contact voltage tester before touching any wires, disconnect the old switch, and connect the new one following the smart switch wiring diagram. The complication is the neutral wire question &#8212; if the smart switch requires a neutral and there isn't one in the switch box, you either need to select a no-neutral compatible smart switch or have an electrician add a neutral wire. If you find more wires in the switch box than you expected, particularly in a 3-way setup, stop and consult the instructions or a professional before proceeding. Smart switches in 3-way configurations require both switches to be compatible smart switches (or one smart and one accessory switch) &#8212; you can't mix a smart switch with a standard switch in most 3-way configurations.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">What is a bypass device and do I need one?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A bypass device (Lutron calls it the LUT-MLC; other manufacturers have similar products) is a small capacitor-resistor circuit that installs in the fixture junction box &#8212; it provides an alternate small load that gives the smart switch a current path independent of the LED driver. This serves two purposes: it gives the no-neutral smart switch a more reliable power source, and it allows the smart switch to "see" a minimum load even on very low-wattage LED fixtures. You need one when: (1) you have a no-neutral smart switch and changing LED bulbs hasn't resolved ghost glow or flicker, or (2) your smart switch is installed on a single very-low-wattage LED circuit (under 25W) and the switch's documentation lists a minimum load requirement. Installation is straightforward &#8212; it connects in parallel with the light fixture inside the ceiling box &#8212; and doesn't require an electrician, though you should turn off the circuit before accessing the ceiling box.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Smart switches must stay powered at all times &#8212; no-neutral designs do this by passing trickle current through the LED load, which causes ghost glow and flicker in sensitive LED drivers.</li>
+        <li>The definitive test: swap the smart switch for a standard mechanical switch. If symptoms disappear, the smart switch is confirmed as the cause.</li>
+        <li>If a neutral wire is available in the switch box: switching to a neutral-required smart switch eliminates trickle-current issues entirely. This is the most reliable fix.</li>
+        <li>Flicker from smart dimmer-LED mismatch: use dimmable LEDs from the manufacturer's compatibility list and raise the minimum dim threshold in the app.</li>
+        <li>If flicker correlates with appliance startup, affects multiple circuits, or involves some lights brightening while others dim: that is not a smart switch issue &#8212; it is a voltage stability or neutral fault that requires an electrician.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">smart switch LED flicker</a>
+      <a href="#" class="tag-pill">smart dimmer LED flickering</a>
+      <a href="#" class="tag-pill">LED ghost glow smart switch</a>
+      <a href="#" class="tag-pill">smart switch no neutral</a>
+      <a href="#" class="tag-pill">smart switch compatibility LED</a>
+      <a href="#" class="tag-pill">LED buzzing with smart dimmer</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Electrical Guides</h3>
+    <div class="related-list">
+      <a href="led-lights-flicker.html" class="related-item">
+        <div><div class="related-item-title">Why Your LED Lights Flicker</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="light-switch-stopped-working.html" class="related-item">
+        <div><div class="related-item-title">Why Your Light Switch Stopped Working</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="lights-dim-under-load.html" class="related-item">
+        <div><div class="related-item-title">Why Your Lights Dim When Appliances Turn On</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#why-different">Why Smart Switches Are Different</a></li>
+      <li><a href="#symptoms">4 Symptom Patterns</a></li>
+      <li><a href="#the-test">The Definitive Test</a></li>
+      <li><a href="#fixes">The Right Fix</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">Licensed Electrician &amp; Fire Investigator</div>
+        <div class="s-bio">NFPA Certified Fire Investigator (CFI-1), Certified Healthcare Facility Manager (CHFM), CLSS-HC, OSHA 30, and licensed electrician. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>Electrical safety guides and seasonal home maintenance reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>
