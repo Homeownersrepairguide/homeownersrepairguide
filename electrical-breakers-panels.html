@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breakers & Panels | Electrical | HomeownersRepairGuide.com</title>
+<meta name="description" content="Circuit breakers tripping, refusing to reset, half the house losing power, or a panel that runs hot — licensed electrician T.A. explains what every pattern means and what to do next.">
+<link rel="canonical" href="https://homeownersrepairguide.com/electrical-breakers-panels.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0f2236;--navy-mid:#1a3550;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--electrical:#b08a00;--electrical-dark:#7a5f00;--electrical-light:#fdf6e3;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}
+.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.subcat-hero{background:var(--electrical);padding:48px 24px 40px;}
+.subcat-hero .inner{max-width:1200px;margin:0 auto;}
+.subcat-eyebrow{font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:10px;}
+.subcat-eyebrow a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.subcat-eyebrow a:hover{color:var(--amber);}
+.subcat-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--white);line-height:1.1;letter-spacing:-0.02em;margin-bottom:12px;}
+.subcat-desc{font-size:16px;color:rgba(255,255,255,0.78);max-width:640px;line-height:1.65;margin-bottom:24px;}
+.subcat-meta{display:flex;gap:20px;flex-wrap:wrap;}
+.subcat-meta-item{font-size:13px;color:rgba(255,255,255,0.55);display:flex;align-items:center;gap:6px;}
+.subcat-tabs{background:var(--white);border-bottom:2px solid var(--gray-light);overflow-x:auto;}
+.subcat-tabs .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:0;}
+.subcat-tab{font-size:13px;font-weight:600;color:var(--text-muted);text-decoration:none;padding:14px 18px;white-space:nowrap;border-bottom:3px solid transparent;margin-bottom:-2px;transition:color 0.15s,border-color 0.15s;}
+.subcat-tab:hover{color:var(--electrical);}
+.subcat-tab.active{color:var(--electrical);border-bottom-color:var(--electrical);}
+.page-inner{max-width:1200px;margin:0 auto;padding:40px 24px;}
+.section-intro{margin-bottom:32px;}
+.section-intro h2{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+.section-intro p{font-size:15px;color:var(--text-muted);max-width:700px;line-height:1.65;}
+.article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:48px;}
+.article-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;text-decoration:none;display:flex;flex-direction:column;}
+.article-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+.card-accent{height:4px;background:var(--electrical);}
+.card-accent.warn{background:#b07800;}
+.card-accent.alert{background:var(--rust);}
+.card-accent.critical{background:#7a1010;}
+.card-body{padding:18px 20px;flex:1;display:flex;flex-direction:column;}
+.card-tag{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--electrical-dark);margin-bottom:8px;}
+.card-tag.warn{color:#b07800;}
+.card-tag.alert{color:var(--rust);}
+.card-tag.critical{color:#7a1010;}
+.card-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:8px;}
+.card-desc{font-size:13px;color:var(--text-muted);line-height:1.55;flex:1;margin-bottom:14px;}
+.card-footer{display:flex;align-items:center;justify-content:space-between;}
+.card-read{font-size:12px;color:var(--text-muted);}
+.card-arrow{font-size:16px;color:var(--electrical);}
+.flagship-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:48px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
+.flagship-text h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:6px;}
+.flagship-text p{font-size:14px;color:rgba(255,255,255,0.7);line-height:1.55;}
+.flagship-btn{background:var(--amber);color:var(--navy);font-size:13px;font-weight:700;padding:12px 22px;border-radius:var(--radius);text-decoration:none;white-space:nowrap;transition:opacity 0.15s;}
+.flagship-btn:hover{opacity:0.88;}
+.expert-strip{background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:48px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;}
+.expert-avatars{display:flex;gap:6px;flex-shrink:0;}
+.expert-av{width:42px;height:42px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);}
+.expert-info{flex:1;}
+.expert-info strong{display:block;font-size:14px;color:var(--text-dark);margin-bottom:3px;}
+.expert-info span{font-size:13px;color:var(--text-muted);}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.article-grid{grid-template-columns:1fr;}.flagship-callout{flex-direction:column;}.flagship-btn{width:100%;text-align:center;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Breakers &amp; Panels</span>
+  </div>
+</div>
+<div class="subcat-hero">
+  <div class="inner">
+    <div class="subcat-eyebrow"><a href="category-electrical.html">Electrical</a> &nbsp;&#8250;&nbsp; Subcategory</div>
+    <h1 class="subcat-title">Breakers &amp; Panels</h1>
+    <p class="subcat-desc">Tripping breakers, a panel that won't reset, half the house losing power, or a breaker that runs hot — the trip pattern tells you whether you're dealing with an overload, a wiring fault, a failing breaker, or a service-entry emergency. Here's how to read each one.</p>
+    <div class="subcat-meta">
+      <span class="subcat-meta-item">&#128196; 9 guides</span>
+      <span class="subcat-meta-item">&#128100; T.A. — Licensed Electrician &amp; Fire Investigator</span>
+    </div>
+  </div>
+</div>
+<div class="subcat-tabs">
+  <div class="inner">
+    <a href="electrical-breakers-panels.html" class="subcat-tab active">Breakers &amp; Panels</a>
+    <a href="electrical-outlets-wiring.html" class="subcat-tab">Outlets &amp; Wiring</a>
+    <a href="electrical-lighting.html" class="subcat-tab">Lighting &amp; Fixtures</a>
+  </div>
+</div>
+<div class="page-inner">
+
+  <div class="flagship-callout">
+    <div class="flagship-text">
+      <h3>Breaker Tripping Master Guide</h3>
+      <p>The complete reference for circuit breaker problems — why they trip, what each pattern means, when it's safe to reset, and when to call immediately. From our licensed electrician and NFPA fire investigator.</p>
+    </div>
+    <a href="breaker-tripping-guide.html" class="flagship-btn">Read the Master Guide &#8594;</a>
+  </div>
+
+  <div class="section-intro">
+    <h2>Breaker &amp; Panel Guides</h2>
+    <p>The trip timing tells you more than anything else: instant trips point to short circuits; trips after minutes point to overloads; random trips with no load pattern point to a failing breaker or wiring fault. Start with the pattern that matches yours.</p>
+  </div>
+
+  <div class="article-grid">
+
+    <a href="how-to-tell-breaker-is-bad.html" class="article-card">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <div class="card-tag">&#9889; Diagnostic Guide</div>
+        <div class="card-title">How to Tell If a Circuit Breaker Is Bad</div>
+        <div class="card-desc">Most tripping breakers aren't bad — they're working. The trip timing (instant, after minutes, random, at startup) tells you whether it's the breaker, the wiring, or the appliance. Start here.</div>
+        <div class="card-footer"><span class="card-read">8 min read</span><span class="card-arrow">&#8594;</span></div>
+      </div>
+    </a>
+
+    <a href="breakers-keep-tripping.html" class="article-card">
+      <div class="card-accent warn"></div>
+      <div class="card-body">
+        <div class="card-tag warn">&#9888; Recurring Problem</div>
+        <div class="card-title">Why Your Circuit Breaker Keeps Tripping</div>
+        <div class="card-desc">A breaker that trips repeatedly on the same circuit is telling you something specific — overloaded wiring, a failing appliance, a wiring fault, or AFCI arc detection. Here's how to narrow it down.</div>
+        <div class="card-footer"><span class="card-read">8 min read</span><span class="card-arrow">&#8594;</span></div>
+      </div>
+    </a>
+
+    <a href="breaker-wont-reset.html" class="article-card">
+      <div class="card-accent alert"></div>
+      <div class="card-body">
+        <div class="card-tag alert">&#128308; Won't Reset</div>
+        <div class="card-title">Why Your Breaker Won't Reset</div>
+        <div class="card-desc">A breaker that trips immediately on reset has an active fault — short circuit, ground fault, or internal failure. Repeatedly resetting makes it worse. Here's what's happening and what to do.</div>
+        <div class="card-footer"><span class="card-read">8 min read</span><span class="card-arrow">&#8594;</span></div>
+      </div>
+    </a>
+
+    <a href="breaker-trips-randomly.html" class="article-card">
+      <div class="card-accent warn"></div>
+      <div class="card-body">
+        <div class="card-tag warn">&#9888; No Pattern</div>
+        <div class="card-title">Why Your Breaker Trips Randomly</div>
+        <div class="card-desc">Random tripping with no consistent load pattern points to thermal fatigue, calibration drift, a loose panel bus stab, or a wiring fault that creates intermittent current spikes.</div>
+        <div class="card-footer"><span class="card-read">8 min read</span><span class="card-arrow">&#8594;</span></div>
+      </div>
+    </a>
+
+    <a href="breaker-trips-plug-in.html" class="article-card">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <div class="card-tag">Breakers &amp; Panels</div>
+        <div class="card-title">Why Your Breaker Trips When You Plug Something In</div>
+        <div class="card-desc">Trips at the moment of plug-in almost always point to the appliance — a short in the cord, a failed heating element, or a motor that's locked up. Here's how to confirm it in two minutes.</div>
+        <div class="card-footer"><span class="card-read">7 min read</span><span class="card-arrow">&#8594;</span></div>
+      </div>
+    </a>
+
+    <a href="breaker-trips-lights.html" class="article-card">
+      <div class="card-accent"></div>
+      <div class="card-body">
+        <div class="card-tag">Breakers &amp; Panels</div>
+        <div class="card-title">Why Your Breaker Trips When You Turn the Lights On</div>
+        <div class="card-desc">A breaker that trips at light switch closure usually has a short in the fixture wiring, a failed ballast, or an AFCI detecting arcing at a loose connection in the switch or fixture box.</div>
+        <div class="card-footer"><span class="card-read">7 min read</span><span class="card-arrow">&#8594;</span></div>
+      </div>
+    </a>
+
+    <a href="afci-keeps-tripping.html" class="article-card">
+      <div class="card-accent warn"></div>
+      <div class="card-body">
+        <div class="card-tag warn">&#9889; Fire Precursor</div>
+        <div class="card-title">Why Your AFCI Breaker Keeps Tripping</div>
+        <div class="card-desc">An AFCI isn't being overly sensitive — it's detecting arc-fault signatures that your standard breaker would miss entirely. Loose wiring, a damaged cord, a failing LED driver: here's what it found.</div>
+        <div class="card-footer"><span class="card-read">9 min read</span><span class="card-arrow">&#8594;</span></div>
+      </div>
+    </a>
+
+    <a href="why-breakers-fail.html" class="article-card">
+      <div class="card-accent warn"></div>
+      <div class="card-body">
+        <div class="card-tag warn">&#9888; Failure Modes</div>
+        <div class="card-title">Why Breakers Fail</div>
+        <div class="card-desc">A hot handle, a spongy latch, buzzing under load, trips under tiny loads — or the most dangerous failure: a breaker that has stopped responding to faults entirely. Here's what each sign means.</div>
+        <div class="card-footer"><span class="card-read">8 min read</span><span class="card-arrow">&#8594;</span></div>
+      </div>
+    </a>
+
+    <a href="half-house-lost-power.html" class="article-card">
+      <div class="card-accent critical"></div>
+      <div class="card-body">
+        <div class="card-tag critical">&#128308; Emergency</div>
+        <div class="card-title">Why Half Your House Lost Power</div>
+        <div class="card-desc">Half the house going dark means a service-level failure — one leg of the 240V service, or the neutral. If any lights are getting brighter while others go dark: turn off the main breaker now.</div>
+        <div class="card-footer"><span class="card-read">9 min read</span><span class="card-arrow">&#8594;</span></div>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="expert-strip">
+    <div class="expert-avatars">
+      <div class="expert-av">T.A.</div>
+    </div>
+    <div class="expert-info">
+      <strong>Written and verified by T.A. — NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; CLSS-HC &middot; OSHA 30</strong>
+      <span>All breaker and panel content is written by a licensed electrician who also investigates electrical fires for a living. These guides reflect what the failure patterns actually look like — not just what the textbook says.</span>
+    </div>
+  </div>
+
+</div>
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
