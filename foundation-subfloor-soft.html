@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Subfloor Feels Soft | HomeownersRepairGuide.com</title>
+<meta name="description" content="A soft or spongy subfloor is a structural problem, not a flooring problem. The location and pattern of softness points to the cause: plumbing leak, crawlspace moisture, joist failure, or insect damage. Here's how to find it.">
+<link rel="canonical" href="https://homeownersrepairguide.com/foundation-subfloor-soft.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/foundation-subfloor-soft.html">
+<meta property="og:title" content="Why Your Subfloor Feels Soft | HomeownersRepairGuide.com">
+<meta property="og:description" content="Soft subfloor = compromised structural capacity, not carpet padding. Localized near a fixture = plumbing leak. Room-wide spongy = crawlspace moisture. Bouncy without softness = joist problem. Here's the diagnostic.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --foundation:#6b5a3e;--foundation-dark:#4a3d2a;--foundation-light:#f5f0e8;
+  --slate:#5a6b7a;--slate-dark:#3a4a55;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--foundation);color:var(--white);}
+.tag.urgent{background:#7a1010;color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--foundation);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--foundation);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+.article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+.safety-box{background:#7a1010;border-radius:var(--radius-lg);padding:18px 22px;margin:0 0 28px;}
+.safety-box h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.safety-box p{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.55;}
+.quick-summary{background:var(--foundation);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* Pattern decoder */
+.pattern-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0;}
+.pc{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;box-shadow:var(--shadow-card);}
+.pc.localized{border-top:3px solid #5a3a7a;}
+.pc.roomwide{border-top:3px solid var(--foundation);}
+.pc.bouncy{border-top:3px solid var(--slate);}
+.pc.worsen{border-top:3px solid #c0392b;}
+.pc-type{font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:4px;}
+.pc.localized .pc-type{color:#5a3a7a;}
+.pc.roomwide .pc-type{color:var(--foundation-dark);}
+.pc.bouncy .pc-type{color:var(--slate-dark);}
+.pc.worsen .pc-type{color:#c0392b;}
+.pc-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.pc-cause{font-size:12px;color:var(--text-muted);line-height:1.45;}
+/* Cause cards */
+.cause-list{display:flex;flex-direction:column;gap:11px;margin:24px 0;}
+.cause-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:15px 18px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.cause-card.plumbing{border-left:4px solid #5a3a7a;}
+.cause-card.crawlspace{border-left:4px solid var(--foundation);}
+.cause-card.joist{border-left:4px solid var(--slate);}
+.cause-card.pest{border-left:4px solid #c0392b;}
+.cause-card.roof{border-left:4px solid var(--rust);}
+.cause-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gray-light);width:28px;flex-shrink:0;line-height:1.2;margin-top:1px;}
+.cause-body{flex:1;}
+.cause-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.cause-desc{font-size:13px;color:var(--text-body);line-height:1.55;margin-bottom:5px;}
+.cause-tell{font-size:12px;color:var(--text-muted);font-style:italic;}
+.cause-badge{font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:2px;flex-shrink:0;margin-top:3px;}
+.cause-card.plumbing .cause-badge{background:#f4eef8;color:#5a3a7a;}
+.cause-card.crawlspace .cause-badge{background:var(--foundation-light);color:var(--foundation-dark);}
+.cause-card.joist .cause-badge{background:#eef2f5;color:var(--slate-dark);}
+.cause-card.pest .cause-badge{background:#fef2f0;color:#c0402a;}
+.cause-card.roof .cause-badge{background:#fff3ec;color:#c05020;}
+/* Water meter callout */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-box.alert{background:#fef2f0;border:1px solid #e08080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-box.alert .callout-label{color:#c0402a;}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Not subfloor table */
+.diag-table{width:100%;border-collapse:collapse;margin:24px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.diag-table th{background:var(--foundation);color:var(--white);font-size:13px;font-weight:600;padding:11px 14px;text-align:left;}
+.diag-table td{font-size:13px;padding:11px 14px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+.diag-table tr:last-child td{border-bottom:none;}
+.diag-table tr:nth-child(even) td{background:var(--cream);}
+.diag-table td:first-child{font-weight:600;color:var(--text-dark);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--foundation);}.sev-item.mod .sev-label{color:var(--foundation-dark);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:#c0392b;}.sev-item.crit .sev-label{color:#c0392b;}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid #c0392b;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}
+.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--foundation);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--foundation);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--foundation);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--foundation);color:var(--white);border-color:var(--foundation);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--foundation);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--foundation);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--foundation);background:var(--foundation-light);font-weight:600;}
+.toc-list li.active a::before{background:var(--foundation);width:6px;height:6px;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--foundation);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--foundation);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--foundation);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.pattern-grid{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html" class="active">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-foundation.html">Foundation</a>
+    <span class="sep">&#8250;</span>
+    <a href="foundation-settlement-movement.html">Settlement &amp; Movement</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Subfloor Feels Soft</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Settlement &amp; Movement</span>
+    <span class="tag urgent">&#9888; Structural Warning Sign</span>
+  </div>
+
+  <h1 class="article-title">Why Your Subfloor Feels Soft</h1>
+  <p class="article-subtitle">A soft or spongy floor is a structural problem that lives below your finish flooring. OSB and plywood subfloor panels lose stiffness when moisture degrades their fibers &#8212; and once stiffness is lost, the panel can no longer distribute weight to the joists the way it was designed to. The location and pattern of the softness tells you the source before you pull up a single board.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">C.M.</div>
+    <div class="byline-info">
+      <div class="byline-name">C.M. &#8212; Foundation &amp; Structural Specialist</div>
+      <div class="byline-cred">30+ Years Foundation &amp; Structural Repair &middot; Pier Systems &middot; Retaining Walls &middot; Construction Consulting &middot; Nevada</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="safety-box">
+      <h3>&#9888;&#65039; Severely Soft, Visibly Sagging, or Any Floor Area That Flexes Significantly Under Load &#8212; Restrict Access</h3>
+      <p>A subfloor that has lost significant stiffness can fail suddenly under a concentrated load &#8212; a person stepping in the wrong spot, appliance placement, or furniture weight. If any area feels substantially soft, visibly deflects, or shows signs of surface collapse, restrict access to that section of floor and contact a licensed contractor for structural evaluation before the area is used again.</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Soft spot near toilet, tub, or dishwasher:</strong> plumbing leak saturating the subfloor at that fixture &#8212; find and stop the leak before any floor repair</li>
+        <li><strong>Soft or spongy across a whole room or large area:</strong> crawlspace or basement moisture degrading the subfloor from below &#8212; address the moisture source, not just the panel</li>
+        <li><strong>Bouncy or springy but not soft or deteriorated:</strong> joist problem, not subfloor &#8212; see the sagging floors article</li>
+        <li><strong>Soft area worsens after showers or rain:</strong> active moisture intrusion still occurring &#8212; do not cover with new flooring until source is corrected</li>
+        <li>Covering soft subfloor with new finish flooring without fixing the moisture source guarantees the same problem reappears under the new floor</li>
+      </ul>
+    </div>
+
+    <h2 id="pattern-decoder">Pattern Decoder: What Type of Softness Is It?</h2>
+    <p>The first diagnostic step is understanding what "soft" actually means in your case &#8212; each type points to a different cause and a different fix.</p>
+
+    <div class="pattern-grid">
+      <div class="pc localized">
+        <div class="pc-type">&#128270; Localized &#8212; One Soft Spot</div>
+        <div class="pc-title">Plumbing leak or isolated moisture event</div>
+        <div class="pc-cause">Softness confined to a specific area near a plumbing fixture, appliance connection, or known water event. The surrounding subfloor is firm. This is the most common type and the most actionable: find the leak, stop it, then assess the extent of subfloor damage before deciding on repair vs. replacement.</div>
+      </div>
+      <div class="pc roomwide">
+        <div class="pc-type">&#127764; Room-Wide &#8212; Large Area Soft</div>
+        <div class="pc-title">Crawlspace or basement moisture degrading from below</div>
+        <div class="pc-cause">Broad softness across a whole room or section of floor without a clear localized source. Typically from sustained high humidity in a crawlspace or basement migrating upward through the subfloor over years. Also common in slab-on-grade homes where a moisture barrier failure allows vapor to rise. Usually gradual onset.</div>
+      </div>
+      <div class="pc bouncy">
+        <div class="pc-type">&#128200; Bouncy / Springy &#8212; Not Soft</div>
+        <div class="pc-title">Joist deflection &#8212; not a subfloor problem</div>
+        <div class="pc-cause">If the floor feels springy or bouncy underfoot but the subfloor material is firm (not spongy), the subfloor itself may be intact and the joists below are the issue — overspanned, undersized, or with reduced stiffness. This is a joist problem requiring a different diagnosis. See the floors sagging article.</div>
+      </div>
+      <div class="pc worsen">
+        <div class="pc-type">&#9650; Gets Worse After Moisture Events</div>
+        <div class="pc-title">Active intrusion — source still present</div>
+        <div class="pc-cause">Softness that increases noticeably after showers, dishwasher use, heavy rain, or seasonal wet periods confirms an active moisture source. The subfloor is being re-wetted continuously. Covering with new flooring without stopping the source guarantees a repeat failure, often within 1–2 years of the renovation.</div>
+      </div>
+    </div>
+
+    <h2 id="causes">5 Causes of Soft Subfloor</h2>
+
+    <div class="cause-list">
+
+      <div class="cause-card plumbing">
+        <div class="cause-num">01</div>
+        <div class="cause-body">
+          <div class="cause-title">Plumbing Leak at a Fixture &#8212; Most Common</div>
+          <div class="cause-desc">The most frequent cause of localized subfloor softness is a slow plumbing leak that has been saturating the subfloor panel from above for months or years. Toilet flange leaks, wax ring failures, supply line pin-hole leaks, drain pipe joint failures, and tub surround water intrusion are the most common sources. OSB subfloor absorbs water aggressively, swelling at panel edges and losing fiber integrity as the wood structure breaks down. The visible sign is often a soft, slightly spongy area directly around the fixture &#8212; but the actual damage zone beneath the flooring is typically larger than what can be felt through carpet or LVP.</div>
+          <div class="cause-tell">Clue: soft spot near a toilet, tub, dishwasher, or refrigerator water line; water staining on subfloor or ceiling below if accessible; soft area appeared after a known water event; water meter moves with all fixtures off.</div>
+        </div>
+        <span class="cause-badge">Most Common</span>
+      </div>
+
+      <div class="cause-card crawlspace">
+        <div class="cause-num">02</div>
+        <div class="cause-body">
+          <div class="cause-title">Crawlspace or Basement Moisture Degrading From Below</div>
+          <div class="cause-desc">In homes with crawlspaces or basements, sustained high relative humidity below the subfloor causes the OSB or plywood panels to absorb moisture from their underside. Over years, panel edges swell, wood fibers degrade, and the panel stiffness drops below the threshold needed to distribute floor loads. This type of softness is typically broader than a plumbing leak &#8212; affecting large areas rather than single fixture locations &#8212; and is often accompanied by a musty odor at floor level, visible mold on the underside of subfloor panels (visible from the crawlspace), and high humidity readings in the crawlspace. It is almost always compounded by absent or damaged vapor barriers and inadequate crawlspace ventilation or encapsulation.</div>
+          <div class="cause-tell">Clue: broad area of softness not near a plumbing fixture; musty odor at floor level throughout the area; crawlspace inspection shows high humidity, condensation, or visible mold on framing; vapor barrier absent or damaged in crawlspace.</div>
+        </div>
+        <span class="cause-badge">Crawlspace Issue</span>
+      </div>
+
+      <div class="cause-card joist">
+        <div class="cause-num">03</div>
+        <div class="cause-body">
+          <div class="cause-title">Joist End Rot or Moisture Damage Below the Subfloor</div>
+          <div class="cause-desc">When joist ends rot at the sill plate due to crawlspace moisture, the subfloor panels above lose their bearing points and deflect. This can produce localized softness near exterior walls (directly above the sill plate and rim joist) where the joist has lost its bearing. The subfloor panel itself may still be structurally intact; the soft feeling comes from the panel deflecting because the joist no longer supports it at its end. This distinction matters for repair: the fix is the joist and its bearing, not necessarily the subfloor panel. Probe joist ends from the crawlspace to confirm the cause before opening the floor.</div>
+          <div class="cause-tell">Clue: softness concentrated near exterior walls rather than near plumbing fixtures; crawlspace inspection shows rot or compression at joist ends and sill plate; probe test from crawlspace confirms soft joist ends; subfloor panel may appear intact from above.</div>
+        </div>
+        <span class="cause-badge">Check from Below</span>
+      </div>
+
+      <div class="cause-card pest">
+        <div class="cause-num">04</div>
+        <div class="cause-body">
+          <div class="cause-title">Termite or Carpenter Ant Damage</div>
+          <div class="cause-desc">Subterranean termites and carpenter ants can hollow out subfloor panels and the joists below them while leaving surface appearances largely intact. A soft spot with no visible moisture source, especially in a home in a termite-active region, should include a pest inspection. Termite damage produces a honeycomb pattern inside the wood &#8212; the outer wood surface remains, but the interior has been consumed. Pressing on a termite-damaged panel may produce a crackling or crunching sound. Carpenter ant damage is similar: galleries excavated inside the wood fiber, concentrated in areas where moisture is or was elevated (since they prefer damp wood).</div>
+          <div class="cause-tell">Clue: soft spot without identifiable moisture source; home in termite-active region; mud tubes visible in crawlspace on foundation or joists; subfloor surface dimples or sounds hollow when tapped; sawdust-like frass near or below the affected area.</div>
+        </div>
+        <span class="cause-badge">Pest Inspection First</span>
+      </div>
+
+      <div class="cause-card roof">
+        <div class="cause-num">05</div>
+        <div class="cause-body">
+          <div class="cause-title">Water Migrating From Roof or Wall Leaks</div>
+          <div class="cause-desc">Roof leaks, exterior wall leaks, or window flashing failures can migrate significant distances from their entry point before reaching the floor system. Water that enters at the roof or wall can travel along framing members, accumulate in wall cavities, and eventually saturate subfloor panels at the base of walls &#8212; far from any plumbing fixture that would otherwise be the first diagnostic suspect. This type is often misdiagnosed as a plumbing issue until the actual entry point is traced. Look for water staining on ceilings and walls in the area above the soft spot as a clue that the moisture origin is above, not at the same level.</div>
+          <div class="cause-tell">Clue: softness near a wall, especially at an exterior wall; water staining visible on ceilings or walls above the area; soft floor appeared after a heavy rain period or after a roof or siding issue was identified; no plumbing fixtures nearby.</div>
+        </div>
+        <span class="cause-badge">Trace the Source</span>
+      </div>
+
+    </div>
+
+    <div class="callout-box tip">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">Do the Water Meter Test Before Any Subfloor Investigation</div>
+        <div class="callout-text">If the soft spot is near any plumbing fixture or appliance, do this first: turn off every water fixture in the house, then watch the water meter for 15&#8211;30 minutes without using any water. If the meter moves, you have an active leak somewhere in the supply system. A moving meter with all fixtures off confirms a supply leak is present — it doesn't tell you where, but it changes the diagnostic priority to finding the leak before doing anything else. A dry meter doesn't rule out a drain leak (drain leaks only occur during water use) or a past moisture event, but it removes ongoing supply leak from the differential.</div>
+      </div>
+    </div>
+
+    <h2 id="not-subfloor">When Soft-Feeling Floor Is Not Actually a Subfloor Problem</h2>
+
+    <table class="diag-table">
+      <thead>
+        <tr><th>What You Feel</th><th>Likely Actual Cause</th><th>How to Distinguish</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Soft, cushiony feel under carpet throughout a room</td><td>Carpet padding compression or thick underlayment, not subfloor damage</td><td>Pull back a corner of carpet. If the subfloor panel beneath is firm and dry when you press it directly: it's the padding, not the structural layer.</td></tr>
+        <tr><td>Bouncy spring underfoot throughout a room</td><td>Joist deflection (overspan or undersized), not subfloor degradation</td><td>If the floor springs back uniformly and the panel doesn't feel soggy or deteriorated, the subfloor may be intact — see the floors sagging article for joist diagnosis.</td></tr>
+        <tr><td>Isolated soft spot under floating LVP or laminate</td><td>High spot on subfloor panel causing floating floor to flex at that point</td><td>Remove a few planks. If the subfloor beneath is solid but has a minor high spot or panel edge ridge, the float-floor is bridging it and feels spongy at that point. Subfloor may be fine.</td></tr>
+        <tr><td>Soft area near exterior door threshold</td><td>Often door sill or subfloor rot from weathering, not crawlspace or leak issue</td><td>Check from outside if accessible; door sill rot is a separate repair from subfloor panel replacement but shares similar signs.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box alert">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Never Install New Flooring Over a Soft Subfloor Without Fixing the Moisture Source</div>
+        <div class="callout-text">The single most common costly mistake in bathroom and kitchen renovations is installing new tile, LVP, or hardwood over a soft subfloor area without addressing the moisture source. Even if the contractor replaces the damaged subfloor panel, if the leak or humidity source hasn't been corrected, the new panel will absorb moisture and deteriorate at the same rate as the original. New tile over a compromised subfloor fails at the grout joints within 12&#8211;24 months. New LVP develops soft spots and seam separation. Addressing the structural layer is half the job — fixing the water source is the other half. Both must happen before new finish flooring is installed.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Minor softness, no visible sagging, dry conditions. Identify moisture source; monitor.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Noticeable deflection, localized damage, odor present. Fix moisture source; evaluate extent of panel damage.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">High</div></div>
+        <div class="sev-desc">Significant softness, cracking tile, musty odor, mold signs. Professional repair needed; stop moisture first.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Floor flexes substantially, visible sag or collapse risk. Restrict access immediately; structural evaluation.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">C.M.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The bathroom floor renovation is where I most often see this problem, and the pattern is almost always the same: soft spot near the toilet that the homeowner attributed to the flooring being old and worn out. They had a contractor lay new tile over it without pulling up the old floor to check. Two years later the grout cracks, the tile cracks, and they call me. When we pull it up, the OSB underneath looks like wet cardboard, the subfloor panel is completely gone structurally, and sometimes the joist end underneath is showing early rot because the moisture has been wicking into the framing. The wax ring on that toilet has been seeping for years. This repair is now a thousand dollars more than it would have been if someone had pulled up the floor the first time and found the leak. The rule is simple: any soft spot near a plumbing fixture &#8212; you pull up the flooring, you find the source, you fix it, you replace the subfloor panel if needed, and then you put down new flooring. In that order. Every time."</div>
+        <div class="expert-attr">&#8212; C.M., Foundation &amp; Structural Specialist &middot; 30+ Years &middot; Construction Consulting</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Do vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible</div>
+        <ul class="diy-items safe-list">
+          <li>Map soft spots by walking the area — note location relative to plumbing fixtures</li>
+          <li>Do the water meter test to check for active supply leak</li>
+          <li>Pull back carpet or a few LVP planks to inspect the subfloor panel directly</li>
+          <li>Inspect crawlspace for humidity, vapor barrier condition, and mold on framing underside</li>
+          <li>Note whether softness worsens after water use events or rain</li>
+          <li>Restrict traffic on severely soft areas</li>
+          <li>Check ceiling and walls above for water staining if plumbing fixtures aren't nearby</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Required</div>
+        <ul class="diy-items stop-list">
+          <li>Any subfloor that flexes significantly under load — structural evaluation first</li>
+          <li>Subfloor panel replacement (requires proper shoring and joist access)</li>
+          <li>Joist repair or sistering if joists are compromised below</li>
+          <li>Crawlspace vapor barrier installation or encapsulation</li>
+          <li>Mold remediation if mold is confirmed on framing</li>
+          <li>Pest treatment if termites or carpenter ants are confirmed</li>
+          <li>Any plumbing repair causing the leak (licensed plumber)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How do I know if the subfloor damage is bad enough to require replacement or can just be dried out?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">The key distinction is whether the wood fiber structure of the panel has been compromised or just temporarily wetted. OSB and plywood that have been wet and dried before significant fiber breakdown can be structurally serviceable once fully dried — but panels that have been wet long enough to show delamination, edge swelling, soft spots, or visible surface breakdown have lost structural capacity that cannot be recovered through drying. A simple field test: press firmly with your thumb at the softest point. If the panel surface dents or feels noticeably compressible relative to the surrounding area, the fibers have broken down and the panel needs replacement. A panel that is uniformly firm and stiff even if damp may dry without replacement. Also look for any visible mold growth on the subfloor surface &#8212; if present, the panel should be replaced regardless of current stiffness, because mold remediation on a subfloor panel in place is not fully effective and the risk of spore migration into the floor system is not worth preserving the panel.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">We just had new LVP installed and now there's a soft spot where there wasn't one before. What happened?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Several possibilities. First: the soft spot may have been there before the installation and was masked by the previous flooring material — carpet with padding in particular can make small soft spots nearly imperceptible until a rigid LVP system is installed directly over them. Second: the installation process may have introduced moisture — some LVP installation practices involve wet cleaning the subfloor surface, and if moisture was introduced to an area with an existing vulnerability, it can accelerate a pre-existing condition. Third: the new LVP may be "bridging" a subfloor irregularity (a high spot or panel edge) and the soft feel is the LVP flex, not the subfloor. Contact the installing contractor and request that they evaluate the subfloor at the soft location before proceeding further — they have a responsibility to have inspected subfloor condition before installation.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My bathroom subfloor near the toilet is soft but the toilet appears to be functioning fine. Is it the toilet?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A functional toilet can still have a slow wax ring leak that saturates the subfloor without producing obvious symptoms at the toilet itself. Wax ring leaks typically produce seepage at the base of the toilet at the floor level — but this seepage often occurs below the flooring and never becomes visible on the surface. The leak may only appear as a soft spot in the subfloor material, which can develop over 6 months to several years of slow seepage before the subfloor becomes noticeably soft. A toilet that "rocks" or has visible movement when sat upon almost always has a compromised wax ring. Even a toilet that feels stable can have a slow wax ring leak. The most definitive test is to remove the toilet, inspect the flange and surrounding subfloor directly, and replace the wax ring whether or not you see active seepage &#8212; at that point it's cheap insurance.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>A soft subfloor is a structural problem: OSB and plywood lose stiffness when moisture degrades their wood fiber, and a panel that has lost stiffness can no longer distribute loads to joists as designed.</li>
+        <li>Pattern identifies cause: localized near fixture = plumbing leak; room-wide = crawlspace moisture; bouncy but firm = joist problem (not subfloor); worsens after water use = active source still present.</li>
+        <li>Do the water meter test first if near any plumbing. All fixtures off — meter should be motionless. Movement = active supply leak somewhere in the system.</li>
+        <li>Never install new finish flooring over a soft subfloor without fixing the moisture source. The new flooring will fail at the same rate as the original once moisture continues to enter.</li>
+        <li>A soft spot near a toilet that appears to flush normally may be a slow wax ring leak that has been seeping for years below the floor surface. Remove and inspect the toilet flange before assuming the source is elsewhere.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">subfloor feels soft</a>
+      <a href="#" class="tag-pill">spongy floor cause</a>
+      <a href="#" class="tag-pill">soft floor near toilet</a>
+      <a href="#" class="tag-pill">soft subfloor moisture damage</a>
+      <a href="#" class="tag-pill">OSB subfloor wet damage</a>
+      <a href="#" class="tag-pill">bathroom subfloor rot</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Foundation Guides</h3>
+    <div class="related-list">
+      <a href="foundation-floors-sagging.html" class="related-item">
+        <div><div class="related-item-title">Why Your Floors Are Sagging</div><div class="related-item-meta">C.M. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="foundation-crawlspace-damp.html" class="related-item">
+        <div><div class="related-item-title">Why Your Crawlspace Is Always Damp</div><div class="related-item-meta">C.M. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="foundation-basement-floor-wet.html" class="related-item">
+        <div><div class="related-item-title">Why Your Basement Floor Is Wet</div><div class="related-item-meta">C.M. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#pattern-decoder">Pattern Decoder</a></li>
+      <li><a href="#causes">5 Causes</a></li>
+      <li><a href="#not-subfloor">When It's Not the Subfloor</a></li>
+      <li><a href="#severity">Severity</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">C.M.</div>
+      <div>
+        <div class="s-name">C.M.</div>
+        <div class="s-title">Foundation &amp; Structural Specialist</div>
+        <div class="s-bio">30+ years in excavation, foundation systems, and structural repair. Certified in pier systems, foundation repair methods, and retaining wall systems. Runs a construction consulting firm handling complex structural cases in Nevada.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>Foundation maintenance guides and seasonal inspection reminders from our structural specialist.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>
