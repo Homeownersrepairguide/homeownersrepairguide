@@ -8,7 +8,9 @@
       "Bash(xargs sed:*)",
       "Bash(git -C \"C:/Users/andre/OneDrive/Documents/GitHub/homeownersrepairguide\" add -A)",
       "Bash(git -C \"C:/Users/andre/OneDrive/Documents/GitHub/homeownersrepairguide\" commit -m \"fix newsletter nav button\")",
-      "Bash(git -C \"C:/Users/andre/OneDrive/Documents/GitHub/homeownersrepairguide\" push origin main)"
+      "Bash(git -C \"C:/Users/andre/OneDrive/Documents/GitHub/homeownersrepairguide\" push origin main)",
+      "Bash(git -C \"C:/Users/andre/OneDrive/Documents/GitHub/homeownersrepairguide\" log --oneline -3)",
+      "Bash(git -C \"C:/Users/andre/OneDrive/Documents/GitHub/homeownersrepairguide\" status --short)"
     ]
   }
 }
