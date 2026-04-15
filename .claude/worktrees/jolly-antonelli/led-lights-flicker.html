@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your LED Lights Flicker | HomeownersRepairGuide.com</title>
+<meta name="description" content="LED flicker is almost never random — it's a real electrical signal. Incompatible dimmer, loose wiring, voltage sag, or a failing driver each produce distinct patterns. Here's how to tell them apart in minutes.">
+<link rel="canonical" href="https://homeownersrepairguide.com/led-lights-flicker.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/led-lights-flicker.html">
+<meta property="og:title" content="Why Your LED Lights Flicker | HomeownersRepairGuide.com">
+<meta property="og:description" content="LED flicker is a real electrical signal, not a quirk. Here's how to diagnose whether it's a dimmer, loose wiring, voltage sag, or a failing driver.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --electrical:#b08a00;--electrical-dark:#7a5f00;--electrical-light:#fdf6e3;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}
+.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--electrical);color:var(--white);}
+.tag.warning{background:#7a5a00;color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--electrical);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+.article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+.quick-summary{background:var(--electrical);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* Safety box */
+.safety-box{background:#7a1010;border-radius:var(--radius-lg);padding:18px 22px;margin:0 0 28px;}
+.safety-box h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.safety-box p{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.55;}
+/* LED vs incandescent explainer */
+.led-explainer{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:24px 0;}
+.led-explainer h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--amber);margin-bottom:14px;}
+.led-compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.lc-card{background:rgba(255,255,255,0.07);border-radius:var(--radius);padding:14px 16px;}
+.lc-type{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:6px;}
+.lc-card.incan .lc-type{color:#e8c060;}
+.lc-card.led .lc-type{color:var(--amber);}
+.lc-title{font-size:13px;font-weight:700;color:rgba(255,255,255,0.9);margin-bottom:5px;}
+.lc-desc{font-size:12px;color:rgba(255,255,255,0.65);line-height:1.5;}
+/* Scope finder */
+.scope-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:24px 0;}
+.scope-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;box-shadow:var(--shadow-card);text-align:center;}
+.scope-card.single{border-top:3px solid #3a6b3a;}
+.scope-card.oneroom{border-top:3px solid var(--electrical);}
+.scope-card.multiroom{border-top:3px solid #c0392b;}
+.sc-scope{font-size:18px;margin-bottom:6px;}
+.sc-label{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.sc-cause{font-size:12px;color:var(--text-muted);line-height:1.4;}
+/* Cause cards */
+.cause-list{display:flex;flex-direction:column;gap:14px;margin:24px 0;}
+.cause-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:18px 20px;box-shadow:var(--shadow-card);}
+.cause-card.c1{border-left:4px solid var(--electrical);}
+.cause-card.c2{border-left:4px solid #c0392b;}
+.cause-card.c3{border-left:4px solid #5a3a7a;}
+.cause-card.c4{border-left:4px solid #3a6b3a;}
+.cause-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:8px;gap:12px;}
+.cause-title{font-size:15px;font-weight:700;color:var(--navy);}
+.cause-badge{font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:2px;flex-shrink:0;}
+.cause-card.c1 .cause-badge{background:var(--electrical-light);color:var(--electrical-dark);}
+.cause-card.c2 .cause-badge{background:#fef2f0;color:#c0402a;}
+.cause-card.c3 .cause-badge{background:#f4eef8;color:#5a3a7a;}
+.cause-card.c4 .cause-badge{background:#eaf5ea;color:#2a7a2a;}
+.cause-symptoms{font-size:13px;color:var(--text-body);line-height:1.55;margin-bottom:8px;}
+.cause-fix{background:var(--cream-dark);border-radius:var(--radius);padding:10px 13px;font-size:13px;color:var(--text-dark);line-height:1.5;}
+.cause-fix strong{color:var(--electrical-dark);}
+/* Diagnostic steps */
+.diag-steps{display:flex;flex-direction:column;gap:10px;margin:24px 0;}
+.diag-step{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--electrical);color:var(--white);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step-body{flex:1;}
+.step-action{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.step-detail{font-size:13px;color:var(--text-muted);line-height:1.5;}
+.step-result{display:flex;gap:10px;margin-top:8px;flex-wrap:wrap;}
+.step-if{font-size:12px;padding:4px 10px;border-radius:2px;line-height:1.4;}
+.step-if.yes{background:#eaf5ea;color:#2a7a2a;}
+.step-if.no{background:#fef2f0;color:#c0402a;}
+/* Dimmer compat table */
+.diag-table{width:100%;border-collapse:collapse;margin:24px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.diag-table th{background:var(--electrical);color:var(--white);font-size:13px;font-weight:600;padding:11px 14px;text-align:left;}
+.diag-table td{font-size:13px;padding:11px 14px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+.diag-table tr:last-child td{border-bottom:none;}
+.diag-table tr:nth-child(even) td{background:var(--cream);}
+.diag-table td:first-child{font-weight:600;color:var(--text-dark);}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}
+.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* Callout */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--electrical);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--electrical);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--electrical);color:var(--white);border-color:var(--electrical);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}
+.share-x{background:#000;color:white;}
+.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--electrical);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--electrical);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--electrical);background:var(--electrical-light);font-weight:600;}
+.toc-list li.active a::before{background:var(--electrical);width:6px;height:6px;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--electrical);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--electrical);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.scope-cards{grid-template-columns:1fr;}.led-compare{grid-template-columns:1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical</a>
+    <span class="sep">&#8250;</span>
+    <a href="electrical-lighting.html">Lighting &amp; Fixtures</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your LED Lights Flicker</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Lighting &amp; Fixtures</span>
+    <span class="tag warning">&#9889; Wiring Signal</span>
+  </div>
+
+  <h1 class="article-title">Why Your LED Lights Flicker</h1>
+  <p class="article-subtitle">LED flicker is almost never random. Because LEDs react to power changes in milliseconds &#8212; where incandescent bulbs would mask the same variation &#8212; flicker is a real electrical signal. An incompatible dimmer, a loose wiring connection, voltage sag from large appliances, or a failing LED driver each produce distinct patterns. Here's how to tell them apart in minutes.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Licensed Electrician &amp; Fire Investigator</div>
+      <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Licensed Electrician</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="safety-box">
+      <h3>&#9888;&#65039; Flicker from a Warm or Buzzing Switch Is a Fire Warning</h3>
+      <p>If flickering is accompanied by a warm switch plate, a buzzing or crackling sound from the switch or fixture, or a burning smell anywhere in the circuit &#8212; stop using that switch and call a licensed electrician. These symptoms indicate arcing at a loose connection, which can ignite surrounding wall materials. The flicker itself is the warning signal &#8212; do not ignore it.</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>&#9889; Quick Summary</h3>
+      <ul>
+        <li><strong>One bulb flickers, others don't</strong> &#8212; failing LED driver in that bulb; swap the bulb to confirm</li>
+        <li><strong>Flicker only when dimmed</strong> &#8212; incompatible dimmer; replace with an LED-rated model (most common cause overall)</li>
+        <li><strong>Flicker when a large appliance starts</strong> &#8212; voltage sag; may indicate a neutral issue if it affects multiple rooms</li>
+        <li><strong>Flicker changes when you tap the switch or fixture</strong> &#8212; loose wiring; this is a fire hazard requiring professional repair</li>
+        <li><strong>Entire home flickers briefly</strong> &#8212; utility-side voltage fluctuation or a weak main neutral; call an electrician</li>
+      </ul>
+    </div>
+
+    <h2 id="why-leds-flicker">Why LEDs Show Flicker That Incandescent Bulbs Would Hide</h2>
+    <p>This is the key insight behind LED flicker diagnosis: LEDs aren't flickering <em>more</em> than incandescent bulbs would &#8212; they're revealing electrical conditions that incandescent bulbs masked.</p>
+
+    <div class="led-explainer">
+      <h3>&#128161; LEDs vs. Incandescent: Why the Same Fault Looks Different</h3>
+      <div class="led-compare">
+        <div class="lc-card incan">
+          <div class="lc-type">&#128294; Incandescent Bulb</div>
+          <div class="lc-title">Thermal inertia masks fluctuations</div>
+          <div class="lc-desc">A heated filament cools slowly &#8212; it takes 50&#8211;100 milliseconds to dim noticeably. Brief power interruptions, voltage dips, and waveform irregularities pass through without visible effect. The bulb acts as a buffer.</div>
+        </div>
+        <div class="lc-card led">
+          <div class="lc-type">&#9889; LED Bulb</div>
+          <div class="lc-title">Electronic driver reacts instantly</div>
+          <div class="lc-desc">An LED driver converts AC power to regulated DC for the LED chips. It has no thermal inertia &#8212; any power fluctuation, waveform mismatch, or voltage dip appears as visible flicker within milliseconds. LEDs reveal what incandescents hid.</div>
+        </div>
+      </div>
+    </div>
+
+    <p>This means that LED flicker you're seeing today may reflect an electrical condition that existed for years &#8212; it just wasn't visible when you had incandescent bulbs. It also means flicker is a useful diagnostic tool: the pattern and scope of the flicker points directly at the cause.</p>
+
+    <h2 id="scope">Step 1: Identify the Scope</h2>
+    <p>Before anything else, identify how many lights are affected. The scope of the flicker is the fastest path to the correct diagnosis.</p>
+
+    <div class="scope-cards">
+      <div class="scope-card single">
+        <div class="sc-scope">&#128161;</div>
+        <div class="sc-label">Single Bulb</div>
+        <div class="sc-cause">Failing LED driver in that specific bulb or fixture. Move the bulb to another socket &#8212; if flicker follows it, the bulb is defective.</div>
+      </div>
+      <div class="scope-card oneroom">
+        <div class="sc-scope">&#127968;</div>
+        <div class="sc-label">One Room or Circuit</div>
+        <div class="sc-cause">Dimmer incompatibility, loose switch connection, or a wiring fault on that circuit. Start with the dimmer.</div>
+      </div>
+      <div class="scope-card multiroom">
+        <div class="sc-scope">&#127968;&#127968;</div>
+        <div class="sc-label">Multiple Rooms</div>
+        <div class="sc-cause">Voltage sag from a large appliance startup, or a weak neutral connection. If it's whole-home, call an electrician.</div>
+      </div>
+    </div>
+
+    <h2 id="causes">The 4 Causes of LED Flicker</h2>
+
+    <div class="cause-list">
+
+      <div class="cause-card c1">
+        <div class="cause-header">
+          <div class="cause-title">1. Incompatible or Failing Dimmer</div>
+          <span class="cause-badge">Most Common</span>
+        </div>
+        <div class="cause-symptoms">Dimmers designed for incandescent bulbs use a leading-edge phase-cut waveform that works with resistive loads. LED drivers are electronic loads that require a trailing-edge or universal dimmer to operate stably. When paired with the wrong dimmer, LEDs flicker &#8212; especially at low brightness settings where the waveform mismatch is most pronounced. The problem worsens because older dimmers require a minimum load (often 40&#8211;60 watts) to regulate properly; most LED bulbs draw 8&#8211;12 watts, leaving the dimmer in an unstable low-load condition all the time.
+        <br><br>
+        Signs: flicker worsens at lower brightness levels; dimmer buzzes; different LED brands behave differently on the same dimmer; flicker stops completely when the dimmer is bypassed and the light is switched on/off normally.</div>
+        <div class="cause-fix"><strong>Fix:</strong> Replace the dimmer with an LED-compatible model. Look for dimmers labeled for LED/CFL use or with a trailing-edge option. Check the dimmer's minimum load rating and match it to your total LED wattage. Confirm the specific LED brand and dimmer combination are listed as compatible &#8212; most major dimmer manufacturers publish compatibility lists.</div>
+      </div>
+
+      <div class="cause-card c2">
+        <div class="cause-header">
+          <div class="cause-title">2. Loose Wiring or Weak Connections</div>
+          <span class="cause-badge">Fire Hazard</span>
+        </div>
+        <div class="cause-symptoms">A loose wirenut splice, a back-stabbed switch terminal that's lost tension, a corroded fixture socket, or a weakening screw terminal creates micro-interruptions in current flow. These interruptions are too brief for incandescent bulbs to show but are immediately visible in LED flicker. The characteristic tell: the flicker <em>changes</em> when you tap, push, or wiggle the switch plate or fixture housing &#8212; physically disturbing the loose connection momentarily changes the contact.
+        <br><br>
+        Signs: flicker changes when switch is tapped or fixture is touched; warm or discolored switch plate; occasional brief complete outage; flicker is inconsistent and not tied to a dimmer or appliance cycle.</div>
+        <div class="cause-fix"><strong>Fix:</strong> This requires a licensed electrician. Do not open the switch box or fixture and attempt to tighten wires yourself unless you are qualified &#8212; loose wiring that has been arcing may have damaged surrounding insulation and requires professional assessment before re-energizing.</div>
+      </div>
+
+      <div class="cause-card c3">
+        <div class="cause-header">
+          <div class="cause-title">3. Voltage Sag from Large Appliances</div>
+          <span class="cause-badge">Investigate</span>
+        </div>
+        <div class="cause-symptoms">HVAC blowers, refrigerators, well pumps, and dishwashers draw 3&#8211;8x their operating current during startup. This inrush momentarily drops system voltage &#8212; and LED drivers respond immediately. Single-room flicker tied to an appliance startup is usually a normal load condition on a circuit that doesn't have enough headroom. Multi-room flicker on the same appliance startup suggests a more systemic issue: a weak neutral connection, panel imbalance, or a utility-side issue.
+        <br><br>
+        Signs: flicker occurs at a predictable moment tied to an appliance cycle; affects multiple lights or multiple rooms simultaneously; brightness briefly dips then recovers; gets worse in summer when AC loads are highest.</div>
+        <div class="cause-fix"><strong>Fix:</strong> Single-room: redistribute loads or add a dedicated circuit for the high-draw appliance. Multi-room: have an electrician evaluate panel load balance and test neutral integrity. A weakened neutral can cause uneven voltage distribution across circuits and damage sensitive electronics over time.</div>
+      </div>
+
+      <div class="cause-card c4">
+        <div class="cause-header">
+          <div class="cause-title">4. Failing LED Driver</div>
+          <span class="cause-badge">Replace Bulb/Fixture</span>
+        </div>
+        <div class="cause-symptoms">The LED driver converts AC line power to stable low-voltage DC for the LED chips. As drivers age &#8212; accelerated by heat, high ambient temperatures, and budget-grade components &#8212; their electrolytic capacitors degrade. Early failure shows as flicker during warm-up or at startup. Advanced failure produces random pulsing or intermittent dimming at full brightness, with no dimmer or wiring involvement.
+        <br><br>
+        Signs: flicker on one specific bulb or fixture; flicker is random rather than tied to dimmer position or appliance cycles; the bulb has been in service 3&#8211;5+ years; moving the bulb to another fixture confirms flicker follows it.</div>
+        <div class="cause-fix"><strong>Fix:</strong> Replace the bulb, or the driver module if the fixture has a replaceable driver. Higher-quality LED bulbs from established brands use better capacitors and run cooler, extending driver life. Recessed fixtures with enclosed housings run hotter and wear drivers faster &#8212; use bulbs rated for enclosed fixtures.</div>
+      </div>
+
+    </div>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Flicker Before a Breaker Trip Is a Warning Sign</div>
+        <div class="callout-text">If your lights flicker briefly just before a breaker trips &#8212; whether at switch closure or during appliance startup &#8212; the flicker is the circuit's last visible symptom before the fault crosses the breaker's trip threshold. This pattern indicates a developing wiring fault or failing driver that is now severe enough to trip the circuit. Don't treat the flicker as a separate problem from the tripping &#8212; they're the same fault at different stages. See the companion articles on <a href="breaker-trips-lights.html">breakers tripping when lights are switched on</a> and <a href="breakers-keep-tripping.html">repeated breaker trips</a> for the next diagnostic steps.</div>
+      </div>
+    </div>
+
+    <h2 id="diagnostic">5-Step Diagnostic</h2>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-action">Identify scope: single bulb, one room, or multiple rooms</div>
+          <div class="step-detail">Single bulb = driver. One room = dimmer or wiring. Multiple rooms = voltage sag or neutral issue. This one observation cuts your diagnostic in half.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-action">Move the suspect bulb to a different fixture</div>
+          <div class="step-detail">Swap the flickering bulb into a different socket in a different room. If flicker follows the bulb, the driver is failing and the bulb needs replacement. If flicker stays at the original fixture, the problem is in the fixture, switch, or circuit wiring.</div>
+          <div class="step-result">
+            <span class="step-if yes">Flicker follows bulb &#8594; Replace the bulb</span>
+            <span class="step-if no">Flicker stays in fixture &#8594; Continue to step 3</span>
+          </div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-action">Bypass the dimmer temporarily</div>
+          <div class="step-detail">If the circuit has a dimmer, turn it to full bright and observe whether flicker reduces. Then temporarily replace the dimmer with a standard toggle switch. If flicker stops completely, the dimmer is incompatible with your LEDs and needs to be replaced with an LED-rated model.</div>
+          <div class="step-result">
+            <span class="step-if yes">Flicker stops without dimmer &#8594; Replace dimmer</span>
+            <span class="step-if no">Still flickers without dimmer &#8594; Continue to step 4</span>
+          </div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-action">Observe timing against appliance cycles</div>
+          <div class="step-detail">Note whether flicker correlates with the HVAC turning on, the refrigerator compressor starting, or other large appliances. If flicker occurs at a predictable moment tied to an appliance, voltage sag is the cause. If it's random and not tied to any identifiable event, return to loose wiring as the primary suspect.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <div class="step-action">Tap the switch plate and fixture &#8212; observe whether flicker changes</div>
+          <div class="step-detail">Gently press or tap the switch cover plate while watching the light. If flicker changes or briefly stops, a loose connection at the switch terminals is the cause. Do not open the switch box yourself &#8212; call an electrician. A warm switch plate or any smell of burning confirms an arcing hazard.</div>
+          <div class="step-result">
+            <span class="step-if no">Flicker changes when tapped &#8594; Call an electrician</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="dimmer-table">Dimmer Compatibility Quick Reference</h2>
+    <table class="diag-table">
+      <thead>
+        <tr><th>Dimmer Type</th><th>LED Compatible?</th><th>Common Problem</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Standard incandescent dimmer (15&#8211;20+ years old)</td><td>&#10007; No</td><td>Flicker at all brightness levels; buzzing; gets worse at low settings</td></tr>
+        <tr><td>CFL/LED labeled dimmer (5&#8211;10 years old)</td><td>&#8764; Usually, but check</td><td>May be incompatible with specific LED brands; check manufacturer compatibility list</td></tr>
+        <tr><td>Modern LED trailing-edge dimmer</td><td>&#10003; Yes (if matched)</td><td>Verify minimum load rating exceeds total LED wattage; not all LEDs are dimmable</td></tr>
+        <tr><td>Smart dimmer / app-controlled</td><td>&#10003; Usually</td><td>Some smart dimmers require a neutral wire not present in older switch loops</td></tr>
+        <tr><td>Non-dimmable LED bulb on any dimmer</td><td>&#10007; Never</td><td>Always flickers or buzzes; no fix except switching to a dimmable LED bulb</td></tr>
+      </tbody>
+    </table>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The dimmer incompatibility issue is the one I see most often, and it's almost always the same story: someone converted from incandescent to LED bulbs and the flickering started immediately, or gradually worsened over months. The dimmer is 15 or 20 years old and was designed for a 40&#8211;60 watt minimum load. With a 9-watt LED bulb, the dimmer's internal circuits are running in a range they were never designed for. The fix is a $20&#8211;$30 LED-compatible dimmer, and it solves the problem immediately. What concerns me more is when homeowners describe flicker that changes when they tap the switch. That's almost always a loose back-stab terminal at the switch &#8212; and those can arc. I've seen switch boxes where the back-stabbed wire had been arcing for months, leaving black carbon deposits on the box interior. The flicker was the only warning they had."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Do vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible</div>
+        <ul class="diy-items safe-list">
+          <li>Move the suspect bulb to another fixture to confirm a driver failure</li>
+          <li>Replace the bulb with a quality LED from an established brand</li>
+          <li>Replace an incompatible incandescent dimmer with an LED-rated model</li>
+          <li>Confirm the bulb is dimmable before connecting to any dimmer</li>
+          <li>Note timing against appliance cycles to identify voltage sag</li>
+          <li>Gently tap switch plate to test for loose connection (observe only &#8212; do not open)</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Licensed Electrician Required</div>
+        <ul class="diy-items stop-list">
+          <li>Flicker changes when switch plate is tapped &#8212; loose wiring hazard</li>
+          <li>Switch plate is warm or buzzing &#8212; arcing risk</li>
+          <li>Multi-room flicker on appliance startup &#8212; neutral or panel issue</li>
+          <li>Whole-home simultaneous flicker &#8212; utility or main neutral issue</li>
+          <li>Flicker preceding breaker trips &#8212; developing fault on the circuit</li>
+          <li>Any work inside the switch box or fixture wiring</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My LEDs started flickering after I switched from incandescent. Did I buy bad bulbs?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Not necessarily. The most common reason LEDs flicker immediately after replacing incandescent bulbs is dimmer incompatibility &#8212; the existing dimmer was designed for the resistive load of incandescent bulbs and doesn't regulate the electronic load of LED drivers correctly. This is especially likely if: the flicker is worst at low brightness settings, the dimmer buzzes or hums, or different LED brands behave differently on the same dimmer. Before concluding the bulbs are defective, test by temporarily bypassing the dimmer &#8212; if the flicker stops completely, the dimmer is the cause. The fix is replacing the dimmer with an LED-compatible model, not replacing the bulbs again.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is LED flicker bad for your eyes or health?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">It depends on the frequency and depth of the flicker. Flicker at frequencies above 100 Hz is generally imperceptible to most people and is considered low-risk. Flicker at frequencies below 100 Hz &#8212; particularly in the 3&#8211;70 Hz range &#8212; can cause eye strain, headaches, and in susceptible individuals, trigger photosensitive epilepsy responses. The flicker from incompatible dimmers and loose wiring connections tends to be irregular and at lower frequencies, which is the more problematic range. From a practical standpoint: if you notice the flicker, it's in a perceptible range and worth addressing. The electrical causes of flicker are also worth fixing independent of health concerns &#8212; loose wiring and overloaded circuits are fire hazards.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My lights flicker briefly every time the HVAC kicks on. Is that a problem?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A brief flicker when the HVAC starts is common and usually a normal consequence of motor inrush current momentarily dipping system voltage. If it's a very brief single flicker that quickly recovers, and only the lights near or on the same circuit as the HVAC are affected, it's generally considered an acceptable condition. However, if flicker is visible in multiple rooms simultaneously &#8212; especially rooms on different circuits &#8212; it suggests the voltage dip is affecting a large portion of the home's electrical system. This points to a weak neutral connection at the panel, unbalanced panel loads, or a utility-side issue. Multi-room flicker on HVAC startup warrants a professional evaluation, particularly if the flicker duration is longer than a second or if the brightness change is pronounced.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does only one LED in a multi-bulb fixture flicker while the others are fine?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">When only one bulb flickers in a fixture that has multiple identical sockets, the fault is almost always in that specific bulb &#8212; its internal driver is failing. The most conclusive test: swap the flickering bulb with one of the non-flickering bulbs in the same fixture. If the flicker moves to the new location of the original bulb, the bulb is definitively defective. If the flicker stays at the original socket, the problem is in the socket contact or wiring for that specific socket &#8212; which is a fixture or wiring issue rather than a bulb issue. In multi-bulb fixtures that share one driver (some track and linear fixtures), one failing LED chip can cause single-position flicker even though the driver feeds all positions &#8212; in those cases, the whole fixture may need replacement.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>LED flicker reveals electrical conditions that incandescent bulbs masked. The flicker itself isn't the problem &#8212; it's the indicator of the real condition.</li>
+        <li>Scope first: single bulb = driver; one room = dimmer or wiring; multiple rooms = voltage sag or neutral issue.</li>
+        <li>Dimmer incompatibility is the most common cause and an easy fix &#8212; replace old incandescent dimmers with LED-rated models. Check the manufacturer's compatibility list for your specific LED brand.</li>
+        <li>If flicker changes when you tap the switch plate: loose wiring is arcing. Do not open the box yourself &#8212; call a licensed electrician. A warm or buzzing switch plate confirms an active hazard.</li>
+        <li>Multi-room flicker on appliance startup that involves multiple circuits points to a neutral or panel issue &#8212; have an electrician evaluate.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">LED lights flickering</a>
+      <a href="#" class="tag-pill">LED flicker cause</a>
+      <a href="#" class="tag-pill">LED dimmer flicker</a>
+      <a href="#" class="tag-pill">why do LED lights flicker</a>
+      <a href="#" class="tag-pill">LED bulb keeps flickering</a>
+      <a href="#" class="tag-pill">lights flicker when appliance starts</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Electrical Guides</h3>
+    <div class="related-list">
+      <a href="breaker-trips-lights.html" class="related-item">
+        <div><div class="related-item-title">Why Your Breaker Trips When You Turn the Lights On</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="breakers-keep-tripping.html" class="related-item">
+        <div><div class="related-item-title">Why Your Circuit Breaker Keeps Tripping</div><div class="related-item-meta">T.A. &middot; 10 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="lighting-circuits-guide.html" class="related-item">
+        <div><div class="related-item-title">Home Lighting Circuits: The Complete Guide</div><div class="related-item-meta">T.A. &middot; 22 min read &middot; Flagship</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#why-leds-flicker">Why LEDs Show Flicker</a></li>
+      <li><a href="#scope">Identify the Scope First</a></li>
+      <li><a href="#causes">4 Causes</a></li>
+      <li><a href="#diagnostic">5-Step Diagnostic</a></li>
+      <li><a href="#dimmer-table">Dimmer Compatibility</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">Licensed Electrician &amp; Fire Investigator</div>
+        <div class="s-bio">NFPA Certified Fire Investigator (CFI-1), Certified Healthcare Facility Manager (CHFM), CLSS-HC, OSHA 30, and licensed electrician. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>Electrical safety guides and seasonal home maintenance reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

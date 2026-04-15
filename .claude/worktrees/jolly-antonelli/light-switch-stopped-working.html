@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Light Switch Stopped Working | HomeownersRepairGuide.com</title>
+<meta name="description" content="A light switch that stops working usually isn't just a bad switch — it's a wiring, connection, or circuit-level failure. Here's how to diagnose what actually went wrong before replacing anything.">
+<link rel="canonical" href="https://homeownersrepairguide.com/light-switch-stopped-working.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/light-switch-stopped-working.html">
+<meta property="og:title" content="Why Your Light Switch Stopped Working | HomeownersRepairGuide.com">
+<meta property="og:description" content="A dead light switch is often a wiring or circuit fault, not just a bad device. Here's how to find the real cause.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --electrical:#b08a00;--electrical-dark:#7a5f00;--electrical-light:#fdf6e3;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}
+.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--electrical);color:var(--white);}
+.tag.urgent{background:#7a1010;color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--electrical);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+.article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+.quick-summary{background:var(--electrical);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+.safety-box{background:#7a1010;border-radius:var(--radius-lg);padding:18px 22px;margin:0 0 28px;}
+.safety-box h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.safety-box p{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.55;}
+/* Scope finder */
+.scope-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0;}
+.scope-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:15px 17px;box-shadow:var(--shadow-card);}
+.scope-card.s1{border-left:4px solid #3a6b3a;}
+.scope-card.s2{border-left:4px solid var(--electrical);}
+.scope-card.s3{border-left:4px solid #5a3a7a;}
+.scope-card.s4{border-left:4px solid #c0392b;}
+.sc-symptom{font-size:12px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:5px;}
+.scope-card.s1 .sc-symptom{color:#2a7a2a;}
+.scope-card.s2 .sc-symptom{color:var(--electrical-dark);}
+.scope-card.s3 .sc-symptom{color:#5a3a7a;}
+.scope-card.s4 .sc-symptom{color:#c0392b;}
+.sc-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.sc-detail{font-size:12px;color:var(--text-body);line-height:1.45;margin-bottom:4px;}
+.sc-action{font-size:12px;color:var(--text-muted);font-style:italic;}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;} .sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--electrical);} .sev-item.mod .sev-label{color:var(--electrical-dark);}
+.sev-item.high .sev-dot{background:var(--rust);} .sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:#c0392b;} .sev-item.crit .sev-label{color:#c0392b;}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+/* Cause cards */
+.cause-list{display:flex;flex-direction:column;gap:12px;margin:24px 0;}
+.cause-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 20px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.cause-card.high{border-left:4px solid #c0392b;}
+.cause-card.medium{border-left:4px solid var(--electrical);}
+.cause-card.pro{border-left:4px solid #5a3a7a;}
+.cause-card.low{border-left:4px solid #3a6b3a;}
+.cause-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gray-light);width:28px;flex-shrink:0;line-height:1.2;margin-top:1px;}
+.cause-body{flex:1;}
+.cause-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.cause-desc{font-size:13px;color:var(--text-body);line-height:1.55;margin-bottom:6px;}
+.cause-pattern{font-size:12px;color:var(--text-muted);font-style:italic;}
+.cause-badge{font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:2px;flex-shrink:0;margin-top:3px;}
+.cause-card.high .cause-badge{background:#fef2f0;color:#c0402a;}
+.cause-card.medium .cause-badge{background:var(--electrical-light);color:var(--electrical-dark);}
+.cause-card.pro .cause-badge{background:#f4eef8;color:#5a3a7a;}
+.cause-card.low .cause-badge{background:#eaf5ea;color:#2a7a2a;}
+/* Diagnostic steps */
+.diag-steps{display:flex;flex-direction:column;gap:10px;margin:24px 0;}
+.diag-step{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--electrical);color:var(--white);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step-body{flex:1;}
+.step-action{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.step-detail{font-size:13px;color:var(--text-muted);line-height:1.5;}
+/* Diag table */
+.diag-table{width:100%;border-collapse:collapse;margin:24px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.diag-table th{background:var(--electrical);color:var(--white);font-size:13px;font-weight:600;padding:11px 14px;text-align:left;}
+.diag-table td{font-size:13px;padding:11px 14px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+.diag-table tr:last-child td{border-bottom:none;}
+.diag-table tr:nth-child(even) td{background:var(--cream);}
+.diag-table td:first-child{font-weight:600;color:var(--text-dark);}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}
+.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* Callout */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--electrical);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--electrical);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--electrical);color:var(--white);border-color:var(--electrical);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}
+.share-x{background:#000;color:white;}
+.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--electrical);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--electrical);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--electrical);background:var(--electrical-light);font-weight:600;}
+.toc-list li.active a::before{background:var(--electrical);width:6px;height:6px;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--electrical);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--electrical);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.scope-cards{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical</a>
+    <span class="sep">&#8250;</span>
+    <a href="electrical-lighting.html">Lighting &amp; Fixtures</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Light Switch Stopped Working</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Lighting &amp; Fixtures</span>
+    <span class="tag urgent">&#9888; Fire Risk</span>
+  </div>
+
+  <h1 class="article-title">Why Your Light Switch Stopped Working</h1>
+  <p class="article-subtitle">A non-functioning light switch is rarely just a worn-out device. Switches are part of a larger circuit &#8212; when one stops working, the fault often lies upstream in the wiring, at a connection point, or in a protective device elsewhere on the circuit. Understanding where to look first saves time and prevents dangerous misdiagnoses.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Licensed Electrician &amp; Fire Investigator</div>
+      <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Licensed Electrician</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="safety-box">
+      <h3>&#9888;&#65039; Hot Switch, Sparking, or Burning Smell &#8212; Stop Using It Immediately</h3>
+      <p>A light switch that is warm to the touch, makes crackling or buzzing sounds, produces visible sparks, or has a burning smell is arcing at a loose connection inside the wall box. This is an active fire hazard. Stop using the switch, turn off the circuit breaker for that circuit, and call a licensed electrician before using the switch again. Do not open the switch cover with power on.</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>&#9889; Quick Summary</h3>
+      <ul>
+        <li>Before assuming the switch is bad, check three things: the breaker, any upstream GFCI outlets, and the bulb</li>
+        <li>If other devices on the same circuit also don't work &#8212; the fault is upstream, not the switch</li>
+        <li>If the switch is warm, buzzes, or flickers when touched &#8212; it's arcing at a loose connection; call an electrician</li>
+        <li>3-way switch stopped working &#8212; the problem is almost always a traveler wire or the companion switch, not the one you're testing</li>
+        <li>Smart switch dark with no indicator lights &#8212; check for a missing neutral wire; most smart switches require one</li>
+      </ul>
+    </div>
+
+    <h2 id="check-first">Check These Before Suspecting the Switch</h2>
+    <p>Most dead-switch calls begin with the assumption that the switch failed. But because switches are pass-through devices &#8212; they don't generate or store power, they only control it &#8212; the fault is frequently somewhere else in the circuit. Always check these first before touching the switch.</p>
+
+    <div class="scope-cards">
+      <div class="scope-card s1">
+        <div class="sc-symptom">&#128994; Check First</div>
+        <div class="sc-title">The circuit breaker</div>
+        <div class="sc-detail">A tripped breaker looks "on" in the middle position &#8212; it must be pushed fully to OFF, then to ON to reset. Even a breaker that looks fully on may have failed internally. Verify by checking whether other outlets and lights on the same circuit work.</div>
+        <div class="sc-action">If other devices on the circuit also don't work, the problem is the breaker or upstream wiring &#8212; not the switch.</div>
+      </div>
+      <div class="scope-card s2">
+        <div class="sc-symptom">&#128992; Check Second</div>
+        <div class="sc-title">Any upstream GFCI outlets</div>
+        <div class="sc-detail">Lighting circuits, especially in older homes, are sometimes protected by a GFCI outlet located elsewhere &#8212; in a garage, basement, bathroom, or utility room. If that GFCI tripped, everything downstream &#8212; including the light switch &#8212; loses power.</div>
+        <div class="sc-action">Walk the likely circuit path and press the RESET button on any GFCI outlets you find. The switch may start working immediately.</div>
+      </div>
+      <div class="scope-card s3">
+        <div class="sc-symptom">&#128309; Check Third</div>
+        <div class="sc-title">The bulb and fixture</div>
+        <div class="sc-detail">A burned-out LED driver, a bulb with a loose base contact, or a failed fixture &#8212; including one where the thermal cutoff has tripped &#8212; can look exactly like a dead switch from across the room. Swap the bulb before anything else.</div>
+        <div class="sc-action">Replace the bulb with a known-good one. If the switch now controls the light, the bulb or driver was the fault.</div>
+      </div>
+      <div class="scope-card s4">
+        <div class="sc-symptom">&#128308; For Smart Switches</div>
+        <div class="sc-title">Neutral wire and compatibility</div>
+        <div class="sc-detail">Most smart switches require a neutral wire to power their electronics &#8212; but older switch loops only have a hot and a switched-hot, no neutral. A smart switch installed in a switch loop without neutral will be dark, unresponsive, or behave erratically.</div>
+        <div class="sc-action">Check whether a neutral wire (usually white) is present in the switch box. If not, a smart switch may not be compatible without additional wiring.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">How Serious Is It?</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Single light not working, switch feels normal, no heat or sound. Likely bulb, breaker, or upstream GFCI.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Intermittent operation, light flickers when switch is toggled. Loose connection developing &#8212; have it evaluated soon.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">High</div></div>
+        <div class="sev-desc">Switch is warm to the touch, buzzes, or breaker trips when used. Arcing at loose connection &#8212; stop using it, call an electrician.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Visible sparks, burning smell, or scorched switch cover. Active arcing &#8212; turn off circuit breaker now and call an electrician today.</div>
+      </div>
+    </div>
+
+    <h2 id="causes">10 Reasons a Light Switch Stops Working</h2>
+
+    <div class="cause-list">
+
+      <div class="cause-card medium">
+        <div class="cause-num">01</div>
+        <div class="cause-body">
+          <div class="cause-title">Worn Internal Switch Contacts</div>
+          <div class="cause-desc">Standard light switches have a rated cycle life &#8212; typically 10,000&#8211;35,000 operations for residential devices. High-use switches (hallway, kitchen, stairwell) can reach this limit in 10&#8211;20 years. The internal spring contacts weaken over time, eventually failing to make a reliable connection when toggled. The failure is usually gradual: increasing intermittency before complete failure.</div>
+          <div class="cause-pattern">Pattern: switch that has been in service 15+ years; worked intermittently before failing completely; no heat or burning smell. The switch itself is the likely culprit &#8212; but confirm upstream causes first before replacing.</div>
+        </div>
+        <span class="cause-badge">Replace Switch</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">02</div>
+        <div class="cause-body">
+          <div class="cause-title">Back-Stabbed Terminal Failure</div>
+          <div class="cause-desc">Switches installed with the push-in (back-stab) connection method &#8212; where the wire is inserted into a hole in the back of the device rather than wrapped around a screw terminal &#8212; have a significantly shorter service life. The spring clip inside degrades over years of thermal cycling, eventually losing grip. The connection either fails completely or creates a high-resistance arc point. This is one of the most common causes of a switch that works intermittently or flickers on touch.</div>
+          <div class="cause-pattern">Pattern: light flickers when the switch cover plate is pressed or tapped; switch has been in service 10+ years; intermittent failure that started before complete failure. Requires a licensed electrician to re-terminate using the screw terminals.</div>
+        </div>
+        <span class="cause-badge">High Risk</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">03</div>
+        <div class="cause-body">
+          <div class="cause-title">Upstream GFCI or AFCI Trip</div>
+          <div class="cause-desc">Many lighting circuits pass through or originate from GFCI-protected outlets, particularly in older homes where circuits were shared between outlets and lighting. An AFCI breaker protecting the circuit may have tripped on a detected arc fault elsewhere on the branch. In both cases, the switch itself is fine &#8212; it's simply not receiving power because a protective device upstream has interrupted the circuit.</div>
+          <div class="cause-pattern">Pattern: switch fails completely with no warning; the same circuit suddenly has other non-functional outlets or lights; pressing RESET on a GFCI elsewhere immediately restores function. This is the most commonly missed diagnosis.</div>
+        </div>
+        <span class="cause-badge">Check Upstream</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">04</div>
+        <div class="cause-body">
+          <div class="cause-title">Open Neutral in the Circuit</div>
+          <div class="cause-desc">A broken or disconnected neutral conductor in the circuit removes the return path for current. With no return path, the circuit cannot complete &#8212; nothing works. In a switch loop configuration, an open neutral may cause the light to remain on even when the switch is toggled to off (the hot and neutral become separated from the switch), or may cause no operation at all depending on where the break is.</div>
+          <div class="cause-pattern">Pattern: switch has no effect &#8212; light stays on regardless of switch position, or stays off regardless. May be accompanied by strange voltage readings if tested by a professional. Requires an electrician to locate the open neutral.</div>
+        </div>
+        <span class="cause-badge">Call Pro</span>
+      </div>
+
+      <div class="cause-card pro">
+        <div class="cause-num">05</div>
+        <div class="cause-body">
+          <div class="cause-title">3-Way or 4-Way Switch System Fault</div>
+          <div class="cause-desc">3-way switch systems (two switches controlling one fixture from different locations) and 4-way systems (three or more switches) use traveler wires to coordinate switch positions. A single broken traveler wire, a failed traveler connection, or a failed companion switch can render the entire system non-functional while leaving one individual switch appearing to work normally. Replacing only the switch you're standing at will not fix a traveler or companion switch problem.</div>
+          <div class="cause-pattern">Pattern: light worked fine, then stopped after one switch was replaced or bumped; one switch position controls the light sometimes but not others; light is dead regardless of both switch positions. Both switches and the traveler wiring must be evaluated together.</div>
+        </div>
+        <span class="cause-badge">Call Pro</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">06</div>
+        <div class="cause-body">
+          <div class="cause-title">Loose Screw Terminal or Damaged Splice</div>
+          <div class="cause-desc">A conductor that has loosened from its screw terminal &#8212; or a wirenut connection in an upstream junction box that has failed &#8212; breaks the circuit completely or creates a high-resistance fault that manifests as intermittency. Loose terminal connections that arc also generate heat, which can char the device body, melt insulation, and initiate a fire inside the wall. This is a fire hazard, not just an inconvenience.</div>
+          <div class="cause-pattern">Pattern: switch feels warm; flickering or intermittent operation; burning smell from switch area; circuit behavior worsened gradually over time. Requires a licensed electrician to safely access and re-terminate.</div>
+        </div>
+        <span class="cause-badge">Fire Hazard</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">07</div>
+        <div class="cause-body">
+          <div class="cause-title">Failed or Tripped Circuit Breaker</div>
+          <div class="cause-desc">A breaker that has tripped but not fully moved to the OFF position sits in the middle &#8212; appearing "on" when it's not supplying power. More importantly, a breaker that has tripped and been reset multiple times may have failed internally from repeated overload cycling, no longer making reliable contact. This is distinct from the switch itself failing &#8212; but the result looks identical from the switch.</div>
+          <div class="cause-pattern">Pattern: switch has no power; multiple devices on the same circuit also don't work; the breaker may not move smoothly to the ON position; or the circuit trips again immediately after reset. See the companion article on breakers that won't reset.</div>
+        </div>
+        <span class="cause-badge">Investigate</span>
+      </div>
+
+      <div class="cause-card pro">
+        <div class="cause-num">08</div>
+        <div class="cause-body">
+          <div class="cause-title">Smart Switch Electronics Failure or Incompatibility</div>
+          <div class="cause-desc">Smart switches contain a microprocessor, wireless radio, and power supply &#8212; all of which can fail. A dark smart switch with no indicator lights has either lost its power supply (often due to a missing neutral wire), failed internally, or lost communication with its hub. Smart switches also require a minimum load &#8212; very low-wattage LED fixtures may fall below the switch's operating threshold.</div>
+          <div class="cause-pattern">Pattern: recently installed smart switch that never worked correctly, or a previously working smart switch that went dark without obvious cause. Check neutral wire presence, hub connectivity, and load compatibility before replacing.</div>
+        </div>
+        <span class="cause-badge">Investigate</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">09</div>
+        <div class="cause-body">
+          <div class="cause-title">Aluminum Wiring Oxidation</div>
+          <div class="cause-desc">Homes built in the late 1960s and 1970s often have aluminum branch-circuit wiring. Aluminum oxidizes at connection points, building up high electrical resistance at terminals and splices. This resistance creates heat under load, which accelerates the oxidation &#8212; a self-worsening cycle that can eventually fail the connection entirely and create an arc-fault fire hazard. Standard switches and devices are not rated for direct aluminum connection.</div>
+          <div class="cause-pattern">Pattern: home built 1965&#8211;1975; intermittent switch operation that worsens over time; warm devices throughout the home; previous repairs involving switches or outlets. Requires a licensed electrician and CO/ALR-rated devices or pigtail splices.</div>
+        </div>
+        <span class="cause-badge">High Risk</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">10</div>
+        <div class="cause-body">
+          <div class="cause-title">Overcrowded Box or Heat Damage</div>
+          <div class="cause-desc">Switch boxes have a rated fill capacity &#8212; the maximum number and gauge of conductors that can safely fit inside. An overcrowded box compresses conductors against each other and against the device, causing insulation damage and creating fault paths. Heat generated by a failing device in an overcrowded box also accelerates damage to adjacent conductors. This is more common in older homes where junction and switch boxes were shared between multiple circuits.</div>
+          <div class="cause-pattern">Pattern: switch box feels noticeably warmer than others; multiple devices have been installed in the same box over time; insulation on conductors visible at box entry shows cracking or discoloration.</div>
+        </div>
+        <span class="cause-badge">Investigate</span>
+      </div>
+
+    </div>
+
+    <h2 id="diagnostic">Step-by-Step Diagnostic</h2>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-action">Replace the bulb first</div>
+          <div class="step-detail">Swap the bulb with a known-good one. A burned-out bulb or failed LED driver is the most common reason a switch appears dead. If the new bulb works, the switch is fine &#8212; you were diagnosing the wrong component.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-action">Check the circuit breaker and reset it properly</div>
+          <div class="step-detail">Find the breaker for the affected circuit. If it's in the middle position, push firmly to OFF (feel the click), then to ON. Check whether other outlets and lights on the same circuit are working &#8212; if multiple devices are dead, the problem is upstream of the switch.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-action">Find and reset any upstream GFCI outlets</div>
+          <div class="step-detail">Walk the likely path of the circuit &#8212; garage, utility room, basement, or adjacent bathroom &#8212; and press RESET on any GFCI outlets you find. This restores power to everything downstream, including the switch. If the light works after resetting a GFCI, investigate why that GFCI tripped.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-action">Check the switch cover plate temperature</div>
+          <div class="step-detail">With power on, hold the back of your hand near (not touching) the switch cover plate. It should be room temperature. Warmth, heat, or any buzzing or crackling sound from inside the wall means an arcing connection. Turn off the circuit breaker and call an electrician &#8212; do not open the box.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <div class="step-action">For 3-way systems: test both switches and all positions</div>
+          <div class="step-detail">Toggle switch A to both positions while switch B is in one position, then toggle switch B and repeat. Map which combinations control the light. This reveals whether the failure is in one specific switch, a traveler wire, or the entire system &#8212; important information for the electrician you'll be calling.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <div class="step-action">For smart switches: check neutral wire and hub status</div>
+          <div class="step-detail">If a smart switch has no indicator lights: (1) check the app or hub to see if it reports the device as offline; (2) confirm that a neutral wire (typically white) was connected to the switch's neutral terminal; (3) try a factory reset per the manufacturer instructions. A switch with no neutral wire connected will not power on regardless of other conditions.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="pattern-table">What Your Symptom Tells You</h2>
+    <table class="diag-table">
+      <thead>
+        <tr><th>What You Observe</th><th>Most Likely Cause</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Switch dead, other devices on circuit also dead</td><td>Tripped breaker or upstream GFCI</td><td>Reset breaker (OFF then ON). Find and reset upstream GFCI.</td></tr>
+        <tr><td>Switch dead, all other devices on circuit work fine</td><td>Switch failure, open connection in switch loop, or burned-out bulb</td><td>Replace bulb first. Then have an electrician evaluate the switch and wiring.</td></tr>
+        <tr><td>Light flickers when switch plate is tapped or pressed</td><td>Loose back-stab connection or worn terminal</td><td>Do not open the box. Call an electrician &#8212; arcing hazard.</td></tr>
+        <tr><td>Switch is warm to the touch</td><td>Arcing at loose connection &#8212; active fire hazard</td><td>Turn off circuit breaker. Do not use. Call an electrician today.</td></tr>
+        <tr><td>3-way system &#8212; light stops working from both locations</td><td>Failed traveler wire or companion switch</td><td>Document which switch positions work/don't work. Call an electrician.</td></tr>
+        <tr><td>Smart switch dark, no indicator lights</td><td>Missing neutral wire or failed power supply</td><td>Confirm neutral wire connected. Check hub/app. May need an electrician to add neutral.</td></tr>
+        <tr><td>Switch works intermittently &#8212; worse over time</td><td>Worn contacts or failing back-stab connection</td><td>Have an electrician replace the switch and re-terminate wiring on screw terminals.</td></tr>
+        <tr><td>Burning smell or visible scorch on cover plate</td><td>Active arcing &#8212; fire hazard</td><td>Turn off circuit breaker immediately. Call an electrician today.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Aluminum Wiring: Different Rules Apply</div>
+        <div class="callout-text">If your home was built between 1965 and 1975, it may have aluminum branch-circuit wiring. Aluminum is silver-colored (copper is orange/gold) and is sometimes stamped "AL" on the conductor. Standard switches and outlets are not rated for direct aluminum wire connection &#8212; the connection degrades through oxidation and creates serious fire risk. If you have aluminum wiring, all switch and outlet replacements must use devices rated CO/ALR, or the aluminum wire must be pigtailed to short copper segments using approved connectors. This is not optional &#8212; and it's not a homeowner DIY project.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The most important thing about a dead switch is what happens before it's fully dead. Most switches don't fail suddenly &#8212; they get intermittent first. The light starts flickering when the switch is pressed. The switch feels slightly warm. You notice it more on the flip back than the flip on. All of that is a loose connection developing &#8212; and a loose connection is an arc point. The times I've investigated fires with an origin at a switch box, I almost always find that the homeowner noticed something: warmth, flickering, a crackle when the switch was hit. They just didn't connect it to a hazard. If your switch does anything except work perfectly and feel room temperature, it needs to be looked at. The back-stab connection issue is especially common &#8212; almost all residential switches installed in the 1970s through the 2000s were back-stabbed, and that connection is simply not as reliable as a screw terminal. When I replace a failed switch, I always re-terminate on the screw terminals whether or not the back-stab appears to be the cause."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Do vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible</div>
+        <ul class="diy-items safe-list">
+          <li>Replace the bulb with a known-good one</li>
+          <li>Reset the circuit breaker using correct OFF-then-ON procedure</li>
+          <li>Find and reset upstream GFCI outlets on the circuit path</li>
+          <li>Check whether other devices on the same circuit work</li>
+          <li>Observe whether switch cover is warm and report findings to electrician</li>
+          <li>Test both positions of a 3-way system and document results</li>
+          <li>Check smart switch app/hub for connectivity status</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Licensed Electrician Required</div>
+        <ul class="diy-items stop-list">
+          <li>Switch is warm, buzzing, sparking, or has burning smell &#8212; arcing hazard</li>
+          <li>Opening the switch box to access or replace wiring</li>
+          <li>Diagnosing or repairing open neutral in the circuit</li>
+          <li>3-way or 4-way switch system troubleshooting and repair</li>
+          <li>Any switch in a home with aluminum branch-circuit wiring</li>
+          <li>Adding a neutral wire for smart switch compatibility</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I replace a light switch myself?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Replacing a standard single-pole switch is one of the most accessible homeowner electrical tasks &#8212; provided: the home does not have aluminum wiring (which requires CO/ALR-rated devices and specific termination methods); the switch box is not overcrowded with damaged insulation; and the replacement is a like-for-like swap (standard switch for standard switch, not installing a smart switch in a loop with no neutral). The process requires turning off the circuit breaker, confirming power is off with a non-contact voltage tester before touching any wires, disconnecting the old switch, and connecting the new switch with wire wrapped around screw terminals (never using back-stab connections). If you find anything unusual &#8212; discolored wire insulation, more wires than expected, or an aluminum conductor &#8212; stop and call an electrician. Note that replacing a switch does not fix a wiring problem upstream &#8212; confirm the switch itself is the actual fault before replacing it.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My 3-way switch only works from one location. What's wrong?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">When a 3-way system works from one switch location but not the other, the most common cause is a failed traveler wire connection &#8212; one of the two wires that runs between the switches and allows them to coordinate. It could also be a failed companion switch at the non-working location. The switch you're standing at when the light works may be perfectly fine &#8212; the problem is in the wiring to the other switch or in the other switch itself. Testing requires a multimeter and knowledge of 3-way switch wiring, which varies based on whether the wiring runs through the fixture or directly between the switches. This is best diagnosed by a licensed electrician who can trace the circuit properly. Document which switch positions result in the light on vs. off &#8212; that information will speed up the diagnosis.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">The switch was working fine, then stopped suddenly with no warning. What could cause that?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A completely abrupt failure &#8212; working one minute, dead the next &#8212; without any prior flickering or intermittency usually points to an upstream cause rather than the switch itself. The most common sudden-failure scenarios: a GFCI outlet upstream tripped (often triggered by a fault elsewhere on the circuit), a circuit breaker tripped without you noticing, or a wirenut splice in an upstream junction box failed completely. Less commonly, a neutral conductor broke at a connection point. Check the breaker and any upstream GFCIs before suspecting the switch. If both are fine and other devices on the circuit are working, then a complete internal switch failure is possible &#8212; but it's less common than the upstream causes described above.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How long should a light switch last?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A quality residential light switch is rated for 10,000&#8211;35,000 mechanical cycles, depending on the manufacturer and switch type. At two operations per day, a 10,000-cycle switch lasts about 14 years; at a high-traffic location with 10 operations per day, the same switch lasts under 3 years. Most residential switches in average-use locations last 20&#8211;40 years before mechanical wear causes problems &#8212; though connection failures at back-stab terminals often occur earlier. Premium switches with screw-terminal connections and higher cycle ratings (some rated for 50,000+ cycles) are worth specifying in high-use locations. Smart switches have additional electronics that may fail independently of the mechanical toggle mechanism, typically on a 5&#8211;10 year horizon for the electronics.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Before suspecting the switch: replace the bulb, reset the breaker correctly (OFF then ON), and check for tripped GFCI outlets on the circuit path. Most dead switches aren't the switch.</li>
+        <li>A warm switch, buzzing, crackling, or burning smell means arcing at a loose connection &#8212; turn off the circuit breaker and call an electrician. This is a fire hazard, not an inconvenience.</li>
+        <li>Back-stabbed switch connections are a frequent failure point in homes built from the 1970s through the 2000s. A flicker that changes when you press the cover plate is the classic symptom.</li>
+        <li>3-way switch failures almost always involve a traveler wire or the companion switch &#8212; not just the switch you're testing. Both locations must be evaluated together.</li>
+        <li>Aluminum wiring requires CO/ALR-rated devices and specific termination methods. Standard switches are not rated for direct aluminum connection and present a serious fire risk.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">light switch stopped working</a>
+      <a href="#" class="tag-pill">light switch not working</a>
+      <a href="#" class="tag-pill">dead light switch</a>
+      <a href="#" class="tag-pill">light switch warm</a>
+      <a href="#" class="tag-pill">3 way switch not working</a>
+      <a href="#" class="tag-pill">smart switch not working</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Electrical Guides</h3>
+    <div class="related-list">
+      <a href="led-lights-flicker.html" class="related-item">
+        <div><div class="related-item-title">Why Your LED Lights Flicker</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="breaker-trips-lights.html" class="related-item">
+        <div><div class="related-item-title">Why Your Breaker Trips When You Turn the Lights On</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="lighting-circuits-guide.html" class="related-item">
+        <div><div class="related-item-title">Home Lighting Circuits: The Complete Guide</div><div class="related-item-meta">T.A. &middot; 22 min read &middot; Flagship</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#check-first">Check These First</a></li>
+      <li><a href="#severity">How Serious Is It?</a></li>
+      <li><a href="#causes">10 Causes</a></li>
+      <li><a href="#diagnostic">Step-by-Step Diagnostic</a></li>
+      <li><a href="#pattern-table">Symptom Reference</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">Licensed Electrician &amp; Fire Investigator</div>
+        <div class="s-bio">NFPA Certified Fire Investigator (CFI-1), Certified Healthcare Facility Manager (CHFM), CLSS-HC, OSHA 30, and licensed electrician. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>Electrical safety guides and seasonal home maintenance reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

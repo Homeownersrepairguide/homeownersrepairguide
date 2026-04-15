@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Outlet Stopped Working | HomeownersRepairGuide.com</title>
+<meta name="description" content="A dead outlet is rarely just a bad outlet. The fault is usually upstream — a tripped GFCI, a broken daisy-chain connection, or an open neutral. Here's how to find it in under 10 minutes.">
+<link rel="canonical" href="https://homeownersrepairguide.com/outlet-stopped-working.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/outlet-stopped-working.html">
+<meta property="og:title" content="Why Your Outlet Stopped Working | HomeownersRepairGuide.com">
+<meta property="og:description" content="A dead outlet is almost never just a bad outlet. Here's how to find the actual cause in under 10 minutes.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --electrical:#b08a00;--electrical-dark:#7a5f00;--electrical-light:#fdf6e3;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}
+.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--electrical);color:var(--white);}
+.tag.urgent{background:#7a1010;color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--electrical);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+.article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+.quick-summary{background:var(--electrical);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+.safety-box{background:#7a1010;border-radius:var(--radius-lg);padding:18px 22px;margin:0 0 28px;}
+.safety-box h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.safety-box p{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.55;}
+/* Scope finder */
+.scope-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0;}
+.scope-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;box-shadow:var(--shadow-card);}
+.scope-card.s1{border-left:4px solid #3a6b3a;}
+.scope-card.s2{border-left:4px solid var(--electrical);}
+.scope-card.s3{border-left:4px solid #5a3a7a;}
+.scope-card.s4{border-left:4px solid #c0392b;}
+.sc-symptom{font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:5px;}
+.scope-card.s1 .sc-symptom{color:#2a7a2a;}
+.scope-card.s2 .sc-symptom{color:var(--electrical-dark);}
+.scope-card.s3 .sc-symptom{color:#5a3a7a;}
+.scope-card.s4 .sc-symptom{color:#c0392b;}
+.sc-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.sc-detail{font-size:12px;color:var(--text-body);line-height:1.45;margin-bottom:4px;}
+.sc-action{font-size:12px;color:var(--text-muted);font-style:italic;}
+/* Diagnostic steps */
+.diag-steps{display:flex;flex-direction:column;gap:10px;margin:24px 0;}
+.diag-step{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--electrical);color:var(--white);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step-body{flex:1;}
+.step-action{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.step-detail{font-size:13px;color:var(--text-muted);line-height:1.5;}
+.step-result{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;}
+.step-if{font-size:12px;padding:4px 10px;border-radius:2px;line-height:1.4;}
+.step-if.yes{background:#eaf5ea;color:#2a7a2a;}
+.step-if.no{background:#fef2f0;color:#c0402a;}
+/* Cause cards */
+.cause-list{display:flex;flex-direction:column;gap:12px;margin:24px 0;}
+.cause-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 20px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.cause-card.high{border-left:4px solid #c0392b;}
+.cause-card.medium{border-left:4px solid var(--electrical);}
+.cause-card.pro{border-left:4px solid #5a3a7a;}
+.cause-card.low{border-left:4px solid #3a6b3a;}
+.cause-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gray-light);width:28px;flex-shrink:0;line-height:1.2;margin-top:1px;}
+.cause-body{flex:1;}
+.cause-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.cause-desc{font-size:13px;color:var(--text-body);line-height:1.55;margin-bottom:6px;}
+.cause-pattern{font-size:12px;color:var(--text-muted);font-style:italic;}
+.cause-badge{font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:2px;flex-shrink:0;margin-top:3px;}
+.cause-card.high .cause-badge{background:#fef2f0;color:#c0402a;}
+.cause-card.medium .cause-badge{background:var(--electrical-light);color:var(--electrical-dark);}
+.cause-card.pro .cause-badge{background:#f4eef8;color:#5a3a7a;}
+.cause-card.low .cause-badge{background:#eaf5ea;color:#2a7a2a;}
+/* Diag table */
+.diag-table{width:100%;border-collapse:collapse;margin:24px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.diag-table th{background:var(--electrical);color:var(--white);font-size:13px;font-weight:600;padding:11px 14px;text-align:left;}
+.diag-table td{font-size:13px;padding:11px 14px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+.diag-table tr:last-child td{border-bottom:none;}
+.diag-table tr:nth-child(even) td{background:var(--cream);}
+.diag-table td:first-child{font-weight:600;color:var(--text-dark);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;} .sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--electrical);} .sev-item.mod .sev-label{color:var(--electrical-dark);}
+.sev-item.high .sev-dot{background:var(--rust);} .sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:#c0392b;} .sev-item.crit .sev-label{color:#c0392b;}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid #c0392b;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}
+.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* Callout */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--electrical);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--electrical);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--electrical);color:var(--white);border-color:var(--electrical);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;} .share-x{background:#000;color:white;} .share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--electrical);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--electrical);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--electrical);background:var(--electrical-light);font-weight:600;}
+.toc-list li.active a::before{background:var(--electrical);width:6px;height:6px;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--electrical);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--electrical);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.scope-cards{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical</a>
+    <span class="sep">&#8250;</span>
+    <a href="electrical-outlets-wiring.html">Outlets &amp; Wiring</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Outlet Stopped Working</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Outlets &amp; Wiring</span>
+    <span class="tag urgent">&#9888; Investigate</span>
+  </div>
+
+  <h1 class="article-title">Why Your Outlet Stopped Working</h1>
+  <p class="article-subtitle">A dead outlet is rarely just a dead outlet. Outlets are pass-through devices in a daisy-chained circuit &#8212; when one stops working, the fault is usually upstream. A tripped GFCI, a broken connection in the daisy chain, an open neutral, or a tripped breaker in its middle position each look identical from the outlet face. Here's how to find the actual cause in under 10 minutes.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Licensed Electrician &amp; Fire Investigator</div>
+      <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Licensed Electrician</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="safety-box">
+      <h3>&#9888;&#65039; Dead Outlet With Heat, Buzzing, or Burning Smell &#8212; Turn Off the Breaker</h3>
+      <p>A dead outlet that is also warm to the touch, makes buzzing or crackling sounds, or has a burning smell is not simply dead &#8212; it has an active arcing fault. Power is present at the connection point but isn't reaching the outlet face because the connection has failed. Turn off the circuit breaker for that circuit immediately and call a licensed electrician before restoring power.</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>&#9889; Quick Summary</h3>
+      <ul>
+        <li>Check three things first &#8212; in order: (1) the breaker, (2) any upstream GFCI outlets, (3) whether the outlet is on a wall switch</li>
+        <li>A tripped GFCI upstream is the most commonly missed cause &#8212; it may be in a different room on a different circuit</li>
+        <li>If multiple outlets in the same area are dead, the break is upstream &#8212; look for the GFCI or the point where the daisy chain interrupted</li>
+        <li>An open neutral can leave an outlet appearing dead while the hot conductor is still energized &#8212; a shock hazard that looks like a simple dead outlet</li>
+        <li>If heat, buzzing, or smell accompanies the dead outlet: don't troubleshoot further &#8212; turn off the circuit and call an electrician</li>
+      </ul>
+    </div>
+
+    <h2 id="check-first">The 3-Step Check Before Anything Else</h2>
+    <p>Most dead outlets are resolved in under two minutes once you know the three upstream causes to check first. These cost nothing and require no tools.</p>
+
+    <div class="scope-cards">
+      <div class="scope-card s1">
+        <div class="sc-symptom">&#128994; Step 1 &#8212; Check First</div>
+        <div class="sc-title">Reset the breaker &#8212; correctly</div>
+        <div class="sc-detail">A tripped breaker sits in the middle position, not fully OFF &#8212; it can look "on" at a glance. Push the toggle firmly all the way to OFF (feel the click), then to ON. If other outlets on the same circuit are also dead, the breaker is the prime suspect.</div>
+        <div class="sc-action">If the outlet works after resetting the breaker, investigate why it tripped. See the companion breaker tripping articles.</div>
+      </div>
+      <div class="scope-card s2">
+        <div class="sc-symptom">&#128992; Step 2 &#8212; Check Second</div>
+        <div class="sc-title">Find and reset upstream GFCIs</div>
+        <div class="sc-detail">A GFCI outlet located in another room &#8212; often a garage, bathroom, basement, or utility room &#8212; may protect the circuit containing your dead outlet. Walk the likely circuit path and press RESET on every GFCI you find. This is the most commonly missed fix.</div>
+        <div class="sc-action">If power returns after resetting a GFCI, find out what caused it to trip &#8212; it detected a real fault somewhere on the circuit.</div>
+      </div>
+      <div class="scope-card s3">
+        <div class="sc-symptom">&#128309; Step 3 &#8212; Check Third</div>
+        <div class="sc-title">Is it a switched outlet?</div>
+        <div class="sc-detail">Many homes have one or both slots of a duplex outlet controlled by a wall switch &#8212; usually intended for floor lamps in living rooms. The switch may have been accidentally turned off, or you may simply not be aware the outlet is switched. Try toggling every switch in the room.</div>
+        <div class="sc-action">If the outlet works when a switch is toggled, you found the cause. Label the switch to avoid confusion in the future.</div>
+      </div>
+      <div class="scope-card s4">
+        <div class="sc-symptom">&#128308; If All Three Pass</div>
+        <div class="sc-title">The fault is in the outlet or upstream wiring</div>
+        <div class="sc-detail">A failed back-stab connection, broken daisy-chain, open neutral, or worn outlet contacts can all kill an outlet while the circuit breaker and all upstream GFCIs appear normal. These require a licensed electrician to diagnose and repair.</div>
+        <div class="sc-action">Stop here &#8212; don't open the outlet box yourself. Call an electrician.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">How Serious Is It?</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Single dead outlet, no heat or noise. Likely upstream GFCI, breaker, or switched outlet. Resolve with 3-step check.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Multiple outlets dead. Intermittent operation. Cause not found with 3-step check. Have an electrician evaluate.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">High</div></div>
+        <div class="sev-desc">Dead outlet with flicker elsewhere, buzzing, or warm faceplate. Arcing fault likely. Turn off circuit &#8212; call electrician.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Burning smell, scorch marks, or breaker trips on reset. Active fault &#8212; turn off breaker now and call electrician today.</div>
+      </div>
+    </div>
+
+    <h2 id="causes">10 Reasons an Outlet Stops Working</h2>
+
+    <div class="cause-list">
+
+      <div class="cause-card low">
+        <div class="cause-num">01</div>
+        <div class="cause-body">
+          <div class="cause-title">Tripped GFCI Outlet Upstream &#8212; Most Commonly Missed</div>
+          <div class="cause-desc">A GFCI outlet has two sets of terminals: LINE (the incoming power) and LOAD (the downstream protected circuit). Any outlets wired to the LOAD terminals lose power when the GFCI trips. In older home wiring, a single GFCI outlet in the garage or bathroom may protect 10&#8211;15 downstream outlets spread across multiple rooms &#8212; a circuit topology most homeowners don't know about. When that GFCI trips, all its downstream outlets go dead with no obvious connection.</div>
+          <div class="cause-pattern">Pattern: multiple outlets in one area dead with no tripped breaker; the dead outlets are in a bathroom, kitchen, exterior, or garage area; pressing RESET on a GFCI in a different room restores power. This is the fix in more cases than any other single cause.</div>
+        </div>
+        <span class="cause-badge">Check First</span>
+      </div>
+
+      <div class="cause-card low">
+        <div class="cause-num">02</div>
+        <div class="cause-body">
+          <div class="cause-title">Tripped or Failed Circuit Breaker</div>
+          <div class="cause-desc">A breaker that has tripped sits in the middle position &#8212; it doesn't fully go to OFF, which makes it look on at a quick glance. Pushing it directly from middle to ON doesn't reset it; you must push to full OFF first, then to ON. A breaker can also fail internally after years of operation, no longer making reliable contact even in the fully ON position. Multiple outlets and lights dead on the same circuit is the signature.</div>
+          <div class="cause-pattern">Pattern: the dead outlet plus other devices on the same circuit are all dead simultaneously. The breaker appears to be on but hasn't been properly reset to OFF and back ON. If the breaker trips again immediately on reset, see the breaker-won't-reset article.</div>
+        </div>
+        <span class="cause-badge">Check First</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">03</div>
+        <div class="cause-body">
+          <div class="cause-title">Back-Stab Connection Failure in the Outlet or an Upstream Outlet</div>
+          <div class="cause-desc">Back-stabbed (push-in) connections degrade over time &#8212; the spring clip loses grip from thermal cycling. When a back-stab connection fails completely, it breaks the daisy chain: all outlets downstream of the failed connection on the circuit lose power. The outlet at the failure point may be dead, or if its hot terminal back-stab failed, all downstream outlets are dead while the outlet at the failure point may also appear dead or may work on one slot only.</div>
+          <div class="cause-pattern">Pattern: one outlet dead, and a few outlets "downstream" of it on the same circuit are also dead, while outlets "upstream" work fine. The failed outlet is the break in the chain &#8212; requires opening the box to locate and re-terminate on screw terminals.</div>
+        </div>
+        <span class="cause-badge">Most Common Wiring Fault</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">04</div>
+        <div class="cause-body">
+          <div class="cause-title">Open Neutral &#8212; Hazardous and Deceptive</div>
+          <div class="cause-desc">When the neutral conductor breaks &#8212; whether at a wirenut, terminal, or conductor failure &#8212; the circuit loses its return path for current. Devices plugged into the outlet won't operate. What makes this dangerous: the hot conductor is still energized at the outlet. A standard non-contact voltage tester will show hot voltage present &#8212; the outlet isn't dead from a power standpoint, it's dead because the return path is missing. Anything plugged in and touching both the hot and a ground path creates a shock hazard.</div>
+          <div class="cause-pattern">Pattern: outlet appears dead, but a non-contact voltage tester shows voltage present on the hot slot. Devices plugged in don't function. On MWBC circuits, an open neutral may cause overvoltage on other outlets on the circuit. Requires a licensed electrician &#8212; do not attempt to locate yourself.</div>
+        </div>
+        <span class="cause-badge">Shock Hazard</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">05</div>
+        <div class="cause-body">
+          <div class="cause-title">Switched Outlet</div>
+          <div class="cause-desc">Many residential outlets &#8212; particularly in living rooms &#8212; have one or both slots controlled by a wall switch. This is intentional design for floor lamp control, but it's a frequent cause of "dead outlet" confusion, especially in rooms where the occupant didn't know about or doesn't regularly use the switch. The outlet is functioning perfectly; the switch is simply off.</div>
+          <div class="cause-pattern">Pattern: only half the outlet is dead (one slot works, the other doesn't), or the outlet is in a living room; toggling wall switches in the room restores function. No repair needed &#8212; note which switch controls which outlet.</div>
+        </div>
+        <span class="cause-badge">Non-Fault</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">06</div>
+        <div class="cause-body">
+          <div class="cause-title">Worn Outlet Contact Tension</div>
+          <div class="cause-desc">As outlet contacts lose their spring tension from years of use, they eventually fail to maintain a reliable connection with inserted plugs. The outlet may appear dead &#8212; or more commonly, works intermittently, with power only when the plug is held at a specific angle or pressed firmly into the socket. An outlet where you can clearly feel the plug rocking or fitting loosely has worn contacts and needs replacement.</div>
+          <div class="cause-pattern">Pattern: outlet is intermittently dead; power depends on how the plug is inserted; plugs fall partially out on their own; outlet in a high-use location (kitchen, garage, workshop). Replace the outlet.</div>
+        </div>
+        <span class="cause-badge">Replace Outlet</span>
+      </div>
+
+      <div class="cause-card pro">
+        <div class="cause-num">07</div>
+        <div class="cause-body">
+          <div class="cause-title">Broken Daisy-Chain: Loose Screw Terminal or Failed Wirenut</div>
+          <div class="cause-desc">In daisy-chained wiring, each outlet feeds power to the next. A loose screw terminal or failed wirenut anywhere in the chain breaks the circuit for all outlets downstream of that point. The failure may be at the dead outlet, in the outlet box, or in an upstream junction box that is not directly associated with the problem location. Thermal cycling and vibration both contribute to wirenut loosening over time.</div>
+          <div class="cause-pattern">Pattern: a group of outlets in sequence are dead while earlier outlets on the circuit work; the break is at the first dead outlet or in the box before it. Requires opening boxes to locate the failed connection &#8212; electrician needed.</div>
+        </div>
+        <span class="cause-badge">Call Pro</span>
+      </div>
+
+      <div class="cause-card pro">
+        <div class="cause-num">08</div>
+        <div class="cause-body">
+          <div class="cause-title">MWBC Shared-Neutral Fault</div>
+          <div class="cause-desc">Multi-wire branch circuits share a neutral between two hot legs. An overloaded or loose shared neutral can cause voltage shifts that make some outlets on the circuit function erratically &#8212; appearing dead at low loads but working at higher loads, or losing power when loads shift on the companion circuit. This is a non-intuitive failure that requires professional diagnosis of the MWBC configuration.</div>
+          <div class="cause-pattern">Pattern: outlet intermittently dead; behavior changes when other circuits are loaded; may be accompanied by dimming or flickering elsewhere. Do not continue using affected circuits &#8212; call a licensed electrician.</div>
+        </div>
+        <span class="cause-badge">Call Pro</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">09</div>
+        <div class="cause-body">
+          <div class="cause-title">Aluminum Wiring Oxidation</div>
+          <div class="cause-desc">In homes with aluminum branch-circuit wiring (common 1965&#8211;1975), aluminum oxide builds up at outlet terminals over time. As resistance increases at the connection, the outlet may fail completely &#8212; or fail intermittently, with function only when the outlet runs warm enough to briefly reduce the oxide layer resistance. Standard outlets are not rated for aluminum wire; this is a progressive failure that worsens without CO/ALR-rated devices or copper pigtails.</div>
+          <div class="cause-pattern">Pattern: home built 1965&#8211;1975; outlets failing progressively across the home over years; outlet may work briefly when warm then fail again when cool. Requires a licensed electrician &#8212; not a standard outlet replacement.</div>
+        </div>
+        <span class="cause-badge">High Risk</span>
+      </div>
+
+      <div class="cause-card pro">
+        <div class="cause-num">10</div>
+        <div class="cause-body">
+          <div class="cause-title">Panel Bus or Breaker Stab Degradation</div>
+          <div class="cause-desc">A breaker that is no longer making reliable contact with the panel bus &#8212; from a corroded or weakened stab connection &#8212; can intermittently lose the circuit, causing outlets to die and recover without a visible trip. Similarly, corrosion on the neutral bus can create an intermittent open neutral for the entire circuit. This is a panel-level failure that cannot be diagnosed from the outlet and requires professional evaluation.</div>
+          <div class="cause-pattern">Pattern: outlet or circuit intermittently dead with no tripped breaker; problem not resolved by outlet or GFCI replacement; circuit behavior inconsistent under different loads. Requires a licensed electrician to evaluate the panel &#8212; do not open the panel yourself.</div>
+        </div>
+        <span class="cause-badge">Call Pro</span>
+      </div>
+
+    </div>
+
+    <h2 id="diagnostic">The 10-Minute Diagnostic</h2>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-action">Confirm the outlet is actually dead with a known-working device</div>
+          <div class="step-detail">Plug in a lamp or phone charger you know works. If it doesn't power on, the outlet is confirmed dead. This rules out a defective appliance as the "fault."</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-action">Check whether other outlets nearby are also dead</div>
+          <div class="step-detail">Test outlets in the same room and adjacent rooms. If multiple outlets are dead, the break is upstream &#8212; start with the circuit breaker and GFCI search. If only one outlet is dead and all others work, the fault is localized to that outlet or its immediate box.</div>
+          <div class="step-result">
+            <span class="step-if yes">Multiple dead &#8594; Upstream cause &#8212; check breaker and GFCIs</span>
+            <span class="step-if no">Only this one dead &#8594; Local fault &#8212; call an electrician</span>
+          </div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-action">Reset the circuit breaker &#8212; using the correct procedure</div>
+          <div class="step-detail">Find the breaker for the affected circuit. Push it firmly all the way to OFF (feel the click &#8212; it won't feel like a hard stop if it's already in the middle position). Then push to ON. If the outlet restores, the breaker had tripped. If the breaker trips immediately on reset, see the breaker troubleshooting articles.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-action">Search for and reset all GFCI outlets on the circuit path</div>
+          <div class="step-detail">Walk through the garage, each bathroom, the basement, and the utility room. Press RESET on every GFCI outlet you find. A GFCI that has tripped will have its RESET button slightly protruding. Pressing it will restore power to every outlet on its LOAD side.</div>
+          <div class="step-result">
+            <span class="step-if yes">Outlet works after GFCI reset &#8594; Success &#8212; investigate why the GFCI tripped</span>
+          </div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <div class="step-action">Toggle every switch in the room</div>
+          <div class="step-detail">Some outlets &#8212; especially in living rooms &#8212; are controlled by wall switches. Toggle each switch in the room while watching the outlet. If a switch restores the outlet, you found it.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <div class="step-action">Check the outlet faceplate temperature and look for discoloration</div>
+          <div class="step-detail">Hold the back of your hand near the faceplate. Any warmth, buzzing, or burning smell means an active arcing fault is present. Turn off the circuit breaker and call an electrician. Do not troubleshoot further.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">7</div>
+        <div class="step-body">
+          <div class="step-action">If nothing above resolved it: call a licensed electrician</div>
+          <div class="step-detail">A dead outlet that persists after checking the breaker, all GFCIs, and all switches has a wiring fault &#8212; a failed back-stab, open neutral, broken daisy-chain, or worse. These require opening the box and inspecting connections, which should be done by a licensed electrician with the circuit off.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box tip">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">Mapping GFCI Protection: Where to Look</div>
+        <div class="callout-text">GFCI outlets are required near water &#8212; but in older homes, a single GFCI was often used to protect all downstream outlets in a zone rather than installing individual GFCIs at each location. Common places to search for the upstream GFCI that controls your dead outlet: the garage (may protect outdoor outlets, workshop outlets, and some basement outlets), the master bathroom (may protect other bathrooms), the basement or utility room (may protect crawlspace and exterior outlets). In older homes from the 1970s&#8211;80s, a GFCI in an entirely unexpected location can control outlets across multiple rooms.</div>
+      </div>
+    </div>
+
+    <h2 id="pattern-table">What Your Pattern Tells You</h2>
+    <table class="diag-table">
+      <thead>
+        <tr><th>What You Observe</th><th>Most Likely Cause</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>One outlet dead, all others on circuit work</td><td>Failed back-stab, worn contact, or local splice failure</td><td>Call an electrician to open the box and inspect.</td></tr>
+        <tr><td>Multiple outlets in area dead, no tripped breaker</td><td>Upstream GFCI tripped</td><td>Find and reset all GFCIs in garage, bathrooms, basement.</td></tr>
+        <tr><td>All outlets on one circuit dead</td><td>Tripped circuit breaker</td><td>Reset breaker: OFF all the way, then ON.</td></tr>
+        <tr><td>Only one slot of a duplex outlet works</td><td>Switched outlet, or one back-stab failed on the hot side only</td><td>Toggle wall switches. If not switched, call an electrician.</td></tr>
+        <tr><td>Outlet intermittent &#8212; works when plug is adjusted</td><td>Worn outlet contact tension</td><td>Replace the outlet.</td></tr>
+        <tr><td>Dead outlet is warm or buzzes</td><td>Active arcing fault at connection point</td><td>Turn off breaker. Call electrician today.</td></tr>
+        <tr><td>Circuit dead after storm</td><td>Utility outage or service-entry fault</td><td>Check neighbors. If isolated to your home: call electrician.</td></tr>
+        <tr><td>Outlet dead; GFCI resets don't help; breaker fine</td><td>Open neutral, failed wirenut, or broken daisy-chain</td><td>Call a licensed electrician &#8212; wiring fault in fixed circuit.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The GFCI upstream issue is genuinely the most underappreciated cause of dead outlets, and it's the one that leads to the most unnecessary outlet replacements. I get calls where the homeowner replaced the outlet twice, then called an electrician &#8212; and the fix was pressing RESET on a GFCI in the garage that neither of us initially connected to the dead outlet in the bedroom. That's the reality of how some older circuits were wired. The second thing I emphasize is the open neutral situation. A standard dead outlet &#8212; you plug something in, nothing happens &#8212; is the same appearance whether the hot is missing or the neutral is missing. If the hot is present and the neutral is open, you have live voltage at the outlet face that your device couldn't operate on, but that a person making the wrong contact absolutely can feel. I've seen homeowners probe a dead outlet with a screwdriver to 'check the connections' while the hot is still energized. Never do that. If your dead outlet didn't resolve with the GFCI and breaker checks, the next step is turning off the breaker and calling someone."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Do vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible</div>
+        <ul class="diy-items safe-list">
+          <li>Confirm the outlet is dead using a known-working device</li>
+          <li>Reset the circuit breaker correctly: fully to OFF, then to ON</li>
+          <li>Find and press RESET on all GFCI outlets in the search area</li>
+          <li>Toggle every wall switch in the room to check for switched outlets</li>
+          <li>Check whether the outlet faceplate is warm or has any odor</li>
+          <li>Check whether a range of outlets are dead to help identify the scope</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Licensed Electrician Required</div>
+        <ul class="diy-items stop-list">
+          <li>Opening the outlet box to inspect or repair connections</li>
+          <li>Diagnosing or repairing an open neutral</li>
+          <li>Locating a failed wirenut or broken daisy-chain in upstream boxes</li>
+          <li>Any outlet that is warm, buzzing, or smells burned</li>
+          <li>Repeated breaker trips on reset &#8212; active fault on the circuit</li>
+          <li>Any home with aluminum branch-circuit wiring</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">I checked all GFCIs and the breaker. The outlet is still dead. What now?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">If you've confirmed the breaker is properly reset (OFF all the way, then ON), tested every GFCI in the garage, bathrooms, and basement, and verified it's not a switched outlet &#8212; the cause is a wiring fault in the fixed circuit. The most common scenarios at this point: a back-stab connection has failed at the dead outlet or at the outlet immediately upstream from it in the daisy chain, a wirenut connection has loosened inside the outlet box or an adjacent junction box, or there's an open neutral somewhere in the circuit. All of these require turning off the circuit breaker and having a licensed electrician open the boxes to locate the fault. Do not try to locate it yourself by probing the live outlet &#8212; if the neutral is open, the hot conductor is still energized at the outlet face.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why would a GFCI in the garage control an outlet in my bedroom?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">This is an artifact of older wiring practices. GFCI protection is required in bathrooms, kitchens, garages, and exterior locations &#8212; but the NEC didn't always require a GFCI at every location. Earlier code interpretation allowed a single GFCI outlet to "protect" all downstream outlets in a circuit by wiring them to the LOAD terminals of the GFCI. The GFCI then acts as a breaker for the whole downstream chain. Electricians working on older homes often ran wiring in ways that connected zones together that homeowners don't associate. A garage GFCI that protects outdoor circuits, basement circuits, and portions of interior circuits that happened to be on the same branch is not unusual in homes built in the 1970s through early 2000s. The practical tip: press RESET on every GFCI in the house, not just the ones near the dead outlet.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Only the top slot of my outlet stopped working. Is that a different problem?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A duplex outlet with one working slot and one dead slot is typically one of two things: a switched outlet (one slot is controlled by a wall switch, the other is always-hot &#8212; toggle the room switches to check), or a back-stab or terminal failure on the hot side of just one slot. Standard duplex outlets connect both slots to the same hot and neutral terminals via a connecting tab &#8212; so if the tab is broken or if the device has a split-circuit configuration (where the tab was intentionally removed to allow independent control), one slot can be dead while the other works. A split-circuit configuration is normal in switched outlet installations. A back-stab failure on the hot terminal of one slot, however, requires the outlet to be replaced with proper screw-terminal termination.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is it safe to use the outlet temporarily with an extension cord while I wait for an electrician?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">If the dead outlet has no heat, no buzzing, and no burning smell &#8212; and you've confirmed the adjacent outlet you're connecting to is also problem-free &#8212; using a nearby working outlet with an extension cord is generally safe as a temporary workaround. What's not safe: using the dead outlet at all (even though it appears dead, an open neutral means the hot is still present), leaving the situation unaddressed for weeks while the extension cord becomes a permanent installation, or running a high-draw appliance on an extension cord for extended periods. Extension cords are temporary solutions, not permanent wiring. Have the dead outlet repaired before the workaround becomes the default.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Check three things first &#8212; in order: (1) reset the circuit breaker correctly (OFF then ON), (2) find and reset all upstream GFCI outlets, (3) toggle wall switches in the room. These three steps resolve the majority of dead outlet calls.</li>
+        <li>A tripped GFCI is the most commonly missed cause. The GFCI controlling your dead outlet may be in a completely different room &#8212; garage, bathroom, or basement. Press RESET on every GFCI you can find.</li>
+        <li>An open neutral leaves the outlet appearing dead but with the hot conductor still energized. Don't probe a dead outlet &#8212; the hot may still be live even though nothing works.</li>
+        <li>A dead outlet that is also warm, buzzing, or smells burned has an active arcing fault. Turn off the circuit breaker and call an electrician &#8212; don't troubleshoot further.</li>
+        <li>If the 3-step check doesn't resolve it, the fault is a wiring issue requiring professional diagnosis. Stop at that point and call a licensed electrician.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">outlet stopped working</a>
+      <a href="#" class="tag-pill">dead electrical outlet</a>
+      <a href="#" class="tag-pill">outlet not working</a>
+      <a href="#" class="tag-pill">outlet has no power</a>
+      <a href="#" class="tag-pill">why is my outlet dead</a>
+      <a href="#" class="tag-pill">multiple outlets not working</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Electrical Guides</h3>
+    <div class="related-list">
+      <a href="gfci-keeps-tripping.html" class="related-item">
+        <div><div class="related-item-title">Why Your GFCI Breaker Keeps Tripping</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="outlet-warm-hot.html" class="related-item">
+        <div><div class="related-item-title">Why Your Outlet Is Warm or Hot</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="outlet-switch-pops-buzzes.html" class="related-item">
+        <div><div class="related-item-title">Why Your Outlet or Switch Pops or Buzzes</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#check-first">3-Step Check First</a></li>
+      <li><a href="#severity">How Serious Is It?</a></li>
+      <li><a href="#causes">10 Causes</a></li>
+      <li><a href="#diagnostic">10-Minute Diagnostic</a></li>
+      <li><a href="#pattern-table">Pattern Reference</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">Licensed Electrician &amp; Fire Investigator</div>
+        <div class="s-bio">NFPA Certified Fire Investigator (CFI-1), Certified Healthcare Facility Manager (CHFM), CLSS-HC, OSHA 30, and licensed electrician. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>Electrical safety guides and seasonal home maintenance reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

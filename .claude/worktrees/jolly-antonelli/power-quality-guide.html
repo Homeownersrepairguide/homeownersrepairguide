@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Guide to Residential Electrical Power Quality | HomeownersRepairGuide.com</title>
+<meta name="description" content="A certified fire inspector and licensed electrician explains what power quality means in a home — why lights flicker, how the neutral controls voltage stability, and how to diagnose every symptom pattern correctly.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--navy-light:#234468;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.15s;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .article-wrap{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+  .article-main{min-width:0;}
+  .article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;}
+  .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--amber);color:var(--navy);}
+  .tag.safety{background:#c0402a;color:var(--white);}
+  .tag.diagnosis{background:#1a5a9a;color:var(--white);}
+  .article-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);line-height:1.12;letter-spacing:-0.025em;margin-bottom:20px;}
+  .article-subtitle{font-size:18px;color:var(--text-muted);line-height:1.6;margin-bottom:28px;border-left:3px solid var(--amber);padding-left:16px;}
+  .article-byline{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:32px;}
+  .byline-avatar{width:48px;height:48px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);flex-shrink:0;}
+  .byline-info{flex:1;}
+  .byline-name{font-size:15px;font-weight:600;color:var(--text-dark);}
+  .byline-cred{font-size:12px;color:var(--text-muted);margin-top:2px;}
+  .byline-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:12px;color:var(--text-muted);text-align:right;}
+  .byline-meta strong{color:var(--text-dark);}
+  .article-hero-img{background:linear-gradient(135deg,#060610 0%,#0e1228 100%);border-radius:var(--radius-lg);height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:40px;gap:12px;border:1px solid var(--gray-light);position:relative;overflow:hidden;}
+  .article-hero-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 65% 80% at 60% 50%,rgba(240,165,0,0.12) 0%,transparent 70%);}
+  .article-hero-img .img-icon{font-size:72px;opacity:0.45;position:relative;z-index:1;}
+  .article-hero-img .img-caption{font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;position:relative;z-index:1;}
+  .article-body{font-size:17px;line-height:1.75;color:var(--text-body);}
+  .article-body h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin:48px 0 16px;line-height:1.2;letter-spacing:-0.01em;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .article-body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy-mid);margin:32px 0 12px;line-height:1.25;}
+  .article-body p{margin-bottom:20px;}
+  .article-body ul,.article-body ol{margin:0 0 20px 0;padding-left:24px;}
+  .article-body li{margin-bottom:8px;}
+  .article-body strong{color:var(--text-dark);font-weight:600;}
+  .article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+  /* Diagnostic framework */
+  .diag-framework{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0;}
+  .diag-pillar{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);text-align:center;}
+  .diag-pillar-icon{font-size:26px;margin-bottom:8px;}
+  .diag-pillar-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .diag-pillar-desc{font-size:13px;color:var(--text-muted);line-height:1.5;}
+  .diag-pillar-example{font-size:12px;font-style:italic;color:var(--amber);margin-top:8px;font-weight:600;}
+  /* Vocabulary cards */
+  .vocab-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:28px 0;}
+  .vocab-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+  .vocab-term{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+  .vocab-plain{font-size:13px;color:var(--text-muted);line-height:1.5;margin-bottom:4px;}
+  .vocab-clue{font-size:12px;color:var(--amber);font-weight:600;}
+  /* Expert callout */
+  .expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0;display:flex;gap:18px;align-items:flex-start;}
+  .expert-callout-avatar{width:44px;height:44px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);flex-shrink:0;margin-top:2px;}
+  .expert-callout-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:6px;}
+  .expert-callout-text{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+  .expert-callout-attr{font-size:12px;color:rgba(255,255,255,0.45);margin-top:8px;}
+  /* Callout boxes */
+  .callout-box{border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+  .callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+  .callout-box.danger{background:#fef2f0;border:1px solid #e08070;}
+  .callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+  .callout-box.info{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .callout-icon{font-size:22px;flex-shrink:0;margin-top:1px;}
+  .callout-content{flex:1;}
+  .callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+  .callout-box.warning .callout-label{color:#b07800;}
+  .callout-box.danger .callout-label{color:#c0402a;}
+  .callout-box.tip .callout-label{color:#2a7a2a;}
+  .callout-box.info .callout-label{color:#1a5a9a;}
+  .callout-text{font-size:15px;line-height:1.6;color:var(--text-body);}
+  /* Symptom matrix */
+  .symptom-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .symptom-table th{background:var(--amber);color:var(--navy);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .symptom-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .symptom-table tr:last-child td{border-bottom:none;}
+  .symptom-table tr:nth-child(even) td{background:var(--cream);}
+  .symptom-table td:first-child{font-weight:600;color:var(--text-dark);}
+  /* Utility vs home table */
+  .compare-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .compare-table th{background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;}
+  .compare-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);background:var(--white);vertical-align:top;line-height:1.5;}
+  .compare-table tr:last-child td{border-bottom:none;}
+  .compare-table tr:nth-child(even) td{background:var(--cream);}
+  .compare-table td:first-child{font-weight:600;color:var(--text-dark);}
+  /* Severity */
+  .severity-block{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px;margin:36px 0;box-shadow:var(--shadow-card);}
+  .severity-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .severity-row{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;}
+  .severity-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:3px;}
+  .sev-low .severity-dot{background:#4caf50;}
+  .sev-medium .severity-dot{background:var(--amber);}
+  .sev-high .severity-dot{background:var(--rust);}
+  .sev-critical .severity-dot{background:#c0392b;}
+  .severity-label{font-size:13px;font-weight:700;width:120px;flex-shrink:0;}
+  .sev-low .severity-label{color:#4caf50;}
+  .sev-medium .severity-label{color:var(--amber);}
+  .sev-high .severity-label{color:var(--rust);}
+  .sev-critical .severity-label{color:#c0392b;}
+  .severity-examples{font-size:13px;color:var(--text-body);line-height:1.55;flex:1;}
+  /* Scenario cards */
+  .scenario-list{display:flex;flex-direction:column;gap:14px;margin:28px 0;}
+  .scenario-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:22px 24px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+  .scenario-letter{width:36px;height:36px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);flex-shrink:0;margin-top:2px;}
+  .scenario-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;line-height:1.3;}
+  .scenario-body{font-size:14px;color:var(--text-body);line-height:1.55;margin-bottom:8px;}
+  .scenario-action{font-size:13px;font-weight:600;color:var(--rust);}
+  /* Hotspot grid */
+  .hotspot-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:28px 0;}
+  .hotspot-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+  .hotspot-icon{font-size:24px;margin-bottom:8px;}
+  .hotspot-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+  .hotspot-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+  .hotspot-items li{font-size:13px;color:var(--text-body);line-height:1.45;display:flex;align-items:flex-start;gap:8px;}
+  .hotspot-items li::before{content:'→';color:var(--amber);font-weight:700;flex-shrink:0;}
+  /* Solution table */
+  .solution-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .solution-table th{background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;}
+  .solution-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);background:var(--white);vertical-align:top;line-height:1.5;}
+  .solution-table tr:last-child td{border-bottom:none;}
+  .solution-table tr:nth-child(even) td{background:var(--cream);}
+  .solution-table td:first-child{font-weight:600;color:var(--text-dark);}
+  /* Safety popout */
+  .safety-popout{background:linear-gradient(135deg,#c0392b,#a93226);border-radius:var(--radius-lg);padding:28px 32px;margin:40px 0;}
+  .safety-popout h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:14px;}
+  .safety-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .safety-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(255,255,255,0.9);line-height:1.55;}
+  .safety-list li::before{content:'!';width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,0.2);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+  .safety-warn-title{font-weight:700;color:var(--white);display:block;margin-bottom:2px;}
+  /* Summary */
+  .summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px;margin:48px 0 36px;}
+  .summary-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .summary-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.55;}
+  .summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+  /* FAQ */
+  .faq-block{margin:36px 0;}
+  .faq-item{border-bottom:1px solid var(--gray-light);}
+  .faq-question{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font-size:16px;font-weight:600;color:var(--navy);gap:16px;user-select:none;}
+  .faq-question:hover{color:var(--amber);}
+  .faq-chevron{font-size:18px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+  .faq-answer{font-size:15px;color:var(--text-body);line-height:1.7;padding-bottom:18px;display:none;}
+  .faq-item.open .faq-answer{display:block;}
+  .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--amber);}
+  /* Tags & share */
+  .article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0;padding-top:32px;border-top:1px solid var(--gray-light);}
+  .article-tag-pill{font-size:12px;padding:5px 12px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+  .article-tag-pill:hover{background:var(--amber);color:var(--navy);border-color:var(--amber);}
+  .share-bar{display:flex;align-items:center;gap:12px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:48px;flex-wrap:wrap;}
+  .share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+  .share-btn{padding:8px 16px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+  .share-btn:hover{opacity:0.85;}
+  .share-fb{background:#1877f2;color:white;}
+  .share-x{background:#000;color:white;}
+  .share-pin{background:#e60023;color:white;}
+  .share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+  /* Related */
+  .related{margin-top:48px;}
+  .related h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .related-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;}
+  .related-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+  .related-img{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px;}
+  .related-img.e{background:linear-gradient(135deg,#fff8e6,#faefd0);}
+  .related-img.m{background:linear-gradient(135deg,#eaf5ea,#d4ecd4);}
+  .related-body{padding:16px;}
+  .related-body .tag{font-size:10px;padding:3px 8px;margin-bottom:8px;}
+  .related-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:6px;}
+  .related-meta{font-size:11px;color:var(--text-muted);}
+  /* Sidebar */
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:24px;}
+  .sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .sidebar-card h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gray-light);}
+  .sidebar-expert{display:flex;gap:14px;align-items:flex-start;}
+  .sidebar-avatar{width:52px;height:52px;border-radius:50%;background:var(--amber);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);flex-shrink:0;}
+  .sidebar-expert-name{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+  .sidebar-expert-title{font-size:12px;color:var(--amber);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
+  .sidebar-expert-bio{font-size:13px;color:var(--text-muted);line-height:1.55;}
+  .sidebar-creds{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;}
+  .cred-pill{font-size:10px;padding:3px 8px;background:var(--cream-dark);border-radius:2px;color:var(--text-muted);font-weight:600;}
+  .toc-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+  .toc-list li a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);text-decoration:none;padding:6px 8px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+  .toc-list li a:hover{background:var(--cream);color:var(--amber);}
+  .toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+  .toc-list li.active a{color:var(--amber);background:var(--cream);font-weight:600;}
+  .toc-list li.active a::before{background:var(--amber);width:6px;height:6px;}
+  .sidebar-newsletter{background:var(--amber);border-radius:var(--radius-lg);padding:24px;}
+  .sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+  .sidebar-newsletter p{font-size:13px;color:rgba(15,34,54,0.7);line-height:1.55;margin-bottom:16px;}
+  .ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:32px 16px;text-align:center;}
+  .ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:6px;}
+  .ad-placeholder .ad-size{font-size:13px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+  .pop-list{display:flex;flex-direction:column;gap:14px;}
+  .pop-item{display:flex;gap:12px;align-items:flex-start;text-decoration:none;}
+  .pop-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:28px;}
+  .pop-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.35;transition:color 0.15s;}
+  .pop-item:hover .pop-title{color:var(--amber);}
+  .pop-cat{font-size:11px;color:var(--text-muted);margin-top:3px;}
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:24px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+  @media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.related-grid{grid-template-columns:1fr 1fr;}.diag-framework{grid-template-columns:1fr 1fr;}.vocab-grid{grid-template-columns:1fr;}.hotspot-grid{grid-template-columns:1fr;}}
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.related-grid{grid-template-columns:1fr;}.diag-framework{grid-template-columns:1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+  <!-- SEO: Open Graph & Canonical -->
+  <link rel="canonical" href="https://homeownersrepairguide.com/power-quality-guide.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://homeownersrepairguide.com/power-quality-guide.html">
+  <meta property="og:title" content="The Complete Guide to Residential Electrical Power Quality | HomeownersRepairGuide.com">
+  <meta property="og:description" content="A certified fire inspector and licensed electrician explains what power quality means in a home — why lights flicker, how the neutral controls voltage stabil...">
+  <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Complete Guide to Residential Electrical Power Quality | HomeownersRepairGuide.com">
+  <meta name="twitter:description" content="A certified fire inspector and licensed electrician explains what power quality means in a home — why lights flicker, how the neutral controls voltage stabil...">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">The Complete Guide to Residential Electrical Power Quality</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Electrical</span>
+    <span class="tag diagnosis">Diagnosis</span>
+    <span class="tag safety">Safety</span>
+  </div>
+
+  <h1 class="article-title">The Complete Guide to Residential Electrical Power Quality</h1>
+
+  <p class="article-subtitle">Power quality is why your lights flicker, your electronics die early, and your breakers trip without a clear cause. Understanding it means understanding one thing above everything else: the neutral conductor controls voltage stability for every 120V circuit in your home &#8212; and when it fails, everything downstream suffers.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Certified Facility Manager &amp; Life Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 &#183; CHFM &#183; CLSS-HC &#183; OSHA 30 &#183; Electrician &#8212; All Phases</div>
+    </div>
+    <div class="byline-meta">
+      <span><strong>Updated:</strong> January 2025</span>
+      <span>24 min read &#183; Fact-verified</span>
+    </div>
+  </div>
+
+  <div class="article-hero-img">
+    <div class="img-icon">&#128267;</div>
+    <div class="img-caption">[Hero image &#8212; e.g. electrical panel or voltage meter under load testing]</div>
+  </div>
+
+  <div class="article-body">
+
+    <p>Power quality is not just a comfort issue. It is a behavior pattern &#8212; and reading that pattern correctly is what separates a homeowner who replaces bulbs and strips trying to fix flicker from one who gets the actual problem diagnosed and fixed the first time.</p>
+
+    <p>The most common mistake is treating symptoms as isolated. Power quality problems almost always involve interaction: a large load reveals a weak neutral, a long run amplifies sag, or multiple electronic loads distort the waveform enough to trigger protective devices. The symptom you see is rarely where the problem lives.</p>
+
+    <div class="callout-box danger">
+      <div class="callout-icon">&#128680;</div>
+      <div class="callout-content">
+        <div class="callout-label">Stop and Call an Electrician Immediately If You See This</div>
+        <div class="callout-text"><strong>Lights brightening noticeably across multiple rooms &#8212; especially if some brighten while others dim &#8212; is the most urgent power quality signal in residential electrical.</strong> It indicates neutral instability that can rapidly destroy electronics and overheat wiring. Reduce load and call a licensed electrician today. Do not wait to see if it recurs.</div>
+      </div>
+    </div>
+
+    <h2 id="diagnostic-framework">The Three-Part Diagnostic Framework: Scope, Timing, Correlation</h2>
+
+    <p>Before you can interpret any power quality symptom, you need three pieces of information. Every professional electrical diagnosis starts here &#8212; and every homeowner observation should too.</p>
+
+    <div class="diag-framework">
+      <div class="diag-pillar">
+        <div class="diag-pillar-icon">&#128300;</div>
+        <div class="diag-pillar-title">Scope</div>
+        <div class="diag-pillar-desc">How many fixtures, circuits, or rooms are affected? The scope of a symptom is your first and most powerful diagnostic filter.</div>
+        <div class="diag-pillar-example">One device → component issue. One room → circuit. Multiple rooms → neutral or service.</div>
+      </div>
+      <div class="diag-pillar">
+        <div class="diag-pillar-icon">&#9201;</div>
+        <div class="diag-pillar-title">Timing</div>
+        <div class="diag-pillar-desc">Is the event instant, delayed, or sustained? Does it last milliseconds or seconds? Is it getting worse over time?</div>
+        <div class="diag-pillar-example">Brief = inrush. Sustained = structural weakness. Worsening = progressing fault.</div>
+      </div>
+      <div class="diag-pillar">
+        <div class="diag-pillar-icon">&#128279;</div>
+        <div class="diag-pillar-title">Correlation</div>
+        <div class="diag-pillar-desc">What else happens when the symptom occurs? Appliance startup, dimming level, time of day, weather, or humidity?</div>
+        <div class="diag-pillar-example">Motor starts = sag. Rain = moisture. Peak hours = utility. Random = loose connection.</div>
+      </div>
+    </div>
+
+    <p>A homeowner who can describe "lights dim briefly across three rooms every time the HVAC compressor starts, recovers in about two seconds, and has gotten slightly worse over the past six months" gives an electrician a fully formed diagnostic picture before a single test is performed. That level of observation is entirely within homeowner capability &#8212; no panels opened, no boxes touched.</p>
+
+    <h2 id="power-quality-vocabulary">Power Quality in Plain Language</h2>
+
+    <p>The fastest way to avoid misdiagnosis &#8212; by yourself or a contractor &#8212; is to label the behavior correctly. "Bad power" doesn't narrow anything. These terms do.</p>
+
+    <div class="vocab-grid">
+      <div class="vocab-card">
+        <div class="vocab-term">Voltage Sag</div>
+        <div class="vocab-plain">A brief dip in voltage. Lights dim, electronics may blink.</div>
+        <div class="vocab-clue">Often caused by: motor inrush, long runs, weak connections</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-term">Voltage Swell</div>
+        <div class="vocab-plain">A brief rise in voltage. Lights brighten, electronics may be stressed.</div>
+        <div class="vocab-clue">Often caused by: neutral shift, leg imbalance, utility event</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-term">Voltage Imbalance</div>
+        <div class="vocab-plain">One leg of the split-phase system rises while the other falls as loads change.</div>
+        <div class="vocab-clue">Classic symptom: some lights brighten while others dim simultaneously</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-term">Waveform Distortion</div>
+        <div class="vocab-plain">The shape of the AC waveform is corrupted by electronic loads or failing components.</div>
+        <div class="vocab-clue">Often causes: AFCI nuisance trips, LED driver stress, buzzing at dimmers</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-term">Transient (Spike/Surge)</div>
+        <div class="vocab-plain">A very brief, very high-voltage event &#8212; typically milliseconds. Often from lightning or utility switching.</div>
+        <div class="vocab-clue">Surge protectors help with these; they don't fix chronic instability</div>
+      </div>
+      <div class="vocab-card">
+        <div class="vocab-term">Voltage Drop</div>
+        <div class="vocab-plain">Sustained low voltage on a long circuit run or through a high-resistance connection. The load is too far away or the path has too much resistance.</div>
+        <div class="vocab-clue">Strongest at: far end of long circuits, during heavy appliance use</div>
+      </div>
+    </div>
+
+    <h2 id="how-voltage-works">How Residential Voltage Is Supposed to Behave</h2>
+
+    <p>North American residential service is nominally 120/240V split-phase. Two hot legs are 180° out of phase &#8212; each leg-to-neutral supplies approximately 120V, and leg-to-leg supplies approximately 240V for large appliances like ranges and dryers.</p>
+
+    <p>In normal operation, voltage varies slightly with load. A brief dip when a compressor starts is expected &#8212; what matters is recovery. Healthy systems rebound almost immediately and do not create repeated, visible flicker. A commonly cited planning target is ±5% around nominal during normal conditions. Multi-second instability, repeated flicker under ordinary use, or behavior that affects one side of the home differently from the other is not normal.</p>
+
+    <h3>The neutral &#8212; the most important conductor most homeowners don't know about</h3>
+
+    <p>The neutral conductor is the voltage reference for every 120V load in the home. When the neutral path is solid and low-resistance, each leg stays close to its intended voltage even as loads change across both legs. This is the fundamental stability mechanism of the entire residential electrical system.</p>
+
+    <p>When the neutral degrades &#8212; at the service connection, in the panel, or at a branch splice &#8212; voltage can shift between legs. One side may sag while the other rises. The reason brightening is a higher-priority warning than dimming is that brightening means the voltage on one leg has increased, which can damage electronics rapidly and overheat wiring without triggering a breaker.</p>
+
+    <p>Neutral problems rarely announce themselves as a single dramatic event. They begin as subtle flicker, odd electronics behavior, or intermittent multi-room symptoms that appear during appliance cycling. And because neutral instability can create overvoltage on one leg, it can destroy sensitive electronics quickly &#8212; and do it without a single breaker trip.</p>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert &#8212; On the Neutral and Why Brightening Is Urgent</div>
+        <div class="expert-callout-text">"The call that concerns me most is the one where the homeowner describes lights getting brighter in one part of the house while something else is running. Dimming I can explain to them as voltage sag from a motor load &#8212; normal, address it when you can. Brightening is different. Brightening means voltage went up somewhere it wasn't supposed to. In split-phase systems, that almost always means the neutral reference is shifting. One leg is rising while the other falls. That condition can destroy electronics in a single event and can heat connections without a breaker moving an inch. When I hear 'some of my lights got unusually bright,' I treat that as an urgent call, not a scheduled appointment."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA Certified Fire Inspector &#183; Certified Healthcare Facility Manager &#183; Electrician &#8212; All Phases</div>
+      </div>
+    </div>
+
+    <h2 id="symptom-decoder">Symptom Decoder &#8212; What Your Home Is Telling You</h2>
+
+    <table class="symptom-table">
+      <thead>
+        <tr>
+          <th>Symptom</th>
+          <th>Scope / When</th>
+          <th>Most Likely Cause</th>
+          <th>Urgency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lights flicker</td>
+          <td>One fixture only</td>
+          <td>Failing LED driver, incompatible dimmer, loose socket contact</td>
+          <td>Low &#8212; swap bulb first</td>
+        </tr>
+        <tr>
+          <td>Lights flicker</td>
+          <td>One room, multiple fixtures</td>
+          <td>Loose splice in upstream junction, failing switch or dimmer, circuit voltage instability</td>
+          <td>Schedule service</td>
+        </tr>
+        <tr>
+          <td>Lights flicker</td>
+          <td>Whole home simultaneously</td>
+          <td>Service neutral, panel termination problem, or utility-side issue</td>
+          <td>Urgent &#8212; call today</td>
+        </tr>
+        <tr>
+          <td>Lights dim at appliance startup</td>
+          <td>Brief, then recovers</td>
+          <td>Normal motor inrush on a healthy system &#8212; acceptable if quick and consistent</td>
+          <td>Monitor &#8212; note if worsening</td>
+        </tr>
+        <tr>
+          <td>Lights dim at appliance startup</td>
+          <td>Lasts seconds; affects wide area; worsening</td>
+          <td>Long run, weak connection, overloaded circuit, or marginal service capacity</td>
+          <td>Schedule service</td>
+        </tr>
+        <tr>
+          <td>Lights brighten unexpectedly</td>
+          <td>Any scope</td>
+          <td>Neutral shift &#8212; one leg rising as loads change. Can damage electronics rapidly.</td>
+          <td>Urgent &#8212; call today</td>
+        </tr>
+        <tr>
+          <td>Some lights brighten, others dim simultaneously</td>
+          <td>Different rooms at same time</td>
+          <td>MWBC neutral imbalance or service neutral degradation &#8212; classic leg imbalance</td>
+          <td>Emergency &#8212; call immediately</td>
+        </tr>
+        <tr>
+          <td>Electronics rebooting randomly</td>
+          <td>Correlates with appliance cycles</td>
+          <td>Chronic voltage sag or neutral instability stressing power supplies</td>
+          <td>Schedule service &#8212; electronics at risk</td>
+        </tr>
+        <tr>
+          <td>Multiple electronics fail in short period</td>
+          <td>Any</td>
+          <td>Surge event, or neutral shift causing overvoltage on one leg</td>
+          <td>Urgent &#8212; diagnose cause immediately</td>
+        </tr>
+        <tr>
+          <td>AFCI trips coincide with flicker</td>
+          <td>Load transitions or weather</td>
+          <td>Loose splice or failing device creating arc signature during voltage transitions</td>
+          <td>Schedule service &#8212; not a nuisance</td>
+        </tr>
+        <tr>
+          <td>AFCI trips with nothing connected</td>
+          <td>Any</td>
+          <td>Fixed wiring fault, MWBC neutral misrouting, or damaged cable</td>
+          <td>High &#8212; professional diagnosis required</td>
+        </tr>
+        <tr>
+          <td>Dimmer buzzes or LEDs flicker at specific settings</td>
+          <td>Tied to dimmer position</td>
+          <td>Dimmer incompatibility with LED driver type &#8212; incandescent-era dimmer on LED load</td>
+          <td>Low &#8212; replace dimmer with LED-rated model</td>
+        </tr>
+        <tr>
+          <td>Flicker worsens after LED conversion</td>
+          <td>Previously none, now present</td>
+          <td>LEDs revealing marginal wiring that incandescent bulbs masked with thermal inertia</td>
+          <td>Medium &#8212; diagnose stability, not just compatibility</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="root-causes">Root Causes &#8212; Where Power Quality Problems Actually Live</h2>
+
+    <h3>Loose or failing neutral connections</h3>
+    <p>This is the highest-stakes power quality defect. A neutral that degrades &#8212; at the service lug, inside the panel, or at a branch junction &#8212; creates a voltage reference that shifts with load. The result is leg-to-leg imbalance that manifests as brightening, erratic electronics, and AFCI trips that appear random. Loose neutrals can overheat at their failure point without triggering a breaker, creating both equipment damage and fire risk simultaneously.</p>
+
+    <h3>MWBC and shared-neutral misconfiguration</h3>
+    <p>Multi-wire branch circuits use two hot conductors sharing one neutral. When configured correctly &#8212; paired on opposite legs with a tied two-pole breaker &#8212; the neutral carries only the load imbalance. When misconfigured &#8212; wrong breaker pairing, both hots on the same leg, disturbed splice &#8212; the neutral can carry the combined current of both circuits. Symptoms: LED flicker, nuisance AFCI trips, and multi-room instability that appears random. Homeowners should not troubleshoot MWBCs beyond documenting the pattern. This requires professional evaluation.</p>
+
+    <h3>High-resistance connections</h3>
+    <p>A slightly loose termination anywhere on the circuit behaves like a resistor: it drops voltage at that point and generates heat every time current flows. As the connection heats, oxidation increases and contact pressure weakens &#8212; a self-accelerating feedback loop. Symptoms include intermittent flicker, voltage drop under modest loads, warm faceplates, and buzzing at devices. The problem often appears downstream of the actual failure point, which is why device replacement alone rarely solves it.</p>
+
+    <h3>Long circuit runs and undersized conductors</h3>
+    <p>Long runs increase voltage drop under load &#8212; the longer the run and the higher the current, the greater the drop. Garages, outbuildings, basement additions, and remodeled spaces are common scenarios. A practical clue is geography: if symptoms are strongest at the far end of a circuit &#8212; the farthest outlets or light fixtures &#8212; long-run drop or upstream connections are likely. Corrective options include dedicated circuits, conductor upgrades, or shortening runs.</p>
+
+    <h3>Motor loads and electronic load interactions</h3>
+    <p>Compressors, pumps, and refrigerators create high inrush current at startup. Healthy equipment starts quickly. Aging start components, locked-rotor events, or mechanical wear cause longer, deeper voltage dips that stress circuits. Meanwhile, modern switching power supplies, LED drivers, and dimmers can introduce waveform distortion that AFCI sensors detect as arc signatures &#8212; triggering trips that appear random but are actually the system responding to real waveform irregularities.</p>
+
+    <h2 id="utility-vs-home">Utility-Side vs. Home-Side: How to Tell Where the Problem Is</h2>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Clue</th>
+          <th>Points Toward Home-Side</th>
+          <th>Points Toward Utility-Side</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Scope of effect</td>
+          <td>Confined to one circuit, area, or panel leg</td>
+          <td>Simultaneous whole-home effects on all circuits</td>
+        </tr>
+        <tr>
+          <td>Progression over time</td>
+          <td>Symptoms worsening gradually over weeks or months</td>
+          <td>Sudden onset, or correlates with utility events</td>
+        </tr>
+        <tr>
+          <td>Time-of-day pattern</td>
+          <td>No correlation with peak demand hours</td>
+          <td>Worse during evening peak hours or high-AC-demand days</td>
+        </tr>
+        <tr>
+          <td>Weather correlation</td>
+          <td>No correlation with storms or wind</td>
+          <td>Worsens during storms, wind, or rain events</td>
+        </tr>
+        <tr>
+          <td>Neighbor reports</td>
+          <td>No neighbors affected</td>
+          <td>Neighbors experiencing similar symptoms simultaneously</td>
+        </tr>
+        <tr>
+          <td>Heat, odor, or device damage</td>
+          <td>Present &#8212; internal wiring problem progressing</td>
+          <td>Absent &#8212; no internal failure source</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Even when the utility is involved, home-side weaknesses can compound symptoms. A robust interior system is more tolerant of minor utility variations. If the problem is confirmed as utility-side, document time windows, triggers, and neighbor reports. Utilities respond best to documented, repeatable patterns. If the problem is home-side, utility visits will not resolve it.</p>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert &#8212; On LEDs as a Diagnostic Tool</div>
+        <div class="expert-callout-text">"One of the most useful things that happened when homeowners switched to LEDs is that their wiring became more honest. LED drivers respond instantly to voltage and waveform changes. Incandescent bulbs had thermal inertia that smoothed out a lot of marginal behavior &#8212; the filament would glow through a brief sag without the homeowner ever seeing a flicker. When I hear 'flickering started right after I switched to LEDs,' I tell homeowners: the LEDs didn't create the problem. They revealed it. The wiring was already marginal. Now it just has a better sensor telling you it's marginal. That's actually useful information &#8212; you can get it fixed now instead of waiting for the marginal condition to become something worse."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA Certified Fire Inspector &#183; Certified Healthcare Facility Manager &#183; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="severity">How Urgent Is Your Situation?</h2>
+
+    <div class="severity-block">
+      <div class="severity-title">Power Quality Problem Urgency Scale</div>
+      <div class="severity-row sev-low">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Monitor</div>
+        <div class="severity-examples">Single-fixture flicker that follows the bulb when swapped. Brief dimming at HVAC startup that recovers quickly and has been consistent for years. Dimmer buzzing only at very low settings with a known incompatible bulb.</div>
+      </div>
+      <div class="severity-row sev-medium">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Schedule Service</div>
+        <div class="severity-examples">Dimming at appliance startup that lasts more than a second or two. Recurring AFCI trips tied to a specific device. Flicker across multiple fixtures in one room. Electronics rebooting intermittently when HVAC cycles.</div>
+      </div>
+      <div class="severity-row sev-high">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Call Today</div>
+        <div class="severity-examples">Flicker across multiple rooms simultaneously. Electronics failing in clusters. Startup dimming that is worsening over time. AFCI trips with nothing connected. Warm outlet or switch plate anywhere in the home.</div>
+      </div>
+      <div class="severity-row sev-critical">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Emergency</div>
+        <div class="severity-examples">Lights brightening noticeably in any room. Some lights brightening while others dim simultaneously. Multiple electronics destroyed in a short window. Burning smell, buzzing from panel, or visible heat damage at any device.</div>
+      </div>
+    </div>
+
+    <h2 id="scenarios">Real-World Scenarios</h2>
+
+    <div class="scenario-list">
+
+      <div class="scenario-card">
+        <div class="scenario-letter">A</div>
+        <div>
+          <div class="scenario-title">Multi-room lights dim every time the HVAC starts</div>
+          <div class="scenario-body">Brief dimming at HVAC startup is often normal motor inrush &#8212; the compressor draws a surge of current as it starts, and voltage dips momentarily. If dimming is brief, consistent, and has not changed over time, it may be acceptable on an older or smaller service. If dimming is getting deeper or lasting longer over months, the system is losing margin: aging start components on the HVAC, a loosening connection on the circuit, or the service is increasingly stressed as loads have been added.</div>
+          <div class="scenario-action">Note whether it is getting worse. Stable and brief = monitor. Deepening or multi-second = schedule service to evaluate neutral integrity and circuit loading.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-letter">B</div>
+        <div>
+          <div class="scenario-title">Some lights get brighter while others dim, in different rooms, at the same time</div>
+          <div class="scenario-body">This is the most important power quality scenario to recognize. Asymmetric behavior &#8212; some areas brightening while others dim simultaneously &#8212; is the defining symptom of neutral shift. The neutral reference is unstable, one leg is rising as the other falls, and the system is out of balance. This can destroy electronics in a single loading event and can overheat the neutral connection without a single breaker tripping.</div>
+          <div class="scenario-action">Treat as an emergency. Turn off sensitive electronics on both sides of the home. Call a licensed electrician today with the specific description: "some lights got brighter while others got dimmer at the same time."</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-letter">C</div>
+        <div>
+          <div class="scenario-title">AFCI breaker trips coincide with flicker at appliance startup</div>
+          <div class="scenario-body">AFCIs monitor waveform behavior. When a large motor starts and creates voltage sag, the sudden current transient can produce waveform patterns that resemble arc signatures &#8212; especially if there is also a loose connection somewhere on the circuit amplifying the event. The AFCI is not malfunctioning. It is detecting an electrical event that the voltage sag is revealing. The correct diagnosis is whether the underlying cause is the motor load alone or a loose splice that the motor start is stressing.</div>
+          <div class="scenario-action">Unplug all loads on the circuit and test whether the AFCI holds during the appliance startup. If it does, the circuit has a load interaction issue. If it still trips with nothing connected, you have a fixed-wiring problem &#8212; call an electrician.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-letter">D</div>
+        <div>
+          <div class="scenario-title">Multiple electronics died within a few weeks of each other</div>
+          <div class="scenario-body">Clustered electronics failures &#8212; multiple devices dying within a short window with no obvious single cause &#8212; are the fingerprint of either a transient surge event or neutral instability creating overvoltage on one leg. A surge event might be from a nearby lightning strike or utility switching. Neutral instability is more insidious because it can happen repeatedly, stressing devices each time, until they fail. The pattern to look for: did the failures all occur on one side of the home? Did you notice any unusual brightness events around the same time?</div>
+          <div class="scenario-action">Document which devices failed and where. If the failures cluster in one area and you noticed any brightening events, call an electrician for neutral evaluation. A whole-home surge protective device is also a reasonable upgrade regardless of cause.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-letter">E</div>
+        <div>
+          <div class="scenario-title">Flicker started immediately after switching all bulbs to LED</div>
+          <div class="scenario-body">This is one of the most common power quality presentations and one of the most misdiagnosed. LED drivers respond instantly to voltage and waveform variations that incandescent bulbs masked through thermal inertia. The flickering was not caused by the LED conversion &#8212; the marginal wiring condition already existed. The LEDs are now revealing it. If the flicker is at one fixture or dimmer, it may be a compatibility issue. If it is multi-room or correlates with appliance startup, it is voltage stability.</div>
+          <div class="scenario-action">Start with dimmer compatibility &#8212; replace incandescent-era dimmers with LED-rated models. If flicker persists across multiple rooms or correlates with motor loads, the focus should shift to wiring stability and the neutral path.</div>
+        </div>
+      </div>
+
+      <div class="scenario-card">
+        <div class="scenario-letter">F</div>
+        <div>
+          <div class="scenario-title">Whole-home flicker during windstorms or periods of peak neighborhood demand</div>
+          <div class="scenario-body">When flicker is whole-home, simultaneous across all circuits, and correlates with storms or peak hours &#8212; and your neighbors are experiencing the same thing &#8212; the problem is likely utility-side. Transformer loading imbalance, service drop connections stressed by wind, and utility neutral degradation are all common causes. However, if the symptoms are present during calm weather too, home-side issues may compound the utility problem.</div>
+          <div class="scenario-action">Document time windows, weather correlation, and whether neighbors report similar behavior. Contact both your utility and a licensed electrician: the utility to assess the service drop and transformer, the electrician to confirm the service entrance and panel connections are sound on the home side.</div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 id="hotspots">Room-by-Room Power Quality Hotspots</h2>
+
+    <div class="hotspot-grid">
+      <div class="hotspot-card">
+        <div class="hotspot-icon">&#127859;</div>
+        <div class="hotspot-title">Kitchen &#8212; High-Wattage Heating + Motor Starts</div>
+        <ul class="hotspot-items">
+          <li>Multiple countertop appliances creating combined sag on shared circuits</li>
+          <li>Refrigerator compressor startup visible as brief, repeating dimming</li>
+          <li>Microwave, air fryer, and toaster combinations often exceed circuit continuous capacity</li>
+          <li>Dishwasher motor transitions creating periodic flicker on shared circuits</li>
+        </ul>
+      </div>
+      <div class="hotspot-card">
+        <div class="hotspot-icon">&#128268;</div>
+        <div class="hotspot-title">Home Office &amp; Bedrooms &#8212; Sensitive Electronics First</div>
+        <ul class="hotspot-items">
+          <li>Computers, routers, and smart devices are the first to show instability through reboots and drops</li>
+          <li>Chargers and power supplies run hotter and fail sooner under chronic sag</li>
+          <li>Smart devices going offline intermittently is often voltage instability, not network issues</li>
+          <li>LED desk lamps are highly visible indicators of subtle voltage variation</li>
+        </ul>
+      </div>
+      <div class="hotspot-card">
+        <div class="hotspot-icon">&#127968;</div>
+        <div class="hotspot-title">Garage &amp; Basement &#8212; Motor Loads + Long Runs</div>
+        <ul class="hotspot-items">
+          <li>Compressors, sump pumps, and chest freezers create highest inrush loads in the home</li>
+          <li>Long circuits from the main panel mean highest voltage drop under load</li>
+          <li>EV charging &#8212; a continuous high-load that reveals weak connections quickly</li>
+          <li>Workshop tools with locked-rotor events can create the deepest, longest sags</li>
+        </ul>
+      </div>
+      <div class="hotspot-card">
+        <div class="hotspot-icon">&#9878;&#65039;</div>
+        <div class="hotspot-title">Whole Home &#8212; Neutral Shift Signs to Watch For</div>
+        <ul class="hotspot-items">
+          <li>Lights brightening in any room &#8212; especially asymmetrically &#8212; is the highest-urgency signal</li>
+          <li>Clustered electronics failures across different rooms in a short period</li>
+          <li>AFCI breakers on multiple circuits tripping near the same time</li>
+          <li>Behavior that changes as large appliances cycle on and off anywhere in the home</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="solutions">What Actually Fixes Power Quality Problems</h2>
+
+    <table class="solution-table">
+      <thead>
+        <tr>
+          <th>Problem</th>
+          <th>Correct Fix</th>
+          <th>What Doesn't Fix It</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Loose neutral at service, panel, or splice</td>
+          <td>Professional evaluation and re-termination of the neutral at the failure point</td>
+          <td>Replacing breakers, swapping devices, surge strips, or bulb changes</td>
+        </tr>
+        <tr>
+          <td>MWBC misconfiguration</td>
+          <td>Proper breaker pairing on opposite legs with tied disconnect; neutral continuity verification</td>
+          <td>Any device-level replacement on the affected circuits</td>
+        </tr>
+        <tr>
+          <td>High-resistance connection</td>
+          <td>Locate and re-terminate the loose or corroded connection with proper torque and connectors</td>
+          <td>Adding surge protection, replacing downstream devices</td>
+        </tr>
+        <tr>
+          <td>Voltage drop on long run</td>
+          <td>Add a dedicated circuit, upsize conductors, or shorten the run</td>
+          <td>Replacing the devices at the end of the run</td>
+        </tr>
+        <tr>
+          <td>LED / dimmer incompatibility</td>
+          <td>Replace with LED-rated dimmer; use dimmable bulbs listed as compatible</td>
+          <td>Replacing the LED driver in the fixture alone</td>
+        </tr>
+        <tr>
+          <td>Motor inrush causing visible sag</td>
+          <td>Dedicated circuit; check start components on aging equipment; evaluate service capacity</td>
+          <td>Replacing the lighting on the same circuit</td>
+        </tr>
+        <tr>
+          <td>Surge damage to electronics</td>
+          <td>Whole-home SPD plus point-of-use surge protection for sensitive devices</td>
+          <td>Replacing damaged electronics alone without surge protection</td>
+        </tr>
+        <tr>
+          <td>Chronic instability from multiple causes</td>
+          <td>Professional load and circuit analysis; targeted repairs at root cause; circuit additions</td>
+          <td>Stabilizer or conditioner units alone without fixing underlying wiring defects</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box tip">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">The Most Common Misdiagnosis</div>
+        <div class="callout-text">Replacing bulbs, power strips, and breakers to fix flicker or electronics failures without addressing the neutral path or connection quality is the single most expensive and frustrating misdiagnosis pattern. Surge strips help with transient spikes. Power conditioners help with some noise. Neither one fixes chronic sag, neutral shift, or high-resistance connections. If your symptoms are patterned and repeating, the root cause is a wiring or connection issue &#8212; not a device issue.</div>
+      </div>
+    </div>
+
+    <h2 id="homeowner-diagnostics">What You Can Safely Observe and Document</h2>
+
+    <p>Homeowner-safe power quality diagnostics are entirely observation-based &#8212; no panels opened, no boxes touched. The goal is to gather the information that lets a professional diagnose correctly on the first visit.</p>
+
+    <ul>
+      <li><strong>Map the scope:</strong> Which specific fixtures, outlets, or rooms are affected? Is it one circuit or synchronized across multiple circuits?</li>
+      <li><strong>Note the trigger:</strong> Does it correlate reliably with a specific appliance starting, a dimmer position, weather conditions, or time of day?</li>
+      <li><strong>Characterize the behavior:</strong> Is it dimming, brightening, or both? Does it last milliseconds or seconds? Is it getting worse?</li>
+      <li><strong>Isolate plug-in loads:</strong> Unplug devices one at a time and observe whether symptoms change. If removing a specific appliance stops the symptom, that appliance is either the cause or the load revealing a marginal connection.</li>
+      <li><strong>Document electronics failures:</strong> Note which devices failed, when, and where in the home. Clustered failures are diagnostic data.</li>
+      <li><strong>Stop and escalate:</strong> If you observe brightening in any room, repeated electronics failures, AFCI trips with nothing connected, or any heat, odor, or buzzing &#8212; stop observing and call a licensed electrician.</li>
+    </ul>
+
+    <h2 id="safety">Safety Warnings</h2>
+
+    <div class="safety-popout">
+      <h3>&#9888;&#65039; Power Quality Safety &#8212; These Require Immediate Action</h3>
+      <ul class="safety-list">
+        <li><span class="safety-warn-title">Lights brightening anywhere in the home &#8212; call today</span>Brightening means voltage increased on that leg. In split-phase systems this almost always indicates neutral instability. Electronics can be destroyed and connections can overheat without a single breaker tripping. This is not a "wait and see" condition.</li>
+        <li><span class="safety-warn-title">Multiple electronics failing in a short period &#8212; diagnose the cause</span>Clustered failures are evidence of either a surge event or chronic neutral instability. Replacing the failed devices without addressing the root cause means the next batch of devices will fail the same way.</li>
+        <li><span class="safety-warn-title">AFCI trips with nothing connected &#8212; fixed wiring fault</span>An AFCI that trips with all loads removed has detected something in the fixed wiring &#8212; a damaged cable, a misrouted neutral, or a failing splice. This is not a nuisance. Professional evaluation is required before restoring power.</li>
+        <li><span class="safety-warn-title">Do not add conditioners or stabilizers to fix a neutral problem</span>Power conditioners and surge strips are useful tools in the right context. They are not a substitute for fixing a loose neutral, a misrouted MWBC, or a high-resistance connection. These devices can mask symptoms while the underlying condition progresses toward equipment damage or fire risk.</li>
+        <li><span class="safety-warn-title">Never add a grounding rod to fix voltage instability</span>Grounding affects fault clearing and shock protection &#8212; it does not stabilize operating voltage for 120V loads. That is the neutral's function. Adding ground rods to fix flicker is a common and completely ineffective response to a neutral problem.</li>
+      </ul>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why did flicker start right after I switched to LED bulbs?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">The LEDs did not create the problem &#8212; they revealed it. Incandescent bulbs have thermal inertia that smooths brief voltage variations. LED drivers respond instantly. If the underlying wiring was already marginal &#8212; a loose connection, a long run, an aging neutral &#8212; the incandescent bulbs were masking it. The correct response is to determine whether the flicker is a compatibility issue (fix: LED-rated dimmer) or a stability issue (fix: neutral and connection integrity). Single-fixture flicker after an LED swap at a dimmed circuit is usually compatibility. Multi-room flicker correlated with appliance startup is stability.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can a loose neutral exist without obvious symptoms?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; early-stage neutral degradation can present as subtle, intermittent symptoms that are easy to dismiss. Small brightness shifts that appear briefly when appliances cycle on and off, electronics that occasionally reboot without a clear cause, or AFCI trips that seem random. The dangerous stage is when the degradation reaches a point where overvoltage episodes occur &#8212; because those can destroy electronics quickly. The value of LED bulbs is that they make early-stage instability visible. If you notice any brightening events, even brief ones, treat them as worth investigating.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Do I need a whole-home power conditioner?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Most homes do not. If you have chronic instability, the most effective "conditioning" is fixing neutral and connection defects and improving circuit design for modern loads. Power conditioners and UPS units help with transient spikes and brief sags &#8212; they do not correct a neutral problem, a long-run voltage drop, or a high-resistance connection. A whole-home surge protective device is a reasonable and relatively inexpensive upgrade for most homes with significant electronics. But the primary protection strategy should be wiring integrity first, surge devices second.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Should I replace my breakers if lights flicker?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No. Breakers rarely cause flicker. Flicker is a voltage behavior issue &#8212; it comes from the neutral path, connection quality, circuit loading, or a combination. Breakers respond to overcurrent. If a breaker trips when you would expect flicker, the circuit has a fault condition. If lights just flicker without tripping, the breaker is functioning correctly. Replacing breakers to address flicker delays the real diagnosis without fixing anything.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can power quality damage motors in appliances?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes. Chronic undervoltage forces motors to draw more current to produce the same work, generating more heat. Frequent sags make motors start harder and run hotter over time. Neutral instability can cause voltage swings that stress motor windings. The practical manifestation is earlier-than-expected compressor failures, pump motor burnouts, and HVAC system issues that correlate with chronic wiring problems. Fixing the power quality issue is often directly correlated with extending the life of motor-driven equipment.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why do power quality problems tend to be seasonal?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Several reasons. Summer brings higher HVAC run time and peak neighborhood demand, increasing sag frequency and utility-side voltage variation. Winter introduces different loads and temperature cycling that affects marginal connections &#8212; materials expand and contract, and a connection that is barely adequate in mild conditions can loosen under thermal stress. Wind and storms aggravate service drop connections and utility neutrals. Humidity can introduce leakage currents at exterior equipment. If your symptoms are seasonal, that correlation is diagnostic information &#8212; share it with the electrician.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How do I know if my power quality problem is from the utility or from my own wiring?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">The most useful clues are scope, progression, and neighbor reports. Home-side problems tend to affect specific circuits or areas, worsen gradually over time, and show heat or odor signs. Utility-side problems tend to affect the whole home simultaneously, correlate with storms or peak hours, and coincide with neighbor reports of similar symptoms. Both can coexist. The correct approach is to document the pattern thoroughly and involve both an electrician (to evaluate service entrance and panel connections) and the utility (to assess the service drop and transformer) when symptoms suggest both may be involved.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Diagnose with scope, timing, and correlation. Define how many circuits are affected, when the event occurs, and what reliably triggers it before assuming any cause.</li>
+        <li>The neutral is the voltage reference for every 120V circuit in your home. When it degrades, voltage shifts between legs and can destroy electronics without a single breaker tripping.</li>
+        <li>Brightening is more urgent than dimming. Dimming is usually voltage sag &#8212; a load stress event. Brightening indicates the voltage on a leg increased, which almost always means neutral instability.</li>
+        <li>LEDs reveal problems they didn't create. Flicker that appeared after switching to LEDs indicates the wiring was already marginal. LEDs are just more sensitive to it.</li>
+        <li>Surge strips and power conditioners do not fix neutral problems, high-resistance connections, or long-run voltage drop. These are wiring integrity issues that require wiring solutions.</li>
+        <li>The fastest and most effective "power conditioning" for a home is fixing loose neutrals, correcting high-resistance connections, and giving high-demand modern loads their own dedicated circuits.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="article-tag-pill">power quality</a>
+      <a href="#" class="article-tag-pill">voltage sag</a>
+      <a href="#" class="article-tag-pill">loose neutral</a>
+      <a href="#" class="article-tag-pill">flickering lights</a>
+      <a href="#" class="article-tag-pill">LED flicker</a>
+      <a href="#" class="article-tag-pill">MWBC</a>
+      <a href="#" class="article-tag-pill">voltage imbalance</a>
+      <a href="#" class="article-tag-pill">electronics failure</a>
+      <a href="#" class="article-tag-pill">electrical diagnostics</a>
+      <a href="#" class="article-tag-pill">home electrical system</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share this guide:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+
+  </div>
+
+  <div class="related">
+    <h3>More Electrical &amp; Safety Guides</h3>
+    <div class="related-grid">
+      <a href="electrical-systems-guide.html" class="related-card">
+        <div class="related-img e">&#9889;</div>
+        <div class="related-body">
+          <span class="tag">Electrical</span>
+          <div class="related-title">The Complete Guide to Home Electrical Systems</div>
+          <div class="related-meta">T.A. &#183; 32 min read</div>
+        </div>
+      </a>
+      <a href="lighting-circuits-guide.html" class="related-card">
+        <div class="related-img e">&#128161;</div>
+        <div class="related-body">
+          <span class="tag">Electrical</span>
+          <div class="related-title">The Complete Guide to Home Lighting Circuits</div>
+          <div class="related-meta">T.A. &#183; 26 min read</div>
+        </div>
+      </a>
+      <a href="electrical-fire-prevention-guide.html" class="related-card">
+        <div class="related-img e">&#128293;</div>
+        <div class="related-body">
+          <span class="tag safety">Fire Safety</span>
+          <div class="related-title">The Complete Home Electrical Fire Prevention Guide</div>
+          <div class="related-meta">T.A. &#183; 30 min read</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="sidebar-avatar">T.A.</div>
+      <div>
+        <div class="sidebar-expert-name">T.A.</div>
+        <div class="sidebar-expert-title">Fire Inspector &amp; Facility Manager</div>
+        <div class="sidebar-expert-bio">NFPA Certified Fire Inspector and Certified Healthcare Facility Manager. Electrician-trained with decades of experience managing electrical systems across hospitals, commercial buildings, and residential properties.</div>
+        <div class="sidebar-creds">
+          <span class="cred-pill">NFPA CFI-1</span>
+          <span class="cred-pill">CHFM</span>
+          <span class="cred-pill">CLSS-HC</span>
+          <span class="cred-pill">OSHA 30</span>
+          <span class="cred-pill">Electrician</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#diagnostic-framework">Diagnostic Framework</a></li>
+      <li><a href="#power-quality-vocabulary">Power Quality Vocabulary</a></li>
+      <li><a href="#how-voltage-works">How Voltage Works</a></li>
+      <li><a href="#symptom-decoder">Symptom Decoder</a></li>
+      <li><a href="#root-causes">Root Causes</a></li>
+      <li><a href="#utility-vs-home">Utility vs. Home-Side</a></li>
+      <li><a href="#severity">Urgency Scale</a></li>
+      <li><a href="#scenarios">Real-World Scenarios</a></li>
+      <li><a href="#hotspots">Room-by-Room Hotspots</a></li>
+      <li><a href="#solutions">What Actually Fixes It</a></li>
+      <li><a href="#homeowner-diagnostics">Safe Homeowner Observations</a></li>
+      <li><a href="#safety">Safety Warnings</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free expert advice</h4>
+    <p>Electrical safety guides and diagnostic tips from our certified fire inspector.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0px;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>Most Read This Week</h4>
+    <div class="pop-list">
+      <a href="electrical-systems-guide.html" class="pop-item">
+        <div class="pop-num">01</div>
+        <div>
+          <div class="pop-title">The Complete Guide to Home Electrical Systems</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="electrical-fire-prevention-guide.html" class="pop-item">
+        <div class="pop-num">02</div>
+        <div>
+          <div class="pop-title">The Complete Home Electrical Fire Prevention Guide</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="breaker-tripping-guide.html" class="pop-item">
+        <div class="pop-num">03</div>
+        <div>
+          <div class="pop-title">Why Does My Circuit Breaker Keep Tripping?</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="gfci-afci-guide.html" class="pop-item">
+        <div class="pop-num">04</div>
+        <div>
+          <div class="pop-title">The Complete Guide to GFCI &amp; AFCI Protection</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{
+      li.classList.remove('active');
+      if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

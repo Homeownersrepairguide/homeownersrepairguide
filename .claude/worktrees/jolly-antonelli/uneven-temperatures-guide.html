@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ultimate Guide to Fixing Uneven Room Temperatures | HomeownersRepairGuide.com</title>
+<meta name="description" content="A certified facility manager explains why rooms are hot or cold — the three-pillar framework of delivery, load, and controls — and the targeted fixes that actually work without replacing your entire system.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--teal:#2a7a8c;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .article-wrap{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+  .article-main{min-width:0;}
+  .article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;}
+  .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--teal);color:var(--white);}
+  .tag.maintenance{background:#3a6b3a;color:var(--white);}
+  .tag.diagnosis{background:#1a5a9a;color:var(--white);}
+  .article-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);line-height:1.12;letter-spacing:-0.025em;margin-bottom:20px;}
+  .article-subtitle{font-size:18px;color:var(--text-muted);line-height:1.6;margin-bottom:28px;border-left:3px solid var(--teal);padding-left:16px;}
+  .article-byline{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:32px;}
+  .byline-avatar{width:48px;height:48px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);flex-shrink:0;}
+  .byline-info{flex:1;}
+  .byline-name{font-size:15px;font-weight:600;color:var(--text-dark);}
+  .byline-cred{font-size:12px;color:var(--text-muted);margin-top:2px;}
+  .byline-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:12px;color:var(--text-muted);text-align:right;}
+  .byline-meta strong{color:var(--text-dark);}
+  .article-hero-img{background:linear-gradient(135deg,#040e12 0%,#08202a 100%);border-radius:var(--radius-lg);height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:40px;gap:12px;border:1px solid var(--gray-light);position:relative;overflow:hidden;}
+  .article-hero-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 55% 50%,rgba(42,122,140,0.18) 0%,transparent 65%);}
+  .article-hero-img .img-icon{font-size:72px;opacity:0.45;position:relative;z-index:1;}
+  .article-hero-img .img-caption{font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;position:relative;z-index:1;}
+  .article-body{font-size:17px;line-height:1.75;color:var(--text-body);}
+  .article-body h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin:48px 0 16px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .article-body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy-mid);margin:32px 0 12px;}
+  .article-body p{margin-bottom:20px;}
+  .article-body ul,.article-body ol{margin:0 0 20px 0;padding-left:24px;}
+  .article-body li{margin-bottom:8px;}
+  .article-body strong{color:var(--text-dark);font-weight:600;}
+  .article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+  /* Three pillar cards */
+  .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0;}
+  .pillar-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:22px;box-shadow:var(--shadow-card);text-align:center;}
+  .pillar-num{width:40px;height:40px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);margin:0 auto 12px;}
+  .pillar-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .pillar-subtitle{font-size:12px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:var(--teal);margin-bottom:8px;}
+  .pillar-desc{font-size:13px;color:var(--text-body);line-height:1.55;}
+  /* Symptom triage table */
+  .symptom-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .symptom-table th{background:var(--teal);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .symptom-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .symptom-table tr:last-child td{border-bottom:none;}
+  .symptom-table tr:nth-child(even) td{background:var(--cream);}
+  .symptom-table td:first-child{font-weight:600;color:var(--text-dark);}
+  /* Expert callout */
+  .expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0;display:flex;gap:18px;align-items:flex-start;}
+  .expert-callout-avatar{width:44px;height:44px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+  .expert-callout-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:6px;}
+  .expert-callout-text{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+  .expert-callout-attr{font-size:12px;color:rgba(255,255,255,0.45);margin-top:8px;}
+  /* Callout boxes */
+  .callout-box{border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+  .callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+  .callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+  .callout-box.info{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .callout-icon{font-size:22px;flex-shrink:0;margin-top:1px;}
+  .callout-content{flex:1;}
+  .callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+  .callout-box.warning .callout-label{color:#b07800;}
+  .callout-box.tip .callout-label{color:#2a7a2a;}
+  .callout-box.info .callout-label{color:#1a5a9a;}
+  .callout-text{font-size:15px;line-height:1.6;color:var(--text-body);}
+  /* Homeowner checklist */
+  .obs-checklist{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:24px 28px;margin:28px 0;box-shadow:var(--shadow-card);}
+  .obs-checklist h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+  .check-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+  .check-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--text-body);line-height:1.45;}
+  .check-list li::before{content:'';display:inline-block;width:16px;height:16px;border:2px solid var(--gray-mid);border-radius:3px;flex-shrink:0;margin-top:1px;}
+  /* Case studies */
+  .case-list{display:flex;flex-direction:column;gap:14px;margin:28px 0;}
+  .case-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .case-header{background:var(--cream-dark);padding:14px 20px;display:flex;align-items:flex-start;gap:12px;}
+  .case-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--teal);line-height:1;flex-shrink:0;width:28px;}
+  .case-title{font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;}
+  .case-body{padding:18px 20px;display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .case-col h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;padding-bottom:5px;border-bottom:1px solid var(--gray-light);}
+  .case-col.causes h4{color:var(--rust);}
+  .case-col.fixes h4{color:#2a7a2a;}
+  .case-col ul{list-style:none;display:flex;flex-direction:column;gap:6px;}
+  .case-col li{font-size:13px;color:var(--text-body);line-height:1.45;display:flex;gap:6px;}
+  .case-col.causes li::before{content:'→';color:var(--rust);font-weight:700;flex-shrink:0;}
+  .case-col.fixes li::before{content:'✓';color:#2a7a2a;font-weight:700;flex-shrink:0;}
+  /* Severity */
+  .severity-block{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px;margin:36px 0;box-shadow:var(--shadow-card);}
+  .severity-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .severity-row{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;}
+  .severity-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:3px;}
+  .sev-low .severity-dot{background:#4caf50;}
+  .sev-medium .severity-dot{background:var(--amber);}
+  .sev-high .severity-dot{background:var(--rust);}
+  .sev-critical .severity-dot{background:#c0392b;}
+  .severity-label{font-size:13px;font-weight:700;width:130px;flex-shrink:0;}
+  .sev-low .severity-label{color:#4caf50;}
+  .sev-medium .severity-label{color:var(--amber);}
+  .sev-high .severity-label{color:var(--rust);}
+  .sev-critical .severity-label{color:#c0392b;}
+  .severity-examples{font-size:13px;color:var(--text-body);line-height:1.55;flex:1;}
+  /* Fix strategy cards */
+  .fix-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0;}
+  .fix-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:18px 20px;box-shadow:var(--shadow-card);}
+  .fix-num{display:inline-block;width:24px;height:24px;border-radius:50%;background:var(--teal);font-size:11px;font-weight:700;color:var(--white);text-align:center;line-height:24px;margin-bottom:8px;}
+  .fix-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+  .fix-when{font-size:12px;font-style:italic;color:var(--teal);margin-bottom:6px;}
+  .fix-desc{font-size:13px;color:var(--text-body);line-height:1.5;}
+  /* Pro measure table */
+  .pro-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .pro-table th{background:var(--navy);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;}
+  .pro-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);background:var(--white);vertical-align:top;line-height:1.5;}
+  .pro-table tr:last-child td{border-bottom:none;}
+  .pro-table tr:nth-child(even) td{background:var(--cream);}
+  .pro-table td:first-child{font-weight:600;color:var(--text-dark);}
+  /* Glossary */
+  .glossary-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:28px 0;}
+  .glossary-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius);padding:12px 14px;}
+  .glossary-term{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+  .glossary-def{font-size:12px;color:var(--text-muted);line-height:1.5;}
+  /* FAQ */
+  .faq-block{margin:36px 0;}
+  .faq-item{border-bottom:1px solid var(--gray-light);}
+  .faq-question{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font-size:16px;font-weight:600;color:var(--navy);gap:16px;user-select:none;}
+  .faq-question:hover{color:var(--teal);}
+  .faq-chevron{font-size:18px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+  .faq-answer{font-size:15px;color:var(--text-body);line-height:1.7;padding-bottom:18px;display:none;}
+  .faq-item.open .faq-answer{display:block;}
+  .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--teal);}
+  /* Summary */
+  .summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px;margin:48px 0 36px;}
+  .summary-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .summary-list li{display:flex;gap:12px;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.55;}
+  .summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+  /* Tags & share */
+  .article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0;padding-top:32px;border-top:1px solid var(--gray-light);}
+  .article-tag-pill{font-size:12px;padding:5px 12px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+  .article-tag-pill:hover{background:var(--teal);color:var(--white);border-color:var(--teal);}
+  .share-bar{display:flex;align-items:center;gap:12px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:48px;flex-wrap:wrap;}
+  .share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+  .share-btn{padding:8px 16px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+  .share-btn:hover{opacity:0.85;}
+  .share-fb{background:#1877f2;color:white;}
+  .share-x{background:#000;color:white;}
+  .share-pin{background:#e60023;color:white;}
+  .share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+  /* Related */
+  .related{margin-top:48px;}
+  .related h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .related-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;}
+  .related-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+  .related-img{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px;}
+  .related-img.h{background:linear-gradient(135deg,#e6f4f6,#cce8ec);}
+  .related-img.m{background:linear-gradient(135deg,#eaf5ea,#d4ecd4);}
+  .related-body{padding:16px;}
+  .related-body .tag{font-size:10px;padding:3px 8px;margin-bottom:8px;}
+  .related-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:6px;}
+  .related-meta{font-size:11px;color:var(--text-muted);}
+  /* Sidebar */
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:24px;}
+  .sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .sidebar-card h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gray-light);}
+  .sidebar-expert{display:flex;gap:14px;align-items:flex-start;}
+  .sidebar-avatar{width:52px;height:52px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);flex-shrink:0;}
+  .sidebar-expert-name{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+  .sidebar-expert-title{font-size:12px;color:var(--teal);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
+  .sidebar-expert-bio{font-size:13px;color:var(--text-muted);line-height:1.55;}
+  .sidebar-creds{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;}
+  .cred-pill{font-size:10px;padding:3px 8px;background:var(--cream-dark);border-radius:2px;color:var(--text-muted);font-weight:600;}
+  .toc-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+  .toc-list li a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);text-decoration:none;padding:6px 8px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+  .toc-list li a:hover{background:var(--cream);color:var(--teal);}
+  .toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+  .toc-list li.active a{color:var(--teal);background:var(--cream);font-weight:600;}
+  .toc-list li.active a::before{background:var(--teal);width:6px;height:6px;}
+  .sidebar-newsletter{background:var(--teal);border-radius:var(--radius-lg);padding:24px;}
+  .sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:10px;}
+  .sidebar-newsletter p{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.55;margin-bottom:16px;}
+  .ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:32px 16px;text-align:center;}
+  .ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:6px;}
+  .ad-placeholder .ad-size{font-size:13px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+  .pop-list{display:flex;flex-direction:column;gap:14px;}
+  .pop-item{display:flex;gap:12px;align-items:flex-start;text-decoration:none;}
+  .pop-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:28px;}
+  .pop-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.35;transition:color 0.15s;}
+  .pop-item:hover .pop-title{color:var(--teal);}
+  .pop-cat{font-size:11px;color:var(--text-muted);margin-top:3px;}
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:24px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+  @media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.related-grid{grid-template-columns:1fr 1fr;}.pillar-grid{grid-template-columns:1fr;}.fix-grid{grid-template-columns:1fr;}.glossary-grid{grid-template-columns:1fr;}.case-body{grid-template-columns:1fr;}}
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.related-grid{grid-template-columns:1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+  <!-- SEO: Open Graph & Canonical -->
+  <link rel="canonical" href="https://homeownersrepairguide.com/uneven-temperatures-guide.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://homeownersrepairguide.com/uneven-temperatures-guide.html">
+  <meta property="og:title" content="The Ultimate Guide to Fixing Uneven Room Temperatures | HomeownersRepairGuide.com">
+  <meta property="og:description" content="A certified facility manager explains why rooms are hot or cold — the three-pillar framework of delivery, load, and controls — and the targeted fixes that ac...">
+  <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Ultimate Guide to Fixing Uneven Room Temperatures | HomeownersRepairGuide.com">
+  <meta name="twitter:description" content="A certified facility manager explains why rooms are hot or cold — the three-pillar framework of delivery, load, and controls — and the targeted fixes that ac...">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">The Ultimate Guide to Fixing Uneven Room Temperatures</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">HVAC</span>
+    <span class="tag diagnosis">Diagnosis</span>
+    <span class="tag maintenance">Comfort</span>
+  </div>
+
+  <h1 class="article-title">The Ultimate Guide to Fixing Uneven Room Temperatures</h1>
+
+  <p class="article-subtitle">If some rooms are always too hot or too cold, you almost certainly don't need a new system. You need to correctly identify whether the problem is airflow delivery, room heat load, or how the system is being controlled &#8212; and then fix the right thing.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Certified Facility Manager &amp; Life Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 &#183; CHFM &#183; CLSS-HC &#183; OSHA 30 &#183; Electrician &#8212; All Phases</div>
+    </div>
+    <div class="byline-meta">
+      <span><strong>Updated:</strong> January 2025</span>
+      <span>26 min read &#183; Fact-verified</span>
+    </div>
+  </div>
+
+  <div class="article-hero-img">
+    <div class="img-icon">&#127775;</div>
+    <div class="img-caption">[Hero image &#8212; e.g. duct register, thermostat, or multi-story home interior]</div>
+  </div>
+
+  <div class="article-body">
+
+    <p>Uneven room temperatures are one of the most common homeowner complaints &#8212; and one of the most frequently misdiagnosed. The assumption is almost always that the equipment is too small or failing. The reality is that most one-room or one-floor comfort problems are about how air is delivered to that room, how much heat that room gains or loses, or where the thermostat is measuring. The equipment usually has nothing to do with it.</p>
+
+    <p>The good news is that once you separate the problem into the right category, the fix is usually targeted and affordable. You almost never need a new system to solve one hot bedroom.</p>
+
+    <div class="callout-box info">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">The First Test Every Homeowner Can Do Free</div>
+        <div class="callout-text"><strong>Run the system with the problem room's door open for 30&#8211;60 minutes, then closed for 30&#8211;60 minutes.</strong> If comfort changes meaningfully with door position, you have a return-air problem &#8212; the room is getting pressurized when the door closes and air can't circulate. This single observation narrows the diagnosis dramatically and often points directly to the fix.</div>
+      </div>
+    </div>
+
+    <h2 id="three-pillars">The Three Pillars &#8212; Every Uneven Room Problem Lives in One of These</h2>
+
+    <p>Every persistent room comfort complaint breaks down into a failure in one of three categories. Identifying which pillar is failing &#8212; or which combination &#8212; tells you where to focus before you spend a dollar.</p>
+
+    <div class="pillar-grid">
+      <div class="pillar-card">
+        <div class="pillar-num">1</div>
+        <div class="pillar-title">Delivery</div>
+        <div class="pillar-subtitle">Airflow &amp; Ducts</div>
+        <div class="pillar-desc">Can the system physically deliver enough conditioned air to that room &#8212; and bring it back? Duct sizing, duct routing, return paths, flex duct condition, register restrictions, static pressure, blower settings, and duct leakage all determine whether airflow actually reaches the room.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-num">2</div>
+        <div class="pillar-title">Load</div>
+        <div class="pillar-subtitle">Room Heat Gain &amp; Loss</div>
+        <div class="pillar-desc">Does that room demand more heating or cooling than the duct system was designed to provide? Insulation gaps, air leakage, solar exposure, west-facing windows, attic adjacency, and over-garage floors all increase load so the room fights harder than its airflow can match.</div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-num">3</div>
+        <div class="pillar-title">Controls</div>
+        <div class="pillar-subtitle">Thermostat &amp; Decisions</div>
+        <div class="pillar-desc">Is the system making correct decisions about when to run, for how long, and at what capacity? Thermostat placement, zoning logic, staging behavior, sensor bias, and schedule settings can all cause the system to satisfy the thermostat location while leaving other rooms behind.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert &#8212; On Why Delivery Problems Look Like Equipment Problems</div>
+        <div class="expert-callout-text">"The most expensive misdiagnosis I see in comfort calls is recommending equipment replacement when the duct system is the bottleneck. A homeowner has a hot upstairs bedroom, gets told the AC is undersized, buys a new system, and two years later is back with the same complaint because the same duct problems are still there. The equipment doesn't change what the ducts can deliver. I always start with static pressure and airflow measurements &#8212; if the blower is pushing against excessive resistance or the branch to the problem room is clearly starved, that's the fix. And it's almost always cheaper, faster, and more durable than equipment replacement."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA CFI-1 &#183; Certified Healthcare Facility Manager &#183; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="symptom-triage">Symptom Triage &#8212; What Your Pattern Tells You</h2>
+
+    <table class="symptom-table">
+      <thead>
+        <tr>
+          <th>What You Notice</th>
+          <th>Most Likely Pillar</th>
+          <th>First Place to Look</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>One room always hot or cold, year-round</td>
+          <td>Delivery or Load</td>
+          <td>Branch duct restriction, flex duct compression, or missing return path in that room</td>
+        </tr>
+        <tr>
+          <td>Problem changes when door is open vs. closed</td>
+          <td>Delivery &#8212; Return side</td>
+          <td>Room is pressurizing without a return path; add transfer grille, jump duct, or dedicated return</td>
+        </tr>
+        <tr>
+          <td>Problem only in summer, especially afternoons</td>
+          <td>Load</td>
+          <td>West-facing solar gain, attic heat, and marginal branch duct capacity to that room</td>
+        </tr>
+        <tr>
+          <td>Problem only on coldest days</td>
+          <td>Load or Delivery</td>
+          <td>Room load exceeds what duct was designed to deliver; check insulation and air leakage</td>
+        </tr>
+        <tr>
+          <td>Upstairs always hotter in summer</td>
+          <td>Delivery + Load</td>
+          <td>Stratification, attic heat, duct losses in hot attic, and inadequate upper-level returns</td>
+        </tr>
+        <tr>
+          <td>Far rooms or end-of-run rooms always weak</td>
+          <td>Delivery &#8212; Static pressure</td>
+          <td>High total static pressure from dirty filter, restrictive coil, or undersized returns is starving far branches</td>
+        </tr>
+        <tr>
+          <td>Room swings &#8212; overheats then overcools</td>
+          <td>Controls</td>
+          <td>Short cycling oversized equipment, thermostat in drafty location, or aggressive schedule setbacks</td>
+        </tr>
+        <tr>
+          <td>Near rooms perfect, far rooms always wrong</td>
+          <td>Delivery &#8212; Distribution</td>
+          <td>Air following path of least resistance; near branches dominating the airflow budget</td>
+        </tr>
+        <tr>
+          <td>Room fine with air handler on, wrong after shutdown</td>
+          <td>Controls + Load</td>
+          <td>Short cycling ends conditioning before room can stabilize; check thermostat placement</td>
+        </tr>
+        <tr>
+          <td>Room feels stuffy despite correct temperature</td>
+          <td>Delivery &#8212; Mixing</td>
+          <td>Low airflow or short-circuiting supply to return; room needs more air movement, not just temperature</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="delivery-problems">Delivery Problems &#8212; Why Air Isn't Reaching the Room</h2>
+
+    <h3>The return side &#8212; the most common invisible cause</h3>
+
+    <p>Most homeowners focus on the supply register. But return limitations are equally important and far more frequently overlooked. The rule is simple: <strong>air cannot keep entering a room if it cannot leave the room.</strong></p>
+
+    <p>When a bedroom door is closed and there is no dedicated return, no transfer grille, and no jump duct, the room pressurizes. The supply air slows down &#8212; not because the duct is inadequate, but because the room is inflating like a balloon. Simply adding more supply airflow makes the pressure problem worse. The fix is to give the room an exit path.</p>
+
+    <p>Return leaks are a separate but related problem. A return duct leak in a hot attic pulls unconditioned air directly into the system, making the whole house feel like cooling is weak. A return leak in a damp crawlspace brings in humidity and odors. Both situations create whole-home performance penalties that are often misread as equipment problems.</p>
+
+    <h3>Static pressure &#8212; the hidden limiter that starves far rooms</h3>
+
+    <p>Total external static pressure (TESP) is the resistance the blower must overcome to move air through the system. When static pressure climbs &#8212; from a restrictive filter, dirty evaporator coil, undersized returns, or crushed flex duct &#8212; the blower moves less air overall. The rooms that lose airflow first are the farthest ones, the ones on the most restrictive branches, and the ones that were already marginal.</p>
+
+    <p>A dirty filter doesn't just restrict airflow evenly. It raises the whole system's pressure, and the rooms that were "fine" before may stay fine while the room at the end of the long flex run drops from adequate to uncomfortable. This is why a dirty filter can make one room seem broken while others feel normal.</p>
+
+    <h3>Flex duct &#8212; easy to install wrong, easy to overlook</h3>
+
+    <p>Flex duct is the most common cause of a single-room delivery problem that is otherwise unexplained. When flex is compressed at a kink, sagging in a low spot, or was never pulled tight during installation, its effective diameter shrinks significantly and friction rises dramatically. A 6-inch flex run that should deliver 100 CFM to a bedroom might deliver 50 CFM because of compression at a fitting or a sag in the attic. The fix &#8212; pulling it straight, supporting it properly, and replacing any crushed sections &#8212; is often one of the highest-value comfort improvements in the house.</p>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Closing Registers Rarely Solves the Problem</div>
+        <div class="callout-text">Closing supply registers in "good" rooms to "push more air" to struggling rooms usually backfires. It raises static pressure throughout the system, can cause airflow noise, and may actually reduce total airflow. A better approach is to confirm static pressure and airflow measurements, then add balancing dampers designed into the system &#8212; not random register closures that the duct system wasn't designed to handle.</div>
+      </div>
+    </div>
+
+    <h2 id="load-problems">Load Problems &#8212; When the Room Fights Harder Than the Duct Can Match</h2>
+
+    <p>Sometimes the airflow is as good as it can get &#8212; and the room still runs hot or cold because it is fighting external forces that exceed what the duct was designed to handle. These are building problems that show up as HVAC complaints.</p>
+
+    <ul>
+      <li><strong>Attic heat:</strong> Upper bedrooms adjacent to a hot attic can gain heat faster in summer than any reasonable supply duct can remove it. Improving attic insulation and air sealing is often more cost-effective than trying to force more airflow into those rooms.</li>
+      <li><strong>West and south solar exposure:</strong> A west-facing room with large windows can add a large heat load in late afternoon that the branch duct simply was not sized to handle. Exterior shading, window film, or improved glazing reduces the load at the source.</li>
+      <li><strong>Over-garage and cantilever rooms:</strong> These rooms sit over unconditioned space with high surface area exposure. Insulation gaps and air leakage at the floor cavity create year-round discomfort. Air sealing and correct insulation installation makes a bigger difference than duct changes.</li>
+      <li><strong>Air leakage at rim joists and top plates:</strong> These hidden gaps allow outdoor air infiltration that creates cold drafts in winter and hot spots in summer &#8212; in specific rooms, not throughout the house.</li>
+    </ul>
+
+    <h2 id="controls-problems">Controls Problems &#8212; When the System Satisfies the Thermostat but Not the Room</h2>
+
+    <p>A thermostat is a single measuring point trying to represent an entire home. When it is located in a hallway, near a return grille, in a sunny spot, or close to the kitchen, it can satisfy the system while rooms with different conditions drift away from target.</p>
+
+    <p><strong>Short cycling</strong> from an oversized system is a particularly common controls-related comfort problem. The system cools or heats the air near the thermostat quickly, shuts off, and rooms that needed more runtime to stabilize never get there. This is also why oversized AC systems dehumidify poorly &#8212; they don't run long enough to pull moisture out of the air.</p>
+
+    <p>Smart thermostats with remote sensors can help &#8212; but only if you understand whether the thermostat is averaging all sensors, giving priority to one location at certain times, or following a schedule that creates setback-and-recovery swings that rooms with higher loads never fully recover from.</p>
+
+    <h2 id="case-studies">Real-World Case Studies</h2>
+
+    <div class="case-list">
+
+      <div class="case-card">
+        <div class="case-header">
+          <div class="case-num">1</div>
+          <div class="case-title">West-facing bedroom is 4&#8211;6°F warmer from mid-afternoon to evening in summer only</div>
+        </div>
+        <div class="case-body">
+          <div class="case-col causes">
+            <h4>Likely Contributors</h4>
+            <ul>
+              <li>Peak solar gain through west glass in late afternoon</li>
+              <li>Marginal airflow on the branch duct to that room</li>
+              <li>Door-closed pressure isolation reducing effective supply airflow</li>
+              <li>Attic heat above or adjacent to the room</li>
+            </ul>
+          </div>
+          <div class="case-col fixes">
+            <h4>Durable Fixes</h4>
+            <ul>
+              <li>Exterior shading (awning, overhang, exterior blinds) reduces load at the source</li>
+              <li>Improve attic air sealing and insulation above the room</li>
+              <li>Verify return path when door is closed; add transfer grille or jump duct</li>
+              <li>Check flex duct for compression or sags in the attic run</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-header">
+          <div class="case-num">2</div>
+          <div class="case-title">Bonus room over garage is cold in winter and hot in summer year-round</div>
+        </div>
+        <div class="case-body">
+          <div class="case-col causes">
+            <h4>Likely Contributors</h4>
+            <ul>
+              <li>High exterior surface area &#8212; floor over cold garage, knee walls, exposure on multiple sides</li>
+              <li>Insulation gaps or air leakage at floor cavity, knee walls, or soffits</li>
+              <li>Long duct run through attic or garage cavity losing temperature</li>
+              <li>Original duct design never accounted for the room's actual load</li>
+            </ul>
+          </div>
+          <div class="case-col fixes">
+            <h4>Durable Fixes</h4>
+            <ul>
+              <li>Air seal and insulate the floor cavity and knee walls correctly</li>
+              <li>Seal and insulate any ducts outside conditioned space</li>
+              <li>Upsize or reroute the branch if friction losses are high</li>
+              <li>Consider a dedicated ductless mini-split if loads are extreme</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-header">
+          <div class="case-num">3</div>
+          <div class="case-title">Bedrooms get stuffy and drift off-temperature within minutes of closing the door</div>
+        </div>
+        <div class="case-body">
+          <div class="case-col causes">
+            <h4>Likely Contributors</h4>
+            <ul>
+              <li>Room pressurizes when door closes &#8212; supply air enters but cannot exit</li>
+              <li>Central return in hallway only; no path for isolated-room air to return</li>
+              <li>Supply branch may be adequate but effective airflow stalls due to pressure</li>
+            </ul>
+          </div>
+          <div class="case-col fixes">
+            <h4>Durable Fixes</h4>
+            <ul>
+              <li>Add a dedicated return in the room, or a transfer grille/jump duct to the hallway</li>
+              <li>Verify door undercut is adequate &#8212; thick carpet often eliminates it</li>
+              <li>Do not try to solve this with more supply; you need an air pathway out</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div class="case-header">
+          <div class="case-num">4</div>
+          <div class="case-title">Upstairs is consistently 3&#8211;5°F warmer in summer even with AC running constantly</div>
+        </div>
+        <div class="case-body">
+          <div class="case-col causes">
+            <h4>Likely Contributors</h4>
+            <ul>
+              <li>Stratification &#8212; warm air rises and accumulates upstairs</li>
+              <li>Return strategy favors lower level; warm upstairs air never gets pulled to air handler</li>
+              <li>Duct losses if supply runs through hot attic</li>
+              <li>Attic heat gain above upper-level ceilings</li>
+            </ul>
+          </div>
+          <div class="case-col fixes">
+            <h4>Durable Fixes</h4>
+            <ul>
+              <li>Improve attic air sealing and insulation as first priority</li>
+              <li>Add or improve return capacity on upper level</li>
+              <li>Seal and insulate duct runs in attic spaces</li>
+              <li>Oversizing equipment makes this worse &#8212; short cycling reduces dehumidification</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 id="homeowner-checks">Homeowner-Safe Observations Before Calling a Professional</h2>
+
+    <div class="obs-checklist">
+      <h3>&#128203; Document This Before Your Service Call</h3>
+      <ul class="check-list">
+        <li>Measure room-to-room temperature differences at chest height with the same thermometer, at the same time of day, for several days</li>
+        <li>Test door position &#8212; run the system 30&#8211;60 minutes with the room door open, then closed. Note any change.</li>
+        <li>Check for blocked returns and supplies: furniture, rugs, drapes, or closed register dampers in or near the problem room</li>
+        <li>Check filter condition &#8212; replace if dirty. Note whether problems started or worsened after switching to a high-MERV filter type</li>
+        <li>Listen for whistling at grilles, doors that "push back" when closing, or airflow noise in the return &#8212; signs of high static pressure</li>
+        <li>Note the pattern: is the problem only in summer/winter, only in afternoons, only on extreme weather days, or year-round?</li>
+        <li>Note whether the problem is worst during recovery from a large setback, or just as bad all day</li>
+        <li>Look in accessible attics or crawlspaces for obvious flex duct sags, kinks, or disconnected runs near the problem room</li>
+      </ul>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert &#8212; On the Door Test and Return Air</div>
+        <div class="expert-callout-text">"Every homeowner should do the door test before they call anyone. Open the door, let the room stabilize, note the temperature. Close the door, let it run 30 minutes, check again. If the room drifts noticeably warmer or stuffier with the door closed, you have just diagnosed a return-air problem yourself. The room is pressurizing. That tells me exactly what to look for when I arrive &#8212; and it tells you that adding more supply air to that room will make it worse, not better. The fix is a pathway for air to exit. That can be a transfer grille, a jump duct, a proper door undercut, or a dedicated return. All of those are targeted and relatively affordable. None of them require replacing the system."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA CFI-1 &#183; Certified Healthcare Facility Manager &#183; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="what-pro-measures">What a Professional Should Measure Before Recommending Major Work</h2>
+
+    <table class="pro-table">
+      <thead>
+        <tr>
+          <th>Measurement</th>
+          <th>What It Tells You</th>
+          <th>Why It Matters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Total external static pressure (TESP)</td>
+          <td>Whether the blower is fighting excessive resistance</td>
+          <td>High static means low airflow throughout. Far rooms starve first. This rules in or out duct/filter/return restrictions as the root cause.</td>
+        </tr>
+        <tr>
+          <td>Room-by-room airflow (CFM) at registers</td>
+          <td>Whether the problem room is actually receiving less air than others</td>
+          <td>Confirms delivery failure. If the room has half the airflow it needs, that is the diagnosis &#8212; not equipment capacity.</td>
+        </tr>
+        <tr>
+          <td>Temperature rise/drop across equipment</td>
+          <td>Whether equipment output is appropriate for actual airflow</td>
+          <td>Very high temperature rise in heating can indicate low airflow. Should be evaluated alongside airflow, not instead of it.</td>
+        </tr>
+        <tr>
+          <td>Room-to-hall pressure with door closed</td>
+          <td>Whether the room pressurizes when isolated</td>
+          <td>Quantifies the return-air problem. A large positive pressure confirms that adding supply alone will not help.</td>
+        </tr>
+        <tr>
+          <td>Duct leakage testing</td>
+          <td>How much conditioned air is escaping before reaching rooms</td>
+          <td>Attic duct leaks can account for 20&#8211;40% of delivered airflow. Sealing them is often the most cost-effective whole-home comfort upgrade.</td>
+        </tr>
+        <tr>
+          <td>Room-by-room Manual J load calculation</td>
+          <td>Whether the room's load actually exceeds what its duct run can deliver</td>
+          <td>Separates "the room needs more airflow" from "the room needs load reduction." Prevents over-investment in duct changes when insulation is the real answer.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box tip">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">Red Flags in a Contractor Proposal</div>
+        <div class="callout-text">Refrigerant work as the primary fix for a single uncomfortable room in a non-zoned system. Equipment replacement without any static pressure or airflow measurements. Recommending zoning without discussing zone sizing, bypass strategy, and equipment staging. Closing many registers as a long-term solution. A good proposal connects <em>measured data → root cause → specific fix</em>.</div>
+      </div>
+    </div>
+
+    <h2 id="fix-strategies">Fix Strategies Matched to Root Cause</h2>
+
+    <div class="fix-grid">
+      <div class="fix-card">
+        <div class="fix-num">1</div>
+        <div class="fix-title">Return-Path Improvements</div>
+        <div class="fix-when">When: door test shows temperature change; room feels pressurized or stuffy</div>
+        <div class="fix-desc">Often the highest-impact comfort upgrade. Add dedicated returns, jump ducts to hallways, or transfer grilles. Ensure door undercuts are adequate. This enables supply airflow without fighting room pressure.</div>
+      </div>
+      <div class="fix-card">
+        <div class="fix-num">2</div>
+        <div class="fix-title">Duct Sealing &amp; Insulation</div>
+        <div class="fix-when">When: duct leakage suspected, especially in attics or crawlspaces</div>
+        <div class="fix-desc">Seal disconnected boots, repair crushed flex, insulate duct runs in unconditioned space. Attic duct leaks particularly matter &#8212; they lose conditioned air in the harshest environment and can represent a large percentage of total airflow.</div>
+      </div>
+      <div class="fix-card">
+        <div class="fix-num">3</div>
+        <div class="fix-title">Flex Duct Correction</div>
+        <div class="fix-when">When: one room consistently underperforms despite clean filter and open return</div>
+        <div class="fix-desc">Pull tight, support every few feet, replace kinked or crushed sections. A compressed 6-inch flex run can have the effective area of a 4-inch duct. This is a frequent cause of single-room problems that looks like an equipment deficiency.</div>
+      </div>
+      <div class="fix-card">
+        <div class="fix-num">4</div>
+        <div class="fix-title">Air Sealing &amp; Insulation Upgrades</div>
+        <div class="fix-when">When: problem is worst in extreme weather, or room has high exterior surface area</div>
+        <div class="fix-desc">Attic air sealing, rim joist insulation, knee wall correction, and window improvements reduce the room's load so the existing airflow can keep up. Often more cost-effective than duct changes for solar-load and infiltration-driven rooms.</div>
+      </div>
+      <div class="fix-card">
+        <div class="fix-num">5</div>
+        <div class="fix-title">Balancing &amp; Distribution Tuning</div>
+        <div class="fix-when">When: static pressure is acceptable but near rooms dominate over far rooms</div>
+        <div class="fix-desc">Balancing dampers add intentional resistance to near branches so airflow distributes more evenly. Only works when enough total airflow exists &#8212; if static is already high, fixing the restriction first gives balancing something to work with.</div>
+      </div>
+      <div class="fix-card">
+        <div class="fix-num">6</div>
+        <div class="fix-title">Thermostat Optimization or Zoning</div>
+        <div class="fix-when">When: delivery and load are confirmed adequate but system still misbehaves</div>
+        <div class="fix-desc">Relocate thermostat, add remote sensors, or implement zoning after confirming airflow is capable. Zoning adds complexity and requires correct zone sizing, bypass strategy, and staging &#8212; it amplifies the underlying system's capabilities or limitations.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">How Serious Is the Problem?</h2>
+
+    <div class="severity-block">
+      <div class="severity-title">Uneven Temperature Problem Urgency</div>
+      <div class="severity-row sev-low">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Minor Nuisance</div>
+        <div class="severity-examples">Small temperature differences in shoulder seasons. Improves with door position changes or minor register adjustments. No noise, no system strain, no moisture signs.</div>
+      </div>
+      <div class="severity-row sev-medium">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Moderate</div>
+        <div class="severity-examples">Persistent differences that affect daily comfort. Rooms consistently lag behind during recovery. Noticeable airflow differences at registers. May include mild airflow noise.</div>
+      </div>
+      <div class="severity-row sev-high">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Major</div>
+        <div class="severity-examples">Large temperature gaps across multiple rooms. Loud airflow noise or whistling grilles (high static). Rooms that never reach a usable temperature. Short cycling with poor dehumidification in summer.</div>
+      </div>
+      <div class="severity-row sev-critical">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Safety Concern</div>
+        <div class="severity-examples">Extreme room temperatures creating health risk (heat in a bedroom without AC, dangerous cold for vulnerable occupants). Signs of moisture or mold from chronic humidity problems. Depressurization concerns with combustion appliances.</div>
+      </div>
+    </div>
+
+    <h2 id="misdiagnosis">Misattribution Rules &#8212; What Uneven Rooms Cannot Be Caused By</h2>
+
+    <p>Uneven comfort attracts expensive wrong turns. These rules prevent spending money on things that won't fix a single-room problem:</p>
+
+    <ul>
+      <li><strong>Minor refrigerant issues rarely cause one hot room</strong> in a non-zoned ducted system. Low refrigerant reduces capacity across the whole home &#8212; not selectively in one bedroom.</li>
+      <li><strong>Thermostat replacement rarely fixes a room that was always wrong</strong> unless there is zoning, remote sensing, or a clear placement problem.</li>
+      <li><strong>Equipment upsizing almost never fixes a delivery problem.</strong> A larger AC still delivers air through the same duct system. If the duct can only deliver 60% of design airflow to the problem room, a bigger system delivers 60% of a larger number &#8212; still insufficient, and now short-cycling too.</li>
+      <li><strong>Duct leakage rarely causes a single-room problem</strong> unless the leak is on that specific branch or boot. Whole-house leakage produces broader symptoms.</li>
+      <li><strong>Not every cold room is HVAC.</strong> Slab exposure, radiant heat from cold surfaces, window drafts, and thermal mass (like a concrete basement wall) can make a room feel cold even when air temperature is correct.</li>
+    </ul>
+
+    <h2 id="glossary">Key Terms in Plain Language</h2>
+
+    <div class="glossary-grid">
+      <div class="glossary-item"><div class="glossary-term">CFM (Cubic Feet Per Minute)</div><div class="glossary-def">How much air is moving. More CFM = more heating or cooling delivered to the room. The problem room almost always has lower CFM than it needs.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Static Pressure (TESP)</div><div class="glossary-def">Resistance the blower fights. High static = low airflow throughout. Far rooms lose airflow first. The "blood pressure" of a duct system.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Manual J</div><div class="glossary-def">Room-by-room load calculation. Answers "how much heating/cooling does this room actually need?" based on insulation, windows, exposure, and air leakage.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Manual D</div><div class="glossary-def">Duct design method. Sizes trunks and branches to deliver the right airflow to each room at acceptable static pressure. Often skipped on installations and additions.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Transfer Grille / Jump Duct</div><div class="glossary-def">A pathway that allows air to move between a room and the hallway when the door is closed. Enables supply airflow to keep circulating without pressurizing the room.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Stack Effect</div><div class="glossary-def">Natural movement of warm air upward in multi-story homes. Stairwells act like chimneys, pulling warm air up in winter and creating upstairs heat in summer.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Short Cycling</div><div class="glossary-def">Equipment turning on and off too frequently. Reduces mixing, hurts dehumidification, and can leave rooms with different loads at different temperatures.</div></div>
+      <div class="glossary-item"><div class="glossary-term">Stratification</div><div class="glossary-def">Temperature layering &#8212; warm air near ceilings, cool air near floors. Worsens in high rooms and open stairwells when airflow and mixing are insufficient.</div></div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why is the farthest room from the furnace always the coldest?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Air follows the path of least resistance. Short branches close to the air handler pull more airflow because they have less friction. Long branches at the end of the system get whatever is left. When static pressure rises &#8212; from a dirty filter, restricted coil, or undersized return &#8212; the already-marginal far branches lose the most. This is why the problem room is almost always the farthest one. The fix is to reduce overall static pressure first, then balance if needed.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can a dirty filter really make one bedroom uncomfortable?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; and this is one of the most underestimated causes. A dirty filter raises the total external static pressure of the entire system. The blower moves less air. Near rooms, which were already getting more than their share, may still feel fine. The room at the end of a long flex run &#8212; which was already marginal &#8212; drops from adequate to clearly uncomfortable. One filter change can resolve what looks like a serious duct problem.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is zoning always the answer to uneven temperatures?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No &#8212; and this is one of the most expensive comfort misdiagnoses. Zoning adds complexity: it changes static pressure dynamics, can cause short cycling on small zones, and requires equipment that can modulate low enough for the smallest zone. Many homes get better results by fixing return-air paths, correcting flex duct, sealing duct leaks, and addressing insulation. Zoning is most appropriate when two parts of the home truly have different occupancy patterns and load profiles &#8212; not as a general fix for uneven delivery.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why is upstairs always hotter in summer even when the AC runs constantly?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Two forces stack up. First, physics: warm air rises and accumulates upstairs. Stairwells act like chimneys. Second, design: return pathways are often on lower levels, so the warm upstairs air never gets pulled back to the air handler efficiently. Compound that with attic heat above upper-level ceilings and duct runs in hot attic spaces, and you have a multi-cause problem. The most durable fixes combine attic air sealing and insulation, upper-level return capacity improvement, and duct sealing in attic spaces &#8212; not equipment upsizing.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How much temperature difference between rooms is "normal"?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">In real homes, perfect uniformity is uncommon. Rooms facing different directions, over different foundations, or with different window area will naturally vary somewhat. What matters is whether the difference is persistent under similar conditions and whether it worsens during longer run times. A 1&#8211;2°F difference is typically background variation. A 4°F or larger persistent gap under similar conditions, or a room that never reaches setpoint, is worth diagnosing. The test is consistency &#8212; not a single spot measurement.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Could low refrigerant cause one room to be hot?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Almost never. Low refrigerant reduces capacity across the entire home &#8212; every room suffers. If only one room is uncomfortable while the rest of the house is fine, the cause is almost certainly airflow delivery (branch duct restriction, return limitation, flex compression) or that room's specific heat load (solar exposure, insulation gap, over unconditioned space). If a contractor recommends refrigerant work as the primary fix for a single uncomfortable room in a non-zoned home, ask what measurement led to that conclusion.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways &#8212; The Right Order of Operations</h3>
+      <ul class="summary-list">
+        <li>Separate the problem into delivery (airflow), load (heat gain/loss), or controls (thermostat and decisions). The fix must match the dominant cause.</li>
+        <li>Do the door test first &#8212; free and highly diagnostic. If comfort changes when the door closes, you have a return-air problem, and adding more supply will make it worse.</li>
+        <li>High static pressure starves far rooms. A dirty filter, restrictive coil, or undersized return raises system-wide pressure and the farthest room loses airflow first.</li>
+        <li>Flex duct compression is one of the most common causes of a single under-served room. Pull it tight, support it, and replace kinked sections before anything else.</li>
+        <li>Return-path improvements &#8212; transfer grilles, jump ducts, or dedicated returns &#8212; are frequently the highest-impact, lowest-cost comfort upgrade in a home.</li>
+        <li>Do not upsize equipment to solve a delivery problem. A larger system delivering air through the same restricted duct still can't reach the problem room &#8212; and now it short-cycles too.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="article-tag-pill">uneven room temperatures</a>
+      <a href="#" class="article-tag-pill">hot room fix</a>
+      <a href="#" class="article-tag-pill">cold room fix</a>
+      <a href="#" class="article-tag-pill">HVAC airflow</a>
+      <a href="#" class="article-tag-pill">static pressure</a>
+      <a href="#" class="article-tag-pill">return air</a>
+      <a href="#" class="article-tag-pill">flex duct</a>
+      <a href="#" class="article-tag-pill">upstairs hot</a>
+      <a href="#" class="article-tag-pill">home comfort</a>
+      <a href="#" class="article-tag-pill">duct balancing</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share this guide:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+
+  </div>
+
+  <div class="related">
+    <h3>More HVAC Guides</h3>
+    <div class="related-grid">
+      <a href="furnace-heating-guide.html" class="related-card">
+        <div class="related-img h">&#128293;</div>
+        <div class="related-body">
+          <span class="tag">HVAC</span>
+          <div class="related-title">The Complete Guide to Furnace Heating Problems &amp; No-Heat Conditions</div>
+          <div class="related-meta">T.A. &#183; 28 min read</div>
+        </div>
+      </a>
+      <a href="air-conditioning-guide.html" class="related-card">
+        <div class="related-img h">&#10052;&#65039;</div>
+        <div class="related-body">
+          <span class="tag">HVAC</span>
+          <div class="related-title">The Complete Home Air Conditioning Guide</div>
+          <div class="related-meta">T.A. &#183; 26 min read</div>
+        </div>
+      </a>
+      <a href="hvac-noise-guide.html" class="related-card">
+        <div class="related-img h">&#128266;</div>
+        <div class="related-body">
+          <span class="tag">HVAC</span>
+          <div class="related-title">The Complete Guide to HVAC System Noise</div>
+          <div class="related-meta">T.A. &#183; 24 min read</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="sidebar-avatar">T.A.</div>
+      <div>
+        <div class="sidebar-expert-name">T.A.</div>
+        <div class="sidebar-expert-title">HVAC &amp; Life Safety Specialist</div>
+        <div class="sidebar-expert-bio">NFPA Certified Fire Inspector and Certified Healthcare Facility Manager with decades of experience managing HVAC systems across hospitals, commercial buildings, and residential properties.</div>
+        <div class="sidebar-creds">
+          <span class="cred-pill">NFPA CFI-1</span>
+          <span class="cred-pill">CHFM</span>
+          <span class="cred-pill">CLSS-HC</span>
+          <span class="cred-pill">OSHA 30</span>
+          <span class="cred-pill">Electrician</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#three-pillars">The Three Pillars</a></li>
+      <li><a href="#symptom-triage">Symptom Triage</a></li>
+      <li><a href="#delivery-problems">Delivery Problems</a></li>
+      <li><a href="#load-problems">Load Problems</a></li>
+      <li><a href="#controls-problems">Controls Problems</a></li>
+      <li><a href="#case-studies">Real-World Case Studies</a></li>
+      <li><a href="#homeowner-checks">Homeowner Observations</a></li>
+      <li><a href="#what-pro-measures">What a Pro Should Measure</a></li>
+      <li><a href="#fix-strategies">Fix Strategies</a></li>
+      <li><a href="#severity">Urgency Scale</a></li>
+      <li><a href="#misdiagnosis">Misattribution Rules</a></li>
+      <li><a href="#glossary">Glossary</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free expert advice</h4>
+    <p>HVAC comfort guides and seasonal maintenance reminders from our certified facility manager.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0px;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>Most Read This Week</h4>
+    <div class="pop-list">
+      <a href="hvac-guide.html" class="pop-item">
+        <div class="pop-num">01</div>
+        <div>
+          <div class="pop-title">The Complete HVAC System Guide</div>
+          <div class="pop-cat">HVAC &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="furnace-heating-guide.html" class="pop-item">
+        <div class="pop-num">02</div>
+        <div>
+          <div class="pop-title">The Complete Guide to Furnace Heating Problems</div>
+          <div class="pop-cat">HVAC &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="air-conditioning-guide.html" class="pop-item">
+        <div class="pop-num">03</div>
+        <div>
+          <div class="pop-title">The Complete Home Air Conditioning Guide</div>
+          <div class="pop-cat">HVAC &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="maintenance-guide.html" class="pop-item">
+        <div class="pop-num">04</div>
+        <div>
+          <div class="pop-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="pop-cat">Maintenance &#183; T.A. &amp; M.A.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{
+      li.classList.remove('active');
+      if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

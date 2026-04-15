@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Complete Guide to HVAC System Noise: What Every Sound Means | HomeownersRepairGuide.com</title>
+<meta name="description" content="A certified facility manager explains HVAC noise by category — airflow, mechanical, electrical, and thermal — so you know exactly which sounds to monitor, which to fix soon, and which require immediate shutdown.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root{--navy:#0f2236;--navy-mid:#1a3550;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--teal:#2a7a8c;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+  .topbar a:hover{color:var(--amber);}
+  .topbar-links{display:flex;gap:20px;}
+  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+  .logo-main span{color:var(--rust);}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+  nav{display:flex;align-items:center;gap:4px;}
+  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+  .nav-cta:hover{background:var(--rust-light)!important;}
+  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+  .breadcrumb a{color:var(--text-muted);text-decoration:none;}
+  .breadcrumb a:hover{color:var(--rust);}
+  .breadcrumb .sep{color:var(--gray-light);}
+  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
+  .article-wrap{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 340px;gap:56px;align-items:start;}
+  .article-main{min-width:0;}
+  .article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:16px;}
+  .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--teal);color:var(--white);}
+  .tag.safety{background:#c0402a;color:var(--white);}
+  .tag.diagnosis{background:#1a5a9a;color:var(--white);}
+  .article-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--navy);line-height:1.12;letter-spacing:-0.025em;margin-bottom:20px;}
+  .article-subtitle{font-size:18px;color:var(--text-muted);line-height:1.6;margin-bottom:28px;border-left:3px solid var(--teal);padding-left:16px;}
+  .article-byline{display:flex;align-items:center;gap:16px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:32px;}
+  .byline-avatar{width:48px;height:48px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);flex-shrink:0;}
+  .byline-info{flex:1;}
+  .byline-name{font-size:15px;font-weight:600;color:var(--text-dark);}
+  .byline-cred{font-size:12px;color:var(--text-muted);margin-top:2px;}
+  .byline-meta{display:flex;flex-direction:column;align-items:flex-end;gap:3px;font-size:12px;color:var(--text-muted);text-align:right;}
+  .byline-meta strong{color:var(--text-dark);}
+  .article-hero-img{background:linear-gradient(135deg,#040e12 0%,#08202a 100%);border-radius:var(--radius-lg);height:380px;display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:40px;gap:12px;border:1px solid var(--gray-light);position:relative;overflow:hidden;}
+  .article-hero-img::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 55% 50%,rgba(42,122,140,0.2) 0%,transparent 65%);}
+  .article-hero-img .img-icon{font-size:72px;opacity:0.45;position:relative;z-index:1;}
+  .article-hero-img .img-caption{font-size:13px;color:rgba(255,255,255,0.4);font-style:italic;position:relative;z-index:1;}
+  .article-body{font-size:17px;line-height:1.75;color:var(--text-body);}
+  .article-body h2{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);margin:48px 0 16px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+  .article-body h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--navy-mid);margin:32px 0 12px;}
+  .article-body p{margin-bottom:20px;}
+  .article-body ul,.article-body ol{margin:0 0 20px 0;padding-left:24px;}
+  .article-body li{margin-bottom:8px;}
+  .article-body strong{color:var(--text-dark);font-weight:600;}
+  .article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+  /* Four dialects */
+  .dialect-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0;}
+  .dialect-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+  .dialect-num{width:30px;height:30px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--white);margin-bottom:10px;}
+  .dialect-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .dialect-sounds{font-size:12px;font-style:italic;color:var(--teal);font-weight:600;margin-bottom:8px;}
+  .dialect-desc{font-size:13px;color:var(--text-body);line-height:1.55;}
+  /* Expert callout */
+  .expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0;display:flex;gap:18px;align-items:flex-start;}
+  .expert-callout-avatar{width:44px;height:44px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+  .expert-callout-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:6px;}
+  .expert-callout-text{font-size:15px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+  .expert-callout-attr{font-size:12px;color:rgba(255,255,255,0.45);margin-top:8px;}
+  /* Callout boxes */
+  .callout-box{border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+  .callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+  .callout-box.danger{background:#fef2f0;border:1px solid #e08070;}
+  .callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+  .callout-box.info{background:#e8f2fb;border:1px solid #7ab0d8;}
+  .callout-icon{font-size:22px;flex-shrink:0;margin-top:1px;}
+  .callout-content{flex:1;}
+  .callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;}
+  .callout-box.warning .callout-label{color:#b07800;}
+  .callout-box.danger .callout-label{color:#c0402a;}
+  .callout-box.tip .callout-label{color:#2a7a2a;}
+  .callout-box.info .callout-label{color:#1a5a9a;}
+  .callout-text{font-size:15px;line-height:1.6;color:var(--text-body);}
+  /* Quick-ref triage table */
+  .triage-table{width:100%;border-collapse:collapse;margin:28px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+  .triage-table th{background:var(--teal);color:var(--white);font-size:13px;font-weight:600;padding:12px 16px;text-align:left;letter-spacing:0.04em;}
+  .triage-table td{font-size:14px;padding:12px 16px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+  .triage-table tr:last-child td{border-bottom:none;}
+  .triage-table tr:nth-child(even) td{background:var(--cream);}
+  .triage-table td:first-child{font-weight:600;color:var(--text-dark);}
+  .urgency-pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:2px;letter-spacing:0.05em;}
+  .urg-monitor{background:#eaf5ea;color:#2a7a2a;}
+  .urg-schedule{background:#fff8e6;color:#b07800;}
+  .urg-prompt{background:#fef2f0;color:#c0402a;}
+  .urg-emergency{background:#c0392b;color:white;}
+  /* Sound detail cards */
+  .sound-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:28px 0;}
+  .sound-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+  .sound-card.emergency{border-top:3px solid #c0392b;}
+  .sound-card.high{border-top:3px solid var(--rust);}
+  .sound-card.medium{border-top:3px solid var(--amber);}
+  .sound-card.low{border-top:3px solid #4caf50;}
+  .sound-icon{font-size:22px;margin-bottom:8px;}
+  .sound-name{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+  .sound-urgency{font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:8px;}
+  .sound-card.emergency .sound-urgency{color:#c0392b;}
+  .sound-card.high .sound-urgency{color:var(--rust);}
+  .sound-card.medium .sound-urgency{color:#b07800;}
+  .sound-card.low .sound-urgency{color:#2a7a2a;}
+  .sound-cause{font-size:13px;color:var(--text-body);line-height:1.55;margin-bottom:6px;}
+  .sound-action{font-size:12px;font-weight:600;color:var(--rust);}
+  /* Noise log template */
+  .noise-log{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:24px 28px;margin:28px 0;box-shadow:var(--shadow-card);}
+  .noise-log h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+  .log-fields{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+  .log-field{background:var(--cream-dark);border-radius:var(--radius);padding:12px 14px;}
+  .log-field-label{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--teal);margin-bottom:4px;}
+  .log-field-desc{font-size:13px;color:var(--text-body);line-height:1.45;}
+  /* System noise maps */
+  .system-map{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);margin:14px 0;overflow:hidden;box-shadow:var(--shadow-card);}
+  .system-map-header{background:var(--cream-dark);padding:14px 20px;display:flex;align-items:center;gap:12px;cursor:pointer;user-select:none;}
+  .system-map-icon{font-size:20px;}
+  .system-map-title{font-size:15px;font-weight:700;color:var(--navy);flex:1;}
+  .system-map-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;}
+  .system-map.open .system-map-chevron{transform:rotate(180deg);}
+  .system-map-body{padding:18px 20px;display:none;border-top:1px solid var(--gray-light);}
+  .system-map.open .system-map-body{display:block;}
+  .system-map-body table{width:100%;border-collapse:collapse;}
+  .system-map-body table td{font-size:13px;padding:8px 10px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.45;}
+  .system-map-body table tr:last-child td{border-bottom:none;}
+  .system-map-body table td:first-child{font-weight:600;color:var(--text-dark);width:180px;}
+  /* Severity */
+  .severity-block{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:28px;margin:36px 0;box-shadow:var(--shadow-card);}
+  .severity-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:20px;}
+  .severity-row{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;}
+  .severity-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0;margin-top:3px;}
+  .sev-low .severity-dot{background:#4caf50;}
+  .sev-medium .severity-dot{background:var(--amber);}
+  .sev-high .severity-dot{background:var(--rust);}
+  .sev-critical .severity-dot{background:#c0392b;}
+  .severity-label{font-size:13px;font-weight:700;width:130px;flex-shrink:0;}
+  .sev-low .severity-label{color:#4caf50;}
+  .sev-medium .severity-label{color:var(--amber);}
+  .sev-high .severity-label{color:var(--rust);}
+  .sev-critical .severity-label{color:#c0392b;}
+  .severity-examples{font-size:13px;color:var(--text-body);line-height:1.55;flex:1;}
+  /* Safety popout */
+  .safety-popout{background:linear-gradient(135deg,#c0392b,#a93226);border-radius:var(--radius-lg);padding:28px 32px;margin:40px 0;}
+  .safety-popout h3{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:14px;}
+  .safety-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
+  .safety-list li{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:rgba(255,255,255,0.9);line-height:1.55;}
+  .safety-list li::before{content:'!';width:18px;height:18px;border-radius:50%;background:rgba(255,255,255,0.2);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+  .safety-warn-title{font-weight:700;color:var(--white);display:block;margin-bottom:2px;}
+  /* FAQ */
+  .faq-block{margin:36px 0;}
+  .faq-item{border-bottom:1px solid var(--gray-light);}
+  .faq-question{display:flex;justify-content:space-between;align-items:center;padding:18px 0;cursor:pointer;font-size:16px;font-weight:600;color:var(--navy);gap:16px;user-select:none;}
+  .faq-question:hover{color:var(--teal);}
+  .faq-chevron{font-size:18px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+  .faq-answer{font-size:15px;color:var(--text-body);line-height:1.7;padding-bottom:18px;display:none;}
+  .faq-item.open .faq-answer{display:block;}
+  .faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--teal);}
+  /* Summary */
+  .summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:32px 36px;margin:48px 0 36px;}
+  .summary-box h3{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--white);margin-bottom:16px;}
+  .summary-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  .summary-list li{display:flex;gap:12px;font-size:15px;color:rgba(255,255,255,0.8);line-height:1.55;}
+  .summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+  /* Tags & share */
+  .article-tags{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0;padding-top:32px;border-top:1px solid var(--gray-light);}
+  .article-tag-pill{font-size:12px;padding:5px 12px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+  .article-tag-pill:hover{background:var(--teal);color:var(--white);border-color:var(--teal);}
+  .share-bar{display:flex;align-items:center;gap:12px;padding:20px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:48px;flex-wrap:wrap;}
+  .share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+  .share-btn{padding:8px 16px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+  .share-btn:hover{opacity:0.85;}
+  .share-fb{background:#1877f2;color:white;}
+  .share-x{background:#000;color:white;}
+  .share-pin{background:#e60023;color:white;}
+  .share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+  /* Related */
+  .related{margin-top:48px;}
+  .related h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:24px;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .related-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;transition:box-shadow 0.2s,transform 0.2s;}
+  .related-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+  .related-img{height:120px;display:flex;align-items:center;justify-content:center;font-size:40px;}
+  .related-img.h{background:linear-gradient(135deg,#e6f4f6,#cce8ec);}
+  .related-img.m{background:linear-gradient(135deg,#eaf5ea,#d4ecd4);}
+  .related-body{padding:16px;}
+  .related-body .tag{font-size:10px;padding:3px 8px;margin-bottom:8px;}
+  .related-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:6px;}
+  .related-meta{font-size:11px;color:var(--text-muted);}
+  /* Sidebar */
+  .sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:24px;}
+  .sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:24px;box-shadow:var(--shadow-card);}
+  .sidebar-card h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:16px;padding-bottom:12px;border-bottom:2px solid var(--gray-light);}
+  .sidebar-expert{display:flex;gap:14px;align-items:flex-start;}
+  .sidebar-avatar{width:52px;height:52px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);flex-shrink:0;}
+  .sidebar-expert-name{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px;}
+  .sidebar-expert-title{font-size:12px;color:var(--teal);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px;}
+  .sidebar-expert-bio{font-size:13px;color:var(--text-muted);line-height:1.55;}
+  .sidebar-creds{display:flex;flex-wrap:wrap;gap:5px;margin-top:12px;}
+  .cred-pill{font-size:10px;padding:3px 8px;background:var(--cream-dark);border-radius:2px;color:var(--text-muted);font-weight:600;}
+  .toc-list{list-style:none;display:flex;flex-direction:column;gap:4px;}
+  .toc-list li a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);text-decoration:none;padding:6px 8px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+  .toc-list li a:hover{background:var(--cream);color:var(--teal);}
+  .toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+  .toc-list li.active a{color:var(--teal);background:var(--cream);font-weight:600;}
+  .toc-list li.active a::before{background:var(--teal);width:6px;height:6px;}
+  .sidebar-newsletter{background:var(--teal);border-radius:var(--radius-lg);padding:24px;}
+  .sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:10px;}
+  .sidebar-newsletter p{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.55;margin-bottom:16px;}
+  .ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:32px 16px;text-align:center;}
+  .ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:6px;}
+  .ad-placeholder .ad-size{font-size:13px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+  .pop-list{display:flex;flex-direction:column;gap:14px;}
+  .pop-item{display:flex;gap:12px;align-items:flex-start;text-decoration:none;}
+  .pop-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gray-light);line-height:1;flex-shrink:0;width:28px;}
+  .pop-title{font-size:13px;font-weight:600;color:var(--navy);line-height:1.35;transition:color 0.15s;}
+  .pop-item:hover .pop-title{color:var(--teal);}
+  .pop-cat{font-size:11px;color:var(--text-muted);margin-top:3px;}
+  footer{background:var(--navy);}
+  .footer-nav{background:var(--navy-mid);padding:24px 0;}
+  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:32px;flex-wrap:wrap;}
+  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:14px;transition:color 0.15s;}
+  .footer-nav a:hover{color:var(--amber);}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:20px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:12px;}
+  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:20px;}
+  .footer-bottom a:hover{color:rgba(255,255,255,0.6);}
+  @media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.related-grid{grid-template-columns:1fr 1fr;}.dialect-grid{grid-template-columns:1fr;}.sound-grid{grid-template-columns:1fr;}.log-fields{grid-template-columns:1fr;}}
+  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.related-grid{grid-template-columns:1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+  <!-- SEO: Open Graph & Canonical -->
+  <link rel="canonical" href="https://homeownersrepairguide.com/hvac-noise-guide.html">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://homeownersrepairguide.com/hvac-noise-guide.html">
+  <meta property="og:title" content="The Complete Guide to HVAC System Noise: What Every Sound Means | HomeownersRepairGuide.com">
+  <meta property="og:description" content="A certified facility manager explains HVAC noise by category — airflow, mechanical, electrical, and thermal — so you know exactly which sounds to monitor, wh...">
+  <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Complete Guide to HVAC System Noise: What Every Sound Means | HomeownersRepairGuide.com">
+  <meta name="twitter:description" content="A certified facility manager explains HVAC noise by category — airflow, mechanical, electrical, and thermal — so you know exactly which sounds to monitor, wh...">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">The Complete Guide to HVAC System Noise</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">HVAC</span>
+    <span class="tag diagnosis">Diagnosis</span>
+    <span class="tag safety">Safety</span>
+  </div>
+
+  <h1 class="article-title">The Complete Guide to HVAC System Noise: What Every Sound Means</h1>
+
+  <p class="article-subtitle">A loud HVAC system is not just an annoyance &#8212; it is a diagnostic signal. The sound tells you which of four physical systems is involved, how urgently you need to respond, and whether you can monitor it or need to shut off the system right now.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Certified Facility Manager &amp; Life Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 &#183; CHFM &#183; CLSS-HC &#183; OSHA 30 &#183; Electrician &#8212; All Phases</div>
+    </div>
+    <div class="byline-meta">
+      <span><strong>Updated:</strong> January 2025</span>
+      <span>24 min read &#183; Fact-verified</span>
+    </div>
+  </div>
+
+  <div class="article-hero-img">
+    <div class="img-icon">&#128266;</div>
+    <div class="img-caption">[Hero image &#8212; e.g. HVAC air handler, outdoor condenser unit, or ductwork]</div>
+  </div>
+
+  <div class="article-body">
+
+    <p>Homeowners judge HVAC noise by volume. Technicians judge it by <strong>character and pattern</strong>. A modest sound that is new, sharper than it was last month, or tied to a specific moment in the operating cycle can be far more meaningful than a loud but stable background hum the system has always made.</p>
+
+    <p>Noise matters because it shows up before you notice comfort problems. Rising static pressure can make ductwork roar and simultaneously starve distant rooms of airflow. Early bearing wear can sound like a faint squeal long before the motor fails. Contactor chatter can precede a no-cooling failure on the hottest day of the year. The noise is the system's early warning language &#8212; and this guide teaches you to read it.</p>
+
+    <div class="callout-box danger">
+      <div class="callout-icon">&#128680;</div>
+      <div class="callout-content">
+        <div class="callout-label">Shut Off the System Immediately If You Hear</div>
+        <div class="callout-text"><strong>A boom or bang at furnace ignition. Persistent grinding or growling. Sizzling, snapping, or arcing sounds. Any of these combined with a burning smell, gas odor, or smoke.</strong> These are not monitor-and-wait conditions. Turn the system off at the thermostat and then at the breaker or disconnect before calling for service.</div>
+      </div>
+    </div>
+
+    <h2 id="four-dialects">The Four Noise "Dialects" &#8212; What Category Is Your Sound?</h2>
+
+    <p>Every HVAC noise originates from one of four physical sources. Identifying the dialect before you try to identify the specific cause narrows the list of possible problems dramatically and tells you the right level of urgency.</p>
+
+    <div class="dialect-grid">
+      <div class="dialect-card">
+        <div class="dialect-num">1</div>
+        <div class="dialect-title">Airflow</div>
+        <div class="dialect-sounds">Whooshing, roaring, whistling, rushing</div>
+        <div class="dialect-desc">Air moving too fast or through restrictions. Almost always a <em>design or pressure problem</em>, not a broken motor. Dirty filters, blocked returns, closed registers, undersized ductwork, and dirty evaporator coils all raise static pressure and produce airflow noise. Loud airflow often signals equipment stress, not just acoustics.</div>
+      </div>
+      <div class="dialect-card">
+        <div class="dialect-num">2</div>
+        <div class="dialect-title">Mechanical Rotation</div>
+        <div class="dialect-sounds">Squealing, grinding, growling, scraping, rattling</div>
+        <div class="dialect-desc">Motors, bearings, blowers, fans, and compressors. These noises worsen with runtime and can shift from high-pitched to low-pitched as wear progresses. <em>Early-stage: faint squeal at startup. Late-stage: grinding or metal-on-metal.</em> Late-stage mechanical noise often means damage is already occurring.</div>
+      </div>
+      <div class="dialect-card">
+        <div class="dialect-num">3</div>
+        <div class="dialect-title">Electrical / Control</div>
+        <div class="dialect-sounds">Humming, buzzing, chattering, clicking, sizzling, snapping</div>
+        <div class="dialect-desc">Contactors, relays, transformers, and control boards. A steady unchanged hum can be normal. <em>Chattering, sizzling, or snapping are not.</em> Electrical noise often precedes component failure and can indicate arcing &#8212; which is always an immediate shutdown situation.</div>
+      </div>
+      <div class="dialect-card">
+        <div class="dialect-num">4</div>
+        <div class="dialect-title">Thermal Expansion</div>
+        <div class="dialect-sounds">Pops, ticks, bangs, oil-canning</div>
+        <div class="dialect-desc">Metal expanding and contracting with temperature changes. Sheet metal ducts, heat exchangers, and cabinet panels all expand when heated. <em>A single pop at startup is usually normal. A boom at gas furnace ignition is not.</em> Thermal noises are highly context-dependent.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert &#8212; On How to Classify Noise Before Calling for Service</div>
+        <div class="expert-callout-text">"The single most valuable thing a homeowner can do before calling about an HVAC noise is answer three questions: What does it sound like? When does it happen? And has anything changed recently? Ninety percent of the time, those three answers tell me which system I'm dealing with before I walk in the door. A squeal at blower startup that started two weeks ago and gets slightly worse every morning is almost certainly a bearing &#8212; I know what to bring and where to test. Compare that to 'it makes a noise sometimes' &#8212; that could mean anything. The homeowner who logs it saves time and money. The one who just says 'fix the noise' may watch a technician guess through two or three component swaps before finding the real cause."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA CFI-1 &#183; Certified Healthcare Facility Manager &#183; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="sound-by-sound">Sound-by-Sound Quick Reference</h2>
+
+    <table class="triage-table">
+      <thead>
+        <tr>
+          <th>Sound</th>
+          <th>Most Likely Source</th>
+          <th>Key Context</th>
+          <th>Urgency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Single pop at startup or shutdown</td>
+          <td>Thermal expansion &#8212; duct metal or cabinet panel</td>
+          <td>Normal if unchanged and stable for years</td>
+          <td><span class="urgency-pill urg-monitor">Monitor</span></td>
+        </tr>
+        <tr>
+          <td>Steady low hum (unchanged)</td>
+          <td>Transformer, motor operating within normal range</td>
+          <td>Only concerning if it changes in pitch or intensity</td>
+          <td><span class="urgency-pill urg-monitor">Monitor</span></td>
+        </tr>
+        <tr>
+          <td>Whistle at one register</td>
+          <td>Local restriction &#8212; small branch duct, restrictive grille, partially closed damper</td>
+          <td>Worsening over time suggests rising system pressure</td>
+          <td><span class="urgency-pill urg-schedule">Schedule Service</span></td>
+        </tr>
+        <tr>
+          <td>Rattle at a specific fan speed</td>
+          <td>Resonance &#8212; panel or duct section vibrating at that frequency</td>
+          <td>Annoying but often solvable without major repair; escalate if worsening</td>
+          <td><span class="urgency-pill urg-schedule">Schedule Service</span></td>
+        </tr>
+        <tr>
+          <td>Return roar + weak supply airflow</td>
+          <td>High static pressure &#8212; dirty filter, blocked return, restricted duct</td>
+          <td>Check and replace filter first; if roar continues, professional pressure test needed</td>
+          <td><span class="urgency-pill urg-schedule">Schedule Service</span></td>
+        </tr>
+        <tr>
+          <td>Brief squeal at startup</td>
+          <td>Early bearing wear or belt slippage (older systems)</td>
+          <td>Log frequency and duration &#8212; if it becomes consistent or longer, escalate</td>
+          <td><span class="urgency-pill urg-schedule">Schedule Service</span></td>
+        </tr>
+        <tr>
+          <td>Repeated clicking with short run times</td>
+          <td>Control retrying start, safety lockout tripping, or short cycling</td>
+          <td>If system runs for 2&#8211;3 minutes then shuts off and clicks again, a technician is needed</td>
+          <td><span class="urgency-pill urg-prompt">Prompt Service</span></td>
+        </tr>
+        <tr>
+          <td>New buzz or chatter at outdoor unit</td>
+          <td>Contactor degrading &#8212; common before start failures on hot days</td>
+          <td>Increases risk of no-start failure; schedule before peak cooling demand</td>
+          <td><span class="urgency-pill urg-prompt">Prompt Service</span></td>
+        </tr>
+        <tr>
+          <td>Squeal worsening over days/weeks</td>
+          <td>Progressing bearing failure &#8212; blower or condenser fan motor</td>
+          <td>Squeal → grinding is the failure progression; act before it reaches grinding</td>
+          <td><span class="urgency-pill urg-prompt">Prompt Service</span></td>
+        </tr>
+        <tr>
+          <td>Return roar + uneven rooms + longer runtimes</td>
+          <td>High static pressure causing combined airflow and performance degradation</td>
+          <td>System is working harder than it should; comfort and equipment life both affected</td>
+          <td><span class="urgency-pill urg-prompt">Prompt Service</span></td>
+        </tr>
+        <tr>
+          <td>Grinding or growling (outdoor unit)</td>
+          <td>Failing compressor or condenser fan bearing &#8212; metal-to-metal contact</td>
+          <td>Continued operation risks compressor damage; shut down if persistent</td>
+          <td><span class="urgency-pill urg-emergency">Shut Down Now</span></td>
+        </tr>
+        <tr>
+          <td>Boom or bang at gas furnace ignition</td>
+          <td>Delayed ignition &#8212; gas builds before lighting, then ignites suddenly</td>
+          <td>Safety and combustion sequence issue; if repeated or with odor, immediate shutdown</td>
+          <td><span class="urgency-pill urg-emergency">Shut Down Now</span></td>
+        </tr>
+        <tr>
+          <td>Sizzling, snapping, or arcing sounds</td>
+          <td>Electrical arcing &#8212; damaged wiring, loose connection, failing component</td>
+          <td>Never normal; fire risk; shut off at breaker and call immediately</td>
+          <td><span class="urgency-pill urg-emergency">Shut Down Now</span></td>
+        </tr>
+        <tr>
+          <td>Any noise + gas odor</td>
+          <td>Gas leak with or without combustion issue</td>
+          <td>Leave the building; do not operate any switches; call gas company and emergency services</td>
+          <td><span class="urgency-pill urg-emergency">Emergency</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="leading-lagging">Leading vs. Lagging Indicators &#8212; Why Acting Early Matters</h2>
+
+    <p>Mechanical noises follow a predictable progression. Understanding where a noise sits in that progression determines whether you have time to schedule a service call or whether continued operation risks collateral damage.</p>
+
+    <div class="sound-grid">
+      <div class="sound-card low">
+        <div class="sound-icon">&#128308;</div>
+        <div class="sound-name">Leading Indicators</div>
+        <div class="sound-urgency">Early Warning &#8212; Act Before It Progresses</div>
+        <div class="sound-cause">Faint squeal lasting 2&#8211;3 seconds at startup. Subtle tonal hum that appeared this month. Mild rattle at a specific blower speed. Brief outdoor buzz that didn't happen last summer.</div>
+        <div class="sound-action">Log frequency and duration. Schedule service. These sounds appear before functional failure &#8212; acting here is the cheapest possible intervention.</div>
+      </div>
+      <div class="sound-card emergency">
+        <div class="sound-icon">&#128308;</div>
+        <div class="sound-name">Lagging Indicators</div>
+        <div class="sound-urgency">Damage Already Occurring &#8212; Shut Down</div>
+        <div class="sound-cause">Grinding or growling. Persistent squealing across the entire run cycle. Severe vibration felt through floors. Outdoor unit making rough, harsh tones under load.</div>
+        <div class="sound-action">Continued operation risks damage to housings, windings, and adjacent components. Shut down if grinding or growling is persistent &#8212; a bearing that is already failing can destroy its housing within minutes of continued operation.</div>
+      </div>
+    </div>
+
+    <p>The practical rule: a noise that becomes <strong>more consistent</strong> or <strong>more harsh</strong> over a short period is escalating risk. "It's always sounded like that" is a very different situation from "it started making that sound two weeks ago." The trend matters far more than the current intensity.</p>
+
+    <h2 id="airflow-noise">Airflow Noise &#8212; When Loud Air Means a System Problem</h2>
+
+    <p>Airflow noise is the most common HVAC complaint and the most frequently misdiagnosed. Homeowners assume loud air means "the fan is broken." Technicians know it usually means the system is fighting restriction.</p>
+
+    <p>The driver is <strong>total external static pressure (TESP)</strong> &#8212; the resistance the blower must overcome to move air through the system. When static pressure rises, airflow becomes turbulent, velocity at registers increases, and blower motors work harder. Variable-speed systems respond by increasing RPM, which makes the system sound like it's working harder &#8212; because it is.</p>
+
+    <p>As static pressure rises, several things happen simultaneously: airflow noise increases at the return and supply registers; the blower operates farther from its efficient range and generates more heat; and rooms at the end of long duct runs receive less airflow. The loud return roar and the weak bedroom airflow often have the same root cause.</p>
+
+    <div class="callout-box info">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">The Most Common Homeowner Misconception</div>
+        <div class="callout-text">A loud return does <em>not</em> mean the system is delivering more air. It usually means the system is <strong>starved for air and pulling hard through limited pathways</strong>. Closing registers to "redirect" airflow makes this worse &#8212; it increases static pressure throughout the entire system, producing more noise and more stress on the blower motor, not better airflow to the rooms you want.</div>
+      </div>
+    </div>
+
+    <h3>What to check when noise sounds like air</h3>
+    <ul>
+      <li>Replace the filter and note whether the roar changes that same day</li>
+      <li>Open any closed interior doors &#8212; closed doors restrict return air pathways and can cause the return grille to roar</li>
+      <li>Confirm all supply registers are open &#8212; closing more than a few raises system pressure</li>
+      <li>Note whether the noise is loudest at the return grille (return restriction), at a specific supply register (local velocity/restriction), or throughout the entire system (high total static pressure)</li>
+      <li>If roar is strongest at the return and airflow to distant rooms is noticeably weak, schedule professional static pressure testing &#8212; the duct system may be undersized or a return is deficient</li>
+    </ul>
+
+    <h2 id="vibration">Vibration and Resonance &#8212; Why the Noise Seems to Come from the Ceiling</h2>
+
+    <p>Many homeowners describe HVAC noise as "coming from the ceiling" or "inside the wall" &#8212; even when the equipment is in the basement or outside. This is vibration transfer: mechanical energy traveling through rigid duct connections, line sets touching framing, or equipment mounted without adequate isolation into building structures that act like speakers.</p>
+
+    <p>Resonance is a specific form of vibration transfer where the vibration frequency matches the natural frequency of a panel, duct run, or framing cavity. This is why some rattles appear only at a specific blower speed &#8212; the system hits a frequency that excites that structure. The equipment may be operating completely normally from a control perspective; the building is amplifying the vibration.</p>
+
+    <p>A useful homeowner test: if a rattle appears only at one specific blower speed, it is almost certainly resonance rather than a failing component. A rattle that occurs at all speeds is more likely a loose fastener or a component in physical contact with the housing.</p>
+
+    <div class="callout-box tip">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">Locating the Sound Source vs. the Transfer Path</div>
+        <div class="callout-text">The loudest point is not always the source. Describe both where the sound is loudest <em>and</em> the equipment context to a technician: "Ceiling rattles when the blower ramps up, but the furnace cabinet itself feels quiet" points to a different problem than "outdoor unit is rough-sounding and the wall inside resonates with it." Both observations are useful; neither alone tells the complete story.</div>
+      </div>
+    </div>
+
+    <h2 id="timing">Timing-Based Diagnosis &#8212; When in the Cycle Does It Occur?</h2>
+
+    <p>HVAC systems follow predictable operating sequences. Matching a noise to a specific step in the sequence narrows the list of possible causes more effectively than any other single diagnostic approach.</p>
+
+    <p><strong>Cooling cycle sequence:</strong> Thermostat calls → indoor blower ramps → outdoor contactor engages → compressor and outdoor fan start → steady operation → shutdown → pressure equalization. A click at the moment the outdoor unit starts is a different category than a click every 30 seconds during steady operation.</p>
+
+    <p><strong>Gas heating cycle sequence:</strong> Thermostat calls → inducer starts → pressure switch proves draft → ignition occurs → flame stabilizes → blower starts → steady operation → shutdown → post-purge. A boom at ignition is different from a pop during cooldown. Repeated clicking before ignition indicates repeated failed ignition attempts &#8212; a high-priority condition.</p>
+
+    <p><strong>Heat pump specific:</strong> Adds defrost cycles and reversing valve transitions. A distinct "whoosh" or tone change during a clear transition can be normal. The diagnostic value is consistency &#8212; predictable transitions that occur occasionally are usually normal; the same sound occurring frequently or unpredictably is not.</p>
+
+    <h2 id="system-maps">System-Specific Sound Maps</h2>
+
+    <p>Different systems have different normal sound signatures and different failure patterns. Click each system to see its specific noise map.</p>
+
+    <div class="system-map open">
+      <div class="system-map-header" onclick="toggleMap(this)">
+        <div class="system-map-icon">&#128293;</div>
+        <div class="system-map-title">Gas Furnace</div>
+        <div class="system-map-chevron">&#9662;</div>
+      </div>
+      <div class="system-map-body">
+        <table>
+          <tr><td>Before ignition</td><td>Inducer whir or hum &#8212; normal. Rough or scraping inducer sound indicates bearing wear.</td></tr>
+          <tr><td>At ignition</td><td>Soft "whoomp" can be normal. A sharp <strong>boom or bang is not normal</strong> &#8212; indicates delayed ignition. Shut down if repeated.</td></tr>
+          <tr><td>During run</td><td>Steady airflow hum is normal. Rattles suggest loose panels or duct contact. Rumbling with odor suggests combustion issues.</td></tr>
+          <tr><td>After shutdown</td><td>Metal ticks and pops as heat exchanger and ducts cool &#8212; normal thermal expansion.</td></tr>
+          <tr><td>Repeated clicking + no start</td><td>System retrying ignition or tripping a safety limit. Prompt service needed.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="system-map">
+      <div class="system-map-header" onclick="toggleMap(this)">
+        <div class="system-map-icon">&#10052;&#65039;</div>
+        <div class="system-map-title">Central Air Conditioner (Outdoor Unit)</div>
+        <div class="system-map-chevron">&#9662;</div>
+      </div>
+      <div class="system-map-body">
+        <table>
+          <tr><td>At startup</td><td>Firm startup sound as compressor begins &#8212; normal. A hum that doesn't develop into full operation indicates capacitor or contactor issue.</td></tr>
+          <tr><td>During run (fan)</td><td>Steady fan hum normal. Wobble-like thumping or rhythmic slapping indicates fan blade issue or damaged motor mount.</td></tr>
+          <tr><td>During run (compressor)</td><td>Steady operational hum normal. Growling, grinding, or rough tone indicates compressor distress &#8212; shut down if persistent.</td></tr>
+          <tr><td>Electrical compartment</td><td>Brief click at start normal. Repeated buzzing or chattering indicates contactor wear &#8212; schedule service before peak demand.</td></tr>
+          <tr><td>Getting louder over weeks</td><td>Escalation in any outdoor noise pattern warrants professional inspection &#8212; outdoor components fail under peak load when already stressed.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="system-map">
+      <div class="system-map-header" onclick="toggleMap(this)">
+        <div class="system-map-icon">&#127777;&#65039;</div>
+        <div class="system-map-title">Air Handler / Indoor Unit</div>
+        <div class="system-map-chevron">&#9662;</div>
+      </div>
+      <div class="system-map-body">
+        <table>
+          <tr><td>Roaring return</td><td>High static pressure &#8212; dirty filter, closed doors, blocked return, or undersized return ductwork.</td></tr>
+          <tr><td>Cabinet resonance</td><td>Speed-dependent rattle suggests a panel or duct excited at that frequency &#8212; vibration path issue, not motor failure.</td></tr>
+          <tr><td>Gets louder + airflow weaker</td><td>Classic restriction/pressure pattern &#8212; coil fouling, filter loading, or return deficiency.</td></tr>
+          <tr><td>Gets louder suddenly</td><td>Resonance from a new contact point or blower wheel imbalance (debris accumulation).</td></tr>
+          <tr><td>Rhythmic vibration</td><td>Blower wheel imbalance from debris accumulation &#8212; professional cleaning often resolves without parts replacement.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="system-map">
+      <div class="system-map-header" onclick="toggleMap(this)">
+        <div class="system-map-icon">&#9731;</div>
+        <div class="system-map-title">Heat Pump (Includes Defrost)</div>
+        <div class="system-map-chevron">&#9662;</div>
+      </div>
+      <div class="system-map-body">
+        <table>
+          <tr><td>Reversing valve transition</td><td>A distinct "whoosh" or tone change during mode reversal &#8212; normal when occasional and followed by stable operation.</td></tr>
+          <tr><td>During defrost</td><td>Fan may stop, tone may change, steam may appear &#8212; normal defrost behavior. Should complete and return to normal within 10&#8211;15 minutes.</td></tr>
+          <tr><td>Frequent defrost cycles</td><td>Indicates abnormal icing &#8212; refrigerant issue or airflow restriction. Schedule service.</td></tr>
+          <tr><td>Louder in very cold weather</td><td>Higher load can change sound signature. Brief changes can be normal; persistent harsh noise warrants evaluation.</td></tr>
+          <tr><td>Persistent harsh noise</td><td>Treat as you would an outdoor AC unit &#8212; compressor or fan distress requires prompt service.</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <h2 id="severity">Urgency Scale</h2>
+
+    <div class="severity-block">
+      <div class="severity-title">HVAC Noise Urgency Classification</div>
+      <div class="severity-row sev-low">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Monitor</div>
+        <div class="severity-examples">Single pop at startup that has been the same for years. Steady transformer hum that hasn't changed. Brief relay click at the start of a normal cycle. Mild duct expansion pops during the first heating run of the season.</div>
+      </div>
+      <div class="severity-row sev-medium">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Schedule Service</div>
+        <div class="severity-examples">New or worsening squeal at startup. Return roar that started this season. Speed-dependent rattle at the air handler. Outdoor buzzing that wasn't present last year. Any airflow noise that appeared after a filter change to a more restrictive type.</div>
+      </div>
+      <div class="severity-row sev-high">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Prompt Service</div>
+        <div class="severity-examples">Squeal that now occurs throughout the run cycle (not just startup). Return roar paired with uneven rooms and longer runtimes. Repeated clicking with short cycling. Outdoor buzz getting louder. New outdoor noise that correlates with reduced cooling performance.</div>
+      </div>
+      <div class="severity-row sev-critical">
+        <div class="severity-dot"></div>
+        <div class="severity-label">Shut Down Now</div>
+        <div class="severity-examples">Grinding or growling from any component. Boom at gas furnace ignition. Sizzling, snapping, or arcing sounds anywhere. Any noise combined with burning smell, gas odor, smoke, or repeated safety shutdowns.</div>
+      </div>
+    </div>
+
+    <h2 id="noise-log">The Homeowner Noise Log &#8212; High Value, Low Effort</h2>
+
+    <p>The single most useful thing you can do before calling for HVAC service is capture the noise pattern in writing. A technician who receives this information can prepare the right tools, test the right systems, and diagnose in one visit rather than two or three.</p>
+
+    <div class="noise-log">
+      <h3>&#128221; What to Document Before You Call</h3>
+      <div class="log-fields">
+        <div class="log-field">
+          <div class="log-field-label">Sound Category</div>
+          <div class="log-field-desc">Bang, squeal, grind, rattle, hum, click, whoosh, buzz, sizzle. Pick the closest word.</div>
+        </div>
+        <div class="log-field">
+          <div class="log-field-label">When It Happens</div>
+          <div class="log-field-desc">Startup, steady operation, shutdown, defrost, zone change, only when very hot/cold outside.</div>
+        </div>
+        <div class="log-field">
+          <div class="log-field-label">Where It's Loudest</div>
+          <div class="log-field-desc">Return grille, specific supply register, air handler cabinet, outdoor unit, ceiling/wall (vibration transfer).</div>
+        </div>
+        <div class="log-field">
+          <div class="log-field-label">How It Has Changed</div>
+          <div class="log-field-desc">When did it start? Is it getting louder, more frequent, or harsher? Or has it been stable for years?</div>
+        </div>
+        <div class="log-field">
+          <div class="log-field-label">Comfort Symptoms</div>
+          <div class="log-field-desc">Hot/cold spots, weak airflow at certain registers, longer run times, short cycling.</div>
+        </div>
+        <div class="log-field">
+          <div class="log-field-label">Safety Flags</div>
+          <div class="log-field-desc">Gas odor, burning smell, smoke, sparks, system shutting itself off repeatedly.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-callout-avatar">T.A.</div>
+      <div>
+        <div class="expert-callout-label">From the Expert &#8212; On Leading Indicators and Acting Early</div>
+        <div class="expert-callout-text">"A squeal at startup that lasts three seconds and then goes away &#8212; that's a leading indicator. That motor's bearing is starting to show wear. If a homeowner calls me with that description and logs that it started two weeks ago and has been happening every morning, I can schedule a bearing replacement or motor evaluation before it fails. The cost is a service call and maybe a motor. Compare that to the same bearing failing during peak demand in August: now I'm dealing with a no-cooling emergency, potentially a blower wheel that scraped its housing when the bearing seized, and a homeowner without AC in extreme heat. The squeal was the same problem. The cost was not. Early information is always cheaper."</div>
+        <div class="expert-callout-attr">&#8212; T.A., NFPA CFI-1 &#183; Certified Healthcare Facility Manager &#183; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="safety">Critical Safety Warnings</h2>
+
+    <div class="safety-popout">
+      <h3>&#9888;&#65039; HVAC Noise Safety &#8212; These Are Never "Wait and See"</h3>
+      <ul class="safety-list">
+        <li><span class="safety-warn-title">A boom or bang at gas furnace ignition &#8212; shut down immediately</span>This indicates delayed ignition &#8212; gas accumulates before lighting, then ignites in a burst. This is both a safety hazard and a sign of combustion sequence failure. Do not attempt a reset. Call a licensed HVAC technician before restarting.</li>
+        <li><span class="safety-warn-title">Sizzling, snapping, or arcing sounds &#8212; shut off at the breaker</span>Arcing electricity is never normal anywhere in an HVAC system. It indicates electricity jumping an unintended gap &#8212; which can cause fire. Turn the system off at the thermostat AND the breaker or disconnect before calling for service.</li>
+        <li><span class="safety-warn-title">Grinding that continues for more than a few seconds &#8212; shut down</span>Persistent metal-on-metal contact can destroy a blower housing or compressor within minutes. The repair cost escalates from a motor or bearing to a motor plus housing plus potentially a compressor. Shutting down early limits collateral damage.</li>
+        <li><span class="safety-warn-title">Any noise combined with a gas odor &#8212; evacuate immediately</span>Do not operate any electrical switches, thermostats, or light switches. Leave the building, go to a neighbor's, and call the gas company and emergency services from outside. Gas leaks can ignite from a switch arc.</li>
+        <li><span class="safety-warn-title">Do not open sealed compartments to investigate noise</span>Capacitors inside outdoor units store lethal voltage even when the system is off. High-voltage wiring inside the air handler is exposed behind access panels. Safe homeowner response is observation and documentation &#8212; not disassembly.</li>
+      </ul>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is a loud HVAC system always a sign something is broken?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Not always. Some systems are inherently louder due to duct design, airflow velocity, mounting conditions, or equipment model. What matters most is change. A system that suddenly becomes louder, harsher, or inconsistent is more concerning than one that has sounded the same way for years. The most useful comparison is your system's own history &#8212; not a neighbor's system, which may have completely different duct geometry and mounting.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does my system get louder when I close bedroom doors?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Closed doors restrict return airflow if the room doesn't have a dedicated return duct or adequate transfer path. That restriction increases static pressure throughout the system, which makes the return grille roar and increases blower effort. If your system noticeably roars when several doors are closed, the return air design is insufficient &#8212; the rooms need transfer paths (jump ducts, door undercuts, or transfer grilles) rather than just doors left open.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can high-efficiency filters make my system louder?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes. A filter with higher resistance (MERV 13+ in a system not designed for it) raises the pressure drop across the filter, which increases return noise and changes blower behavior. If noise and comfort problems appeared after switching to a more restrictive filter, that's diagnostic information. Switch back temporarily and confirm whether the noise changes &#8212; if it does, your duct system's return capacity requires a less restrictive filter type or an expanded return design.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Why does the noise seem to come from the ceiling or wall instead of the unit?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Sound travels through ducts and framing. Vibration created at the air handler or outdoor unit can transmit through rigid duct connections, refrigerant line sets touching framing, or equipment platforms into wall and ceiling cavities that amplify it like a speaker. The loudest point is often not the source &#8212; it is where the vibration pathway meets a surface with the right geometry to amplify that frequency. Describing both where the sound is loudest and where the equipment is located helps a technician trace the transfer path.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My outdoor unit sounds louder on very hot days. Is that normal?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Some increase in sound during peak demand can be normal &#8212; the compressor is working harder against higher pressure ratios. The concern is whether this is a new behavior compared to previous summers, and whether it is paired with reduced cooling performance. An outdoor unit that always sounded the same under peak demand but now sounds rougher or deeper is showing something changed &#8212; possible refrigerant imbalance, fouled condenser coil reducing heat rejection, or early compressor distress. Log the change and schedule evaluation before peak demand season if possible.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can HVAC noise indicate a safety issue even if the system still runs?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes. Delayed ignition booms, arcing sounds, and unusual combustion-related noises can occur while the system still produces heat or cooling. "It still runs" is not a safety indicator. The sound category and any accompanying odors or visible symptoms determine the response. A gas furnace that booms at ignition but still heats the house is not safe &#8212; it is running with abnormal combustion sequencing that can stress components and create unsafe conditions.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is it safe to keep running the system if it's making a new noise?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">It depends on the noise. Mild, stable airflow sounds or unchanged duct pops can often be monitored while scheduling service. Grinding, booming at ignition, arcing sounds, or any noise accompanied by burning smell, gas odor, smoke, or repeated shutdown should prompt immediate system shutdown. When in doubt, use this rule: if the noise is new and harsh (not just loud), treat it as prompt-to-urgent and get a professional assessment before peak heating or cooling demand.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Technicians judge noise by character and pattern, not volume. A new, worsening, or harsh sound is more diagnostic than a loud stable one.</li>
+        <li>Every HVAC noise comes from one of four dialects: airflow, mechanical rotation, electrical/control, or thermal expansion. Identifying the dialect is the first step to correct diagnosis.</li>
+        <li>Loud return roar usually means the system is starved for air and fighting restriction &#8212; not that the fan is broken. Check filter, open doors, and confirm no registers are closed before calling for service.</li>
+        <li>A faint squeal at startup is a leading indicator &#8212; bearing wear in early stages. Grinding is a lagging indicator &#8212; damage is actively occurring. Acting on the squeal is dramatically cheaper.</li>
+        <li>The loudest point is not always the source. Vibration travels through rigid duct connections and framing into walls and ceilings. Describe both the loudest location and the equipment context to a technician.</li>
+        <li>Boom at gas furnace ignition, sizzling or arcing sounds, and grinding that continues for more than a few seconds require immediate system shutdown &#8212; not monitoring.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="article-tag-pill">HVAC noise</a>
+      <a href="#" class="article-tag-pill">furnace banging</a>
+      <a href="#" class="article-tag-pill">AC grinding</a>
+      <a href="#" class="article-tag-pill">HVAC squealing</a>
+      <a href="#" class="article-tag-pill">return roar</a>
+      <a href="#" class="article-tag-pill">duct noise</a>
+      <a href="#" class="article-tag-pill">static pressure</a>
+      <a href="#" class="article-tag-pill">blower noise</a>
+      <a href="#" class="article-tag-pill">compressor noise</a>
+      <a href="#" class="article-tag-pill">HVAC diagnosis</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share this guide:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+
+  </div>
+
+  <div class="related">
+    <h3>More HVAC Guides</h3>
+    <div class="related-grid">
+      <a href="air-conditioning-guide.html" class="related-card">
+        <div class="related-img h">&#10052;&#65039;</div>
+        <div class="related-body">
+          <span class="tag">HVAC</span>
+          <div class="related-title">The Complete Home Air Conditioning Guide</div>
+          <div class="related-meta">T.A. &#183; 26 min read</div>
+        </div>
+      </a>
+      <a href="hvac-guide.html" class="related-card">
+        <div class="related-img h">&#127777;&#65039;</div>
+        <div class="related-body">
+          <span class="tag">HVAC</span>
+          <div class="related-title">The Complete HVAC System Guide</div>
+          <div class="related-meta">T.A. &#183; 30 min read</div>
+        </div>
+      </a>
+      <a href="maintenance-guide.html" class="related-card">
+        <div class="related-img m">&#128296;</div>
+        <div class="related-body">
+          <span class="tag maintenance">Maintenance</span>
+          <div class="related-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="related-meta">T.A. &amp; M.A. &#183; 28 min read</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="sidebar-avatar">T.A.</div>
+      <div>
+        <div class="sidebar-expert-name">T.A.</div>
+        <div class="sidebar-expert-title">HVAC &amp; Life Safety Specialist</div>
+        <div class="sidebar-expert-bio">NFPA Certified Fire Inspector and Certified Healthcare Facility Manager with decades of experience managing HVAC systems across hospitals, commercial buildings, and residential properties.</div>
+        <div class="sidebar-creds">
+          <span class="cred-pill">NFPA CFI-1</span>
+          <span class="cred-pill">CHFM</span>
+          <span class="cred-pill">CLSS-HC</span>
+          <span class="cred-pill">OSHA 30</span>
+          <span class="cred-pill">Electrician</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#four-dialects">The Four Noise Dialects</a></li>
+      <li><a href="#sound-by-sound">Sound Quick Reference</a></li>
+      <li><a href="#leading-lagging">Leading vs. Lagging Indicators</a></li>
+      <li><a href="#airflow-noise">Airflow Noise</a></li>
+      <li><a href="#vibration">Vibration &amp; Resonance</a></li>
+      <li><a href="#timing">Timing-Based Diagnosis</a></li>
+      <li><a href="#system-maps">System-Specific Sound Maps</a></li>
+      <li><a href="#severity">Urgency Scale</a></li>
+      <li><a href="#noise-log">The Noise Log</a></li>
+      <li><a href="#safety">Safety Warnings</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free expert advice</h4>
+    <p>HVAC diagnostics and seasonal maintenance reminders from our certified facility manager.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0px;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>Most Read This Week</h4>
+    <div class="pop-list">
+      <a href="hvac-guide.html" class="pop-item">
+        <div class="pop-num">01</div>
+        <div>
+          <div class="pop-title">The Complete HVAC System Guide</div>
+          <div class="pop-cat">HVAC &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="air-conditioning-guide.html" class="pop-item">
+        <div class="pop-num">02</div>
+        <div>
+          <div class="pop-title">The Complete Home Air Conditioning Guide</div>
+          <div class="pop-cat">HVAC &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="electrical-fire-prevention-guide.html" class="pop-item">
+        <div class="pop-num">03</div>
+        <div>
+          <div class="pop-title">The Complete Home Electrical Fire Prevention Guide</div>
+          <div class="pop-cat">Electrical &#183; T.A.</div>
+        </div>
+      </a>
+      <a href="maintenance-guide.html" class="pop-item">
+        <div class="pop-num">04</div>
+        <div>
+          <div class="pop-title">The Complete Annual Home Maintenance Guide</div>
+          <div class="pop-cat">Maintenance &#183; T.A. &amp; M.A.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  function toggleMap(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{
+      li.classList.remove('active');
+      if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

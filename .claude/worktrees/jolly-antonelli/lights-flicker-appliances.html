@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Lights Flicker When Appliances Turn On | HomeownersRepairGuide.com</title>
+<meta name="description" content="Lights that flicker when appliances start are showing you a voltage drop event. Whether it's normal motor inrush or a developing neutral fault depends on one key question: do any lights get brighter while others dim?">
+<link rel="canonical" href="https://homeownersrepairguide.com/lights-flicker-appliances.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/lights-flicker-appliances.html">
+<meta property="og:title" content="Why Lights Flicker When Appliances Turn On | HomeownersRepairGuide.com">
+<meta property="og:description" content="Appliance-triggered light flicker ranges from normal motor inrush to a failing neutral. Here's the one question that tells you which one you have.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --electrical:#b08a00;--electrical-dark:#7a5f00;--electrical-light:#fdf6e3;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}
+.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--electrical);color:var(--white);}
+.tag.urgent{background:#7a1010;color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--electrical);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+.article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+.quick-summary{background:var(--electrical);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+.safety-box{background:#7a1010;border-radius:var(--radius-lg);padding:18px 22px;margin:0 0 28px;}
+.safety-box h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.safety-box p{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.55;}
+/* The one question */
+.decision-card{background:var(--navy);border-radius:var(--radius-lg);padding:22px 26px;margin:24px 0;}
+.decision-card h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--amber);margin-bottom:14px;}
+.decision-branches{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.branch{background:rgba(255,255,255,0.08);border-radius:var(--radius);padding:14px 16px;}
+.branch-label{font-size:12px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;margin-bottom:6px;}
+.branch.safe .branch-label{color:#7ac87a;}
+.branch.danger .branch-label{color:#e07070;}
+.branch-title{font-size:13px;font-weight:700;color:rgba(255,255,255,0.9);margin-bottom:5px;}
+.branch-desc{font-size:12px;color:rgba(255,255,255,0.65);line-height:1.5;}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;} .sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--electrical);} .sev-item.mod .sev-label{color:var(--electrical-dark);}
+.sev-item.high .sev-dot{background:var(--rust);} .sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:#c0392b;} .sev-item.crit .sev-label{color:#c0392b;}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid #c0392b;}
+/* Cause cards */
+.cause-list{display:flex;flex-direction:column;gap:12px;margin:24px 0;}
+.cause-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 20px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.cause-card.high{border-left:4px solid #c0392b;}
+.cause-card.medium{border-left:4px solid var(--electrical);}
+.cause-card.pro{border-left:4px solid #5a3a7a;}
+.cause-card.low{border-left:4px solid #3a6b3a;}
+.cause-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gray-light);width:28px;flex-shrink:0;line-height:1.2;margin-top:1px;}
+.cause-body{flex:1;}
+.cause-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.cause-desc{font-size:13px;color:var(--text-body);line-height:1.55;margin-bottom:6px;}
+.cause-pattern{font-size:12px;color:var(--text-muted);font-style:italic;}
+.cause-badge{font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:2px;flex-shrink:0;margin-top:3px;}
+.cause-card.high .cause-badge{background:#fef2f0;color:#c0402a;}
+.cause-card.medium .cause-badge{background:var(--electrical-light);color:var(--electrical-dark);}
+.cause-card.pro .cause-badge{background:#f4eef8;color:#5a3a7a;}
+.cause-card.low .cause-badge{background:#eaf5ea;color:#2a7a2a;}
+/* Diagnostic steps */
+.diag-steps{display:flex;flex-direction:column;gap:10px;margin:24px 0;}
+.diag-step{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--electrical);color:var(--white);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step-body{flex:1;}
+.step-action{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.step-detail{font-size:13px;color:var(--text-muted);line-height:1.5;}
+/* Pattern table */
+.diag-table{width:100%;border-collapse:collapse;margin:24px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.diag-table th{background:var(--electrical);color:var(--white);font-size:13px;font-weight:600;padding:11px 14px;text-align:left;}
+.diag-table td{font-size:13px;padding:11px 14px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+.diag-table tr:last-child td{border-bottom:none;}
+.diag-table tr:nth-child(even) td{background:var(--cream);}
+.diag-table td:first-child{font-weight:600;color:var(--text-dark);}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}
+.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* Callout */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--electrical);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--electrical);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--electrical);color:var(--white);border-color:var(--electrical);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;} .share-x{background:#000;color:white;} .share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--electrical);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--electrical);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--electrical);background:var(--electrical-light);font-weight:600;}
+.toc-list li.active a::before{background:var(--electrical);width:6px;height:6px;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--electrical);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--electrical);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.decision-branches{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical</a>
+    <span class="sep">&#8250;</span>
+    <a href="electrical-lighting.html">Lighting &amp; Fixtures</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Lights Flicker When Appliances Turn On</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Lighting &amp; Fixtures</span>
+    <span class="tag urgent">&#9888; Investigate</span>
+  </div>
+
+  <h1 class="article-title">Why Lights Flicker When Appliances Turn On</h1>
+  <p class="article-subtitle">Every motor-driven appliance creates a brief current surge at startup that drops household voltage momentarily. LEDs react instantly. Whether that flicker is a normal physics event or a warning sign of a developing fault comes down to one question: <em>do any lights get brighter while others dim?</em> Here's the full breakdown.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Licensed Electrician &amp; Fire Investigator</div>
+      <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Licensed Electrician</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="safety-box">
+      <h3>&#9888;&#65039; Any Lights Getting Brighter While Others Dim &#8212; Electrician Today</h3>
+      <p>If some lights dim while others simultaneously get brighter during appliance startup, you have a failing neutral conductor. This is not normal voltage sag &#8212; it's voltage redistribution from a partial neutral failure. Loads on the lighter leg see over-voltage that can destroy refrigerators, TVs, and computers within minutes. Stop using large appliances and call a licensed electrician. This is an emergency, not a watch-and-wait situation.</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>&#9889; Quick Summary</h3>
+      <ul>
+        <li>All lights dim briefly at the same time when a large appliance starts = normal motor inrush; typically acceptable if brief and limited to one room</li>
+        <li>Multi-room dimming on appliance startup = loose main neutral, panel connection issue, or service voltage sag; needs evaluation</li>
+        <li>Some dim + some brighten = failing neutral; emergency &#8212; call an electrician today</li>
+        <li>Dimming that's getting worse over months = resistance increasing at a loose connection; will not self-correct</li>
+        <li>Electronics resetting during the dimming event = voltage sag is severe enough to damage equipment; professional evaluation needed</li>
+      </ul>
+    </div>
+
+    <h2 id="the-question">The One Question That Determines Urgency</h2>
+    <p>Before any other diagnostic step, ask yourself this question about what you observe during the flicker event:</p>
+
+    <div class="decision-card">
+      <h3>&#9889; While the lights in one area flicker or dim &#8212; what do the lights in other areas do?</h3>
+      <div class="decision-branches">
+        <div class="branch safe">
+          <div class="branch-label">&#9989; All lights dim together</div>
+          <div class="branch-title">Voltage sag &#8212; may be acceptable</div>
+          <div class="branch-desc">Whole-home voltage drops briefly as a motor draws inrush current. This is a physics event. If it's a brief dip (under 1 second) at large appliance startup only, it's often within acceptable range. Worsening over time or multi-room scope warrants evaluation.</div>
+        </div>
+        <div class="branch danger">
+          <div class="branch-label">&#9888; Some dim, some get brighter</div>
+          <div class="branch-title">Neutral failure &#8212; emergency</div>
+          <div class="branch-desc">Voltage is redistributing across the two legs of your service due to a failing neutral conductor. This is dangerous and destructive. Appliances on the over-voltage leg can be destroyed. Call an electrician immediately &#8212; do not run large appliances until the neutral is repaired.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="why-it-happens">Why Appliance Startup Causes Voltage Drop</h2>
+    <p>Every motor in your home &#8212; refrigerator compressor, HVAC blower, well pump, washing machine, dishwasher &#8212; draws 3&#8211;8 times its normal operating current for a fraction of a second when it starts. This inrush happens because the motor's magnetic field must be established from zero before the rotor begins turning.</p>
+    <p>During that inrush, the sudden current demand drops voltage across the entire electrical system &#8212; at the service entry, at the panel, and on every circuit. LED drivers respond to this voltage drop in milliseconds, producing the flicker you see. The physics of motor startup means some flicker is inherent to having motor-driven appliances in the home. The question is whether the flicker reflects normal inrush on a healthy system, or amplified voltage drop from a developing fault.</p>
+
+    <h2 id="severity">Is Your Flicker Normal or a Problem?</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Often Normal</div></div>
+        <div class="sev-desc">Brief (under 1 sec) dip at large appliance startup. One room or circuit. Instant recovery. Not worsening.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Investigate</div></div>
+        <div class="sev-desc">Multiple rooms. Dip lasts 1&#8211;3 sec. Electronics reset. Getting worse over months. Have an electrician evaluate.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Concerning</div></div>
+        <div class="sev-desc">Flicker worsens on the same appliance cycle over time. Loose connection resistance increasing. Will not self-correct.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Emergency</div></div>
+        <div class="sev-desc">Some lights dim + others brighten simultaneously. Neutral failure. Stop large appliances. Call electrician today.</div>
+      </div>
+    </div>
+
+    <h2 id="causes">4 Causes of Appliance-Triggered Light Flicker</h2>
+
+    <div class="cause-list">
+
+      <div class="cause-card low">
+        <div class="cause-num">01</div>
+        <div class="cause-body">
+          <div class="cause-title">Normal Motor Inrush &#8212; Often Acceptable</div>
+          <div class="cause-desc">HVAC compressors, refrigerators, well pumps, and washing machines draw 3&#8211;8x their operating current for a fraction of a second during startup. This creates a genuine, momentary voltage drop across the electrical system. On a healthy system with good connections, the dip is brief and recovers immediately. LEDs &#8212; which react to voltage changes in milliseconds &#8212; make this more visible than it was with incandescent bulbs, which have enough thermal inertia to smooth over brief dips.</div>
+          <div class="cause-pattern">Acceptable range: under 1 second, immediate full recovery, limited to one circuit or room, not worsening over time. If any of those conditions aren't met, the dip reflects something other than normal inrush.</div>
+        </div>
+        <span class="cause-badge">Often Acceptable</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">02</div>
+        <div class="cause-body">
+          <div class="cause-title">Weak or Failing Neutral Conductor &#8212; Most Dangerous</div>
+          <div class="cause-desc">The neutral conductor is the return path for all current in the home. A loose or corroded neutral connection &#8212; at the panel neutral bar, in a junction box, at the meter base, or at the service entrance &#8212; creates resistance in the return path. Under the load surge of appliance startup, this resistance produces voltage instability across both circuits sharing that neutral. In an MWBC configuration, the neutral failure causes voltage on one leg to rise while the other drops &#8212; producing the simultaneous dim + brighten signature that is the clearest indicator of a dangerous neutral fault.</div>
+          <div class="cause-pattern">Pattern: multiple circuits affected simultaneously; some lights dim while others get brighter; flicker during appliance startup affects areas that don't seem connected; worsens during peak load periods. This is an emergency &#8212; stop using large appliances and call an electrician.</div>
+        </div>
+        <span class="cause-badge">Emergency If Brightening</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">03</div>
+        <div class="cause-body">
+          <div class="cause-title">Loose Wiring or High-Resistance Panel Connections</div>
+          <div class="cause-desc">Loose breaker lugs, corroded bus stabs, or aging wire terminations in the panel or at junction boxes create resistance that amplifies voltage drop under load. A healthy system with tight connections distributes the inrush current impact across the whole service efficiently. A system with loose connections at high-current points concentrates the voltage drop and makes what would be a minor, imperceptible dip into a visible flicker event. The hallmark of this cause is worsening over time as the connection resistance increases with each thermal cycle.</div>
+          <div class="cause-pattern">Pattern: the same appliance startup produces more visible flicker than it did a year ago; flicker affects multiple rooms but without the brightening signature of a neutral failure; flicker correlates specifically with the panel area rather than a specific circuit. Panel-level connections require a licensed electrician &#8212; do not open the panel yourself.</div>
+        </div>
+        <span class="cause-badge">Investigate</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">04</div>
+        <div class="cause-body">
+          <div class="cause-title">Overloaded or Undersized Circuit</div>
+          <div class="cause-desc">A branch circuit already carrying near its rated capacity experiences a more pronounced voltage drop when a motor load on that circuit starts. On an older home's 15-amp circuit serving mixed lighting and outlet loads, adding a large motor appliance creates an inrush that momentarily pushes the circuit far beyond its rating. The flicker on lighting attached to that circuit is more pronounced and lasts longer than on a properly sized dedicated circuit. This is a circuit capacity issue, not a fault &#8212; but it does represent a circuit that is not correctly sized for its actual loads.</div>
+          <div class="cause-pattern">Pattern: flicker is limited to one specific circuit that serves both lighting and a large appliance; flicker reduces significantly when other loads on that circuit are removed; the circuit is 15-amp serving loads that would benefit from a 20-amp dedicated circuit. Solution: redistribute loads or add a dedicated circuit for the high-draw appliance.</div>
+        </div>
+        <span class="cause-badge">Circuit Issue</span>
+      </div>
+
+    </div>
+
+    <h2 id="diagnostic">Step-by-Step Diagnostic</h2>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-action">Answer the critical question: do any lights get brighter?</div>
+          <div class="step-detail">During the next appliance startup event, walk through adjacent rooms and watch all lighting. Any room where lights get noticeably brighter while others dim is showing a neutral voltage redistribution event. If yes: stop large appliances and call an electrician today. If no: continue.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-action">Map the scope: one room or multiple rooms?</div>
+          <div class="step-detail">Note which lights are affected. Only the room with the appliance = likely normal inrush on a loaded circuit. Multiple rooms or whole home = main neutral, panel connection, or service-entry issue. This scope distinction changes the urgency significantly.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-action">Time the dip duration</div>
+          <div class="step-detail">Under 1 second with full recovery = consistent with normal motor inrush. 1&#8211;3 seconds = more significant voltage drop suggesting a resistance issue. Over 3 seconds or dip that doesn't fully recover = active problem that needs professional evaluation.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-action">Check whether it's getting worse over time</div>
+          <div class="step-detail">Was the same appliance causing the same flicker a year ago? If flicker is noticeably worse now than six months ago, resistance is increasing at a connection point. Progressive worsening is the signature of a developing fault that won't improve on its own.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <div class="step-action">Note whether electronics reset during the event</div>
+          <div class="step-detail">If computers, clocks, modems, or smart devices reset during the appliance startup flicker, the voltage sag is deep enough to drop below minimum operating voltage for sensitive electronics. This confirms a problematic (not just cosmetic) voltage drop that warrants professional evaluation.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="pattern-table">What Your Pattern Tells You</h2>
+    <table class="diag-table">
+      <thead>
+        <tr><th>Pattern Observed</th><th>Interpretation</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Brief dip in one room at HVAC startup only; instant recovery</td><td>Normal motor inrush &#8212; acceptable</td><td>No action needed unless worsening or bothersome.</td></tr>
+        <tr><td>Some lights dim + others get brighter simultaneously</td><td>Neutral conductor failing &#8212; emergency</td><td>Stop large appliances. Call electrician today.</td></tr>
+        <tr><td>Multiple rooms affected, all dimming together</td><td>Main neutral, panel connection, or service sag</td><td>Call electrician for evaluation.</td></tr>
+        <tr><td>Dip lasts 1&#8211;3+ seconds</td><td>High resistance at a connection point</td><td>Call electrician &#8212; worsening fault.</td></tr>
+        <tr><td>Same appliance causing more flicker than it did a year ago</td><td>Resistance increasing at a loose connection</td><td>Call electrician &#8212; progressive fault.</td></tr>
+        <tr><td>Electronics reset during appliance startup</td><td>Voltage sag beyond acceptable range</td><td>Call electrician &#8212; system voltage unstable.</td></tr>
+        <tr><td>Flicker only on circuit shared with appliance</td><td>Circuit overloaded or at capacity limit</td><td>Redistribute loads; consider dedicated appliance circuit.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Why "It's Always Done This" Isn't a Reason to Ignore It</div>
+        <div class="callout-text">A common response to appliance-triggered flicker is "it's always done this" &#8212; and sometimes that's true, if the home was wired with an undersized circuit from day one. But progressive worsening over time means the condition is changing, and something that was marginal-but-stable a few years ago is now developing into an active fault. The connection that was slightly loose in 2020 is looser in 2025 and generating more heat under each load cycle. "It's always done this" is only reassuring if the severity is genuinely unchanged &#8212; and that requires an honest comparison, not just remembering that flicker has been around for a while.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The dim-plus-brighten scenario is the one I respond to immediately when a homeowner describes it. That pattern tells me the neutral is compromised, and I've seen exactly what that leads to: refrigerators with burned-out compressors, televisions with fried boards, smart home equipment that never worked right again &#8212; all from the overvoltage condition on the opposite leg while the homeowner thought they just had a flicker problem. The single-room brief dip on AC startup I see all the time and it's usually not a problem in isolation. But I always ask whether it's getting worse, and whether the homeowner has noticed any devices resetting or behaving oddly. If yes to either &#8212; that's a system under stress that needs evaluation, not monitoring."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Do vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible</div>
+        <ul class="diy-items safe-list">
+          <li>Observe and answer the critical question: do any lights brighten while others dim?</li>
+          <li>Map the scope: one room or multiple rooms affected</li>
+          <li>Time the dip duration and assess whether it has worsened over time</li>
+          <li>Note whether electronics reset during the event</li>
+          <li>Reduce simultaneous loads on a specific circuit as a temporary measure</li>
+          <li>Report all observations accurately to the electrician</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Licensed Electrician Required</div>
+        <ul class="diy-items stop-list">
+          <li>Any situation where some lights brighten while others dim &#8212; neutral failure</li>
+          <li>Multi-room dimming on appliance startup</li>
+          <li>Dip lasting more than 1&#8211;2 seconds or getting progressively worse</li>
+          <li>Electronics resetting during dimming events</li>
+          <li>Any panel work including evaluating main neutral, bus connections, or lugs</li>
+          <li>Diagnosing or correcting service-entry voltage issues</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is it normal for lights to dim when the AC turns on?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A brief sub-second dip when the AC compressor starts is a common experience and is generally considered within acceptable range. HVAC compressors are among the highest-inrush loads in a home &#8212; they draw 3&#8211;5x their operating current for the fraction of a second it takes the compressor motor to reach speed. If the dip is brief, the lights fully recover, only the immediate area is affected, and the behavior hasn't worsened over time &#8212; it's likely a normal consequence of motor startup on a healthy system. The concern thresholds: multiple rooms dimming simultaneously, dip lasting more than a second, any lights getting brighter anywhere in the home, electronics resetting, and behavior that has progressively worsened. If any of those apply, what seemed like a normal AC dip is actually a developing fault.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My refrigerator makes lights flicker every time it compressor starts. Is the refrigerator the problem?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">The refrigerator is producing normal motor inrush current &#8212; that's expected behavior. Whether it's a problem depends on the severity of the flicker and the scope. If the flicker is limited to the kitchen and lasts under a second, it's likely the circuit serving the kitchen is already loaded with other appliances and doesn't have enough headroom to absorb the inrush cleanly. The solution in that case is a dedicated 20-amp circuit for the refrigerator &#8212; not because the refrigerator is faulty, but because it's on a circuit that wasn't designed for its inrush demand alongside other loads. If the flicker affects multiple rooms, or if a refrigerator that didn't previously cause noticeable flicker is now causing visible flicker, the underlying electrical system has changed &#8212; likely from a developing connection resistance &#8212; and that's worth evaluating.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can replacing LED bulbs with higher-quality ones reduce appliance flicker?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">To a modest degree. Higher-quality LED bulbs typically use better-designed drivers with improved voltage regulation and more capacitance to smooth over brief voltage dips &#8212; making brief inrush dips less visible. However, this addresses the visibility of the flicker, not the underlying voltage condition. A serious voltage sag will be visible even through a high-quality LED driver; a borderline sag may be invisible. Replacing bulbs is a reasonable step to take if the flicker is borderline and you've confirmed the scope is limited to one circuit at normal inrush. It is not a substitute for professional evaluation if the flicker is multi-room, accompanied by brightening on other circuits, worsening over time, or causing electronics to reset.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>The critical diagnostic question: do any lights get brighter while others dim? If yes, you have a neutral failure &#8212; an emergency. Stop large appliances and call an electrician today.</li>
+        <li>All lights dimming together at large appliance startup is often normal motor inrush. It becomes a problem when it affects multiple rooms, lasts more than 1 second, causes electronics to reset, or is getting progressively worse.</li>
+        <li>Progressive worsening over months is the signature of increasing resistance at a loose connection. It will not self-correct &#8212; each thermal cycle worsens the fault.</li>
+        <li>A loose main neutral, corroded panel lug, or service-entry connection amplifies voltage drop from normal inrush into a visible and potentially damaging event. These are panel and service-entry issues that require a licensed electrician.</li>
+        <li>Brief single-room flicker on AC or refrigerator startup that hasn't worsened is often acceptable. All other scenarios deserve professional evaluation.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">lights flicker when appliances turn on</a>
+      <a href="#" class="tag-pill">lights dim when AC starts</a>
+      <a href="#" class="tag-pill">lights flicker when refrigerator runs</a>
+      <a href="#" class="tag-pill">voltage drop lights flickering</a>
+      <a href="#" class="tag-pill">appliance startup light flicker</a>
+      <a href="#" class="tag-pill">lights dim when HVAC kicks on</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Electrical Guides</h3>
+    <div class="related-list">
+      <a href="lights-dim-under-load.html" class="related-item">
+        <div><div class="related-item-title">Why Your Lights Dim When Appliances Turn On</div><div class="related-item-meta">T.A. &middot; 8 min read &middot; Deep Dive</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="mwbc-shared-neutral-flicker.html" class="related-item">
+        <div><div class="related-item-title">Why Shared Neutrals and MWBC Wiring Cause Flicker</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="led-lights-flicker.html" class="related-item">
+        <div><div class="related-item-title">Why Your LED Lights Flicker</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#the-question">The One Critical Question</a></li>
+      <li><a href="#why-it-happens">Why Appliance Startup Causes Flicker</a></li>
+      <li><a href="#severity">Normal or a Problem?</a></li>
+      <li><a href="#causes">4 Causes</a></li>
+      <li><a href="#diagnostic">Step-by-Step Diagnostic</a></li>
+      <li><a href="#pattern-table">Pattern Reference</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">Licensed Electrician &amp; Fire Investigator</div>
+        <div class="s-bio">NFPA Certified Fire Investigator (CFI-1), Certified Healthcare Facility Manager (CHFM), CLSS-HC, OSHA 30, and licensed electrician. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>Electrical safety guides and seasonal home maintenance reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

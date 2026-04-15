@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Multiple Lights Go Out at Once | HomeownersRepairGuide.com</title>
+<meta name="description" content="Multiple lights going out simultaneously always points to a single upstream failure point — a failed junction box splice, tripped breaker, or shared neutral fault. Here's how to find it in minutes.">
+<link rel="canonical" href="https://homeownersrepairguide.com/multiple-lights-out.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/multiple-lights-out.html">
+<meta property="og:title" content="Why Multiple Lights Go Out at Once | HomeownersRepairGuide.com">
+<meta property="og:description" content="Multiple lights failing together means one upstream failure point. Here's how to locate it quickly and safely.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --electrical:#b08a00;--electrical-dark:#7a5f00;--electrical-light:#fdf6e3;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}
+.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}
+.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--electrical);color:var(--white);}
+.tag.urgent{background:#7a1010;color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--electrical);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+.article-body a{color:var(--rust);text-decoration:underline;text-underline-offset:3px;}
+.quick-summary{background:var(--electrical);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+.safety-box{background:#7a1010;border-radius:var(--radius-lg);padding:18px 22px;margin:0 0 28px;}
+.safety-box h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.safety-box p{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.55;}
+/* Scope cards */
+.scope-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:24px 0;}
+.scope-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;box-shadow:var(--shadow-card);text-align:center;}
+.scope-card.one{border-top:3px solid #3a6b3a;}
+.scope-card.multi{border-top:3px solid var(--electrical);}
+.scope-card.whole{border-top:3px solid #c0392b;}
+.sc-icon{font-size:20px;margin-bottom:7px;}
+.sc-label{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.sc-cause{font-size:12px;color:var(--text-muted);line-height:1.4;}
+/* Cause cards */
+.cause-list{display:flex;flex-direction:column;gap:12px;margin:24px 0;}
+.cause-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 20px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.cause-card.high{border-left:4px solid #c0392b;}
+.cause-card.medium{border-left:4px solid var(--electrical);}
+.cause-card.pro{border-left:4px solid #5a3a7a;}
+.cause-card.low{border-left:4px solid #3a6b3a;}
+.cause-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gray-light);width:28px;flex-shrink:0;line-height:1.2;margin-top:1px;}
+.cause-body{flex:1;}
+.cause-title{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.cause-desc{font-size:13px;color:var(--text-body);line-height:1.55;margin-bottom:6px;}
+.cause-pattern{font-size:12px;color:var(--text-muted);font-style:italic;}
+.cause-badge{font-size:10px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;padding:2px 8px;border-radius:2px;flex-shrink:0;margin-top:3px;}
+.cause-card.high .cause-badge{background:#fef2f0;color:#c0402a;}
+.cause-card.medium .cause-badge{background:var(--electrical-light);color:var(--electrical-dark);}
+.cause-card.pro .cause-badge{background:#f4eef8;color:#5a3a7a;}
+.cause-card.low .cause-badge{background:#eaf5ea;color:#2a7a2a;}
+/* Diagnostic steps */
+.diag-steps{display:flex;flex-direction:column;gap:10px;margin:24px 0;}
+.diag-step{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--electrical);color:var(--white);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step-body{flex:1;}
+.step-action{font-size:14px;font-weight:600;color:var(--navy);margin-bottom:4px;}
+.step-detail{font-size:13px;color:var(--text-muted);line-height:1.5;}
+.step-result{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;}
+.step-if{font-size:12px;padding:4px 10px;border-radius:2px;line-height:1.4;}
+.step-if.yes{background:#eaf5ea;color:#2a7a2a;}
+.step-if.no{background:#fef2f0;color:#c0402a;}
+/* Pre-failure signs */
+.pre-failure{background:var(--navy);border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;}
+.pre-failure h3{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--amber);margin-bottom:12px;}
+.pf-list{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.pf-list li{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.5;display:flex;gap:10px;}
+.pf-list li::before{content:'\26A0';color:var(--amber);flex-shrink:0;}
+/* Pattern table */
+.diag-table{width:100%;border-collapse:collapse;margin:24px 0;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.diag-table th{background:var(--electrical);color:var(--white);font-size:13px;font-weight:600;padding:11px 14px;text-align:left;}
+.diag-table td{font-size:13px;padding:11px 14px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.5;background:var(--white);}
+.diag-table tr:last-child td{border-bottom:none;}
+.diag-table tr:nth-child(even) td{background:var(--cream);}
+.diag-table td:first-child{font-weight:600;color:var(--text-dark);}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}
+.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* Callout */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--electrical);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--electrical);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--electrical);color:var(--white);border-color:var(--electrical);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;} .share-x{background:#000;color:white;} .share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--electrical);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--electrical);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--electrical);background:var(--electrical-light);font-weight:600;}
+.toc-list li.active a::before{background:var(--electrical);width:6px;height:6px;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--electrical);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--electrical);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--electrical);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.scope-cards{grid-template-columns:1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html" class="active">Electrical</a>
+      <a href="category-hvac.html">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="#" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-electrical.html">Electrical</a>
+    <span class="sep">&#8250;</span>
+    <a href="electrical-lighting.html">Lighting &amp; Fixtures</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Multiple Lights Go Out at Once</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Lighting &amp; Fixtures</span>
+    <span class="tag urgent">&#9888; Investigate Upstream</span>
+  </div>
+
+  <h1 class="article-title">Why Multiple Lights Go Out at Once</h1>
+  <p class="article-subtitle">When several lights fail simultaneously, the cause is almost never coincidence &#8212; it's a single upstream failure point. Lighting circuits chain power from the panel through junction boxes to each fixture in sequence. A failed connection anywhere in that chain goes dark everything after it. Here's how to locate the failure point quickly and safely.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; Licensed Electrician &amp; Fire Investigator</div>
+      <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Licensed Electrician</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 7 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="safety-box">
+      <h3>&#9888;&#65039; Heat, Burning Smell, or Buzzing Before Lights Went Out &#8212; Stop Now</h3>
+      <p>If any lights flickered, buzzed, or dimmed before the outage &#8212; or if there's a burning smell anywhere in the affected area &#8212; there may be an active arcing fault at the failure point inside a wall or ceiling. Turn off the circuit breaker for the affected area and call a licensed electrician before restoring power. Do not attempt to open junction boxes or light fixtures yourself.</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>&#9889; Quick Summary</h3>
+      <ul>
+        <li>Multiple lights failing at once = single upstream failure point. The scope tells you where to look</li>
+        <li><strong>Check the breaker first</strong> &#8212; reset it correctly (fully to OFF, then ON). If it trips again immediately, the fault is active &#8212; stop there</li>
+        <li><strong>Check upstream GFCIs second</strong> &#8212; a GFCI elsewhere on the circuit may have tripped and cut power to all downstream fixtures</li>
+        <li>If breaker is fine and no GFCI is tripped: a junction box splice has failed &#8212; requires a licensed electrician to locate and repair</li>
+        <li>Flicker or buzzing before the outage = arcing at the failure point &#8212; turn off the circuit and call an electrician</li>
+      </ul>
+    </div>
+
+    <h2 id="how-circuits-chain">Why Multiple Lights Fail Together</h2>
+    <p>Residential lighting circuits are wired in a daisy-chain configuration &#8212; not in true parallel where each fixture has an independent feed. Power travels from the breaker to a switch or junction box, then continues from fixture to fixture in sequence. Each connection point feeds power to everything downstream of it.</p>
+    <p>When any connection in that chain fails &#8212; a wirenut loosens in a ceiling junction box, a back-stabbed switch connection gives out, or a conductor separates &#8212; everything downstream of that point loses power simultaneously. The further upstream the failure, the more fixtures go dark. The scope of the outage tells you roughly where in the chain to look.</p>
+
+    <h2 id="scope">Read the Scope to Find the Failure Zone</h2>
+
+    <div class="scope-cards">
+      <div class="scope-card one">
+        <div class="sc-icon">&#127968;</div>
+        <div class="sc-label">One Room, One Switch</div>
+        <div class="sc-cause">All lights controlled by a single switch are out. The failure is at or near that switch: the switch itself, its box connections, or the junction box feeding it. Also check for a tripped GFCI.</div>
+      </div>
+      <div class="scope-card multi">
+        <div class="sc-icon">&#127968;&#127968;</div>
+        <div class="sc-label">Several Rooms, Multiple Switches</div>
+        <div class="sc-cause">The failure is upstream of where the circuit branches to multiple rooms — a junction box, ceiling splice, or attic connection. Or a GFCI outlet on the circuit tripped. Check breaker and all GFCIs first.</div>
+      </div>
+      <div class="scope-card whole">
+        <div class="sc-icon">&#9889;</div>
+        <div class="sc-label">Whole Circuit + Outlets</div>
+        <div class="sc-cause">If both lights and outlets on the same circuit are dead, the circuit breaker has tripped or the main feed to the circuit is interrupted. Start with the breaker panel. If the breaker resets but immediately trips again, there's an active fault.</div>
+      </div>
+    </div>
+
+    <h2 id="causes">4 Causes of Multiple Simultaneous Light Failures</h2>
+
+    <div class="cause-list">
+
+      <div class="cause-card high">
+        <div class="cause-num">01</div>
+        <div class="cause-body">
+          <div class="cause-title">Failed Junction Box Splice &#8212; Most Common Cause</div>
+          <div class="cause-desc">A wirenut connection that has loosened &#8212; from thermal cycling, vibration, or age &#8212; breaks the feed to all downstream fixtures when it finally lets go. Attic junction boxes are especially susceptible because temperature extremes (from below-zero winter to 140°F+ summer attics) cause repeated expansion and contraction of metal conductors, progressively loosening the wirenut. Back-stabbed connections on switches and outlets in the circuit also fail in this way, breaking the daisy chain at that point. A loose splice that arcs before failing completely can also generate enough heat to damage surrounding insulation &#8212; which is why prior flickering before a multi-light outage warrants extra caution.</div>
+          <div class="cause-pattern">Pattern: some fixtures on the circuit still work (those upstream of the failure); lights that went out were all on the same branch of the circuit; there may have been flickering or dimming in those fixtures in the days or weeks before the outage. Requires a licensed electrician to open the junction boxes and locate the failed connection.</div>
+        </div>
+        <span class="cause-badge">Most Common</span>
+      </div>
+
+      <div class="cause-card low">
+        <div class="cause-num">02</div>
+        <div class="cause-body">
+          <div class="cause-title">Tripped or Failed Circuit Breaker</div>
+          <div class="cause-desc">A tripped breaker removes power from every outlet and light on the circuit simultaneously. The breaker may have tripped from a normal overload event &#8212; too many devices running at once &#8212; or from a short circuit that produced a sharp pop when it tripped. A tripped breaker sits in the middle position and must be pushed fully to OFF before resetting to ON. A breaker that immediately trips again on reset has an active fault on the circuit that must be identified before the circuit is used.</div>
+          <div class="cause-pattern">Pattern: both lights and outlets on the same circuit are dead; the corresponding breaker is in the middle position or clearly tripped; the outage was sudden and complete. If the breaker resets and holds, monitor for recurrence. If it trips again immediately, see the companion breaker-tripping articles and stop resetting.</div>
+        </div>
+        <span class="cause-badge">Check First</span>
+      </div>
+
+      <div class="cause-card high">
+        <div class="cause-num">03</div>
+        <div class="cause-body">
+          <div class="cause-title">Shared Neutral (MWBC) Failure</div>
+          <div class="cause-desc">Multi-wire branch circuits share a neutral between two hot legs. A failed shared neutral creates an unstable return path for both circuits simultaneously &#8212; producing lights going out or brightening on both affected circuits at the same time. The distinctive feature: the outage or instability affects circuits in different rooms that aren't obviously connected. If any lights brightened on other circuits just before or during the outage, shared neutral failure is the more likely cause than a single-circuit junction box splice.</div>
+          <div class="cause-pattern">Pattern: lights in different rooms with different breakers are affected simultaneously; some lights may have briefly brightened before others went out; two breakers trip together. A loose shared neutral is also a fire and shock hazard &#8212; stop using affected circuits and call an electrician.</div>
+        </div>
+        <span class="cause-badge">High Risk</span>
+      </div>
+
+      <div class="cause-card medium">
+        <div class="cause-num">04</div>
+        <div class="cause-body">
+          <div class="cause-title">Failed Switch Loop or Switch Box Connection</div>
+          <div class="cause-desc">In older switch loop wiring, the switch interrupts the hot conductor feeding the lighting branch. If the connection at the switch &#8212; either a back-stabbed terminal that has given out or a screw terminal that has loosened &#8212; fails, every fixture controlled by that switch goes dark simultaneously while other circuits in the home remain unaffected. This is the same mechanism as a junction box splice failure, but localized to the switch box.</div>
+          <div class="cause-pattern">Pattern: only the fixtures controlled by one specific switch are affected; other switches in the room or area work fine; the affected switch may have been warm, intermittent, or slightly loose recently. Requires an electrician to open the switch box and inspect and re-terminate the connections.</div>
+        </div>
+        <span class="cause-badge">Investigate</span>
+      </div>
+
+    </div>
+
+    <div class="pre-failure">
+      <h3>&#9888; Warning Signs That Often Appear Before a Multi-Light Outage</h3>
+      <ul class="pf-list">
+        <li>Flickering in those specific fixtures over the past days or weeks &#8212; the loose connection was arcing intermittently before it failed completely</li>
+        <li>Brief dimming or brightening when large appliances start on the same circuit &#8212; the connection was high-resistance before it opened</li>
+        <li>One light on the group occasionally not coming on right away, or going out briefly, before the full outage</li>
+        <li>A faint buzzing or crackling from any switch, outlet, or ceiling junction box on the circuit &#8212; arcing at the connection point that eventually burned through</li>
+        <li>Burning smell from any switch plate, outlet, or ceiling area in the affected zone &#8212; this indicates arcing damage and requires immediate electrician evaluation, not just breaker reset</li>
+      </ul>
+    </div>
+
+    <h2 id="diagnostic">Step-by-Step Diagnostic</h2>
+
+    <div class="diag-steps">
+      <div class="diag-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <div class="step-action">Check the circuit breaker &#8212; reset it correctly</div>
+          <div class="step-detail">Find the breaker for the affected circuit. Push it firmly all the way to OFF (feel the click), then to ON. If it resets and holds, monitor for recurrence. If it trips immediately, there's an active fault &#8212; stop here and call an electrician.</div>
+          <div class="step-result">
+            <span class="step-if yes">Breaker resets and holds &#8594; Continue to step 2</span>
+            <span class="step-if no">Breaker trips immediately &#8594; Active fault. Call electrician.</span>
+          </div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <div class="step-action">Find and reset upstream GFCI outlets</div>
+          <div class="step-detail">Search the garage, bathrooms, basement, and utility areas for GFCI outlets. Press RESET on each one. If power to the lights restores, a GFCI tripped was the cause. Find out what triggered the GFCI trip before assuming the problem is resolved.</div>
+          <div class="step-result">
+            <span class="step-if yes">Lights restore after GFCI reset &#8594; Investigate why the GFCI tripped</span>
+          </div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <div class="step-action">Determine which lights are affected and which still work</div>
+          <div class="step-detail">Map out exactly which lights are out and which still work on the same circuit. If some lights on the circuit work and others don't, the failure is between the last working light and the first non-working one in the chain. If all lights on the circuit are out, the failure is at the breaker, GFCI, or the main feed junction for that circuit.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <div class="step-action">Check whether outlets on the same circuit are also dead</div>
+          <div class="step-detail">If both lights and outlets on the same circuit are dead: the breaker or main feed is the issue. If only lights are dead while outlets work: the failure is in the lighting branch specifically &#8212; likely a junction box splice or switch loop connection that feeds lights only.</div>
+        </div>
+      </div>
+      <div class="diag-step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <div class="step-action">Note any prior warning signs and report them to the electrician</div>
+          <div class="step-detail">Did any of the affected lights flicker before the outage? Was there any burning smell? Were there any warm switch plates? This information tells the electrician whether there's likely arcing damage at the failure point that requires careful inspection before the circuit is re-energized.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="pattern-table">What Your Pattern Tells You</h2>
+    <table class="diag-table">
+      <thead>
+        <tr><th>Pattern Observed</th><th>Most Likely Cause</th><th>Action</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>All fixtures on one circuit dead; breaker tripped</td><td>Circuit overload, short circuit, or AFCI detection</td><td>Reset breaker (OFF then ON). If it trips again: call electrician.</td></tr>
+        <tr><td>Lights dead but outlets on circuit work</td><td>Failed junction box splice or switch loop in lighting branch</td><td>Call electrician to trace the lighting branch and locate failed splice.</td></tr>
+        <tr><td>Only lights on one switch are dead</td><td>Failed back-stab or terminal at that switch</td><td>Call electrician to inspect and re-terminate switch box connections.</td></tr>
+        <tr><td>Multiple rooms affected, no tripped breaker</td><td>Upstream junction box splice failure or tripped GFCI</td><td>Check all GFCIs first. If clear: call electrician for junction box inspection.</td></tr>
+        <tr><td>Flickering preceded the outage</td><td>Arcing at connection point before complete failure</td><td>Turn off circuit. Call electrician &#8212; possible damage at failure point.</td></tr>
+        <tr><td>Other circuits also affected simultaneously</td><td>Shared neutral (MWBC) failure or service-entry issue</td><td>Stop using affected circuits. Call electrician immediately.</td></tr>
+        <tr><td>Burning smell from any switch, outlet, or ceiling area</td><td>Arcing with thermal damage inside wall or ceiling</td><td>Turn off circuit breaker. Do not restore power. Call electrician today.</td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box tip">
+      <div class="callout-icon">&#128161;</div>
+      <div class="callout-content">
+        <div class="callout-label">Label Your Circuit Breakers Now &#8212; It Saves Time in Outages</div>
+        <div class="callout-text">One of the most common delays in diagnosing a multi-light outage is not knowing which breaker controls which circuits. If your breaker panel isn't fully labeled, take 30 minutes while everything is working to map each breaker to the rooms and outlets it controls. Note the label on a circuit directory card on the inside of the panel door. The next time lights go out, you'll go directly to the right breaker instead of testing them all &#8212; and you'll be able to accurately describe the affected circuit to the electrician when you call.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"When multiple lights go out at once, the first thing I establish is whether there was any warning before it happened. Homeowners often say 'no, they just went out.' But when I ask specifically &#8212; did any of those lights ever flicker? Did a switch feel a little warm? Did you smell anything from any of the switches or ceiling area? &#8212; the answer is often yes, they did notice something a few weeks ago but didn't connect it to the outage. That prior flickering is the loose connection arcing before it burned through completely. In most cases, when I open the junction box in the area where the lighting branch feeds, I find a wirenut that pulled apart or a back-stab terminal that let go &#8212; and I can tell from the char marks on the insulation that it was arcing for some time before the final failure. The repair is straightforward &#8212; but if the prior arcing was extensive enough, I also need to evaluate whether the conductor ends need to be cut back to clean copper before re-splicing. That's the detail that requires someone who can look at it directly."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Do vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible</div>
+        <ul class="diy-items safe-list">
+          <li>Reset the circuit breaker using correct procedure (OFF then ON)</li>
+          <li>Find and reset all GFCI outlets on the circuit path</li>
+          <li>Map which lights are out and which work on the same circuit</li>
+          <li>Determine whether outlets on the same circuit are also dead</li>
+          <li>Note any flickering, warm switches, or burning smell that preceded the outage</li>
+          <li>Label circuit breakers to speed future diagnostics and electrician calls</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Licensed Electrician Required</div>
+        <ul class="diy-items stop-list">
+          <li>Opening junction boxes or light fixtures to inspect splices</li>
+          <li>Any outage preceded by flickering, buzzing, or burning smell</li>
+          <li>Breaker that trips again immediately on reset</li>
+          <li>Multiple circuits or rooms affected &#8212; possible shared neutral fault</li>
+          <li>Locating a failed splice in an attic or concealed junction box</li>
+          <li>Re-terminating back-stabbed switch or outlet connections</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">The lights went out suddenly &#8212; could it be a power outage?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes, and it's worth checking before doing anything else. A utility power outage would affect all circuits in the home &#8212; check whether lights on a different circuit (such as a different room or a hallway light on a different breaker) are also out. If some lights are on and others are off, it's not a utility outage &#8212; it's a circuit-specific issue. If the entire home is dark, check whether neighbors are also affected, and look at the main breaker in your panel to confirm it hasn't tripped. A partial utility outage &#8212; where one leg of the 240V service fails &#8212; can cause roughly half the circuits in the home to lose power while others remain on. This looks like a large-scale circuit failure but is actually a service-entry issue that requires the utility company to respond.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How does an electrician find a failed junction box splice inside a ceiling?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">The process involves tracing the circuit from the point where lights work to the first point where they don't work, then locating the junction boxes on that segment of the circuit. In most residential wiring, junction boxes are installed at each fixture location and sometimes at intermediate points in the ceiling or attic. The electrician identifies where power stops by testing with a voltage meter &#8212; either at fixture wire connections or at junction boxes &#8212; and then opens the box at or just upstream of the first non-powered location. In homes where junction boxes are accessible from an attic, this process is typically faster and less invasive. In homes with finished ceilings and no attic access, the electrician may need to access boxes through the fixture openings or, in rare cases, by cutting small access panels. Thermal imaging can sometimes locate heat-damaged splice locations without opening every box.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My lights went out after I had insulation added to my attic. Is that connected?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Very likely yes. Attic insulation installation disturbs junction boxes, cable runs, and fixture housings in several ways: workers may pull cables that were loosely seated in wirenuts, shift junction boxes that were accessible from above, or physically compress cables. The thermal disruption of new insulation also changes the temperature environment for connections that had been marginally stable. The most common specific cause: a wirenut connection that was already slightly loose is jostled during insulation work, causing it to lose grip completely. Tell your electrician when the insulation was installed &#8212; that narrows the search area to the attic and fixtures below it, and the electrician knows to look for disturbed junction boxes and any non-IC fixtures that may now be covered. This is also a good time to verify that all recessed fixtures in the attic area are IC-rated, as the companion article on recessed lights describes.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I run an extension cord to the affected area while I wait for the electrician?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">If the outage was clean (no prior flickering, no burning smell, no warm switches), using a working outlet on a different circuit with an extension cord for temporary lighting is generally safe. What's not appropriate: using extension cords as a permanent solution while delaying the electrician call, running high-wattage appliances on extension cords for extended periods, or using the affected circuit at all if there was any prior flickering or burning smell. If the outage was preceded by warning signs, keep the circuit breaker off until the electrician evaluates it &#8212; the arcing damage at the failure point may have affected surrounding insulation in ways that could re-ignite when power is restored.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Multiple lights failing simultaneously always points to a single upstream failure point in the daisy-chain circuit. The scope tells you where &#8212; one switch's lights = switch box; multiple rooms = upstream junction; whole circuit = breaker or main feed.</li>
+        <li>Check the breaker first (OFF then ON, correctly), then check all GFCI outlets on the circuit path. These two steps resolve the majority of multi-light outages without an electrician.</li>
+        <li>If the breaker resets but trips again immediately, or if there was flickering, buzzing, or a burning smell before the outage: stop. Turn the circuit off and call an electrician before restoring power.</li>
+        <li>A failed junction box splice feeding a lighting branch is the most common cause of lights-only multi-fixture outages where the breaker is fine. This requires professional diagnosis &#8212; junction boxes must be located and opened with the circuit off.</li>
+        <li>Prior flickering in the affected fixtures is a warning sign of arcing at the splice before it failed. Tell the electrician &#8212; it indicates possible thermal damage at the failure point that needs to be assessed before the connection is remade.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">multiple lights out at once</a>
+      <a href="#" class="tag-pill">several lights went out</a>
+      <a href="#" class="tag-pill">half the lights in house out</a>
+      <a href="#" class="tag-pill">all lights in room stopped working</a>
+      <a href="#" class="tag-pill">multiple lights not working same circuit</a>
+      <a href="#" class="tag-pill">lights went out suddenly</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Electrical Guides</h3>
+    <div class="related-list">
+      <a href="outlet-stopped-working.html" class="related-item">
+        <div><div class="related-item-title">Why Your Outlet Stopped Working</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="breaker-wont-reset.html" class="related-item">
+        <div><div class="related-item-title">Why Your Breaker Won't Reset</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="mwbc-shared-neutral-flicker.html" class="related-item">
+        <div><div class="related-item-title">Why Shared Neutrals and MWBC Wiring Cause Flicker</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#how-circuits-chain">Why Lights Fail Together</a></li>
+      <li><a href="#scope">Read the Scope</a></li>
+      <li><a href="#causes">4 Causes</a></li>
+      <li><a href="#diagnostic">Step-by-Step Diagnostic</a></li>
+      <li><a href="#pattern-table">Pattern Reference</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">Licensed Electrician &amp; Fire Investigator</div>
+        <div class="s-bio">NFPA Certified Fire Investigator (CFI-1), Certified Healthcare Facility Manager (CHFM), CLSS-HC, OSHA 30, and licensed electrician. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>Electrical safety guides and seasonal home maintenance reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>
