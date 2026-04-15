@@ -4,632 +4,234 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Structure & Foundation Guides | HomeownersRepairGuide.com</title>
-<meta name="description" content="Expert structure & foundation guides written by licensed professionals. Diagnose problems, understand your system, and know when to call a pro.">
+<meta name="description" content="19 foundation diagnostic guides written by a foundation and structural specialist with 30+ years of experience. Find your symptom — wet basement, cracking walls, sagging floors, settling foundation — and get a real answer.">
+<link rel="canonical" href="https://homeownersrepairguide.com/category-foundation.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://homeownersrepairguide.com/category-foundation.html">
+<meta property="og:title" content="Structure & Foundation Guides | HomeownersRepairGuide.com">
+<meta property="og:description" content="19 foundation diagnostic guides from a structural specialist with 30+ years of experience. Find your symptom and get a real answer.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --navy: #0f2236;
-    --navy-mid: #1a3550;
-    --navy-light: #234468;
-    --rust: #c8441a;
-    --rust-light: #e05a2b;
-    --amber: #f0a500;
-    --cream: #faf7f2;
-    --cream-dark: #f0ebe2;
-    --white: #ffffff;
-    --gray-light: #e8e4de;
-    --gray-mid: #9a9490;
-    --text-dark: #1a1612;
-    --text-body: #3d3830;
-    --text-muted: #7a7570;
-    --shadow-soft: 0 4px 24px rgba(15,34,54,0.08);
-    --shadow-card: 0 2px 12px rgba(15,34,54,0.10);
-    --shadow-hover: 0 8px 32px rgba(15,34,54,0.16);
-    --radius: 4px;
-    --radius-lg: 8px;
-    --cat-color: var(--rust);
-  }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text-body); line-height: 1.6; overflow-x: hidden; }
-
-  /* ── TOPBAR ── */
-  .topbar { background: var(--navy); padding: 8px 0; font-size: 12px; color: rgba(255,255,255,0.6); }
-  .topbar .inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
-  .topbar a { color: rgba(255,255,255,0.6); text-decoration: none; }
-  .topbar a:hover { color: var(--amber); }
-  .topbar-links { display: flex; gap: 20px; }
-
-  /* ── HEADER ── */
-  header { background: var(--white); border-bottom: 1px solid var(--gray-light); position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow-soft); }
-  .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; max-width: 1200px; margin: 0 auto; }
-  .logo { display: flex; flex-direction: column; text-decoration: none; line-height: 1.1; }
-  .logo-main { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 800; color: var(--navy); letter-spacing: -0.02em; }
-  .logo-main span { color: var(--rust); }
-  .logo-sub { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gray-mid); font-weight: 500; }
-  nav { display: flex; align-items: center; gap: 4px; }
-  nav a { font-size: 13px; font-weight: 600; color: var(--text-dark); text-decoration: none; padding: 8px 14px; border-radius: var(--radius); transition: background 0.18s, color 0.18s; }
-  nav a:hover, nav a.active-placeholder { background: var(--cream); color: var(--rust); }
-  nav a.active { color: var(--rust); }
-  .nav-cta { background: var(--rust) !important; color: var(--white) !important; padding: 8px 18px !important; margin-left: 8px; }
-  .nav-cta:hover { background: var(--rust-light) !important; }
-
-  /* ── BREADCRUMB ── */
-  .breadcrumb { background: var(--cream-dark); border-bottom: 1px solid var(--gray-light); padding: 12px 0; }
-  .breadcrumb .inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-muted); }
-  .breadcrumb a { color: var(--text-muted); text-decoration: none; transition: color 0.15s; }
-  .breadcrumb a:hover { color: var(--rust); }
-  .breadcrumb .sep { color: var(--gray-light); }
-  .breadcrumb .current { color: var(--text-dark); font-weight: 500; }
-
-  /* ── CATEGORY HERO ── */
-  .cat-hero {
-    background: var(--navy);
-    padding: 56px 0 48px;
-    position: relative;
-    overflow: hidden;
-  }
-  .cat-hero::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:
-      radial-gradient(ellipse 50% 100% at 90% 50%, rgba(200,68,26,0.2) 0%, transparent 65%),
-      radial-gradient(ellipse 30% 60% at 5% 80%, rgba(240,165,0,0.07) 0%, transparent 60%);
-  }
-  .cat-hero-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 48px;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-  }
-  .cat-eyebrow {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--amber);
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .cat-eyebrow::before { content: ''; display: block; width: 28px; height: 2px; background: var(--amber); }
-  .cat-hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(30px, 4vw, 46px);
-    font-weight: 800;
-    color: var(--white);
-    line-height: 1.1;
-    letter-spacing: -0.025em;
-    margin-bottom: 16px;
-  }
-  .cat-hero h1 em { font-style: normal; color: var(--rust-light); }
-  .cat-hero-desc {
-    font-size: 17px;
-    color: rgba(255,255,255,0.7);
-    line-height: 1.65;
-    max-width: 580px;
-    margin-bottom: 28px;
-  }
-  .cat-hero-stats {
-    display: flex;
-    gap: 32px;
-    padding-top: 24px;
-    border-top: 1px solid rgba(255,255,255,0.12);
-  }
-  .cat-stat-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: var(--white);
-    line-height: 1;
-  }
-  .cat-stat-label { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 4px; }
-  .cat-hero-icon {
-    font-size: 120px;
-    opacity: 0.12;
-    user-select: none;
-    line-height: 1;
-  }
-
-  /* Expert strip */
-  .cat-experts-strip {
-    background: rgba(255,255,255,0.06);
-    border-top: 1px solid rgba(255,255,255,0.08);
-    padding: 16px 0;
-    position: relative;
-    z-index: 1;
-  }
-  .cat-experts-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  .cat-experts-label {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.4);
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-  .cat-expert-pills { display: flex; gap: 10px; flex-wrap: wrap; }
-  .cat-expert-pill {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 20px;
-    padding: 6px 14px 6px 8px;
-    text-decoration: none;
-    transition: background 0.18s;
-  }
-  .cat-expert-pill:hover { background: rgba(255,255,255,0.14); }
-  .pill-avatar {
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background: var(--rust);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    font-weight: 700;
-    color: var(--white);
-    font-family: 'Playfair Display', serif;
-    flex-shrink: 0;
-  }
-  .pill-name { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.75); }
-  .pill-title { font-size: 11px; color: rgba(255,255,255,0.4); }
-
-  /* ── MAIN LAYOUT ── */
-  .page-wrap {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 48px 24px;
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 48px;
-    align-items: start;
-  }
-  .main-col { min-width: 0; }
-
-  /* ── SUBCATEGORY TABS ── */
-  .subcat-tabs {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-bottom: 36px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid var(--gray-light);
-  }
-  .subcat-tab {
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-    border: 1.5px solid var(--gray-light);
-    color: var(--text-muted);
-    background: var(--white);
-    transition: all 0.18s;
-    cursor: pointer;
-  }
-  .subcat-tab:hover { border-color: var(--rust); color: var(--rust); }
-  .subcat-tab.active { background: var(--rust); color: var(--white); border-color: var(--rust); }
-
-  /* ── FEATURED / FLAGSHIP ARTICLE ── */
-  .section-label {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--rust);
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--gray-light); }
-
-  .flagship-card {
-    background: var(--white);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-card);
-    text-decoration: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 40px;
-    transition: box-shadow 0.2s;
-    border: 1px solid var(--gray-light);
-  }
-  .flagship-card:hover { box-shadow: var(--shadow-hover); }
-  .flagship-img {
-    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
-    min-height: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 80px;
-    position: relative;
-  }
-  .flagship-img::after {
-    content: 'FLAGSHIP GUIDE';
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    color: var(--amber);
-    background: rgba(0,0,0,0.3);
-    padding: 4px 10px;
-    border-radius: 2px;
-  }
-  .flagship-body { padding: 32px; display: flex; flex-direction: column; justify-content: center; }
-  .flagship-tag {
-    display: inline-block;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 3px 10px;
-    border-radius: 2px;
-    background: var(--rust);
-    color: var(--white);
-    margin-bottom: 14px;
-    width: fit-content;
-  }
-  .flagship-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--navy);
-    line-height: 1.2;
-    letter-spacing: -0.02em;
-    margin-bottom: 12px;
-  }
-  .flagship-desc {
-    font-size: 15px;
-    color: var(--text-muted);
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
-  .flagship-meta {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 12px;
-    color: var(--text-muted);
-    padding-top: 16px;
-    border-top: 1px solid var(--gray-light);
-    margin-bottom: 16px;
-  }
-  .flagship-meta strong { color: var(--text-dark); }
-  .dot { width: 3px; height: 3px; background: var(--gray-mid); border-radius: 50%; display: inline-block; }
-  .read-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: var(--navy);
-    color: var(--white);
-    padding: 12px 20px;
-    border-radius: var(--radius);
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    width: fit-content;
-    transition: background 0.18s;
-  }
-  .read-btn:hover { background: var(--navy-light); }
-
-  /* ── ARTICLE GRID ── */
-  .articles-section { margin-bottom: 48px; }
-  .section-header-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  .section-title-sm {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--navy);
-  }
-  .see-all {
-    font-size: 13px;
-    font-weight: 600;
-    color: var(--rust);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border-bottom: 1.5px solid var(--rust);
-    padding-bottom: 2px;
-    transition: gap 0.15s;
-  }
-  .see-all:hover { gap: 9px; }
-
-  .article-grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  .article-grid-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-
-  /* Standard article card */
-  .art-card {
-    background: var(--white);
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    box-shadow: var(--shadow-card);
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--gray-light);
-    transition: box-shadow 0.2s, transform 0.18s;
-  }
-  .art-card:hover { box-shadow: var(--shadow-hover); transform: translateY(-3px); }
-  .art-card-img {
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    flex-shrink: 0;
-  }
-  .art-card-img.p1 { background: linear-gradient(135deg, #fce8e0, #f8d4c4); }
-  .art-card-img.p2 { background: linear-gradient(135deg, #f4eef8, #e8ddf0); }
-  .art-card-img.p3 { background: linear-gradient(135deg, #e8f4fb, #d4eaf8); }
-  .art-card-img.p4 { background: linear-gradient(135deg, #f8f4e4, #f0e8cc); }
-  .art-card-img.p5 { background: linear-gradient(135deg, #eaf8ea, #d4ecd4); }
-  .art-card-img.p6 { background: linear-gradient(135deg, #f8e8f4, #f0d4ec); }
-  .art-card-body { padding: 18px; flex: 1; display: flex; flex-direction: column; }
-  .art-tag {
-    display: inline-block;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 3px 8px;
-    border-radius: 2px;
-    margin-bottom: 10px;
-    width: fit-content;
-  }
-  .art-tag.plumbing { background: #fce8e0; color: var(--rust); }
-  .art-tag.diagnosis { background: #e8f0fb; color: #1a5a9a; }
-  .art-tag.diy { background: #eaf8ea; color: #2a7a2a; }
-  .art-tag.emergency { background: #fef2f0; color: #c0402a; }
-  .art-tag.maintenance { background: #f8f4e4; color: #8a6a10; }
-  .art-card-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--navy);
-    line-height: 1.3;
-    margin-bottom: 8px;
-    flex: 1;
-  }
-  .art-card-excerpt {
-    font-size: 13px;
-    color: var(--text-muted);
-    line-height: 1.55;
-    margin-bottom: 12px;
-  }
-  .art-card-meta {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 11px;
-    color: var(--text-muted);
-    padding-top: 12px;
-    border-top: 1px solid var(--gray-light);
-    margin-top: auto;
-  }
-  .art-card-meta strong { color: var(--text-dark); }
-
-  /* List-style article rows */
-  .article-list { display: flex; flex-direction: column; gap: 0; }
-  .art-list-item {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    padding: 18px 0;
-    border-bottom: 1px solid var(--gray-light);
-    text-decoration: none;
-    transition: background 0.15s;
-  }
-  .art-list-item:last-child { border-bottom: none; }
-  .art-list-item:hover .art-list-title { color: var(--rust); }
-  .art-list-num {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--gray-light);
-    width: 28px;
-    flex-shrink: 0;
-    line-height: 1.2;
-  }
-  .art-list-content { flex: 1; }
-  .art-list-title {
-    font-size: 15px;
-    font-weight: 600;
-    color: var(--navy);
-    line-height: 1.35;
-    margin-bottom: 4px;
-    transition: color 0.15s;
-  }
-  .art-list-meta { font-size: 12px; color: var(--text-muted); }
-  .art-list-arrow { color: var(--gray-light); font-size: 16px; flex-shrink: 0; margin-top: 2px; transition: color 0.15s, transform 0.15s; }
-  .art-list-item:hover .art-list-arrow { color: var(--rust); transform: translateX(3px); }
-
-  /* Load more */
-  .load-more-wrap { text-align: center; padding: 16px 0 8px; }
-  .load-more-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 28px;
-    border: 2px solid var(--navy);
-    border-radius: var(--radius);
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--navy);
-    background: transparent;
-    text-decoration: none;
-    transition: all 0.18s;
-    cursor: pointer;
-    font-family: 'DM Sans', sans-serif;
-  }
-  .load-more-btn:hover { background: var(--navy); color: var(--white); }
-
-  /* ── SIDEBAR ── */
-  .sidebar { position: sticky; top: 88px; display: flex; flex-direction: column; gap: 24px; }
-  .sidebar-card { background: var(--white); border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-card); border: 1px solid var(--gray-light); }
-  .sidebar-card h4 { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; color: var(--navy); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--gray-light); }
-
-  /* Quick answer tool */
-  .quick-tool { background: var(--navy); border-radius: var(--radius-lg); padding: 24px; }
-  .quick-tool h4 { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
-  .quick-tool p { font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 16px; line-height: 1.5; }
-  .quick-options { display: flex; flex-direction: column; gap: 8px; }
-  .quick-opt {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 14px;
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: var(--radius);
-    text-decoration: none;
-    transition: background 0.15s;
-    cursor: pointer;
-  }
-  .quick-opt:hover { background: rgba(255,255,255,0.14); }
-  .quick-opt-icon { font-size: 18px; flex-shrink: 0; }
-  .quick-opt-text { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.85); }
-
-  /* Category nav */
-  .cat-nav-list { list-style: none; display: flex; flex-direction: column; gap: 2px; }
-  .cat-nav-list a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 9px 10px;
-    border-radius: var(--radius);
-    text-decoration: none;
-    font-size: 14px;
-    color: var(--text-body);
-    transition: all 0.15s;
-    font-weight: 500;
-  }
-  .cat-nav-list a:hover { background: var(--cream); color: var(--rust); }
-  .cat-nav-list a.active { background: var(--rust); color: var(--white); font-weight: 600; }
-  .cat-nav-list a.active .cat-count { color: rgba(255,255,255,0.7); }
-  .cat-nav-left { display: flex; align-items: center; gap: 10px; }
-  .cat-nav-icon { font-size: 16px; }
-  .cat-count { font-size: 11px; color: var(--text-muted); font-family: 'DM Mono', monospace; }
-
-  /* Newsletter */
-  .sidebar-newsletter { background: var(--rust); border-radius: var(--radius-lg); padding: 24px; }
-  .sidebar-newsletter h4 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 10px; }
-  .sidebar-newsletter p { font-size: 13px; color: rgba(255,255,255,0.78); line-height: 1.55; margin-bottom: 16px; }
-  .sidebar-input { width: 100%; padding: 11px 14px; border: 2px solid rgba(255,255,255,0.3); border-radius: var(--radius); background: rgba(255,255,255,0.12); color: var(--white); font-size: 14px; font-family: 'DM Sans', sans-serif; outline: none; margin-bottom: 10px; }
-  .sidebar-input::placeholder { color: rgba(255,255,255,0.5); }
-  .sidebar-input:focus { border-color: rgba(255,255,255,0.7); }
-  .sidebar-sub-btn { width: 100%; padding: 11px; background: var(--navy); color: var(--white); border: none; border-radius: var(--radius); font-size: 14px; font-weight: 700; font-family: 'DM Sans', sans-serif; cursor: pointer; transition: background 0.2s; }
-  .sidebar-sub-btn:hover { background: var(--navy-light); }
-
-  /* Ad placeholder */
-  .ad-placeholder { background: var(--cream-dark); border: 2px dashed var(--gray-light); border-radius: var(--radius-lg); padding: 32px 16px; text-align: center; }
-  .ad-placeholder .ad-label { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray-mid); margin-bottom: 6px; }
-  .ad-placeholder .ad-size { font-size: 13px; color: var(--text-muted); font-family: 'DM Mono', monospace; }
-
-  /* ── PAGINATION ── */
-  .pagination { display: flex; align-items: center; justify-content: center; gap: 6px; padding: 16px 0 48px; }
-  .page-btn {
-    width: 38px;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--radius);
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    border: 1.5px solid var(--gray-light);
-    color: var(--text-muted);
-    background: var(--white);
-    transition: all 0.15s;
-  }
-  .page-btn:hover { border-color: var(--rust); color: var(--rust); }
-  .page-btn.active { background: var(--rust); color: var(--white); border-color: var(--rust); }
-  .page-btn.arrow { font-size: 18px; }
-
-  /* ── FOOTER ── */
-  footer { background: var(--navy); color: rgba(255,255,255,0.65); padding: 48px 0 0; margin-top: 0; }
-  .footer-nav { background: var(--navy-mid); padding: 24px 0; }
-  .footer-nav .inner { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; gap: 32px; flex-wrap: wrap; }
-  .footer-nav a { color: rgba(255,255,255,0.55); text-decoration: none; font-size: 14px; transition: color 0.15s; }
-  .footer-nav a:hover { color: var(--amber); }
-  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding: 20px 24px; max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: rgba(255,255,255,0.35); flex-wrap: wrap; gap: 12px; }
-  .footer-bottom a { color: rgba(255,255,255,0.35); text-decoration: none; margin-left: 20px; }
-  .footer-bottom a:hover { color: rgba(255,255,255,0.6); }
-
-  /* ── RESPONSIVE ── */
-  @media (max-width: 960px) {
-    .page-wrap { grid-template-columns: 1fr; }
-    .sidebar { position: static; }
-    .article-grid-3 { grid-template-columns: repeat(2, 1fr); }
-    .flagship-card { grid-template-columns: 1fr; }
-    .flagship-img { min-height: 180px; }
-    .cat-hero-icon { display: none; }
-  }
-  @media (max-width: 600px) {
-    nav { display: none; }
-    .topbar .topbar-links { display: none; }
-    .article-grid-3, .article-grid-2 { grid-template-columns: 1fr; }
-    .cat-hero-stats { gap: 20px; }
-  }
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;--navy-light:#234468;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --foundation:#6b5a3e;--foundation-dark:#4a3d2a;--foundation-light:#f5f0e8;
+  --green:#2a7a2a;--green-light:#eaf5ea;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
+.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color 0.15s;}
+.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}
+.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+/* HERO */
+.cat-hero{background:var(--navy);padding:52px 0 0;position:relative;overflow:hidden;}
+.cat-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 50% 100% at 90% 50%,rgba(107,90,62,0.3) 0%,transparent 65%),radial-gradient(ellipse 30% 60% at 5% 80%,rgba(107,90,62,0.1) 0%,transparent 60%);}
+.cat-hero-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;position:relative;z-index:1;}
+.cat-eyebrow{font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--amber);margin-bottom:12px;display:flex;align-items:center;gap:10px;}
+.cat-eyebrow::before{content:'';display:block;width:28px;height:2px;background:var(--amber);}
+.cat-hero h1{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,44px);font-weight:800;color:var(--white);line-height:1.1;letter-spacing:-0.025em;margin-bottom:14px;}
+.cat-hero h1 em{font-style:normal;color:#c8b48a;}
+.cat-hero-desc{font-size:16px;color:rgba(255,255,255,0.7);line-height:1.65;max-width:560px;margin-bottom:28px;}
+.cat-hero-stats{display:flex;gap:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.12);}
+.cat-stat-num{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--white);line-height:1;}
+.cat-stat-label{font-size:12px;color:rgba(255,255,255,0.5);margin-top:4px;}
+.cat-hero-icon{font-size:110px;opacity:0.1;user-select:none;line-height:1;}
+.cat-experts-strip{background:rgba(255,255,255,0.06);border-top:1px solid rgba(255,255,255,0.08);padding:14px 0;position:relative;z-index:1;margin-top:40px;}
+.cat-experts-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:20px;}
+.cat-experts-label{font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.4);white-space:nowrap;flex-shrink:0;}
+.cat-expert-pills{display:flex;gap:10px;flex-wrap:wrap;}
+.cat-expert-pill{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.1);border-radius:20px;padding:6px 14px 6px 8px;text-decoration:none;transition:background 0.18s;}
+.cat-expert-pill:hover{background:rgba(255,255,255,0.14);}
+.pill-avatar{width:26px;height:26px;border-radius:50%;background:var(--foundation);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:var(--white);font-family:'Playfair Display',serif;flex-shrink:0;}
+.pill-name{font-size:12px;font-weight:600;color:rgba(255,255,255,0.75);}
+.pill-title{font-size:11px;color:rgba(255,255,255,0.4);}
+/* SYMPTOM FINDER */
+.symptom-finder{background:var(--foundation-dark);padding:28px 0;}
+.symptom-finder .inner{max-width:1200px;margin:0 auto;padding:0 24px;}
+.sf-label{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:16px;text-align:center;}
+.sf-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.sf-col-head{font-size:12px;font-weight:700;color:var(--amber);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px;display:flex;align-items:center;gap:8px;}
+.sf-links{display:flex;flex-direction:column;gap:3px;}
+.sf-link{display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:500;color:rgba(255,255,255,0.82);text-decoration:none;padding:7px 10px;border-radius:var(--radius);transition:background 0.15s,color 0.15s;}
+.sf-link:hover{background:rgba(255,255,255,0.1);color:var(--white);}
+.sf-badge{font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 7px;border-radius:2px;flex-shrink:0;}
+.sf-badge.urgent{background:var(--rust);color:var(--white);}
+.sf-badge.watch{background:#b07800;color:var(--white);}
+.sf-badge.diy{background:var(--green);color:var(--white);}
+.sf-badge.pro{background:#5a3a7a;color:var(--white);}
+/* PAGE WRAP */
+.page-wrap{max-width:1200px;margin:0 auto;padding:48px 24px;display:grid;grid-template-columns:1fr 300px;gap:48px;align-items:start;}
+.main-col{min-width:0;}
+/* SECTION HEADERS */
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--gray-light);}
+.sec-h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);display:flex;align-items:center;gap:10px;}
+.sec-dot{width:10px;height:10px;border-radius:50%;background:var(--foundation);flex-shrink:0;}
+.see-all{font-size:13px;font-weight:600;color:var(--foundation);text-decoration:none;display:flex;align-items:center;gap:5px;border-bottom:1.5px solid var(--foundation);padding-bottom:1px;transition:gap 0.15s;}
+.see-all:hover{gap:9px;}
+/* FLAGSHIP */
+.flagship{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;display:grid;grid-template-columns:1fr 1fr;margin-bottom:40px;transition:box-shadow 0.2s;border:1px solid var(--gray-light);}
+.flagship:hover{box-shadow:var(--shadow-hover);}
+.flagship-img{background:linear-gradient(135deg,var(--foundation-dark) 0%,var(--navy-mid) 100%);min-height:260px;display:flex;align-items:center;justify-content:center;font-size:72px;position:relative;}
+.flagship-img::after{content:'FLAGSHIP GUIDE';position:absolute;top:14px;left:14px;font-size:10px;font-weight:700;letter-spacing:0.1em;color:var(--amber);background:rgba(0,0,0,0.35);padding:4px 10px;border-radius:2px;}
+.flagship-body{padding:28px;display:flex;flex-direction:column;justify-content:center;}
+.f-tag{display:inline-block;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:2px;background:var(--rust);color:var(--white);margin-bottom:12px;width:fit-content;}
+.f-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;letter-spacing:-0.02em;margin-bottom:10px;}
+.f-desc{font-size:14px;color:var(--text-muted);line-height:1.6;margin-bottom:16px;}
+.f-meta{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--text-muted);padding-top:14px;border-top:1px solid var(--gray-light);margin-bottom:14px;}
+.f-meta strong{color:var(--text-dark);}
+.dot{width:3px;height:3px;background:var(--gray-mid);border-radius:50%;display:inline-block;}
+.read-btn{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:var(--white);padding:11px 18px;border-radius:var(--radius);font-size:13px;font-weight:600;text-decoration:none;width:fit-content;transition:background 0.18s;}
+.read-btn:hover{background:var(--navy-light);}
+/* INLINE AD */
+.inline-ad{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:24px 16px;text-align:center;margin:0 0 40px;}
+.inline-ad .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.inline-ad .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+/* ARTICLE SECTION */
+.art-section{margin-bottom:48px;}
+/* CARD GRID */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+/* ART CARD */
+.art-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);text-decoration:none;display:flex;flex-direction:column;border:1px solid var(--gray-light);transition:box-shadow 0.2s,transform 0.18s;}
+.art-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px);}
+.card-stripe{height:3px;background:var(--foundation);}
+.card-stripe.urgent{background:var(--rust);}
+.card-stripe.critical{background:#7a1010;}
+.card-stripe.diy{background:var(--green);}
+.card-body{padding:16px 18px;flex:1;display:flex;flex-direction:column;}
+.card-tag{font-size:10px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:3px 8px;border-radius:2px;margin-bottom:9px;width:fit-content;}
+.card-tag.diagnosis{background:var(--foundation-light);color:var(--foundation-dark);}
+.card-tag.urgent{background:#fef2f0;color:#c0402a;}
+.card-tag.safety{background:#fff8e6;color:#b07800;}
+.card-tag.diy{background:var(--green-light);color:var(--green);}
+.card-title{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:7px;flex:1;}
+.card-excerpt{font-size:12px;color:var(--text-muted);line-height:1.55;margin-bottom:10px;}
+.card-meta{display:flex;align-items:center;justify-content:space-between;font-size:11px;color:var(--text-muted);padding-top:10px;border-top:1px solid var(--gray-light);margin-top:auto;}
+.card-meta strong{color:var(--text-dark);}
+.card-arrow{font-size:14px;color:var(--gray-mid);}
+.art-card:hover .card-arrow{color:var(--foundation);}
+/* LIST ROWS */
+.art-list{display:flex;flex-direction:column;}
+.art-row{display:flex;gap:14px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--gray-light);text-decoration:none;transition:background 0.15s;}
+.art-row:last-child{border-bottom:none;}
+.art-row:hover .row-title{color:var(--foundation);}
+.row-num{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--gray-light);width:26px;flex-shrink:0;line-height:1.2;}
+.row-body{flex:1;}
+.row-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;margin-bottom:3px;transition:color 0.15s;}
+.row-meta{font-size:11px;color:var(--text-muted);}
+.row-badge{font-size:10px;font-weight:700;letter-spacing:0.06em;padding:2px 7px;border-radius:2px;flex-shrink:0;margin-top:2px;}
+.row-badge.urgent{background:#fef2f0;color:#c0402a;}
+.row-badge.watch{background:#fff8e6;color:#b07800;}
+.row-badge.diy{background:var(--green-light);color:var(--green);}
+.row-arrow{color:var(--gray-light);font-size:15px;flex-shrink:0;margin-top:2px;transition:color 0.15s,transform 0.15s;}
+.art-row:hover .row-arrow{color:var(--foundation);transform:translateX(3px);}
+/* MOST SEARCHED */
+.most-searched{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:48px;}
+.ms-head{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:6px;}
+.ms-sub{font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:18px;}
+.ms-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.ms-link{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.75);text-decoration:none;padding:8px 12px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);border-radius:var(--radius);transition:background 0.15s,color 0.15s;}
+.ms-link:hover{background:rgba(255,255,255,0.12);color:var(--white);}
+.ms-link::before{content:'↗';font-size:11px;color:var(--amber);flex-shrink:0;}
+/* SIDEBAR */
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:22px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:22px;box-shadow:var(--shadow-card);border:1px solid var(--gray-light);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.emergency-cta{background:#7a1010;border-radius:var(--radius-lg);padding:20px;}
+.emergency-cta h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:6px;}
+.emergency-cta p{font-size:12px;color:rgba(255,255,255,0.7);line-height:1.5;margin-bottom:14px;}
+.emergency-links{display:flex;flex-direction:column;gap:6px;}
+.em-link{display:flex;align-items:center;gap:9px;padding:9px 12px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);border-radius:var(--radius);text-decoration:none;transition:background 0.15s;}
+.em-link:hover{background:rgba(255,255,255,0.18);}
+.em-icon{font-size:16px;flex-shrink:0;}
+.em-text{font-size:12px;font-weight:600;color:var(--white);}
+.quick-tool{background:var(--foundation-dark);border-radius:var(--radius-lg);padding:20px;}
+.quick-tool h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:6px;}
+.quick-tool p{font-size:12px;color:rgba(255,255,255,0.55);margin-bottom:14px;line-height:1.5;}
+.quick-options{display:flex;flex-direction:column;gap:7px;}
+.quick-opt{display:flex;align-items:center;gap:10px;padding:9px 12px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.1);border-radius:var(--radius);text-decoration:none;transition:background 0.15s;}
+.quick-opt:hover{background:rgba(255,255,255,0.14);}
+.quick-opt-icon{font-size:17px;flex-shrink:0;}
+.quick-opt-text{font-size:13px;font-weight:600;color:rgba(255,255,255,0.85);}
+.cat-nav-list{list-style:none;display:flex;flex-direction:column;gap:2px;}
+.cat-nav-list a{display:flex;align-items:center;justify-content:space-between;padding:9px 10px;border-radius:var(--radius);text-decoration:none;font-size:14px;color:var(--text-body);transition:all 0.15s;font-weight:500;}
+.cat-nav-list a:hover{background:var(--cream);color:var(--rust);}
+.cat-nav-list a.active{background:var(--rust);color:var(--white);font-weight:600;}
+.cat-nav-list a.active .cat-count{color:rgba(255,255,255,0.7);}
+.cat-nav-left{display:flex;align-items:center;gap:10px;}
+.cat-nav-icon{font-size:16px;}
+.cat-count{font-size:11px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+.sidebar-newsletter{background:var(--foundation);border-radius:var(--radius-lg);padding:22px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:13px;color:rgba(255,255,255,0.78);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:960px){
+  .page-wrap{grid-template-columns:1fr;}
+  .sidebar{position:static;}
+  .grid-3{grid-template-columns:repeat(2,1fr);}
+  .flagship{grid-template-columns:1fr;}
+  .flagship-img{min-height:180px;}
+  .cat-hero-icon{display:none;}
+  .sf-grid{grid-template-columns:1fr 1fr;}
+  .ms-grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px){
+  nav{display:none;}
+  .topbar .topbar-links{display:none;}
+  .grid-3,.grid-2{grid-template-columns:1fr;}
+  .cat-hero-stats{gap:20px;}
+  .sf-grid{grid-template-columns:1fr;}
+  .ms-grid{grid-template-columns:1fr 1fr;}
+}
 </style>
 <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
-  <!-- SEO: Open Graph & Canonical -->
-  <link rel="canonical" href="https://homeownersrepairguide.com/category-foundation.html">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://homeownersrepairguide.com/category-foundation.html">
-  <meta property="og:title" content="Structure & Foundation Guides | HomeownersRepairGuide.com">
-  <meta property="og:description" content="Expert structure & foundation guides written by licensed professionals. Diagnose problems, understand your system, and know when to call a pro.">
-  <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Structure & Foundation Guides | HomeownersRepairGuide.com">
-  <meta name="twitter:description" content="Expert structure & foundation guides written by licensed professionals. Diagnose problems, understand your system, and know when to call a pro.">
 </head>
 <body>
 
-<!-- TOP BAR -->
 <div class="topbar">
   <div class="inner">
-    <span>Guidance from licensed trade professionals with 100+ combined years of experience</span>
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
     <div class="topbar-links">
       <a href="about-experts.html">About Our Experts</a>
       <a href="how-we-verify.html">How We Verify</a>
@@ -638,7 +240,6 @@
   </div>
 </div>
 
-<!-- HEADER -->
 <header>
   <div class="header-inner">
     <a href="index.html" class="logo">
@@ -657,324 +258,471 @@
   </div>
 </header>
 
-<!-- BREADCRUMB -->
 <div class="breadcrumb">
   <div class="inner">
     <a href="index.html">Home</a>
-    <span class="sep">›</span>
-    <span class="current">Structure & Foundation</span>
+    <span class="sep">&#8250;</span>
+    <span class="current">Structure &amp; Foundation</span>
   </div>
 </div>
 
-<!-- CATEGORY HERO -->
+<!-- HERO -->
 <div class="cat-hero">
   <div class="cat-hero-inner">
     <div>
       <div class="cat-eyebrow">Category</div>
-      <h1>Structure & Foundation <em>Guides</em></h1>
-      <p class="cat-hero-desc">Identify foundation problems before they become structural emergencies, understand what different cracks and symptoms mean, and get straight answers on when you need a professional assessment. Written by a 30-year foundation specialist.</p>
+      <h1>Structure &amp; Foundation <em>Guides</em></h1>
+      <p class="cat-hero-desc">19 diagnostic guides written by a foundation and structural specialist with 30+ years of experience. Find your symptom &#8212; wet basement, cracking walls, sagging floors, settling foundation &#8212; and get a real answer, not a guess.</p>
       <div class="cat-hero-stats">
-        <div>
-          <div class="cat-stat-num">64</div><div class="cat-stat-label">Articles</div>
-        </div>
-        <div>
-          <div class="cat-stat-num">1</div><div class="cat-stat-label">Expert Authors</div>
-        </div>
-        <div>
-          <div class="cat-stat-num">6</div><div class="cat-stat-label">Sub-topics</div>
-        </div>
+        <div><div class="cat-stat-num">19</div><div class="cat-stat-label">Sub-articles</div></div>
+        <div><div class="cat-stat-num">3+</div><div class="cat-stat-label">Flagship Guides</div></div>
+        <div><div class="cat-stat-num">1</div><div class="cat-stat-label">Expert Author</div></div>
       </div>
     </div>
-    <div class="cat-hero-icon">🚿</div>
+    <div class="cat-hero-icon">&#127959;</div>
   </div>
   <div class="cat-experts-strip">
     <div class="cat-experts-inner">
-      <div class="cat-experts-label">Expert Authors</div>
+      <div class="cat-experts-label">Expert Author</div>
       <div class="cat-expert-pills">
-        <a href="#" class="cat-expert-pill">
-          <div class="pill-avatar" style="background:#5a4a3a;">C.M.</div>
+        <a href="about-experts.html" class="cat-expert-pill">
+          <div class="pill-avatar">C.M.</div>
           <div>
             <div class="pill-name">C.M.</div>
-            <div class="pill-title">Foundation &amp; Structural Specialist</div>
+            <div class="pill-title">Foundation &amp; Structural Specialist &middot; 30+ Years &middot; Nevada</div>
           </div>
         </a>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- SYMPTOM FINDER -->
+<div class="symptom-finder">
+  <div class="inner">
+    <div class="sf-label">What's happening right now? Find your guide instantly.</div>
+    <div class="sf-grid">
+
+      <div>
+        <div class="sf-col-head"><span>&#128167;</span> Water &amp; Drainage</div>
+        <div class="sf-links">
+          <a href="foundation-basement-floods-water-use.html" class="sf-link">Basement floods when water is used <span class="sf-badge urgent">Emergency</span></a>
+          <a href="foundation-basement-water-walls.html" class="sf-link">Water through basement walls <span class="sf-badge urgent">Urgent</span></a>
+          <a href="foundation-basement-wet-after-rain.html" class="sf-link">Basement wet after rain <span class="sf-badge watch">Diagnose</span></a>
+          <a href="foundation-basement-floor-wet.html" class="sf-link">Basement floor is wet <span class="sf-badge watch">Diagnose</span></a>
+          <a href="foundation-basement-musty-smell.html" class="sf-link">Basement smells musty <span class="sf-badge diy">Investigate</span></a>
+          <a href="foundation-drainage-failure.html" class="sf-link">Drainage system failing <span class="sf-badge urgent">Urgent</span></a>
+          <a href="foundation-water-drainage.html" class="sf-link" style="color:var(--amber);margin-top:4px;">See all 6 water guides &#8594;</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="sf-col-head"><span>&#127968;</span> Crawlspace</div>
+        <div class="sf-links">
+          <a href="foundation-crawlspace-damp.html" class="sf-link">Crawlspace is damp <span class="sf-badge watch">Moisture Risk</span></a>
+          <a href="foundation-crawlspace-musty-smell.html" class="sf-link">Crawlspace smells musty <span class="sf-badge watch">Air Quality</span></a>
+          <a href="foundation-crawlspace.html" class="sf-link" style="color:var(--amber);margin-top:4px;">See all 2 crawlspace guides &#8594;</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="sf-col-head"><span>&#8659;</span> Settlement &amp; Movement</div>
+        <div class="sf-links">
+          <a href="foundation-roofline-sagging.html" class="sf-link">Roofline is sagging <span class="sf-badge urgent">Structural</span></a>
+          <a href="foundation-wall-load-bearing.html" class="sf-link">Is this wall load-bearing? <span class="sf-badge pro">Engineer First</span></a>
+          <a href="foundation-floors-sagging.html" class="sf-link">Floors are sagging <span class="sf-badge watch">Diagnose</span></a>
+          <a href="foundation-doors-windows-sticking.html" class="sf-link">Doors or windows sticking <span class="sf-badge watch">Early Warning</span></a>
+          <a href="foundation-subfloor-soft.html" class="sf-link">Subfloor soft or spongy <span class="sf-badge watch">Investigate</span></a>
+          <a href="foundation-porch-deck-settling.html" class="sf-link">Porch or deck settling <span class="sf-badge diy">Diagnose</span></a>
+          <a href="foundation-walls-ceilings-cracking.html" class="sf-link">Walls or ceilings cracking <span class="sf-badge watch">Read Pattern</span></a>
+          <a href="foundation-settlement-movement.html" class="sf-link" style="color:var(--amber);margin-top:4px;">See all 7 movement guides &#8594;</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="sf-col-head"><span>&#9892;</span> Cracks &amp; Settlement</div>
+        <div class="sf-links">
+          <a href="foundation-cracks-walls.html" class="sf-link">Cracks in foundation walls <span class="sf-badge urgent">Evaluate</span></a>
+          <a href="foundation-moving.html" class="sf-link">Foundation is moving <span class="sf-badge urgent">Active</span></a>
+          <a href="foundation-settling-unevenly.html" class="sf-link">Foundation settling unevenly <span class="sf-badge watch">Diagnose</span></a>
+          <a href="foundation-seasonal-shifting.html" class="sf-link">Seasonal shifting <span class="sf-badge diy">Identify</span></a>
+          <a href="foundation-cracks-settlement.html" class="sf-link" style="color:var(--amber);margin-top:4px;">See all 4 crack guides &#8594;</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>
 
 <!-- PAGE CONTENT -->
 <div class="page-wrap">
-  <main class="main-col">
+<main class="main-col">
 
-    <!-- SUBCATEGORY TABS -->
-    <div class="subcat-tabs">
-      <a class="subcat-tab active">All Foundation</a>
-      <a class="subcat-tab">Cracks &amp; Diagnosis</a>
-      <a class="subcat-tab">Settlement &amp; Piers</a>
-      <a class="subcat-tab">Basement Walls</a>
-      <a class="subcat-tab">Crawlspace</a>
-      <a class="subcat-tab">Drainage &amp; Grading</a>
-      <a class="subcat-tab">Waterproofing</a>
-      <a class="subcat-tab">Retaining Walls</a>
+  <!-- FLAGSHIP -->
+  <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--rust);margin-bottom:14px;display:flex;align-items:center;gap:10px;">Start Here &mdash; Flagship Guide <span style="flex:1;height:1px;background:var(--gray-light);display:block;"></span></div>
+  <a href="structural-integrity-guide.html" class="flagship">
+    <div class="flagship-img">&#127959;</div>
+    <div class="flagship-body">
+      <span class="f-tag">Flagship Guide</span>
+      <div class="f-title">The Complete Guide to Foundation &amp; Structural Integrity</div>
+      <div class="f-desc">From soil behavior and foundation types through every failure mode — water intrusion, settlement, cracking, and structural movement — with a full symptom decoder. The system-level reference before diagnosing any foundation problem.</div>
+      <div class="f-meta">
+        <strong>C.M.</strong>
+        <span class="dot"></span><span>35 min read</span>
+        <span class="dot"></span><span>Updated Apr 2025</span>
+      </div>
+      <span class="read-btn">Read the Full Guide &#8594;</span>
     </div>
+  </a>
 
-    <!-- FLAGSHIP GUIDE -->
-    <div class="section-label">Start Here — Flagship Guide</div>
-    <a href="structural-integrity-guide.html" class="flagship-card">
-      <div class="flagship-img">🏗️</div>
-      <div class="flagship-body">
-        <span class="flagship-tag">Flagship Guide</span>
-        <div class="flagship-title">The Complete Guide to Residential Structural Integrity</div>
-        <div class="flagship-desc">How homes carry load, how structural failures develop, and how to read every symptom pattern — from a cosmetic drywall crack to a bowing foundation wall. The system-level guide for understanding what your home is telling you.</div>
-        <div class="flagship-meta">
-          <strong>C.M.</strong>
-          <span class="dot"></span>
-          <span>28 min read</span>
-          <span class="dot"></span>
-          <span>Updated Jan 2025</span>
+  <!-- AD 1 -->
+  <div class="inline-ad">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">728 &times; 90 &mdash; Leaderboard</div>
+  </div>
+
+  <!-- WATER & DRAINAGE -->
+  <section class="art-section" aria-label="Water and Drainage guides">
+    <div class="sec-head">
+      <h2 class="sec-h2"><span class="sec-dot"></span> Water &amp; Drainage</h2>
+      <a href="foundation-water-drainage.html" class="see-all">All 6 guides &#8594;</a>
+    </div>
+    <div class="grid-3" style="margin-bottom:18px;">
+      <a href="foundation-basement-water-walls.html" class="art-card">
+        <div class="card-stripe urgent"></div>
+        <div class="card-body">
+          <span class="card-tag urgent">&#128308; Urgent</span>
+          <div class="card-title">Water Coming Through Basement Walls</div>
+          <div class="card-excerpt">Hydrostatic pressure, failed waterproofing, or wall cracks — where it appears and under what conditions tells you which cause you have.</div>
+          <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 9 min <span class="card-arrow">&#8594;</span></div>
         </div>
-        <span class="read-btn">Read the Full Guide →</span>
-      </div>
-    </a>
-
-    <!-- ALL 3 FLAGSHIP GUIDES -->
-    <div class="articles-section">
-      <div class="section-header-row">
-        <div class="section-title-sm">All Flagship Guides</div>
-        <a href="#" class="see-all">See all →</a>
-      </div>
-      <div class="article-grid-3">
-        <a href="structural-integrity-guide.html" class="art-card">
-          <div class="art-card-img p1">🏗️</div>
-          <div class="art-card-body">
-            <span class="art-tag diagnosis">Diagnosis</span>
-            <div class="art-card-title">The Complete Guide to Residential Structural Integrity</div>
-            <div class="art-card-excerpt">Load paths, failure patterns, symptom decoder, 8 real-world scenarios, and the line between cosmetic and structural.</div>
-            <div class="art-card-meta"><strong>C.M.</strong> <span class="dot"></span> 28 min read</div>
-          </div>
-        </a>
-        <a href="foundation-guide.html" class="art-card">
-          <div class="art-card-img p2">🔍</div>
-          <div class="art-card-body">
-            <span class="art-tag diagnosis">Diagnosis</span>
-            <div class="art-card-title">Foundation Damage: What Every Crack Is Telling You</div>
-            <div class="art-card-excerpt">How to classify every crack type, identify root causes, and know when to monitor, evaluate, or act immediately.</div>
-            <div class="art-card-meta"><strong>C.M.</strong> <span class="dot"></span> 25 min read</div>
-          </div>
-        </a>
-        <a href="basement-water-intrusion-guide.html" class="art-card">
-          <div class="art-card-img p3">💧</div>
-          <div class="art-card-body">
-            <span class="art-tag diagnosis">Diagnosis</span>
-            <div class="art-card-title">The Complete Basement Water Intrusion Guide</div>
-            <div class="art-card-excerpt">Surface water vs. groundwater, hydrostatic pressure, 5 real-world scenarios, and which solutions actually work long-term.</div>
-            <div class="art-card-meta"><strong>C.M.</strong> <span class="dot"></span> 25 min read</div>
-          </div>
-        </a>
-      </div>
+      </a>
+      <a href="foundation-basement-wet-after-rain.html" class="art-card">
+        <div class="card-stripe"></div>
+        <div class="card-body">
+          <span class="card-tag diagnosis">Rain-Triggered</span>
+          <div class="card-title">Why Your Basement Gets Wet After Rain</div>
+          <div class="card-excerpt">A basement that only floods after rain is almost always a surface drainage problem — grading, gutters, or downspouts directing water toward the foundation.</div>
+          <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 8 min <span class="card-arrow">&#8594;</span></div>
+        </div>
+      </a>
+      <a href="foundation-drainage-failure.html" class="art-card">
+        <div class="card-stripe urgent"></div>
+        <div class="card-body">
+          <span class="card-tag urgent">&#9888; High Risk</span>
+          <div class="card-title">Foundation Drainage System Failure</div>
+          <div class="card-excerpt">When gutters, grading, drain tile, or sump systems fail, water pressure builds against foundation walls. Here's how to identify which system has given out.</div>
+          <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 9 min <span class="card-arrow">&#8594;</span></div>
+        </div>
+      </a>
     </div>
-
-    <!-- CRACKS & DIAGNOSIS -->
-    <div class="articles-section">
-      <div class="section-header-row">
-        <div class="section-title-sm">Cracks &amp; Diagnosis</div>
-        <a href="#" class="see-all">See all →</a>
-      </div>
-      <div class="article-list">
-        <a href="structural-integrity-guide.html" class="art-list-item">
-          <div class="art-list-num">01</div>
-          <div class="art-list-content">
-            <div class="art-list-title">The Complete Guide to Residential Structural Integrity</div>
-            <div class="art-list-meta">C.M. · Structural Systems · 28 min read · Updated Jan 2025</div>
-          </div>
-          <div class="art-list-arrow">→</div>
-        </a>
-        <a href="foundation-guide.html" class="art-list-item">
-          <div class="art-list-num">02</div>
-          <div class="art-list-content">
-            <div class="art-list-title">Foundation Damage: What Every Crack Is Telling You</div>
-            <div class="art-list-meta">C.M. · Cracks &amp; Diagnosis · 25 min read · Updated Jan 2025</div>
-          </div>
-          <div class="art-list-arrow">→</div>
-        </a>
-        <a href="#" class="art-list-item">
-          <div class="art-list-num">03</div>
-          <div class="art-list-content">
-            <div class="art-list-title">Stair-Step Cracks in Brick: What They Mean and What to Do</div>
-            <div class="art-list-meta">C.M. · Cracks &amp; Diagnosis · 8 min read</div>
-          </div>
-          <div class="art-list-arrow">→</div>
-        </a>
-        <a href="#" class="art-list-item">
-          <div class="art-list-num">04</div>
-          <div class="art-list-content">
-            <div class="art-list-title">Expansive Clay Soil: The Hidden Force Behind Most Foundation Movement</div>
-            <div class="art-list-meta">C.M. · Cracks &amp; Diagnosis · 11 min read</div>
-          </div>
-          <div class="art-list-arrow">→</div>
-        </a>
-        <a href="#" class="art-list-item">
-          <div class="art-list-num">05</div>
-          <div class="art-list-content">
-            <div class="art-list-title">Do I Need a Structural Engineer or a Foundation Contractor?</div>
-            <div class="art-list-meta">C.M. · Cracks &amp; Diagnosis · 6 min read</div>
-          </div>
-          <div class="art-list-arrow">→</div>
-        </a>
-      </div>
+    <div class="art-list">
+      <a href="foundation-basement-floods-water-use.html" class="art-row">
+        <div class="row-num">04</div>
+        <div class="row-body">
+          <div class="row-title">Basement Floods When Water Is Used</div>
+          <div class="row-meta">C.M. &middot; 8 min read</div>
+        </div>
+        <span class="row-badge urgent">Plumbing/Drain Issue</span>
+        <div class="row-arrow">&#8594;</div>
+      </a>
+      <a href="foundation-basement-floor-wet.html" class="art-row">
+        <div class="row-num">05</div>
+        <div class="row-body">
+          <div class="row-title">Why Your Basement Floor Is Wet</div>
+          <div class="row-meta">C.M. &middot; 8 min read</div>
+        </div>
+        <span class="row-badge watch">Diagnose Source</span>
+        <div class="row-arrow">&#8594;</div>
+      </a>
+      <a href="foundation-basement-musty-smell.html" class="art-row">
+        <div class="row-num">06</div>
+        <div class="row-body">
+          <div class="row-title">Why Your Basement Smells Musty</div>
+          <div class="row-meta">C.M. &middot; 8 min read</div>
+        </div>
+        <span class="row-badge diy">Moisture Signal</span>
+        <div class="row-arrow">&#8594;</div>
+      </a>
     </div>
+  </section>
 
-    <!-- BASEMENT & WATER -->
-    <div class="articles-section">
-      <div class="section-header-row">
-        <div class="section-title-sm">Basement &amp; Water Intrusion</div>
-        <a href="#" class="see-all">See all →</a>
-      </div>
-      <div class="article-grid-2">
-        <a href="basement-water-intrusion-guide.html" class="art-card">
-          <div class="art-card-img p3">💧</div>
-          <div class="art-card-body">
-            <span class="art-tag diagnosis">Diagnosis</span>
-            <div class="art-card-title">The Complete Basement Water Intrusion Guide</div>
-            <div class="art-card-excerpt">How to correctly diagnose whether you're fighting surface water or groundwater pressure — because the solutions are completely different.</div>
-            <div class="art-card-meta"><strong>C.M.</strong> <span class="dot"></span> 25 min read</div>
-          </div>
-        </a>
-        <a href="#" class="art-card">
-          <div class="art-card-img p4">🧱</div>
-          <div class="art-card-body">
-            <span class="art-tag diagnosis">Diagnosis</span>
-            <div class="art-card-title">Bowing Basement Walls: Causes, Severity, and Repair Options</div>
-            <div class="art-card-excerpt">Carbon fiber, steel beams, wall anchors — what each solution is for and when it applies.</div>
-            <div class="art-card-meta"><strong>C.M.</strong> <span class="dot"></span> 11 min read</div>
-          </div>
-        </a>
-      </div>
+  <!-- AD 2 -->
+  <div class="inline-ad">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">728 &times; 90 &mdash; Leaderboard</div>
+  </div>
+
+  <!-- CRAWLSPACE -->
+  <section class="art-section" aria-label="Crawlspace guides">
+    <div class="sec-head">
+      <h2 class="sec-h2"><span class="sec-dot"></span> Crawlspace</h2>
+      <a href="foundation-crawlspace.html" class="see-all">All 2 guides &#8594;</a>
     </div>
-
-    <!-- SETTLEMENT & STRUCTURAL -->
-    <div class="articles-section">
-      <div class="section-header-row">
-        <div class="section-title-sm">Settlement &amp; Structural</div>
-        <a href="#" class="see-all">See all →</a>
-      </div>
-      <div class="article-list">
-        <a href="#" class="art-list-item">
-          <div class="art-list-num">01</div>
-          <div class="art-list-content">
-            <div class="art-list-title">Helical Piers vs Push Piers: Which Does Your Foundation Need?</div>
-            <div class="art-list-meta">C.M. · Settlement &amp; Piers · 10 min read</div>
-          </div>
-          <div class="art-list-arrow">→</div>
-        </a>
-        <a href="#" class="art-list-item">
-          <div class="art-list-num">02</div>
-          <div class="art-list-content">
-            <div class="art-list-title">Doors and Windows Sticking? It Might Be Your Foundation</div>
-            <div class="art-list-meta">C.M. · Settlement &amp; Diagnosis · 8 min read</div>
-          </div>
-          <div class="art-list-arrow">→</div>
-        </a>
-        <a href="#" class="art-list-item">
-          <div class="art-list-num">03</div>
-          <div class="art-list-content">
-            <div class="art-list-title">Sagging Floors: Causes, Diagnosis, and When to Act</div>
-            <div class="art-list-meta">C.M. · Structural Systems · 9 min read</div>
-          </div>
-          <div class="art-list-arrow">→</div>
-        </a>
-        <a href="#" class="art-list-item">
-          <div class="art-list-num">04</div>
-          <div class="art-list-content">
-            <div class="art-list-title">How Trees Near Your Home Affect Foundation Stability</div>
-            <div class="art-list-meta">C.M. · Drainage &amp; Grading · 8 min read</div>
-          </div>
-          <div class="art-list-arrow">→</div>
-        </a>
-      </div>
+    <div class="grid-2" style="margin-bottom:18px;">
+      <a href="foundation-crawlspace-damp.html" class="art-card">
+        <div class="card-stripe"></div>
+        <div class="card-body">
+          <span class="card-tag safety">&#9888; Moisture Risk</span>
+          <div class="card-title">Why Your Crawlspace Is Damp</div>
+          <div class="card-excerpt">A damp crawlspace creates ideal conditions for mold, rot, and pests. The moisture source determines whether you need drainage, encapsulation, or ventilation changes.</div>
+          <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 9 min <span class="card-arrow">&#8594;</span></div>
+        </div>
+      </a>
+      <a href="foundation-crawlspace-musty-smell.html" class="art-card">
+        <div class="card-stripe"></div>
+        <div class="card-body">
+          <span class="card-tag safety">&#9888; Air Quality</span>
+          <div class="card-title">Why Your Crawlspace Smells Musty</div>
+          <div class="card-excerpt">A musty smell rising into living areas signals mold or organic decay below. Stack effect pulls crawlspace air directly into your home — this doesn't stay contained.</div>
+          <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 9 min <span class="card-arrow">&#8594;</span></div>
+        </div>
+      </a>
     </div>
+  </section>
 
-    <!-- PAGINATION -->
-    <div class="pagination">
-      <a href="#" class="page-btn arrow">‹</a>
-      <a href="#" class="page-btn active">1</a>
-      <a href="#" class="page-btn">2</a>
-      <a href="#" class="page-btn">3</a>
-      <span style="color:var(--text-muted);padding:0 4px;">…</span>
-      <a href="#" class="page-btn">6</a>
-      <a href="#" class="page-btn arrow">›</a>
+  <!-- SETTLEMENT & MOVEMENT -->
+  <section class="art-section" aria-label="Settlement and Movement guides">
+    <div class="sec-head">
+      <h2 class="sec-h2"><span class="sec-dot"></span> Settlement &amp; Movement</h2>
+      <a href="foundation-settlement-movement.html" class="see-all">All 7 guides &#8594;</a>
     </div>
-
-  </main>
-
-  <!-- SIDEBAR -->
-  <aside class="sidebar">
-
-    <!-- Quick Help Tool -->
-    <div class="quick-tool">
-      <h4>What's your problem?</h4>
-      <p>Jump straight to the guide you need.</p>
-      <div class="quick-options">
-        <a href="foundation-guide.html" class="quick-opt">
-          <div class="quick-opt-icon">🔍</div>
-          <div class="quick-opt-text">I see a crack</div>
-        </a>
-        <a href="basement-water-intrusion-guide.html" class="quick-opt">
-          <div class="quick-opt-icon">💧</div>
-          <div class="quick-opt-text">Basement has water</div>
-        </a>
-        <a href="structural-integrity-guide.html" class="quick-opt">
-          <div class="quick-opt-icon">🚪</div>
-          <div class="quick-opt-text">Doors and windows sticking</div>
-        </a>
-        <a href="structural-integrity-guide.html" class="quick-opt">
-          <div class="quick-opt-icon">📐</div>
-          <div class="quick-opt-text">Floors are sloping</div>
-        </a>
-        <a href="structural-integrity-guide.html" class="quick-opt">
-          <div class="quick-opt-icon">🧱</div>
-          <div class="quick-opt-text">Wall is bowing inward</div>
-        </a>
-      </div>
+    <div class="grid-3" style="margin-bottom:18px;">
+      <a href="foundation-roofline-sagging.html" class="art-card">
+        <div class="card-stripe critical"></div>
+        <div class="card-body">
+          <span class="card-tag urgent">&#128308; Structural Concern</span>
+          <div class="card-title">Why Your Roofline Is Sagging</div>
+          <div class="card-excerpt">A visible sag in the roofline means rafter failure or load distribution problems in the framing. Early evaluation is critical before the condition progresses.</div>
+          <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 9 min <span class="card-arrow">&#8594;</span></div>
+        </div>
+      </a>
+      <a href="foundation-wall-load-bearing.html" class="art-card">
+        <div class="card-stripe critical"></div>
+        <div class="card-body">
+          <span class="card-tag urgent">&#128308; Engineer First</span>
+          <div class="card-title">Why Your Wall Might Be Load-Bearing</div>
+          <div class="card-excerpt">Before any renovation that removes or modifies a wall, you need to confirm structural status. The field indicators — and warning signs of a compromised load path.</div>
+          <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 9 min <span class="card-arrow">&#8594;</span></div>
+        </div>
+      </a>
+      <a href="foundation-floors-sagging.html" class="art-card">
+        <div class="card-stripe"></div>
+        <div class="card-body">
+          <span class="card-tag safety">&#9888; Structural</span>
+          <div class="card-title">Why Your Floors Are Sagging</div>
+          <div class="card-excerpt">Sagging floors indicate deflection in the framing below — joists, beams, posts, or footings. The location and pattern of the sag points directly to the failing component.</div>
+          <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 9 min <span class="card-arrow">&#8594;</span></div>
+        </div>
+      </a>
     </div>
-
-    <!-- Browse Categories -->
-    <div class="sidebar-card">
-      <h4>All Categories</h4>
-      <ul class="cat-nav-list">
-        <li><a href="category-plumbing.html"><span class="cat-nav-left"><span class="cat-nav-icon">🚿</span> Plumbing</span><span class="cat-count">142</span></a></li>
-        <li><a href="category-electrical.html"><span class="cat-nav-left"><span class="cat-nav-icon">⚡</span> Electrical &amp; Safety</span><span class="cat-count">98</span></a></li>
-        <li><a href="category-hvac.html"><span class="cat-nav-left"><span class="cat-nav-icon">🌡️</span> Heating &amp; Cooling</span><span class="cat-count">87</span></a></li>
-        <li><a href="category-foundation.html" class="active"><span class="cat-nav-left"><span class="cat-nav-icon">🏗️</span> Structure &amp; Foundation</span><span class="cat-count">64</span></a></li>
-        <li><a href="category-maintenance.html"><span class="cat-nav-left"><span class="cat-nav-icon">🔨</span> Home Maintenance</span><span class="cat-count">113</span></a></li>
-        <li><a href="category-general-repair.html"><span class="cat-nav-left"><span class="cat-nav-icon">🏠</span> General Repair</span><span class="cat-count">76</span></a></li>
-      </ul>
+    <div class="art-list">
+      <a href="foundation-doors-windows-sticking.html" class="art-row">
+        <div class="row-num">04</div>
+        <div class="row-body">
+          <div class="row-title">Why Your Doors or Windows Are Sticking</div>
+          <div class="row-meta">C.M. &middot; 9 min read</div>
+        </div>
+        <span class="row-badge watch">Early Warning Sign</span>
+        <div class="row-arrow">&#8594;</div>
+      </a>
+      <a href="foundation-subfloor-soft.html" class="art-row">
+        <div class="row-num">05</div>
+        <div class="row-body">
+          <div class="row-title">Why Your Subfloor Is Soft or Spongy</div>
+          <div class="row-meta">C.M. &middot; 8 min read</div>
+        </div>
+        <span class="row-badge urgent">Investigate Now</span>
+        <div class="row-arrow">&#8594;</div>
+      </a>
+      <a href="foundation-porch-deck-settling.html" class="art-row">
+        <div class="row-num">06</div>
+        <div class="row-body">
+          <div class="row-title">Why Your Porch or Deck Is Settling</div>
+          <div class="row-meta">C.M. &middot; 8 min read</div>
+        </div>
+        <span class="row-badge diy">Diagnose</span>
+        <div class="row-arrow">&#8594;</div>
+      </a>
+      <a href="foundation-walls-ceilings-cracking.html" class="art-row">
+        <div class="row-num">07</div>
+        <div class="row-body">
+          <div class="row-title">Why Your Walls &amp; Ceilings Are Cracking</div>
+          <div class="row-meta">C.M. &middot; 10 min read</div>
+        </div>
+        <span class="row-badge watch">Read the Pattern</span>
+        <div class="row-arrow">&#8594;</div>
+      </a>
     </div>
+  </section>
 
-    <!-- Ad -->
-    <div class="ad-placeholder">
-      <div class="ad-label">Advertisement</div>
-      <div class="ad-size">300 × 250</div>
+  <!-- AD 3 -->
+  <div class="inline-ad">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">728 &times; 90 &mdash; Leaderboard</div>
+  </div>
+
+  <!-- CRACKS & SETTLEMENT -->
+  <section class="art-section" aria-label="Cracks and Settlement guides">
+    <div class="sec-head">
+      <h2 class="sec-h2"><span class="sec-dot"></span> Cracks &amp; Settlement</h2>
+      <a href="foundation-cracks-settlement.html" class="see-all">All 4 guides &#8594;</a>
     </div>
-
-    <!-- Newsletter -->
-    <div class="sidebar-newsletter">
-      <h4>Free expert advice</h4>
-      <p>Foundation guides and seasonal inspection reminders from our 30-year structural specialist.</p>
-      <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0px;background-color:transparent;box-shadow:none;" ></iframe>
+    <div class="grid-2" style="margin-bottom:18px;">
+      <a href="foundation-cracks-walls.html" class="art-card">
+        <div class="card-stripe urgent"></div>
+        <div class="card-body">
+          <span class="card-tag urgent">&#128308; Evaluate Carefully</span>
+          <div class="card-title">Cracks in Foundation Walls</div>
+          <div class="card-excerpt">Foundation cracks range from harmless shrinkage to critical structural failure. Crack orientation, pattern, and displacement tell you which category you're dealing with.</div>
+          <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 10 min <span class="card-arrow">&#8594;</span></div>
+        </div>
+      </a>
+      <a href="foundation-moving.html" class="art-card">
+        <div class="card-stripe urgent"></div>
+        <div class="card-body">
+          <span class="card-tag urgent">&#128308; Active Movement</span>
+          <div class="card-title">Why Your Foundation Is Moving or Shifting</div>
+          <div class="card-excerpt">Active foundation movement requires a different response than historic movement that has stabilized. Here's how to distinguish between them and determine urgency.</div>
+          <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 9 min <span class="card-arrow">&#8594;</span></div>
+        </div>
+      </a>
     </div>
-
-    <!-- Ad -->
-    <div class="ad-placeholder">
-      <div class="ad-label">Advertisement</div>
-      <div class="ad-size">300 × 600</div>
+    <div class="art-list">
+      <a href="foundation-settling-unevenly.html" class="art-row">
+        <div class="row-num">03</div>
+        <div class="row-body">
+          <div class="row-title">Why Your Foundation Is Settling Unevenly</div>
+          <div class="row-meta">C.M. &middot; 9 min read</div>
+        </div>
+        <span class="row-badge watch">Differential Settlement</span>
+        <div class="row-arrow">&#8594;</div>
+      </a>
+      <a href="foundation-seasonal-shifting.html" class="art-row">
+        <div class="row-num">04</div>
+        <div class="row-body">
+          <div class="row-title">Seasonal Foundation Shifting</div>
+          <div class="row-meta">C.M. &middot; 8 min read</div>
+        </div>
+        <span class="row-badge diy">Seasonal vs. Progressive</span>
+        <div class="row-arrow">&#8594;</div>
+      </a>
     </div>
+  </section>
 
-  </aside>
+  <!-- MOST SEARCHED -->
+  <div class="most-searched">
+    <div class="ms-head">Most-Searched Foundation Questions</div>
+    <div class="ms-sub">Long-tail searches that bring people here</div>
+    <div class="ms-grid">
+      <a href="foundation-basement-wet-after-rain.html" class="ms-link">Basement leaks only when it rains hard</a>
+      <a href="foundation-cracks-walls.html" class="ms-link">Horizontal crack in basement wall</a>
+      <a href="foundation-doors-windows-sticking.html" class="ms-link">Door suddenly won't close all the way</a>
+      <a href="foundation-settling-unevenly.html" class="ms-link">House settling on one side</a>
+      <a href="foundation-crawlspace-damp.html" class="ms-link">Crawl space smells after rain</a>
+      <a href="foundation-walls-ceilings-cracking.html" class="ms-link">Diagonal crack at door corner recurring</a>
+      <a href="foundation-seasonal-shifting.html" class="ms-link">Cracks open in winter close in summer</a>
+      <a href="foundation-subfloor-soft.html" class="ms-link">Soft spot in floor near bathroom</a>
+      <a href="foundation-drainage-failure.html" class="ms-link">Water pooling next to foundation</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+  <!-- Emergency CTA -->
+  <div class="emergency-cta">
+    <h4>&#128308; Structural Emergency?</h4>
+    <p>Horizontal foundation cracks with bowing, rapid crack propagation, visible wall deflection, or roofline sagging — these are not watch-and-wait situations.</p>
+    <div class="emergency-links">
+      <a href="foundation-cracks-walls.html" class="em-link">
+        <div class="em-icon">&#9892;</div>
+        <div class="em-text">Horizontal crack in foundation wall</div>
+      </a>
+      <a href="foundation-roofline-sagging.html" class="em-link">
+        <div class="em-icon">&#8659;</div>
+        <div class="em-text">Roofline visibly sagging</div>
+      </a>
+      <a href="foundation-moving.html" class="em-link">
+        <div class="em-icon">&#9888;&#65039;</div>
+        <div class="em-text">Foundation actively moving</div>
+      </a>
+      <a href="foundation-wall-load-bearing.html" class="em-link">
+        <div class="em-icon">&#127959;</div>
+        <div class="em-text">Wall removed without engineering</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Quick Symptom Tool -->
+  <div class="quick-tool">
+    <h4>Find Your Guide</h4>
+    <p>Pick the symptom that matches what you're seeing right now.</p>
+    <div class="quick-options">
+      <a href="foundation-basement-water-walls.html" class="quick-opt">
+        <div class="quick-opt-icon">&#128167;</div>
+        <div class="quick-opt-text">Water in my basement</div>
+      </a>
+      <a href="foundation-cracks-walls.html" class="quick-opt">
+        <div class="quick-opt-icon">&#9892;</div>
+        <div class="quick-opt-text">Cracks in foundation</div>
+      </a>
+      <a href="foundation-floors-sagging.html" class="quick-opt">
+        <div class="quick-opt-icon">&#8659;</div>
+        <div class="quick-opt-text">Floors sagging</div>
+      </a>
+      <a href="foundation-doors-windows-sticking.html" class="quick-opt">
+        <div class="quick-opt-icon">&#128682;</div>
+        <div class="quick-opt-text">Doors sticking</div>
+      </a>
+      <a href="foundation-crawlspace-damp.html" class="quick-opt">
+        <div class="quick-opt-icon">&#127968;</div>
+        <div class="quick-opt-text">Crawlspace problems</div>
+      </a>
+      <a href="foundation-walls-ceilings-cracking.html" class="quick-opt">
+        <div class="quick-opt-icon">&#128683;</div>
+        <div class="quick-opt-text">Walls or ceilings cracking</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Browse Categories -->
+  <div class="sidebar-card">
+    <h4>All Categories</h4>
+    <ul class="cat-nav-list">
+      <li><a href="category-plumbing.html"><span class="cat-nav-left"><span class="cat-nav-icon">&#128703;</span> Plumbing</span><span class="cat-count">27</span></a></li>
+      <li><a href="category-electrical.html"><span class="cat-nav-left"><span class="cat-nav-icon">&#9889;</span> Electrical &amp; Safety</span><span class="cat-count">23</span></a></li>
+      <li><a href="category-hvac.html"><span class="cat-nav-left"><span class="cat-nav-icon">&#127777;</span> Heating &amp; Cooling</span><span class="cat-count">&#8212;</span></a></li>
+      <li><a href="category-foundation.html" class="active"><span class="cat-nav-left"><span class="cat-nav-icon">&#127959;</span> Structure &amp; Foundation</span><span class="cat-count">19</span></a></li>
+      <li><a href="category-maintenance.html"><span class="cat-nav-left"><span class="cat-nav-icon">&#128296;</span> Home Maintenance</span><span class="cat-count">&#8212;</span></a></li>
+      <li><a href="category-general-repair.html"><span class="cat-nav-left"><span class="cat-nav-icon">&#127968;</span> General Repair</span><span class="cat-count">&#8212;</span></a></li>
+    </ul>
+  </div>
+
+  <!-- Ad -->
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <!-- Newsletter -->
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>Foundation maintenance guides and seasonal inspection reminders from our structural specialist.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <!-- Ad -->
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+
+</aside>
 </div>
 
-<!-- FOOTER -->
 <div class="footer-nav">
   <div class="inner">
     <a href="category-plumbing.html">Plumbing</a>
@@ -989,7 +737,7 @@
 </div>
 <footer>
   <div class="footer-bottom">
-    <span>© 2025 HomeownersRepairGuide.com · All rights reserved</span>
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
     <div>
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
