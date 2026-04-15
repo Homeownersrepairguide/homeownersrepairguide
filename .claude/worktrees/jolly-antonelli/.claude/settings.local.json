@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed -i 's|<a href=\"#\">Fixtures \\\\&amp; Faucets</a>|<a href=\"plumbing-fixtures-faucets.html\">Fixtures \\\\&amp; Faucets</a>|g' dripping-faucet.html sink-tub-diverter-not-working.html toilet-keeps-running.html toilet-leaks-around-base.html toilet-wont-flush-properly.html)",
+      "Bash(sed -i 's|<a href=\"#\">Water Heaters</a>|<a href=\"plumbing-water-heaters.html\">Water Heaters</a>|g' hot-water-smells-rotten-eggs.html water-heater-leaking.html water-heater-rumbling-noise.html why-you-have-no-hot-water.html)",
+      "Bash(sed -i 's|<a href=\"#\">Pipes \\\\&amp; Supply</a>|<a href=\"plumbing-pipes-supply.html\">Pipes \\\\&amp; Supply</a>|g' pipes-banging-knocking.html pipes-leaking.html pipes-freeze-burst.html)",
+      "Bash(sed -i 's|<a href=\"#\">Water Pressure</a>|<a href=\"plumbing-water-pressure.html\">Water Pressure</a>|g' hot-water-pressure-low.html low-water-pressure.html shower-low-hot-water-pressure.html)",
+      "Bash(xargs sed:*)",
+      "Bash(git -C \"C:/Users/andre/OneDrive/Documents/GitHub/homeownersrepairguide\" add -A)",
+      "Bash(git -C \"C:/Users/andre/OneDrive/Documents/GitHub/homeownersrepairguide\" commit -m \"fix newsletter nav button\")",
+      "Bash(git -C \"C:/Users/andre/OneDrive/Documents/GitHub/homeownersrepairguide\" push origin main)"
+    ]
+  }
+}
