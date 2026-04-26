@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Furnace or Air Handler Makes Screeching or Squealing Sounds | HomeownersRepairGuide.com</title>
+<meta name="description" content="Screeching and squealing from your HVAC system are friction warnings — not normal sounds. How the pitch behaves tells you exactly which rotating component is failing and how urgently.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-screeching-squealing.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-screeching-squealing.html">
+<meta property="og:title" content="Why Your Furnace or Air Handler Makes Screeching or Squealing Sounds | HomeownersRepairGuide.com">
+<meta property="og:description" content="Whether the screech fades at startup, stays constant, or rises with airflow demand tells you exactly which component is failing. Here's how to read the pattern.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --belt:#b07800;--belt-light:#fff8e6;
+  --bearing:#c0402a;--bearing-light:#fde8e8;
+  --inducer:#5a2a7a;--inducer-light:#f0e8f5;
+  --airflow:#2a7a5a;--airflow-light:#e8f5f0;
+  --critical:#7a1010;--critical-light:#f5e0e0;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Screech & Squeal Pattern Locator */
+.pattern-locator{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.pl-header{background:var(--navy);padding:18px 22px;}
+.pl-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.pl-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.pl-legend{display:flex;gap:12px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.pl-leg{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;}
+.pl-leg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.pl-leg.belt{color:var(--belt);}.pl-leg.belt .pl-leg-dot{background:var(--belt);}
+.pl-leg.bearing{color:var(--bearing);}.pl-leg.bearing .pl-leg-dot{background:var(--bearing);}
+.pl-leg.inducer{color:var(--inducer);}.pl-leg.inducer .pl-leg-dot{background:var(--inducer);}
+.pl-leg.airflow{color:var(--airflow);}.pl-leg.airflow .pl-leg-dot{background:var(--airflow);}
+/* Pattern rows */
+.pl-rows{display:flex;flex-direction:column;}
+.pl-row{display:grid;grid-template-columns:190px 1fr;border-bottom:1px solid var(--gray-light);}
+.pl-row:last-child{border-bottom:none;}
+.pl-row.critical-row{border:2px solid var(--critical);}
+.pl-sound{padding:14px 13px;background:var(--cream-dark);border-right:1px solid var(--gray-light);display:flex;flex-direction:column;justify-content:center;}
+.pl-sound-icon{font-size:22px;margin-bottom:5px;}
+.pl-sound-label{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:3px;line-height:1.3;}
+.pl-sound-sub{font-size:11px;color:var(--text-muted);line-height:1.4;}
+/* Waveform viz */
+.pl-wave{display:flex;align-items:flex-end;gap:2px;height:18px;margin-bottom:6px;}
+.pl-bar{border-radius:1px;background:var(--navy);opacity:0.5;}
+.pl-content{padding:13px 15px;display:flex;flex-direction:column;gap:8px;}
+.pl-cause-row{display:flex;gap:9px;align-items:flex-start;}
+.pl-cause-tag{font-size:10px;font-weight:700;padding:3px 7px;border-radius:20px;flex-shrink:0;white-space:nowrap;margin-top:2px;}
+.pl-cause-tag.belt{background:var(--belt-light);color:var(--belt);}
+.pl-cause-tag.bearing{background:var(--bearing-light);color:var(--bearing);}
+.pl-cause-tag.inducer{background:var(--inducer-light);color:var(--inducer);}
+.pl-cause-tag.airflow{background:var(--airflow-light);color:var(--airflow);}
+.pl-cause-tag.critical{background:var(--critical-light);color:var(--critical);}
+.pl-cause-text{font-size:12px;color:var(--text-body);line-height:1.5;}
+.pl-urgency{font-size:11px;font-weight:700;padding:3px 8px;border-radius:2px;display:inline-block;margin-top:4px;}
+.belt-row .pl-urgency{background:var(--belt-light);color:var(--belt);}
+.bearing-row .pl-urgency{background:var(--bearing-light);color:var(--bearing);}
+.inducer-row .pl-urgency{background:var(--inducer-light);color:var(--inducer);}
+.airflow-row .pl-urgency{background:var(--airflow-light);color:var(--airflow);}
+.critical-row .pl-urgency{background:var(--critical-light);color:var(--critical);}
+.pl-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.pl-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.pl-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.pl-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Component detail cards */
+.component-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.comp-card{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.comp-head{padding:12px 15px;display:flex;align-items:center;gap:9px;}
+.comp-head.belt{background:var(--belt);}
+.comp-head.bearing{background:var(--bearing);}
+.comp-head.inducer{background:var(--inducer);}
+.comp-head.airflow{background:var(--airflow);}
+.comp-icon{font-size:17px;color:var(--white);}
+.comp-title{font-size:13px;font-weight:700;color:var(--white);}
+.comp-body{background:var(--white);border:1px solid var(--gray-light);border-top:none;padding:13px 15px;}
+.comp-desc{font-size:12px;color:var(--text-body);line-height:1.55;margin-bottom:8px;}
+.comp-action{font-size:11px;font-weight:700;padding:3px 8px;border-radius:2px;display:inline-block;}
+.comp-card.belt .comp-action{background:var(--belt-light);color:var(--belt);}
+.comp-card.bearing .comp-action{background:var(--bearing-light);color:var(--bearing);}
+.comp-card.inducer .comp-action{background:var(--inducer-light);color:var(--inducer);}
+.comp-card.airflow .comp-action{background:var(--airflow-light);color:var(--airflow);}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--belt-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--bearing-light);border:1px solid #e08080;}
+.callout-box.tip{background:var(--airflow-light);border:1px solid #80c0a0;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--belt);}
+.callout-box.alert .callout-label{color:var(--bearing);}
+.callout-box.tip .callout-label{color:var(--airflow);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--belt);}.sev-item.mod .sev-label{color:var(--belt);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--critical);}.sev-item.crit .sev-label{color:var(--critical);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--critical);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--bearing);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--bearing);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.component-cards{grid-template-columns:1fr;}.pl-row{grid-template-columns:1fr;}.pl-sound{border-right:none;border-bottom:1px solid var(--gray-light);}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-noises.html">HVAC Noises</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Furnace or Air Handler Makes Screeching or Squealing Sounds</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">HVAC Noises</span>
+  </div>
+
+  <h1 class="article-title">Why Your Furnace or Air Handler Makes Screeching or Squealing Sounds</h1>
+  <p class="article-subtitle">Screeching and squealing are friction warnings from rotating components &#8212; not normal operating sounds. Blower bearings, drive belts, the inducer motor, and blower wheels all produce distinct high-pitched patterns when they&#8217;re failing. How the pitch behaves tells you which one and how urgently it needs attention.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Every screech or squeal is a friction warning.</strong> Rotating components in HVAC systems &#8212; blower motors, inducer motors, and belt-driven assemblies &#8212; produce high-pitched sounds when bearings dry out, belts slip, or wheels contact their housings. None of these sounds are normal.</li>
+        <li>Startup-only squeal that fades within minutes: belt slip or early bearing dryness. Monitor and schedule evaluation soon.</li>
+        <li>Constant screech throughout operation: advanced bearing wear or blower wheel contact. Service needed promptly &#8212; component is approaching seizure.</li>
+        <li>Pitch that rises as airflow demand increases: blower overspeed from high static pressure. Check filter first &#8212; a clogged filter raises system static pressure and forces the motor to work harder.</li>
+        <li>Sharp whine specifically from the inducer location (separate from the main blower): inducer bearing failure. Do not delay &#8212; inducer failure compromises combustion safety in gas furnaces.</li>
+        <li>Burning or rubber odor accompanying any screech: shut down the system immediately. Active friction overheating is occurring.</li>
+      </ul>
+    </div>
+
+    <h2 id="locator">Screech &amp; Squeal Pattern Locator</h2>
+    <p>Match the sound behavior to the pattern below. Each pattern points to a specific rotating component and the urgency of the intervention needed.</p>
+
+    <div class="pattern-locator">
+      <div class="pl-header">
+        <h3>What Does the Screech or Squeal Sound Like?</h3>
+        <p>Focus on when it occurs, whether it fades or stays, and whether the pitch changes with fan speed or airflow. These three observations identify the component.</p>
+      </div>
+      <div class="pl-legend">
+        <div class="pl-leg belt"><span class="pl-leg-dot"></span>Belt or Drive</div>
+        <div class="pl-leg bearing"><span class="pl-leg-dot"></span>Motor Bearing</div>
+        <div class="pl-leg inducer"><span class="pl-leg-dot"></span>Inducer Motor</div>
+        <div class="pl-leg airflow"><span class="pl-leg-dot"></span>Airflow / Static Pressure</div>
+      </div>
+
+      <div class="pl-rows">
+
+        <div class="pl-row belt-row">
+          <div class="pl-sound">
+            <div class="pl-sound-icon">&#9654;&#8230;&#128263;</div>
+            <div class="pl-wave">
+              <div class="pl-bar" style="width:5px;height:14px;"></div>
+              <div class="pl-bar" style="width:5px;height:16px;"></div>
+              <div class="pl-bar" style="width:5px;height:10px;"></div>
+              <div class="pl-bar" style="width:5px;height:6px;opacity:0.3;"></div>
+              <div class="pl-bar" style="width:5px;height:4px;opacity:0.15;"></div>
+            </div>
+            <div class="pl-sound-label">Squeal at Startup, Then Fades</div>
+            <div class="pl-sound-sub">High pitch when fan first starts, quiets after 1&#8211;3 minutes</div>
+          </div>
+          <div class="pl-content">
+            <div class="pl-cause-row">
+              <div class="pl-cause-tag belt">&#128257; Belt Slip</div>
+              <div class="pl-cause-text"><strong>A loose or glazed drive belt slipping on the motor pulley at startup.</strong> Before the belt warms and grips, it squeals as it slips. Once warm, friction increases enough to stop the slip &#8212; and the squeal fades. The belt is stretched or glazed. On modern direct-drive blowers this cause doesn&#8217;t apply &#8212; belt systems are found in older furnaces and some commercial air handlers.</div>
+            </div>
+            <div class="pl-cause-row">
+              <div class="pl-cause-tag bearing">&#9881;&#65039; Early Bearing Dryness</div>
+              <div class="pl-cause-text"><strong>Motor bearings that need lubrication squeal when cold, then quiet as heat reduces friction slightly.</strong> The squeal-then-fade pattern is characteristic of early bearing wear &#8212; not the end stage. This is the warning stage. Address it now before it becomes a constant screech indicating imminent failure.</div>
+            </div>
+            <div class="pl-urgency">Schedule evaluation soon &#8212; not yet an emergency but deteriorating</div>
+          </div>
+        </div>
+
+        <div class="pl-row bearing-row critical-row">
+          <div class="pl-sound">
+            <div class="pl-sound-icon">&#128308;&#127925;</div>
+            <div class="pl-wave">
+              <div class="pl-bar" style="width:5px;height:16px;"></div>
+              <div class="pl-bar" style="width:5px;height:16px;"></div>
+              <div class="pl-bar" style="width:5px;height:16px;"></div>
+              <div class="pl-bar" style="width:5px;height:16px;"></div>
+              <div class="pl-bar" style="width:5px;height:16px;"></div>
+            </div>
+            <div class="pl-sound-label">Constant High-Pitched Screech Throughout</div>
+            <div class="pl-sound-sub">Loud continuous screech that does not fade &#8212; present the entire time the fan runs</div>
+          </div>
+          <div class="pl-content">
+            <div class="pl-cause-row">
+              <div class="pl-cause-tag bearing">&#9881;&#65039; Advanced Bearing Failure</div>
+              <div class="pl-cause-text"><strong>Bearings that have progressed from dry to metal-on-metal contact produce a constant, loud screech that does not fade with warmup.</strong> The bearing race is failing. This is the end stage before seizure. When a blower motor bearing seizes, the blower wheel stops, airflow drops to zero, the heat exchanger overheats on a furnace, and the AC compressor is unprotected from refrigerant floodback. Do not continue operating.</div>
+            </div>
+            <div class="pl-cause-row">
+              <div class="pl-cause-tag bearing">&#128268; Blower Wheel Contact</div>
+              <div class="pl-cause-text"><strong>A blower wheel that has shifted on its shaft contacts the scroll housing, producing a constant metallic screech or scraping sound.</strong> Often combined with reduced airflow. Can be caused by a loose set screw on the wheel hub or a bent wheel from debris impact. Distinct from bearing failure &#8212; the sound may vary slightly with speed.</div>
+            </div>
+            <div class="pl-urgency">&#9888; Shut down or schedule same-day service &#8212; seizure risk</div>
+          </div>
+        </div>
+
+        <div class="pl-row airflow-row">
+          <div class="pl-sound">
+            <div class="pl-sound-icon">&#8593;&#127925;</div>
+            <div class="pl-wave">
+              <div class="pl-bar" style="width:5px;height:6px;"></div>
+              <div class="pl-bar" style="width:5px;height:9px;"></div>
+              <div class="pl-bar" style="width:5px;height:12px;"></div>
+              <div class="pl-bar" style="width:5px;height:15px;"></div>
+              <div class="pl-bar" style="width:5px;height:18px;"></div>
+            </div>
+            <div class="pl-sound-label">Pitch Rises With Airflow Demand</div>
+            <div class="pl-sound-sub">Gets higher or louder when thermostat calls, louder with more registers closed</div>
+          </div>
+          <div class="pl-content">
+            <div class="pl-cause-row">
+              <div class="pl-cause-tag airflow">&#128268; Blower Overspeed from High Static Pressure</div>
+              <div class="pl-cause-text"><strong>ECM blower motors maintain airflow by increasing speed as static pressure rises.</strong> A clogged filter, closed registers, or collapsed duct dramatically raises system static pressure &#8212; and the ECM motor responds by spinning faster to compensate. The screech or whine is the motor overspinning beyond its designed operating range. Check the filter first. Open all registers. If the pitch drops, static pressure was the cause.</div>
+            </div>
+            <div class="pl-urgency">Check filter and registers before calling &#8212; may self-resolve</div>
+          </div>
+        </div>
+
+        <div class="pl-row inducer-row">
+          <div class="pl-sound">
+            <div class="pl-sound-icon">&#128268;&#9889;</div>
+            <div class="pl-wave">
+              <div class="pl-bar" style="width:5px;height:12px;"></div>
+              <div class="pl-bar" style="width:5px;height:14px;"></div>
+              <div class="pl-bar" style="width:5px;height:12px;"></div>
+              <div class="pl-bar" style="width:5px;height:14px;"></div>
+              <div class="pl-bar" style="width:5px;height:12px;"></div>
+            </div>
+            <div class="pl-sound-label">Sharp Whine From Inducer Location</div>
+            <div class="pl-sound-sub">High-pitched whine specifically at the beginning of each heating cycle, from the small motor above or beside the burner</div>
+          </div>
+          <div class="pl-content">
+            <div class="pl-cause-row">
+              <div class="pl-cause-tag inducer">&#128293; Inducer Motor Bearing Failure</div>
+              <div class="pl-cause-text"><strong>The draft inducer is a small motor that runs at the start of each heating cycle to establish combustion draft.</strong> When its bearings begin to fail, it produces a sharp high-frequency whine that is distinct from the main blower &#8212; occurring before the main blower starts. Inducer bearing failure is particularly urgent in gas furnaces because a seized inducer stops combustion venting, creating a carbon monoxide risk. This is a prompt-service situation.</div>
+            </div>
+            <div class="pl-urgency">&#9888; Prompt service required &#8212; combustion safety risk if inducer fails</div>
+          </div>
+        </div>
+
+        <div class="pl-row belt-row" style="border-bottom:none;">
+          <div class="pl-sound">
+            <div class="pl-sound-icon">&#9889;&#127925;</div>
+            <div class="pl-wave">
+              <div class="pl-bar" style="width:5px;height:8px;"></div>
+              <div class="pl-bar" style="width:5px;height:16px;"></div>
+              <div class="pl-bar" style="width:5px;height:8px;"></div>
+              <div class="pl-bar" style="width:5px;height:16px;"></div>
+              <div class="pl-bar" style="width:5px;height:8px;"></div>
+            </div>
+            <div class="pl-sound-label">Sudden New Screech After Filter Change</div>
+            <div class="pl-sound-sub">Screech began immediately or shortly after a filter replacement that wasn&#8217;t there before</div>
+          </div>
+          <div class="pl-content">
+            <div class="pl-cause-row">
+              <div class="pl-cause-tag airflow">&#128268; Wrong Filter MERV Rating</div>
+              <div class="pl-cause-text"><strong>A high-MERV filter (MERV 13+) installed in a system designed for MERV 8 dramatically increases static pressure.</strong> The ECM blower compensates by overspeeding &#8212; producing the high-pitched whine or screech. Replace with the correct filter for the system. The manufacturer&#8217;s recommended MERV rating is typically on the blower door label.</div>
+            </div>
+            <div class="pl-cause-row">
+              <div class="pl-cause-tag belt">&#128268; Filter Panel Gasket or Housing Vibration</div>
+              <div class="pl-cause-text"><strong>A filter installed slightly misaligned can allow high-velocity air to pass around the edges, creating a whistle or squeal from turbulent air movement.</strong> Check that the filter is fully seated with no gaps. A slightly warped filter or damaged filter frame can produce surprisingly loud whistle-type sounds.</div>
+            </div>
+            <div class="pl-urgency">Check filter MERV rating and seating before calling</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="pl-footer">
+        <div class="pl-footer-icon">&#128268;</div>
+        <div>
+          <h4>The Fan-Only Isolation Test</h4>
+          <p>Switch the thermostat to Fan Only (blower runs, no heating or cooling). Does the screech occur? If yes &#8212; the sound is from the main blower motor or wheel. If the screech only occurs at the start of a heat call (before the main blower starts) &#8212; the inducer motor is the source. This separation takes 60 seconds and tells you which motor to report to the technician.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="components">The Four Rotating Components That Screech</h2>
+
+    <div class="component-cards">
+      <div class="comp-card belt">
+        <div class="comp-head belt">
+          <div class="comp-icon">&#128257;</div>
+          <div class="comp-title">Drive Belt (Older Systems)</div>
+        </div>
+        <div class="comp-body">
+          <div class="comp-desc">Belt-driven blowers use a rubber V-belt between the motor pulley and blower pulley. As the belt ages, it stretches and glazes &#8212; losing grip. A loose belt slips at startup (squealing) and can snap without warning. Belt-drive systems are found in furnaces and air handlers typically older than 15&#8211;20 years. A snapped belt produces sudden complete airflow loss.</div>
+          <div class="comp-action">Inspect belt condition; schedule replacement if glazed or cracked</div>
+        </div>
+      </div>
+      <div class="comp-card bearing">
+        <div class="comp-head bearing">
+          <div class="comp-icon">&#9881;&#65039;</div>
+          <div class="comp-title">Blower Motor Bearings</div>
+        </div>
+        <div class="comp-body">
+          <div class="comp-desc">Modern direct-drive blower motors use sealed bearings that require no external lubrication. Over time (typically 10&#8211;20 years) these bearings dry out internally and begin producing the startup squeal, then the constant screech of metal-on-metal contact. Once in the constant-screech stage, seizure can occur within days or weeks. Motor replacement is the repair &#8212; bearings in sealed motors are not separately serviceable.</div>
+          <div class="comp-action">Schedule motor replacement &#8212; do not delay past constant screech stage</div>
+        </div>
+      </div>
+      <div class="comp-card inducer">
+        <div class="comp-head inducer">
+          <div class="comp-icon">&#128293;</div>
+          <div class="comp-title">Draft Inducer Motor</div>
+        </div>
+        <div class="comp-body">
+          <div class="comp-desc">The inducer motor is a small, high-speed motor that creates negative pressure in the heat exchanger before each heating cycle. It runs at higher RPM than the main blower and is therefore subject to earlier bearing wear. Because it controls combustion venting in gas furnaces, a failed inducer doesn&#8217;t just cause discomfort &#8212; it prevents safe operation. The pressure switch will not close without draft, stopping ignition.</div>
+          <div class="comp-action">Prompt replacement &#8212; combustion safety depends on inducer function</div>
+        </div>
+      </div>
+      <div class="comp-card airflow">
+        <div class="comp-head airflow">
+          <div class="comp-icon">&#128268;</div>
+          <div class="comp-title">ECM Blower Overspeed</div>
+        </div>
+        <div class="comp-body">
+          <div class="comp-desc">Modern ECM (electronically commutated motor) blowers maintain a target airflow by varying speed. When static pressure is high &#8212; from a clogged filter, wrong MERV rating, or closed registers &#8212; the motor spins faster than designed to maintain airflow. This overspeed produces a high-pitched whine or screech that is not from friction but from the motor operating outside its designed speed range. It will stop when static pressure is normalized.</div>
+          <div class="comp-action">Replace filter with correct MERV; open registers; recheck</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box alert">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Lubrication Does Not Fix Bearing Failure</div>
+        <div class="callout-text">A common homeowner response to screeching is to spray lubricant into the motor or blower assembly. On sealed modern motors, there is no lubrication port &#8212; the bearings are sealed and inaccessible. On older oiling-port motors, lubrication may provide temporary relief but does not reverse bearing wear. If bearings are in the constant-screech stage, lubrication may quiet the noise for days while the bearing continues to deteriorate internally. The sound returning &#8212; sooner each time &#8212; is a warning that seizure is approaching.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Brief startup squeal that fully fades. Airflow normal. Schedule evaluation within the month.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Recurring squeal that fades but returns frequently. Pitch changing with demand. Service this week.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Persistent screech with reduced airflow. Inducer whine. Service promptly &#8212; component approaching failure.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Constant screech, burning odor, breaker trips, or airflow loss. Shut down. Same-day service required.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The fade test is the first thing I do with a screeching complaint. Does it fade after a few minutes? That&#8217;s early &#8212; belt slip or bearing warmup. Does it stay constant? That&#8217;s late-stage bearing failure &#8212; I&#8217;m ordering a motor before I leave the driveway. The one I take most seriously is the inducer whine, because homeowners don&#8217;t always know what they&#8217;re hearing. It&#8217;s a different, higher-pitched sound that only happens at the very beginning of a heat call &#8212; before the main blower starts. When I hear that, I&#8217;m thinking about what happens when that inducer seizes mid-winter on a cold night. No draft, pressure switch won&#8217;t close, furnace won&#8217;t light. And if it fails in a way that allows partial combustion with inadequate draft &#8212; that&#8217;s a CO situation. I don&#8217;t leave those calls without a replacement scheduled or a red-tag. The filter MERV issue is the one that surprises homeowners most &#8212; they put in a better filter thinking they&#8217;re doing the system a favor and now the blower sounds like a turbine. Check your filter&#8217;s MERV rating against the sticker on your blower door."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Run the fan-only test &#8212; does the screech occur with no heating or cooling active? (blower source) or only at start of heat calls? (inducer source)</li>
+          <li>Note whether the pitch fades or stays constant &#8212; fading = early warning; constant = urgent</li>
+          <li>Note whether pitch changes with airflow demand or register positions</li>
+          <li>Replace the filter and check MERV rating against the blower door label</li>
+          <li>Verify all supply registers are fully open</li>
+          <li>Note any burning, rubber, or metallic odor accompanying the sound</li>
+          <li>On older belt-drive systems: visually inspect the belt for cracking or glazing (power off first)</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Any constant screech that does not fade &#8212; advanced bearing failure, seizure risk</li>
+          <li>Any screech accompanied by burning odor &#8212; shut down immediately</li>
+          <li>Inducer motor whine &#8212; combustion safety depends on inducer function</li>
+          <li>Blower motor bearing inspection, lubrication (where applicable), or replacement</li>
+          <li>Belt tension measurement, alignment, and replacement</li>
+          <li>Blower wheel removal, inspection, and set-screw tightening</li>
+          <li>Static pressure measurement to confirm ECM overspeed diagnosis</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My furnace has squealed at startup for years and always fades. Should I be worried?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; the fact that it&#8217;s been years of startup squeal that fades means one of two things: either you have an older belt-driven blower with a belt that is progressively glazing and will eventually snap, or you have a direct-drive motor with bearings that have been in the early-stage dryness phase for a long time and are slowly progressing toward failure. The key question is: has the squeal duration gotten longer over time, or does the pitch seem higher or louder than it used to be? If the answer is yes to either &#8212; the bearing wear is accelerating. A startup squeal that has been exactly the same duration and volume for 5 years is more stable than one that has grown from 20 seconds of fading to 2 minutes of fading. At minimum, have a technician inspect the motor and belt (if applicable) during the next service visit. If the squeal is getting worse, move that visit up.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I use WD-40 or motor oil to stop a blower motor squealing?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">WD-40 is not a lubricant &#8212; it&#8217;s a water displacer and light solvent that will provide very brief noise reduction and then evaporate, often making the noise worse afterward by cleaning residual lubricant out of the bearing. Do not use it on motor bearings. Standard motor oil is too heavy and can attract contaminants into bearing surfaces. If your motor has oil ports (small rubber-capped holes on the motor housing, typically found on older furnace motors), the correct lubricant is SAE 10 or SAE 20 non-detergent electric motor oil &#8212; typically 2&#8211;3 drops per port once per year. Most modern direct-drive motors do not have oil ports &#8212; they use factory-sealed bearings that are not user-serviceable. Attempting to introduce lubricant into a sealed bearing typically damages the seal and accelerates failure. If you can&#8217;t identify clear oil ports on the motor housing, the motor is sealed and should not be lubricated externally.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My heat pump air handler squeals but my neighbor&#8217;s doesn&#8217;t. Why?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Heat pump air handlers use the same blower motor and belt (if applicable) as gas furnace air handlers &#8212; the screeching causes are identical. The difference between your unit and your neighbor&#8217;s is most likely age, maintenance history, and static pressure conditions. Bearings in motors that have received annual lubrication (on oiling-port motors) last significantly longer than those that have never been serviced. Air handlers operating under consistently high static pressure &#8212; from restrictive filters, undersized ductwork, or many closed registers &#8212; run their motors harder and wear bearings faster. It&#8217;s also possible your neighbor&#8217;s unit has already had a motor replaced after an earlier failure. Air handler motor life varies widely from 8 years to over 20 years depending on these conditions. The fact that yours squeals and theirs doesn&#8217;t tells you your unit needs attention &#8212; not that yours is abnormal in a broader sense.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Every screech or squeal is a friction warning from a rotating component. No HVAC system should squeal during normal operation &#8212; even briefly at startup is an early warning, not a normal sound.</li>
+        <li>The fade test separates urgency levels: squeal that fades = early-stage bearing wear or belt slip, schedule evaluation; constant screech = advanced failure, service promptly; constant screech with burning odor = shut down immediately.</li>
+        <li>The fan-only isolation test separates blower motor (screech in fan-only mode) from inducer motor (whine only at start of heat calls before main blower). One minute to run, significant diagnostic value.</li>
+        <li>Pitch that rises as airflow demand increases is ECM blower overspeed from high static pressure. Check filter MERV rating and open all registers before calling for service &#8212; this may self-resolve.</li>
+        <li>Inducer motor whine is the highest-priority screech because inducer failure compromises combustion venting in gas furnaces. Do not delay service on inducer noise.</li>
+        <li>Lubrication does not fix bearing failure in sealed motors &#8212; it provides temporary noise reduction while damage continues internally. Motor replacement is the correct repair for constant-screech stage bearings.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">furnace screeching noise</a>
+      <a href="#" class="tag-pill">air handler squealing</a>
+      <a href="#" class="tag-pill">HVAC blower motor noise</a>
+      <a href="#" class="tag-pill">furnace startup squeal</a>
+      <a href="#" class="tag-pill">inducer motor whine</a>
+      <a href="#" class="tag-pill">blower bearing failure sound</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More HVAC Noise Guides</h3>
+    <div class="related-list">
+      <a href="hvac-normal-sounds-vs-warning.html" class="related-item">
+        <div><div class="related-item-title">Normal HVAC Sounds vs. Warning Noises &#8212; Full Reference</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-noises-dangerous-vs-annoying.html" class="related-item">
+        <div><div class="related-item-title">When HVAC Noises Are Dangerous vs. Just Annoying</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-rattling-vibrating-shaking.html" class="related-item">
+        <div><div class="related-item-title">Why Your HVAC Is Rattling, Vibrating, or Shaking</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-buzzing-humming-noises.html" class="related-item">
+        <div><div class="related-item-title">Why Your HVAC Is Buzzing or Humming</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#locator">Screech &amp; Squeal Pattern Locator</a></li>
+      <li><a href="#components">The Four Components That Screech</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

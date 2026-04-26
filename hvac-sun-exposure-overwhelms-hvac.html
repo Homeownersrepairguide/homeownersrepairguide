@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Sun Exposure and Room Location Overwhelm HVAC Airflow | HomeownersRepairGuide.com</title>
+<meta name="description" content="When a room is hottest in late afternoon or coldest near exterior walls despite adequate airflow, the HVAC system isn't failing — the room's heat load exceeds what any airflow was designed to handle.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-sun-exposure-overwhelms-hvac.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-sun-exposure-overwhelms-hvac.html">
+<meta property="og:title" content="Why Sun Exposure and Room Location Overwhelm HVAC Airflow | HomeownersRepairGuide.com">
+<meta property="og:description" content="When your HVAC works but a room still won't stay comfortable, sun exposure and room location may be the cause — not airflow.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --solar-high:#b05000;--solar-high-light:#fff0e0;
+  --solar-mod:#7a7800;--solar-mod-light:#fafae0;
+  --solar-low:#2a7a2a;--solar-low-light:#eaf5ea;
+  --conductive:#1a3a7a;--conductive-light:#e8f0f8;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Solar & Exposure Load Identifier */
+.exposure-grid{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.eg-header{background:var(--navy);padding:18px 22px;}
+.eg-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.eg-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.eg-legend{display:flex;gap:16px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.eg-leg{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:600;}
+.eg-leg-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.eg-leg.high{color:var(--solar-high);}.eg-leg.high .eg-leg-dot{background:var(--solar-high);}
+.eg-leg.mod{color:var(--solar-mod);}.eg-leg.mod .eg-leg-dot{background:var(--solar-mod);}
+.eg-leg.low{color:var(--solar-low);}.eg-leg.low .eg-leg-dot{background:var(--solar-low);}
+.eg-leg.conductive{color:var(--conductive);}.eg-leg.conductive .eg-leg-dot{background:var(--conductive);}
+/* Room type cards */
+.eg-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-bottom:1px solid var(--gray-light);}
+.eg-card{padding:16px;border-right:1px solid var(--gray-light);}
+.eg-card:last-child{border-right:none;}
+.eg-card:nth-child(n+4){border-top:1px solid var(--gray-light);}
+.eg-card-head{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+.eg-card-icon{font-size:20px;}
+.eg-card-title{font-size:13px;font-weight:700;color:var(--navy);}
+.eg-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:2px;margin-bottom:7px;display:inline-block;}
+.eg-badge.high{background:var(--solar-high-light);color:var(--solar-high);}
+.eg-badge.mod{background:var(--solar-mod-light);color:var(--solar-mod);}
+.eg-badge.low{background:var(--solar-low-light);color:var(--solar-low);}
+.eg-badge.conductive{background:var(--conductive-light);color:var(--conductive);}
+.eg-when{font-size:11px;font-weight:600;color:var(--text-muted);margin-bottom:5px;text-transform:uppercase;letter-spacing:0.06em;}
+.eg-pattern{font-size:12px;color:var(--text-body);line-height:1.5;margin-bottom:8px;}
+.eg-fix{font-size:11px;font-weight:700;padding:3px 8px;border-radius:2px;display:inline-block;}
+.high .eg-fix{background:var(--solar-high-light);color:var(--solar-high);}
+.mod .eg-fix{background:var(--solar-mod-light);color:var(--solar-mod);}
+.low .eg-fix{background:var(--solar-low-light);color:var(--solar-low);}
+.conductive-card .eg-fix{background:var(--conductive-light);color:var(--conductive);}
+/* Timing test */
+.timing-test{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px;margin:24px 0;box-shadow:var(--shadow-card);}
+.tt-head{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.tt-sub{font-size:13px;color:var(--text-muted);margin-bottom:16px;}
+.tt-timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:var(--cream-dark);border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--gray-light);}
+.tt-slot{padding:12px 10px;text-align:center;border-right:1px solid var(--gray-light);}
+.tt-slot:last-child{border-right:none;}
+.tt-time{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-muted);margin-bottom:6px;}
+.tt-icon{font-size:20px;margin-bottom:5px;}
+.tt-label{font-size:11px;font-weight:700;margin-bottom:4px;}
+.tt-slot.solar-peak .tt-label{color:var(--solar-high);}
+.tt-slot.solar-build .tt-label{color:var(--solar-mod);}
+.tt-slot.solar-low .tt-label{color:var(--solar-low);}
+.tt-slot.solar-gone .tt-label{color:var(--hvac);}
+.tt-desc{font-size:10px;color:var(--text-muted);line-height:1.4;}
+.eg-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.eg-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.eg-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.eg-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Solutions table */
+.solutions-table{width:100%;border-collapse:collapse;margin:24px 0;background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.solutions-table th{background:var(--navy);color:var(--white);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;padding:11px 14px;text-align:left;}
+.solutions-table td{padding:12px 14px;font-size:13px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.45;}
+.solutions-table tr:last-child td{border-bottom:none;}
+.solutions-table tr:hover td{background:var(--cream);}
+.sol-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:2px;white-space:nowrap;}
+.sol-badge.high-impact{background:#fff0e0;color:var(--solar-high);}
+.sol-badge.mod-impact{background:var(--solar-mod-light);color:var(--solar-mod);}
+.sol-badge.supplemental{background:var(--hvac-light);color:var(--hvac-dark);}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.alert{background:#fde8e8;border:1px solid #e08080;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.alert .callout-label{color:#c0402a;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:#b07800;}.sev-item.mod .sev-label{color:#b07800;}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:#c0392b;}.sev-item.crit .sev-label{color:#c0392b;}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid #c0392b;}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.eg-cards{grid-template-columns:1fr 1fr;}.tt-timeline{grid-template-columns:1fr 1fr;}.tt-slot:nth-child(2){border-right:none;}.tt-slot:nth-child(n+3){border-top:1px solid var(--gray-light);}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}.eg-cards{grid-template-columns:1fr;}.tt-timeline{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-airflow-comfort.html">Airflow &amp; Comfort</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Sun Exposure Overwhelms HVAC Airflow</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Airflow &amp; Comfort</span>
+  </div>
+
+  <h1 class="article-title">Why Sun Exposure and Room Location Overwhelm HVAC Airflow</h1>
+  <p class="article-subtitle">When a room is hottest in late afternoon despite adequate airflow, the HVAC system isn&#8217;t failing &#8212; the room&#8217;s heat load exceeds what the delivered airflow was designed to handle. The system is correct. The physics of the room are the problem.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>HVAC systems move conditioned air. They do not reduce solar heat gain or conductive loss.</strong> When a room&#8217;s thermal load exceeds what the delivered airflow can offset, no amount of airflow adjustment will make the room comfortable during peak conditions.</li>
+        <li>The diagnostic test is timing: discomfort that follows the sun&#8217;s position &#8212; worst in late afternoon for west-facing rooms, worst at noon for south-facing &#8212; is exposure-driven, not airflow-driven</li>
+        <li>Rooms that cool rapidly after sunset were never an airflow problem &#8212; they were a solar load problem that the system could overcome only when the sun was no longer adding heat</li>
+        <li>Upsizing HVAC equipment is rarely the correct response. The load is a peak-period spike that a larger system would mostly short-cycle around</li>
+        <li>The correct interventions work on the heat source itself &#8212; window treatment, shading, insulation, and air sealing &#8212; not the delivery system</li>
+        <li>Corner rooms and rooms over garages or crawlspaces face a different problem: continuous conductive loss, not solar spikes</li>
+      </ul>
+    </div>
+
+    <h2 id="identifier">Solar &amp; Exposure Load Identifier</h2>
+    <p>Match your room&#8217;s orientation and position to the appropriate category. Each one has a distinct timing pattern, load type, and response strategy.</p>
+
+    <div class="exposure-grid">
+      <div class="eg-header">
+        <h3>Room Orientation &amp; Position Load Guide</h3>
+        <p>Find your room&#8217;s exposure type and read the pattern, peak timing, and what fixes actually work.</p>
+      </div>
+      <div class="eg-legend">
+        <div class="eg-leg high"><span class="eg-leg-dot"></span>High Solar Load &#8212; Peak periods severe</div>
+        <div class="eg-leg mod"><span class="eg-leg-dot"></span>Moderate Solar Load &#8212; Seasonal peaks</div>
+        <div class="eg-leg low"><span class="eg-leg-dot"></span>Lower Solar Load &#8212; Diffuse or seasonal only</div>
+        <div class="eg-leg conductive"><span class="eg-leg-dot"></span>Conductive Load &#8212; Not solar, continuous</div>
+      </div>
+      <div class="eg-cards">
+
+        <div class="eg-card">
+          <div class="eg-card-head"><span class="eg-card-icon">&#9668;&#127774;</span><span class="eg-card-title">West-Facing Room</span></div>
+          <span class="eg-badge high">High Solar Load</span>
+          <div class="eg-when">Worst: 2&#8211;6 PM daily in summer</div>
+          <div class="eg-pattern">Afternoon sun hits the window directly at maximum intensity. Room overheats rapidly in late afternoon and may not recover until after sunset. The worst single-room solar load pattern in most of the US.</div>
+          <div class="eg-fix">Exterior shading &#8212; blinds, awnings, or solar film</div>
+        </div>
+
+        <div class="eg-card">
+          <div class="eg-card-head"><span class="eg-card-icon">&#9660;&#127774;</span><span class="eg-card-title">South-Facing Room</span></div>
+          <span class="eg-badge mod">Moderate Solar Load</span>
+          <div class="eg-when">Worst: Midday, winter through shoulder seasons</div>
+          <div class="eg-pattern">South-facing rooms receive the most total annual solar gain. In winter this can be a heating benefit. In summer, the sun is higher in the sky and overhangs or roof lines may provide natural shading &#8212; the peak load is lower than west-facing.</div>
+          <div class="eg-fix">Overhangs or shading &#8212; evaluate seasonal balance</div>
+        </div>
+
+        <div class="eg-card">
+          <div class="eg-card-head"><span class="eg-card-icon">&#9658;&#127774;</span><span class="eg-card-title">East-Facing Room</span></div>
+          <span class="eg-badge low">Lower Solar Load</span>
+          <div class="eg-when">Worst: Morning, dissipates by midday</div>
+          <div class="eg-pattern">Morning sun is lower intensity than afternoon sun. The room overheats in the morning but the heat load dissipates as the sun moves. HVAC can often recover the room by midday. Lower severity than west-facing exposures.</div>
+          <div class="eg-fix">Morning shading &#8212; lower priority than west-facing</div>
+        </div>
+
+        <div class="eg-card">
+          <div class="eg-card-head"><span class="eg-card-icon">&#8599;&#127963;&#65039;</span><span class="eg-card-title">Corner Room</span></div>
+          <span class="eg-badge high">High Combined Load</span>
+          <div class="eg-when">Worst: Year-round, depending on orientation</div>
+          <div class="eg-pattern">Two exterior walls instead of one doubles the conductive heat exchange surface. A corner room with west and south exposure combines solar gain from two directions. Among the most challenging single-room comfort problems regardless of airflow.</div>
+          <div class="eg-fix">Envelope improvements &#8212; insulation, air sealing, glazing</div>
+        </div>
+
+        <div class="eg-card conductive-card">
+          <div class="eg-card-head"><span class="eg-card-icon">&#127968;</span><span class="eg-card-title">Room Over Garage or Crawlspace</span></div>
+          <span class="eg-badge conductive">Conductive Load</span>
+          <div class="eg-when">Worst: Winter (heat loss through floor)</div>
+          <div class="eg-pattern">The floor is the exterior surface. In winter, heat from the room conducts directly through the floor into the unconditioned garage or crawlspace below. Cold floors are the first symptom. Not a solar problem &#8212; insulating the floor cavity is the correct fix.</div>
+          <div class="eg-fix">Floor cavity insulation &#8212; not airflow</div>
+        </div>
+
+        <div class="eg-card conductive-card">
+          <div class="eg-card-head"><span class="eg-card-icon">&#9650;&#127968;</span><span class="eg-card-title">Room Directly Below Attic</span></div>
+          <span class="eg-badge high">High Radiant Load</span>
+          <div class="eg-when">Worst: Hot summer afternoons</div>
+          <div class="eg-pattern">Attic air can reach 130&#8211;150°F in summer. An under-insulated ceiling radiates this heat continuously into the room below. No amount of supply airflow overcomes a ceiling acting as a radiant heat panel. Attic insulation is the only effective fix.</div>
+          <div class="eg-fix">Attic insulation &#8212; highest single-improvement ROI</div>
+        </div>
+
+      </div>
+
+      <div style="border-top:2px solid var(--gray-light);">
+        <div style="padding:16px 18px;background:var(--cream-dark);border-bottom:1px solid var(--gray-light);">
+          <div style="font-size:12px;font-weight:700;color:var(--navy);margin-bottom:12px;">&#9728;&#65039; The Timing Test &#8212; Is Your Problem Solar-Driven?</div>
+          <div class="tt-timeline">
+            <div class="tt-slot solar-low">
+              <div class="tt-time">Morning</div>
+              <div class="tt-icon">&#9728;&#65039;</div>
+              <div class="tt-label">Rising Load</div>
+              <div class="tt-desc">Solar gain building. East-facing rooms warming. System can usually keep up.</div>
+            </div>
+            <div class="tt-slot solar-build">
+              <div class="tt-time">Midday</div>
+              <div class="tt-icon">&#9728;</div>
+              <div class="tt-label">Peak South</div>
+              <div class="tt-desc">South-facing rooms at peak. Total solar radiation highest. West-facing still building.</div>
+            </div>
+            <div class="tt-slot solar-peak">
+              <div class="tt-time">Afternoon</div>
+              <div class="tt-icon">&#9728;&#127774;</div>
+              <div class="tt-label">Peak West</div>
+              <div class="tt-desc">West-facing rooms at peak. Direct low-angle sun through windows. Most HVAC systems can&#8217;t keep up.</div>
+            </div>
+            <div class="tt-slot solar-gone">
+              <div class="tt-time">Evening</div>
+              <div class="tt-icon">&#127769;</div>
+              <div class="tt-label">Load Drops</div>
+              <div class="tt-desc">Solar gain stops. HVAC recovers the room within 30&#8211;60 min. If this is your pattern &#8212; solar is confirmed.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="eg-footer">
+        <div class="eg-footer-icon">&#128161;</div>
+        <div>
+          <h4>Rapid Recovery After Sunset = Solar Confirmation</h4>
+          <p>A room that is hot and uncomfortable at 5 PM and then comfortable by 8 PM &#8212; without the HVAC doing anything different &#8212; was never an airflow problem. The solar load removed itself when the sun went down. The system was always adequate &#8212; it just couldn&#8217;t overcome peak solar input during the 2&#8211;3 hour worst window.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="solutions">Solutions That Actually Work for Exposure Problems</h2>
+    <p>Effective solutions work on the heat source, not the delivery system. The interventions ranked below address the actual load rather than chasing it with more airflow.</p>
+
+    <table class="solutions-table">
+      <thead>
+        <tr>
+          <th>Intervention</th>
+          <th>Best For</th>
+          <th>Why It Works</th>
+          <th>Impact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Exterior window shading</strong> &#8212; awnings, exterior blinds, overhangs</td>
+          <td>West and south-facing windows</td>
+          <td>Blocks solar radiation before it enters the glass. Far more effective than interior shades, which absorb heat inside the room.</td>
+          <td><span class="sol-badge high-impact">High Impact</span></td>
+        </tr>
+        <tr>
+          <td><strong>Solar control window film</strong></td>
+          <td>West-facing glass, existing windows</td>
+          <td>Reduces solar heat gain by 40&#8211;70% through existing glass without replacing windows. Visible light transmittance varies by product.</td>
+          <td><span class="sol-badge high-impact">High Impact</span></td>
+        </tr>
+        <tr>
+          <td><strong>Attic insulation upgrade</strong></td>
+          <td>Rooms directly below attic</td>
+          <td>Reduces radiant heat transfer from attic to living space. Among the highest single-improvement ROI improvements available in a hot climate home.</td>
+          <td><span class="sol-badge high-impact">High Impact</span></td>
+        </tr>
+        <tr>
+          <td><strong>Floor cavity insulation</strong></td>
+          <td>Rooms over garages or crawlspaces</td>
+          <td>Eliminates conductive heat loss through the floor. Addresses cold floors in winter and heat transfer in summer simultaneously.</td>
+          <td><span class="sol-badge high-impact">High Impact</span></td>
+        </tr>
+        <tr>
+          <td><strong>Interior window treatments</strong> &#8212; cellular shades, blackout blinds</td>
+          <td>Any solar-exposed room</td>
+          <td>Provides some reduction in solar gain but is less effective than exterior shading because heat is already inside the glazing layer. Best combined with film.</td>
+          <td><span class="sol-badge mod-impact">Moderate</span></td>
+        </tr>
+        <tr>
+          <td><strong>Ductless mini-split for affected room</strong></td>
+          <td>Corner rooms, west-facing rooms with extreme load</td>
+          <td>Provides dedicated temperature control independent of the central system. Bypasses the load vs. airflow mismatch entirely with room-specific conditioning.</td>
+          <td><span class="sol-badge supplemental">Supplemental</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Equipment Upsizing Rarely Fixes Solar Load Problems</div>
+        <div class="callout-text">A larger HVAC system delivers more air during normal conditions &#8212; and then short-cycles because the load it was sized for only exists for 2&#8211;3 hours a day. Short-cycling reduces efficiency, worsens humidity control, and reduces comfort in the rest of the house. The solar peak load is too brief and concentrated to justify sizing the entire system around it. Address the solar load at its source instead.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Minor</div></div>
+        <div class="sev-desc">Predictable discomfort during peak sun hours only. Manageable with window coverings. No secondary effects.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Daily discomfort during warmer months. Noticeable energy increase. Window treatments and insulation improvements warranted.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Extended discomfort with condensation, cold surfaces near exterior walls, or occupant health concerns from extreme temperatures.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Moisture damage, mold growth, or freeze risk in conductive-load rooms. Structural material damage from thermal cycling extremes.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"I get called to west-facing rooms constantly in summer. The homeowner is convinced the HVAC is broken because it&#8217;s 85°F in that room while the rest of the house is 72°F. I check the airflow &#8212; it&#8217;s fine. I measure the supply temperature &#8212; the air is conditioned correctly. The problem is that the afternoon sun is pouring through that window with about 200&#8211;300 BTUs per square foot of glass, and no residential HVAC system is designed to overcome that kind of direct solar input in a single room. The correct conversation is: we need exterior shading or solar film on those windows &#8212; not a bigger HVAC system. The hardest part is telling someone their house has a physics problem, not an HVAC problem. But it saves them from spending $8,000 on a new system that will do exactly the same thing with the afternoon sun."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Track which time of day and direction of sun the room is worst &#8212; note whether it improves after sunset</li>
+          <li>Note whether interior rooms stay comfortable while only exterior rooms struggle</li>
+          <li>Check airflow at the register &#8212; if it&#8217;s adequate and equal to other rooms, airflow is not the limiting factor</li>
+          <li>Check whether the room is over a garage, crawlspace, or unconditioned space &#8212; cold floors indicate floor insulation deficiency</li>
+          <li>Evaluate existing window treatments &#8212; are there any exterior shading devices?</li>
+          <li>Install solar window film as a first-step DIY intervention for west-facing windows</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Accurate load calculation to quantify peak solar gain vs. system capacity for the room</li>
+          <li>Infrared thermography to identify insulation gaps and radiant heat transfer paths</li>
+          <li>Window performance assessment (U-value, SHGC rating) for replacement decisions</li>
+          <li>Attic insulation installation &#8212; depth, coverage, and ventilation must be evaluated together</li>
+          <li>Floor cavity insulation installation for rooms over garages or crawlspaces</li>
+          <li>Mini-split installation for rooms where exposure load cannot be adequately reduced</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My west-facing bedroom is 10 degrees hotter than the rest of the house every afternoon. What&#8217;s the most cost-effective first step?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Solar control window film is typically the highest impact, lowest cost first intervention for a west-facing room. A good solar film can reduce heat gain through existing glass by 40&#8211;70% and costs far less than window replacement or a mini-split. Look for film with a Solar Heat Gain Coefficient (SHGC) below 0.25 for maximum heat rejection. Installation is DIY-feasible for most windows. The trade-off is some reduction in visible light transmittance &#8212; darker or more reflective films block more heat but reduce the view quality. If you want to preserve natural light while blocking heat, look for spectrally selective films that block infrared specifically. Exterior shading devices (awnings, exterior blinds) are even more effective but more expensive and require structural attachment. Film is the right starting point for most homeowners.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How do I know if my attic is responsible for my upstairs being hot?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">The simplest field test is to place your hand flat on the ceiling of the hottest upstairs room in late afternoon. If the ceiling feels noticeably warm or hot to the touch, radiant heat transfer from the attic is occurring. A ceiling conducting heat into a room is essentially a radiant heating panel working against your air conditioning. The second indicator is timing: attic-driven heat peaks in late afternoon as the attic accumulates heat throughout the day, and the room remains warm or hot even after the sun goes down because the attic has stored heat that continues radiating through the night. Visit your attic (safely, in the morning before it heats up) and look at insulation depth. The DOE recommendation for most US climates is R-38 to R-60. If your attic insulation is thin, settled, or has gaps around can lights and attic hatches, that is your primary heat source.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can closing the HVAC vent in the hot room and opening others help redistribute cool air?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">No &#8212; this makes the problem worse. Closing the vent in the hot room reduces the already-limited cool air delivery to that room during the time it needs it most. Meanwhile, closing vents increases system static pressure, reducing airflow to other rooms and putting blower strain on the equipment. The hot room stays hot, and now the system is operating under higher pressure. The physics don&#8217;t work in the direction the homeowner is hoping for. The correct response is to add more effective cooling to the room &#8212; either through the envelope (shading, film, insulation) or through supplemental conditioning (mini-split) &#8212; not to restrict airflow to a room already being overwhelmed by solar load.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>HVAC systems move conditioned air &#8212; they do not reduce solar heat gain or conductive heat loss. When a room&#8217;s thermal load exceeds what the delivered airflow can offset, the system is correct and the room&#8217;s physics are the problem.</li>
+        <li>The timing test confirms solar-driven load: discomfort that peaks in late afternoon (west-facing), cools rapidly after sunset, and shows normal airflow at the register is exposure-driven, not airflow-driven.</li>
+        <li>West-facing rooms with large windows are the most severe case in most of the US &#8212; afternoon sun delivers peak solar radiation at the lowest angle, overcoming most residential HVAC capacity for that room during the 2&#8211;3 hour worst window.</li>
+        <li>Effective solutions work on the heat source: exterior shading, solar film, attic insulation, and floor cavity insulation. Not airflow adjustment, not equipment replacement.</li>
+        <li>Equipment upsizing is rarely the correct response &#8212; the load is a brief peak that a larger system would mostly short-cycle around, reducing overall efficiency and comfort elsewhere.</li>
+        <li>Corner rooms, rooms over garages, and rooms below under-insulated attics face conductive or radiant loads that are continuous rather than solar spikes &#8212; the interventions are insulation-focused rather than shading-focused.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">room too hot afternoon sun</a>
+      <a href="#" class="tag-pill">west facing bedroom hot</a>
+      <a href="#" class="tag-pill">HVAC can&#39;t cool one room</a>
+      <a href="#" class="tag-pill">solar heat gain window</a>
+      <a href="#" class="tag-pill">room over garage cold</a>
+      <a href="#" class="tag-pill">attic heat upstairs rooms</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Airflow &amp; Comfort Guides</h3>
+    <div class="related-list">
+      <a href="hvac-airflow-vs-insulation-problem.html" class="related-item">
+        <div><div class="related-item-title">Airflow Problem vs. Insulation Problem</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-upstairs-hotter-colder.html" class="related-item">
+        <div><div class="related-item-title">Why Upstairs Rooms Are Hotter in Summer &amp; Colder in Winter</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-one-room-hot-or-cold.html" class="related-item">
+        <div><div class="related-item-title">Why One Room Is Always Hot or Cold</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-farthest-room-worst-comfort.html" class="related-item">
+        <div><div class="related-item-title">Why the Farthest Room Has the Worst Comfort</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#identifier">Solar &amp; Exposure Load Identifier</a></li>
+      <li><a href="#solutions">Solutions That Work</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

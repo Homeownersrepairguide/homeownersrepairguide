@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Heat Pump Won't Heat | HomeownersRepairGuide.com</title>
+<meta name="description" content="A heat pump that won't heat can fail at six distinct points — outdoor unit power, reversing valve mode, refrigerant flow, airflow, defrost, or balance point. Each step rules out a cause before the next.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-heat-pump-wont-heat.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-heat-pump-wont-heat.html">
+<meta property="og:title" content="Why Your Heat Pump Won't Heat | HomeownersRepairGuide.com">
+<meta property="og:description" content="Six points in the heat delivery chain can each cause 'no heat.' A sequential elimination check identifies which one has failed — and what level of service it needs.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --power:#c0402a;--power-light:#fde8e8;
+  --valve:#b07800;--valve-light:#fff8e6;
+  --refrig:#5a2a7a;--refrig-light:#f0e8f5;
+  --airflow:#2a5a7a;--airflow-light:#e8f0f5;
+  --defrost:#2a7a5a;--defrost-light:#e8f5f0;
+  --balance:#7a5a10;--balance-light:#f5f0e0;
+  --critical:#7a1010;--critical-light:#f5e0e0;
+  --ok:#2a7a2a;--ok-light:#eaf5ea;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Heat Delivery Chain */
+.heat-chain{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.hc-header{background:var(--navy);padding:18px 22px;}
+.hc-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.hc-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+/* Chain steps */
+.hc-chain{display:flex;flex-direction:column;}
+.hc-step{border-bottom:1px solid var(--gray-light);}
+.hc-step:last-child{border-bottom:none;}
+.hc-step-head{display:grid;grid-template-columns:52px 1fr;background:var(--cream-dark);border-bottom:1px solid var(--gray-light);}
+.hc-step-num{display:flex;align-items:center;justify-content:center;padding:12px;border-right:1px solid var(--gray-light);}
+.hc-num-circle{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--white);}
+.hc-step.power-step .hc-num-circle{background:var(--power);}
+.hc-step.valve-step .hc-num-circle{background:var(--valve);}
+.hc-step.refrig-step .hc-num-circle{background:var(--refrig);}
+.hc-step.airflow-step .hc-num-circle{background:var(--airflow);}
+.hc-step.defrost-step .hc-num-circle{background:var(--defrost);}
+.hc-step.balance-step .hc-num-circle{background:var(--balance);}
+.hc-step-title-area{padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.hc-step-title{font-size:13px;font-weight:700;}
+.hc-step.power-step .hc-step-title{color:var(--power);}
+.hc-step.valve-step .hc-step-title{color:var(--valve);}
+.hc-step.refrig-step .hc-step-title{color:var(--refrig);}
+.hc-step.airflow-step .hc-step-title{color:var(--airflow);}
+.hc-step.defrost-step .hc-step-title{color:var(--defrost);}
+.hc-step.balance-step .hc-step-title{color:var(--balance);}
+.hc-step-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:2px;white-space:nowrap;flex-shrink:0;}
+.power-step .hc-step-badge{background:var(--power-light);color:var(--power);}
+.valve-step .hc-step-badge{background:var(--valve-light);color:var(--valve);}
+.refrig-step .hc-step-badge{background:var(--refrig-light);color:var(--refrig);}
+.airflow-step .hc-step-badge{background:var(--airflow-light);color:var(--airflow);}
+.defrost-step .hc-step-badge{background:var(--defrost-light);color:var(--defrost);}
+.balance-step .hc-step-badge{background:var(--balance-light);color:var(--balance);}
+/* Check and failure rows */
+.hc-body{display:grid;grid-template-columns:1fr 1fr;}
+.hc-check{padding:12px 14px;border-right:1px solid var(--gray-light);}
+.hc-fail{padding:12px 14px;}
+.hc-panel-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:5px;}
+.hc-check .hc-panel-label{color:var(--ok);}
+.hc-fail .hc-panel-label{color:var(--power);}
+.hc-panel-text{font-size:12px;color:var(--text-body);line-height:1.5;}
+/* Arrow */
+.hc-arrow{text-align:center;padding:6px;background:var(--cream-dark);font-size:14px;color:var(--gray-mid);border-bottom:1px solid var(--gray-light);}
+.hc-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.hc-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.hc-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.hc-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Emergency heat test box */
+.emheat-box{background:var(--ok-light);border:1px solid #80c080;border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.eh-icon{font-size:20px;flex-shrink:0;margin-top:2px;}
+.eh-title{font-size:12px;font-weight:700;color:var(--ok);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:5px;}
+.eh-text{font-size:14px;color:var(--text-body);line-height:1.6;}
+/* Normal heat pump temps */
+.temp-box{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:18px 20px;margin:24px 0;box-shadow:var(--shadow-card);}
+.tb-head{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+.tb-cols{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.tb-col{background:var(--cream-dark);border-radius:var(--radius);padding:12px 14px;}
+.tb-col-head{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px;}
+.tb-col.normal .tb-col-head{color:var(--ok);}
+.tb-col.concern .tb-col-head{color:var(--power);}
+.tb-items{display:flex;flex-direction:column;gap:4px;}
+.tb-item{font-size:12px;color:var(--text-body);line-height:1.4;display:flex;gap:6px;}
+.tb-item::before{content:'·';font-weight:700;color:var(--gray-mid);flex-shrink:0;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--valve-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--power-light);border:1px solid #e08080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--valve);}
+.callout-box.alert .callout-label{color:var(--power);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--valve);}.sev-item.mod .sev-label{color:var(--valve);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--critical);}.sev-item.crit .sev-label{color:var(--critical);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--critical);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--power);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--power);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.hc-body{grid-template-columns:1fr;}.hc-check{border-right:none;border-bottom:1px solid var(--gray-light);}.hc-step-head{grid-template-columns:44px 1fr;}.tb-cols{grid-template-columns:1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-furnace-heating.html">Furnace &amp; Heating</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Heat Pump Won&#8217;t Heat</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Furnace &amp; Heating</span>
+  </div>
+
+  <h1 class="article-title">Why Your Heat Pump Won&#8217;t Heat</h1>
+  <p class="article-subtitle">Heat pumps move heat from the outdoor air into the home rather than generating it. When they fail to heat, the failure can occur at six distinct points in the heat delivery chain &#8212; from outdoor unit power through the reversing valve, refrigerant circuit, airflow, defrost system, and finally the system&#8217;s outdoor temperature operating range. Each step rules out a cause before the next.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Heat pump air is always cooler than furnace air &#8212; this is normal.</strong> A functioning heat pump delivers air at 85&#8211;95°F at the register, which feels lukewarm compared to furnace heat. Long run times in cold weather are also normal, not a sign of failure.</li>
+        <li>The emergency heat test is the fastest single diagnostic: switch to Emergency Heat only. If the home heats on emergency heat but not on heat pump mode &#8212; the outdoor unit or refrigerant circuit has failed. If emergency heat also fails to heat &#8212; the problem is the indoor blower, filter, or electrical supply.</li>
+        <li>A reversing valve stuck in cooling mode causes the heat pump to actively cool the home while the thermostat calls for heat &#8212; cold air blowing when heat is requested is the signature of this failure.</li>
+        <li>Low refrigerant causes the outdoor coil to run much colder than ambient &#8212; the system runs continuously with little or no heating effect and the outdoor coil may ice up quickly.</li>
+        <li>Below the balance point (typically 25&#8211;35°F for standard heat pumps), the heat pump can&#8217;t extract enough heat from outdoor air alone &#8212; auxiliary heat supplements but the system hasn&#8217;t failed.</li>
+        <li>A smart thermostat installed with the O/B wire on the wrong terminal (O vs. B reversing-valve convention) reverses heat and cool &#8212; heating in cool mode, cooling in heat mode.</li>
+      </ul>
+    </div>
+
+    <div class="emheat-box">
+      <div class="eh-icon">&#9889;</div>
+      <div>
+        <div class="eh-title">Emergency Heat Test &#8212; Do This First</div>
+        <div class="eh-text">Switch the thermostat to <strong>Emergency Heat</strong> (or Auxiliary Heat) mode and set the temperature above the current room temperature. If the home warms up &#8212; the indoor equipment is working and the outdoor unit or refrigerant circuit is the problem. If emergency heat also fails to warm the home &#8212; the fault is the indoor blower, filter, or electrical supply, not the heat pump section. This single test splits the diagnostic tree in half before any panels are opened.</div>
+      </div>
+    </div>
+
+    <h2 id="chain">Heat Delivery Chain &#8212; Six-Step Elimination Check</h2>
+    <p>Work through each step. Stop when you identify the failure. Each step rules out one cause category before proceeding to the next.</p>
+
+    <div class="heat-chain">
+      <div class="hc-header">
+        <h3>Six-Link Heat Delivery Chain</h3>
+        <p>The heat pump must satisfy each condition to deliver heat. A failure at any link stops heat delivery — the chain does not continue past a failed link.</p>
+      </div>
+
+      <div class="hc-chain">
+
+        <!-- Step 1 -->
+        <div class="hc-step power-step">
+          <div class="hc-step-head">
+            <div class="hc-step-num"><div class="hc-num-circle">1</div></div>
+            <div class="hc-step-title-area">
+              <div class="hc-step-title">Outdoor Unit Power &amp; Operation</div>
+              <div class="hc-step-badge">Check breaker &amp; observe unit</div>
+            </div>
+          </div>
+          <div class="hc-body">
+            <div class="hc-check">
+              <div class="hc-panel-label">&#10003; Passing</div>
+              <div class="hc-panel-text">The outdoor unit fan is running. The compressor is humming. The breaker is ON. No ice encasing the coil. Proceed to Step 2.</div>
+            </div>
+            <div class="hc-fail">
+              <div class="hc-panel-label">&#10006; Failure Signs</div>
+              <div class="hc-panel-text">Outdoor unit completely silent with no fan or compressor operation: check the outdoor breaker (often a separate disconnect near the unit or a dedicated breaker in the panel). Tripped breaker that holds on reset = electrical fault requires service. Outdoor unit humming but fan not turning = capacitor or fan motor failure. Coil encased in ice = shut down and call service.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hc-arrow">&#8595;</div>
+
+        <!-- Step 2 -->
+        <div class="hc-step valve-step">
+          <div class="hc-step-head">
+            <div class="hc-step-num"><div class="hc-num-circle">2</div></div>
+            <div class="hc-step-title-area">
+              <div class="hc-step-title">Reversing Valve Mode &#8212; Heat vs. Cool</div>
+              <div class="hc-step-badge">Cold air on heat call = valve stuck</div>
+            </div>
+          </div>
+          <div class="hc-body">
+            <div class="hc-check">
+              <div class="hc-panel-label">&#10003; Passing</div>
+              <div class="hc-panel-text">Supply air from registers feels warmer than room temperature (85&#8211;95°F is normal &#8212; not furnace-hot). The outdoor unit is warm to the touch when running in heat mode. Proceed to Step 3.</div>
+            </div>
+            <div class="hc-fail">
+              <div class="hc-panel-label">&#10006; Failure Signs</div>
+              <div class="hc-panel-text">Supply air is cold or actively cool when heat is requested &#8212; the reversing valve is stuck in the cooling position. Common after smart thermostat installation with O/B wiring reversal, or from a failed reversing valve solenoid. Also check: if thermostat was recently replaced, confirm the O/B terminal matches the manufacturer&#8217;s convention (O = energized in cooling; B = energized in heating).</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hc-arrow">&#8595;</div>
+
+        <!-- Step 3 -->
+        <div class="hc-step refrig-step">
+          <div class="hc-step-head">
+            <div class="hc-step-num"><div class="hc-num-circle">3</div></div>
+            <div class="hc-step-title-area">
+              <div class="hc-step-title">Refrigerant Circuit Integrity</div>
+              <div class="hc-step-badge">Runs but no heating effect</div>
+            </div>
+          </div>
+          <div class="hc-body">
+            <div class="hc-check">
+              <div class="hc-panel-label">&#10003; Passing</div>
+              <div class="hc-panel-text">System heats to setpoint within a reasonable time frame. Outdoor coil frosts normally and defrosts completely. Room temperature rises during operation. Proceed to Step 4.</div>
+            </div>
+            <div class="hc-fail">
+              <div class="hc-panel-label">&#10006; Failure Signs</div>
+              <div class="hc-panel-text">System runs continuously but room temperature doesn&#8217;t rise. Outdoor coil ices very quickly after startup. Air at registers is warmer than outdoor air but not meaningfully warming the home. Low refrigerant causes suction pressure to drop, coil temperature falls far below ambient, and heat extraction collapses. Professional refrigerant gauge test needed. Do not attempt recharge without finding and repairing the leak first.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hc-arrow">&#8595;</div>
+
+        <!-- Step 4 -->
+        <div class="hc-step airflow-step">
+          <div class="hc-step-head">
+            <div class="hc-step-num"><div class="hc-num-circle">4</div></div>
+            <div class="hc-step-title-area">
+              <div class="hc-step-title">Indoor Airflow &#8212; Filter &amp; Blower</div>
+              <div class="hc-step-badge">Weak airflow = filter or blower</div>
+            </div>
+          </div>
+          <div class="hc-body">
+            <div class="hc-check">
+              <div class="hc-panel-label">&#10003; Passing</div>
+              <div class="hc-panel-text">Strong airflow from all supply registers. Filter is clean and properly seated. Blower runs at expected speed. Proceed to Step 5.</div>
+            </div>
+            <div class="hc-fail">
+              <div class="hc-panel-label">&#10006; Failure Signs</div>
+              <div class="hc-panel-text">Weak or no airflow from registers with the system running. Check and replace the filter &#8212; a severely clogged filter reduces the heat the refrigerant can extract from the indoor air, reducing overall system output. A blower motor that is running slowly from a failing capacitor or weak motor reduces heat delivery the same way. Also check: are all supply and return registers open and unobstructed?</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hc-arrow">&#8595;</div>
+
+        <!-- Step 5 -->
+        <div class="hc-step defrost-step">
+          <div class="hc-step-head">
+            <div class="hc-step-num"><div class="hc-num-circle">5</div></div>
+            <div class="hc-step-title-area">
+              <div class="hc-step-title">Defrost System &#8212; Frost Management</div>
+              <div class="hc-step-badge">Observe defrost every 30&#8211;90 min</div>
+            </div>
+          </div>
+          <div class="hc-body">
+            <div class="hc-check">
+              <div class="hc-panel-label">&#10003; Passing</div>
+              <div class="hc-panel-text">Outdoor fan stops periodically (defrost cycling). Light frost on coil clears each cycle. Steam appears during defrost &#8212; this is normal. Heating performance is consistent. Proceed to Step 6.</div>
+            </div>
+            <div class="hc-fail">
+              <div class="hc-panel-label">&#10006; Failure Signs</div>
+              <div class="hc-panel-text">Coil progressively icing with no defrost cycle occurring over a 90-minute observation window. Or: defrost runs but coil doesn&#8217;t clear between cycles. A failed defrost board, defrost sensor out of calibration, or reversing valve not transitioning into defrost mode all produce progressive icing that eventually blocks outdoor airflow and stops heat extraction entirely. See the companion article on frozen heat pumps for full diagnostic detail.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hc-arrow">&#8595;</div>
+
+        <!-- Step 6 -->
+        <div class="hc-step balance-step">
+          <div class="hc-step-head">
+            <div class="hc-step-num"><div class="hc-num-circle">6</div></div>
+            <div class="hc-step-title-area">
+              <div class="hc-step-title">Balance Point &#8212; Outdoor Temperature Limit</div>
+              <div class="hc-step-badge">Check outdoor temp vs. spec</div>
+            </div>
+          </div>
+          <div class="hc-body">
+            <div class="hc-check">
+              <div class="hc-panel-label">&#10003; Passing</div>
+              <div class="hc-panel-text">Outdoor temperature is above the system&#8217;s balance point (typically 25&#8211;35°F for standard heat pumps; lower for cold-climate models). Heat pump is supplemented by auxiliary heat when needed. This is designed behavior.</div>
+            </div>
+            <div class="hc-fail">
+              <div class="hc-panel-label">&#10006; System at Its Design Limit</div>
+              <div class="hc-panel-text">Outdoor temperature is below the balance point and the system is relying entirely on auxiliary/emergency heat strips. Standard heat pumps can&#8217;t efficiently extract heat below 25&#8211;30°F. This is not a malfunction &#8212; it is the equipment operating at the edge of its design range. Cold-climate heat pumps (rated to -13°F or lower) are designed for these conditions. If your region regularly sees extended sub-freezing weather, a cold-climate heat pump or properly sized auxiliary heat is the engineering solution.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="hc-footer">
+        <div class="hc-footer-icon">&#9889;</div>
+        <div>
+          <h4>Emergency Heat Confirms Which Half Has Failed</h4>
+          <p>If emergency heat warms the home: Steps 1&#8211;5 contain the failure &#8212; the outdoor unit or refrigerant circuit has failed. The indoor equipment is fine. If emergency heat also fails: the fault is in the indoor equipment &#8212; Steps 4 (blower, filter) or electrical supply. This single observation eliminates half the diagnostic tree before any further investigation.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="normaltemp">What Normal Heat Pump Output Looks Like</h2>
+
+    <div class="temp-box">
+      <div class="tb-head">Register Air Temperature &#8212; Heat Pump vs. Furnace</div>
+      <div class="tb-cols">
+        <div class="tb-col normal">
+          <div class="tb-col-head">&#10003; Normal Heat Pump Output</div>
+          <div class="tb-items">
+            <div class="tb-item">Register air temperature: 85&#8211;95°F (feels lukewarm, not hot)</div>
+            <div class="tb-item">Room temperature rises slowly but consistently over 20&#8211;40 minutes</div>
+            <div class="tb-item">Longer run cycles than a furnace &#8212; often continuous in cold weather</div>
+            <div class="tb-item">Auxiliary heat engages in very cold weather &#8212; this is designed behavior</div>
+            <div class="tb-item">Outdoor unit frosts in cold/humid weather, defrosts every 30&#8211;90 min</div>
+          </div>
+        </div>
+        <div class="tb-col concern">
+          <div class="tb-col-head">&#10006; Actual Problems to Act On</div>
+          <div class="tb-items">
+            <div class="tb-item">Register air is the same temperature as room air or colder</div>
+            <div class="tb-item">Room temperature falls despite system running continuously</div>
+            <div class="tb-item">Outdoor coil freezes solid within minutes of startup</div>
+            <div class="tb-item">Auxiliary heat running constantly even in mild weather (above 35°F)</div>
+            <div class="tb-item">No heat from emergency heat mode either</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Smart Thermostat O/B Wiring Reversal</div>
+        <div class="callout-text">One of the most common causes of a heat pump actively cooling when heat is requested is an O/B terminal misconfiguration on a new smart thermostat installation. Heat pump thermostats use either O (energized in cooling, de-energized in heating) or B (energized in heating, de-energized in cooling) to control the reversing valve &#8212; and different manufacturers use different conventions. If the thermostat is set to the wrong convention for your heat pump, it signals the reversing valve to cool when you ask for heat. Check your thermostat&#8217;s installation app or menu for the O/B setting and compare to your heat pump&#8217;s wiring diagram. This is a settings correction &#8212; not a hardware failure.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">System heats but struggles in very cold weather. Auxiliary engages. Near balance point. Monitor outdoor temp correlation.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Reduced heating output. Frequent auxiliary. Coil frosting more than normal. Service needed this week.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">No heating effect from heat pump mode. Coil icing. Reversing valve or refrigerant fault. Service needed now.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">No heat at all &#8212; including emergency heat. Coil encased in ice. Outdoor unit silent or grinding. Emergency service.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The first thing I do on a heat pump &#8216;no heat&#8217; call is the emergency heat test before I even look at the outdoor unit. Switch to Em Heat, set the temp up, and wait 10 minutes. If the home starts warming &#8212; I know the indoor equipment and electrical are fine. I&#8217;m working on the outdoor unit or the refrigerant circuit. That splits the diagnostic immediately. The one that catches homeowners most off-guard is the reversing valve issue from a new smart thermostat. They install a Nest or an Ecobee, and the next cold day the &#8216;heat&#8217; setting is blowing cold air. That&#8217;s the O/B configuration. On most American heat pumps it should be set to O &#8212; energized in cooling. A few brands use B. The thermostat app usually has that setting right in the setup. Two-minute fix once you know what to look for. The one I take most seriously is cold air blowing during a heat call combined with a coil that&#8217;s starting to ice &#8212; that combination tells me the reversing valve may be stuck mid-stroke, which puts the compressor at risk if it stays that way."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Run the emergency heat test &#8212; does the home warm on emergency heat mode?</li>
+          <li>Check and replace the indoor air filter &#8212; always the first step</li>
+          <li>Confirm thermostat is set to HEAT &#8212; not Cool or Fan Only</li>
+          <li>Check the O/B thermostat configuration if a smart thermostat was recently installed</li>
+          <li>Note whether supply air feels warm, room temperature, or cold</li>
+          <li>Confirm outdoor unit breaker is ON &#8212; check both main panel and outdoor disconnect</li>
+          <li>Clear debris or snow from around the outdoor unit</li>
+          <li>Observe whether the outdoor unit fan stops periodically (defrost) over a 90-minute window</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Cold air blowing during heat call &#8212; reversing valve diagnosis</li>
+          <li>System running continuously with no heating effect &#8212; refrigerant gauge test</li>
+          <li>Outdoor coil icing within minutes of startup &#8212; refrigerant or defrost fault</li>
+          <li>Outdoor unit fan not running &#8212; capacitor or motor replacement</li>
+          <li>Breaker tripping on reset &#8212; electrical fault diagnosis</li>
+          <li>Auxiliary heat running constantly in mild weather &#8212; compressor or refrigerant evaluation</li>
+          <li>Any refrigerant work &#8212; EPA 608 certification required</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My heat pump runs all day but the house never reaches the setpoint. Is it broken?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Not necessarily &#8212; this depends heavily on outdoor temperature and the system&#8217;s balance point. Heat pumps extract heat from outdoor air, and below a certain outdoor temperature (typically 25&#8211;35°F for standard systems), a heat pump cannot extract enough heat to fully satisfy the home&#8217;s heating load. Long runtime and auxiliary heat activation in this range is normal operation. Two tests separate normal balance-point behavior from an actual fault: (1) Check the outdoor temperature. If it&#8217;s below 30°F and the home is slowly maintaining temperature (even if below setpoint), the system may simply be at its design limit. (2) Run the emergency heat test. If emergency heat quickly brings the home to setpoint, the heat pump section has a fault &#8212; the system is relying on emergency heat because the heat pump isn&#8217;t contributing. If even emergency heat can&#8217;t bring the home to setpoint on a cold day, the home&#8217;s heat loss rate may exceed the heating system&#8217;s design capacity &#8212; which is a sizing or insulation issue, not an equipment fault.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My heat pump blows cold air when the thermostat calls for heat. What does that mean?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Cold air on a heat call &#8212; where the system is running but the supply air is cooler than room temperature &#8212; almost always means the reversing valve is in the cooling position when it should be in heating position. Three causes account for nearly all of these cases: (1) Smart thermostat O/B wiring misconfiguration. If a thermostat was recently installed and the O/B setting is wrong for your heat pump, the valve is commanded to cool instead of heat. Check the thermostat&#8217;s app or installer settings for the O/B reversing valve configuration. (2) Reversing valve solenoid failure. The solenoid that switches the valve between heat and cool has failed in the cooling position. The system runs but in cooling mode regardless of thermostat demand. (3) Reversing valve stuck mid-stroke. The valve is partially between positions &#8212; producing neither effective heating nor effective cooling. All three require professional diagnosis. In the meantime, switch to emergency heat mode to maintain home temperature and avoid prolonged compressor operation in a stuck-valve condition.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My heat pump is 12 years old. Is it worth repairing or should I replace it?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Twelve years is within the normal service life range (15&#8211;20 years for well-maintained heat pumps), so age alone doesn&#8217;t dictate replacement. The repair-vs.-replace decision depends on what failed and what it costs relative to the system&#8217;s remaining value. Minor repairs &#8212; capacitor, contactor, defrost sensor, thermostat &#8212; almost always justify repair regardless of age, because they&#8217;re inexpensive and restore a functioning system. Mid-range repairs &#8212; blower motor, outdoor fan motor, reversing valve &#8212; warrant a cost-versus-remaining-life analysis. The common rule of thumb is: if the repair cost exceeds 50% of a new system&#8217;s cost and the system is over 10 years old, replacement becomes competitive. Major repairs &#8212; compressor replacement &#8212; typically favor replacement on a system over 10 years old, because a failed compressor on an aging system often signals broader wear throughout the refrigerant circuit. Refrigerant type matters too: systems using R-22 (older systems) are expensive to charge because R-22 is being phased out. A leak repair plus recharge on an R-22 system at 12 years old is usually the trigger point for replacement conversation with a technician.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Run the emergency heat test first. Home warms on emergency heat = outdoor unit or refrigerant circuit failure. Emergency heat also fails = indoor blower, filter, or electrical supply is the fault.</li>
+        <li>Heat pump register air at 85&#8211;95°F is normal &#8212; not furnace-hot. Long run times and auxiliary heat activation in cold weather are designed behavior, not failures.</li>
+        <li>Cold air blowing during a heat call = reversing valve stuck in cooling position. Check smart thermostat O/B configuration first &#8212; this is the most common cause after a thermostat installation.</li>
+        <li>System runs but room doesn&#8217;t warm = low refrigerant charge or metering restriction. Outdoor coil may ice quickly. Professional refrigerant gauges needed to confirm.</li>
+        <li>Auxiliary heat running constantly in mild weather (above 35°F) = the heat pump section is not contributing. The heat pump has a fault and is being carried entirely by the auxiliary strip.</li>
+        <li>Below the balance point (typically 25&#8211;35°F), standard heat pumps struggle to meet heating load. Cold-climate heat pumps extend this range significantly. Frequent balance-point limitations in your climate may justify a system upgrade.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">heat pump not heating</a>
+      <a href="#" class="tag-pill">heat pump blowing cold air</a>
+      <a href="#" class="tag-pill">heat pump runs but won&#39;t heat</a>
+      <a href="#" class="tag-pill">heat pump reversing valve stuck</a>
+      <a href="#" class="tag-pill">heat pump balance point</a>
+      <a href="#" class="tag-pill">heat pump emergency heat test</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Furnace &amp; Heating Guides</h3>
+    <div class="related-list">
+      <a href="hvac-heat-pump-frozen.html" class="related-item">
+        <div><div class="related-item-title">Why Your Heat Pump Is Frozen</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-wont-turn-on.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace Won&#8217;t Turn On At All</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-short-cycling.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace Short Cycles</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-dangerous-vs-inconvenient.html" class="related-item">
+        <div><div class="related-item-title">When Furnace Problems Are Dangerous vs. Inconvenient</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#chain">Heat Delivery Chain</a></li>
+      <li><a href="#normaltemp">Normal vs. Problem Output</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

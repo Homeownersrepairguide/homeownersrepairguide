@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Furnace Short Cycles | HomeownersRepairGuide.com</title>
+<meta name="description" content="Furnace short cycling is always a safety response — not normal operation. How long the furnace runs before shutting off, and whether cycles are getting shorter, identifies the exact cause.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-furnace-short-cycling.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-furnace-short-cycling.html">
+<meta property="og:title" content="Why Your Furnace Short Cycles | HomeownersRepairGuide.com">
+<meta property="og:description" content="How long your furnace runs before shutting off — and whether that's getting shorter — identifies the exact cause. Here's how to read your specific cycle pattern.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --flame:#c0402a;--flame-light:#fde8e8;
+  --limit:#b07800;--limit-light:#fff8e6;
+  --pressure:#5a2a7a;--pressure-light:#f0e8f5;
+  --oversize:#2a7a5a;--oversize-light:#e8f5f0;
+  --escalating:#7a1010;--escalating-light:#f5e0e0;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Furnace Cycle Length Classifier */
+.cycle-classifier{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.cc-header{background:var(--navy);padding:18px 22px;}
+.cc-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.cc-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.cc-legend{display:flex;gap:12px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.cc-leg{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;}
+.cc-leg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.cc-leg.flame{color:var(--flame);}.cc-leg.flame .cc-leg-dot{background:var(--flame);}
+.cc-leg.limit{color:var(--limit);}.cc-leg.limit .cc-leg-dot{background:var(--limit);}
+.cc-leg.pressure{color:var(--pressure);}.cc-leg.pressure .cc-leg-dot{background:var(--pressure);}
+.cc-leg.oversize{color:var(--oversize);}.cc-leg.oversize .cc-leg-dot{background:var(--oversize);}
+.cc-leg.escalating{color:var(--escalating);}.cc-leg.escalating .cc-leg-dot{background:var(--escalating);}
+/* Duration rows */
+.cc-rows{display:flex;flex-direction:column;}
+.cc-row{display:grid;grid-template-columns:140px 1fr;border-bottom:1px solid var(--gray-light);}
+.cc-row:last-child{border-bottom:none;}
+.cc-row.escalating-row{border:2px solid var(--escalating);}
+.cc-duration{padding:14px 12px;background:var(--cream-dark);border-right:1px solid var(--gray-light);display:flex;flex-direction:column;justify-content:center;}
+.cc-dur-time{font-size:18px;font-weight:800;color:var(--navy);font-family:'DM Mono',monospace;line-height:1;margin-bottom:3px;}
+.cc-dur-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--text-muted);}
+.cc-content{padding:13px 15px;display:flex;flex-direction:column;gap:8px;}
+.cc-cause-row{display:flex;gap:9px;align-items:flex-start;}
+.cc-cause-tag{font-size:10px;font-weight:700;padding:3px 7px;border-radius:20px;flex-shrink:0;white-space:nowrap;margin-top:2px;}
+.cc-cause-tag.flame{background:var(--flame-light);color:var(--flame);}
+.cc-cause-tag.limit{background:var(--limit-light);color:var(--limit);}
+.cc-cause-tag.pressure{background:var(--pressure-light);color:var(--pressure);}
+.cc-cause-tag.oversize{background:var(--oversize-light);color:var(--oversize);}
+.cc-cause-tag.escalating{background:var(--escalating-light);color:var(--escalating);}
+.cc-cause-text{font-size:12px;color:var(--text-body);line-height:1.5;}
+/* Escalation tracker */
+.escalation-tracker{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:18px 20px;margin:24px 0;box-shadow:var(--shadow-card);}
+.et-head{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+.et-track{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:10px;}
+.et-stage{padding:12px 10px;text-align:center;border-right:1px solid var(--gray-light);}
+.et-stage:last-child{border-right:none;}
+.et-stage-num{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:5px;}
+.et-stage:nth-child(1) .et-stage-num{color:var(--oversize);}
+.et-stage:nth-child(2) .et-stage-num{color:var(--limit);}
+.et-stage:nth-child(3) .et-stage-num{color:var(--flame);}
+.et-stage:nth-child(4) .et-stage-num{color:var(--escalating);}
+.et-stage-time{font-size:16px;font-weight:800;font-family:'DM Mono',monospace;margin-bottom:3px;}
+.et-stage-desc{font-size:10px;color:var(--text-muted);line-height:1.4;}
+.et-arrow{display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--gray-mid);padding:0 2px;}
+.et-note{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.et-note strong{color:var(--escalating);}
+/* cc-footer */
+.cc-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.cc-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.cc-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.cc-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Cause detail rows */
+.cause-rows{display:flex;flex-direction:column;gap:11px;margin:24px 0;}
+.cause-row{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:12px;align-items:flex-start;}
+.cause-row.flame-t{border-left:4px solid var(--flame);}
+.cause-row.limit-t{border-left:4px solid var(--limit);}
+.cause-row.pressure-t{border-left:4px solid var(--pressure);}
+.cause-row.oversize-t{border-left:4px solid var(--oversize);}
+.cr-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.cr-body{flex:1;}
+.cr-title{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.cr-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:2px;margin-left:7px;display:inline-block;vertical-align:middle;}
+.flame-t .cr-badge{background:var(--flame-light);color:var(--flame);}
+.limit-t .cr-badge{background:var(--limit-light);color:var(--limit);}
+.pressure-t .cr-badge{background:var(--pressure-light);color:var(--pressure);}
+.oversize-t .cr-badge{background:var(--oversize-light);color:var(--oversize);}
+.cr-desc{font-size:12px;color:var(--text-muted);line-height:1.5;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--limit-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--flame-light);border:1px solid #e08080;}
+.callout-box.tip{background:var(--oversize-light);border:1px solid #80c0a0;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--limit);}
+.callout-box.alert .callout-label{color:var(--flame);}
+.callout-box.tip .callout-label{color:var(--oversize);}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--limit);}.sev-item.mod .sev-label{color:var(--limit);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--escalating);}.sev-item.crit .sev-label{color:var(--escalating);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--escalating);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--flame);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--flame);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.cc-row{grid-template-columns:1fr;}.cc-duration{border-right:none;border-bottom:1px solid var(--gray-light);}.et-track{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}.et-track{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-furnace-heating.html">Furnace &amp; Heating</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Furnace Short Cycles</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Furnace &amp; Heating</span>
+  </div>
+
+  <h1 class="article-title">Why Your Furnace Cycles On &amp; Off Repeatedly</h1>
+  <p class="article-subtitle">Furnace short cycling is always a safety response &#8212; not efficient operation. The system is being stopped before completing a normal heat cycle. How long it runs before shutting off, and whether that duration is getting shorter over time, identifies the specific fault.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Short cycling is never normal and never efficient.</strong> Every premature shutdown is a safety device protecting the system from a fault condition. The fault doesn&#8217;t go away between cycles &#8212; it worsens.</li>
+        <li>Runtime duration before shutdown identifies the cause: seconds = flame sensing or pressure switch; 2&#8211;5 minutes = high-limit from airflow restriction; 5&#8211;10 minutes = possible oversizing or thermostat placement; getting shorter = escalating fault</li>
+        <li>The escalation pattern is the critical warning: if cycles are shortening over days or weeks, the underlying cause is worsening. Do not wait.</li>
+        <li>Cycles that shorten specifically as weather gets colder indicate a venting or pressure switch problem &#8212; wind and cold affect exterior vent terminations</li>
+        <li>Replace the filter before any other diagnostic step &#8212; it is the most common single cause of high-limit short cycling and takes 60 seconds to check</li>
+        <li>Do not repeatedly reset a short-cycling furnace. Each heat exchanger overheating event accelerates cracking risk.</li>
+      </ul>
+    </div>
+
+    <h2 id="classifier">Furnace Cycle Length Classifier</h2>
+    <p>Time the cycle from ignition to shutdown. Match the duration to identify the cause category. Also note the escalation pattern &#8212; whether cycles are stable or shortening.</p>
+
+    <div class="cycle-classifier">
+      <div class="cc-header">
+        <h3>How Long Does It Run Before Shutting Off?</h3>
+        <p>Time the cycle from ignition (blower + burner running) to shutdown. Duration is the most reliable homeowner-observable diagnostic for furnace short cycling.</p>
+      </div>
+      <div class="cc-legend">
+        <div class="cc-leg flame"><span class="cc-leg-dot"></span>Flame / Ignition</div>
+        <div class="cc-leg limit"><span class="cc-leg-dot"></span>High-Limit / Airflow</div>
+        <div class="cc-leg pressure"><span class="cc-leg-dot"></span>Pressure / Venting</div>
+        <div class="cc-leg oversize"><span class="cc-leg-dot"></span>Oversizing / Thermostat</div>
+        <div class="cc-leg escalating"><span class="cc-leg-dot"></span>Escalating &#8212; Act Now</div>
+      </div>
+
+      <div class="cc-rows">
+
+        <div class="cc-row">
+          <div class="cc-duration">
+            <div class="cc-dur-time">&lt;30s</div>
+            <div class="cc-dur-label">Under 30 Seconds</div>
+          </div>
+          <div class="cc-content">
+            <div class="cc-cause-row">
+              <div class="cc-cause-tag flame">&#128293; Flame Sensor</div>
+              <div class="cc-cause-text"><strong>Dirty or failed flame sensor not confirming ignition.</strong> Burner lights, flame sensor can&#8217;t confirm it, gas valve closes within seconds. The furnace lights briefly &#8212; you may feel a brief warmth &#8212; then shuts off. Repeats 2&#8211;3 times before lockout. Error code will appear. Annual flame sensor cleaning prevents this.</div>
+            </div>
+            <div class="cc-cause-row">
+              <div class="cc-cause-tag pressure">&#128268; Pressure Switch</div>
+              <div class="cc-cause-text"><strong>Pressure switch not closing or opening immediately after ignition.</strong> Draft inducer runs, pressure switch closes, ignition sequence begins, then the switch opens &#8212; aborting the cycle within seconds. Often caused by a cracked pressure hose, blocked condensate drain on high-efficiency units, or a failing switch.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cc-row">
+          <div class="cc-duration">
+            <div class="cc-dur-time">2&#8211;5<br><span style="font-size:13px;">min</span></div>
+            <div class="cc-dur-label">Two to Five Minutes</div>
+          </div>
+          <div class="cc-content">
+            <div class="cc-cause-row">
+              <div class="cc-cause-tag limit">&#9650; High-Limit Trip</div>
+              <div class="cc-cause-text"><strong>Heat exchanger overheating from restricted airflow &#8212; high-limit switch shuts off the burner.</strong> The most common furnace short-cycle cause. Heat builds in the heat exchanger faster than air can carry it away. Blower may continue after burner shuts off (correct protective behavior). Check and replace the filter immediately.</div>
+            </div>
+            <div class="cc-cause-row">
+              <div class="cc-cause-tag limit">&#128268; Blower Failure</div>
+              <div class="cc-cause-text"><strong>Slow or failing blower not moving enough air across the heat exchanger.</strong> Same overheating result as a clogged filter &#8212; but the filter is clean. Blower capacitor failure, motor winding degradation, or dirty blower wheel. Blower runs but at reduced airflow.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cc-row">
+          <div class="cc-duration">
+            <div class="cc-dur-time">5&#8211;10<br><span style="font-size:13px;">min</span></div>
+            <div class="cc-dur-label">Five to Ten Minutes</div>
+          </div>
+          <div class="cc-content">
+            <div class="cc-cause-row">
+              <div class="cc-cause-tag oversize">&#127968; Oversizing</div>
+              <div class="cc-cause-text"><strong>System heats the space to setpoint quickly &#8212; thermostat satisfied before a full cycle.</strong> Unlike safety-driven short cycling, cycles are consistent and stable, not worsening. The house heats adequately but humidity control and comfort suffer. Worst on mild days, better on very cold days. No error codes.</div>
+            </div>
+            <div class="cc-cause-row">
+              <div class="cc-cause-tag oversize">&#127777;&#65039; Thermostat Placement</div>
+              <div class="cc-cause-text"><strong>Thermostat near a supply register or in a small well-heated space reads setpoint quickly.</strong> Same symptom as oversizing but the fix is thermostat relocation rather than equipment replacement. The rest of the house is still cold when the thermostat satisfies. Consistent cycles, no error codes, no escallation.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cc-row escalating-row">
+          <div class="cc-duration">
+            <div class="cc-dur-time">&#8595;&#8595;</div>
+            <div class="cc-dur-label">Getting Shorter Each Cycle</div>
+          </div>
+          <div class="cc-content">
+            <div class="cc-cause-row">
+              <div class="cc-cause-tag escalating">&#9888; Escalating Fault</div>
+              <div class="cc-cause-text"><strong>If each successive cycle is shorter than the last during a single heating session, a fault is worsening in real time.</strong> Common pattern: first cycle runs 4 minutes, second runs 2 minutes, third runs 45 seconds. The heat exchanger is retaining heat between cycles and tripping the limit progressively faster as it stays hot. This is accelerating heat exchanger stress. Shut the system off and call for service.</div>
+            </div>
+            <div class="cc-cause-row">
+              <div class="cc-cause-tag pressure">&#127777;&#65039; Cold/Windy Weather</div>
+              <div class="cc-cause-text"><strong>Cycles that specifically shorten during cold snaps or windy conditions &#8212; pressure switch or venting issue.</strong> Wind affects exterior vent termination pressure. Ice or debris can partially block vent pipes. High-efficiency furnaces are particularly sensitive to vent pressure changes from weather. Inspect the exterior vent termination for obstruction.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="cc-footer">
+        <div class="cc-footer-icon">&#9201;</div>
+        <div>
+          <h4>Time It and Tell the Technician</h4>
+          <p>&#8220;It runs about 3 minutes then shuts off&#8221; directs a technician immediately toward high-limit testing and airflow measurement. &#8220;Under 30 seconds&#8221; sends them to the flame sensor and pressure switch. That one piece of information can eliminate 30&#8211;45 minutes of diagnostic time. Time the cycle before you call.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="escalation">The Escalation Pattern &#8212; Most Important Signal</h2>
+
+    <div class="escalation-tracker">
+      <div class="et-head">If Cycles Are Getting Shorter Over Time &#8212; The Fault Is Worsening</div>
+      <div class="et-track">
+        <div class="et-stage">
+          <div class="et-stage-num">Week 1</div>
+          <div class="et-stage-time">8 min</div>
+          <div class="et-stage-desc">Normal-ish cycles, mild discomfort</div>
+        </div>
+        <div class="et-stage">
+          <div class="et-stage-num">Week 2</div>
+          <div class="et-stage-time">4 min</div>
+          <div class="et-stage-desc">Noticeably short, house staying cold</div>
+        </div>
+        <div class="et-stage">
+          <div class="et-stage-num">Week 3</div>
+          <div class="et-stage-time">90 sec</div>
+          <div class="et-stage-desc">Rapid cycling, error codes appearing</div>
+        </div>
+        <div class="et-stage">
+          <div class="et-stage-num">Week 4</div>
+          <div class="et-stage-time">Lockout</div>
+          <div class="et-stage-desc">System refuses to run, heat exchanger at risk</div>
+        </div>
+      </div>
+      <div class="et-note"><strong>Cycles that are shortening over weeks or months indicate an airflow restriction that is worsening</strong> &#8212; either a filter that is never changed, a duct that is progressively collapsing, or a blower that is slowly failing. The shortening timeline is the diagnostic &#8212; each week the restriction is worse, so the high-limit trips faster. This pattern always ends in system lockout or heat exchanger failure if untreated.</div>
+    </div>
+
+    <div class="callout-box alert">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Do Not Repeatedly Reset a Short-Cycling Furnace</div>
+        <div class="callout-text">Every high-limit trip represents a heat exchanger overheating event. Each overheat cycle expands and contracts the heat exchanger metal, creating cumulative stress that leads to cracking. A cracked heat exchanger creates a carbon monoxide pathway into the living space. Resetting the furnace to force another cycle does not fix the underlying restriction &#8212; it extends the damage. Replace the filter, then call for evaluation if cycling continues.</div>
+      </div>
+    </div>
+
+    <h2 id="causes">Cause Detail</h2>
+    <div class="cause-rows">
+      <div class="cause-row limit-t">
+        <div class="cr-icon">&#128268;</div>
+        <div class="cr-body">
+          <div class="cr-title">Clogged Filter &#8212; High-Limit Trip <span class="cr-badge">Most Common</span></div>
+          <div class="cr-desc">A severely clogged filter restricts the airflow that carries heat away from the heat exchanger. The exchanger overheats, the high-limit switch trips the burner off, the blower continues running to cool it, and the cycle restarts &#8212; only to trip again. The filter is the first and fastest check. Replace it and observe the next 3&#8211;4 cycles. If cycling normalizes, the filter was the cause.</div>
+        </div>
+      </div>
+      <div class="cause-row flame-t">
+        <div class="cr-icon">&#128293;</div>
+        <div class="cr-body">
+          <div class="cr-title">Dirty Flame Sensor <span class="cr-badge">Flame</span></div>
+          <div class="cr-desc">The flame sensor is a metal rod that passes a small electrical current through the flame to confirm ignition. As it oxidizes over time, its ability to conduct through the flame diminishes. The burner lights but the sensor can&#8217;t confirm it &#8212; so the control board closes the gas valve within seconds. The cycle attempts 2&#8211;3 times then locks out. Annual cleaning restores conductivity. An affordable, routine maintenance item.</div>
+        </div>
+      </div>
+      <div class="cause-row pressure-t">
+        <div class="cr-icon">&#128268;</div>
+        <div class="cr-body">
+          <div class="cr-title">Pressure Switch or Venting Problem <span class="cr-badge">Pressure</span></div>
+          <div class="cr-desc">The pressure switch verifies that the draft inducer is creating adequate negative pressure (draft) in the heat exchanger before allowing ignition. A cracked pressure hose, clogged condensate drain (high-efficiency), blocked vent termination, or failing switch can prevent it from closing or cause it to open mid-cycle. High-efficiency furnaces are more sensitive to venting issues than standard models. Check the exterior vent termination for ice, debris, or bird nesting.</div>
+        </div>
+      </div>
+      <div class="cause-row oversize-t">
+        <div class="cr-icon">&#127968;</div>
+        <div class="cr-body">
+          <div class="cr-title">True Oversizing <span class="cr-badge">Rare</span></div>
+          <div class="cr-desc">An oversized furnace heats the space to setpoint faster than a properly-sized one. This produces consistent, stable short cycles &#8212; not escalating or erratic ones. The house heats adequately but humidity control suffers, and frequent starts accelerate igniter wear. This is rarely the cause of short cycling that developed on an existing system &#8212; it would have been apparent from the day of installation. If cycling has always been consistent since install, oversizing is worth evaluating. If it developed or worsened over time, oversizing is not the primary cause.</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Stable 5&#8211;10 min cycles consistent since installation. Possible oversizing. Investigate but no urgency.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">2&#8211;5 min cycles. Filter replaced but cycling continues. Flame sensor or blower issue. Schedule evaluation this week.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Under-30-second cycles or error codes. Repeated lockouts. Service now &#8212; heat exchanger stress accumulating.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Cycles shortening each session, fault codes, odors, or CO alarm. Shut down. Do not reset. Emergency service.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The question I always ask first on a furnace short-cycling call is: how long does it run before it shuts off? Under 30 seconds &#8212; I&#8217;m going straight to the flame sensor and the pressure switch. That&#8217;s where the problem almost always lives when cycles are that short. Two to five minutes &#8212; I&#8217;m asking the homeowner to show me the air filter. Every time. A high-limit trip at that duration is almost always airflow. The escalating pattern is what concerns me most. A homeowner who says &#8216;it was running 8 minutes a month ago, now it runs 2 minutes&#8217; &#8212; that&#8217;s a heat exchanger that&#8217;s been overheating repeatedly for a month and hasn&#8217;t been diagnosed. Those are the calls where I find cracks. The ones that went too long before someone called. The short cycle isn&#8217;t the emergency &#8212; the repeated overheating is."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Replace the air filter &#8212; always the first step regardless of cycle duration</li>
+          <li>Time the cycle from ignition to shutdown &#8212; tell the technician the duration</li>
+          <li>Note whether cycles are consistent or shortening over days/weeks</li>
+          <li>Note whether short cycling worsens during windy or very cold weather</li>
+          <li>Check the exterior vent termination for ice, debris, or bird nesting</li>
+          <li>Check furnace error codes or status light flash sequence</li>
+          <li>Confirm all supply registers and return grilles are fully open</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Flame sensor cleaning and resistance testing</li>
+          <li>Pressure switch testing and hose inspection</li>
+          <li>High-limit switch testing and temperature-rise measurement</li>
+          <li>Blower motor amperage and capacitor testing</li>
+          <li>Heat exchanger inspection &#8212; required after repeated high-limit trips</li>
+          <li>Combustion analysis if pressure or venting is suspected</li>
+          <li>Any cycling that has not resolved after filter replacement</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My furnace runs for 3 minutes, shuts off, blower keeps running, then it restarts. Is this normal?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No &#8212; the pattern you&#8217;re describing (burner shuts off, blower continues, then system restarts) is a high-limit trip. The high-limit switch shuts off the burner when the heat exchanger overheats, but leaves the blower running to cool it down &#8212; then the thermostat call restarts the burner once the limit resets. This is protective behavior, not normal cycling. The burner shutting off and the blower continuing for 1&#8211;2 minutes is correct &#8212; that&#8217;s the post-cycle purge. But if the burner then immediately restarts and shuts off again within minutes, the system is cycling on its high-limit repeatedly. Replace the filter immediately. If the cycling continues with a clean filter, the blower output may be insufficient, a duct may be restricted, or the limit switch itself may be degrading. Professional evaluation is needed.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My new furnace short cycles. The installer says it&#8217;s just &#8220;oversized.&#8221; Should I accept that?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Not without verifying it. True oversizing produces consistent, stable cycles &#8212; the furnace heats the house quickly, satisfies the thermostat, and shuts off. The cycles may be shorter than ideal but they should be consistent in length, not escalating or accompanied by error codes. If the new furnace is short cycling with abrupt shutdowns, error codes, or cycles that vary unpredictably &#8212; these are not oversizing symptoms. They indicate a fault. The installer should verify the refrigerant charge... wait, that&#8217;s AC. For furnace: the installer should verify airflow is within the designed temperature rise range (measure supply and return air temperatures), confirm the pressure switch is operating correctly, and confirm the flame sensor is reading properly. If those tests pass and cycles are simply short but consistent &#8212; then oversizing is a reasonable conclusion, and a two-stage or variable-speed system may be a solution. Don&#8217;t accept an oversizing diagnosis for erratic or escalating short cycling without these tests being completed.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How do I know if my furnace&#8217;s short cycling has damaged the heat exchanger?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">You can&#8217;t confirm heat exchanger cracks without a professional inspection &#8212; but there are indicators worth watching for. A cracked heat exchanger may produce: (1) a slight smell of combustion gases (not natural gas &#8212; exhaust smell) from the supply vents, which indicates combustion products are entering the air stream; (2) soot staining around the heat exchanger visible when the furnace is off and you look inside; (3) a CO detector alarm &#8212; which should never be ignored and requires immediate evacuation and service call; (4) visible rust or corrosion on the heat exchanger exterior. The most important indicator is CO detector activation &#8212; any CO alarm in a home with a furnace requires treating it as a real event, evacuating the home, and having the furnace inspected before it runs again. If your furnace has been short-cycling on its high-limit repeatedly &#8212; especially for more than a few weeks &#8212; a heat exchanger inspection should be explicitly requested as part of the service call.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Furnace short cycling is always a safety response. Every premature shutdown is a protective device stopping the system from operating in an unsafe or out-of-tolerance condition. The fault does not resolve between cycles.</li>
+        <li>Cycle duration identifies the cause: under 30 seconds = flame sensor or pressure switch; 2&#8211;5 minutes = high-limit from airflow restriction; 5&#8211;10 minutes stable = possible oversizing; cycles shortening = escalating fault requiring urgent service.</li>
+        <li>The escalation pattern is the most urgent signal. Cycles that shorten week over week indicate a worsening airflow restriction that will end in system lockout or heat exchanger failure.</li>
+        <li>Replace the filter first regardless of cycle duration. A clogged filter is the most common cause of high-limit short cycling and takes 60 seconds to check.</li>
+        <li>Do not repeatedly reset a short-cycling furnace. Each high-limit trip is a heat exchanger overheating event that accumulates toward cracking. Cracked heat exchangers create CO risk.</li>
+        <li>Cycles that worsen specifically during cold or windy weather point to a venting or pressure switch problem. Check the exterior vent termination for obstruction.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">furnace short cycling</a>
+      <a href="#" class="tag-pill">furnace turns on and off repeatedly</a>
+      <a href="#" class="tag-pill">furnace high limit tripping</a>
+      <a href="#" class="tag-pill">furnace cycles getting shorter</a>
+      <a href="#" class="tag-pill">flame sensor short cycling</a>
+      <a href="#" class="tag-pill">furnace short cycle causes</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Furnace &amp; Heating Guides</h3>
+    <div class="related-list">
+      <a href="hvac-furnace-blows-cold-air.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace Blows Cold Air</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-keeps-shutting-off.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace Keeps Shutting Off</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-dangerous-vs-inconvenient.html" class="related-item">
+        <div><div class="related-item-title">When Furnace Problems Are Dangerous vs. Inconvenient</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ignoring-noises-bigger-failures.html" class="related-item">
+        <div><div class="related-item-title">Why Ignoring HVAC Noises Leads to Bigger Failures</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#classifier">Cycle Length Classifier</a></li>
+      <li><a href="#escalation">The Escalation Pattern</a></li>
+      <li><a href="#causes">Cause Detail</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

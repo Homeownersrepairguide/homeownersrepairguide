@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Older Furnaces Struggle To Maintain Temperature | HomeownersRepairGuide.com</title>
+<meta name="description" content="An older furnace that can't keep up isn't necessarily failing — it's running out of capacity margin. Here's how to tell where your furnace is on that curve and what to do about it.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-older-furnace-temperature.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-older-furnace-temperature.html">
+<meta property="og:title" content="Why Older Furnaces Struggle To Maintain Temperature | HomeownersRepairGuide.com">
+<meta property="og:description" content="An older furnace that runs constantly but can't keep up isn't failing — it's running out of capacity margin. Here's how to read the pattern.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --margin-good:#2a7a2a;--margin-good-light:#eaf5ea;
+  --margin-shrinking:#b07800;--margin-shrinking-light:#fff8e6;
+  --margin-thin:#c0392b;--margin-thin-light:#fde8e8;
+  --margin-exhausted:#7a1010;--margin-exhausted-light:#f5e0e0;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Capacity Margin Assessment */
+.margin-assessment{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.ma-header{background:var(--navy);padding:18px 22px;}
+.ma-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.ma-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+/* Margin meter visual */
+.ma-meter{padding:20px 22px;border-bottom:2px solid var(--gray-light);background:var(--cream-dark);}
+.ma-meter-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--text-muted);margin-bottom:10px;}
+.ma-meter-track{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-bottom:8px;}
+.ma-meter-seg{height:16px;border-radius:2px;}
+.ma-meter-seg:nth-child(1){background:var(--margin-good);}
+.ma-meter-seg:nth-child(2){background:var(--margin-shrinking);}
+.ma-meter-seg:nth-child(3){background:var(--margin-thin);}
+.ma-meter-seg:nth-child(4){background:var(--margin-exhausted);}
+.ma-meter-labels{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;}
+.ma-meter-labels span{font-size:10px;font-weight:600;text-align:center;}
+.ma-meter-labels span:nth-child(1){color:var(--margin-good);}
+.ma-meter-labels span:nth-child(2){color:var(--margin-shrinking);}
+.ma-meter-labels span:nth-child(3){color:var(--margin-thin);}
+.ma-meter-labels span:nth-child(4){color:var(--margin-exhausted);}
+/* Assessment questions */
+.ma-questions{display:flex;flex-direction:column;}
+.ma-q{border-bottom:1px solid var(--gray-light);padding:16px 18px;}
+.ma-q:last-child{border-bottom:none;}
+.ma-q-num{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--hvac);margin-bottom:5px;}
+.ma-q-text{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:12px;}
+.ma-q-options{display:flex;flex-direction:column;gap:6px;}
+.ma-q-opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border-radius:var(--radius);border:1px solid var(--gray-light);background:var(--white);}
+.ma-opt-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:2px;flex-shrink:0;margin-top:1px;white-space:nowrap;}
+.ma-opt-badge.good{background:var(--margin-good-light);color:var(--margin-good);}
+.ma-opt-badge.shrinking{background:var(--margin-shrinking-light);color:var(--margin-shrinking);}
+.ma-opt-badge.thin{background:var(--margin-thin-light);color:var(--margin-thin);}
+.ma-opt-badge.exhausted{background:var(--margin-exhausted-light);color:var(--margin-exhausted);}
+.ma-opt-text{font-size:12px;color:var(--text-body);line-height:1.5;}
+/* Margin stage cards */
+.ma-stages{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:2px solid var(--gray-light);}
+.ma-stage{padding:16px 18px;border-right:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);}
+.ma-stage:nth-child(2){border-right:none;}
+.ma-stage:nth-child(3){border-bottom:none;}
+.ma-stage:nth-child(4){border-right:none;border-bottom:none;}
+.ma-stage-head{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+.ma-stage-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.ma-stage.good .ma-stage-dot{background:var(--margin-good);}
+.ma-stage.shrinking .ma-stage-dot{background:var(--margin-shrinking);}
+.ma-stage.thin .ma-stage-dot{background:var(--margin-thin);}
+.ma-stage.exhausted .ma-stage-dot{background:var(--margin-exhausted);}
+.ma-stage-name{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;}
+.ma-stage.good .ma-stage-name{color:var(--margin-good);}
+.ma-stage.shrinking .ma-stage-name{color:var(--margin-shrinking);}
+.ma-stage.thin .ma-stage-name{color:var(--margin-thin);}
+.ma-stage.exhausted .ma-stage-name{color:var(--margin-exhausted);}
+.ma-stage-desc{font-size:12px;color:var(--text-body);line-height:1.5;margin-bottom:8px;}
+.ma-stage-action{font-size:11px;font-weight:700;padding:4px 10px;border-radius:2px;display:inline-block;}
+.ma-stage.good .ma-stage-action{background:var(--margin-good-light);color:var(--margin-good);}
+.ma-stage.shrinking .ma-stage-action{background:var(--margin-shrinking-light);color:var(--margin-shrinking);}
+.ma-stage.thin .ma-stage-action{background:var(--margin-thin-light);color:var(--margin-thin);}
+.ma-stage.exhausted .ma-stage-action{background:var(--margin-exhausted-light);color:var(--margin-exhausted);}
+.ma-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.ma-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.ma-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.ma-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Cause erosion cards */
+.erosion-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.erosion-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.erosion-icon{font-size:22px;margin-bottom:8px;}
+.erosion-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.erosion-impact{font-size:11px;font-weight:700;padding:2px 7px;border-radius:2px;margin-bottom:7px;display:inline-block;}
+.erosion-impact.equipment{background:var(--hvac-light);color:var(--hvac-dark);}
+.erosion-impact.home{background:var(--margin-shrinking-light);color:var(--margin-shrinking);}
+.erosion-desc{font-size:12px;color:var(--text-muted);line-height:1.55;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--margin-shrinking-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--margin-thin-light);border:1px solid #e08080;}
+.callout-box.tip{background:var(--margin-good-light);border:1px solid #80c080;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--margin-shrinking);}
+.callout-box.alert .callout-label{color:var(--margin-thin);}
+.callout-box.tip .callout-label{color:var(--margin-good);}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Response options */
+.response-table{width:100%;border-collapse:collapse;margin:24px 0;background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.response-table th{background:var(--navy);color:var(--white);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;padding:11px 14px;text-align:left;}
+.response-table td{padding:12px 14px;font-size:13px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.45;}
+.response-table tr:last-child td{border-bottom:none;}
+.response-table tr:hover td{background:var(--cream);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--margin-shrinking);}.sev-item.mod .sev-label{color:var(--margin-shrinking);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--margin-exhausted);}.sev-item.crit .sev-label{color:var(--margin-exhausted);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--margin-exhausted);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--margin-thin);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--margin-thin);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.erosion-grid{grid-template-columns:1fr;}.ma-stages{grid-template-columns:1fr;}.ma-stage{border-right:none !important;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}.ma-meter-track{grid-template-columns:1fr 1fr;}.ma-meter-labels{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-furnace-heating.html">Furnace &amp; Heating</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Older Furnaces Struggle To Maintain Temperature</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Furnace &amp; Heating</span>
+  </div>
+
+  <h1 class="article-title">Why Older Furnaces Struggle To Maintain Temperature</h1>
+  <p class="article-subtitle">An older furnace that can&#8217;t hold the thermostat setpoint isn&#8217;t necessarily failing &#8212; it&#8217;s running out of the performance margin it once had in reserve. The furnace didn&#8217;t get smaller. Its capacity slowly eroded while your home&#8217;s heating demand didn&#8217;t. That gap is what you&#8217;re now experiencing.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>This is a capacity margin problem, not a failure.</strong> New furnaces are sized with a performance buffer. As components age and homes leak more heat, that buffer erodes. When it&#8217;s gone, the furnace runs longer and still can&#8217;t keep up &#8212; especially during the coldest days.</li>
+        <li>The key diagnostic pattern: comfort declines predictably as outdoor temperature drops. If the furnace keeps up fine above 30°F but struggles below 20°F, the margin is thin but present.</li>
+        <li>A furnace that reaches setpoint but recovers slowly from setbacks is showing eroded margin &#8212; not imminent failure</li>
+        <li>Two forces erode margin simultaneously: equipment performance declines (combustion efficiency, blower output, heat transfer), and home heat loss increases (air leakage, insulation settling, envelope aging)</li>
+        <li>Raising the thermostat does not restore capacity &#8212; it increases demand on a system that is already at its limit</li>
+        <li>Abrupt comfort changes indicate a correctable fault. Gradual seasonal decline indicates margin erosion.</li>
+      </ul>
+    </div>
+
+    <h2 id="assessment">Capacity Margin Self-Assessment</h2>
+    <p>Answer these four questions to place your furnace on the capacity margin curve. Your answers across all four will indicate which margin stage applies.</p>
+
+    <div class="margin-assessment">
+      <div class="ma-header">
+        <h3>Where Is Your Furnace on the Capacity Margin Curve?</h3>
+        <p>Match each observation to the option that best describes your system. The pattern across all four answers identifies your margin stage.</p>
+      </div>
+
+      <div class="ma-meter">
+        <div class="ma-meter-label">Capacity Margin Spectrum</div>
+        <div class="ma-meter-track">
+          <div class="ma-meter-seg"></div>
+          <div class="ma-meter-seg"></div>
+          <div class="ma-meter-seg"></div>
+          <div class="ma-meter-seg"></div>
+        </div>
+        <div class="ma-meter-labels">
+          <span>Adequate</span>
+          <span>Shrinking</span>
+          <span>Thin</span>
+          <span>Exhausted</span>
+        </div>
+      </div>
+
+      <div class="ma-questions">
+
+        <div class="ma-q">
+          <div class="ma-q-num">Question 1</div>
+          <div class="ma-q-text">During the coldest days of winter, how does the furnace perform?</div>
+          <div class="ma-q-options">
+            <div class="ma-q-opt"><span class="ma-opt-badge good">Adequate</span><span class="ma-opt-text">Holds setpoint comfortably even in the coldest weather. Cycles on and off normally.</span></div>
+            <div class="ma-q-opt"><span class="ma-opt-badge shrinking">Shrinking</span><span class="ma-opt-text">Holds setpoint most of the time but runs longer cycles on very cold days.</span></div>
+            <div class="ma-q-opt"><span class="ma-opt-badge thin">Thin</span><span class="ma-opt-text">Runs nearly continuously on cold days but eventually reaches setpoint. Comfort feels marginal.</span></div>
+            <div class="ma-q-opt"><span class="ma-opt-badge exhausted">Exhausted</span><span class="ma-opt-text">Runs continuously but cannot reach setpoint. Indoor temperature drops several degrees below the thermostat setting during cold snaps.</span></div>
+          </div>
+        </div>
+
+        <div class="ma-q">
+          <div class="ma-q-num">Question 2</div>
+          <div class="ma-q-text">How quickly does the furnace recover after a thermostat setback (e.g., returning from 65°F to 70°F in the morning)?</div>
+          <div class="ma-q-options">
+            <div class="ma-q-opt"><span class="ma-opt-badge good">Adequate</span><span class="ma-opt-text">Recovers within 30&#8211;45 minutes as expected.</span></div>
+            <div class="ma-q-opt"><span class="ma-opt-badge shrinking">Shrinking</span><span class="ma-opt-text">Takes 60&#8211;90 minutes on cold mornings. Noticeably slower than it used to be.</span></div>
+            <div class="ma-q-opt"><span class="ma-opt-badge thin">Thin</span><span class="ma-opt-text">Takes 2&#8211;3 hours or longer. The house is still cold when it should be comfortable.</span></div>
+            <div class="ma-q-opt"><span class="ma-opt-badge exhausted">Exhausted</span><span class="ma-opt-text">Never fully recovers from setbacks during cold weather. Setbacks are no longer viable.</span></div>
+          </div>
+        </div>
+
+        <div class="ma-q">
+          <div class="ma-q-num">Question 3</div>
+          <div class="ma-q-text">Compared to 3&#8211;5 years ago, how has comfort changed during typical winter weather?</div>
+          <div class="ma-q-options">
+            <div class="ma-q-opt"><span class="ma-opt-badge good">Adequate</span><span class="ma-opt-text">About the same. No noticeable comfort decline across seasons.</span></div>
+            <div class="ma-q-opt"><span class="ma-opt-badge shrinking">Shrinking</span><span class="ma-opt-text">Slightly worse than a few years ago, especially during cold snaps. Have had to set the thermostat higher.</span></div>
+            <div class="ma-q-opt"><span class="ma-opt-badge thin">Thin</span><span class="ma-opt-text">Noticeably worse each winter. The threshold for struggling has moved to milder temperatures.</span></div>
+            <div class="ma-q-opt"><span class="ma-opt-badge exhausted">Exhausted</span><span class="ma-opt-text">Dramatically different from a few years ago. The system used to handle this weather without difficulty.</span></div>
+          </div>
+        </div>
+
+        <div class="ma-q">
+          <div class="ma-q-num">Question 4</div>
+          <div class="ma-q-text">Has the comfort decline been gradual over several seasons, or did it appear suddenly?</div>
+          <div class="ma-q-options">
+            <div class="ma-q-opt"><span class="ma-opt-badge good">Adequate &#8212; Gradual</span><span class="ma-opt-text">Comfort has gradually declined over 3&#8211;5+ years. No single season where it suddenly got much worse. This is margin erosion &#8212; expected with age.</span></div>
+            <div class="ma-q-opt"><span class="ma-opt-badge thin">Possible Fault &#8212; Sudden</span><span class="ma-opt-text">Comfort declined noticeably within a single season or suddenly between last year and this year. A correctable fault (dirty heat exchanger, failed component, duct problem) may be responsible. Warrants professional diagnosis.</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ma-stages">
+        <div class="ma-stage good">
+          <div class="ma-stage-head"><div class="ma-stage-dot"></div><div class="ma-stage-name">Adequate Margin</div></div>
+          <div class="ma-stage-desc">System holds setpoint across most conditions. Minor performance decline detectable only in extreme weather. No intervention required now.</div>
+          <div class="ma-stage-action">Annual maintenance. Monitor year-over-year.</div>
+        </div>
+        <div class="ma-stage shrinking">
+          <div class="ma-stage-head"><div class="ma-stage-dot"></div><div class="ma-stage-name">Shrinking Margin</div></div>
+          <div class="ma-stage-desc">Performance declining but still adequate for most conditions. Evaluate causes and begin planning for the next phase.</div>
+          <div class="ma-stage-action">Combustion tune-up. Airflow check. Envelope assessment.</div>
+        </div>
+        <div class="ma-stage thin">
+          <div class="ma-stage-head"><div class="ma-stage-dot"></div><div class="ma-stage-name">Thin Margin</div></div>
+          <div class="ma-stage-desc">System operating near capacity limits. Uncomfortable during peak demand. One cold snap away from complete inability to keep up.</div>
+          <div class="ma-stage-action">Professional evaluation. Repair or replacement decision needed.</div>
+        </div>
+        <div class="ma-stage exhausted">
+          <div class="ma-stage-head"><div class="ma-stage-dot"></div><div class="ma-stage-name">Exhausted Margin</div></div>
+          <div class="ma-stage-desc">System cannot meet heating demand under winter conditions. Continued operation without intervention risks freeze damage and accelerated equipment failure.</div>
+          <div class="ma-stage-action">Replace or supplement with interim heat source immediately.</div>
+        </div>
+      </div>
+
+      <div class="ma-footer">
+        <div class="ma-footer-icon">&#128161;</div>
+        <div>
+          <h4>Gradual vs. Sudden &#8212; The Critical Distinction</h4>
+          <p>Gradual decline over multiple seasons is margin erosion &#8212; it&#8217;s age-related and manageable with informed planning. Sudden decline within a single season is a correctable fault until proven otherwise. Treat sudden changes as a mechanical problem requiring diagnosis, not as inevitable aging.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="causes">What Erodes the Capacity Margin</h2>
+    <p>Two forces work simultaneously against an aging furnace &#8212; performance declines on the equipment side, and demand increases on the building side. Both must be understood to make informed decisions.</p>
+
+    <div class="erosion-grid">
+      <div class="erosion-card">
+        <div class="erosion-icon">&#128293;</div>
+        <div class="erosion-title">Combustion Efficiency Decline</div>
+        <div class="erosion-impact equipment">Equipment Side</div>
+        <div class="erosion-desc">Older heat exchangers accumulate fouling that reduces heat transfer. Burners may develop uneven flame patterns. Combustion efficiency that was 80%+ at installation may have dropped significantly without regular maintenance. Less heat extracted from the same fuel input.</div>
+      </div>
+      <div class="erosion-card">
+        <div class="erosion-icon">&#128268;</div>
+        <div class="erosion-title">Blower Airflow Decline</div>
+        <div class="erosion-impact equipment">Equipment Side</div>
+        <div class="erosion-desc">Blower wheels accumulate dust over years of operation, reducing airflow volume. Motor windings lose efficiency with age. A blower delivering 80% of its original airflow delivers 80% of the heat to your living spaces &#8212; while the furnace runs the same amount of time.</div>
+      </div>
+      <div class="erosion-card">
+        <div class="erosion-icon">&#127968;</div>
+        <div class="erosion-title">Envelope Heat Loss Increase</div>
+        <div class="erosion-impact home">Home Side</div>
+        <div class="erosion-desc">Insulation settles and compresses over decades, losing R-value. Caulking and weatherstripping dry out and crack. Homes built 20&#8211;30 years ago were typically sealed to much looser standards than modern homes. A house losing more heat requires more heating capacity to maintain the same temperature.</div>
+      </div>
+      <div class="erosion-card">
+        <div class="erosion-icon">&#127963;&#65039;</div>
+        <div class="erosion-title">Duct System Degradation</div>
+        <div class="erosion-impact home">Home Side</div>
+        <div class="erosion-desc">Duct connections loosen over decades of thermal cycling. Flex duct sags and develops friction. Duct leakage that was 10% at installation may now be 20&#8211;25%. Conditioned air that escapes into the attic or crawlspace never reaches living spaces &#8212; which means the furnace must run longer to make up the difference.</div>
+      </div>
+    </div>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Raising the Thermostat Doesn&#8217;t Restore Capacity</div>
+        <div class="callout-text">Setting the thermostat to 75°F when the furnace can&#8217;t maintain 70°F does not give the system more capacity &#8212; it increases demand on a system already at its limit. The furnace will run longer, consume more fuel, and still fail to reach the higher setpoint. Address the underlying capacity erosion rather than chasing it with setpoint adjustments.</div>
+      </div>
+    </div>
+
+    <h2 id="responses">Matching Response to Margin Stage</h2>
+
+    <table class="response-table">
+      <thead>
+        <tr>
+          <th>Margin Stage</th>
+          <th>Most Effective Response</th>
+          <th>What to Avoid</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Adequate</strong></td>
+          <td>Annual maintenance, combustion tune-up, filter replacement. No urgency but don&#8217;t skip annual service.</td>
+          <td>Ignoring gradual year-over-year decline until it becomes a crisis.</td>
+        </tr>
+        <tr>
+          <td><strong>Shrinking</strong></td>
+          <td>Combustion analysis and tune-up. Blower cleaning. Duct leakage assessment. Attic insulation inspection. Begin budgeting for replacement in 3&#8211;5 years.</td>
+          <td>Upsizing the thermostat setpoint. Delaying maintenance that could restore margin.</td>
+        </tr>
+        <tr>
+          <td><strong>Thin</strong></td>
+          <td>Professional evaluation of all contributing factors. Determine repair vs. replacement. Interim envelope improvements (weather-stripping, door sweeps) can reduce demand. Evaluate replacement timing.</td>
+          <td>Another season without evaluation. Waiting for complete failure before acting.</td>
+        </tr>
+        <tr>
+          <td><strong>Exhausted</strong></td>
+          <td>System replacement is typically the correct decision. Supplement with interim heat source if replacement cannot happen immediately. Do not delay &#8212; freeze risk in extreme cold.</td>
+          <td>Continuing to operate an exhausted system without supplemental heat. Expecting maintenance to restore adequate capacity at this stage.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Adequate</div></div>
+        <div class="sev-desc">Minor temperature swings only in extreme cold. Holds setpoint otherwise. Annual maintenance sufficient.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Shrinking</div></div>
+        <div class="sev-desc">Extended run times, slower recovery on cold days. Begin evaluation and maintenance. Plan for replacement.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Thin</div></div>
+        <div class="sev-desc">Near-continuous operation, poor setback recovery. Professional evaluation needed this season. Replacement decision required.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Exhausted</div></div>
+        <div class="sev-desc">Cannot maintain setpoint in winter conditions. Freeze risk. Replace or supplement immediately.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The most common misread I see on aging furnaces is treating a capacity problem as a failure. The homeowner calls because the house is cold, assumes the furnace is broken, and wants it replaced. But when I test it, combustion is fine, the heat exchanger is intact, and the system is delivering heat &#8212; just not enough of it for the current conditions. Sometimes a blower cleaning and a duct inspection get them another two or three comfortable winters before replacement. Other times the margin is truly exhausted and replacement is the right call. The difference is in the pattern: does it struggle on every cold day, or only on the coldest days? Does it eventually reach setpoint, or does it never get there? That pattern tells you where on the curve you are. And the gradual vs. sudden question is equally important &#8212; if a system that handled this weather fine last year suddenly can&#8217;t, I&#8217;m not thinking about age. I&#8217;m looking for something that broke."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Replace the air filter &#8212; a clogged filter directly reduces heat delivery and accelerates margin erosion</li>
+          <li>Track runtime on cold days &#8212; note what outdoor temperature the system begins struggling at</li>
+          <li>Time setback recovery &#8212; how long does it take from setback temp to setpoint on a cold morning?</li>
+          <li>Compare this winter&#8217;s performance to last winter &#8212; is the threshold for struggling lower?</li>
+          <li>Inspect visible duct connections at the air handler for obvious separation or disconnection</li>
+          <li>Check attic insulation visually from the hatch &#8212; is it thin or uneven in coverage?</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Combustion analysis to measure actual efficiency and identify heat transfer losses</li>
+          <li>Airflow measurement to quantify blower output vs. designed capacity</li>
+          <li>Duct leakage testing to measure how much conditioned air is lost in transit</li>
+          <li>Heat exchanger inspection &#8212; essential before investing in a system with aging age</li>
+          <li>Manual J load calculation to determine whether the system was correctly sized originally</li>
+          <li>Any situation where the system cannot maintain setpoint &#8212; do not defer evaluation</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My furnace is 22 years old and struggling. Should I repair or replace?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">At 22 years, most furnace components are approaching or past their design life. The decision depends on three factors. First: what is the heat exchanger condition? A cracked heat exchanger on a 22-year-old furnace typically justifies replacement rather than repair &#8212; the cost of heat exchanger replacement approaches new furnace cost and installs new equipment in a 22-year-old cabinet. Second: what is the margin stage? If the system is Thin or Exhausted, repair will not restore adequate margin &#8212; the blower, controls, and combustion components have all aged together. Third: what are the repair costs relative to replacement? The general guideline is to replace when repair costs exceed 50% of replacement cost on a system with less than 5 years of expected remaining life. A 22-year-old furnace with a Thin margin and a needed major repair is typically a replacement candidate.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can a tune-up restore my older furnace's performance?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Sometimes &#8212; and it&#8217;s always worth attempting at the Adequate or Shrinking margin stages. A professional tune-up that includes combustion analysis, burner cleaning, heat exchanger inspection, blower cleaning, and airflow verification can recover meaningful performance from an aging system. The most common single improvement is blower cleaning: a heavily fouled blower wheel can be delivering 20&#8211;30% less airflow than its rated capacity, and cleaning restores that delivery without any part replacement. Combustion adjustments and filter replacement compound the improvement. At the Thin margin stage, a tune-up may buy another season or two of adequate performance. At the Exhausted margin stage, a tune-up will not restore adequate capacity &#8212; the underlying performance decline is too great.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can improving my home's insulation help my aging furnace keep up better?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; and this is one of the most cost-effective interventions at the Shrinking and Thin margin stages. Remember that capacity margin is eroded by two forces simultaneously: equipment performance declining and home heat loss increasing. Reducing heat loss through the building envelope restores margin from the demand side rather than the supply side. Adding attic insulation, sealing air leaks around windows and doors, and weatherstripping can measurably reduce the heating load on an aging furnace. In some cases &#8212; particularly older homes with significant insulation deficiencies &#8212; envelope improvements combined with a professional tune-up can extend a furnace&#8217;s useful life by several additional winters before replacement becomes necessary. This approach is most effective at the Shrinking stage; by the time margin is Exhausted, envelope improvements alone will not restore adequate performance.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>An older furnace that struggles to maintain temperature is almost always a capacity margin problem, not a sudden failure. The furnace didn&#8217;t get smaller &#8212; its performance gradually eroded while your home&#8217;s heating demand didn&#8217;t decrease proportionally.</li>
+        <li>Two forces erode margin simultaneously: equipment efficiency declines (combustion, blower, heat transfer) and home heat loss increases (insulation settling, air leakage, duct aging).</li>
+        <li>The most reliable diagnostic pattern: comfort declining predictably as outdoor temperature drops, with worse performance each winter at milder temperatures than before.</li>
+        <li>Sudden comfort decline within a single season is not age-related margin erosion &#8212; it&#8217;s a correctable fault until proven otherwise. Treat sudden changes as a mechanical problem requiring diagnosis.</li>
+        <li>Raising the thermostat setpoint does not restore capacity. It increases demand on a system already at its limit.</li>
+        <li>At the Shrinking stage, maintenance and envelope improvements can restore meaningful margin. At Exhausted, replacement is typically the only effective response.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">older furnace cant keep up</a>
+      <a href="#" class="tag-pill">furnace runs constantly but house cold</a>
+      <a href="#" class="tag-pill">aging furnace performance decline</a>
+      <a href="#" class="tag-pill">furnace struggles in cold weather</a>
+      <a href="#" class="tag-pill">furnace slow to recover setback</a>
+      <a href="#" class="tag-pill">old furnace replace or repair</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Furnace &amp; Heating Guides</h3>
+    <div class="related-list">
+      <a href="hvac-furnace-dangerous-vs-inconvenient.html" class="related-item">
+        <div><div class="related-item-title">When Furnace Problems Are Dangerous vs. Inconvenient</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-control-vs-mechanical.html" class="related-item">
+        <div><div class="related-item-title">Furnace Control Problem vs. Mechanical Failure</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-airflow-vs-insulation-problem.html" class="related-item">
+        <div><div class="related-item-title">Airflow Problem vs. Insulation Problem</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ignoring-noises-bigger-failures.html" class="related-item">
+        <div><div class="related-item-title">Why Ignoring HVAC Noises Leads to Bigger Failures</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#assessment">Capacity Margin Assessment</a></li>
+      <li><a href="#causes">What Erodes the Margin</a></li>
+      <li><a href="#responses">Response by Margin Stage</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

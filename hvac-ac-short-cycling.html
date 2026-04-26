@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your AC Is Short Cycling | HomeownersRepairGuide.com</title>
+<meta name="description" content="Short cycling is never harmless. How long the AC runs before shutting off — seconds, minutes, or irregularly — identifies the exact cause. Here's how to read your cycle pattern.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-ac-short-cycling.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-ac-short-cycling.html">
+<meta property="og:title" content="Why Your AC Is Short Cycling | HomeownersRepairGuide.com">
+<meta property="og:description" content="How long your AC runs before shutting off identifies the cause. Seconds = safety trip. Minutes = oversizing or thermostat. Irregular = freeze-defrost or drain float.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --trip:#c0402a;--trip-light:#fde8e8;
+  --oversize:#b07800;--oversize-light:#fff8e6;
+  --tstat:#2a5a7a;--tstat-light:#e8f0f5;
+  --freeze:#5a2a7a;--freeze-light:#f0e8f5;
+  --drain:#2a7a5a;--drain-light:#e8f5f0;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Short Cycle Duration Identifier */
+.duration-id{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.di-header{background:var(--navy);padding:18px 22px;}
+.di-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.di-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.di-legend{display:flex;gap:14px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.di-leg{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;}
+.di-leg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.di-leg.trip{color:var(--trip);}.di-leg.trip .di-leg-dot{background:var(--trip);}
+.di-leg.oversize{color:var(--oversize);}.di-leg.oversize .di-leg-dot{background:var(--oversize);}
+.di-leg.tstat{color:var(--tstat);}.di-leg.tstat .di-leg-dot{background:var(--tstat);}
+.di-leg.freeze{color:var(--freeze);}.di-leg.freeze .di-leg-dot{background:var(--freeze);}
+.di-leg.drain{color:var(--drain);}.di-leg.drain .di-leg-dot{background:var(--drain);}
+/* Duration rows */
+.di-rows{display:flex;flex-direction:column;}
+.di-row{display:grid;grid-template-columns:160px 1fr;border-bottom:1px solid var(--gray-light);}
+.di-row:last-child{border-bottom:none;}
+.di-duration{padding:14px;background:var(--cream-dark);border-right:1px solid var(--gray-light);display:flex;flex-direction:column;justify-content:center;}
+.di-dur-time{font-size:20px;font-weight:800;color:var(--navy);font-family:'DM Mono',monospace;margin-bottom:3px;line-height:1;}
+.di-dur-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--text-muted);}
+.di-content{padding:14px 16px;display:flex;flex-direction:column;gap:8px;}
+.di-cause-row{display:flex;gap:10px;align-items:flex-start;}
+.di-cause-tag{font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;flex-shrink:0;white-space:nowrap;margin-top:2px;}
+.di-cause-tag.trip{background:var(--trip-light);color:var(--trip);}
+.di-cause-tag.oversize{background:var(--oversize-light);color:var(--oversize);}
+.di-cause-tag.tstat{background:var(--tstat-light);color:var(--tstat);}
+.di-cause-tag.freeze{background:var(--freeze-light);color:var(--freeze);}
+.di-cause-tag.drain{background:var(--drain-light);color:var(--drain);}
+.di-cause-text{font-size:12px;color:var(--text-body);line-height:1.5;}
+.di-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.di-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.di-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.di-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Why it matters */
+.impact-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin:24px 0;}
+.impact-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:15px;box-shadow:var(--shadow-card);text-align:center;}
+.impact-icon{font-size:26px;margin-bottom:7px;}
+.impact-title{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.impact-desc{font-size:12px;color:var(--text-muted);line-height:1.5;}
+/* Donot list */
+.donot-list{background:var(--trip-light);border:1px solid #e08080;border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;}
+.donot-head{display:flex;align-items:center;gap:8px;margin-bottom:12px;}
+.donot-icon{font-size:20px;}
+.donot-title{font-size:13px;font-weight:700;color:var(--trip);text-transform:uppercase;letter-spacing:0.07em;}
+.donot-items{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.donot-items li{font-size:13px;color:var(--text-body);line-height:1.45;display:flex;gap:8px;}
+.donot-items li::before{content:'\2717';color:var(--trip);font-weight:700;flex-shrink:0;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--oversize-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--trip-light);border:1px solid #e08080;}
+.callout-box.tip{background:var(--drain-light);border:1px solid #80c0a0;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--oversize);}
+.callout-box.alert .callout-label{color:var(--trip);}
+.callout-box.tip .callout-label{color:var(--drain);}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--oversize);}.sev-item.mod .sev-label{color:var(--oversize);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--trip);}.sev-item.crit .sev-label{color:var(--trip);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--trip);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--trip);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--trip);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.impact-grid{grid-template-columns:1fr;}.di-row{grid-template-columns:1fr;}.di-duration{border-right:none;border-bottom:1px solid var(--gray-light);}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-air-conditioning.html">Air Conditioning</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your AC Is Short Cycling</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Air Conditioning</span>
+  </div>
+
+  <h1 class="article-title">Why Your AC Is Short Cycling</h1>
+  <p class="article-subtitle">Short cycling &#8212; when the AC turns on and off too quickly &#8212; is never harmless. It prevents moisture removal, wears out the compressor, and always points to a specific underlying fault. How long the system runs before shutting off is the fastest path to identifying which fault.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Short cycling is always a symptom of an underlying fault.</strong> It never resolves on its own. Every compressor start subjects it to high-inrush current &#8212; the more frequent the cycling, the faster the compressor degrades.</li>
+        <li>Cycle duration identifies the cause: seconds = safety trip (high/low pressure, thermal overload); 1&#8211;3 minutes = refrigerant fault or airflow restriction; 3&#8211;8 minutes = oversized system or thermostat placement; irregular with ice = freeze-defrost cycle</li>
+        <li>Do not keep restarting a short-cycling AC. Each restart attempt stresses an already-compromised compressor.</li>
+        <li>Humidity stays high even when the home feels cool &#8212; short cycling doesn&#8217;t run long enough to remove moisture from the air</li>
+        <li>The filter is always the first check. A severely clogged filter can cause safety-trip short cycling independently of any other fault.</li>
+        <li>An oversized AC that short cycles in comfortable weather but runs normally in extreme heat is almost always an oversizing problem, not a mechanical fault</li>
+      </ul>
+    </div>
+
+    <h2 id="duration">Short Cycle Duration Identifier</h2>
+    <p>Time how long the system runs before shutting off. Match that duration to the rows below to identify which cause category applies to your system.</p>
+
+    <div class="duration-id">
+      <div class="di-header">
+        <h3>How Long Does It Run Before Shutting Off?</h3>
+        <p>Time the cycle from compressor startup to shutdown. The duration tells you which system is failing before a technician arrives.</p>
+      </div>
+      <div class="di-legend">
+        <div class="di-leg trip"><span class="di-leg-dot"></span>Safety Trip</div>
+        <div class="di-leg oversize"><span class="di-leg-dot"></span>Oversizing / Thermostat</div>
+        <div class="di-leg tstat"><span class="di-leg-dot"></span>Thermostat / Controls</div>
+        <div class="di-leg freeze"><span class="di-leg-dot"></span>Freeze-Defrost</div>
+        <div class="di-leg drain"><span class="di-leg-dot"></span>Drain Float Switch</div>
+      </div>
+
+      <div class="di-rows">
+
+        <div class="di-row">
+          <div class="di-duration">
+            <div class="di-dur-time">&lt;30s</div>
+            <div class="di-dur-label">Under 30 Seconds</div>
+          </div>
+          <div class="di-content">
+            <div class="di-cause-row">
+              <div class="di-cause-tag trip">&#9888; Safety Trip</div>
+              <div class="di-cause-text"><strong>High-pressure or low-pressure switch tripping immediately at startup.</strong> The compressor can&#8217;t build operating pressure. Likely causes: severely restricted airflow, refrigerant overcharge pushing head pressure above the high-pressure switch limit, outdoor unit fan not running, or a failed start capacitor preventing the compressor from starting properly.</div>
+            </div>
+            <div class="di-cause-row">
+              <div class="di-cause-tag trip">&#9889; Electrical</div>
+              <div class="di-cause-text"><strong>Contactor or control board dropping out immediately.</strong> The compressor starts and then the contactor opens within seconds &#8212; either due to a failing coil, voltage instability, or a control board fault. Accompanied by clicking sounds.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="di-row">
+          <div class="di-duration">
+            <div class="di-dur-time">1&#8211;3<br><span style="font-size:13px;">min</span></div>
+            <div class="di-dur-label">One to Three Minutes</div>
+          </div>
+          <div class="di-content">
+            <div class="di-cause-row">
+              <div class="di-cause-tag trip">&#128167; Refrigerant</div>
+              <div class="di-cause-text"><strong>Low refrigerant charge triggering low-pressure trip.</strong> System starts, suction pressure drops below the low-pressure switch threshold within 1&#8211;3 minutes, and the safety trips. Ice may be forming on the suction line before shutdown. This is the most common 1&#8211;3 minute cycle pattern.</div>
+            </div>
+            <div class="di-cause-row">
+              <div class="di-cause-tag trip">&#128268; Airflow</div>
+              <div class="di-cause-text"><strong>Severely clogged filter or blocked return driving a low-pressure or freeze trip.</strong> Check the filter immediately. A completely clogged filter can cause a safety-trip short cycle in 1&#8211;3 minutes, especially at the start of a cooling season when the coil hasn&#8217;t been cleaned.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="di-row">
+          <div class="di-duration">
+            <div class="di-dur-time">3&#8211;8<br><span style="font-size:13px;">min</span></div>
+            <div class="di-dur-label">Three to Eight Minutes</div>
+          </div>
+          <div class="di-content">
+            <div class="di-cause-row">
+              <div class="di-cause-tag oversize">&#127968; Oversized System</div>
+              <div class="di-cause-text"><strong>System cools the space quickly and shuts off &#8212; but then temperature rebounds quickly.</strong> The most reliable indicator: comfortable air temperature but high humidity, and the cycling is worst on mild days, better on the hottest days. The system never runs long enough to wring moisture from the air.</div>
+            </div>
+            <div class="di-cause-row">
+              <div class="di-cause-tag tstat">&#127777;&#65039; Thermostat</div>
+              <div class="di-cause-text"><strong>Thermostat in a poor location reading cold supply air from a nearby register.</strong> Senses setpoint temperature quickly and shuts off the system before the rest of the house &#8212; especially distant rooms &#8212; reaches temperature. Pattern is worse in homes where the thermostat is near a supply register.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="di-row">
+          <div class="di-duration">
+            <div class="di-dur-time">&#8764;20<br><span style="font-size:13px;">min on/off</span></div>
+            <div class="di-dur-label">Irregular &#8212; Long On, Then Long Off</div>
+          </div>
+          <div class="di-content">
+            <div class="di-cause-row">
+              <div class="di-cause-tag freeze">&#10052;&#65039; Freeze-Defrost</div>
+              <div class="di-cause-text"><strong>Coil freezes during a long run cycle, system shuts off on safety, ice melts, system restarts &#8212; then freezes again.</strong> The off period is 20&#8211;60 minutes (the thaw time). Water may appear during the off period. Look for ice on the suction line or coil housing. Often worst at night when outdoor temperatures drop.</div>
+            </div>
+            <div class="di-cause-row">
+              <div class="di-cause-tag trip">&#9922; Compressor Thermal Overload</div>
+              <div class="di-cause-text"><strong>Compressor overheating, tripping its internal thermal overload, cooling for 20&#8211;45 minutes, then restarting.</strong> Caused by dirty condenser coil, weak capacitor, high head pressure, or electrical supply issue. The long off-period is the compressor cooling down enough to reset.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="di-row" style="border-bottom:none;">
+          <div class="di-duration">
+            <div class="di-dur-time">&#8593;&#8595;</div>
+            <div class="di-dur-label">Unpredictable / Erratic</div>
+          </div>
+          <div class="di-content">
+            <div class="di-cause-row">
+              <div class="di-cause-tag drain">&#128167; Drain Float Switch</div>
+              <div class="di-cause-text"><strong>Drain line partially clogged &#8212; float switch shuts off system, water slowly drains, system restarts.</strong> Cycle timing is unpredictable because it depends on how fast water drains. Often misdiagnosed as an electrical issue. Check the drain pan for standing water and the drain line outlet for flow.</div>
+            </div>
+            <div class="di-cause-row">
+              <div class="di-cause-tag tstat">&#9881;&#65039; Control Board or Wiring Fault</div>
+              <div class="di-cause-text"><strong>Intermittent electrical fault &#8212; loose thermostat wire, failing relay, or control board dropout.</strong> No consistent pattern &#8212; the system runs normally some cycles and cuts out at random intervals others. Accompanied by occasional clicking or erratic thermostat display behavior.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="di-footer">
+        <div class="di-footer-icon">&#9201;</div>
+        <div>
+          <h4>Time It Before You Call</h4>
+          <p>When you call a technician, tell them the runtime before shutdown. &#8220;It runs about 2 minutes then shuts off&#8221; is a completely different diagnostic path than &#8220;it runs about 5 minutes then shuts off.&#8221; That one piece of information can save 30 minutes of diagnostic time and point the technician directly to the right system.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="why-matters">Why Short Cycling Damages the Compressor</h2>
+
+    <div class="impact-grid">
+      <div class="impact-card">
+        <div class="impact-icon">&#9889;</div>
+        <div class="impact-title">High Inrush Current at Every Start</div>
+        <div class="impact-desc">Compressor startup draws 3&#8211;5x normal running current. Each start is a mechanical and electrical stress event. A system that starts 10 times per hour instead of 2&#8211;3 times is accumulating the equivalent of years of normal compressor starts in weeks.</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-icon">&#128167;</div>
+        <div class="impact-title">Oil Not Returned to Compressor</div>
+        <div class="impact-desc">Compressor oil travels through the refrigerant circuit during normal operation and returns during sustained run cycles. Short cycles don&#8217;t run long enough to return oil to the compressor &#8212; gradually starving it of lubrication and accelerating internal wear.</div>
+      </div>
+      <div class="impact-card">
+        <div class="impact-icon">&#128167;</div>
+        <div class="impact-title">Humidity Not Removed</div>
+        <div class="impact-desc">Moisture removal (dehumidification) requires sustained runtime. A system that runs 3&#8211;5 minutes per cycle removes almost no humidity even if it achieves the temperature setpoint. A home that feels cool but damp, or has persistent condensation on windows, is often experiencing short cycling.</div>
+      </div>
+    </div>
+
+    <div class="callout-box alert">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Do Not Keep Restarting</div>
+        <div class="callout-text">Every restart of a short-cycling system subjects a potentially compromised compressor to another high-inrush startup. If the system shuts off on a safety trip (pressure switch, thermal overload), that safety device exists to protect the compressor. Repeatedly restarting to override the safety accelerates the damage the safety was designed to prevent. If the system is short cycling rapidly, turn it off and leave it off until a technician can diagnose the cause.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Occasional short cycling from thermostat placement or mild temperature swings. System functions otherwise. Investigate this season.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Airflow or duct problems causing repeated shutdowns. Reduced cooling and comfort. Professional evaluation this week.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Refrigerant faults, blower failures, or electrical problems causing frequent safety trips. Service now before compressor damage.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Compressor overheating, breaker trips, freeze-defrost cycling. Shut down and call for service. Compressor at risk.</div>
+      </div>
+    </div>
+
+    <div class="donot-list">
+      <div class="donot-head">
+        <div class="donot-icon">&#9888;&#65039;</div>
+        <div class="donot-title">Do Not List &#8212; Actions That Accelerate Damage</div>
+      </div>
+      <ul class="donot-items">
+        <li>Keep restarting a short-cycling AC &#8212; compressor burnout risk increases with every restart</li>
+        <li>Adjust refrigerant charge &#8212; requires EPA 608 certification and proper gauges</li>
+        <li>Bypass float switches, pressure switches, or thermal safety controls</li>
+        <li>Clean the condenser coil while the system is powered &#8212; disconnect power at the breaker first</li>
+        <li>Run the system if ice is visible anywhere on the unit or suction line</li>
+        <li>Assume the thermostat is fine without testing it &#8212; thermostat placement causes more short cycling than most homeowners expect</li>
+      </ul>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The first thing I ask on a short cycling call is how long it runs before shutting off. That question alone usually gets me 80% of the way to the diagnosis before I touch anything. Under 30 seconds &#8212; I&#8217;m looking at a high-pressure trip or a contactor issue. One to three minutes &#8212; I&#8217;m pulling out the gauges and checking refrigerant pressure almost immediately. Three to five minutes with good pressures &#8212; I&#8217;m asking about the system size and whether the home has been well-insulated recently, because that&#8217;s almost always oversizing. The freeze-defrost pattern is the tricky one &#8212; long on, long off, water around the furnace during the off period. Homeowners often call that one an electrical problem because of the long off time, but when I see water and the cycle has that specific rhythm, I&#8217;m looking at the coil and the suction line. The drain float switch one still surprises people &#8212; &#8216;my AC keeps shutting off and I don&#8217;t know why&#8217; and there&#8217;s half an inch of standing water in the secondary pan. Five-minute fix, but you have to look for it."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Time the cycle from compressor start to shutdown &#8212; note the duration and tell the technician</li>
+          <li>Replace the air filter &#8212; the first check regardless of cycle duration</li>
+          <li>Check the drain pan for standing water and the drain outlet for flow</li>
+          <li>Look for ice on the suction line or air handler housing</li>
+          <li>Note whether short cycling is worse on mild days than hot days (oversizing indicator)</li>
+          <li>Check thermostat location &#8212; is it near a supply register or in a sunny hallway?</li>
+          <li>Check outdoor unit &#8212; is the condenser fan running when the compressor is on?</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Refrigerant pressure testing &#8212; suction and head pressure measurement</li>
+          <li>Capacitor testing &#8212; failed capacitors are common and dangerous to handle</li>
+          <li>Contactor inspection and replacement</li>
+          <li>Blower motor amperage and ECM diagnosis</li>
+          <li>Condenser coil cleaning &#8212; requires power disconnection and proper technique</li>
+          <li>Control board diagnosis and thermostat wiring inspection</li>
+          <li>Any situation involving rapid cycling, safety trips, or compressor heat</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My AC short cycles only on mild days but runs fine on hot days. Why?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">This is the oversizing pattern and it&#8217;s almost diagnostic on its own. An oversized system is designed to cool a larger heat load than your home actually presents &#8212; it removes the heat too quickly and shuts off before completing a full moisture-removal cycle. On mild days, the heat load is low, the system satisfies the thermostat in 3&#8211;5 minutes, and then the temperature rebounds quickly. On the hottest days, the heat load finally matches what the system was designed for &#8212; it runs longer, removes humidity, and performs correctly. If you notice that humid, sticky air inside the house persists despite the temperature feeling comfortable, that&#8217;s the humidity signature of an oversized, short-cycling system. Unfortunately, there is no practical fix for an oversized system other than replacement with correct sizing &#8212; thermostat adjustments and variable-speed upgrades can help at the margins but do not correct the fundamental mismatch.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can a dirty condenser coil cause short cycling?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes, in two ways. First, a severely fouled condenser coil cannot reject heat effectively, causing head pressure to rise above the high-pressure switch threshold and tripping the system off &#8212; producing a short-cycling pattern, especially during peak afternoon heat. Second, high head pressure increases the thermal load on the compressor, which can overheat and trip its internal thermal overload &#8212; producing the long-cycle-then-long-off-period pattern typical of compressor thermal trips. Annual condenser coil cleaning is one of the most cost-effective maintenance steps available and directly prevents both of these short-cycling patterns. A dirty condenser that passes visual inspection but still has reduced airflow through the fins &#8212; from bent fins or internal fouling &#8212; may require a technician with a fin comb and coil cleaning solution to restore full performance.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My new AC short cycles but the installer says it&#8217;s sized correctly. What should I check?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Several installation-related issues can cause a correctly-sized system to behave like an oversized one. First, verify the refrigerant charge &#8212; an overcharge on a new system causes high head pressure and can produce short-cycling safety trips. This is more common than homeowners expect on new installations. Second, confirm the thermostat is in an appropriate location &#8212; a new thermostat installed near a supply register, in a sunny window area, or in an unusually small or poorly-circulated space will cause premature shutoff regardless of system size. Third, check the staging configuration if the system is two-stage or variable-speed &#8212; incorrect staging setup can cause the system to run at full capacity when low-stage would be appropriate, producing the same symptom as oversizing. Ask the installer to verify superheat and subcooling, confirm refrigerant charge, and test thermostat placement before concluding the system itself is at fault.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Short cycling is never normal. It is always a symptom of an underlying fault that compounds compressor wear with every restart.</li>
+        <li>Cycle duration is the fastest diagnostic: under 30 seconds = safety trip; 1&#8211;3 minutes = refrigerant or airflow fault; 3&#8211;8 minutes = oversizing or thermostat; irregular long on/off = freeze-defrost or compressor thermal overload; unpredictable = drain float or electrical.</li>
+        <li>Short cycling prevents moisture removal even when the home reaches temperature setpoint. Persistent humidity despite a working AC is a short-cycling symptom.</li>
+        <li>Do not repeatedly restart a short-cycling system. Safety devices that trip exist to protect the compressor &#8212; overriding them accelerates the damage they were designed to prevent.</li>
+        <li>Replace the filter first regardless of the cycle pattern. A completely clogged filter can independently cause safety-trip short cycling in 1&#8211;3 minutes.</li>
+        <li>The drain float switch is the most frequently misdiagnosed short-cycling cause &#8212; check the drain pan for standing water before assuming an electrical problem.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">AC short cycling</a>
+      <a href="#" class="tag-pill">air conditioner turns on and off</a>
+      <a href="#" class="tag-pill">AC short cycles causes</a>
+      <a href="#" class="tag-pill">oversized AC short cycling</a>
+      <a href="#" class="tag-pill">AC cycles too frequently</a>
+      <a href="#" class="tag-pill">AC shuts off after few minutes</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Air Conditioning Guides</h3>
+    <div class="related-list">
+      <a href="hvac-ac-freezes-up.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Freezes Up</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-leaking-water.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Is Leaking Water</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-not-cooling.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Runs But Isn&#8217;t Cooling</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-wont-turn-on.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Won&#8217;t Turn On</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#duration">Short Cycle Duration Identifier</a></li>
+      <li><a href="#why-matters">Why It Damages the Compressor</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Thermostat Placement and Sensors Cause Uneven Comfort | HomeownersRepairGuide.com</title>
+<meta name="description" content="Thermostats don't measure comfort — they measure temperature at one specific location. When that location is wrong, your HVAC responds perfectly to bad data. Here's how to identify the problem.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-thermostat-placement-sensors.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-thermostat-placement-sensors.html">
+<meta property="og:title" content="Why Thermostat Placement and Sensors Cause Uneven Comfort | HomeownersRepairGuide.com">
+<meta property="og:description" content="A thermostat in the wrong location gives your HVAC perfect instructions based on bad data. Here's how placement errors cause whole-house discomfort.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --bad:#c0402a;--bad-light:#fde8e8;
+  --good:#2a7a2a;--good-light:#eaf5ea;
+  --caution:#b07800;--caution-light:#fff8e6;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Placement & Sensor Bias Spotter */
+.bias-spotter{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.bs-header{background:var(--navy);padding:18px 22px;}
+.bs-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.bs-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.bs-col-heads{display:grid;grid-template-columns:160px 1fr 1fr;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);}
+.bs-col-head{padding:9px 14px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;border-right:1px solid var(--gray-light);}
+.bs-col-head:last-child{border-right:none;}
+.bs-col-head:nth-child(1){color:var(--text-muted);}
+.bs-col-head:nth-child(2){color:var(--bad);}
+.bs-col-head:nth-child(3){color:var(--good);}
+/* Placement rows */
+.bs-rows{display:flex;flex-direction:column;}
+.bs-row{display:grid;grid-template-columns:160px 1fr 1fr;border-bottom:1px solid var(--gray-light);}
+.bs-row:last-child{border-bottom:none;}
+.bs-location{padding:13px 14px;background:var(--cream-dark);border-right:1px solid var(--gray-light);display:flex;flex-direction:column;justify-content:center;}
+.bs-loc-icon{font-size:18px;margin-bottom:5px;}
+.bs-loc-name{font-size:12px;font-weight:700;color:var(--navy);line-height:1.3;}
+.bs-cell{padding:12px 14px;border-right:1px solid var(--gray-light);font-size:12px;line-height:1.5;}
+.bs-cell:last-child{border-right:none;}
+.bs-cell-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.bs-cell.bad-col .bs-cell-label{color:var(--bad);}
+.bs-cell.good-col .bs-cell-label{color:var(--good);}
+.bs-symptom{font-weight:600;color:var(--navy);margin-bottom:3px;font-size:12px;}
+.bs-cell-desc{color:var(--text-muted);}
+.bs-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.bs-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.bs-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.bs-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Ideal placement guide */
+.placement-guide{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:24px 0;box-shadow:var(--shadow-card);}
+.pg-head{background:var(--good);padding:13px 18px;display:flex;align-items:center;gap:8px;}
+.pg-head-title{font-size:13px;font-weight:700;color:var(--white);}
+.pg-items{display:grid;grid-template-columns:1fr 1fr;border-top:none;}
+.pg-item{padding:13px 16px;border-right:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);display:flex;gap:10px;align-items:flex-start;}
+.pg-item:nth-child(even){border-right:none;}
+.pg-item:nth-last-child(-n+2){border-bottom:none;}
+.pg-icon{font-size:16px;flex-shrink:0;margin-top:1px;}
+.pg-text{font-size:12px;color:var(--text-body);line-height:1.5;}
+.pg-text strong{color:var(--navy);font-weight:700;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--caution-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--bad-light);border:1px solid #e08080;}
+.callout-box.tip{background:var(--good-light);border:1px solid #80c080;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--caution);}
+.callout-box.alert .callout-label{color:var(--bad);}
+.callout-box.tip .callout-label{color:var(--good);}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--caution);}.sev-item.mod .sev-label{color:var(--caution);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--bad);}.sev-item.crit .sev-label{color:var(--bad);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--bad);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--bad);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--bad);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.bs-row,.bs-col-heads{grid-template-columns:1fr;}.bs-location{border-right:none;border-bottom:1px solid var(--gray-light);}.bs-cell{border-right:none !important;border-bottom:1px solid var(--gray-light);}.bs-cell:last-child{border-bottom:none;}.bs-col-heads{display:none;}.pg-items{grid-template-columns:1fr;}.pg-item{border-right:none !important;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-diagnostics-controls.html">Diagnostics &amp; Controls</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Thermostat Placement &amp; Sensors Cause Uneven Comfort</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Diagnostics &amp; Controls</span>
+  </div>
+
+  <h1 class="article-title">Why Thermostat Placement and Sensors Cause Uneven Comfort</h1>
+  <p class="article-subtitle">A thermostat doesn&#8217;t measure comfort &#8212; it measures temperature at one specific location. When that location is wrong, your HVAC responds perfectly to bad data. The system is working exactly as designed. The problem is what it&#8217;s being told.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>The system is doing exactly what it&#8217;s told.</strong> Thermostat placement errors produce comfort problems not because the HVAC is failing, but because it&#8217;s responding correctly to incorrect data. Airflow fixes and equipment changes cannot correct inaccurate sensor readings.</li>
+        <li>A thermostat near a supply vent reads artificially cold and runs the system past the point where the rest of the house is comfortable. A thermostat in a sunny hallway reads artificially warm and shuts the system off before distant rooms reach setpoint.</li>
+        <li>The clearest placement bias signal: rooms near the thermostat overconditioned while distant rooms lag, or comfort changes follow a time-of-day pattern that mirrors sun movement</li>
+        <li>Fan-only mode is a useful diagnostic tool: if running the fan without conditioning improves comfort balance, control bias is likely &#8212; the system just needed to circulate air more evenly</li>
+        <li>Adding remote sensors without understanding the control logic often makes the problem worse by introducing conflicting data into the averaging calculation</li>
+        <li>Thermostat relocation is one of the most cost-effective comfort improvements available &#8212; and one of the least commonly considered</li>
+      </ul>
+    </div>
+
+    <h2 id="spotter">Thermostat Placement &amp; Sensor Bias Spotter</h2>
+    <p>Match your thermostat or sensor&#8217;s location to the left column. The center column shows the comfort symptom that specific placement produces, and the right column shows what a correct placement looks like instead.</p>
+
+    <div class="bias-spotter">
+      <div class="bs-header">
+        <h3>Six Placement Errors and the Comfort Symptoms They Produce</h3>
+        <p>Each placement error gives the HVAC system accurate data about one location and misleading data about the rest of the house.</p>
+      </div>
+      <div class="bs-col-heads">
+        <div class="bs-col-head">Placement Location</div>
+        <div class="bs-col-head">&#10007; What Goes Wrong</div>
+        <div class="bs-col-head">&#10003; What Correct Placement Looks Like</div>
+      </div>
+      <div class="bs-rows">
+
+        <div class="bs-row">
+          <div class="bs-location">
+            <div class="bs-loc-icon">&#9728;&#65039;</div>
+            <div class="bs-loc-name">Near a Sunny Window or South/West Wall</div>
+          </div>
+          <div class="bs-cell bad-col">
+            <div class="bs-cell-label">&#10007; What Goes Wrong</div>
+            <div class="bs-symptom">System shuts off prematurely. Distant rooms never reach setpoint.</div>
+            <div class="bs-cell-desc">The thermostat reads 73°F from solar gain while bedrooms are still 68°F. The system satisfies the thermostat and shuts down &#8212; leaving the rest of the house uncomfortable. Pattern: worse in afternoon, comfortable in morning.</div>
+          </div>
+          <div class="bs-cell good-col">
+            <div class="bs-cell-label">&#10003; Correct Placement</div>
+            <div class="bs-cell-desc">Interior wall of a frequently occupied central room, away from windows. No direct sun exposure at any time of day. No nearby exterior walls with significant solar exposure.</div>
+          </div>
+        </div>
+
+        <div class="bs-row">
+          <div class="bs-location">
+            <div class="bs-loc-icon">&#127777;&#65039;</div>
+            <div class="bs-loc-name">Directly Below or Adjacent to a Supply Register</div>
+          </div>
+          <div class="bs-cell bad-col">
+            <div class="bs-cell-label">&#10007; What Goes Wrong</div>
+            <div class="bs-symptom">System over-conditions. Thermostat room is too cold while other rooms are still warm.</div>
+            <div class="bs-cell-desc">Cold supply air blows directly past the sensor, reading 65°F when the ambient room is 72°F. The system runs continuously trying to achieve a setpoint the room has already passed. Energy waste plus overconditioning near the thermostat.</div>
+          </div>
+          <div class="bs-cell good-col">
+            <div class="bs-cell-label">&#10003; Correct Placement</div>
+            <div class="bs-cell-desc">At least 5&#8211;6 feet from any supply register. The thermostat should read room air temperature, not supply air temperature. If this is the current location, duct deflector or register relocation may be needed alongside thermostat relocation.</div>
+          </div>
+        </div>
+
+        <div class="bs-row">
+          <div class="bs-location">
+            <div class="bs-loc-icon">&#8592;&#128268;</div>
+            <div class="bs-loc-name">Near or on the Return Air Path</div>
+          </div>
+          <div class="bs-cell bad-col">
+            <div class="bs-cell-label">&#10007; What Goes Wrong</div>
+            <div class="bs-symptom">System short-cycles. Reads mixed-house air temperature instead of room temperature.</div>
+            <div class="bs-cell-desc">Return air draws from all rooms simultaneously. A thermostat near a return grille reads an average of the whole house &#8212; not the room it&#8217;s in. This produces short-cycling behavior and an impression that the system is satisfied when specific rooms are not.</div>
+          </div>
+          <div class="bs-cell good-col">
+            <div class="bs-cell-label">&#10003; Correct Placement</div>
+            <div class="bs-cell-desc">Away from return grilles and pathways. The thermostat should read the temperature of the space where occupants spend time, not the blended average of all return air.</div>
+          </div>
+        </div>
+
+        <div class="bs-row">
+          <div class="bs-location">
+            <div class="bs-loc-icon">&#127968;</div>
+            <div class="bs-loc-name">On an Exterior Wall</div>
+          </div>
+          <div class="bs-cell bad-col">
+            <div class="bs-cell-label">&#10007; What Goes Wrong</div>
+            <div class="bs-symptom">Winter over-run, summer under-run. Reads building envelope temperature, not room air.</div>
+            <div class="bs-cell-desc">Cold exterior walls conduct cold through the drywall to the thermostat sensor in winter, making it read 68°F when the room air is 71°F. The system runs unnecessarily. In summer the reverse occurs. Symptoms are seasonal and weather-correlated.</div>
+          </div>
+          <div class="bs-cell good-col">
+            <div class="bs-cell-label">&#10003; Correct Placement</div>
+            <div class="bs-cell-desc">Interior wall only. The wall behind the thermostat should separate two conditioned spaces, not a conditioned space from the outside. No pipes, wiring chases, or drafts in the wall cavity behind the unit.</div>
+          </div>
+        </div>
+
+        <div class="bs-row">
+          <div class="bs-location">
+            <div class="bs-loc-icon">&#128682;</div>
+            <div class="bs-loc-name">In a Low-Occupancy Room or Seldom-Used Area</div>
+          </div>
+          <div class="bs-cell bad-col">
+            <div class="bs-cell-label">&#10007; What Goes Wrong</div>
+            <div class="bs-symptom">HVAC optimizes for an unused space while lived-in rooms remain uncomfortable.</div>
+            <div class="bs-cell-desc">A thermostat in a formal dining room that&#8217;s used twice a year controls the comfort of bedrooms where people sleep every night. The system satisfies the dining room and ignores the bedrooms. This is most common in homes where thermostats were placed by builders for aesthetics rather than occupancy logic.</div>
+          </div>
+          <div class="bs-cell good-col">
+            <div class="bs-cell-label">&#10003; Correct Placement</div>
+            <div class="bs-cell-desc">Hallway or frequently occupied room that represents the thermal center of the home &#8212; where the family actually spends time. For most homes this is a central hallway or living area, not a dedicated formal room.</div>
+          </div>
+        </div>
+
+        <div class="bs-row">
+          <div class="bs-location">
+            <div class="bs-loc-icon">&#9881;&#65039;</div>
+            <div class="bs-loc-name">Multi-Sensor System with Conflicting or Misweighted Inputs</div>
+          </div>
+          <div class="bs-cell bad-col">
+            <div class="bs-cell-label">&#10007; What Goes Wrong</div>
+            <div class="bs-symptom">Fixing one room worsens others. System behavior changes unpredictably.</div>
+            <div class="bs-cell-desc">Smart thermostats and multi-zone systems use averaging or priority logic across sensors. A single poorly placed sensor can dominate the average and produce system behavior that appears random. Adding sensors without understanding the weighting logic creates cascading conflicts.</div>
+          </div>
+          <div class="bs-cell good-col">
+            <div class="bs-cell-label">&#10003; Correct Approach</div>
+            <div class="bs-cell-desc">Each sensor should be placed in a room that represents a meaningful portion of occupied space. Sensor weighting should reflect occupancy hours, not room size or position. Professional configuration review is warranted before adding sensors to an existing multi-sensor setup.</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="bs-footer">
+        <div class="bs-footer-icon">&#128161;</div>
+        <div>
+          <h4>The Fan-Only Diagnostic Test</h4>
+          <p>Switch your system to Fan Only mode (no heating or cooling, just circulation) for 15&#8211;20 minutes. Then check room temperatures across the house. If comfort becomes more even during fan-only mode, the thermostat is reading a biased location &#8212; the house is actually more balanced than the thermostat believes, and the control bias is causing unnecessary cycling.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="placement">What Correct Thermostat Placement Looks Like</h2>
+
+    <div class="placement-guide">
+      <div class="pg-head">
+        <span style="font-size:16px;">&#10003;</span>
+        <div class="pg-head-title">Ideal Placement Checklist &#8212; All Six Should Be True</div>
+      </div>
+      <div class="pg-items">
+        <div class="pg-item">
+          <div class="pg-icon">&#127968;</div>
+          <div class="pg-text"><strong>Interior wall only.</strong> The wall behind the thermostat separates two conditioned rooms, not a conditioned room from outside.</div>
+        </div>
+        <div class="pg-item">
+          <div class="pg-icon">&#128337;</div>
+          <div class="pg-text"><strong>No direct sun exposure at any time of day.</strong> Walk past the location at noon and again at 4 PM. No beam should cross the thermostat location.</div>
+        </div>
+        <div class="pg-item">
+          <div class="pg-icon">&#127777;&#65039;</div>
+          <div class="pg-text"><strong>At least 5&#8211;6 feet from any supply register.</strong> Supply air temperature must not influence the sensor reading.</div>
+        </div>
+        <div class="pg-item">
+          <div class="pg-icon">&#128268;</div>
+          <div class="pg-text"><strong>Not adjacent to a return grille.</strong> Return air mixes all rooms &#8212; a thermostat in this path reads a blended average, not the local room.</div>
+        </div>
+        <div class="pg-item">
+          <div class="pg-icon">&#128104;&#8205;&#128101;</div>
+          <div class="pg-text"><strong>In a frequently occupied area.</strong> The thermostat location should represent where the household actually spends time, not a formal or seldom-used space.</div>
+        </div>
+        <div class="pg-item">
+          <div class="pg-icon">&#8597;&#65039;</div>
+          <div class="pg-text"><strong>5 feet from the floor.</strong> Avoid floor level (too cold) and ceiling level (stratified hot air). Standard mounting height is 5 feet.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Setpoint Adjustments Cannot Fix Placement Bias</div>
+        <div class="callout-text">Raising or lowering the thermostat setpoint compensates for a biased reading by asking for a different target at the wrong location. The bias persists &#8212; it just moves the discomfort to a different temperature range. The correct fix is moving the thermostat or sensor to a representative location, not recalibrating the target around a bad reading.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Minor</div></div>
+        <div class="sev-desc">Mild comfort imbalance without cycling issues. Manageable with setpoint adjustment as interim fix. Relocation when convenient.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Noticeable imbalance, increased runtime, or rooms consistently uncomfortable. Thermostat relocation warranted.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Short-cycling, energy spikes, or zoned airflow disruption. Equipment stress from improper control. Professional evaluation needed.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Repeated safety shutdowns or pressure-related component stress from control-driven cycling. Service immediately.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"I see thermostat placement problems constantly, and they&#8217;re almost always invisible to the homeowner because the thermostat is a trusted device &#8212; people assume it&#8217;s right. The one that gets me most often is the thermostat on a south-facing wall in a hallway with afternoon sun. The system shuts off at 2 PM because that wall reads 74°F, and then the bedrooms are 68°F when the family goes to bed. They&#8217;ve adjusted the setpoint so many times trying to chase it, and it never works. I move the thermostat to the interior wall on the other side of the hallway &#8212; maybe four feet away &#8212; and everything normalizes within a day. The other placement I see mishandled is near the return grille. A builder will put the thermostat right next to the return because it looks clean and the wiring is easy. But that sensor is reading blended house air, not room air. The system short-cycles and the homeowner thinks the thermostat is broken. It&#8217;s not broken &#8212; it&#8217;s just reading the wrong air."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Evaluate your thermostat location against all six placement criteria above</li>
+          <li>Run the fan-only test &#8212; note whether comfort evens out during circulation without conditioning</li>
+          <li>Note whether comfort problems follow a time-of-day pattern that correlates with sun position</li>
+          <li>Compare the thermostat&#8217;s temperature reading to a portable thermometer placed in the center of the room</li>
+          <li>Check whether comfort improves when you override the thermostat to a significantly different setpoint</li>
+          <li>Note whether problems began after any control system change &#8212; new thermostat, added sensors, or programming update</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Thermostat relocation &#8212; requires low-voltage wiring to new location</li>
+          <li>Multi-sensor system configuration, weighting review, and logic adjustment</li>
+          <li>Zoning system interaction diagnosis if sensors are part of a zone control setup</li>
+          <li>Temperature mapping across multiple rooms to quantify the bias magnitude</li>
+          <li>Runtime and cycling analysis to identify over-run or short-cycling caused by sensor placement</li>
+          <li>Any situation where control changes have cascading effects on zoning or equipment behavior</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My smart thermostat has remote sensors. Can I use those to fix a placement problem without moving the main unit?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Sometimes &#8212; it depends on your thermostat model and how it uses sensor data. Many smart thermostats (Ecobee, Nest, and others) allow remote sensors to participate in temperature averaging or to be prioritized based on occupancy detection. If your thermostat supports &#8220;follow me&#8221; or occupancy-based sensor prioritization, a well-placed remote sensor in a frequently occupied room can effectively override a poorly located main unit. However, adding a remote sensor to a thermostat that averages all sensors equally can make a placement bias worse &#8212; you&#8217;ve now added correct data that gets averaged down by the biased reading at the main unit. Before adding sensors, understand how your thermostat uses them. Check the app or manual for averaging logic. If the thermostat allows you to designate a sensor as the primary control input during occupied hours, that&#8217;s a legitimate fix. If it averages all sensors equally, relocation of the main unit is a cleaner solution.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How do I know if my thermostat is reading correctly or is biased?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">The simplest test is to place a calibrated portable thermometer or digital temperature sensor at the thermostat height (5 feet) in the center of the room &#8212; not near the thermostat itself, but away from walls, vents, and windows. Let both devices stabilize for 15&#8211;20 minutes with the system off. Then compare readings. A difference of more than 1&#8211;2°F indicates the thermostat is reading a local condition rather than room air temperature. The nature of the difference tells you the bias direction: if the thermostat reads warmer than the room center, it&#8217;s picking up a heat source (sun, exterior wall, nearby appliance). If it reads cooler, it&#8217;s picking up a cold source (supply air, exterior wall draft, cold air intrusion). The bias magnitude at a given moment will vary with conditions &#8212; a thermostat biased by afternoon sun may read correctly at 8 AM and be significantly wrong at 3 PM.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My thermostat is in what seems like a good location but the comfort is still uneven. What else could cause this?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Several other control and system factors can produce thermostat-like symptoms even with correct placement. First, check whether the thermostat anticipator or cycle rate is set correctly &#8212; older thermostats have a mechanical anticipator that affects when the system turns on and off relative to setpoint. Incorrect settings produce short-cycling or late-shutoff behavior. Second, variable-speed and two-stage systems may have staging logic that interacts poorly with specific thermostat models &#8212; a smart thermostat that was not configured for multi-stage operation may control a two-stage system as if it were single-stage, producing comfort problems even with correct placement. Third, if you have a zoned system, the zone board logic and damper behavior may be creating comfort patterns that look like thermostat placement issues. Finally, a thermostat that is technically in a good location but in a room that has unusually high or low heat load (large window area, over a garage) will read correctly for that room but incorrectly for the rest of the house. In that case, the issue is room selection &#8212; a different room should be the control location.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>A thermostat measures temperature at one specific location &#8212; not comfort across the house. When that location is influenced by sun, supply air, return air, exterior walls, or low-occupancy conditions, the HVAC responds correctly to incorrect data.</li>
+        <li>Six placement errors produce predictable symptom patterns: sunny location = premature shutoff; near supply register = over-conditioning; near return grille = short-cycling; exterior wall = seasonal over/under-run; unused room = misaligned conditioning; multi-sensor conflicts = unpredictable behavior.</li>
+        <li>The fan-only diagnostic test is the fastest way to confirm control bias: if comfort evens out during fan circulation alone, the house is more balanced than the thermostat believes.</li>
+        <li>Setpoint adjustments cannot fix placement bias. They compensate for a biased reading by targeting a different value at the wrong location. The bias persists.</li>
+        <li>Remote sensors can fix placement bias in smart thermostat systems &#8212; but only if the thermostat supports sensor prioritization. Equal-averaging systems may get worse when sensors are added.</li>
+        <li>Thermostat relocation is one of the most cost-effective comfort improvements available. A 4-foot move to a better wall location can eliminate years of chased setpoints and unexplained comfort problems.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">thermostat placement uneven comfort</a>
+      <a href="#" class="tag-pill">thermostat wrong location</a>
+      <a href="#" class="tag-pill">thermostat near vent problem</a>
+      <a href="#" class="tag-pill">HVAC shuts off too soon</a>
+      <a href="#" class="tag-pill">smart thermostat sensor placement</a>
+      <a href="#" class="tag-pill">thermostat reads wrong temperature</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Diagnostics &amp; Controls Guides</h3>
+    <div class="related-list">
+      <a href="hvac-thermostat-causes-uneven-comfort.html" class="related-item">
+        <div><div class="related-item-title">Why Your Thermostat Causes Uneven Comfort</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-control-vs-mechanical.html" class="related-item">
+        <div><div class="related-item-title">Furnace Control Problem vs. Mechanical Failure</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-airflow-vs-insulation-problem.html" class="related-item">
+        <div><div class="related-item-title">Airflow Problem vs. Insulation Problem</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-one-room-hot-or-cold.html" class="related-item">
+        <div><div class="related-item-title">Why One Room Is Always Hot or Cold</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#spotter">Placement &amp; Sensor Bias Spotter</a></li>
+      <li><a href="#placement">Ideal Placement Checklist</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

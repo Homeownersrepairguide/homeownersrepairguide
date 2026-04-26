@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your HVAC Makes Clicking, Ticking, or Tapping Noises | HomeownersRepairGuide.com</title>
+<meta name="description" content="A single click at startup is normal. Repeated clicking, rapid chatter, or clicking without successful startup are electrical control signals that require attention. Here's how to read the pattern.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-clicking-ticking-tapping.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-clicking-ticking-tapping.html">
+<meta property="og:title" content="Why Your HVAC Makes Clicking, Ticking, or Tapping Noises | HomeownersRepairGuide.com">
+<meta property="og:description" content="HVAC clicking isn't random — each pattern points to a specific electrical component. Here's how to read what your system is telling you.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --normal:#2a7a2a;--normal-light:#eaf5ea;
+  --watch:#b07800;--watch-light:#fff8e6;
+  --warning:#c0402a;--warning-light:#fde8e8;
+  --critical:#7a1010;--critical-light:#f5e0e0;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Clicking Pattern Decoder */
+.click-decoder{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.cd-header{background:var(--navy);padding:18px 22px;}
+.cd-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.cd-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.cd-legend{display:flex;gap:14px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.cd-leg{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;}
+.cd-leg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.cd-leg.normal{color:var(--normal);}.cd-leg.normal .cd-leg-dot{background:var(--normal);}
+.cd-leg.watch{color:var(--watch);}.cd-leg.watch .cd-leg-dot{background:var(--watch);}
+.cd-leg.warning{color:var(--warning);}.cd-leg.warning .cd-leg-dot{background:var(--warning);}
+.cd-leg.critical{color:var(--critical);}.cd-leg.critical .cd-leg-dot{background:var(--critical);}
+/* Pattern rows */
+.cd-patterns{display:flex;flex-direction:column;}
+.cd-pattern{border-bottom:1px solid var(--gray-light);display:grid;grid-template-columns:200px 1fr;}
+.cd-pattern:last-child{border-bottom:none;}
+.cd-sound{padding:16px;border-right:1px solid var(--gray-light);display:flex;flex-direction:column;justify-content:center;}
+.cd-sound-viz{display:flex;align-items:center;gap:3px;margin-bottom:8px;}
+.cd-tick{width:6px;border-radius:1px;background:var(--navy);}
+.cd-gap{width:8px;}
+.cd-sound-label{font-size:11px;font-weight:700;color:var(--navy);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:3px;}
+.cd-sound-desc{font-size:11px;color:var(--text-muted);line-height:1.4;}
+.cd-info{padding:14px 16px;}
+.cd-verdict{display:flex;align-items:center;gap:7px;margin-bottom:7px;}
+.cd-verdict-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.cd-verdict-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;}
+.cd-pattern.normal-pat .cd-verdict-dot{background:var(--normal);}
+.cd-pattern.normal-pat .cd-verdict-label{color:var(--normal);}
+.cd-pattern.watch-pat .cd-verdict-dot{background:var(--watch);}
+.cd-pattern.watch-pat .cd-verdict-label{color:var(--watch);}
+.cd-pattern.warning-pat .cd-verdict-dot{background:var(--warning);}
+.cd-pattern.warning-pat .cd-verdict-label{color:var(--warning);}
+.cd-pattern.critical-pat .cd-verdict-dot{background:var(--critical);}
+.cd-pattern.critical-pat .cd-verdict-label{color:var(--critical);}
+.cd-pattern.critical-pat{border:2px solid var(--critical);}
+.cd-component{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:4px;}
+.cd-explain{font-size:12px;color:var(--text-muted);line-height:1.55;margin-bottom:6px;}
+.cd-action{font-size:11px;font-weight:700;padding:3px 8px;border-radius:2px;display:inline-block;}
+.cd-pattern.normal-pat .cd-action{background:var(--normal-light);color:var(--normal);}
+.cd-pattern.watch-pat .cd-action{background:var(--watch-light);color:var(--watch);}
+.cd-pattern.warning-pat .cd-action{background:var(--warning-light);color:var(--warning);}
+.cd-pattern.critical-pat .cd-action{background:var(--critical-light);color:var(--critical);}
+.cd-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.cd-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.cd-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.cd-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Fan-only test */
+.fan-test{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px;margin:24px 0;box-shadow:var(--shadow-card);display:flex;gap:16px;align-items:flex-start;}
+.ft-icon{font-size:28px;flex-shrink:0;}
+.ft-head{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+.ft-steps{display:flex;flex-direction:column;gap:6px;}
+.ft-step{display:flex;gap:9px;font-size:13px;color:var(--text-body);align-items:flex-start;}
+.ft-num{width:20px;height:20px;border-radius:50%;background:var(--hvac);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.ft-result{margin-top:10px;display:flex;flex-direction:column;gap:6px;}
+.ft-tag{font-size:11px;font-weight:700;padding:4px 10px;border-radius:2px;display:inline-flex;align-items:center;gap:5px;}
+.ft-tag.electrical{background:var(--warning-light);color:var(--warning);}
+.ft-tag.mechanical{background:var(--hvac-light);color:var(--hvac-dark);}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--watch-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--warning-light);border:1px solid #e08080;}
+.callout-box.tip{background:var(--normal-light);border:1px solid #80c080;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--watch);}
+.callout-box.alert .callout-label{color:var(--warning);}
+.callout-box.tip .callout-label{color:var(--normal);}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--watch);}.sev-item.mod .sev-label{color:var(--watch);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--critical);}.sev-item.crit .sev-label{color:var(--critical);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--critical);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--warning);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--warning);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.cd-pattern{grid-template-columns:1fr;}.cd-sound{border-right:none;border-bottom:1px solid var(--gray-light);}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-noises.html">HVAC Noises</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your HVAC Makes Clicking, Ticking, or Tapping Noises</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">HVAC Noises</span>
+  </div>
+
+  <h1 class="article-title">Why Your HVAC Makes Clicking, Ticking, or Tapping Noises</h1>
+  <p class="article-subtitle">HVAC clicking isn&#8217;t random &#8212; each pattern is a message from a specific electrical component. A single click at startup is a relay doing its job. Repeated clicking, rapid chatter, or clicking without a successful start are distress signals that indicate instability, component failure, or a safety device cycling.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Clicking is electrical communication.</strong> Relays, contactors, and safety switches all produce clicks when they engage or disengage. The pattern &#8212; not the sound itself &#8212; tells you whether it&#8217;s normal control behavior or a problem.</li>
+        <li>One click followed by normal system startup: normal relay or contactor engagement. Zero concern.</li>
+        <li>Clicking without successful startup: the system is trying to start but a component is preventing it &#8212; contactor, capacitor, or control board issue.</li>
+        <li>Rapid clicking or electrical chatter: voltage instability or a failing relay that cannot hold its position. Requires professional evaluation.</li>
+        <li>Clicking followed by immediate shutdown: a safety device &#8212; limit switch, pressure switch, or flame sensor &#8212; is triggering shutdown. The underlying condition that triggered it needs diagnosis.</li>
+        <li>Clicking with lights dimming or breakers tripping: electrical supply stress. Do not continue operating.</li>
+      </ul>
+    </div>
+
+    <h2 id="decoder">Clicking Pattern Decoder</h2>
+    <p>Find the pattern that matches what you hear. Each pattern maps to a specific electrical component and a recommended response.</p>
+
+    <div class="click-decoder">
+      <div class="cd-header">
+        <h3>What Does Your Clicking Pattern Sound Like?</h3>
+        <p>Match the rhythm and timing of the sound to the pattern below &#8212; then read what it means and what to do.</p>
+      </div>
+      <div class="cd-legend">
+        <div class="cd-leg normal"><span class="cd-leg-dot"></span>Normal &#8212; Monitor</div>
+        <div class="cd-leg watch"><span class="cd-leg-dot"></span>Watch &#8212; Investigate</div>
+        <div class="cd-leg warning"><span class="cd-leg-dot"></span>Warning &#8212; Service Needed</div>
+        <div class="cd-leg critical"><span class="cd-leg-dot"></span>Critical &#8212; Shut Down</div>
+      </div>
+
+      <div class="cd-patterns">
+
+        <div class="cd-pattern normal-pat">
+          <div class="cd-sound">
+            <div class="cd-sound-viz">
+              <div class="cd-tick" style="height:18px;"></div>
+              <div class="cd-gap"></div>
+              <div style="font-size:10px;color:var(--text-muted);white-space:nowrap;">then quiet</div>
+            </div>
+            <div class="cd-sound-label">Single Click</div>
+            <div class="cd-sound-desc">One distinct click at startup or shutdown, then nothing</div>
+          </div>
+          <div class="cd-info">
+            <div class="cd-verdict"><div class="cd-verdict-dot"></div><div class="cd-verdict-label">Normal &#8212; No Action Needed</div></div>
+            <div class="cd-component">Relay or Contactor Engaging/Disengaging</div>
+            <div class="cd-explain">Relays and contactors are electrically operated switches. The audible click is the physical contact closing or opening. A single click at startup when the thermostat calls, and a single click at shutdown when the call is satisfied, is normal operation &#8212; confirmed by the system running properly afterward.</div>
+            <div class="cd-action">Monitor only. If startup follows normally, no concern.</div>
+          </div>
+        </div>
+
+        <div class="cd-pattern normal-pat">
+          <div class="cd-sound">
+            <div class="cd-sound-viz">
+              <div class="cd-tick" style="height:12px;"></div>
+              <div class="cd-gap"></div>
+              <div class="cd-tick" style="height:12px;"></div>
+              <div class="cd-gap"></div>
+              <div class="cd-tick" style="height:12px;"></div>
+              <div style="width:8px;"></div>
+              <div style="font-size:10px;color:var(--text-muted);white-space:nowrap;">slow rhythm</div>
+            </div>
+            <div class="cd-sound-label">Rhythmic Ticking After Shutdown</div>
+            <div class="cd-sound-desc">Slow, regular ticking from ductwork for 5&#8211;15 min after system turns off</div>
+          </div>
+          <div class="cd-info">
+            <div class="cd-verdict"><div class="cd-verdict-dot"></div><div class="cd-verdict-label">Normal &#8212; Thermal Contraction</div></div>
+            <div class="cd-component">Sheet Metal Duct Cooling</div>
+            <div class="cd-explain">Sheet metal ducts expand when warm air flows through them and contract as they cool after shutdown. The ticking rhythm reflects the rate of thermal contraction. This is consistent across seasons and unchanged year over year. If the ticking has become noticeably louder than it used to be, note it &#8212; but steady rhythmic post-shutdown ticking is expected.</div>
+            <div class="cd-action">Normal. If significantly louder than previous seasons, note the trend.</div>
+          </div>
+        </div>
+
+        <div class="cd-pattern watch-pat">
+          <div class="cd-sound">
+            <div class="cd-sound-viz">
+              <div class="cd-tick" style="height:16px;"></div>
+              <div class="cd-gap"></div>
+              <div class="cd-tick" style="height:16px;"></div>
+              <div class="cd-gap"></div>
+              <div class="cd-tick" style="height:16px;"></div>
+              <div class="cd-gap"></div>
+              <div style="font-size:10px;color:var(--text-muted);white-space:nowrap;">no startup</div>
+            </div>
+            <div class="cd-sound-label">Repeated Clicks, No Startup</div>
+            <div class="cd-sound-desc">Multiple clicks in sequence but the system doesn&#8217;t successfully start</div>
+          </div>
+          <div class="cd-info">
+            <div class="cd-verdict"><div class="cd-verdict-dot"></div><div class="cd-verdict-label">Watch &#8212; Professional Evaluation Needed</div></div>
+            <div class="cd-component">Failed Capacitor, Stuck Contactor, or Control Board</div>
+            <div class="cd-explain">The control system is issuing a start command (producing the click) but the motor or compressor is not responding. The most common causes are a failed run/start capacitor &#8212; which provides the electrical boost needed for motor startup &#8212; or a contactor with worn contacts that cannot complete the circuit. The control board may also be issuing repeated start attempts due to a fault condition it cannot clear.</div>
+            <div class="cd-action">Do not repeatedly cycle power. Schedule professional diagnosis.</div>
+          </div>
+        </div>
+
+        <div class="cd-pattern warning-pat">
+          <div class="cd-sound">
+            <div class="cd-sound-viz">
+              <div class="cd-tick" style="height:14px;"></div>
+              <div style="width:2px;"></div>
+              <div class="cd-tick" style="height:14px;"></div>
+              <div style="width:2px;"></div>
+              <div class="cd-tick" style="height:14px;"></div>
+              <div style="width:2px;"></div>
+              <div class="cd-tick" style="height:14px;"></div>
+              <div style="width:2px;"></div>
+              <div class="cd-tick" style="height:14px;"></div>
+              <div style="width:4px;"></div>
+              <div style="font-size:10px;color:var(--text-muted);white-space:nowrap;">rapid</div>
+            </div>
+            <div class="cd-sound-label">Rapid Clicking / Electrical Chatter</div>
+            <div class="cd-sound-desc">Fast, machine-gun style clicking &#8212; several clicks per second</div>
+          </div>
+          <div class="cd-info">
+            <div class="cd-verdict"><div class="cd-verdict-dot"></div><div class="cd-verdict-label">Warning &#8212; Service Required</div></div>
+            <div class="cd-component">Voltage Instability, Failing Relay, or Safety Device Chattering</div>
+            <div class="cd-explain">Rapid clicking indicates a relay or contactor that is repeatedly engaging and disengaging &#8212; it cannot hold its closed position. This is almost always caused by insufficient voltage reaching the component (the magnetic coil can&#8217;t hold), a relay coil that is degrading and losing holding capacity, or a safety switch that is rapidly cycling open and closed due to a borderline fault condition. Continued operation causes arcing at the contacts and accelerates failure.</div>
+            <div class="cd-action">Schedule service promptly. Avoid repeated resets.</div>
+          </div>
+        </div>
+
+        <div class="cd-pattern warning-pat">
+          <div class="cd-sound">
+            <div class="cd-sound-viz">
+              <div class="cd-tick" style="height:18px;"></div>
+              <div class="cd-gap"></div>
+              <div style="font-size:10px;color:var(--text-muted);white-space:nowrap;">&#8594; brief run &#8594; shutdown</div>
+            </div>
+            <div class="cd-sound-label">Click, Brief Run, Then Shutdown</div>
+            <div class="cd-sound-desc">System clicks on, runs for seconds to minutes, then clicks off and shuts down</div>
+          </div>
+          <div class="cd-info">
+            <div class="cd-verdict"><div class="cd-verdict-dot"></div><div class="cd-verdict-label">Warning &#8212; Safety Device Cycling</div></div>
+            <div class="cd-component">Limit Switch, Pressure Switch, or Flame Sensor</div>
+            <div class="cd-explain">The click-run-shutdown pattern is a safety device responding to an out-of-tolerance condition. A high-limit switch trips when the heat exchanger overheats &#8212; commonly caused by restricted airflow. A pressure switch trips on abnormal gas or refrigerant pressure. A flame sensor that is dirty or failing may drop out during operation. The safety device is working correctly &#8212; but the condition that triggers it needs to be diagnosed and corrected.</div>
+            <div class="cd-action">Check filter first. If persists, professional diagnosis needed promptly.</div>
+          </div>
+        </div>
+
+        <div class="cd-pattern critical-pat">
+          <div class="cd-sound">
+            <div class="cd-sound-viz">
+              <div class="cd-tick" style="height:16px;"></div>
+              <div class="cd-gap"></div>
+              <div class="cd-tick" style="height:16px;"></div>
+              <div style="width:4px;"></div>
+              <div style="font-size:10px;color:var(--warning);white-space:nowrap;">+ lights dim / breaker trips</div>
+            </div>
+            <div class="cd-sound-label">Clicking With Electrical Symptoms</div>
+            <div class="cd-sound-desc">Any clicking accompanied by lights dimming, breaker trips, burning odor, or sparks</div>
+          </div>
+          <div class="cd-info">
+            <div class="cd-verdict"><div class="cd-verdict-dot"></div><div class="cd-verdict-label">Critical &#8212; Shut Down Immediately</div></div>
+            <div class="cd-component">Electrical Supply Fault, Failing Transformer, or Arcing</div>
+            <div class="cd-explain">Dimming lights during HVAC startup indicates the system is drawing more current than the electrical supply can deliver cleanly &#8212; a sign of a failing component trying to start against resistance, or an undersized circuit. Breaker trips confirm the system is drawing beyond the circuit&#8217;s capacity. Burning odors or sparks indicate active arcing or insulation failure. Any of these conditions combined with clicking require immediate shutdown.</div>
+            <div class="cd-action">&#9888; Shut down immediately. Call for service. Do not reset the breaker repeatedly.</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="cd-footer">
+        <div class="cd-footer-icon">&#128268;</div>
+        <div>
+          <h4>The Fan-Only Isolation Test</h4>
+          <p>Set your thermostat to Fan Only (no heating or cooling &#8212; just the blower). If clicking stops in fan-only mode, the clicking is associated with compressor or furnace startup &#8212; the electrical components that power those functions. If clicking occurs in fan-only mode too, the blower circuit or control board is involved. This narrows the diagnostic before a technician arrives.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="what-makes-click">What Actually Makes the Clicking Sound</h2>
+    <p>Understanding what produces the click helps identify which component a technician should target.</p>
+
+    <div class="fan-test">
+      <div class="ft-icon">&#9889;</div>
+      <div>
+        <div class="ft-head">The Three Main Sources of HVAC Clicking</div>
+        <div class="ft-steps">
+          <div class="ft-step">
+            <div class="ft-num">1</div>
+            <div><strong>Contactors</strong> &#8212; heavy-duty switches that connect high-voltage power to the compressor or air handler. The click is the physical contact plate slamming shut or opening. Normal at startup and shutdown. Abnormal when rapid or repeated.</div>
+          </div>
+          <div class="ft-step">
+            <div class="ft-num">2</div>
+            <div><strong>Relays</strong> &#8212; lower-voltage control switches on the circuit board that route signals to fan motors, gas valves, and other components. Smaller, more frequent clicks than contactors. Rapid chattering from a relay almost always indicates voltage instability or a failing coil.</div>
+          </div>
+          <div class="ft-step">
+            <div class="ft-num">3</div>
+            <div><strong>Safety switches</strong> &#8212; limit switches, pressure switches, and roll-out switches that open the circuit when a monitored condition exceeds its safe range. The click-then-shutdown pattern is these switches doing their job. The underlying fault condition &#8212; overheating, pressure imbalance, flame rollout &#8212; must be corrected.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box alert">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Clicking Is Not the System Trying Harder</div>
+        <div class="callout-text">A common homeowner response to repeated clicking is to cycle power repeatedly &#8212; turning the thermostat off and on, flipping the breaker, hoping the system will eventually start. Each power cycle subjects failed or borderline components to another high-inrush startup event. If a contactor is pitted, a capacitor is failing, or a safety limit is tripping, repeated power cycling accelerates the damage rather than clearing the fault.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Normal</div></div>
+        <div class="sev-desc">Single click at startup/shutdown followed by normal operation. Thermal ticking post-shutdown. No action needed.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Repeated clicking with occasional successful starts. System unreliable. Schedule evaluation before complete failure.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Rapid chatter, click-run-shutdown cycling, or clicking preventing startup. Component failure underway. Service needed promptly.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Clicking with dimming lights, breaker trips, burning odor, or sparks. Shut down immediately. Do not reset.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The pattern is everything with clicking noises. I&#8217;ve had homeowners describe &#8216;clicking&#8217; and mean four completely different things &#8212; and each one pointed to something different. The single clean click at startup? That&#8217;s your contactor doing exactly what it&#8217;s supposed to. The rapid-fire machine gun chatter? That&#8217;s a contactor that&#8217;s losing its holding voltage &#8212; could be the coil failing, could be a brownout condition, could be a capacitor issue dropping voltage below what the coil needs to stay latched. The click-run-click-off cycle &#8212; where the system starts for 30 seconds then shuts down? That&#8217;s almost always a high-limit trip. The first thing I check is the filter. A severely clogged filter restricts airflow enough to overheat the heat exchanger and trip the limit repeatedly. I&#8217;ve changed a $12 filter and watched the &#8216;cycling&#8217; problem disappear immediately. But if the filter&#8217;s clean, I&#8217;m looking at the heat exchanger, the limit switch, and the combustion air supply &#8212; and that&#8217;s not a DIY diagnostic."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Identify the pattern: single click, repeated clicking, rapid chatter, click-then-shutdown, or clicking with electrical symptoms</li>
+          <li>Run the fan-only test &#8212; note whether clicking occurs in fan mode or only when heating/cooling is active</li>
+          <li>Check the air filter &#8212; a severely clogged filter causes high-limit trips (click-run-shutdown pattern)</li>
+          <li>Check thermostat batteries &#8212; weak batteries can cause control instability and repeated click attempts</li>
+          <li>Note whether any error codes or status lights appear on the control board</li>
+          <li>Note whether clicking worsens with specific weather conditions or times of day</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Any rapid clicking or electrical chatter &#8212; do not open electrical compartments</li>
+          <li>Repeated clicking without successful startup &#8212; contactor, capacitor, or board diagnosis</li>
+          <li>Click-run-shutdown cycling with clean filter &#8212; limit switch, heat exchanger, or combustion issue</li>
+          <li>Any clicking with dimming lights, breaker trips, burning odor, or sparks &#8212; shut down and call immediately</li>
+          <li>Voltage testing and contactor inspection &#8212; requires electrical test equipment</li>
+          <li>Capacitor replacement &#8212; capacitors retain charge after power is disconnected and are hazardous without proper discharge</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My AC clicks 3&#8211;4 times at startup and then runs fine. Is that normal?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">It depends on the timing and pattern. A two-stage or variable-speed system may produce multiple distinct clicks as staging relays engage in sequence &#8212; this can be completely normal. Similarly, a heat pump or air conditioner may have a sequencer that clicks through a startup sequence before the compressor engages. The key question is whether the system then runs normally with good comfort output. If yes, and the pattern has been consistent since installation, it&#8217;s almost certainly normal multi-stage sequencing. If the multiple clicks are new behavior that appeared recently, or if they&#8217;re accompanied by a delay in startup that didn&#8217;t exist before, something may be changing &#8212; possibly a capacitor beginning to weaken, which makes the compressor harder to start and causes the control system to attempt engagement multiple times. Worth monitoring for escalation.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">The clicking started after a power outage. Is that related?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Very likely. Power outages &#8212; and especially the power restoration event &#8212; can damage or stress HVAC electrical components in several ways. Voltage surges at restoration can damage capacitors, which may now be weakened enough to fail during high-demand startup. Control boards can be damaged by voltage spikes if they are not protected by surge suppressors. Contactors may have pitted contacts from the arc produced during an unexpected power interruption mid-cycle. If clicking behavior appeared immediately after a power outage and wasn&#8217;t present before, the outage is the most likely cause. Have the capacitors tested (they degrade in ways that aren&#8217;t always visible) and the control board inspected for signs of voltage damage before the next peak-demand season.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Is tapping from inside the duct the same as clicking from the unit?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">No &#8212; they have completely different causes. Tapping from inside the ductwork is almost always mechanical: a loose piece of duct liner, a disconnected duct damper, a foreign object (bird nesting material, a piece of insulation), or a damper flap vibrating in the airflow. This type of tapping typically varies with airflow speed &#8212; louder when the blower ramps up, quieter or absent when the system shuts down. Clicking from the unit itself is electrical, as described in this article. If you can clearly identify that the sound is coming from inside a duct section rather than from the air handler cabinet or outdoor unit, it&#8217;s a mechanical duct issue rather than an electrical control issue. A technician can inspect accessible duct sections and use a camera for inaccessible runs.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Clicking is electrical communication from relays, contactors, and safety switches. The pattern &#8212; not the sound itself &#8212; determines whether it&#8217;s normal or a problem.</li>
+        <li>Single click at startup or shutdown followed by normal operation: normal contactor or relay engagement. No action needed.</li>
+        <li>Repeated clicking without startup: a component is preventing the motor or compressor from engaging &#8212; commonly a failed capacitor or worn contactor contacts.</li>
+        <li>Rapid clicking or electrical chatter: voltage instability or a failing relay that cannot hold its engaged position. Arcing risk. Service required.</li>
+        <li>Click, brief run, then shutdown: a safety device &#8212; limit switch, pressure switch, or flame sensor &#8212; is protecting the system from an out-of-tolerance condition. Check the filter first; professional diagnosis next.</li>
+        <li>Any clicking with dimming lights, breaker trips, burning odor, or sparks: shut down immediately. Do not reset and retry.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">HVAC clicking noise</a>
+      <a href="#" class="tag-pill">furnace clicking not starting</a>
+      <a href="#" class="tag-pill">AC clicking sound</a>
+      <a href="#" class="tag-pill">HVAC rapid clicking chatter</a>
+      <a href="#" class="tag-pill">contactor clicking HVAC</a>
+      <a href="#" class="tag-pill">HVAC clicking then shutting off</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More HVAC Noise Guides</h3>
+    <div class="related-list">
+      <a href="hvac-normal-sounds-vs-warning.html" class="related-item">
+        <div><div class="related-item-title">Normal HVAC Sounds vs. Warning Noises &#8212; Full Reference</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-noises-dangerous-vs-annoying.html" class="related-item">
+        <div><div class="related-item-title">When HVAC Noises Are Dangerous vs. Just Annoying</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-noises-change-temperature-time.html" class="related-item">
+        <div><div class="related-item-title">Why HVAC Noises Change With Temperature or Time of Day</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ignoring-noises-bigger-failures.html" class="related-item">
+        <div><div class="related-item-title">Why Ignoring HVAC Noises Leads to Bigger Failures</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#decoder">Clicking Pattern Decoder</a></li>
+      <li><a href="#what-makes-click">What Makes the Click</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

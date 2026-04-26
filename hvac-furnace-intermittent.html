@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Furnace Works Intermittently or Only Sometimes | HomeownersRepairGuide.com</title>
+<meta name="description" content="An intermittent furnace isn't randomly unreliable — it's operating at the edge of a component's threshold. The specific conditions that trigger failure identify which component is marginal.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-furnace-intermittent.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-furnace-intermittent.html">
+<meta property="og:title" content="Why Your Furnace Works Intermittently or Only Sometimes | HomeownersRepairGuide.com">
+<meta property="og:description" content="Intermittent furnace failures are not random — they occur when specific conditions push a marginal component over its threshold. Here's how to identify which one.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --startup:#c0402a;--startup-light:#fde8e8;
+  --runtime:#b07800;--runtime-light:#fff8e6;
+  --cold:#5a2a7a;--cold-light:#f0e8f5;
+  --demand:#2a5a7a;--demand-light:#e8f0f5;
+  --escalating:#7a1010;--escalating-light:#f5e0e0;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Condition-Based Failure Identifier */
+.condition-id{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.ci-header{background:var(--navy);padding:18px 22px;}
+.ci-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.ci-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.ci-legend{display:flex;gap:12px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.ci-leg{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;}
+.ci-leg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.ci-leg.startup{color:var(--startup);}.ci-leg.startup .ci-leg-dot{background:var(--startup);}
+.ci-leg.runtime{color:var(--runtime);}.ci-leg.runtime .ci-leg-dot{background:var(--runtime);}
+.ci-leg.cold{color:var(--cold);}.ci-leg.cold .ci-leg-dot{background:var(--cold);}
+.ci-leg.demand{color:var(--demand);}.ci-leg.demand .ci-leg-dot{background:var(--demand);}
+.ci-leg.escalating{color:var(--escalating);}.ci-leg.escalating .ci-leg-dot{background:var(--escalating);}
+/* Condition rows */
+.ci-rows{display:flex;flex-direction:column;}
+.ci-row{display:grid;grid-template-columns:190px 1fr;border-bottom:1px solid var(--gray-light);}
+.ci-row:last-child{border-bottom:none;}
+.ci-row.escalating-row{border:2px solid var(--escalating);}
+.ci-condition{padding:14px 13px;background:var(--cream-dark);border-right:1px solid var(--gray-light);display:flex;flex-direction:column;justify-content:center;}
+.ci-cond-icon{font-size:22px;margin-bottom:5px;}
+.ci-cond-label{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:3px;line-height:1.3;}
+.ci-cond-sub{font-size:11px;color:var(--text-muted);line-height:1.4;}
+.ci-content{padding:13px 15px;display:flex;flex-direction:column;gap:8px;}
+.ci-cause-row{display:flex;gap:9px;align-items:flex-start;}
+.ci-cause-tag{font-size:10px;font-weight:700;padding:3px 7px;border-radius:20px;flex-shrink:0;white-space:nowrap;margin-top:2px;}
+.ci-cause-tag.startup{background:var(--startup-light);color:var(--startup);}
+.ci-cause-tag.runtime{background:var(--runtime-light);color:var(--runtime);}
+.ci-cause-tag.cold{background:var(--cold-light);color:var(--cold);}
+.ci-cause-tag.demand{background:var(--demand-light);color:var(--demand);}
+.ci-cause-tag.escalating{background:var(--escalating-light);color:var(--escalating);}
+.ci-cause-text{font-size:12px;color:var(--text-body);line-height:1.5;}
+.ci-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.ci-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.ci-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.ci-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Threshold concept */
+.threshold-box{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:18px 20px;margin:24px 0;box-shadow:var(--shadow-card);}
+.th-head{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:10px;}
+.th-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:10px;}
+.th-col{background:var(--cream-dark);border-radius:var(--radius);padding:12px 14px;}
+.th-col-head{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px;}
+.th-col.works .th-col-head{color:#2a7a2a;}
+.th-col.fails .th-col-head{color:var(--startup);}
+.th-items{list-style:none;display:flex;flex-direction:column;gap:4px;}
+.th-items li{font-size:12px;color:var(--text-muted);display:flex;gap:6px;line-height:1.4;}
+.th-items li::before{content:'·';font-weight:700;color:var(--gray-mid);flex-shrink:0;}
+.th-note{font-size:12px;color:var(--text-muted);line-height:1.55;font-style:italic;}
+/* Documentation guide */
+.doc-guide{background:var(--navy);border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;}
+.dg-head{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.dg-items{display:flex;flex-direction:column;gap:8px;}
+.dg-item{display:flex;gap:10px;align-items:flex-start;}
+.dg-num{width:20px;height:20px;border-radius:50%;background:var(--hvac);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.dg-text{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.5;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--runtime-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--startup-light);border:1px solid #e08080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--runtime);}
+.callout-box.alert .callout-label{color:var(--startup);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--runtime);}.sev-item.mod .sev-label{color:var(--runtime);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--escalating);}.sev-item.crit .sev-label{color:var(--escalating);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--escalating);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--startup);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--startup);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.ci-row{grid-template-columns:1fr;}.ci-condition{border-right:none;border-bottom:1px solid var(--gray-light);}.th-row{grid-template-columns:1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-furnace-heating.html">Furnace &amp; Heating</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Furnace Works Intermittently or Only Sometimes</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Furnace &amp; Heating</span>
+  </div>
+
+  <h1 class="article-title">Why Your Furnace Works Intermittently or Only Sometimes</h1>
+  <p class="article-subtitle">An intermittent furnace is not randomly unreliable. It is operating at the edge of a component&#8217;s tolerance threshold &#8212; working when conditions are light and failing when they cross a specific limit. The conditions that trigger the failure identify which component is marginal.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Intermittent failures are not random.</strong> Every intermittent furnace problem traces to a component that is marginal &#8212; functional under light conditions, failing when temperature, runtime, demand, or airflow cross a threshold.</li>
+        <li>The conditions that trigger the failure identify the component: startup-only failure = ignition or pressure switch; after extended runtime = high-limit or blower; only in cold weather = venting or pressure differential; getting more frequent = escalating toward complete failure</li>
+        <li>Temporary recovery after a reset does not mean the problem is resolved. The marginal component is still marginal &#8212; the reset only allowed conditions to fall back below the failure threshold temporarily.</li>
+        <li>Document each failure: when it occurred, how long the furnace had been running, outdoor temperature, and what the error code showed (if any). This pattern data is the most valuable diagnostic information you can provide a technician.</li>
+        <li>Intermittency that is getting more frequent &#8212; shorter successful runs between failures &#8212; means the component is deteriorating. Do not wait for complete failure.</li>
+        <li>A furnace that works on the first call of the day but fails on subsequent calls the same day is almost always a heat-related electrical fault &#8212; a connection or component that fails when hot.</li>
+      </ul>
+    </div>
+
+    <h2 id="identifier">Condition-Based Failure Identifier</h2>
+    <p>Match the conditions that trigger your furnace failure to the rows below. Each trigger pattern points to the specific marginal component operating near its limit.</p>
+
+    <div class="condition-id">
+      <div class="ci-header">
+        <h3>Under What Conditions Does the Failure Occur?</h3>
+        <p>The trigger condition is more diagnostic than the failure itself. A component that fails at startup behaves differently from one that fails after 30 minutes of runtime &#8212; and they require different repairs.</p>
+      </div>
+      <div class="ci-legend">
+        <div class="ci-leg startup"><span class="ci-leg-dot"></span>Startup / Ignition</div>
+        <div class="ci-leg runtime"><span class="ci-leg-dot"></span>After Runtime</div>
+        <div class="ci-leg cold"><span class="ci-leg-dot"></span>Cold / Weather</div>
+        <div class="ci-leg demand"><span class="ci-leg-dot"></span>High Demand</div>
+        <div class="ci-leg escalating"><span class="ci-leg-dot"></span>Escalating Frequency</div>
+      </div>
+
+      <div class="ci-rows">
+
+        <div class="ci-row">
+          <div class="ci-condition">
+            <div class="ci-cond-icon">&#128293;&#10067;</div>
+            <div class="ci-cond-label">Fails at Startup &#8212; Works on Retry</div>
+            <div class="ci-cond-sub">First startup attempt fails; second or third attempt succeeds</div>
+          </div>
+          <div class="ci-content">
+            <div class="ci-cause-row">
+              <div class="ci-cause-tag startup">&#128293; Weak Igniter</div>
+              <div class="ci-cause-text"><strong>A hot surface igniter that is cracking or degrading requires multiple cycles to reach ignition temperature consistently.</strong> The first cold attempt may not reach ignition temperature fast enough &#8212; the gas valve opens, the igniter isn&#8217;t hot enough, no ignition occurs. The second attempt with the igniter slightly pre-warmed succeeds. This pattern worsens until the igniter fails completely.</div>
+            </div>
+            <div class="ci-cause-row">
+              <div class="ci-cause-tag startup">&#128268; Marginal Flame Sensor</div>
+              <div class="ci-cause-text"><strong>A flame sensor with borderline conductivity may fail to confirm ignition on the first attempt but succeed on the second.</strong> Slight carbon deposits reduce the signal the sensor passes &#8212; marginally below the board&#8217;s threshold on the first try, marginally above on the next. Annual cleaning resolves this before it escalates.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ci-row">
+          <div class="ci-condition">
+            <div class="ci-cond-icon">&#9201;&#127777;&#65039;</div>
+            <div class="ci-cond-label">Works for 15&#8211;30 Min, Then Fails</div>
+            <div class="ci-cond-sub">Normal operation then shutdown after extended runtime</div>
+          </div>
+          <div class="ci-content">
+            <div class="ci-cause-row">
+              <div class="ci-cause-tag runtime">&#9889; Heat-Sensitive Electrical Connection</div>
+              <div class="ci-cause-text"><strong>Loose connections, corroded terminals, or degraded wiring insulation that opens when hot and closes when cooled.</strong> The furnace runs normally when cold. As components heat up during operation, thermal expansion opens a marginal connection and the board loses a signal &#8212; shutting down. After a rest, it cools and reconnects. This is one of the most difficult intermittent faults to catch because it clears before a technician can measure it.</div>
+            </div>
+            <div class="ci-cause-row">
+              <div class="ci-cause-tag runtime">&#9650; High-Limit After Extended Runtime</div>
+              <div class="ci-cause-text"><strong>A clogged filter that doesn&#8217;t restrict airflow enough to trip the limit immediately, but overheats the exchanger during long cold-weather cycles.</strong> On a mild day with short cycles, no problem. On a very cold day with long cycles, the limit trips after 20&#8211;30 minutes. Replace filter first. If it continues, blower performance or duct restriction evaluation is needed.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ci-row">
+          <div class="ci-condition">
+            <div class="ci-cond-icon">&#127777;&#65039;&#127780;&#65039;</div>
+            <div class="ci-cond-label">Only Fails During Cold Snaps or Windy Weather</div>
+            <div class="ci-cond-sub">Works fine in moderate weather, fails when it&#8217;s very cold or windy</div>
+          </div>
+          <div class="ci-content">
+            <div class="ci-cause-row">
+              <div class="ci-cause-tag cold">&#128268; Pressure Switch at Weather-Induced Threshold</div>
+              <div class="ci-cause-text"><strong>Cold temperatures change the draft pressure differential the pressure switch monitors.</strong> Wind affecting the exterior vent termination, ice partially blocking a horizontal vent pipe, or a pressure switch that is marginally calibrated can all produce failures only during cold, windy, or precipitation conditions. The furnace works all of October, then starts failing in January when outdoor conditions change the venting pressure.</div>
+            </div>
+            <div class="ci-cause-row">
+              <div class="ci-cause-tag cold">&#128167; Condensate Line Freeze</div>
+              <div class="ci-cause-text"><strong>High-efficiency furnaces produce condensate that drains through PVC lines.</strong> In very cold weather, a condensate line that exits through an uninsulated wall or is too close to an exterior penetration can partially freeze &#8212; backing up into the pressure switch hose and causing intermittent switch trips. Only happens when outdoor temperature drops below a threshold specific to the installation.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ci-row">
+          <div class="ci-condition">
+            <div class="ci-cond-icon">&#127968;&#10134;</div>
+            <div class="ci-cond-label">First Call Succeeds, Later Calls Fail Same Day</div>
+            <div class="ci-cond-sub">Works in the morning, fails by afternoon &#8212; resets at night</div>
+          </div>
+          <div class="ci-content">
+            <div class="ci-cause-row">
+              <div class="ci-cause-tag demand">&#9889; Heat-Degraded Component</div>
+              <div class="ci-cause-text"><strong>A control board, transformer, or electrical component that functions when cool but fails after reaching operating temperature from accumulated heat.</strong> The furnace works on the first cold-start of the day, then fails after the cabinet has reached operating temperature during subsequent cycles. Overnight cool-down restores function. This is a component that has lost its temperature margin and is very close to complete failure.</div>
+            </div>
+            <div class="ci-cause-row">
+              <div class="ci-cause-tag demand">&#128293; Igniter Thermal Fatigue</div>
+              <div class="ci-cause-text"><strong>An igniter that is borderline on its first startup of the day may be too fatigued from the day&#8217;s heating cycles to reliably ignite on subsequent calls.</strong> Silicon carbide igniters have a finite number of heat cycles. An aging igniter may succeed on 90% of attempts but fail intermittently, particularly on calls that occur while the igniter has residual heat from a recent cycle that didn&#8217;t allow it to return to room temperature.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ci-row escalating-row">
+          <div class="ci-condition">
+            <div class="ci-cond-icon">&#9889;&#8595;&#8595;</div>
+            <div class="ci-cond-label">Failures Getting More Frequent</div>
+            <div class="ci-cond-sub">Used to work 9 times out of 10 &#8212; now failing more often</div>
+          </div>
+          <div class="ci-content">
+            <div class="ci-cause-row">
+              <div class="ci-cause-tag escalating">&#9888; Component Approaching Complete Failure</div>
+              <div class="ci-cause-text"><strong>Any intermittent failure that is becoming more frequent indicates the marginal component is deteriorating.</strong> The threshold that triggers failure is lowering &#8212; conditions that once allowed normal operation now routinely cause failure. This is the most important escalation pattern to act on. Increasing frequency of intermittent failures is a reliable predictor of complete failure within days to weeks. Do not wait for a cold night with no heat. Schedule professional diagnosis now.</div>
+            </div>
+            <div class="ci-cause-row">
+              <div class="ci-cause-tag escalating">&#128268; Multiple Components Near Threshold</div>
+              <div class="ci-cause-text"><strong>On older furnaces, increasing intermittency across different conditions may indicate multiple components aging simultaneously.</strong> An igniter, a pressure switch, and a limit switch all within a few seasons of their end-of-life can produce complex intermittent behavior that is difficult to diagnose because no single failure dominates. A thorough professional inspection is more efficient than replacing components one at a time.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="ci-footer">
+        <div class="ci-footer-icon">&#128203;</div>
+        <div>
+          <h4>Document the Pattern Before Calling</h4>
+          <p>When you call a technician, tell them: (1) the trigger condition &#8212; startup, after runtime, cold weather, or accumulating heat; (2) how long the furnace ran before failing; (3) what the outdoor temperature was; (4) whether the problem is getting more frequent; (5) any error codes. This five-point summary is the highest-value pre-call information you can have ready and can significantly reduce diagnostic time.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="threshold">Why Intermittency Is Never Random</h2>
+
+    <div class="threshold-box">
+      <div class="th-head">The Same Component &#8212; Two Different Conditions</div>
+      <div class="th-row">
+        <div class="th-col works">
+          <div class="th-col-head">&#10003; When It Works</div>
+          <ul class="th-items">
+            <li>Outdoor temperature above 30°F &#8212; shorter cycles, less stress</li>
+            <li>First startup of the day &#8212; components cold and at full tolerance</li>
+            <li>Mild weather &#8212; lower heat demand, shorter runtimes</li>
+            <li>After overnight cool-down &#8212; heat-sensitive connections have cooled and re-seated</li>
+          </ul>
+        </div>
+        <div class="th-col fails">
+          <div class="th-col-head">&#10006; When It Fails</div>
+          <ul class="th-items">
+            <li>Below 20°F &#8212; longer cycles push components past thermal limit</li>
+            <li>Third or fourth startup of the day &#8212; accumulated heat has degraded margins</li>
+            <li>Very cold night &#8212; high demand exceeds what marginal component can sustain</li>
+            <li>After 20+ minutes of runtime &#8212; component reaches failure temperature threshold</li>
+          </ul>
+        </div>
+      </div>
+      <div class="th-note">The component hasn&#8217;t changed between these situations &#8212; the conditions crossed its failure threshold. This is why intermittent failures are perfectly reproducible under the right conditions, even when they seem random.</div>
+    </div>
+
+    <div class="doc-guide">
+      <div class="dg-head">What to Document During Each Failure</div>
+      <div class="dg-items">
+        <div class="dg-item"><div class="dg-num">1</div><div class="dg-text"><strong>Time of day and outdoor temperature.</strong> These two pieces of data alone separate weather-induced pressure switch failures from heat-accumulation electrical faults.</div></div>
+        <div class="dg-item"><div class="dg-num">2</div><div class="dg-text"><strong>How long the furnace had been running before the failure.</strong> Under 30 seconds = ignition or pressure switch. 10&#8211;30 minutes = heat-related electrical or limit trip. After multiple cycles = accumulating thermal damage.</div></div>
+        <div class="dg-item"><div class="dg-num">3</div><div class="dg-text"><strong>The error code or LED flash sequence on the control board.</strong> Read and record before resetting &#8212; it disappears after a reset and may not recur under the same conditions for days.</div></div>
+        <div class="dg-item"><div class="dg-num">4</div><div class="dg-text"><strong>Whether the failure is getting more frequent.</strong> A failure that happened once a week is now happening daily &#8212; this escalation trajectory tells the technician how urgently the component needs replacement.</div></div>
+        <div class="dg-item"><div class="dg-num">5</div><div class="dg-text"><strong>Whether resetting works immediately or only after a cool-down period.</strong> Immediate reset success = the condition cleared (e.g., limit reset). Cool-down required before reset works = heat-sensitive component that needs to cool before it re-enters tolerance.</div></div>
+      </div>
+    </div>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Temporary Recovery Confirms the Pattern &#8212; It Does Not Resolve It</div>
+        <div class="callout-text">When a reset restores operation, homeowners often conclude the problem has passed. In reality, the reset only dropped conditions back below the failure threshold temporarily. The marginal component is still marginal &#8212; and will fail again when the same threshold is crossed. The component is deteriorating each time it fails. Counting on resets as a management strategy instead of diagnosis leads to complete failure at the worst possible time.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Single intermittent event, no recurrence, no error codes. Monitor through the next cold spell.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Predictable trigger identified &#8212; cold weather, after runtime. Recurring but stable frequency. Schedule evaluation.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Multiple triggers, increasing frequency, or multiple unsuccessful startup attempts. Service before next cold snap.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Failures shortening to daily or per-cycle. Odors, error codes, or combustion concerns. Emergency evaluation.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"Intermittent calls are the ones I want the most documentation on, because by the time I get there the furnace is often running fine. The worst thing a homeowner can do is reset it and wait for me to arrive &#8212; because now I have a furnace that&#8217;s working, and the only clue I had was the error code that cleared when they reset it. The best calls are when the homeowner tells me: &#8216;it fails every time after about 25 minutes, but only when it&#8217;s below 20 degrees outside, and the error code is pressure switch&#8217;. That narrows me down to three things immediately: the pressure switch itself, the condensate system backing up into the pressure hose, or the vent termination icing. I can usually find it in 15 minutes. The worst calls are: &#8216;it just sometimes doesn&#8217;t work and then it works again.&#8217; That&#8217;s a full afternoon of monitoring because I have no pattern to follow. Document the trigger. That&#8217;s the single most useful thing a homeowner can do for an intermittent problem."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Document each failure &#8212; time, outdoor temp, runtime, error code, whether reset worked immediately or needed cool-down</li>
+          <li>Replace the air filter &#8212; rules out runtime-triggered high-limit from marginal airflow restriction</li>
+          <li>Inspect the exterior vent termination for ice or debris during cold-weather failures</li>
+          <li>Check the condensate drain pan for standing water during cold-weather failures</li>
+          <li>Note whether the furnace works on the first call of the day but fails on subsequent calls</li>
+          <li>Read and record error codes before resetting &#8212; do not reset before recording the code</li>
+          <li>Track the frequency trend: is it happening more often than last month?</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Flame sensor cleaning and resistance testing &#8212; confirms whether borderline conductivity is the cause</li>
+          <li>Hot surface igniter resistance testing &#8212; measures remaining service life</li>
+          <li>Pressure switch testing under operational conditions &#8212; including cold-weather simulation</li>
+          <li>Electrical connection inspection with thermal imaging &#8212; finds heat-sensitive loose connections</li>
+          <li>Condensate system inspection including pressure hose and trap on high-efficiency units</li>
+          <li>Live operational monitoring &#8212; technician observes the system through a triggered failure event</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My furnace has been intermittent for two years and I&#8217;ve gotten used to resetting it. Is that okay?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No &#8212; and this is one of the more common situations that ends badly. A furnace that has required regular resets for two years has been operating with a marginal component for two years. Three things are likely happening simultaneously: the marginal component has continued to deteriorate over those two years and is now closer to complete failure than when the intermittency started; other components that share thermal stress with the failing component have accumulated additional wear from the repeated fault-recovery cycles; and you&#8217;ve normalized a warning pattern into an operating routine. The question isn&#8217;t whether the furnace will fail completely &#8212; it will. The question is whether it happens at 2 PM on a Tuesday in October or at 2 AM on a January night when outdoor temperatures are 10°F. Scheduling a professional evaluation to find and replace the marginal component is significantly less disruptive than the emergency service call when it fails completely.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">The furnace works fine when the technician is here, then fails again after they leave. Why?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">This is the classic heat-sensitive intermittency scenario. The technician arrives, the furnace has been off (and therefore cold) for some time, all heat-sensitive connections are within their cold-temperature tolerance, and the furnace runs normally through the diagnostic session. After the technician leaves, the furnace runs for several cycles, components heat up, a marginal connection or component crosses its failure threshold, and the furnace shuts down again. This is frustrating but informative &#8212; it confirms that the failure condition is heat-related rather than random. To help diagnose this, ask the technician to monitor the furnace while it is already hot &#8212; either by scheduling the call when the furnace has been running, or by asking for extended live monitoring rather than just a cold-start test. Thermal imaging of the electrical connections while the system is at operating temperature is the most effective diagnostic for heat-sensitive connection faults. Some technicians also install data loggers that record operational parameters and can capture the failure condition without the technician being present.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can intermittent furnace problems be caused by something outside the furnace itself?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; and this category is commonly overlooked. Electrical supply problems that are intermittent &#8212; voltage fluctuations from a utility issue, a loose neutral in the panel, or a shared circuit that experiences voltage drop when other appliances run &#8212; can cause furnace control board behavior that appears to be a furnace fault. The control board is sensitive to voltage; low-voltage conditions can cause erratic behavior that mimics component failures. This is more common in older homes with aging panels. The thermostat is another external source: a thermostat with failing batteries, a smart thermostat without adequate C-wire power, or a thermostat with intermittent wiring contact can cause heat calls that appear and disappear unpredictably &#8212; producing what looks like a furnace that starts and stops randomly. If your intermittent failure includes the thermostat display behaving oddly or other circuits in the home experiencing issues simultaneously with furnace failures, the electrical supply rather than the furnace itself may be the source.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Intermittent furnace failures are never random. They occur when specific conditions push a marginal component past its failure threshold. Identifying the trigger conditions identifies the component.</li>
+        <li>Startup-only failure that succeeds on retry = weak igniter or marginal flame sensor. Works for 15&#8211;30 minutes then fails = heat-sensitive electrical connection or marginal high-limit. Only fails in cold weather = pressure switch or condensate freeze. Works mornings, fails afternoons = heat-degraded board or component.</li>
+        <li>Temporary recovery after reset does not resolve the problem. The marginal component remains marginal &#8212; and deteriorates a little more with each failure event.</li>
+        <li>Document each failure: outdoor temperature, runtime before failure, error code (before resetting), whether reset worked immediately or needed cool-down, and whether frequency is increasing. This five-point pattern is the most valuable pre-call information available.</li>
+        <li>Increasing frequency of intermittent failures is the most important escalation signal. A failure that happens once a week becoming a daily occurrence means the component is days from complete failure.</li>
+        <li>If the furnace works when the technician is there but fails after they leave, ask for thermal imaging of connections while the system is at operating temperature, or a data logger installation to capture the failure condition remotely.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">furnace works sometimes</a>
+      <a href="#" class="tag-pill">furnace intermittent problem</a>
+      <a href="#" class="tag-pill">furnace works then stops</a>
+      <a href="#" class="tag-pill">furnace unreliable heating</a>
+      <a href="#" class="tag-pill">furnace fails cold weather</a>
+      <a href="#" class="tag-pill">furnace needs reset frequently</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Furnace &amp; Heating Guides</h3>
+    <div class="related-list">
+      <a href="hvac-furnace-short-cycling.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace Short Cycles</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-wont-turn-on.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace Won&#8217;t Turn On At All</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-trips-breaker.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace Trips the Breaker or Shuts Down Suddenly</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ignoring-noises-bigger-failures.html" class="related-item">
+        <div><div class="related-item-title">Why Ignoring HVAC Noises Leads to Bigger Failures</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#identifier">Condition-Based Failure Identifier</a></li>
+      <li><a href="#threshold">Why Intermittency Isn&#8217;t Random</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

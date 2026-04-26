@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your HVAC Makes Loud Banging or Popping Noises | HomeownersRepairGuide.com</title>
+<meta name="description" content="Some HVAC bangs and pops are harmless thermal expansion. Others are dangerous delayed ignition. The pattern — not the volume — tells you which one you have and what to do.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-banging-popping-noises.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-banging-popping-noises.html">
+<meta property="og:title" content="Why Your HVAC Makes Loud Banging or Popping Noises | HomeownersRepairGuide.com">
+<meta property="og:description" content="A single pop after shutdown is thermal expansion. A bang followed by a whoosh at ignition is a safety emergency. Here's how to tell the difference.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --thermal:#2a7a5a;--thermal-light:#e8f5f0;
+  --pressure:#b07800;--pressure-light:#fff8e6;
+  --ignition:#c0402a;--ignition-light:#fde8e8;
+  --critical:#7a1010;--critical-light:#f5e0e0;
+  --normal:#2a7a2a;--normal-light:#eaf5ea;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Bang & Pop Pattern Decoder */
+.pattern-decoder{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.pd-header{background:var(--navy);padding:18px 22px;}
+.pd-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.pd-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.pd-legend{display:flex;gap:12px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.pd-leg{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;}
+.pd-leg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.pd-leg.thermal{color:var(--thermal);}.pd-leg.thermal .pd-leg-dot{background:var(--thermal);}
+.pd-leg.pressure{color:var(--pressure);}.pd-leg.pressure .pd-leg-dot{background:var(--pressure);}
+.pd-leg.ignition{color:var(--ignition);}.pd-leg.ignition .pd-leg-dot{background:var(--ignition);}
+.pd-leg.critical{color:var(--critical);}.pd-leg.critical .pd-leg-dot{background:var(--critical);}
+/* Rows */
+.pd-rows{display:flex;flex-direction:column;}
+.pd-row{display:grid;grid-template-columns:185px 1fr;border-bottom:1px solid var(--gray-light);}
+.pd-row:last-child{border-bottom:none;}
+.pd-row.critical-row{border:2px solid var(--critical);}
+.pd-pattern{padding:14px 13px;background:var(--cream-dark);border-right:1px solid var(--gray-light);display:flex;flex-direction:column;justify-content:center;}
+.pd-pat-icon{font-size:22px;margin-bottom:5px;}
+.pd-pat-label{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:3px;line-height:1.3;}
+.pd-pat-sub{font-size:10px;color:var(--text-muted);line-height:1.35;}
+.pd-content{padding:13px 15px;display:flex;flex-direction:column;gap:7px;}
+.pd-cause-row{display:flex;gap:9px;align-items:flex-start;}
+.pd-cause-tag{font-size:10px;font-weight:700;padding:3px 7px;border-radius:20px;flex-shrink:0;white-space:nowrap;margin-top:2px;}
+.pd-cause-tag.thermal{background:var(--thermal-light);color:var(--thermal);}
+.pd-cause-tag.pressure{background:var(--pressure-light);color:var(--pressure);}
+.pd-cause-tag.ignition{background:var(--ignition-light);color:var(--ignition);}
+.pd-cause-tag.critical{background:var(--critical-light);color:var(--critical);}
+.pd-cause-tag.normal{background:var(--normal-light);color:var(--normal);}
+.pd-cause-text{font-size:12px;color:var(--text-body);line-height:1.5;}
+.pd-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.pd-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.pd-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.pd-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Cause detail cards */
+.cause-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.cause-card{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.cc-head{padding:12px 15px;display:flex;align-items:center;gap:9px;}
+.cc-head.thermal{background:var(--thermal);}
+.cc-head.pressure{background:var(--pressure);}
+.cc-head.ignition{background:var(--ignition);}
+.cc-icon{font-size:17px;color:var(--white);}
+.cc-title{font-size:13px;font-weight:700;color:var(--white);}
+.cc-body{background:var(--white);border:1px solid var(--gray-light);border-top:none;padding:13px 15px;}
+.cc-desc{font-size:12px;color:var(--text-body);line-height:1.55;margin-bottom:8px;}
+.cc-action{font-size:11px;font-weight:700;padding:3px 8px;border-radius:2px;display:inline-block;}
+.cause-card.thermal .cc-action{background:var(--thermal-light);color:var(--thermal);}
+.cause-card.pressure .cc-action{background:var(--pressure-light);color:var(--pressure);}
+.cause-card.ignition .cc-action{background:var(--ignition-light);color:var(--ignition);}
+/* Critical ignition box */
+.ignition-alert{background:var(--critical);border-radius:var(--radius-lg);padding:20px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.ia-icon{font-size:24px;flex-shrink:0;}
+.ia-title{font-size:13px;font-weight:700;color:var(--white);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:6px;}
+.ia-text{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.6;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--pressure-light);border:1px solid #f0c040;}
+.callout-box.tip{background:var(--normal-light);border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--pressure);}
+.callout-box.tip .callout-label{color:var(--normal);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--pressure);}.sev-item.mod .sev-label{color:var(--pressure);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--critical);}.sev-item.crit .sev-label{color:var(--critical);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--critical);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--ignition);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--ignition);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.cause-cards{grid-template-columns:1fr;}.pd-row{grid-template-columns:1fr;}.pd-pattern{border-right:none;border-bottom:1px solid var(--gray-light);}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-noises.html">HVAC Noises</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your HVAC Makes Loud Banging or Popping Noises</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">HVAC Noises</span>
+  </div>
+
+  <h1 class="article-title">Why Your HVAC System Makes Loud Banging or Popping Noises</h1>
+  <p class="article-subtitle">Not all bangs and pops are equal. Some are harmless thermal expansion &#8212; metal contracting as it cools after a cycle. Others are dangerous delayed ignition &#8212; gas accumulating before lighting all at once. The pattern and timing tell you which one you have. Volume does not.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Volume does not determine danger.</strong> A loud pop from duct thermal contraction is harmless. A softer bang followed by a whooshing sound at burner ignition can damage the heat exchanger and create CO risk. Timing and pattern identify the cause &#8212; not loudness.</li>
+        <li>Pops during or after shutdown = thermal contraction of sheet metal ducts. Consistent, brief, and isolated. Normal if not accompanied by combustion odors or CO alarm.</li>
+        <li>Single bang when the blower starts = pressure pulse from airflow against the filter or a panel. Check the filter. If very loud, check for duct restriction.</li>
+        <li>Repeated banging during operation that changes when you open registers = duct oil-canning from high static pressure. Replace filter and open all registers.</li>
+        <li><strong>Bang + whoosh at burner ignition = delayed ignition. This is a safety emergency.</strong> Shut down the furnace. Do not restart. Call for service immediately.</li>
+        <li>The fan-only test separates combustion-related bangs from airflow and mechanical bangs in seconds.</li>
+      </ul>
+    </div>
+
+    <div class="ignition-alert">
+      <div class="ia-icon">&#9888;&#65039;</div>
+      <div>
+        <div class="ia-title">Before Anything Else: Identify Ignition Bangs</div>
+        <div class="ia-text">A bang or boom that occurs specifically when the furnace burner lights &#8212; followed by a brief whooshing sound &#8212; is delayed ignition. Gas has accumulated in the heat exchanger before igniting all at once. This is not a duct noise. It is not thermal expansion. It is a combustion event that stresses the heat exchanger and can lead to cracking, flame rollout, and carbon monoxide risk. <strong>If you hear this pattern, shut off the furnace and call for service. Do not restart it.</strong></div>
+      </div>
+    </div>
+
+    <h2 id="decoder">Bang &amp; Pop Pattern Decoder</h2>
+    <p>Match your pattern to the rows below. Note where in the cycle the sound occurs and whether the fan-only test produces the same sound.</p>
+
+    <div class="pattern-decoder">
+      <div class="pd-header">
+        <h3>What Does the Bang or Pop Sound Like &#8212; and When?</h3>
+        <p>Timing and sequence are the two most important observations. A bang at shutdown is the opposite problem from a bang at ignition, even if they sound similar.</p>
+      </div>
+      <div class="pd-legend">
+        <div class="pd-leg thermal"><span class="pd-leg-dot"></span>Thermal Expansion &#8212; Usually Benign</div>
+        <div class="pd-leg pressure"><span class="pd-leg-dot"></span>Pressure / Airflow &#8212; Correct the Cause</div>
+        <div class="pd-leg ignition"><span class="pd-leg-dot"></span>Ignition-Related &#8212; Shut Down</div>
+        <div class="pd-leg critical"><span class="pd-leg-dot"></span>Critical &#8212; Emergency</div>
+      </div>
+
+      <div class="pd-rows">
+
+        <div class="pd-row">
+          <div class="pd-pattern">
+            <div class="pd-pat-icon">&#8810;&#128374;</div>
+            <div class="pd-pat-label">Multiple Pops During or After Shutdown</div>
+            <div class="pd-pat-sub">Series of brief pops as system cools down; absent during operation</div>
+          </div>
+          <div class="pd-content">
+            <div class="pd-cause-row">
+              <div class="pd-cause-tag thermal">&#127777;&#65039; Thermal Contraction &#8212; Normal</div>
+              <div class="pd-cause-text"><strong>Sheet metal ducts expand slightly when warm air flows through them and contract when airflow stops.</strong> The pops are the metal releasing stress at natural flex points &#8212; particularly at joints, transitions, and turns. This is among the most common HVAC sounds in residential systems and is completely normal. It is consistent cycle to cycle and does not indicate any fault. The only concern: if you notice a combustion or exhaust odor at the same time &#8212; that&#8217;s separate from the thermal noise and requires attention.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-row">
+          <div class="pd-pattern">
+            <div class="pd-pat-icon">&#9654;&#128165;</div>
+            <div class="pd-pat-label">Single Bang at Blower Startup</div>
+            <div class="pd-pat-sub">One sharp bang when the blower first starts pushing air</div>
+          </div>
+          <div class="pd-content">
+            <div class="pd-cause-row">
+              <div class="pd-cause-tag pressure">&#128268; Filter Pressure Pulse</div>
+              <div class="pd-cause-text"><strong>When the blower starts, it creates an immediate pressure differential across the filter.</strong> A severely clogged filter creates a large pressure drop &#8212; and the duct walls flex inward on the return side and outward on the supply side simultaneously, producing a single bang. Replace the filter. If the bang is very loud, the filter is severely restricted. If it persists after filter replacement, the duct upstream of the filter may be undersized or a panel may be loose.</div>
+            </div>
+            <div class="pd-cause-row">
+              <div class="pd-cause-tag thermal">&#127777;&#65039; Panel or Duct Flex</div>
+              <div class="pd-cause-text"><strong>A single sharp pop when the blower starts &#8212; not accompanied by any combustion sequence &#8212; can also be a large return duct panel flexing under the initial pressure change.</strong> If this happens in fan-only mode as well as heating/cooling mode, the cause is purely mechanical &#8212; air handler cabinet panel, duct panel, or return grille frame flexing at startup pressure.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-row">
+          <div class="pd-pattern">
+            <div class="pd-pat-icon">&#128165;&#128165;&#128165;</div>
+            <div class="pd-pat-label">Repeated Banging During Operation</div>
+            <div class="pd-pat-sub">Multiple bangs throughout a run cycle; changes when registers are opened or closed</div>
+          </div>
+          <div class="pd-content">
+            <div class="pd-cause-row">
+              <div class="pd-cause-tag pressure">&#128268; Duct Oil-Canning &#8212; High Static Pressure</div>
+              <div class="pd-cause-text"><strong>Large flat duct panels that flex in and out under sustained pressure differentials produce a rhythmic or intermittent banging called oil-canning.</strong> This is almost always caused by excessive system static pressure &#8212; from a clogged filter, too many closed supply registers, undersized return ductwork, or a high-MERV filter in a system not rated for it. Replace the filter, open all supply registers, and note whether the banging changes in character. If it does, static pressure is the cause.</div>
+            </div>
+            <div class="pd-cause-row">
+              <div class="pd-cause-tag pressure">&#128268; Whole-House Pressure Imbalance</div>
+              <div class="pd-cause-text"><strong>Opening or closing interior doors that significantly changes the banging pattern indicates whole-house pressure imbalance.</strong> Rooms without return air grilles pressurize when supplied with conditioned air &#8212; and when a door opens, the pressurized air equalizes with a pop or bang. This confirms that return air is inadequate in isolated rooms. Transfer grilles or door undercuts can resolve this.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-row critical-row">
+          <div class="pd-pattern">
+            <div class="pd-pat-icon">&#128165;&#128168;</div>
+            <div class="pd-pat-label">Bang + Whoosh at Burner Ignition</div>
+            <div class="pd-pat-sub">Explosive-sounding bang specifically when the burner lights, followed by a brief rush of air or flame</div>
+          </div>
+          <div class="pd-content">
+            <div class="pd-cause-row">
+              <div class="pd-cause-tag critical">&#9888; Delayed Ignition &#8212; Shut Down</div>
+              <div class="pd-cause-text"><strong>This is the only banging pattern that requires immediate furnace shutdown.</strong> Delayed ignition occurs when the igniter or flame sensor is failing &#8212; the gas valve opens but ignition doesn&#8217;t happen immediately. Gas accumulates in the heat exchanger for 1&#8211;5 seconds before eventually igniting all at once. The bang is that accumulated gas combusting in an explosive event. The whoosh is the sudden flame propagation. This stresses the heat exchanger with each cycle, causing cracking over time. Cracked heat exchangers allow combustion gases &#8212; including carbon monoxide &#8212; to enter the living space. <strong>Shut down the furnace. Do not restart. Call for service immediately.</strong></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pd-row" style="border-bottom:none;">
+          <div class="pd-pattern">
+            <div class="pd-pat-icon">&#128165;&#129300;</div>
+            <div class="pd-pat-label">Bang That Changes With Door or Register Position</div>
+            <div class="pd-pat-sub">Sound changes when interior doors are opened/closed or registers are adjusted</div>
+          </div>
+          <div class="pd-content">
+            <div class="pd-cause-row">
+              <div class="pd-cause-tag pressure">&#128268; Pressure Imbalance Confirmed</div>
+              <div class="pd-cause-text"><strong>If the banging changes when you open or close interior doors, the cause is confirmed as a whole-house or zone pressure imbalance.</strong> The ductwork is responding to pressure differentials that change as you alter airflow paths through the home. This is a correctable duct or return-air issue &#8212; not a dangerous combustion problem. But it should be addressed, because sustained high static pressure stresses blower motors, damages duct joints, and reduces efficiency significantly.</div>
+            </div>
+            <div class="pd-cause-row">
+              <div class="pd-cause-tag thermal">&#127777;&#65039; Fan-Only Mode Rules Out Combustion</div>
+              <div class="pd-cause-text"><strong>Switch to fan-only mode and note whether the bang occurs.</strong> If yes &#8212; the bang is mechanical or pressure-related, not combustion-related. This single observation definitively rules out delayed ignition as the cause if the bang is reproducible in fan-only mode. Combustion can only produce ignition-related bangs when the burner is active &#8212; not in fan-only mode.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="pd-footer">
+        <div class="pd-footer-icon">&#128268;</div>
+        <div>
+          <h4>The Fan-Only Safety Test</h4>
+          <p>Switch the thermostat to Fan Only mode. Does the bang or pop occur? If yes &#8212; the cause is mechanical or pressure-related (duct, filter, panel), not combustion-related. Delayed ignition cannot occur in fan-only mode because the burner never lights. If the bang only occurs when heating is active &#8212; and especially if it happens at the moment the burner ignites &#8212; shut the system off and call for service.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="causes">The Three Root Cause Categories</h2>
+
+    <div class="cause-cards">
+      <div class="cause-card thermal">
+        <div class="cc-head thermal">
+          <div class="cc-icon">&#127777;&#65039;</div>
+          <div class="cc-title">Thermal Expansion &amp; Contraction</div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-desc">Sheet metal ducts expand when warm air flows through them and contract when airflow stops. The pops occur at joints, transitions, and flat panel sections &#8212; wherever the metal is constrained and releases stress by snapping between positions. This is the most common banging and popping source in residential HVAC and the least dangerous. The characteristic pattern is multiple brief pops occurring during the first few minutes of operation or during the post-cycle cooldown &#8212; not at the moment of ignition.</div>
+          <div class="cc-action">Normal in most cases &#8212; note if combustion odors accompany it</div>
+        </div>
+      </div>
+      <div class="cause-card pressure">
+        <div class="cc-head pressure">
+          <div class="cc-icon">&#128268;</div>
+          <div class="cc-title">Airflow Restriction &amp; Pressure Imbalance</div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-desc">High static pressure from a clogged filter, closed registers, undersized returns, or a high-MERV filter causes duct panels to flex (oil-can) in and out under sustained load. This produces a rhythmic or intermittent banging that changes when filter or register conditions change. Whole-house pressure imbalance &#8212; rooms without adequate return air paths &#8212; produces pressure-equalization bangs when doors open. Both are correctible duct and filter issues, not combustion events.</div>
+          <div class="cc-action">Replace filter, open all registers, check return air paths</div>
+        </div>
+      </div>
+      <div class="cause-card ignition">
+        <div class="cc-head ignition">
+          <div class="cc-icon">&#128293;</div>
+          <div class="cc-title">Delayed Ignition &#8212; Combustion Event</div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-desc">A failing hot surface igniter or flame sensor allows gas to accumulate in the heat exchanger before ignition occurs. When the accumulated gas finally lights, the combustion event is explosive rather than smooth. The bang occurs specifically at the moment of burner ignition &#8212; followed by a brief whoosh. Repeated delayed ignition cycles crack heat exchangers &#8212; the primary source of CO entering living spaces from a gas furnace. This is the only banging pattern that requires immediate shutdown and emergency service.</div>
+          <div class="cc-action">&#9888; Shut down immediately. Do not restart. Emergency service.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Loudness Does Not Determine Risk</div>
+        <div class="callout-text">A very loud bang from thermal duct contraction may be startling but is harmless. A relatively quiet delayed ignition event at burner startup is dangerous. The most important observation is not how loud the bang is &#8212; it&#8217;s when it occurs relative to the heating cycle and whether it is specifically tied to the moment the burner ignites.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Consistent pops at shutdown or startup, reproducible in fan-only mode. Thermal or minor pressure. No action required.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Repeated oil-canning banging during operation. Changes with filter or register position. Correct static pressure cause.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Persistent pressure banging with reduced airflow or comfort. Return air inadequate. Professional duct evaluation needed.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Bang + whoosh at ignition. CO alarm. Combustion odor. Shut down immediately. Do not restart. Emergency service.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The first question I always ask on a banging call is: does it happen specifically at the moment the burner lights? Because that&#8217;s the one that has my full attention. Duct popping, pressure banging, oil-canning &#8212; all of those I can troubleshoot at a normal service call. Delayed ignition I treat as an emergency. The homeowner says &#8216;yeah, there&#8217;s been a bang when it starts up for the last few months&#8217; and I&#8217;m immediately checking the heat exchanger for cracks. The bang has been stressing that exchanger every single cycle. Sometimes I find cracks. When I pull the flame sensor and it&#8217;s black with carbon instead of clean metal &#8212; that&#8217;s the cause. The sensor couldn&#8217;t confirm flame, the gas kept flowing, and then when enough accumulated it lit all at once. A clean flame sensor is a $15 annual maintenance item. A cracked heat exchanger that&#8217;s been leaking CO into the home is a different conversation entirely. The fan-only test is what I always tell homeowners to run if they&#8217;re unsure. If it bangs in fan-only, it&#8217;s not ignition &#8212; and they can breathe easy until I get there."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Run the fan-only test &#8212; does the bang occur in fan-only mode? If yes, combustion is ruled out.</li>
+          <li>Note exactly when the bang occurs &#8212; at shutdown, at blower startup, during operation, or at burner ignition</li>
+          <li>Replace the air filter &#8212; resolves most pressure-related startup banging and oil-canning</li>
+          <li>Open all supply registers &#8212; reduces static pressure and may stop oil-canning</li>
+          <li>Open interior doors and note whether the banging changes &#8212; confirms or rules out pressure imbalance</li>
+          <li>Check for CO detector alarms and combustion odors near supply vents</li>
+          <li>Note whether the bang occurs specifically at the moment the burner ignites &#8212; if yes, stop the system</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Any bang that occurs at burner ignition, with or without a subsequent whoosh &#8212; shut down and call immediately</li>
+          <li>Flame sensor cleaning, igniter testing, and combustion evaluation</li>
+          <li>Heat exchanger inspection after any delayed ignition history</li>
+          <li>Static pressure measurement and duct evaluation for persistent oil-canning</li>
+          <li>Return air augmentation &#8212; transfer grilles, jump ducts, or additional returns</li>
+          <li>CO testing if any combustion odors are present from supply vents</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My ducts pop and bang every time the heat comes on. Is that a problem?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">It depends entirely on when during the heating cycle the banging occurs. If the pops and bangs happen as the ducts warm up in the first minute or two of a cycle &#8212; or as they cool down after the cycle ends &#8212; this is thermal expansion and contraction and is normal. If the bang occurs at the very moment the burner ignites &#8212; not as the duct warms up, but specifically at the instant of ignition, often followed by a brief whooshing sound &#8212; that is delayed ignition and requires immediate shutdown and service. If the banging happens during operation (not just at the start or end) and changes when you change register positions or open doors, that is a pressure-related issue from high static pressure. Replace the filter first. If you&#8217;re unsure whether the bang is occurring at the moment of ignition or a minute into the cycle as the duct warms &#8212; run the fan-only test. If the bang occurs in fan-only mode, combustion is ruled out entirely.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">I hear a loud bang from near the furnace cabinet, not the ducts. What is it?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A bang from near the furnace cabinet rather than from the ductwork narrows the cause significantly. The most important question is: does it happen at ignition (when the burner lights) or at blower startup (when the fan engages)? A bang at ignition from the furnace cabinet area is delayed ignition &#8212; shut the system off and call for service. A bang from the furnace cabinet at blower startup &#8212; not at ignition &#8212; is most commonly the large flat return duct panel or the air handler cabinet panel flexing under startup pressure. Check whether a filter door or access panel is slightly unseated. Also check whether the return duct connection at the air handler has separated from the cabinet &#8212; even slightly unseated duct connections can flex and bang at startup. The key safety test is confirming the bang does or doesn&#8217;t occur at the moment of ignition by listening carefully to the heating startup sequence: the inducer starts first, then a clicking from the igniter, then a soft whomp of the burner lighting. If the bang occurs at the whomp &#8212; that&#8217;s ignition-related. If it occurs 30&#8211;60 seconds later when the blower ramps up &#8212; it&#8217;s mechanical.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">The banging started after I installed a better air filter. Could that be the cause?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Almost certainly yes. Installing a higher-MERV filter &#8212; particularly MERV 13 or above &#8212; in a system designed for MERV 8 dramatically increases system static pressure. The blower has to work against a much more restrictive barrier, creating higher pressure differentials across the ductwork. Flat duct panels that were previously stable now flex in and out under this elevated pressure &#8212; oil-canning. The banging will be present from the start of operation and may worsen as the filter loads with debris over its service life. Replace the high-MERV filter with the correct rating for your system &#8212; typically found on the label inside the blower door or in the installation manual. The MERV rating your system was designed for is an airflow specification, not just a filtration preference. Running a MERV 13 filter in a system rated for MERV 8 consistently elevates motor amp draw, reduces system life, and can cause the exact banging you&#8217;re describing.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Volume does not determine danger. The pattern and timing &#8212; not loudness &#8212; identify whether banging is benign thermal expansion or dangerous delayed ignition.</li>
+        <li>Multiple pops during or after shutdown = thermal contraction of sheet metal ducts. Normal and consistent. Only a concern if accompanied by combustion odors.</li>
+        <li>Single bang at blower startup or repeated banging during operation that changes with register or door position = pressure-related (high static pressure or whole-house imbalance). Replace filter and open registers first.</li>
+        <li>Bang + whoosh at the specific moment the burner ignites = delayed ignition. This is the only pattern that requires immediate furnace shutdown. Do not restart. Call for service immediately.</li>
+        <li>The fan-only test rules out ignition in seconds: if the bang occurs in fan-only mode, the burner is never lit and combustion cannot be the cause. If it only occurs when the burner is active &#8212; especially at the moment of ignition &#8212; treat it as a combustion event.</li>
+        <li>Delayed ignition damages the heat exchanger with each cycle. A cracked heat exchanger is the primary source of carbon monoxide entering a home from a gas furnace. Flame sensor cleaning is a routine annual maintenance item that prevents most delayed ignition events.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">HVAC banging noise</a>
+      <a href="#" class="tag-pill">furnace loud bang at startup</a>
+      <a href="#" class="tag-pill">duct popping noise</a>
+      <a href="#" class="tag-pill">furnace delayed ignition bang</a>
+      <a href="#" class="tag-pill">HVAC duct oil canning</a>
+      <a href="#" class="tag-pill">furnace bang whoosh ignition</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More HVAC Noise Guides</h3>
+    <div class="related-list">
+      <a href="hvac-normal-sounds-vs-warning.html" class="related-item">
+        <div><div class="related-item-title">Normal HVAC Sounds vs. Warning Noises &#8212; Full Reference</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-noises-dangerous-vs-annoying.html" class="related-item">
+        <div><div class="related-item-title">When HVAC Noises Are Dangerous vs. Just Annoying</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-rattling-vibrating-shaking.html" class="related-item">
+        <div><div class="related-item-title">Why Your HVAC Is Rattling, Vibrating, or Shaking</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-dangerous-vs-inconvenient.html" class="related-item">
+        <div><div class="related-item-title">When Furnace Problems Are Dangerous vs. Inconvenient</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#decoder">Bang &amp; Pop Pattern Decoder</a></li>
+      <li><a href="#causes">The Three Root Cause Categories</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

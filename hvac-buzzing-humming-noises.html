@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your HVAC Makes Buzzing or Humming Noises | HomeownersRepairGuide.com</title>
+<meta name="description" content="HVAC buzzing and humming comes from either electrical components under stress or mechanical resistance in motors. When the sound occurs tells you which — and how urgently to act.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-buzzing-humming-noises.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-buzzing-humming-noises.html">
+<meta property="og:title" content="Why Your HVAC Makes Buzzing or Humming Noises | HomeownersRepairGuide.com">
+<meta property="og:description" content="Electrical buzzing correlates with energized states. Mechanical humming tracks motion and load. When it occurs tells you which — and what to do about it.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --elec:#c0402a;--elec-light:#fde8e8;
+  --mech:#2a5a7a;--mech-light:#e8f0f5;
+  --normal:#2a7a2a;--normal-light:#eaf5ea;
+  --critical:#7a1010;--critical-light:#f5e0e0;
+  --caution:#b07800;--caution-light:#fff8e6;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Buzz & Hum Source Identifier */
+.source-id{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.si-header{background:var(--navy);padding:18px 22px;}
+.si-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.si-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+/* Column headers */
+.si-col-heads{display:grid;grid-template-columns:175px 1fr 1fr;border-bottom:2px solid var(--gray-light);}
+.si-col-head{padding:10px 13px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;border-right:1px solid var(--gray-light);}
+.si-col-head:last-child{border-right:none;}
+.si-col-head:nth-child(1){background:var(--cream-dark);color:var(--text-muted);}
+.si-col-head:nth-child(2){background:var(--elec-light);color:var(--elec);}
+.si-col-head:nth-child(3){background:var(--mech-light);color:var(--mech);}
+/* Rows */
+.si-rows{display:flex;flex-direction:column;}
+.si-row{display:grid;grid-template-columns:175px 1fr 1fr;border-bottom:1px solid var(--gray-light);}
+.si-row:last-child{border-bottom:none;}
+.si-row.critical-row{border:2px solid var(--critical);}
+.si-when{padding:13px 12px;background:var(--cream-dark);border-right:1px solid var(--gray-light);display:flex;flex-direction:column;justify-content:center;}
+.si-when-icon{font-size:20px;margin-bottom:5px;}
+.si-when-label{font-size:11px;font-weight:700;color:var(--navy);margin-bottom:3px;line-height:1.3;}
+.si-when-sub{font-size:10px;color:var(--text-muted);line-height:1.35;}
+.si-cell{padding:12px 13px;border-right:1px solid var(--gray-light);font-size:12px;}
+.si-cell:last-child{border-right:none;}
+.si-cell-badge{font-size:10px;font-weight:700;padding:3px 7px;border-radius:20px;margin-bottom:5px;display:inline-block;}
+.si-cell.elec-cell .si-cell-badge{background:var(--elec-light);color:var(--elec);}
+.si-cell.mech-cell .si-cell-badge{background:var(--mech-light);color:var(--mech);}
+.si-cell.normal-cell .si-cell-badge{background:var(--normal-light);color:var(--normal);}
+.si-cell.critical-cell .si-cell-badge{background:var(--critical-light);color:var(--critical);}
+.si-cell-text{color:var(--text-muted);line-height:1.5;}
+.si-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.si-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.si-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.si-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Two-source cards */
+.source-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.src-card{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.src-head{padding:12px 16px;display:flex;align-items:center;gap:9px;}
+.src-head.elec{background:var(--elec);}
+.src-head.mech{background:var(--mech);}
+.src-icon{font-size:17px;color:var(--white);}
+.src-title{font-size:13px;font-weight:700;color:var(--white);}
+.src-body{background:var(--white);border:1px solid var(--gray-light);border-top:none;padding:14px 15px;}
+.src-items{list-style:none;display:flex;flex-direction:column;gap:6px;margin-bottom:10px;}
+.src-items li{font-size:12px;color:var(--text-body);display:flex;gap:7px;line-height:1.45;}
+.src-items li::before{content:'·';font-weight:700;color:var(--gray-mid);flex-shrink:0;}
+.src-action{font-size:11px;font-weight:700;padding:3px 8px;border-radius:2px;display:inline-block;}
+.src-card.elec .src-action{background:var(--elec-light);color:var(--elec);}
+.src-card.mech .src-action{background:var(--mech-light);color:var(--mech);}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--caution-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--elec-light);border:1px solid #e08080;}
+.callout-box.tip{background:var(--normal-light);border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--caution);}
+.callout-box.alert .callout-label{color:var(--elec);}
+.callout-box.tip .callout-label{color:var(--normal);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--caution);}.sev-item.mod .sev-label{color:var(--caution);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--critical);}.sev-item.crit .sev-label{color:var(--critical);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--critical);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--elec);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--elec);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.source-cards{grid-template-columns:1fr;}.si-row,.si-col-heads{grid-template-columns:1fr;}.si-col-heads{display:none;}.si-when{border-right:none;border-bottom:1px solid var(--gray-light);}.si-cell{border-right:none !important;border-bottom:1px solid var(--gray-light);}.si-cell:last-child{border-bottom:none;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-noises.html">HVAC Noises</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your HVAC Makes Buzzing or Humming Noises</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">HVAC Noises</span>
+  </div>
+
+  <h1 class="article-title">Why Your HVAC Makes Buzzing or Humming Noises (Electrical vs. Mechanical)</h1>
+  <p class="article-subtitle">HVAC buzzing and humming originate from two completely different sources: electrical components under voltage stress, or mechanical components under rotational load. The response required is different for each. When the sound occurs relative to system state tells you which side you&#8217;re dealing with.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Electrical buzzing correlates with energized states.</strong> It is present when current is flowing &#8212; before motors start, while components are energized, or even briefly after shutdown. It does not require mechanical motion to occur.</li>
+        <li>Mechanical humming tracks motion and load. It appears when something is spinning, increases with load, and stops when the moving component stops. It doesn&#8217;t occur in a completely idle system.</li>
+        <li>The fan-only test separates blower-source noise from compressor or outdoor-unit-source noise. If the buzz occurs in fan-only mode, the blower circuit or motor is involved. If it only occurs when cooling or heating is active, the compressor, contactor, or refrigerant circuit is the source.</li>
+        <li>Buzzing before startup attempts &#8212; without the motor actually running &#8212; is always electrical. A contactor coil energizing, a capacitor struggling to hold charge, or a control board issuing a failed start command.</li>
+        <li>Buzzing that continues after the system shuts off is always electrical and potentially urgent &#8212; a contactor that hasn&#8217;t fully released, a transformer that remains energized, or a circuit that hasn&#8217;t fully de-energized.</li>
+        <li>Any buzz accompanied by burning odor, sparks, dimming lights, or breaker trips: shut down immediately. Electrical arcing in an HVAC system is a fire risk.</li>
+      </ul>
+    </div>
+
+    <h2 id="identifier">Buzz &amp; Hum Source Identifier</h2>
+    <p>Find when the sound occurs relative to system state. Each row shows the electrical interpretation (left) and the mechanical interpretation (right) for that timing pattern.</p>
+
+    <div class="source-id">
+      <div class="si-header">
+        <h3>When Does the Buzz or Hum Occur?</h3>
+        <p>Match the timing to the row. Read both columns &#8212; the pattern will fit one more cleanly than the other based on whether it tracks with power or with motion.</p>
+      </div>
+
+      <div class="si-col-heads">
+        <div class="si-col-head">When It Occurs</div>
+        <div class="si-col-head">&#9889; Electrical Source</div>
+        <div class="si-col-head">&#9881;&#65039; Mechanical Source</div>
+      </div>
+
+      <div class="si-rows">
+
+        <div class="si-row">
+          <div class="si-when">
+            <div class="si-when-icon">&#9654;&#128374;</div>
+            <div class="si-when-label">Before Startup &#8212; No Motor Running Yet</div>
+            <div class="si-when-sub">Buzz heard before the blower or compressor actually starts</div>
+          </div>
+          <div class="si-cell elec-cell">
+            <div class="si-cell-badge">&#9889; Contactor / Capacitor Stress</div>
+            <div class="si-cell-text">The contactor coil energizes (producing a buzz) before the compressor starts. A failing contactor whose contacts are pitted or misaligned buzzes as it struggles to close cleanly. A capacitor that can&#8217;t provide adequate startup boost causes the motor to hum without starting. This is always electrical &#8212; no mechanical motion produces sound before rotation begins.</div>
+          </div>
+          <div class="si-cell normal-cell">
+            <div class="si-cell-badge">&#10003; Not Mechanical</div>
+            <div class="si-cell-text">Mechanical humming requires rotating components. If the sound occurs before any motor is running, the source is not mechanical. If you observe a hum before startup that then changes character when the motor engages, both may be present &#8212; electrical first, then mechanical overlaying it.</div>
+          </div>
+        </div>
+
+        <div class="si-row">
+          <div class="si-when">
+            <div class="si-when-icon">&#9654;&#127777;&#65039;</div>
+            <div class="si-when-label">During Operation Only &#8212; Stops When System Stops</div>
+            <div class="si-when-sub">Hum present while running, absent at rest</div>
+          </div>
+          <div class="si-cell elec-cell">
+            <div class="si-cell-badge">&#9889; Transformer / Energized Component</div>
+            <div class="si-cell-text">Transformers and other energized components produce a 60Hz hum as long as current flows. A transformer hum that has increased in volume may indicate core saturation, overloading, or mounting looseness amplifying the normal hum. This sound tracks with energized state, not motor speed &#8212; it doesn&#8217;t change pitch as load changes.</div>
+          </div>
+          <div class="si-cell mech-cell">
+            <div class="si-cell-badge">&#9881;&#65039; Motor Under Load</div>
+            <div class="si-cell-text">Motors produce a hum proportional to load. A motor hum that increases when demand is high (very cold or very hot weather) and decreases under light load is mechanical &#8212; it tracks with work being done. This includes compressor hum, blower motor hum under high static pressure, and condenser fan motor hum. Changes pitch with speed.</div>
+          </div>
+        </div>
+
+        <div class="si-row critical-row">
+          <div class="si-when">
+            <div class="si-when-icon">&#9646;&#128374;</div>
+            <div class="si-when-label">After Shutdown &#8212; System Is Off but Buzz Continues</div>
+            <div class="si-when-sub">Hum or buzz that persists after the system has shut down</div>
+          </div>
+          <div class="si-cell elec-cell">
+            <div class="si-cell-badge">&#9888; Contactor Not Released / Transformer</div>
+            <div class="si-cell-text">A contactor that hasn&#8217;t fully released after the cooling call ends remains partially energized &#8212; buzzing with the contacts in an intermediate position. A transformer that remains energized after shutdown indicates a wiring fault or control circuit issue. Both are safety concerns. <strong>Buzzing that continues after shutdown requires prompt professional attention.</strong></div>
+          </div>
+          <div class="si-cell normal-cell">
+            <div class="si-cell-badge">&#10003; Not Mechanical</div>
+            <div class="si-cell-text">Mechanical humming stops when the motor stops rotating &#8212; within seconds of shutdown. Humming that persists minutes after shutdown with no moving parts is always electrical. A brief hum for 2&#8211;3 seconds as inertia slows a motor is normal &#8212; persistent humming is not.</div>
+          </div>
+        </div>
+
+        <div class="si-row">
+          <div class="si-when">
+            <div class="si-when-icon">&#128268;&#8596;&#9889;</div>
+            <div class="si-when-label">Changes Between Fan-Only and Full System</div>
+            <div class="si-when-sub">Present in fan-only mode vs. only when cooling or heating active</div>
+          </div>
+          <div class="si-cell elec-cell">
+            <div class="si-cell-badge">&#9889; Compressor / Contactor Circuit</div>
+            <div class="si-cell-text">Buzzing that only occurs when cooling or heating is active &#8212; not in fan-only mode &#8212; indicates the source is in the compressor circuit, the outdoor contactor, or the refrigerant side. The fan circuit is working normally; the issue is in the high-voltage outdoor circuit that only energizes during active conditioning.</div>
+          </div>
+          <div class="si-cell mech-cell">
+            <div class="si-cell-badge">&#9881;&#65039; Blower Motor</div>
+            <div class="si-cell-text">Humming that is present in fan-only mode comes from the indoor blower circuit &#8212; the blower motor, its capacitor, or loose sheet metal vibrating at motor speed. Humming that only appears when the compressor is running may be mechanical resonance from compressor vibration transmitting through the refrigerant lines to the air handler.</div>
+          </div>
+        </div>
+
+        <div class="si-row">
+          <div class="si-when">
+            <div class="si-when-icon">&#9650;&#127925;</div>
+            <div class="si-when-label">Gets Louder as System Heats Up or Demand Increases</div>
+            <div class="si-when-sub">Worse in afternoon peak heat or after extended runtime</div>
+          </div>
+          <div class="si-cell elec-cell">
+            <div class="si-cell-badge">&#9889; Capacitor Degrading Under Heat</div>
+            <div class="si-cell-text">Capacitors lose capacitance as they heat up. A capacitor that is marginal will buzz more as it struggles to hold charge at operating temperature. This produces buzzing that worsens after the system has been running &#8212; worse in the afternoon than the morning, worse on hot days. The capacitor is approaching failure.</div>
+          </div>
+          <div class="si-cell mech-cell">
+            <div class="si-cell-badge">&#9881;&#65039; Motor Resistance Rising With Heat</div>
+            <div class="si-cell-text">Motor windings increase resistance as they heat up during long run cycles. A motor that draws increasing current as it heats produces increasing mechanical stress &#8212; and increasing hum. Hum that increases steadily through a long run cycle and peaks in the afternoon indicates a motor approaching thermal overload.</div>
+          </div>
+        </div>
+
+        <div class="si-row" style="border-bottom:none;">
+          <div class="si-when">
+            <div class="si-when-icon">&#128308;&#9889;</div>
+            <div class="si-when-label">With Burning Odor, Sparks, or Breaker Trip</div>
+            <div class="si-when-sub">Any buzz accompanied by safety indicators</div>
+          </div>
+          <div class="si-cell elec-cell" style="border-right:none;" colspan="2">
+            <div class="si-cell-badge" style="background:var(--critical-light);color:var(--critical);">&#9888; Critical &#8212; Shut Down Immediately</div>
+            <div class="si-cell-text">Any buzzing or humming accompanied by burning odor, visible sparks, scorch marks, dimming lights, or breaker trips is an active electrical fault. This is not a noise diagnostic &#8212; this is a safety emergency. Shut off the system at the thermostat and the circuit breaker. Do not reset. Call for service. Electrical arcing in an HVAC cabinet creates fire risk from accumulated dust and debris.</div>
+          </div>
+          <div class="si-cell" style="display:none;"></div>
+        </div>
+
+      </div>
+      <div class="si-footer">
+        <div class="si-footer-icon">&#128268;</div>
+        <div>
+          <h4>The Fan-Only Isolation Test</h4>
+          <p>Switch to Fan Only mode at the thermostat. Does the buzz occur? If yes &#8212; the source is in the indoor blower circuit (motor, capacitor, loose sheet metal). If no &#8212; the source is in the outdoor unit or compressor circuit, which only energizes during active cooling. This test takes 60 seconds and cuts the diagnostic field in half before a technician arrives.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="sources">Electrical vs. Mechanical: What&#8217;s Actually Making the Sound</h2>
+
+    <div class="source-cards">
+      <div class="src-card elec">
+        <div class="src-head elec">
+          <div class="src-icon">&#9889;</div>
+          <div class="src-title">Electrical Buzzing Sources</div>
+        </div>
+        <div class="src-body">
+          <ul class="src-items">
+            <li><strong>Contactors</strong> &#8212; the high-voltage switch that connects power to the compressor. Normal contactors have a minimal hum; pitted or worn contacts buzz loudly as they arc across imperfect contact surfaces.</li>
+            <li><strong>Capacitors</strong> &#8212; store and release electrical energy for motor startup and run. A failing capacitor can produce buzzing as its dielectric breaks down under voltage stress.</li>
+            <li><strong>Transformers</strong> &#8212; step 240V down to 24V for the control circuit. Normal low-level hum is expected; louder hum or a change in pitch indicates overload or core saturation.</li>
+            <li><strong>Control boards</strong> &#8212; relay coils on the board produce small clicks and hums when energized. Abnormal buzzing from a board may indicate a relay stuck in an intermediate position.</li>
+          </ul>
+          <div class="src-action">Priority: shut down if accompanied by odor, sparks, or breaker trips</div>
+        </div>
+      </div>
+      <div class="src-card mech">
+        <div class="src-head mech">
+          <div class="src-icon">&#9881;&#65039;</div>
+          <div class="src-title">Mechanical Humming Sources</div>
+        </div>
+        <div class="src-body">
+          <ul class="src-items">
+            <li><strong>Blower motor</strong> &#8212; hums under load, especially at high static pressure. A motor humming more than usual without change in airflow indicates the motor is working harder than it should &#8212; often from a clogged filter or restrictive duct.</li>
+            <li><strong>Compressor</strong> &#8212; normal operational hum. A compressor humming more loudly or with a different pitch indicates internal wear, high head pressure from a dirty condenser, or refrigerant imbalance.</li>
+            <li><strong>Loose panels or sheet metal</strong> &#8212; resonance at motor speed amplified through improperly fastened cabinet panels, access doors, or duct connections. Often produces a buzzing or rattling that varies with fan speed.</li>
+            <li><strong>Refrigerant lines vibrating</strong> &#8212; copper lines that contact the cabinet or nearby structures transmit compressor vibration as an intermittent buzz or hum.</li>
+          </ul>
+          <div class="src-action">Priority: check filter first, then schedule evaluation</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Volume Alone Does Not Indicate Severity</div>
+        <div class="callout-text">A quiet buzz from a failing contactor is more urgent than a loud hum from a motor under high static pressure. Volume reflects the component&#8217;s coupling to the cabinet and surrounding structure &#8212; not how dangerous the underlying condition is. A faint electrical buzz that continues after shutdown is more concerning than a loud blower hum that stops the moment the system shuts off. Focus on timing and system-state correlation, not loudness.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Stable hum, no performance change, no escalation. Loose panel vibration. Monitor and mention at next service.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Increasing hum under load, contactor buzz before startup. Performance unchanged. Schedule evaluation this week.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Buzz with delayed starts, post-shutdown buzz, or loud contactor buzzing. Prompt service &#8212; component failure underway.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Buzz with burning odor, sparks, breaker trips, or dimming lights. Shut down immediately. Emergency service.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The one I take most seriously is the buzz that happens after the system shuts off. Most homeowners don&#8217;t notice it &#8212; they&#8217;re focused on when the system is running. But if you stand near the outdoor unit after a cooling cycle ends and you can still hear a buzz 30 seconds or a minute later &#8212; that contactor hasn&#8217;t fully released. It&#8217;s either stuck or the coil is degrading and can&#8217;t fully drop out. That contactor needs to be replaced, not monitored. The other pattern I use every time is the fan-only test. Takes 60 seconds. If the buzz is there in fan-only, I&#8217;m working on the indoor side. If it disappears and only comes back when cooling calls &#8212; I&#8217;m looking at the outdoor contactor, the compressor, or the capacitor on the outdoor unit. That one observation cuts the diagnostic time in half on most buzzing calls."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Run the fan-only test &#8212; does the buzz occur in fan-only mode or only during active cooling/heating?</li>
+          <li>Note when the buzz occurs: before startup, during operation, or after shutdown</li>
+          <li>Note whether the buzz tracks with motor speed or is constant regardless of speed</li>
+          <li>Replace the air filter &#8212; mechanical hum from the blower under high static pressure may resolve</li>
+          <li>Check for loose access panels or cabinet screws that may vibrate at motor speed</li>
+          <li>Note any burned odor, sparks, or breaker trips accompanying the noise &#8212; these require immediate shutdown</li>
+          <li>Listen for whether the buzz continues after the system shuts off</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Any buzz accompanied by burning odor, sparks, or breaker trips &#8212; shut down first</li>
+          <li>Post-shutdown buzz &#8212; contactor not releasing or transformer fault</li>
+          <li>Contactor inspection and replacement &#8212; high-voltage component</li>
+          <li>Capacitor testing &#8212; stores charge even after power is disconnected</li>
+          <li>Motor amp draw testing &#8212; confirms whether mechanical hum reflects overload</li>
+          <li>Transformer voltage testing and inspection</li>
+          <li>Any buzz with performance change: delayed starts, short cycling, or reduced output</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My outdoor unit makes a constant hum whenever the AC is running. Is that normal?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A low, steady operational hum from the outdoor unit during cooling is normal &#8212; you&#8217;re hearing the compressor and condenser fan motor working together. The question is whether it has changed. A hum that has been identical in pitch and volume since the system was installed is almost certainly normal operation. A hum that has become louder than it used to be, changed pitch, or developed an irregular quality over time is a signal worth investigating. Common causes of increasing outdoor unit hum: a dirty condenser coil raising head pressure and making the compressor work harder; a condenser fan motor bearing beginning to wear; or a contactor with pitted contacts that is buzzing instead of closing cleanly. The practical test: listen to the unit at the start of the cooling season when the system first runs after winter. Note the character of the sound. If it&#8217;s meaningfully different from that baseline by midsummer &#8212; louder, different pitch, or irregular &#8212; schedule an evaluation.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">There&#8217;s a buzz from inside the air handler that varies with the fan speed. What is it?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A buzz from inside the air handler that changes pitch or intensity with fan speed is almost always a mechanical resonance issue rather than an electrical one. The most common causes: a loose sheet metal panel or access door vibrating at a specific motor frequency; a loose duct connection at the air handler that rattles at certain airflow rates; a blower wheel that has become slightly unbalanced (from debris impact or buildup) and vibrates at rotation frequency; or the blower wheel set screw has loosened, allowing slight shaft movement. These are all mechanical &#8212; they track with rotation speed, not with energized state. The exception is a blower motor capacitor that is failing, which can produce an electrical buzz that changes character as the motor speed changes. That scenario is typically accompanied by reduced airflow or inconsistent motor speed. If the buzz goes away when you switch the system off but persists while the fan runs, it&#8217;s worth checking all accessible panel fasteners and duct connection points before scheduling professional service &#8212; a loose screw is a common culprit.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My furnace transformer makes a hum I can hear from across the room. Should I be worried?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Transformers naturally produce a 60Hz hum due to magnetostriction &#8212; the core material physically expands and contracts at line frequency. A very slight hum from the transformer is normal. A hum loud enough to hear from across the room typically indicates one of three things: the transformer is overloaded &#8212; which happens when too many devices are connected to the 24V secondary, often after a thermostat or zoning device is added without accounting for VA load; the transformer is mounted to a surface that amplifies and transmits the vibration (hollow metal cabinet panels are excellent sound boards); or the transformer is failing internally, with core laminations loosening and amplifying the normal vibration. The test: is the hum new, or has it always been this loud? A transformer that has always been audible at normal conversational distance from the furnace cabinet is likely just resonating with the cabinet. A transformer that was previously quiet and is now audible from across the room has changed &#8212; and should be evaluated. Overloaded transformers run hot and fail early, often blowing the low-voltage fuse on the control board as a symptom.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Electrical buzzing correlates with energized states &#8212; before startup, during energized standby, or after shutdown. It doesn&#8217;t require mechanical motion and doesn&#8217;t change pitch with motor speed.</li>
+        <li>Mechanical humming tracks motion and load &#8212; it increases with demand, changes pitch with motor speed, and stops promptly when the motor stops.</li>
+        <li>The fan-only test isolates the source in 60 seconds: buzz in fan-only = indoor blower circuit; buzz only during active conditioning = outdoor unit, compressor, or contactor.</li>
+        <li>Post-shutdown buzz is always electrical and warrants prompt attention &#8212; a contactor that hasn&#8217;t fully released or a circuit that remains partially energized after the call ends.</li>
+        <li>Volume does not indicate severity. A faint electrical buzz after shutdown is more concerning than a loud mechanical hum that stops cleanly when the motor stops.</li>
+        <li>Any buzzing or humming accompanied by burning odor, sparks, dimming lights, or breaker trips is a safety emergency. Shut off the system at the thermostat and the circuit breaker. Do not reset. Call for service.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">HVAC buzzing noise</a>
+      <a href="#" class="tag-pill">AC humming sound</a>
+      <a href="#" class="tag-pill">furnace buzzing electrical</a>
+      <a href="#" class="tag-pill">contactor buzzing HVAC</a>
+      <a href="#" class="tag-pill">HVAC hum after shutdown</a>
+      <a href="#" class="tag-pill">outdoor unit buzzing</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More HVAC Noise Guides</h3>
+    <div class="related-list">
+      <a href="hvac-normal-sounds-vs-warning.html" class="related-item">
+        <div><div class="related-item-title">Normal HVAC Sounds vs. Warning Noises &#8212; Full Reference</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-screeching-squealing.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace or Air Handler Screeches or Squeals</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-clicking-ticking-tapping.html" class="related-item">
+        <div><div class="related-item-title">Why Your HVAC Makes Clicking, Ticking, or Tapping Noises</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-noises-dangerous-vs-annoying.html" class="related-item">
+        <div><div class="related-item-title">When HVAC Noises Are Dangerous vs. Just Annoying</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#identifier">Buzz &amp; Hum Source Identifier</a></li>
+      <li><a href="#sources">Electrical vs. Mechanical Sources</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

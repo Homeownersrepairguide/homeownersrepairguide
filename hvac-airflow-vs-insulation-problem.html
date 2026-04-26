@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How To Tell If Uneven Temperatures Are An Airflow Problem or An Insulation Problem | HomeownersRepairGuide.com</title>
+<meta name="description" content="Rooms too hot or too cold? The fix depends entirely on whether you have an airflow delivery problem or an insulation and air-sealing failure. Here's how to tell them apart.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-airflow-vs-insulation-problem.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-airflow-vs-insulation-problem.html">
+<meta property="og:title" content="How To Tell If Uneven Temperatures Are An Airflow Problem or An Insulation Problem | HomeownersRepairGuide.com">
+<meta property="og:description" content="Fixing the wrong system wastes money and leaves you uncomfortable. Here's how to tell airflow delivery problems from insulation and air-leakage failures before spending a dollar.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --insulation:#7a5a2a;--insulation-light:#f5f0e8;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Symptom Pattern Interpreter */
+.pattern-interpreter{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.pi-header{background:var(--navy);padding:18px 22px;}
+.pi-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.pi-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.pi-legend{display:grid;grid-template-columns:1fr 1fr;border-bottom:2px solid var(--gray-light);}
+.pi-leg-col{padding:12px 18px;display:flex;align-items:center;gap:10px;}
+.pi-leg-col.airflow{background:rgba(42,107,122,0.08);border-right:1px solid var(--gray-light);}
+.pi-leg-col.insulation{background:rgba(122,90,42,0.08);}
+.pi-leg-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0;}
+.pi-leg-dot.airflow{background:var(--hvac);}
+.pi-leg-dot.insulation{background:var(--insulation);}
+.pi-leg-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;}
+.pi-leg-col.airflow .pi-leg-label{color:var(--hvac-dark);}
+.pi-leg-col.insulation .pi-leg-label{color:var(--insulation);}
+.pi-scenarios{display:flex;flex-direction:column;}
+.pi-scenario{display:grid;grid-template-columns:200px 1fr 1fr;border-bottom:1px solid var(--gray-light);}
+.pi-scenario:last-child{border-bottom:none;}
+.pi-trigger{padding:14px 16px;background:var(--cream-dark);border-right:1px solid var(--gray-light);display:flex;align-items:center;}
+.pi-trigger-text{font-size:12px;font-weight:700;color:var(--navy);line-height:1.4;}
+.pi-cell{padding:13px 16px;font-size:12px;line-height:1.5;color:var(--text-body);}
+.pi-cell.airflow-col{background:rgba(42,107,122,0.03);border-right:1px solid var(--gray-light);}
+.pi-cell.insulation-col{background:rgba(122,90,42,0.03);}
+.pi-cell .pi-verdict{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:4px;}
+.pi-cell.airflow-col .pi-verdict{color:var(--hvac);}
+.pi-cell.insulation-col .pi-verdict{color:var(--insulation);}
+.pi-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.pi-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.pi-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.pi-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Cause cards */
+.cause-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0;}
+.cause-col{border-radius:var(--radius-lg);padding:20px;border:1px solid;}
+.cause-col.airflow{background:var(--hvac-light);border-color:rgba(42,107,122,0.3);}
+.cause-col.insulation{background:var(--insulation-light);border-color:rgba(122,90,42,0.3);}
+.cause-col-head{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.cause-col.airflow .cause-col-head{color:var(--hvac-dark);}
+.cause-col.insulation .cause-col-head{color:var(--insulation);}
+.cause-items{display:flex;flex-direction:column;gap:10px;}
+.cause-item{background:var(--white);border-radius:var(--radius);padding:11px 14px;border-left:3px solid;}
+.cause-col.airflow .cause-item{border-color:var(--hvac);}
+.cause-col.insulation .cause-item{border-color:var(--insulation);}
+.cause-item-title{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.cause-item-desc{font-size:12px;color:var(--text-muted);line-height:1.5;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-box.alert{background:#fef2f0;border:1px solid #e08080;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-box.alert .callout-label{color:#c0402a;}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--hvac);}.sev-item.mod .sev-label{color:var(--hvac-dark);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:#c0392b;}.sev-item.crit .sev-label{color:#c0392b;}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid #c0392b;}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+/* Tags / share */
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+/* Related */
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+/* Sidebar */
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.cause-grid{grid-template-columns:1fr;}.pi-scenario{grid-template-columns:1fr;}.pi-trigger{border-right:none;border-bottom:1px solid var(--gray-light);}.pi-legend{grid-template-columns:1fr;}.pi-leg-col.airflow{border-right:none;border-bottom:1px solid var(--gray-light);}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-diagnostics-controls.html">Diagnostics &amp; Controls</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Airflow Problem vs. Insulation Problem</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Diagnostics &amp; Controls</span>
+  </div>
+
+  <h1 class="article-title">How To Tell If Uneven Temperatures Are An Airflow Problem or An Insulation Problem</h1>
+  <p class="article-subtitle">Fixing the wrong system wastes money and leaves the problem unchanged. Airflow delivery failures and insulation or air-leakage failures produce similar symptoms but respond to completely different repairs &#8212; and the pattern of your discomfort tells you which one you have.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Airflow problems</strong> affect how much conditioned air reaches a space &#8212; weak registers, undersized ducts, disconnected ducts, or poor balancing</li>
+        <li><strong>Insulation problems</strong> affect how long the space stays conditioned &#8212; heat escapes or enters regardless of how much air is delivered</li>
+        <li>If discomfort tracks outdoor temperature more than system runtime, the envelope (insulation/air sealing) is likely the cause</li>
+        <li>If discomfort tracks system runtime and improves only when the system is running, airflow is the more likely cause</li>
+        <li>Adjusting vents and dampers cannot fix insulation or air-sealing deficiencies &#8212; it just redistributes inadequate conditioning</li>
+        <li>Upsizing HVAC equipment without diagnosing the envelope is one of the most common and expensive mistakes in home comfort</li>
+      </ul>
+    </div>
+
+    <h2 id="interpreter">Symptom Pattern Interpreter</h2>
+    <p>Your discomfort pattern contains the diagnosis. Match the scenario in the left column to the two interpretations &#8212; the one that matches your experience points to the likely cause.</p>
+
+    <div class="pattern-interpreter">
+      <div class="pi-header">
+        <h3>What Is Your Comfort Pattern Telling You?</h3>
+        <p>Identify the scenario that matches your situation and read across both columns.</p>
+      </div>
+      <div class="pi-legend">
+        <div class="pi-leg-col airflow">
+          <div class="pi-leg-dot airflow"></div>
+          <div class="pi-leg-label">&#128268; Airflow Delivery Problem</div>
+        </div>
+        <div class="pi-leg-col insulation">
+          <div class="pi-leg-dot insulation"></div>
+          <div class="pi-leg-label">&#127968; Insulation / Air Leakage Problem</div>
+        </div>
+      </div>
+      <div class="pi-scenarios">
+
+        <div class="pi-scenario">
+          <div class="pi-trigger"><div class="pi-trigger-text">When does the room feel worst?</div></div>
+          <div class="pi-cell airflow-col">
+            <div class="pi-verdict">Airflow Signal</div>
+            Year-round, regardless of season or outdoor conditions. The room never gets fully comfortable even during mild weather.
+          </div>
+          <div class="pi-cell insulation-col">
+            <div class="pi-verdict">Insulation Signal</div>
+            Only during extreme heat or cold. The room is fine in mild weather but suffers badly when outdoor temperatures are extreme.
+          </div>
+        </div>
+
+        <div class="pi-scenario">
+          <div class="pi-trigger"><div class="pi-trigger-text">What happens when the system shuts off?</div></div>
+          <div class="pi-cell airflow-col">
+            <div class="pi-verdict">Airflow Signal</div>
+            Room temperature drifts at a similar rate to the rest of the house &#8212; all rooms lose conditioning at about the same pace.
+          </div>
+          <div class="pi-cell insulation-col">
+            <div class="pi-verdict">Insulation Signal</div>
+            Room temperature changes rapidly &#8212; drifts toward outdoor temperature much faster than other rooms after the system stops.
+          </div>
+        </div>
+
+        <div class="pi-scenario">
+          <div class="pi-trigger"><div class="pi-trigger-text">How does airflow feel at the register?</div></div>
+          <div class="pi-cell airflow-col">
+            <div class="pi-verdict">Airflow Signal</div>
+            Noticeably weaker than comparable rooms. Hold your hand in front &#8212; less air volume, slower velocity, or intermittent flow.
+          </div>
+          <div class="pi-cell insulation-col">
+            <div class="pi-verdict">Insulation Signal</div>
+            Strong, normal airflow at the register. The air is getting there &#8212; the room just can&#8217;t hold the conditioning once the air stops.
+          </div>
+        </div>
+
+        <div class="pi-scenario">
+          <div class="pi-trigger"><div class="pi-trigger-text">Do walls, floors, or ceilings feel abnormal?</div></div>
+          <div class="pi-cell airflow-col">
+            <div class="pi-verdict">Less Likely Airflow</div>
+            Surfaces generally feel similar to other rooms &#8212; no unusual cold spots, warm ceilings, or drafty walls.
+          </div>
+          <div class="pi-cell insulation-col">
+            <div class="pi-verdict">Insulation Signal</div>
+            Walls, floors, or ceilings feel noticeably cold or warm to the touch, especially exterior walls or areas below the attic.
+          </div>
+        </div>
+
+        <div class="pi-scenario">
+          <div class="pi-trigger"><div class="pi-trigger-text">Does wind or pressure change affect comfort?</div></div>
+          <div class="pi-cell airflow-col">
+            <div class="pi-verdict">Less Likely Airflow</div>
+            Comfort doesn&#8217;t meaningfully change on windy days or when windows and doors are opened nearby.
+          </div>
+          <div class="pi-cell insulation-col">
+            <div class="pi-verdict">Insulation Signal</div>
+            Comfort worsens noticeably on windy days or when wind direction changes &#8212; a sign of air leakage through the building envelope.
+          </div>
+        </div>
+
+        <div class="pi-scenario">
+          <div class="pi-trigger"><div class="pi-trigger-text">Does time of day affect the problem?</div></div>
+          <div class="pi-cell airflow-col">
+            <div class="pi-verdict">Airflow Signal</div>
+            Discomfort is consistent throughout the day regardless of sun position or outdoor temperature changes.
+          </div>
+          <div class="pi-cell insulation-col">
+            <div class="pi-verdict">Insulation Signal</div>
+            Worst in afternoon sun (summer) or at night in winter &#8212; comfort tracks the sun&#8217;s position and outdoor temperature cycle.
+          </div>
+        </div>
+
+      </div>
+      <div class="pi-footer">
+        <div class="pi-footer-icon">&#128161;</div>
+        <div>
+          <h4>The Retention Test</h4>
+          <p>If running the system continuously stabilizes temperature in the room, airflow is likely adequate and retention is the problem. If continuous operation still can&#8217;t keep up with outdoor conditions, you have both a delivery and a retention problem &#8212; address the envelope first, then rebalance airflow.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="causes">What Causes Each Type</h2>
+    <p>Comfort depends on two systems working together: conditioned air delivery and heat retention. Each has distinct failure modes that require different fixes.</p>
+
+    <div class="cause-grid">
+      <div class="cause-col airflow">
+        <div class="cause-col-head">&#128268; Airflow Delivery Problems</div>
+        <div class="cause-items">
+          <div class="cause-item">
+            <div class="cause-item-title">Undersized or Restricted Ductwork</div>
+            <div class="cause-item-desc">Ducts too small for the room&#8217;s load, or flex duct that is kinked, compressed, or over-long, reduce air volume reaching the register.</div>
+          </div>
+          <div class="cause-item">
+            <div class="cause-item-title">Disconnected or Leaking Ducts</div>
+            <div class="cause-item-desc">A duct that has separated at a joint or developed a hole loses conditioned air into unconditioned space &#8212; attic, crawlspace, or wall cavity &#8212; rather than delivering it to the room.</div>
+          </div>
+          <div class="cause-item">
+            <div class="cause-item-title">Improper Balancing or Closed Dampers</div>
+            <div class="cause-item-desc">Dampers set incorrectly or registers partially closed redistribute airflow system-wide, starving some rooms while overfeeding others.</div>
+          </div>
+          <div class="cause-item">
+            <div class="cause-item-title">Blocked or Poorly Located Return Air</div>
+            <div class="cause-item-desc">Inadequate return air in a room creates a positive pressure condition that actively resists supply airflow into that space.</div>
+          </div>
+        </div>
+      </div>
+      <div class="cause-col insulation">
+        <div class="cause-col-head">&#127968; Insulation &amp; Air Leakage Problems</div>
+        <div class="cause-items">
+          <div class="cause-item">
+            <div class="cause-item-title">Missing, Compressed, or Uneven Insulation</div>
+            <div class="cause-item-desc">Attic insulation that has settled, compressed, or was never installed properly creates zones where heat moves freely through the ceiling regardless of conditioning.</div>
+          </div>
+          <div class="cause-item">
+            <div class="cause-item-title">Air Leakage Through Walls, Ceilings, or Floors</div>
+            <div class="cause-item-desc">Gaps around electrical boxes, plumbing penetrations, attic hatches, and window frames allow unconditioned air to infiltrate directly into the room, bypassing insulation entirely.</div>
+          </div>
+          <div class="cause-item">
+            <div class="cause-item-title">Attic Heat Gain Through Poorly Insulated Ceiling</div>
+            <div class="cause-item-desc">In summer, attic temperatures can reach 140&#176;F+. An under-insulated ceiling radiates this heat directly into the room below regardless of how much cool air is delivered.</div>
+          </div>
+          <div class="cause-item">
+            <div class="cause-item-title">Thermal Bridging at Exterior Walls</div>
+            <div class="cause-item-desc">Framing members (studs, joists, headers) conduct heat far more readily than insulation. Rooms with large exterior wall areas or exposed structural members lose conditioning faster.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box alert">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Misdiagnosis Alert</div>
+        <div class="callout-text">Adjusting vents or dampers cannot correct insulation or air-sealing deficiencies. Equipment upgrades will not resolve envelope-related temperature imbalance. Upsizing HVAC without diagnosing the envelope is one of the most common and expensive mistakes in home comfort &#8212; a larger system short-cycles, dehumidifies poorly, and still can&#8217;t overcome continuous heat loss through an under-insulated or leaky building.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Minor</div></div>
+        <div class="sev-desc">Slight temperature differences without seasonal escalation. Comfort issue only, no secondary damage.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Seasonal discomfort with noticeable energy increase. System running longer than expected. Evaluate both systems.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Persistent discomfort with drafts, condensation, or surface moisture. Moisture damage risk beginning.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Freeze risk in cold climates, mold growth, or structural material damage from chronic condensation.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"I get called to a lot of houses where the homeowner has already replaced the HVAC equipment trying to fix a comfort problem &#8212; and they&#8217;re still uncomfortable. In most of those cases the envelope was the problem all along. The old system wasn&#8217;t undersized. It was fighting a building that was leaking heat faster than any reasonably-sized system can keep up. The diagnostic question I always start with is: does this room lose temperature faster than the rest of the house when the system shuts off? If yes &#8212; that&#8217;s the envelope. Airflow is a delivery problem; it makes the room uncomfortable while the system is running. Insulation is a retention problem; it makes the room uncomfortable even when the system is running fine."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Compare airflow strength at the problem room&#8217;s register vs. other rooms of similar size</li>
+          <li>Check and replace the air filter &#8212; a clogged filter reduces airflow system-wide</li>
+          <li>Inspect visible attic insulation depth and coverage from the attic hatch</li>
+          <li>Feel along exterior walls, floors above crawlspaces, and ceilings below attics for unusual temperature</li>
+          <li>Check for drafts around windows, doors, electrical outlets on exterior walls, and ceiling light fixtures</li>
+          <li>Note whether discomfort worsens during windy days or tracks outdoor temperature swings</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Evaluation Needed</div>
+        <ul class="diy-items stop-list">
+          <li>Duct leakage testing to quantify how much conditioned air is being lost in transit</li>
+          <li>Blower door testing to measure whole-house air leakage rate</li>
+          <li>Infrared thermography to identify insulation gaps and air leakage paths not visible to the eye</li>
+          <li>Airflow measurement at registers using a flow hood (balancing decisions require accurate numbers)</li>
+          <li>Manual J load calculation before any equipment replacement or upsizing decision</li>
+          <li>Any duct modification, rebalancing, or insulation installation in the attic or walls</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My upstairs is always hotter in summer. Is that airflow or insulation?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Almost always a combination of both, but insulation is usually dominant. The top floor is directly below the attic, which can reach 130&#8211;150&#176;F in summer. An under-insulated ceiling radiates that heat into living spaces continuously. Meanwhile, hot air rises, so even if airflow is adequate, the upper floors accumulate heat faster than the system can remove it. Before adding ductwork or boosting airflow upstairs, check attic insulation depth and ensure the attic is properly ventilated. Adding insulation to an under-insulated attic floor is typically the highest-return single improvement for upper-floor summer comfort.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I just close vents in other rooms to push more air to the problem room?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No &#8212; and this is one of the most common mistakes homeowners make. Closing vents increases static pressure in the duct system, which reduces total airflow, makes the system work harder, and can cause the heat exchanger to overheat or the coil to freeze. It does not meaningfully redirect air to the problem room. The duct system is designed to move a certain volume of air at a certain pressure &#8212; restricting outlets pushes that balance in the wrong direction. If you believe the problem room needs more airflow, the correct approach is professional balancing with actual flow measurements, not closing other vents.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How do I know if my HVAC system is the right size for my house?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A properly sized HVAC system should run in longer cycles &#8212; 15&#8211;20 minutes or more &#8212; and maintain comfortable temperatures without running continuously, except during extreme weather. If your system short-cycles (runs for a few minutes, shuts off, runs again quickly), it may be oversized. If it runs almost continuously even in moderate weather and still can&#8217;t keep up, it may be undersized &#8212; or the building envelope may be responsible for the load. The only reliable way to answer this question is a Manual J load calculation, which accounts for your home&#8217;s size, insulation levels, window area, orientation, and climate. This is the required starting point before any equipment replacement.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Airflow problems affect delivery &#8212; conditioned air doesn&#8217;t reach the space in adequate volume. Insulation problems affect retention &#8212; conditioning escapes faster than it&#8217;s delivered.</li>
+        <li>The most reliable field diagnostic: if the room loses temperature faster than the rest of the house after the system shuts off, the envelope (insulation and air sealing) is the primary cause.</li>
+        <li>Strong airflow at the register combined with persistent discomfort almost always points to the building envelope, not the HVAC system.</li>
+        <li>Closing vents to redirect airflow increases system pressure, reduces total airflow, and does not fix comfort problems in the target room.</li>
+        <li>Upsizing HVAC equipment without fixing the envelope creates new problems: short cycling, poor dehumidification, and increased energy cost &#8212; while the comfort problem remains.</li>
+        <li>Discomfort that tracks outdoor temperature, sun position, or wind &#8212; rather than system runtime &#8212; is envelope-driven. Address insulation and air sealing before adjusting airflow.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">uneven temperatures in home</a>
+      <a href="#" class="tag-pill">room always hot or cold</a>
+      <a href="#" class="tag-pill">airflow vs insulation problem</a>
+      <a href="#" class="tag-pill">upstairs too hot in summer</a>
+      <a href="#" class="tag-pill">HVAC not keeping up</a>
+      <a href="#" class="tag-pill">attic insulation comfort</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More HVAC Guides</h3>
+    <div class="related-list">
+      <a href="hvac-one-room-hot-or-cold.html" class="related-item">
+        <div><div class="related-item-title">Why One Room Is Always Hot or Cold</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-poor-airflow.html" class="related-item">
+        <div><div class="related-item-title">Why Your Home Has Poor Airflow</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-upstairs-hotter-colder.html" class="related-item">
+        <div><div class="related-item-title">Why Upstairs Rooms Are Hotter in Summer &amp; Colder in Winter</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-control-vs-mechanical.html" class="related-item">
+        <div><div class="related-item-title">Furnace Control Problem vs. Mechanical Failure</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#interpreter">Symptom Pattern Interpreter</a></li>
+      <li><a href="#causes">What Causes Each Type</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

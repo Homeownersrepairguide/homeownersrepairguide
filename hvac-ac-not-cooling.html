@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your AC Runs But Isn't Cooling | HomeownersRepairGuide.com</title>
+<meta name="description" content="The indoor fan can run perfectly while the compressor does nothing. An AC that runs but doesn't cool has a specific component failure — here's how to identify which one in minutes.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-ac-not-cooling.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-ac-not-cooling.html">
+<meta property="og:title" content="Why Your AC Runs But Isn't Cooling | HomeownersRepairGuide.com">
+<meta property="og:description" content="The indoor fan running doesn't mean the AC is working. Here's how to identify which component has failed when the system runs but produces no cooling.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --compressor:#c0402a;--compressor-light:#fde8e8;
+  --refrigerant:#5a2a7a;--refrigerant-light:#f0e8f5;
+  --airflow:#2a7a5a;--airflow-light:#e8f5f0;
+  --condenser:#b07800;--condenser-light:#fff8e6;
+  --running:#2a7a2a;--running-light:#eaf5ea;
+  --notrunning:#c0402a;--notrunning-light:#fde8e8;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Component Activity Checker */
+.activity-checker{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.ac-header{background:var(--navy);padding:18px 22px;}
+.ac-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.ac-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+/* Status legend */
+.ac-status-row{display:grid;grid-template-columns:repeat(2,1fr);gap:0;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);}
+.ac-status{padding:9px 14px;display:flex;align-items:center;gap:8px;border-right:1px solid var(--gray-light);}
+.ac-status:last-child{border-right:none;}
+.ac-status-dot{width:10px;height:10px;border-radius:50%;}
+.ac-status-dot.on{background:var(--running);}
+.ac-status-dot.off{background:var(--notrunning);}
+.ac-status-label{font-size:11px;font-weight:700;}
+.ac-status.on .ac-status-label{color:var(--running);}
+.ac-status.off .ac-status-label{color:var(--notrunning);}
+/* Component columns header */
+.ac-col-head-row{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:2px solid var(--gray-light);}
+.ac-col-head{padding:9px 10px;text-align:center;background:var(--cream-dark);border-right:1px solid var(--gray-light);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--navy);}
+.ac-col-head:last-child{border-right:none;}
+/* Scenario rows */
+.ac-scenarios{display:flex;flex-direction:column;}
+.ac-scenario{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;border-bottom:1px solid var(--gray-light);}
+.ac-scenario:last-child{border-bottom:none;}
+.ac-comp-cell{padding:13px 10px;border-right:1px solid var(--gray-light);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;}
+.ac-comp-cell:last-child{border-right:none;}
+.ac-comp-status{display:flex;align-items:center;gap:5px;}
+.ac-comp-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.ac-comp-dot.on{background:var(--running);}
+.ac-comp-dot.off{background:var(--notrunning);}
+.ac-comp-label{font-size:11px;font-weight:700;}
+.on .ac-comp-label{color:var(--running);}
+.off .ac-comp-label{color:var(--notrunning);}
+/* Diagnosis cell */
+.ac-diag-cell{padding:12px 14px;border-right:1px solid var(--gray-light);}
+.ac-diag-tag{font-size:10px;font-weight:700;padding:3px 8px;border-radius:20px;margin-bottom:5px;display:inline-block;}
+.ac-diag-tag.compressor{background:var(--compressor-light);color:var(--compressor);}
+.ac-diag-tag.refrigerant{background:var(--refrigerant-light);color:var(--refrigerant);}
+.ac-diag-tag.airflow{background:var(--airflow-light);color:var(--airflow);}
+.ac-diag-tag.condenser{background:var(--condenser-light);color:var(--condenser);}
+.ac-diag-text{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.ac-scenario.critical-scenario{border:2px solid var(--compressor);}
+.ac-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.ac-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.ac-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.ac-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Suction line test */
+.suction-test{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:18px 20px;margin:24px 0;box-shadow:var(--shadow-card);display:flex;gap:14px;}
+.st-icon{font-size:26px;flex-shrink:0;}
+.st-head{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+.st-results{display:flex;flex-direction:column;gap:7px;}
+.st-result{display:flex;gap:9px;font-size:13px;align-items:flex-start;}
+.st-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:4px;}
+.st-dot.good{background:var(--running);}
+.st-dot.bad{background:var(--compressor);}
+/* Cause detail rows */
+.cause-rows{display:flex;flex-direction:column;gap:11px;margin:24px 0;}
+.cause-row{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:12px;align-items:flex-start;}
+.cause-row.compressor-t{border-left:4px solid var(--compressor);}
+.cause-row.refrigerant-t{border-left:4px solid var(--refrigerant);}
+.cause-row.airflow-t{border-left:4px solid var(--airflow);}
+.cause-row.condenser-t{border-left:4px solid var(--condenser);}
+.cr-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.cr-body{flex:1;}
+.cr-title{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.cr-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:2px;margin-left:7px;display:inline-block;vertical-align:middle;}
+.compressor-t .cr-badge{background:var(--compressor-light);color:var(--compressor);}
+.refrigerant-t .cr-badge{background:var(--refrigerant-light);color:var(--refrigerant);}
+.airflow-t .cr-badge{background:var(--airflow-light);color:var(--airflow);}
+.condenser-t .cr-badge{background:var(--condenser-light);color:var(--condenser);}
+.cr-desc{font-size:12px;color:var(--text-muted);line-height:1.5;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--condenser-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--compressor-light);border:1px solid #e08080;}
+.callout-box.tip{background:var(--airflow-light);border:1px solid #80c0a0;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--condenser);}
+.callout-box.alert .callout-label{color:var(--compressor);}
+.callout-box.tip .callout-label{color:var(--airflow);}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--condenser);}.sev-item.mod .sev-label{color:var(--condenser);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--compressor);}.sev-item.crit .sev-label{color:var(--compressor);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--compressor);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--compressor);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--compressor);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.ac-scenario,.ac-col-head-row{grid-template-columns:1fr;}.ac-comp-cell{border-right:none !important;border-bottom:1px solid var(--gray-light);}.ac-diag-cell{border-right:none;}.ac-col-head-row{display:none;}.suction-test{flex-direction:column;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-air-conditioning.html">Air Conditioning</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your AC Runs But Isn&#8217;t Cooling</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Air Conditioning</span>
+  </div>
+
+  <h1 class="article-title">Why Your AC Runs But Isn&#8217;t Cooling</h1>
+  <p class="article-subtitle">The indoor fan running means air is moving &#8212; not that the system is cooling. The compressor, condenser fan, and indoor blower are three separate components that can each operate independently. When the blower runs but the compressor doesn&#8217;t, warm air circulates and the house stays hot. Checking all three narrows the fault in minutes.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Air moving through your vents doesn&#8217;t mean cooling is happening.</strong> The blower circulates air independently of the compressor. If the compressor isn&#8217;t running, the air is not being cooled.</li>
+        <li>Go outside and check the outdoor unit. Is the condenser fan spinning? Do you hear the compressor hum? No sound from the outdoor unit while the indoor fan runs = compressor or electrical fault.</li>
+        <li>Touch the large insulated copper suction line where it enters the outdoor unit. It should be cold and sweating. If it&#8217;s warm or room temperature, the system is not cooling regardless of what&#8217;s running.</li>
+        <li>Gradual cooling loss &#8212; worse each afternoon, better overnight &#8212; is almost always dirty condenser coil or low refrigerant, not equipment failure</li>
+        <li>Sudden complete cooling loss &#8212; was working, now nothing &#8212; is usually a failed capacitor, tripped breaker, or contactor issue. Often a quick repair.</li>
+        <li>Don&#8217;t run a system with ice on it &#8212; the frozen coil is insulating itself from the air and providing zero cooling while risking compressor damage</li>
+      </ul>
+    </div>
+
+    <h2 id="checker">Component Activity Checker</h2>
+    <p>Check each of the three main components and match the combination to the grid below. You can observe all three from inside and outside the house without opening any panels.</p>
+
+    <div class="activity-checker">
+      <div class="ac-header">
+        <h3>What Is Each Component Doing Right Now?</h3>
+        <p>Indoor fan: feel airflow from vents. Outdoor fan: look through the top of the outdoor unit. Compressor: listen for a low hum or vibration from the outdoor unit &#8212; separate from the fan.</p>
+      </div>
+      <div class="ac-status-row">
+        <div class="ac-status on"><div class="ac-status-dot on"></div><div class="ac-status-label">&#9679; Running normally</div></div>
+        <div class="ac-status off"><div class="ac-status-dot off"></div><div class="ac-status-label">&#9679; Not running / weak</div></div>
+      </div>
+      <div class="ac-col-head-row">
+        <div class="ac-col-head">Indoor Fan</div>
+        <div class="ac-col-head">Outdoor Fan</div>
+        <div class="ac-col-head">Compressor</div>
+        <div class="ac-col-head">What It Means</div>
+      </div>
+
+      <div class="ac-scenarios">
+
+        <div class="ac-scenario">
+          <div class="ac-comp-cell on"><div class="ac-comp-status"><div class="ac-comp-dot on"></div><div class="ac-comp-label">Indoor Fan: ON</div></div></div>
+          <div class="ac-comp-cell off"><div class="ac-comp-status"><div class="ac-comp-dot off"></div><div class="ac-comp-label">Outdoor Fan: OFF</div></div></div>
+          <div class="ac-comp-cell off"><div class="ac-comp-status"><div class="ac-comp-dot off"></div><div class="ac-comp-label">Compressor: OFF</div></div></div>
+          <div class="ac-diag-cell">
+            <div class="ac-diag-tag compressor">&#9889; Electrical / Control</div>
+            <div class="ac-diag-text">The outdoor unit is receiving no power or the contactor is open. Check the outdoor disconnect and circuit breakers first. A failed capacitor, blown fuse, or tripped breaker stops both outdoor components simultaneously. This is one of the most common and most fixable scenarios.</div>
+          </div>
+        </div>
+
+        <div class="ac-scenario">
+          <div class="ac-comp-cell on"><div class="ac-comp-status"><div class="ac-comp-dot on"></div><div class="ac-comp-label">Indoor Fan: ON</div></div></div>
+          <div class="ac-comp-cell on"><div class="ac-comp-status"><div class="ac-comp-dot on"></div><div class="ac-comp-label">Outdoor Fan: ON</div></div></div>
+          <div class="ac-comp-cell off"><div class="ac-comp-status"><div class="ac-comp-dot off"></div><div class="ac-comp-label">Compressor: OFF/Quiet</div></div></div>
+          <div class="ac-diag-cell">
+            <div class="ac-diag-tag compressor">&#9881;&#65039; Compressor Fault</div>
+            <div class="ac-diag-text">Fan runs but compressor doesn&#8217;t engage. The most common cause: failed run capacitor. The compressor may attempt to start (brief hum or click) then go quiet. Also possible: contactor closed but compressor internally failed, or compressor thermal overload tripped from overheating.</div>
+          </div>
+        </div>
+
+        <div class="ac-scenario">
+          <div class="ac-comp-cell on"><div class="ac-comp-status"><div class="ac-comp-dot on"></div><div class="ac-comp-label">Indoor Fan: ON</div></div></div>
+          <div class="ac-comp-cell on"><div class="ac-comp-status"><div class="ac-comp-dot on"></div><div class="ac-comp-label">Outdoor Fan: ON</div></div></div>
+          <div class="ac-comp-cell on"><div class="ac-comp-status"><div class="ac-comp-dot on"></div><div class="ac-comp-label">Compressor: ON</div></div></div>
+          <div class="ac-diag-cell">
+            <div class="ac-diag-tag refrigerant">&#128167; Refrigerant / Airflow</div>
+            <div class="ac-diag-text">All components running but no cooling output. The refrigeration cycle is failing &#8212; not the electrical side. Low refrigerant charge, dirty condenser coil, frozen evaporator coil, severely clogged filter, or disconnected supply duct dumping cold air into the attic. Check the suction line temperature test below.</div>
+          </div>
+        </div>
+
+        <div class="ac-scenario">
+          <div class="ac-comp-cell on"><div class="ac-comp-status"><div class="ac-comp-dot on"></div><div class="ac-comp-label">Indoor Fan: ON</div></div></div>
+          <div class="ac-comp-cell off"><div class="ac-comp-status"><div class="ac-comp-dot off"></div><div class="ac-comp-label">Outdoor Fan: OFF</div></div></div>
+          <div class="ac-comp-cell on"><div class="ac-comp-status"><div class="ac-comp-dot on"></div><div class="ac-comp-label">Compressor: ON</div></div></div>
+          <div class="ac-diag-cell">
+            <div class="ac-diag-tag condenser">&#9728;&#65039; Condenser Fan Motor</div>
+            <div class="ac-diag-text">Compressor running but condenser fan not spinning &#8212; or spinning slowly. Head pressure builds rapidly. The system may cool briefly then shut down on high-pressure trip. Condenser fan motor or its capacitor has failed. Do not run in this state &#8212; compressor overheating risk is high.</div>
+          </div>
+        </div>
+
+        <div class="ac-scenario critical-scenario">
+          <div class="ac-comp-cell off"><div class="ac-comp-status"><div class="ac-comp-dot off"></div><div class="ac-comp-label">Indoor Fan: WEAK</div></div></div>
+          <div class="ac-comp-cell on"><div class="ac-comp-status"><div class="ac-comp-dot on"></div><div class="ac-comp-label">Outdoor Fan: ON</div></div></div>
+          <div class="ac-comp-cell on"><div class="ac-comp-status"><div class="ac-comp-dot on"></div><div class="ac-comp-label">Compressor: ON</div></div></div>
+          <div class="ac-diag-cell">
+            <div class="ac-diag-tag airflow">&#128268; Blower Failure / Ice</div>
+            <div class="ac-diag-text">Weak indoor airflow with outdoor unit running &#8212; look for ice on the evaporator or suction line. A failing blower motor or capacitor, a severely clogged filter, or an iced-over coil reduces indoor air delivery dramatically. The system runs but can&#8217;t exchange heat. Shut off cooling and check the filter immediately.</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="ac-footer">
+        <div class="ac-footer-icon">&#128139;</div>
+        <div>
+          <h4>The 30-Second Suction Line Temperature Test</h4>
+          <p>Find the large insulated copper pipe going into the outdoor unit (the suction line). Carefully touch the insulation or the line itself where it exits the house. It should feel cold and sweating with condensation &#8212; like a cold drink on a humid day. If it&#8217;s warm, room temperature, or warm at the base of the outdoor unit, the refrigerant cycle is not working regardless of what components are running.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="causes">Cause Detail by Scenario</h2>
+
+    <div class="cause-rows">
+      <div class="cause-row compressor-t">
+        <div class="cr-icon">&#9889;</div>
+        <div class="cr-body">
+          <div class="cr-title">Failed Run Capacitor <span class="cr-badge">Compressor</span></div>
+          <div class="cr-desc">The most common cause of a running outdoor fan with a silent compressor. The capacitor provides the electrical boost the compressor needs to start and maintain rotation. When it fails, the compressor hums briefly at startup but cannot turn. A technician can test and replace a capacitor in minutes &#8212; and it&#8217;s one of the least expensive AC repairs. Capacitors are more likely to fail during extreme heat and after power surges.</div>
+        </div>
+      </div>
+      <div class="cause-row refrigerant-t">
+        <div class="cr-icon">&#128167;</div>
+        <div class="cr-body">
+          <div class="cr-title">Low Refrigerant Charge <span class="cr-badge">Refrigerant</span></div>
+          <div class="cr-desc">When refrigerant is low from a leak, suction pressure drops and the evaporator coil cannot absorb adequate heat. The system runs but delivers progressively weaker cooling. The suction line will be warm or only slightly cool rather than cold and sweating. The correct repair is leak detection and repair first, then recharge &#8212; adding refrigerant without finding the leak will result in the same failure within weeks or months.</div>
+        </div>
+      </div>
+      <div class="cause-row condenser-t">
+        <div class="cr-icon">&#9728;&#65039;</div>
+        <div class="cr-body">
+          <div class="cr-title">Dirty Condenser Coil <span class="cr-badge">Outdoor Unit</span></div>
+          <div class="cr-desc">The condenser coil rejects heat to the outdoor air. A coil clogged with grass clippings, cottonwood, dust, or debris cannot release heat effectively. Head pressure rises, cooling capacity drops, and the compressor may overheat and trip its thermal overload. Gradual cooling loss that is worst in the afternoon and better overnight is the classic pattern. Annual coil cleaning prevents this entirely.</div>
+        </div>
+      </div>
+      <div class="cause-row airflow-t">
+        <div class="cr-icon">&#128268;</div>
+        <div class="cr-body">
+          <div class="cr-title">Disconnected Supply Duct <span class="cr-badge">Airflow</span></div>
+          <div class="cr-desc">A supply duct disconnected in the attic dumps conditioned air directly into the attic or crawlspace. The system runs and cools &#8212; but the cooled air never reaches the living space. Clues: the system seems to run forever without reaching setpoint, some rooms are colder than others for no apparent reason, and the suction line test shows the refrigerant cycle is working. Attic inspection confirms the disconnected duct.</div>
+        </div>
+      </div>
+      <div class="cause-row compressor-t">
+        <div class="cr-icon">&#9881;&#65039;</div>
+        <div class="cr-body">
+          <div class="cr-title">Compressor Thermal Overload Trip <span class="cr-badge">Compressor</span></div>
+          <div class="cr-desc">The compressor&#8217;s internal thermal overload trips when it overheats &#8212; from a dirty condenser, weak capacitor, low refrigerant, or high ambient heat. The compressor shuts off and must cool before restarting &#8212; typically 20&#8211;45 minutes. The outdoor fan may keep running during this period. Cooling that works briefly in the morning but fails by afternoon is often a thermal overload pattern.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9728;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Gradual vs. Sudden Cooling Loss</div>
+        <div class="callout-text">Gradual loss &#8212; the AC cooled fine last month, worse this month, barely working now &#8212; is almost always dirty condenser coil or slowly leaking refrigerant. Both worsen over time. Sudden loss &#8212; was working yesterday, nothing today &#8212; is almost always electrical: failed capacitor, tripped breaker, or contactor issue. Sudden failures are usually faster and cheaper to fix than gradual ones, which have often caused secondary damage by the time they&#8217;re diagnosed.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Mild cooling loss during peak heat. Filter or dirty coil. Maintenance can restore performance. No mechanical damage yet.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Warm air despite running system. Duct leak, refrigerant loss, or weak blower. Diagnosis and repair needed this week.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">No cooling from compressor or condenser fault. Suction line warm. Significant repair needed. Protect compressor by limiting restart attempts.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Compressor attempting to start repeatedly without success, or condenser fan failed with compressor running. Shut down. Compressor damage risk.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The suction line temperature test is the fastest triage step I have. Before I even open my tool bag, I touch that line. Cold and sweating &#8212; the refrigerant cycle is working and I&#8217;m looking at airflow or controls. Warm &#8212; the refrigerant cycle has failed and I&#8217;m pulling out gauges. That one piece of information redirects the whole diagnostic. The second thing I do is go outside and listen. Outdoor fan running, compressor quiet? I&#8217;m testing the capacitor immediately &#8212; it&#8217;s one of the most common AC repairs in summer heat and one of the quickest. A lot of homeowners have been told they need a new system when what they actually needed was a $40 capacitor. The key is not to keep restarting the system when the compressor isn&#8217;t engaging &#8212; each failed start attempt that hums and clicks and goes quiet is putting stress on a compressor that may already be struggling."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Check and replace the air filter &#8212; always the first step</li>
+          <li>Go outside: is the outdoor fan spinning? Do you hear the compressor running?</li>
+          <li>Check the outdoor disconnect box and the circuit breakers for the AC</li>
+          <li>Touch the suction line &#8212; it should be cold and condensing moisture</li>
+          <li>Look for ice on the evaporator housing or suction line</li>
+          <li>Note whether cooling loss is gradual (days/weeks) or sudden (overnight)</li>
+          <li>Note whether cooling is better overnight and worse in the afternoon</li>
+          <li>Inspect the outdoor unit for grass, debris, or cottonwood blocking the coil</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Capacitor testing and replacement &#8212; capacitors retain high-voltage charge</li>
+          <li>Refrigerant pressure testing and leak detection</li>
+          <li>Compressor amperage testing &#8212; evaluates internal condition</li>
+          <li>Contactor inspection and replacement</li>
+          <li>Condenser coil cleaning &#8212; requires power disconnection and coil-safe chemicals</li>
+          <li>Any scenario where the compressor attempts to start repeatedly without success</li>
+          <li>Condenser fan motor or condenser fan capacitor replacement</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My AC was working fine, then suddenly stopped cooling overnight. What happened?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Sudden complete cooling loss &#8212; working one day, nothing the next &#8212; is almost always electrical rather than mechanical or refrigerant. The most likely causes in order of frequency: (1) Failed run capacitor. The capacitor can fail suddenly, especially after a period of high-stress operation. The outdoor fan may still run but the compressor won&#8217;t engage. (2) Tripped circuit breaker. Check the breaker panel &#8212; the AC breaker may have tripped. Reset it once. If it trips again immediately, there is an underlying fault that needs diagnosis before resetting further. (3) Failed contactor. The contactor is the high-voltage switch that connects power to the compressor and condenser fan. If its coil fails, the outdoor unit receives no power. (4) Outdoor disconnect fuse blown. Some outdoor disconnects use fuses rather than breakers &#8212; one blown fuse stops the outdoor unit completely. Any of these are diagnose-and-fix scenarios, not full system replacement scenarios.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can a dirty air filter completely stop an AC from cooling?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; in two ways. First, a severely clogged filter restricts airflow across the evaporator coil enough that warm indoor air can&#8217;t reach the coil in sufficient volume. The coil becomes too cold, eventually freezes over, and ice acts as insulation &#8212; providing zero cooling despite the system running. The system may blow cold air initially as residual coil temperature cools the limited airflow, then gradually warm air as the coil ices over. Second, a clogged filter causes the blower to work against high static pressure, reducing airflow even further and potentially causing the blower motor to overheat and derate or shut down. If your suction line is iced or if cooling loss began during a long cycle, replace the filter, switch to fan-only mode to thaw the coil (1&#8211;3 hours), then restart the system. If it cools normally afterward, the filter was the cause.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My AC cools fine in the morning but can&#8217;t keep up in the afternoon. Is that normal?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">It&#8217;s not abnormal for a system to struggle somewhat more in the peak heat of an extreme afternoon &#8212; but significant comfort loss that only appears in the afternoon has two common causes. First, a dirty condenser coil: as the outdoor air temperature peaks in the afternoon, a dirty coil that couldn&#8217;t reject heat adequately in the morning begins failing more severely, often triggering compressor thermal overload trips. The system may completely stop cooling by 3&#8211;4 PM and recover overnight when temperatures drop. Second, compressor thermal overload: the compressor overheats under sustained afternoon load and trips its internal safety &#8212; then recovers overnight. If the afternoon cooling loss has been gradually getting worse over several weeks, a dirty condenser coil is the most likely cause and cleaning it may restore full performance. If the loss appeared suddenly last week with no gradual progression, a developing compressor or capacitor issue is more likely.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Air moving through vents does not mean cooling is occurring. The blower, outdoor fan, and compressor are three independent components &#8212; observing all three narrows the fault category before a technician arrives.</li>
+        <li>The suction line temperature test is the fastest triage available: cold and sweating = refrigerant cycle working; warm = refrigerant cycle failed. One touch, 30 seconds, major diagnostic value.</li>
+        <li>Outdoor fan running, compressor silent = failed run capacitor in most cases. One of the most common, most fixable AC repairs. Do not keep restarting while this is the scenario.</li>
+        <li>Gradual cooling loss (weeks) = dirty condenser coil or leaking refrigerant. Sudden cooling loss (overnight) = electrical fault, failed capacitor, or tripped breaker.</li>
+        <li>If the system is cooling but can&#8217;t keep up in extreme afternoon heat, confirm the condenser coil is clean and the refrigerant charge is correct before drawing any conclusions about system capacity.</li>
+        <li>Running a system with ice on the evaporator coil provides zero cooling and risks compressor damage from liquid refrigerant floodback. Switch to fan-only and thaw before restarting.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">AC runs but not cooling</a>
+      <a href="#" class="tag-pill">air conditioner blowing warm air</a>
+      <a href="#" class="tag-pill">AC compressor not running</a>
+      <a href="#" class="tag-pill">outdoor unit fan running no cooling</a>
+      <a href="#" class="tag-pill">AC stopped cooling suddenly</a>
+      <a href="#" class="tag-pill">AC cools morning not afternoon</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Air Conditioning Guides</h3>
+    <div class="related-list">
+      <a href="hvac-ac-freezes-up.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Freezes Up</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-short-cycling.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Is Short Cycling</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-leaking-water.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Is Leaking Water</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-wont-turn-on.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Won&#8217;t Turn On</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#checker">Component Activity Checker</a></li>
+      <li><a href="#causes">Cause Detail by Scenario</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

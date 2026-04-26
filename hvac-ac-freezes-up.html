@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your AC Freezes Up | HomeownersRepairGuide.com</title>
+<meta name="description" content="A frozen AC is never normal. Where the ice forms tells you exactly why it happened — coil face means airflow, suction line means refrigerant, outdoor unit means severe undercharge. Here's how to read it.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-ac-freezes-up.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-ac-freezes-up.html">
+<meta property="og:title" content="Why Your AC Freezes Up | HomeownersRepairGuide.com">
+<meta property="og:description" content="A frozen AC is never normal. Where the ice forms tells you exactly why it happened. Here's how to read the pattern and what to do about it.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --ice:#1a5a8a;--ice-light:#e0f0ff;
+  --airflow:#2a7a2a;--airflow-light:#eaf5ea;
+  --refrig:#7a2a7a;--refrig-light:#f5e8f5;
+  --critical:#c0402a;--critical-light:#fde8e8;
+  --caution:#b07800;--caution-light:#fff8e6;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Ice Pattern Location Map */
+.ice-map{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.im-header{background:var(--navy);padding:18px 22px;}
+.im-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.im-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.im-legend{display:flex;gap:14px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.im-leg{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;}
+.im-leg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.im-leg.airflow{color:var(--airflow);}.im-leg.airflow .im-leg-dot{background:var(--airflow);}
+.im-leg.refrig{color:var(--refrig);}.im-leg.refrig .im-leg-dot{background:var(--refrig);}
+.im-leg.critical{color:var(--critical);}.im-leg.critical .im-leg-dot{background:var(--critical);}
+/* Ice pattern cards */
+.im-patterns{display:grid;grid-template-columns:1fr 1fr;gap:0;border-bottom:1px solid var(--gray-light);}
+.im-pattern{padding:16px;border-right:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);}
+.im-pattern:nth-child(even){border-right:none;}
+.im-pattern.full-width{grid-column:1/-1;border-right:none;border:2px solid var(--critical);}
+.im-pattern-head{display:flex;align-items:flex-start;gap:10px;margin-bottom:8px;}
+.im-ice-icon{font-size:24px;flex-shrink:0;}
+.im-pattern-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--navy);line-height:1.3;}
+.im-cause-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:20px;font-size:10px;font-weight:700;margin-bottom:6px;}
+.im-cause-badge.airflow{background:var(--airflow-light);color:var(--airflow);}
+.im-cause-badge.refrig{background:var(--refrig-light);color:var(--refrig);}
+.im-cause-badge.design{background:var(--caution-light);color:var(--caution);}
+.im-cause-badge.critical{background:var(--critical-light);color:var(--critical);}
+.im-desc{font-size:12px;color:var(--text-muted);line-height:1.55;margin-bottom:7px;}
+.im-urgency{font-size:11px;font-weight:700;padding:3px 8px;border-radius:2px;display:inline-block;}
+.airflow-pat .im-urgency{background:var(--airflow-light);color:var(--airflow);}
+.refrig-pat .im-urgency{background:var(--refrig-light);color:var(--refrig);}
+.design-pat .im-urgency{background:var(--caution-light);color:var(--caution);}
+.critical-pat .im-urgency{background:var(--critical-light);color:var(--critical);}
+/* Thaw first panel */
+.im-thaw{background:var(--ice);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.im-thaw-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.im-thaw h4{color:var(--white);font-size:13px;font-weight:700;margin-bottom:4px;}
+.im-thaw p{color:rgba(255,255,255,0.85);font-size:13px;line-height:1.55;}
+/* Cause categories */
+.cause-cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.cause-col{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.cause-col-head{padding:12px 16px;display:flex;align-items:center;gap:8px;}
+.cause-col-head.airflow{background:var(--airflow);}
+.cause-col-head.refrig{background:var(--refrig);}
+.cause-col-icon{font-size:17px;color:var(--white);}
+.cause-col-title{font-size:13px;font-weight:700;color:var(--white);}
+.cause-col-items{padding:0;}
+.cause-item{padding:11px 14px;border-bottom:1px solid var(--gray-light);font-size:12px;display:flex;gap:8px;line-height:1.5;}
+.cause-item:last-child{border-bottom:none;}
+.cause-item::before{content:'·';font-weight:700;flex-shrink:0;color:var(--gray-mid);}
+/* Do not list */
+.donot-list{background:var(--critical-light);border:1px solid #e08080;border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;}
+.donot-head{display:flex;align-items:center;gap:8px;margin-bottom:12px;}
+.donot-icon{font-size:20px;}
+.donot-title{font-size:13px;font-weight:700;color:var(--critical);text-transform:uppercase;letter-spacing:0.07em;}
+.donot-items{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.donot-items li{font-size:13px;color:var(--text-body);line-height:1.45;display:flex;gap:8px;}
+.donot-items li::before{content:'\2717';color:var(--critical);font-weight:700;flex-shrink:0;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--caution-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--critical-light);border:1px solid #e08080;}
+.callout-box.tip{background:var(--airflow-light);border:1px solid #80c080;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--caution);}
+.callout-box.alert .callout-label{color:var(--critical);}
+.callout-box.tip .callout-label{color:var(--airflow);}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--caution);}.sev-item.mod .sev-label{color:var(--caution);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--critical);}.sev-item.crit .sev-label{color:var(--critical);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--critical);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--critical);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--critical);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.cause-cols{grid-template-columns:1fr;}.im-patterns{grid-template-columns:1fr;}.im-pattern{border-right:none !important;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-air-conditioning.html">Air Conditioning</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your AC Freezes Up</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Air Conditioning</span>
+  </div>
+
+  <h1 class="article-title">Why Your AC Freezes Up</h1>
+  <p class="article-subtitle">A frozen air conditioner is never normal. It always means something has disrupted the balance between airflow and refrigerant pressure &#8212; allowing the evaporator coil to drop below freezing. Where the ice forms tells you exactly which side of the system failed.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>A frozen AC is never normal.</strong> Ice always indicates airflow restriction, refrigerant imbalance, mechanical failure, or improper operation &#8212; not weather or bad luck.</li>
+        <li>The most important thing to do immediately: shut the system off and switch to fan-only mode to thaw the coil. Running a frozen system risks compressor failure.</li>
+        <li>Ice location is the primary diagnostic: coil face = airflow restriction; suction line only = low refrigerant; bottom-up icing = metering device overfeeding; outdoor unit ice = severe undercharge</li>
+        <li>Airflow restriction is the #1 cause &#8212; a severely clogged filter alone can freeze an AC in minutes during a long cooling cycle</li>
+        <li>Never chip ice off the coil, bypass safety switches, or run the system while it&#8217;s frozen. Compressor damage from liquid refrigerant floodback is expensive and often fatal to the system.</li>
+        <li>Recurring freeze-ups after filter replacement indicate a deeper cause &#8212; blower, refrigerant, metering device, or duct restriction</li>
+      </ul>
+    </div>
+
+    <h2 id="icemap">Ice Pattern Location Map</h2>
+    <p>Before calling a technician, note exactly where the ice is forming. Each location is a diagnostic clue that tells your technician which system to investigate first.</p>
+
+    <div class="ice-map">
+      <div class="im-header">
+        <h3>Where Is the Ice? &#8212; Match Location to Cause</h3>
+        <p>Shut the system off first. Then observe where ice has formed before it melts. Take a photo if possible &#8212; ice location is the most useful diagnostic information you can provide.</p>
+      </div>
+      <div class="im-legend">
+        <div class="im-leg airflow"><span class="im-leg-dot"></span>Airflow Side</div>
+        <div class="im-leg refrig"><span class="im-leg-dot"></span>Refrigerant Side</div>
+        <div class="im-leg critical"><span class="im-leg-dot"></span>Critical &#8212; Shut Down</div>
+      </div>
+
+      <div class="im-patterns">
+
+        <div class="im-pattern airflow-pat">
+          <div class="im-pattern-head">
+            <div class="im-ice-icon">&#10052;&#65039;</div>
+            <div class="im-pattern-title">Coil Face Icing &#8212; Even Frost Across the Front</div>
+          </div>
+          <div class="im-cause-badge airflow">&#128268; Airflow Restriction</div>
+          <div class="im-desc">Even frost across the face of the evaporator coil is the airflow pattern. Warm air isn&#8217;t reaching the coil fast enough to keep it above freezing. The most common single cause &#8212; a severely clogged filter &#8212; produces exactly this pattern.</div>
+          <div class="im-urgency">Check filter first. If clean, investigate blower and return air.</div>
+        </div>
+
+        <div class="im-pattern refrig-pat">
+          <div class="im-pattern-head">
+            <div class="im-ice-icon">&#10052;</div>
+            <div class="im-pattern-title">Suction Line Icing &#8212; Ice on the Large Copper Pipe</div>
+          </div>
+          <div class="im-cause-badge refrig">&#128167; Refrigerant Issue</div>
+          <div class="im-desc">Ice forming specifically on the large insulated copper pipe (suction line) leaving the air handler, with the coil face relatively clear, points to low refrigerant charge. Reduced refrigerant lowers suction pressure and coil temperature unevenly.</div>
+          <div class="im-urgency">Refrigerant leak likely. Professional leak test and recharge needed.</div>
+        </div>
+
+        <div class="im-pattern refrig-pat">
+          <div class="im-pattern-head">
+            <div class="im-ice-icon">&#9651;</div>
+            <div class="im-pattern-title">Top-Down Coil Icing &#8212; Ice Starting at Top of Coil</div>
+          </div>
+          <div class="im-cause-badge refrig">&#128167; Refrigerant Starvation</div>
+          <div class="im-desc">Ice beginning at the top of the coil and progressing downward indicates refrigerant starvation &#8212; not enough refrigerant entering the coil. TXV underfeeding or a low charge causes the refrigerant to expand too early, chilling the top portion first.</div>
+          <div class="im-urgency">TXV or metering device evaluation needed. Professional diagnosis.</div>
+        </div>
+
+        <div class="im-pattern refrig-pat">
+          <div class="im-pattern-head">
+            <div class="im-ice-icon">&#9661;</div>
+            <div class="im-pattern-title">Bottom-Up Coil Icing &#8212; Ice Starting at Bottom of Coil</div>
+          </div>
+          <div class="im-cause-badge refrig">&#128167; Metering Device Overfeeding</div>
+          <div class="im-desc">Ice beginning at the bottom of the coil and spreading upward indicates too much refrigerant entering the coil &#8212; TXV overfeeding or overcharge. Liquid refrigerant floods the lower portion of the coil and creates unstable suction pressure.</div>
+          <div class="im-urgency">TXV inspection or refrigerant charge verification needed.</div>
+        </div>
+
+        <div class="im-pattern critical-pat full-width">
+          <div class="im-pattern-head">
+            <div class="im-ice-icon">&#9888;&#65039;</div>
+            <div class="im-pattern-title">Ice Spreading to Outdoor Unit or Suction Line All the Way Outside &#8212; Critical</div>
+          </div>
+          <div class="im-cause-badge critical">&#9888; Critical &#8212; Severe Undercharge or Major Restriction</div>
+          <div class="im-desc">Ice extending from the indoor coil all the way through the suction line to the outdoor unit indicates a severe refrigerant undercharge or a major system restriction. The refrigerant has expanded and cooled to the point of freezing the entire low-pressure circuit. Continued operation under this condition can permanently damage or destroy the compressor through liquid floodback. Do not restart the system after thawing without professional diagnosis and repair.</div>
+          <div class="im-urgency">&#9888; Do not restart. Compressor at risk. Emergency service required.</div>
+        </div>
+
+      </div>
+
+      <div class="im-thaw">
+        <div class="im-thaw-icon">&#127777;&#65039;</div>
+        <div>
+          <h4>First Step When You Find Ice: Thaw Safely</h4>
+          <p>Switch the thermostat to Fan Only mode (not Off &#8212; the fan keeps running). This circulates warm air across the frozen coil and thaws it in 1&#8211;3 hours without the compressor running. Do not use a heat gun or hair dryer. Do not chip ice. Place towels around the air handler to catch meltwater. Only call your technician after the system has fully thawed &#8212; pressure readings and diagnostics are meaningless while ice is present.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="causes">The Two Root Cause Categories</h2>
+    <p>Every freeze-up traces back to one of two fundamental problems &#8212; or both simultaneously.</p>
+
+    <div class="cause-cols">
+      <div class="cause-col">
+        <div class="cause-col-head airflow">
+          <div class="cause-col-icon">&#128268;</div>
+          <div class="cause-col-title">Airflow Failures &#8212; #1 Cause Overall</div>
+        </div>
+        <div class="cause-col-items">
+          <div class="cause-item"><strong>Dirty or blocked air filter</strong> &#8212; the single most common cause. Replace monthly in peak season if the system runs long cycles.</div>
+          <div class="cause-item"><strong>Closed or blocked supply registers</strong> &#8212; closing too many vents to redirect airflow increases static pressure and reduces coil heat transfer.</div>
+          <div class="cause-item"><strong>Return duct restriction</strong> &#8212; undersized returns, collapsed flex duct, or blocked return grilles starve the coil of warm air.</div>
+          <div class="cause-item"><strong>Failing blower motor or capacitor</strong> &#8212; reduced fan speed directly reduces airflow across the coil. Often develops gradually before freeze-up begins.</div>
+          <div class="cause-item"><strong>Dirty evaporator coil</strong> &#8212; dust and microbial growth on coil fins blocks airflow and disrupts heat transfer simultaneously. Annual cleaning recommended.</div>
+          <div class="cause-item"><strong>Duct leakage</strong> &#8212; leaky return ducts draw humid unconditioned air in, overloading the coil with moisture during long cycles.</div>
+        </div>
+      </div>
+      <div class="cause-col">
+        <div class="cause-col-head refrig">
+          <div class="cause-col-icon">&#128167;</div>
+          <div class="cause-col-title">Refrigerant Pressure Problems</div>
+        </div>
+        <div class="cause-col-items">
+          <div class="cause-item"><strong>Low refrigerant charge (leak)</strong> &#8212; reduced suction pressure lowers coil temperature below freezing. Adding refrigerant without finding and fixing the leak is not a repair.</div>
+          <div class="cause-item"><strong>Overcharge</strong> &#8212; too much refrigerant creates erratic coil temperatures, liquid floodback, and TXV instability &#8212; all of which can trigger partial freezing.</div>
+          <div class="cause-item"><strong>TXV failure or restriction</strong> &#8212; the metering device controls how much refrigerant enters the coil. Underfeeding causes top-down icing; overfeeding causes bottom-up icing.</div>
+          <div class="cause-item"><strong>Oversized system short-cycling</strong> &#8212; an oversized AC cools the home too quickly, runs short cycles, and fails to maintain stable refrigerant pressure during each cycle.</div>
+          <div class="cause-item"><strong>Low-ambient operation</strong> &#8212; running the AC below approximately 65°F outdoor temperature disrupts refrigerant balance. Designed for cooling, not cool days.</div>
+          <div class="cause-item"><strong>Dirty condenser coil</strong> &#8212; raises head pressure, causes TXV hunting, and destabilizes suction pressure &#8212; an indirect but real contributor to coil freezing.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="donot-list">
+      <div class="donot-head">
+        <div class="donot-icon">&#9888;&#65039;</div>
+        <div class="donot-title">Do Not List &#8212; Actions That Cause Serious Damage</div>
+      </div>
+      <ul class="donot-items">
+        <li>Chip or scrape ice off the coil &#8212; damages the aluminum fins and copper tubes permanently</li>
+        <li>Run the system while frozen &#8212; liquid refrigerant floodback can destroy the compressor</li>
+        <li>Bypass float switches, freeze sensors, or safety controls &#8212; these exist to prevent water intrusion and compressor damage</li>
+        <li>Add refrigerant without confirming and fixing the leak location &#8212; improper and the leak will cause another freeze event</li>
+        <li>Assume one filter replacement fixes recurring freeze-ups &#8212; if it freezes again after a clean filter, a deeper cause exists</li>
+        <li>Reset and restart the system repeatedly after it freezes &#8212; each restart attempt strains an already-compromised compressor</li>
+      </ul>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Light frost, clear cause (dirty filter). Replace filter, thaw, monitor. One occurrence without recurrence.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Ice forming during long cycles. Performance reduced. Recurring after filter replacement. Professional evaluation needed.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Frequent freeze-ups. Suction line icing. Meltwater entering furnace cabinet. Refrigerant or mechanical cause likely. Service this season.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Ice extending to outdoor unit. Compressor strain or shutdowns. Do not restart. Emergency service required.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The first thing I ask a homeowner when they say their AC froze is: where was the ice? Because that tells me 80% of what I need to know before I even pull out my gauges. Coil face frost &#8212; even across the whole face &#8212; I&#8217;m checking the filter and the blower first. Nine times out of ten it&#8217;s an airflow issue. If the filter&#8217;s clean but the blower is only running at 60% of its rated airflow, I&#8217;ve found my cause. Suction line ice only with the coil face relatively clear &#8212; that&#8217;s low charge until proven otherwise. The other thing I always emphasize: take a picture before it melts. Homeowners call me after they&#8217;ve already let the system run for hours in fan-only mode and all the diagnostic evidence is gone. If you see ice, take a photo, shut it down, then call. That photo can save 30 minutes of guesswork."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Shut off the system immediately &#8212; switch to Fan Only to begin thawing safely</li>
+          <li>Photograph the ice before it melts &#8212; location is diagnostic information</li>
+          <li>Check and replace the air filter &#8212; if severely clogged, this may be the entire cause</li>
+          <li>Verify all supply registers and return grilles are fully open and unobstructed</li>
+          <li>Check whether meltwater is dripping into the furnace cabinet &#8212; if yes, shut off the furnace breaker too</li>
+          <li>Note whether the outdoor temperature was below 65°F when the freeze occurred</li>
+          <li>Note whether the freeze only occurs at night or only during long cooling cycles</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Any freeze-up where the filter was already clean &#8212; blower, refrigerant, or metering device issue</li>
+          <li>Suction line icing &#8212; refrigerant leak testing and proper recharge</li>
+          <li>Any top-down or bottom-up coil icing pattern &#8212; TXV or metering device evaluation</li>
+          <li>Ice extending toward or reaching the outdoor unit &#8212; emergency service, do not restart</li>
+          <li>Recurring freeze-ups after filter replacement &#8212; deeper diagnosis needed</li>
+          <li>Blower motor amperage testing, capacitor testing, static pressure measurement</li>
+          <li>Evaporator and condenser coil cleaning &#8212; requires proper tools and coil-safe chemicals</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My AC froze overnight but seems fine in the morning. Do I still need service?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; if the root cause isn&#8217;t identified, it will freeze again. Overnight freeze events are one of the most common freeze patterns and have a specific cause: reduced heat load from overnight lower temperatures combined with lower outdoor temperatures, which allows the coil to drop below freezing during a long cooling cycle. The system may thaw on its own once it shuts off overnight and the ice melts by morning &#8212; giving the impression that nothing is wrong. But the same conditions will recur on the next hot night. The most common cause of this specific pattern is a borderline airflow restriction (a filter that&#8217;s nearly clogged but not completely blocked) combined with slightly low refrigerant charge. Both conditions are manageable if caught early &#8212; and both will get worse if not addressed.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I add refrigerant myself to fix a freeze-up?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No &#8212; for two reasons. First, handling refrigerants legally requires EPA 608 certification. DIY refrigerant handling is a federal violation. Second, and more importantly, adding refrigerant to a leaking system is not a repair &#8212; it&#8217;s temporary masking of a leak that will cause another freeze event, and it may cause the system to be overcharged relative to the remaining leak rate, creating a different set of problems. Refrigerant doesn&#8217;t get &#8220;used up&#8221; in a properly functioning system &#8212; if the system is low, there is a leak somewhere. The correct repair is to find and fix the leak, then recharge to the proper specification. A technician with refrigerant gauges and a leak detector can do this in a single visit.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How long should I run fan-only mode to thaw the coil?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">For a lightly frosted coil (you can see metal through the ice in places), fan-only mode typically thaws the coil in 1&#8211;2 hours. For a fully iced coil where ice is thick on the face and extending to the suction line, allow 3&#8211;4 hours minimum. You can confirm the coil has fully thawed by checking that no ice is visible on any surface &#8212; the coil fins should be visible, the suction line should be condensation-wet but ice-free, and any dripping from the drain pan should have stopped. Do not switch back to cooling mode until you&#8217;ve also replaced the filter and confirmed airflow is adequate. If the system freezes again within a few hours of restarting, shut it down and call for service &#8212; the root cause is not resolved.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>A frozen AC is never normal &#8212; it always indicates an underlying airflow restriction, refrigerant imbalance, mechanical failure, or improper operation. Thawing without fixing the cause produces another freeze event.</li>
+        <li>Ice location is the primary diagnostic: coil face = airflow; suction line only = low refrigerant; top-down = metering starvation; bottom-up = metering overfeeding; outdoor unit = critical undercharge.</li>
+        <li>The first step is always the same: shut off cooling, switch to Fan Only, let the coil thaw completely. Running a frozen system risks compressor damage from liquid refrigerant floodback.</li>
+        <li>A dirty air filter is the single most common cause. If the filter was clean and the system still froze, a deeper cause &#8212; blower, refrigerant, or metering device &#8212; requires professional diagnosis.</li>
+        <li>Take a photo of the ice before it melts. Ice location is the most useful diagnostic information you can provide to a technician and it disappears within minutes of thawing.</li>
+        <li>Never chip ice, bypass safety switches, or add refrigerant without leak diagnosis. These actions cause additional damage beyond the original freeze event.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">AC freezing up</a>
+      <a href="#" class="tag-pill">air conditioner frozen coil</a>
+      <a href="#" class="tag-pill">AC ice buildup causes</a>
+      <a href="#" class="tag-pill">evaporator coil freezing</a>
+      <a href="#" class="tag-pill">AC freezes overnight</a>
+      <a href="#" class="tag-pill">suction line ice AC</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Air Conditioning Guides</h3>
+    <div class="related-list">
+      <a href="hvac-ac-not-cooling.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Runs But Isn&#8217;t Cooling</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-short-cycling.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Is Short Cycling</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-leaking-water.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Is Leaking Water</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-wont-turn-on.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Won&#8217;t Turn On</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#icemap">Ice Pattern Location Map</a></li>
+      <li><a href="#causes">The Two Root Cause Categories</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

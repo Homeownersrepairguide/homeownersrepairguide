@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why One Room Is Always Hot or Cold While The Rest Of The House Is Fine | HomeownersRepairGuide.com</title>
+<meta name="description" content="When one room fails while the rest of the house is comfortable, the HVAC system is rarely the culprit. Here's how to isolate the cause in a single room.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-one-room-hot-or-cold.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-one-room-hot-or-cold.html">
+<meta property="og:title" content="Why One Room Is Always Hot or Cold While The Rest Of The House Is Fine | HomeownersRepairGuide.com">
+<meta property="og:description" content="When one room fails while the rest of the house is comfortable, the HVAC system is rarely at fault. Here's how to isolate the cause.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --duct:#2a6b7a;--duct-light:#e8f4f7;
+  --return:#7a5a2a;--return-light:#f5f0e8;
+  --solar:#7a2a2a;--solar-light:#f5e8e8;
+  --pressure:#2a7a5a;--pressure-light:#e8f5f0;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Single-Room Cause Isolator */
+.cause-isolator{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.ci-header{background:var(--navy);padding:18px 22px;}
+.ci-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.ci-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+/* Observation checks */
+.ci-checks{display:flex;flex-direction:column;border-bottom:2px solid var(--gray-light);}
+.ci-check{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--gray-light);}
+.ci-check:last-child{border-bottom:none;}
+.ci-check-head{grid-column:1/-1;padding:11px 18px;background:var(--cream-dark);font-size:12px;font-weight:700;color:var(--navy);border-bottom:1px solid var(--gray-light);display:flex;align-items:center;gap:8px;}
+.ci-check-num{width:20px;height:20px;border-radius:50%;background:var(--hvac);color:var(--white);font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.ci-col{padding:12px 16px;font-size:12px;line-height:1.5;}
+.ci-col:first-child{border-right:1px solid var(--gray-light);}
+.ci-col-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:5px;}
+.ci-col.yes .ci-col-label{color:var(--hvac);}
+.ci-col.no .ci-col-label{color:var(--text-muted);}
+.ci-result{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:20px;font-size:10px;font-weight:700;margin-bottom:4px;}
+.ci-result.duct{background:var(--duct-light);color:var(--duct);}
+.ci-result.return{background:var(--return-light);color:var(--return);}
+.ci-result.solar{background:var(--solar-light);color:var(--solar);}
+.ci-result.pressure{background:var(--pressure-light);color:var(--pressure);}
+.ci-result.unlikely{background:var(--cream-dark);color:var(--gray-mid);}
+.ci-result.multiple{background:#f0e8f5;color:#5a2a7a;}
+.ci-obs{color:var(--text-body);}
+/* Cause breakdown cards */
+.cause-cards{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.cause-card{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.cc-head{padding:13px 16px;display:flex;align-items:center;gap:10px;}
+.cc-icon{font-size:18px;}
+.cc-title{font-size:13px;font-weight:700;color:var(--white);}
+.cc-body{background:var(--white);border:1px solid var(--gray-light);border-top:none;padding:14px 16px;}
+.cause-card.duct .cc-head{background:var(--duct);}
+.cause-card.return .cc-head{background:var(--return);}
+.cause-card.solar .cc-head{background:var(--solar);}
+.cause-card.pressure .cc-head{background:var(--pressure);}
+.cc-symptoms{list-style:none;display:flex;flex-direction:column;gap:4px;margin-bottom:10px;}
+.cc-symptoms li{font-size:12px;color:var(--text-body);line-height:1.4;display:flex;gap:6px;}
+.cc-symptoms li::before{content:'·';font-weight:700;flex-shrink:0;}
+.cc-fix{font-size:11px;font-weight:700;padding:4px 9px;border-radius:2px;display:inline-block;}
+.cause-card.duct .cc-fix{background:var(--duct-light);color:var(--duct);}
+.cause-card.return .cc-fix{background:var(--return-light);color:var(--return);}
+.cause-card.solar .cc-fix{background:var(--solar-light);color:var(--solar);}
+.cause-card.pressure .cc-fix{background:var(--pressure-light);color:var(--pressure);}
+.ci-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.ci-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.ci-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.ci-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Pattern rows */
+.pattern-rows{display:flex;flex-direction:column;gap:11px;margin:24px 0;}
+.pattern-row{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:14px;align-items:flex-start;}
+.pattern-row.duct{border-left:4px solid var(--duct);}
+.pattern-row.return{border-left:4px solid var(--return);}
+.pattern-row.solar{border-left:4px solid var(--solar);}
+.pattern-row.pressure{border-left:4px solid var(--pressure);}
+.pr-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.pr-body{flex:1;}
+.pr-pattern{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.pr-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:2px;margin-left:7px;display:inline-block;vertical-align:middle;}
+.duct .pr-badge{background:var(--duct-light);color:var(--duct);}
+.return .pr-badge{background:var(--return-light);color:var(--return);}
+.solar .pr-badge{background:var(--solar-light);color:var(--solar);}
+.pressure .pr-badge{background:var(--pressure-light);color:var(--pressure);}
+.pr-desc{font-size:12px;color:var(--text-muted);line-height:1.5;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.alert{background:#fde8e8;border:1px solid #e08080;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.alert .callout-label{color:#c0402a;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:#b07800;}.sev-item.mod .sev-label{color:#b07800;}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:#c0392b;}.sev-item.crit .sev-label{color:#c0392b;}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid #c0392b;}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.cause-cards{grid-template-columns:1fr;}.ci-check{grid-template-columns:1fr;}.ci-col:first-child{border-right:none;border-bottom:1px solid var(--gray-light);}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-airflow-comfort.html">Airflow &amp; Comfort</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why One Room Is Always Hot or Cold</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Airflow &amp; Comfort</span>
+  </div>
+
+  <h1 class="article-title">Why One Room Is Always Hot or Cold While The Rest Of The House Is Fine</h1>
+  <p class="article-subtitle">When a single room fails while every other room in the house is comfortable, the HVAC system is almost never the problem. Single-room failures trace back to localized airflow, return-air, or heat-load conditions specific to that room. Here&#8217;s how to identify which one without replacing any equipment.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>The HVAC system is working.</strong> If every other room is comfortable, the equipment is performing correctly. The problem is specific to the airflow pathway, return-air access, or heat load for that one room.</li>
+        <li>The four single-room causes: branch duct restriction or loss, return-air restriction, solar/exposure heat load, and room pressure imbalance</li>
+        <li>The fastest field test: open the door and wait 5 minutes. Immediate improvement = return-air restriction. No change = supply or exposure problem.</li>
+        <li>Problems that appeared after remodeling, attic work, or carpet installation almost always involve a disturbed or blocked airflow path</li>
+        <li>Closing vents in other rooms to force airflow to the problem room raises static pressure system-wide and does not fix single-room failures</li>
+        <li>Equipment replacement, upsizing, or insulation upgrades almost never fix a single-room problem caused by localized airflow or pressure issues</li>
+      </ul>
+    </div>
+
+    <h2 id="isolator">Single-Room Cause Isolator</h2>
+    <p>Run through these five observations. Each one points toward a specific cause category &#8212; and most single-room problems can be identified in under 10 minutes without any tools.</p>
+
+    <div class="cause-isolator">
+      <div class="ci-header">
+        <h3>Isolate the Cause of Your Single-Room Problem</h3>
+        <p>Answer each observation while the HVAC system is running. The pattern across all five narrows your cause to one category.</p>
+      </div>
+
+      <div class="ci-checks">
+
+        <div class="ci-check">
+          <div class="ci-check-head"><div class="ci-check-num">1</div> How does airflow feel at the problem room&#8217;s register compared to other rooms?</div>
+          <div class="ci-col yes">
+            <div class="ci-col-label">&#8595; Weaker than other rooms</div>
+            <div class="ci-result duct">&#128268; Branch Duct Restriction</div>
+            <div class="ci-obs">Less air reaching this room than comparable rooms indicates a restriction in the branch duct serving it &#8212; kink, compression, disconnection, or undersizing. The supply side is failing to deliver.</div>
+          </div>
+          <div class="ci-col no">
+            <div class="ci-col-label">&#8596; Same as other rooms</div>
+            <div class="ci-result unlikely">Not a duct restriction</div>
+            <div class="ci-obs">Supply airflow is adequate. The problem is in what happens to the air after it enters the room &#8212; return pathway, pressure, or exposure. Continue to next observations.</div>
+          </div>
+        </div>
+
+        <div class="ci-check">
+          <div class="ci-check-head"><div class="ci-check-num">2</div> Does comfort improve immediately when you fully open the bedroom door?</div>
+          <div class="ci-col yes">
+            <div class="ci-col-label">&#10003; Yes &#8212; improves with door open</div>
+            <div class="ci-result return">&#127968; Return-Air Restriction</div>
+            <div class="ci-obs">Supply air enters but can&#8217;t exit back to the return. Room pressurizes, airflow delivery slows. The fix is on the return side &#8212; door undercut, transfer grille, or jump duct.</div>
+          </div>
+          <div class="ci-col no">
+            <div class="ci-col-label">&#215; No &#8212; door position makes no difference</div>
+            <div class="ci-result unlikely">Not return restriction</div>
+            <div class="ci-obs">Return pathway is not the limiting factor. The room has adequate return access but still can&#8217;t maintain comfort. Investigate solar/exposure load or supply restriction.</div>
+          </div>
+        </div>
+
+        <div class="ci-check">
+          <div class="ci-check-head"><div class="ci-check-num">3</div> Is the problem worse at specific times of day or in a specific season?</div>
+          <div class="ci-col yes">
+            <div class="ci-col-label">&#128337; Yes &#8212; worse in afternoon, or only one season</div>
+            <div class="ci-result solar">&#9728;&#65039; Solar or Exposure Load</div>
+            <div class="ci-obs">A room that gets dramatically worse in the afternoon or only in summer is absorbing solar heat faster than the system can remove it. West-facing rooms with large windows, rooms below attics with thin insulation, or rooms over garages are common.</div>
+          </div>
+          <div class="ci-col no">
+            <div class="ci-col-label">&#8596; Same discomfort throughout the day and year</div>
+            <div class="ci-result unlikely">Less likely solar or exposure</div>
+            <div class="ci-obs">Consistent year-round, time-independent discomfort with adequate airflow points more toward airflow restriction, pressure imbalance, or a combination of factors. Exposure is a contributing factor, not the primary driver.</div>
+          </div>
+        </div>
+
+        <div class="ci-check">
+          <div class="ci-check-head"><div class="ci-check-num">4</div> Did the problem start or worsen after any work was done &#8212; remodel, attic, carpet, new door?</div>
+          <div class="ci-col yes">
+            <div class="ci-col-label">&#127963;&#65039; Yes &#8212; started after work was done</div>
+            <div class="ci-result duct">&#128207; Disturbed Airflow Path</div>
+            <div class="ci-obs">Remodeling, attic work, and carpet installation are the most common triggers for newly developed single-room failures. A duct may have been kinked, a connection disturbed, or a door undercut reduced. The work &#8212; not time &#8212; caused the failure.</div>
+          </div>
+          <div class="ci-col no">
+            <div class="ci-col-label">&#8596; No recent work &#8212; has always been this way</div>
+            <div class="ci-result multiple">&#9888; Original Design Deficiency</div>
+            <div class="ci-obs">If the room has always been the worst room in the house, it was likely underserved by the original duct design. An undersized branch duct, inadequate return, or poor room location relative to the equipment are design-origin problems.</div>
+          </div>
+        </div>
+
+        <div class="ci-check">
+          <div class="ci-check-head"><div class="ci-check-num">5</div> Is there a whistling or rushing sound at the door base when the system runs?</div>
+          <div class="ci-col yes">
+            <div class="ci-col-label">&#128268; Yes &#8212; sound at door base or gap</div>
+            <div class="ci-result pressure">&#128167; Room Pressure Imbalance</div>
+            <div class="ci-obs">Air forcing through the door gap indicates the room is pressurized above corridor pressure. Supply air is entering but cannot return through the sealed door. Even with a door undercut, the pressure imbalance is active.</div>
+          </div>
+          <div class="ci-col no">
+            <div class="ci-col-label">&#8596; No sound at door</div>
+            <div class="ci-result unlikely">No active pressure imbalance</div>
+            <div class="ci-obs">No forced air through the door gap means the room is not significantly pressurized. Pressure imbalance is less likely as the primary cause. Focus on supply delivery and exposure loads.</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ci-footer">
+        <div class="ci-footer-icon">&#128161;</div>
+        <div>
+          <h4>The Two-Minute Field Test</h4>
+          <p>Hold your hand at the problem room&#8217;s supply register. Then hold it at a similar-sized room&#8217;s register nearby. If you can feel a meaningful difference in airflow volume or velocity, the supply branch to that room is the primary suspect regardless of your other observations.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="causes">The Four Single-Room Cause Categories</h2>
+
+    <div class="cause-cards">
+      <div class="cause-card duct">
+        <div class="cc-head">
+          <div class="cc-icon">&#128207;</div>
+          <div class="cc-title">Branch Duct Restriction or Loss</div>
+        </div>
+        <div class="cc-body">
+          <ul class="cc-symptoms">
+            <li>Register airflow noticeably weaker than comparable rooms</li>
+            <li>Problem unchanged regardless of door position</li>
+            <li>Often started after attic work or HVAC replacement</li>
+            <li>Room farthest from air handler is typically worst</li>
+          </ul>
+          <span class="cc-fix">Fix: inspect, straighten, or replace duct run to this room</span>
+        </div>
+      </div>
+      <div class="cause-card return">
+        <div class="cc-head">
+          <div class="cc-icon">&#127968;</div>
+          <div class="cc-title">Return-Air Restriction</div>
+        </div>
+        <div class="cc-body">
+          <ul class="cc-symptoms">
+            <li>Comfort improves immediately when door is opened</li>
+            <li>Airflow at register feels adequate</li>
+            <li>Whistling or draft at door base</li>
+            <li>Often triggered by new carpet reducing door undercut</li>
+          </ul>
+          <span class="cc-fix">Fix: door undercut, transfer grille, or jump duct</span>
+        </div>
+      </div>
+      <div class="cause-card solar">
+        <div class="cc-head">
+          <div class="cc="cc-icon">&#9728;&#65039;</div>
+          <div class="cc-title">Solar or Exposure Heat Load</div>
+        </div>
+        <div class="cc-body">
+          <ul class="cc-symptoms">
+            <li>Worst in afternoon or only in summer</li>
+            <li>West or south-facing with large windows</li>
+            <li>Room below attic with thin or missing insulation</li>
+            <li>Over garage or other unconditioned space</li>
+          </ul>
+          <span class="cc-fix">Fix: window treatment, attic insulation, or dedicated zoning</span>
+        </div>
+      </div>
+      <div class="cause-card pressure">
+        <div class="cc-head">
+          <div class="cc-icon">&#128167;</div>
+          <div class="cc-title">Room Pressure Imbalance</div>
+        </div>
+        <div class="cc-body">
+          <ul class="cc-symptoms">
+            <li>Audible whistling at door base when system runs</li>
+            <li>Door pushes back when closing</li>
+            <li>Problem correlates with door position</li>
+            <li>May affect multiple rooms simultaneously</li>
+          </ul>
+          <span class="cc-fix">Fix: improve return pathway, add transfer grilles</span>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="patterns">Pattern Identification &#8212; Distinguishing Single-Room Causes</h2>
+
+    <div class="pattern-rows">
+      <div class="pattern-row duct">
+        <div class="pr-icon">&#128207;</div>
+        <div class="pr-body">
+          <div class="pr-pattern">Airflow weak, problem year-round, door position irrelevant <span class="pr-badge">Branch Duct</span></div>
+          <div class="pr-desc">This is the supply side failing. The duct serving this room has a kink, compression, disconnection, or was undersized from the start. The room gets inadequate conditioned air regardless of what happens after it arrives.</div>
+        </div>
+      </div>
+      <div class="pattern-row return">
+        <div class="pr-icon">&#127968;</div>
+        <div class="pr-body">
+          <div class="pr-pattern">Airflow adequate, door-open improves comfort immediately <span class="pr-badge">Return Restriction</span></div>
+          <div class="pr-desc">Air is arriving at the room in adequate volume but can&#8217;t complete the loop back to the return. The room pressurizes and resists further delivery. The fix is always on the return side.</div>
+        </div>
+      </div>
+      <div class="pattern-row solar">
+        <div class="pr-icon">&#9728;&#65039;</div>
+        <div class="pr-body">
+          <div class="pr-pattern">Airflow adequate, comfort worsens specifically in afternoon or summer <span class="pr-badge">Solar Load</span></div>
+          <div class="pr-desc">The HVAC system is delivering adequate conditioned air but the room is gaining heat faster than the air can remove it. This is a load problem on the room itself, not a delivery problem from the system.</div>
+        </div>
+      </div>
+      <div class="pattern-row pressure">
+        <div class="pr-icon">&#128167;</div>
+        <div class="pr-body">
+          <div class="pr-pattern">Whistling at door base, door resists closing, worse with door closed <span class="pr-badge">Pressure Imbalance</span></div>
+          <div class="pr-desc">The room is positively pressurized relative to adjacent spaces. Supply is entering faster than it can exit. The pressure differential is audible at the door and physically felt when closing it.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box alert">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Equipment Replacement Won&#8217;t Fix a Localized Problem</div>
+        <div class="callout-text">If the rest of the house is comfortable, the equipment is working correctly. Replacing or upsizing the HVAC system delivers more air to all the comfortable rooms and increases static pressure throughout &#8212; it does not preferentially improve delivery to the one problem room. Address the room-specific cause before any equipment decision.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Minor</div></div>
+        <div class="sev-desc">Mild discomfort, no secondary symptoms. One room marginally worse. Check filter and door undercut first.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Persistent discomfort with airflow complaint. Basic checks completed without resolution. Professional evaluation needed.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Room unusable in extreme weather. Condensation, pressure noise, or system cycling increases. Evaluate now.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Freeze risk in cold climates, mold from chronic condensation, or structural moisture damage. Act immediately.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The most important thing I tell homeowners with a single-room problem is: stop looking at the thermostat and start looking at the room. The thermostat does not know one room is uncomfortable &#8212; it only knows the average temperature at the sensor location. The room is failing because something about that specific room, or the duct pathway to it, is different from the rooms that work. My process is always the same: check airflow first. If airflow is weak, I go to the attic and look at the duct run to that room. If airflow is fine, I ask whether opening the door helps. If yes &#8212; it&#8217;s return restriction. If no &#8212; I look at sun exposure and room orientation. Almost every single-room problem falls into one of those four categories. The equipment almost never needs to be replaced."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Compare airflow at problem room register vs. adjacent similarly-sized rooms</li>
+          <li>Open the door fully &#8212; note whether comfort improves within 5 minutes</li>
+          <li>Measure door undercut clearance &#8212; should be at least 3/4&#8221;</li>
+          <li>Note what time of day and what outdoor conditions the problem is worst</li>
+          <li>Check whether the problem started after any specific work was done</li>
+          <li>Listen for whistling at the door base when the system is running</li>
+          <li>Inspect visible flex duct connections in accessible attic areas</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Static pressure testing to measure room-level pressure differential</li>
+          <li>Airflow measurement with a flow hood for accurate comparison</li>
+          <li>Full duct inspection to locate kinks, compression, or disconnection</li>
+          <li>Transfer grille or jump duct installation for return restriction</li>
+          <li>Duct sealing, resizing, or rerouting for branch duct failures</li>
+          <li>Room load calculation if solar exposure is the suspected primary cause</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My master bedroom has always been the coldest room in winter. Why is it always this one room?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Master bedrooms are structurally the most likely rooms to have single-room comfort problems for several reasons. They are frequently the farthest room from the air handler &#8212; meaning the branch duct run is longest and friction losses are highest. They are almost always door-closed rooms, which creates or amplifies return-air restriction. They often have the largest window area relative to room size, increasing heat loss in winter. And in many homes they were designed with a single supply register that may be undersized for the actual room volume. The combination of these factors concentrates in the master bedroom. The starting point is always the same: check airflow, test the door, and look at the duct run in the attic.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">The problem room has plenty of airflow at the register but still won&#8217;t stay comfortable. What&#8217;s happening?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">This tells you immediately that the supply side is not the problem &#8212; the air is arriving. The question is what happens to it. Three possibilities: First, the room has no adequate return pathway &#8212; air comes in but can&#8217;t circulate back, so the room pressurizes and resists further delivery. Test by opening the door and waiting. Second, the room has a heat load problem &#8212; it gains heat from sun, an adjacent unconditioned space, or poor insulation faster than the adequate airflow can overcome. Test by tracking whether the problem is time-of-day or exposure dependent. Third, the room has both adequate airflow and adequate return but has specific micro-climate issues &#8212; stratification, poor register placement, or unusual geometry. If both the door test and the time-of-day test are negative, a professional room analysis is the right next step.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I add a mini-split or space heater to the problem room instead of fixing the HVAC?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; this is sometimes the right decision, particularly when the root cause is solar exposure that would be expensive to correct, or when the duct system design is so deficient that proper correction would require significant structural work. A ductless mini-split in a chronically uncomfortable room provides dedicated temperature control independent of the central system and is a legitimate permanent solution. A portable space heater or window unit works as a short-term fix but adds ongoing energy cost without addressing the underlying imbalance. The main consideration before choosing supplemental equipment over correction: if the root cause is return-air restriction or a kinked flex duct, those have relatively low-cost fixes that don&#8217;t require adding equipment. If the root cause is solar load or an original duct design deficiency requiring significant duct work, supplemental equipment may be the better value proposition.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>When one room fails while the rest of the house is comfortable, the HVAC system is almost never the problem. The cause is specific to that room&#8217;s airflow pathway, return access, or heat load.</li>
+        <li>The fastest diagnostic: compare airflow strength at the problem register to comparable rooms, then open the door and wait. These two observations rule in or out the two most common causes.</li>
+        <li>Weak airflow = branch duct restriction. Adequate airflow + door-open improvement = return restriction. Adequate airflow + time-of-day pattern = solar or exposure load. Whistling at door base = pressure imbalance.</li>
+        <li>Problems that started after remodeling, attic work, or carpet installation almost always involve a disturbed or blocked airflow path &#8212; not aging or equipment failure.</li>
+        <li>Equipment replacement or upsizing does not fix single-room problems. It improves air delivery to all rooms proportionally, including the ones already comfortable, without specifically addressing the one room&#8217;s local failure.</li>
+        <li>Master bedrooms are the most common single-room problem location &#8212; they combine long duct runs, closed doors, and large window areas in a way that amplifies every airflow and return deficiency.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">one room always hot cold</a>
+      <a href="#" class="tag-pill">bedroom too cold in winter</a>
+      <a href="#" class="tag-pill">one room not getting air</a>
+      <a href="#" class="tag-pill">single room HVAC problem</a>
+      <a href="#" class="tag-pill">room uncomfortable rest of house fine</a>
+      <a href="#" class="tag-pill">master bedroom coldest room</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Airflow &amp; Comfort Guides</h3>
+    <div class="related-list">
+      <a href="hvac-closing-doors-temperature.html" class="related-item">
+        <div><div class="related-item-title">Why Closing Bedroom Doors Causes Temperature Problems</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-flex-duct-poor-design.html" class="related-item">
+        <div><div class="related-item-title">Why Your Duct Design Is Making Rooms Uncomfortable</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-airflow-vs-insulation-problem.html" class="related-item">
+        <div><div class="related-item-title">Airflow Problem vs. Insulation Problem</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-farthest-room-worst-comfort.html" class="related-item">
+        <div><div class="related-item-title">Why the Farthest Room Has the Worst Comfort</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#isolator">Single-Room Cause Isolator</a></li>
+      <li><a href="#causes">The Four Cause Categories</a></li>
+      <li><a href="#patterns">Pattern Identification</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

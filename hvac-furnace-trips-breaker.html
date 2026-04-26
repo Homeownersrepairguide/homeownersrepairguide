@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Furnace Trips the Breaker or Shuts Down Suddenly | HomeownersRepairGuide.com</title>
+<meta name="description" content="A furnace that trips the breaker or shuts down suddenly is always responding to a real condition — not malfunctioning randomly. The source (electrical vs. internal) and timing identify the cause.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-furnace-trips-breaker.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-furnace-trips-breaker.html">
+<meta property="og:title" content="Why Your Furnace Trips the Breaker or Shuts Down Suddenly | HomeownersRepairGuide.com">
+<meta property="og:description" content="Is the breaker tripping or is the furnace locking itself out? These are different problems with different causes. Here's how to identify the source and what to do about it.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --elec:#c0402a;--elec-light:#fde8e8;
+  --internal:#5a2a7a;--internal-light:#f0e8f5;
+  --airflow:#b07800;--airflow-light:#fff8e6;
+  --motor:#2a5a7a;--motor-light:#e8f0f5;
+  --critical:#7a1010;--critical-light:#f5e0e0;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Shutdown Source Separator */
+.source-separator{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.ss-header{background:var(--navy);padding:18px 22px;}
+.ss-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.ss-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+/* Step 1 - source ID */
+.ss-step1{border-bottom:2px solid var(--gray-light);}
+.ss-step-label{padding:10px 18px;background:var(--cream-dark);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy);border-bottom:1px solid var(--gray-light);}
+.ss-split{display:grid;grid-template-columns:1fr 1fr;}
+.ss-side{padding:16px 18px;border-right:1px solid var(--gray-light);}
+.ss-side:last-child{border-right:none;}
+.ss-side-head{display:flex;align-items:center;gap:9px;margin-bottom:8px;}
+.ss-side-icon{font-size:22px;}
+.ss-side-title{font-size:14px;font-weight:700;}
+.ss-side.elec .ss-side-title{color:var(--elec);}
+.ss-side.internal .ss-side-title{color:var(--internal);}
+.ss-side-check{font-size:12px;color:var(--text-muted);line-height:1.55;margin-bottom:8px;}
+.ss-side-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:2px;display:inline-block;}
+.ss-side.elec .ss-side-badge{background:var(--elec-light);color:var(--elec);}
+.ss-side.internal .ss-side-badge{background:var(--internal-light);color:var(--internal);}
+/* Timing rows per source */
+.ss-timing-section{border-bottom:1px solid var(--gray-light);}
+.ss-timing-section:last-child{border-bottom:none;}
+.ss-timing-head{padding:9px 18px;background:var(--cream-dark);border-bottom:1px solid var(--gray-light);display:flex;align-items:center;gap:8px;}
+.ss-timing-head-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;}
+.ss-timing-head.elec-t .ss-timing-head-dot{background:var(--elec);}
+.ss-timing-head.internal-t .ss-timing-head-dot{background:var(--internal);}
+.ss-timing-head-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;}
+.ss-timing-head.elec-t .ss-timing-head-label{color:var(--elec);}
+.ss-timing-head.internal-t .ss-timing-head-label{color:var(--internal);}
+.ss-timing-rows{display:flex;flex-direction:column;}
+.ss-timing-row{display:grid;grid-template-columns:150px 1fr;border-bottom:1px solid var(--gray-light);}
+.ss-timing-row:last-child{border-bottom:none;}
+.ss-timing-when{padding:13px 12px;background:var(--cream-dark);border-right:1px solid var(--gray-light);display:flex;flex-direction:column;justify-content:center;}
+.ss-timing-time{font-size:12px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.ss-timing-sub{font-size:10px;color:var(--text-muted);line-height:1.35;}
+.ss-timing-content{padding:12px 14px;}
+.ss-cause-tag{font-size:10px;font-weight:700;padding:3px 7px;border-radius:20px;margin-bottom:5px;display:inline-block;}
+.ss-cause-tag.elec{background:var(--elec-light);color:var(--elec);}
+.ss-cause-tag.internal{background:var(--internal-light);color:var(--internal);}
+.ss-cause-tag.airflow{background:var(--airflow-light);color:var(--airflow);}
+.ss-cause-tag.motor{background:var(--motor-light);color:var(--motor);}
+.ss-cause-tag.critical{background:var(--critical-light);color:var(--critical);}
+.ss-cause-text{font-size:12px;color:var(--text-body);line-height:1.5;}
+.ss-timing-row.critical-row{border-left:3px solid var(--critical);}
+.ss-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.ss-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.ss-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.ss-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Never do list */
+.never-list{background:var(--critical-light);border:1px solid #e08080;border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;}
+.never-head{display:flex;align-items:center;gap:8px;margin-bottom:12px;}
+.never-icon{font-size:20px;}
+.never-title{font-size:13px;font-weight:700;color:var(--critical);text-transform:uppercase;letter-spacing:0.07em;}
+.never-items{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.never-items li{font-size:13px;color:var(--text-body);line-height:1.45;display:flex;gap:8px;}
+.never-items li::before{content:'\2717';color:var(--critical);font-weight:700;flex-shrink:0;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--airflow-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--elec-light);border:1px solid #e08080;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--airflow);}
+.callout-box.alert .callout-label{color:var(--elec);}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--airflow);}.sev-item.mod .sev-label{color:var(--airflow);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--critical);}.sev-item.crit .sev-label{color:var(--critical);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--critical);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--elec);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--elec);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.ss-split{grid-template-columns:1fr;}.ss-side{border-right:none !important;border-bottom:1px solid var(--gray-light);}.ss-timing-row{grid-template-columns:1fr;}.ss-timing-when{border-right:none;border-bottom:1px solid var(--gray-light);}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-furnace-heating.html">Furnace &amp; Heating</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Furnace Trips the Breaker or Shuts Down Suddenly</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Furnace &amp; Heating</span>
+  </div>
+
+  <h1 class="article-title">Why Your Furnace Trips the Breaker or Shuts Down Suddenly</h1>
+  <p class="article-subtitle">Every furnace shutdown &#8212; whether it trips the breaker or locks itself out &#8212; is a protective response to a real condition. The first diagnostic question is whether the breaker is tripping or the furnace is shutting itself down. These are different circuits with different causes, and they require different responses.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>First question: is the breaker tripping or is the furnace locking itself out?</strong> Breaker trips = electrical overcurrent in the line-voltage circuit. Furnace lockout = internal safety device responding to overheating, combustion failure, or sensor fault. These have different causes and different response protocols.</li>
+        <li>A breaker that trips immediately at startup indicates a motor short, wiring fault, or seized component drawing more current than the breaker allows. Do not reset more than once.</li>
+        <li>A breaker that trips after extended runtime indicates an aging motor drawing progressively more current as it heats up &#8212; a developing fault that will worsen.</li>
+        <li>A furnace that shuts itself off (but doesn&#8217;t trip the breaker) has activated an internal safety device &#8212; high-limit switch, pressure switch, flame sensor, or control board lockout.</li>
+        <li>Replacing a breaker with a larger one to stop tripping is never correct &#8212; the breaker is protecting the wiring and the motor, not just the furnace.</li>
+        <li>If the furnace shuts down and displays an error code, read it before resetting &#8212; the code identifies exactly which safety device triggered the shutdown.</li>
+      </ul>
+    </div>
+
+    <h2 id="separator">Shutdown Source Separator</h2>
+    <p>Start here. Identify whether the breaker tripped or the furnace locked itself out &#8212; then follow the timing pattern within that category.</p>
+
+    <div class="source-separator">
+      <div class="ss-header">
+        <h3>Step 1 &#8212; Which Shutdown Type Occurred?</h3>
+        <p>Check the breaker panel: is the furnace breaker tripped to the middle position? If no &#8212; the furnace shut itself off internally. Each type has a distinct set of causes.</p>
+      </div>
+
+      <!-- Source identification -->
+      <div class="ss-step1">
+        <div class="ss-step-label">Identify the Source</div>
+        <div class="ss-split">
+          <div class="ss-side elec">
+            <div class="ss-side-head">
+              <div class="ss-side-icon">&#9889;</div>
+              <div class="ss-side-title">Breaker Tripped</div>
+            </div>
+            <div class="ss-side-check">The breaker for the furnace or air handler is in the middle (tripped) position in the panel. The furnace has no power. You had to reset the breaker to restore operation.</div>
+            <div class="ss-side-badge">Electrical circuit fault &#8212; excessive current draw</div>
+          </div>
+          <div class="ss-side internal">
+            <div class="ss-side-head">
+              <div class="ss-side-icon">&#128268;</div>
+              <div class="ss-side-title">Furnace Locked Itself Out</div>
+            </div>
+            <div class="ss-side-check">The breaker is in the ON position and has not moved. The furnace stopped on its own &#8212; possibly displaying an error code or blinking light sequence on the control board.</div>
+            <div class="ss-side-badge">Internal safety device activated &#8212; no breaker trip</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Electrical timing patterns -->
+      <div class="ss-timing-section">
+        <div class="ss-timing-head elec-t">
+          <div class="ss-timing-head-dot"></div>
+          <div class="ss-timing-head-label">&#9889; Breaker Trip &#8212; When Does It Trip?</div>
+        </div>
+        <div class="ss-timing-rows">
+          <div class="ss-timing-row">
+            <div class="ss-timing-when">
+              <div class="ss-timing-time">Immediately at Startup</div>
+              <div class="ss-timing-sub">Breaker trips within seconds of the furnace calling</div>
+            </div>
+            <div class="ss-timing-content">
+              <div class="ss-cause-tag elec">&#9889; Short Circuit / Seized Motor</div>
+              <div class="ss-cause-text">An immediate trip at startup indicates a short circuit &#8212; current is flowing through an unintended path and the breaker responds before the system can run. Common causes: shorted blower motor windings, damaged wiring with bare conductors touching the cabinet, or a seized motor drawing locked-rotor current. <strong>Do not reset more than once.</strong> Each reset attempt forces high current through the fault.</div>
+            </div>
+          </div>
+          <div class="ss-timing-row">
+            <div class="ss-timing-when">
+              <div class="ss-timing-time">After 10&#8211;30 Min of Runtime</div>
+              <div class="ss-timing-sub">Runs normally then trips mid-cycle or after extended operation</div>
+            </div>
+            <div class="ss-timing-content">
+              <div class="ss-cause-tag motor">&#9881;&#65039; Aging Motor Drawing High Current</div>
+              <div class="ss-cause-text">A blower motor with degrading windings draws increasing current as it heats up. When cold, it starts and runs normally &#8212; passing the startup inrush. As it warms, resistance drops and current rises until it exceeds the breaker rating. This is the &#8220;runs then trips&#8221; pattern. The motor is failing and requires replacement &#8212; it will not recover between uses.</div>
+            </div>
+          </div>
+          <div class="ss-timing-row critical-row">
+            <div class="ss-timing-when">
+              <div class="ss-timing-time">With Burning Odor or Visible Damage</div>
+              <div class="ss-timing-sub">Any trip accompanied by smell, smoke, or scorching</div>
+            </div>
+            <div class="ss-timing-content">
+              <div class="ss-cause-tag critical">&#9888; Wiring Fault &#8212; Fire Risk</div>
+              <div class="ss-cause-text">Burning smells or visible scorch marks on wiring connectors, the blower motor, or the cabinet indicate active arcing or insulation failure. <strong>Do not reset. Do not operate.</strong> Shut off the breaker and gas supply. Call for service. Arcing that trips a breaker can re-ignite when reset, and in a furnace cabinet it can contact combustible dust or insulation.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Internal lockout timing patterns -->
+      <div class="ss-timing-section">
+        <div class="ss-timing-head internal-t">
+          <div class="ss-timing-head-dot"></div>
+          <div class="ss-timing-head-label">&#128268; Internal Lockout &#8212; What Pattern Does It Show?</div>
+        </div>
+        <div class="ss-timing-rows">
+          <div class="ss-timing-row">
+            <div class="ss-timing-when">
+              <div class="ss-timing-time">Shuts Off After 2&#8211;5 Min of Heat</div>
+              <div class="ss-timing-sub">Heats briefly then shuts down &#8212; blower may continue briefly</div>
+            </div>
+            <div class="ss-timing-content">
+              <div class="ss-cause-tag airflow">&#9650; High-Limit Trip</div>
+              <div class="ss-cause-text">The high-limit switch shuts off the burner when the heat exchanger overheats. Blower continues to cool it down. Almost always caused by restricted airflow &#8212; clogged filter, blocked registers, collapsed duct, or failing blower motor. <strong>Check and replace the filter immediately.</strong> If it continues after a clean filter, airflow or blower evaluation is needed.</div>
+            </div>
+          </div>
+          <div class="ss-timing-row">
+            <div class="ss-timing-when">
+              <div class="ss-timing-time">Shuts Off Within 30 Sec of Ignition</div>
+              <div class="ss-timing-sub">Lights briefly or doesn&#8217;t ignite, then goes out immediately</div>
+            </div>
+            <div class="ss-timing-content">
+              <div class="ss-cause-tag internal">&#128293; Flame Sensor / Pressure Switch</div>
+              <div class="ss-cause-text">Either the flame sensor can&#8217;t confirm ignition (dirty or failed) and shuts the gas valve, or the pressure switch opened mid-cycle and interrupted the combustion sequence. The furnace will attempt 2&#8211;3 times then lock out with an error code. Read the code &#8212; it identifies which switch or sensor triggered the lockout.</div>
+            </div>
+          </div>
+          <div class="ss-timing-row">
+            <div class="ss-timing-when">
+              <div class="ss-timing-time">Shuts Off Only in Cold / Windy Conditions</div>
+              <div class="ss-timing-sub">Works fine in mild weather, fails during cold snaps or high winds</div>
+            </div>
+            <div class="ss-timing-content">
+              <div class="ss-cause-tag internal">&#127777;&#65039; Venting / Pressure Issue</div>
+              <div class="ss-cause-text">Wind affecting the exterior vent termination changes the pressure differential the pressure switch monitors. A partially blocked or incorrectly positioned vent termination can cause the pressure switch to drop out during windy conditions. Ice accumulation on high-efficiency horizontal vent pipes is a common winter cause. Inspect the exterior vent termination.</div>
+            </div>
+          </div>
+          <div class="ss-timing-row" style="border-bottom:none;">
+            <div class="ss-timing-when">
+              <div class="ss-timing-time">Each Reset Runs for Less Time</div>
+              <div class="ss-timing-sub">Progressive shortening of runtime between lockouts</div>
+            </div>
+            <div class="ss-timing-content">
+              <div class="ss-cause-tag critical">&#9888; Escalating Fault &#8212; Stop Resetting</div>
+              <div class="ss-cause-text">If each reset results in shorter operation before the next lockout, the fault is worsening in real time &#8212; typically a heat exchanger retaining heat between cycles and tripping the limit faster each time. <strong>Stop resetting and call for professional service.</strong> Repeated heat exchanger overheating is the path to cracking and carbon monoxide risk.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ss-footer">
+        <div class="ss-footer-icon">&#128268;</div>
+        <div>
+          <h4>Read the Error Code Before Resetting</h4>
+          <p>Modern furnaces flash an error code on the control board LED when they lock out. The flash sequence &#8212; typically counted as long flashes and short flashes &#8212; corresponds to a code listed on the label inside the furnace door. Read and record this code before resetting. It tells you exactly which safety device triggered the shutdown &#8212; and gives the technician a diagnostic starting point that can save significant time.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="never-list">
+      <div class="never-head">
+        <div class="never-icon">&#9888;&#65039;</div>
+        <div class="never-title">Never Do &#8212; Actions That Create Serious Risk</div>
+      </div>
+      <ul class="never-items">
+        <li>Replace the tripped breaker with a larger one &#8212; the breaker rating matches the wiring; a larger breaker allows wiring to overheat before it trips</li>
+        <li>Reset a breaker more than once if it trips again immediately &#8212; active fault is present</li>
+        <li>Bypass or jumper a high-limit switch, pressure switch, or flame sensor</li>
+        <li>Continue operating when a burning odor or scorching is visible</li>
+        <li>Reset repeatedly when each reset gives less runtime than the last</li>
+        <li>Assume a single successful reset means the problem is resolved &#8212; the condition that triggered it is still present</li>
+      </ul>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Single lockout that clears after filter replacement and doesn&#8217;t recur. Error code resolved. Monitor through next cold spell.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Recurring lockout under similar conditions. Single breaker trip that holds on reset. Schedule professional evaluation this week.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Repeated breaker trips, run-then-trip pattern, or frequent lockouts with error codes. Service now &#8212; component damage is accumulating.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Burning odor, scorching, immediate trip, or progressively shortening runtimes. Shut down gas and power. Emergency service.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The very first thing I ask on a trip or shutdown call is: is the breaker in the panel actually tripped, or is the furnace just not running? Most homeowners don&#8217;t check &#8212; they assume the furnace stopped because of the furnace. About half the time I get there and the breaker is fine, the furnace has just locked out internally and is sitting there waiting with an error code on the board. Two completely different diagnostics. The one I take most seriously is the immediate breaker trip at startup. That&#8217;s almost always a shorted motor or a wiring fault. I&#8217;ve seen those start fires when homeowners keep resetting. The run-then-trip pattern is the aging motor pattern &#8212; I can test amp draw when it&#8217;s cold and confirm it, then test again when it&#8217;s been running 20 minutes. The number tells the story. The worst mistake I see is the homeowner who replaces the breaker with a bigger one because &#8216;it keeps tripping.&#8217; Now the wiring can overheat before the breaker trips. The breaker is rated to the wire gauge &#8212; you never upsize without rewiring."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Confirm whether the breaker tripped or the furnace locked out internally &#8212; check the panel</li>
+          <li>Read and record the error code from the control board LED before resetting</li>
+          <li>Replace the air filter &#8212; the first step for any mid-cycle lockout</li>
+          <li>Note whether the shutdown occurred at startup, after extended runtime, or only in cold/windy weather</li>
+          <li>Note whether each reset gives progressively less runtime &#8212; if yes, stop resetting</li>
+          <li>Inspect the exterior vent termination for ice, debris, or obstruction</li>
+          <li>Check for burning odor &#8212; if present, do not reset</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Any situation involving burning odor, visible scorching, or smoke &#8212; shut off gas and power</li>
+          <li>Immediate breaker trips &#8212; do not continue resetting; wiring or motor fault diagnosis needed</li>
+          <li>Motor amperage testing &#8212; confirms whether aging motor is drawing excessive current</li>
+          <li>Flame sensor cleaning and testing</li>
+          <li>Pressure switch and hose inspection</li>
+          <li>Heat exchanger inspection after repeated high-limit trips</li>
+          <li>Wiring inspection for damaged insulation, loose terminals, or corrosion</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My furnace tripped the breaker once and hasn&#8217;t done it since. Should I still call a technician?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A single breaker trip that has not recurred is worth monitoring but not necessarily an emergency. Some trips are caused by momentary conditions &#8212; a power surge, a starting current spike on a very cold startup when all systems call simultaneously, or a brief motor bind that cleared itself. If the furnace has run normally through several subsequent heat cycles with no recurrence, the risk is lower. However, there is no such thing as a nuisance trip in HVAC electrical systems &#8212; the breaker responded to a real over-current condition. Watch for: recurring trips under similar conditions (same outdoor temperature, same time of day), gradually shorter runtimes before a trip, or any smell during operation. If any of those develop, schedule service promptly. A single unexplained trip with no recurrence and no odor over several weeks is the lowest-risk scenario &#8212; but not a guarantee the condition won&#8217;t return.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My furnace displays an error code. Can I look up what it means myself?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; and you should do this before calling for service. The error code lookup guide is almost always printed on a label inside the furnace door, typically on the back of the front access panel or on the inside of the blower door. It lists what each flash sequence (number of long flashes, number of short flashes) indicates. Common codes across brands indicate: high-limit trip, pressure switch fault, ignition failure, flame sensor lockout, and communication error. Some codes are informational &#8212; they tell you what happened but clear with a reset. Others indicate a fault that will continue to recur until the underlying condition is fixed. Providing the error code to a technician when you call is valuable &#8212; it often reduces the diagnostic portion of the visit significantly. Write down the full flash sequence you observe, not just the number of flashes &#8212; some codes require distinguishing between long and short blinks.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How do I know if my furnace shutdown is a carbon monoxide risk?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Not every furnace shutdown creates a CO risk, but certain shutdown patterns are associated with conditions that could. The highest-risk pattern is a furnace that has been repeatedly tripping its high-limit switch &#8212; because repeated overheating is the mechanism that cracks heat exchangers, which is the primary source of CO entering the living space from a furnace. If your furnace has been short-cycling or tripping its limit repeatedly for weeks, a heat exchanger inspection should be explicitly requested as part of any service call. CO detectors are your safety net: every home with a gas furnace should have working CO detectors, tested annually, with batteries replaced. If a CO detector activates &#8212; even if you don&#8217;t smell anything &#8212; evacuate the home immediately and call 911. Do not re-enter to reset the furnace or retrieve belongings. CO is odorless and can incapacitate before you realize it&#8217;s present. Also associated with CO risk: a furnace that runs but produces unusual exhaust smells from supply vents, or yellow/flickering flames visible through the sight glass (should be blue and steady).</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>The first diagnostic question is always: did the breaker trip or did the furnace lock itself out internally? These have different causes, different risks, and different response protocols.</li>
+        <li>Breaker trips immediately at startup = short circuit or seized motor. Do not reset more than once. Wiring or motor fault diagnosis needed before operation resumes.</li>
+        <li>Breaker trips after extended runtime = aging motor drawing increasing current as it heats up. The motor is failing and will not recover &#8212; replacement needed.</li>
+        <li>Internal lockout after 2&#8211;5 minutes of heat = high-limit trip from restricted airflow. Replace the filter first. If it continues, blower or duct evaluation needed.</li>
+        <li>Read the error code from the control board before resetting. It identifies exactly which safety device triggered &#8212; and provides the technician with a diagnostic starting point.</li>
+        <li>If each reset gives progressively less runtime, stop resetting and call for service. This escalating pattern indicates worsening heat exchanger stress and CO risk.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">furnace trips breaker</a>
+      <a href="#" class="tag-pill">furnace shuts off suddenly</a>
+      <a href="#" class="tag-pill">furnace breaker keeps tripping</a>
+      <a href="#" class="tag-pill">furnace lockout error code</a>
+      <a href="#" class="tag-pill">furnace shuts down mid cycle</a>
+      <a href="#" class="tag-pill">furnace high limit trip</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Furnace &amp; Heating Guides</h3>
+    <div class="related-list">
+      <a href="hvac-furnace-short-cycling.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace Short Cycles</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-blows-cold-air.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace Blows Cold Air</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-dangerous-vs-inconvenient.html" class="related-item">
+        <div><div class="related-item-title">When Furnace Problems Are Dangerous vs. Inconvenient</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-smells.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace Smells</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#separator">Shutdown Source Separator</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

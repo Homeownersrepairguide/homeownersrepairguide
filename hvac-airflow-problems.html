@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Home Has Poor Airflow | HomeownersRepairGuide.com</title>
+<meta name="description" content="Poor HVAC airflow causes uneven temperatures, frozen coils, and furnace overheating. Whether it's system-wide or room-specific — and what symptom accompanies it — identifies the source.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-airflow-problems.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-airflow-problems.html">
+<meta property="og:title" content="Why Your Home Has Poor Airflow | HomeownersRepairGuide.com">
+<meta property="og:description" content="System-wide weak airflow points to the blower or filter. Room-specific weak airflow points to the duct. Each symptom pattern narrows the source further.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --blower:#c0402a;--blower-light:#fde8e8;
+  --filter:#b07800;--filter-light:#fff8e6;
+  --coil:#5a2a7a;--coil-light:#f0e8f5;
+  --duct:#2a5a7a;--duct-light:#e8f0f5;
+  --return:#2a7a5a;--return-light:#e8f5f0;
+  --critical:#7a1010;--critical-light:#f5e0e0;
+  --ok:#2a7a2a;--ok-light:#eaf5ea;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Poor Airflow Source Locator */
+.airflow-locator{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.al-header{background:var(--navy);padding:18px 22px;}
+.al-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.al-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.al-legend{display:flex;gap:12px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.al-leg{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;}
+.al-leg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.al-leg.filter{color:var(--filter);}.al-leg.filter .al-leg-dot{background:var(--filter);}
+.al-leg.blower{color:var(--blower);}.al-leg.blower .al-leg-dot{background:var(--blower);}
+.al-leg.coil{color:var(--coil);}.al-leg.coil .al-leg-dot{background:var(--coil);}
+.al-leg.duct{color:var(--duct);}.al-leg.duct .al-leg-dot{background:var(--duct);}
+.al-leg.return{color:var(--return);}.al-leg.return .al-leg-dot{background:var(--return);}
+/* Column headers */
+.al-col-heads{display:grid;grid-template-columns:180px 1fr 1fr;border-bottom:2px solid var(--gray-light);}
+.al-col-head{padding:10px 12px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;border-right:1px solid var(--gray-light);}
+.al-col-head:last-child{border-right:none;}
+.al-col-head:nth-child(1){background:var(--cream-dark);color:var(--text-muted);}
+.al-col-head:nth-child(2){background:#e8f0e8;color:var(--return);}
+.al-col-head:nth-child(3){background:var(--duct-light);color:var(--duct);}
+/* Rows */
+.al-rows{display:flex;flex-direction:column;}
+.al-row{display:grid;grid-template-columns:180px 1fr 1fr;border-bottom:1px solid var(--gray-light);}
+.al-row:last-child{border-bottom:none;}
+.al-row.critical-row{border:2px solid var(--critical);}
+.al-symptom{padding:13px 12px;background:var(--cream-dark);border-right:1px solid var(--gray-light);display:flex;flex-direction:column;justify-content:center;}
+.al-symp-icon{font-size:20px;margin-bottom:4px;}
+.al-symp-label{font-size:11px;font-weight:700;color:var(--navy);margin-bottom:3px;line-height:1.3;}
+.al-symp-sub{font-size:10px;color:var(--text-muted);line-height:1.35;}
+.al-cell{padding:12px 13px;border-right:1px solid var(--gray-light);font-size:12px;}
+.al-cell:last-child{border-right:none;}
+.al-cause-tag{font-size:10px;font-weight:700;padding:3px 7px;border-radius:20px;margin-bottom:4px;display:inline-block;}
+.al-cause-tag.filter{background:var(--filter-light);color:var(--filter);}
+.al-cause-tag.blower{background:var(--blower-light);color:var(--blower);}
+.al-cause-tag.coil{background:var(--coil-light);color:var(--coil);}
+.al-cause-tag.duct{background:var(--duct-light);color:var(--duct);}
+.al-cause-tag.return{background:var(--return-light);color:var(--return);}
+.al-cause-tag.critical{background:var(--critical-light);color:var(--critical);}
+.al-cell-text{color:var(--text-muted);line-height:1.5;}
+.al-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.al-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.al-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.al-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Mistake cards */
+.mistake-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0;}
+.mistake-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;box-shadow:var(--shadow-card);}
+.mk-head{font-size:12px;font-weight:700;color:var(--blower);margin-bottom:6px;display:flex;align-items:center;gap:6px;}
+.mk-icon{font-size:16px;}
+.mk-desc{font-size:12px;color:var(--text-muted);line-height:1.5;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.alert{background:var(--critical-light);border:1px solid #e08080;}
+.callout-box.tip{background:var(--ok-light);border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.alert .callout-label{color:var(--critical);}
+.callout-box.tip .callout-label{color:var(--ok);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--filter);}.sev-item.mod .sev-label{color:var(--filter);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--critical);}.sev-item.crit .sev-label{color:var(--critical);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--critical);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--blower);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--blower);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.mistake-grid{grid-template-columns:1fr;}.al-row,.al-col-heads{grid-template-columns:1fr;}.al-col-heads{display:none;}.al-symptom{border-right:none;border-bottom:1px solid var(--gray-light);}.al-cell{border-right:none !important;border-bottom:1px solid var(--gray-light);}.al-cell:last-child{border-bottom:none;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-airflow-comfort.html">Airflow &amp; Comfort</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Home Has Poor Airflow</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Airflow &amp; Comfort</span>
+  </div>
+
+  <h1 class="article-title">Why Your Home Has Poor Airflow</h1>
+  <p class="article-subtitle">Poor HVAC airflow is invisible &#8212; its symptoms appear as uneven temperatures, frozen coils, furnace overheating, and whistling vents rather than an obvious mechanical failure. Whether the problem affects every register or only specific rooms, and which secondary symptom accompanies it, identifies the source before any panel is opened.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>System-wide weak airflow vs. room-specific weak airflow is the first split.</strong> If every register in the home is weak &#8212; the problem is at the equipment (blower, filter, or coil). If only certain rooms are weak &#8212; the problem is in the distribution (duct run, damper, or return path).</li>
+        <li>A clogged filter is the most common cause of system-wide airflow reduction. Replace it first. A filter that clogs frequently suggests too high a MERV rating for the duct system.</li>
+        <li>Whistling vents confirm high static pressure &#8212; air is being forced through a restriction. The source is almost always the return side: undersized return ducts, a blocked return grille, or a high-MERV filter.</li>
+        <li>AC coil freeze from poor airflow is frequently misdiagnosed as low refrigerant. The test: if airflow is weak at all registers and the filter is clogged &#8212; that is the freeze cause, not refrigerant.</li>
+        <li>Closing supply registers to "redirect" airflow to other rooms has the opposite effect: it raises static pressure system-wide and reduces total airflow everywhere.</li>
+        <li>Crushed or kinked flex duct in attics is the most common room-specific airflow cause &#8212; and entirely invisible from inside the home.</li>
+      </ul>
+    </div>
+
+    <h2 id="locator">Poor Airflow Source Locator</h2>
+    <p>Identify whether the problem is system-wide or room-specific. Then match the accompanying symptom. The combination identifies the specific source.</p>
+
+    <div class="airflow-locator">
+      <div class="al-header">
+        <h3>Symptom &#215; Location &#8212; Find the Source</h3>
+        <p>System-wide = all or most registers affected. Room-specific = one zone or a few rooms affected while others are normal.</p>
+      </div>
+      <div class="al-legend">
+        <div class="al-leg filter"><span class="al-leg-dot"></span>Filter / Static Pressure</div>
+        <div class="al-leg blower"><span class="al-leg-dot"></span>Blower Motor</div>
+        <div class="al-leg coil"><span class="al-leg-dot"></span>Evaporator Coil</div>
+        <div class="al-leg duct"><span class="al-leg-dot"></span>Duct Run / Damper</div>
+        <div class="al-leg return"><span class="al-leg-dot"></span>Return Air Path</div>
+      </div>
+      <div class="al-col-heads">
+        <div class="al-col-head">Symptom</div>
+        <div class="al-col-head">&#128308; System-Wide (All Registers Weak)</div>
+        <div class="al-col-head">&#128308; Room-Specific (Some Registers Normal)</div>
+      </div>
+
+      <div class="al-rows">
+
+        <div class="al-row">
+          <div class="al-symptom">
+            <div class="al-symp-icon">&#128168;</div>
+            <div class="al-symp-label">Simply Weak Flow &#8212; No Other Symptom</div>
+            <div class="al-symp-sub">Airflow noticeably reduced; system runs longer; no noise, frost, or shutdowns</div>
+          </div>
+          <div class="al-cell">
+            <div class="al-cause-tag filter">&#128268; Filter or Coil Restriction</div>
+            <div class="al-cell-text">System-wide uniform weak flow with no other symptoms = filter is the first suspect. Replace immediately. If flow improves, the filter was the cause. If it doesn't, the evaporator coil may have a dirt layer restricting airflow through the air handler. Also check: high-MERV filter in a duct system not rated for it.</div>
+          </div>
+          <div class="al-cell">
+            <div class="al-cause-tag duct">&#128268; Crushed / Kinked Flex Duct</div>
+            <div class="al-cell-text">Room-specific weak flow with no accompanying noise or system symptoms = duct obstruction is the most likely cause. Flex duct in attics is frequently crushed at support hangers, kinked at turns, or partially disconnected. Confirm other areas of the home have normal flow before suspecting the equipment.</div>
+          </div>
+        </div>
+
+        <div class="al-row">
+          <div class="al-symptom">
+            <div class="al-symp-icon">&#128165;&#127755;</div>
+            <div class="al-symp-label">Whistling or Hissing at Vents</div>
+            <div class="al-symp-sub">High-pitched noise at registers or from the return grille; increases with blower speed</div>
+          </div>
+          <div class="al-cell">
+            <div class="al-cause-tag filter">&#9889; High Static Pressure &#8212; Return Side</div>
+            <div class="al-cell-text">Whistling that affects all registers confirms the system is fighting excessive resistance. The restriction is almost always on the return side &#8212; where the filter lives. Clogged filter, undersized return duct, blocked return grille, or a high-MERV filter in a system not designed for it. Replace filter first, then check return grille clearance.</div>
+          </div>
+          <div class="al-cell">
+            <div class="al-cause-tag duct">&#128268; Register Size / Duct Velocity</div>
+            <div class="al-cell-text">Whistling at specific registers only &#8212; while others are quiet &#8212; indicates either an undersized register face causing high air velocity, or a damper on that branch that is only partially open. Check that dampers on accessible duct branches are fully open and that register faces are not obstructed.</div>
+          </div>
+        </div>
+
+        <div class="al-row critical-row">
+          <div class="al-symptom">
+            <div class="al-symp-icon">&#10052;&#127777;&#65039;</div>
+            <div class="al-symp-label">AC Coil Freezing / Frost on Lines</div>
+            <div class="al-symp-sub">Ice on the indoor coil or on the refrigerant suction line; flow drops further as ice builds</div>
+          </div>
+          <div class="al-cell">
+            <div class="al-cause-tag coil">&#9888; Low Airflow Freeze &#8212; Check Filter First</div>
+            <div class="al-cell-text"><strong>This is the most misdiagnosed airflow symptom.</strong> An AC coil freeze caused by low airflow is not a refrigerant problem. The evaporator coil requires a minimum airflow to absorb heat. When airflow drops below this minimum &#8212; from a clogged filter, dirty coil, or weak blower &#8212; coil temperature drops below 32°F and freezes. Replace the filter and let the coil thaw (2&#8211;4 hours, system off) before restarting. If it refreezes after a clean filter &#8212; coil cleaning or blower evaluation needed.</div>
+          </div>
+          <div class="al-cell">
+            <div class="al-cause-tag duct">&#128268; Duct Restriction Near Air Handler</div>
+            <div class="al-cell-text">A coil freeze with only some registers affected suggests a major restriction near the air handler &#8212; a crushed flex connector, a closed main branch damper, or a return duct that is significantly undersized. The coil starves for airflow even though individual room ducts are intact. Inspect accessible ductwork at and near the air handler for restrictions.</div>
+          </div>
+        </div>
+
+        <div class="al-row">
+          <div class="al-symptom">
+            <div class="al-symp-icon">&#9728;&#127918;</div>
+            <div class="al-symp-label">Furnace Shuts Off Mid-Cycle (Overheating)</div>
+            <div class="al-symp-sub">Furnace starts, heats briefly, shuts down before setpoint; blower continues after shutdown</div>
+          </div>
+          <div class="al-cell">
+            <div class="al-cause-tag filter">&#9650; High-Limit Trip From Low Airflow</div>
+            <div class="al-cell-text">When airflow across the heat exchanger is insufficient, heat exchanger surface temperature rises until the high-limit switch trips and shuts the burner off. The blower continues to cool the exchanger. This cycle repeats until conditions are satisfied. Replace the filter first &#8212; a clogged filter is the most common cause. If limit trips continue after filter replacement, blower motor output or duct restriction is the next investigation.</div>
+          </div>
+          <div class="al-cell">
+            <div class="al-cause-tag return">&#128268; Return Air Deficiency</div>
+            <div class="al-cell-text">A room-specific return air problem &#8212; doors closed with no return path in that area &#8212; can create pressure imbalances that reduce flow through parts of the system, indirectly causing the heat exchanger to overheat. This is more common in homes where new rooms were added without return air planning.</div>
+          </div>
+        </div>
+
+        <div class="al-row">
+          <div class="al-symptom">
+            <div class="al-symp-icon">&#9881;&#65039;&#128374;</div>
+            <div class="al-symp-label">Blower Sounds Labored or Different</div>
+            <div class="al-symp-sub">Blower louder than before, humming at higher pitch, or noticeably slower than usual</div>
+          </div>
+          <div class="al-cell">
+            <div class="al-cause-tag blower">&#9881;&#65039; Blower Motor Degradation</div>
+            <div class="al-cell-text">A blower motor drawing excessive current from a failing capacitor &#8212; or motor windings degrading with age &#8212; delivers progressively less airflow. The motor may sound louder or different as it works harder against the same static pressure. This is a component-level failure &#8212; it won&#8217;t improve on its own. Capacitor replacement often restores full blower speed; winding failure requires motor replacement.</div>
+          </div>
+          <div class="al-cell">
+            <div class="al-cause-tag blower">&#9881;&#65039; Blower Wheel Debris</div>
+            <div class="al-cell-text">A blower wheel packed with dust reduces air volume and causes imbalance &#8212; increasing noise and reducing flow. If the sound change is accompanied by vibration and the airflow reduction is gradual over months &#8212; blower wheel debris is likely. Annual blower cleaning restores output and prevents bearing wear from imbalance vibration.</div>
+          </div>
+        </div>
+
+        <div class="al-row" style="border-bottom:none;">
+          <div class="al-symptom">
+            <div class="al-symp-icon">&#127968;&#127960;&#65039;</div>
+            <div class="al-symp-label">Consistent Dead Zone &#8212; One Area Always Weak</div>
+            <div class="al-symp-sub">Same room or area always receives inadequate airflow regardless of season or conditions</div>
+          </div>
+          <div class="al-cell">
+            <div class="al-cause-tag duct">&#128268; Distance / Duct Design</div>
+            <div class="al-cell-text">If the furthest room from the air handler consistently receives less airflow, the duct run is likely undersized relative to its distance. Friction resistance accumulates over long runs &#8212; the air that reaches the farthest register has less pressure than registers closer to the handler. Balancing dampers on nearer branches can divert more flow to distant rooms.</div>
+          </div>
+          <div class="al-cell">
+            <div class="al-cause-tag duct">&#128268; Disconnected or Blocked Duct</div>
+            <div class="al-cell-text">A room with consistently near-zero airflow that used to receive normal flow likely has a disconnected, completely crushed, or blocked duct. Inspect the attic or crawlspace above/below that room for a disconnected flex duct connection &#8212; one end pulled off the boot or the collar. This is common after any work was done in the attic.</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="al-footer">
+        <div class="al-footer-icon">&#128268;</div>
+        <div>
+          <h4>The Single-Room Test</h4>
+          <p>Walk the home and note which rooms have strong, normal, and weak flow from their supply registers. If even one room has strong flow &#8212; the equipment is working. The weak rooms have a duct or return path problem, not an equipment problem. This observation alone rules out blower and coil failure as the primary cause and directs the diagnostic to the distribution system.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="mistakes">Four Airflow Mistakes That Make Things Worse</h2>
+
+    <div class="mistake-grid">
+      <div class="mistake-card">
+        <div class="mk-head"><div class="mk-icon">&#10007;</div>Closing Supply Registers to Redirect Flow</div>
+        <div class="mk-desc">Closing registers raises system static pressure. The blower pushes the same volume against more resistance &#8212; total airflow drops and the open registers don&#8217;t gain meaningful improvement. Every closed register makes the problem worse system-wide.</div>
+      </div>
+      <div class="mistake-card">
+        <div class="mk-head"><div class="mk-icon">&#10007;</div>Installing a High-MERV Filter in an Undersized Return</div>
+        <div class="mk-desc">MERV 13 filters provide excellent filtration but create two to three times the static pressure of a MERV 8. In systems designed for MERV 8 &#8212; as most residential systems are &#8212; this upgrade alone can reduce airflow significantly and begin causing equipment stress.</div>
+      </div>
+      <div class="mistake-card">
+        <div class="mk-head"><div class="mk-icon">&#10007;</div>Assuming Coil Freeze Means Low Refrigerant</div>
+        <div class="mk-desc">The evaporator coil freezes when it can&#8217;t absorb heat fast enough &#8212; either from low refrigerant OR low airflow. A clogged filter is far more common than refrigerant loss. Replace the filter and let the coil thaw before calling for refrigerant service.</div>
+      </div>
+      <div class="mistake-card">
+        <div class="mk-head"><div class="mk-icon">&#10007;</div>Blocking Returns With Furniture</div>
+        <div class="mk-desc">Return air grilles need 12&#8211;18 inches of clearance. A sofa, bookcase, or curtain against the return grille reduces the total return area and raises static pressure as significantly as a partial filter clog. Check all return grille locations for furniture placement.</div>
+      </div>
+    </div>
+
+    <div class="callout-box alert">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Low Airflow Damages Equipment &#8212; Not Just Comfort</div>
+        <div class="callout-text">Sustained low airflow causes heat exchangers to overheat and crack (leading to carbon monoxide risk), evaporator coils to freeze and cause compressor damage from liquid refrigerant floodback, and blower motors to fail prematurely from prolonged high-static-pressure operation. Poor airflow is not a comfort inconvenience &#8212; it is an equipment safety issue that escalates over time.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Mild flow reduction in one room. Filter due for replacement. No equipment symptoms. Replace filter and monitor.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Multiple rooms affected. Whistling vents. Long runtimes. Replace filter, check returns. Schedule evaluation if persists.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">AC coil frosting. Furnace limit trips. System-wide weak flow after filter replacement. Professional service needed.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Repeated coil freeze, repeated furnace shutdowns, blower failure signs. Equipment damage accumulating. Emergency service.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"Every airflow call starts with the same two questions from me: is it system-wide or room-specific, and is the filter clean? System-wide with a clogged filter &#8212; I replace the filter and we&#8217;re usually done in 15 minutes. Room-specific with a clean filter &#8212; I&#8217;m going to the attic to look at the flex duct run serving that zone. Crushed flex at a hanger is the most common room-specific airflow problem I see, and it&#8217;s completely invisible from inside the house. The one that frustrates me most is the homeowner who installed a MERV 13 filter to improve air quality and then called me three months later because the AC keeps freezing. They spent good money on better filtration and ended up with equipment stress and no cooling. The filter was the right idea in the wrong system. Their return duct wasn&#8217;t sized for it. The fix was a MERV 8 filter and a bypass filter rack with more surface area &#8212; better filtration without the static pressure hit. Airflow is invisible. But if you know what the symptoms mean, you can usually find the source in 20 minutes."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Replace the air filter &#8212; always the first step for any airflow complaint</li>
+          <li>Walk the home and note which rooms have strong vs. weak airflow &#8212; confirms system-wide vs. room-specific</li>
+          <li>Check all return grilles for furniture or curtain blockage</li>
+          <li>Confirm all supply registers are open and unobstructed</li>
+          <li>Inspect accessible flex duct connections for disconnection or crushing</li>
+          <li>Note whether whistling occurs at all registers (static pressure) or only specific ones (local restriction)</li>
+          <li>If AC coil freezes: shut system off, replace filter, allow 2&#8211;4 hour thaw before restarting</li>
+          <li>Check that dampers on accessible duct branches are fully open</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>AC coil freeze that recurs after filter replacement &#8212; coil cleaning or blower evaluation</li>
+          <li>Furnace limit trips that continue after filter replacement &#8212; heat exchanger or blower evaluation</li>
+          <li>Static pressure measurement &#8212; requires a manometer to confirm return-side restriction</li>
+          <li>Blower motor capacitor testing and replacement</li>
+          <li>Evaporator coil cleaning &#8212; requires chemical cleaners and safe handling</li>
+          <li>Duct leakage testing and sealing</li>
+          <li>Airflow measurement with flow hood to confirm CFM delivery per zone</li>
+          <li>Duct design modifications or return air augmentation</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My airflow was fine last month and is suddenly weak everywhere. What happened?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A sudden system-wide airflow drop &#8212; when everything was recently fine &#8212; almost always has one cause: the filter. Filters clog suddenly rather than gradually when a higher-particle event occurs &#8212; seasonal shedding, post-construction dust, pet activity, or a dusty HVAC cleaning in the area. Check the filter immediately. If it&#8217;s heavily loaded, replace it and recheck airflow. The second most common cause of sudden system-wide airflow drop is an evaporator coil that has begun to freeze &#8212; which restricts flow progressively as ice builds. If the filter is clean and the system has been running in cooling mode, check the indoor coil for ice. The third cause: something has blocked the main return grille &#8212; a piece of furniture moved during rearranging, a rug that got pulled over the return floor grille, or a door that is now closing off the return path. All three of these are resolvable without a technician.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My upstairs rooms are always weak, but downstairs is fine. Is that normal or a problem?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Upstairs-specific weak airflow with normal downstairs airflow is one of the most common residential HVAC complaints &#8212; and it usually has a duct-side explanation rather than an equipment one. Because hot air rises and heat naturally concentrates upstairs, upstairs rooms have a higher cooling load than their duct size often accommodates. In many homes, the upstairs duct runs are longer than downstairs runs and the registers are sized the same &#8212; despite receiving less airflow pressure at the end of the run. Three things to check: (1) Confirm the dampers on accessible downstairs supply branches are partially throttled &#8212; you want to divert more airflow upstairs. Many installers set all dampers fully open, allowing the shorter downstairs runs to dominate. (2) Inspect the flex duct runs in the attic serving upstairs rooms for crushing or excessive sag between support hangers. Sagging flex creates a cup-shaped depression that blocks airflow. (3) Confirm there is an adequate return air path from upstairs &#8212; either a dedicated return register or door undercuts and transfer grilles. Without a return path, conditioned air supplied upstairs can&#8217;t circulate back to the system.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">I installed a MERV 13 filter and now my system seems to struggle. Should I go back to MERV 8?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; if the system was designed for MERV 8 and you&#8217;re experiencing reduced airflow, whistling vents, coil freeze, or longer runtimes since the upgrade, switching back to MERV 8 (or MERV 11 as an intermediate step) is the correct response. Most residential HVAC systems were designed with MERV 8 filter resistance in mind. A MERV 13 filter creates approximately 2&#8211;3 times the pressure drop of a MERV 8 &#8212; which is the equivalent of partially clogging the filter from day one. The filtration improvement is real, but the system wasn&#8217;t designed to deliver it without additional return surface area. Options if you want better filtration without equipment stress: (1) Switch to MERV 11, which provides meaningfully better filtration than MERV 8 with substantially less static pressure impact than MERV 13. (2) Ask a technician to install a larger-surface-area filter rack &#8212; a 4&#8221; media filter with more surface area provides MERV 13 equivalent filtration at MERV 8 equivalent pressure drop. (3) Add a standalone air purifier rather than trying to achieve high filtration through the HVAC system itself.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>The first split is system-wide vs. room-specific. System-wide weak flow = equipment-side problem (filter, blower, coil). Room-specific = distribution-side problem (duct run, damper, return path).</li>
+        <li>Replace the filter first, always. It is the most common cause of system-wide airflow reduction and the fastest check. If flow improves &#8212; the filter was the cause.</li>
+        <li>Whistling vents = high static pressure from return-side restriction. Check the filter and return grille clearance before anything else.</li>
+        <li>AC coil freeze is frequently misdiagnosed as low refrigerant. Replace the filter and let the coil thaw before calling for refrigerant service &#8212; low airflow is a far more common freeze cause.</li>
+        <li>Closing supply registers raises static pressure and reduces total airflow. It never improves airflow in other rooms &#8212; it only increases equipment stress.</li>
+        <li>Room-specific persistent weak flow that doesn&#8217;t resolve after filter replacement requires an inspection of the flex duct run in the attic or crawlspace serving that zone. Crushed or disconnected flex is invisible from inside the home.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">HVAC poor airflow</a>
+      <a href="#" class="tag-pill">weak airflow from vents</a>
+      <a href="#" class="tag-pill">AC airflow problems</a>
+      <a href="#" class="tag-pill">whistling HVAC vents</a>
+      <a href="#" class="tag-pill">furnace airflow restriction</a>
+      <a href="#" class="tag-pill">flex duct crushed airflow</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Airflow &amp; Comfort Guides</h3>
+    <div class="related-list">
+      <a href="hvac-return-air-uneven-temps.html" class="related-item">
+        <div><div class="related-item-title">Why Return Air Problems Cause Uneven Temperatures</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-one-room-hot-or-cold.html" class="related-item">
+        <div><div class="related-item-title">Why One Room Is Always Hot or Cold</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-farthest-room-worst-comfort.html" class="related-item">
+        <div><div class="related-item-title">Why the Farthest Room Has the Worst Comfort</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-freezes-up.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Freezes Up</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#locator">Poor Airflow Source Locator</a></li>
+      <li><a href="#mistakes">Mistakes That Make It Worse</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

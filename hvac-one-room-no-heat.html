@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why One Room or Zone Has No Heat While Others Do | HomeownersRepairGuide.com</title>
+<meta name="description" content="When one room or zone stays cold while the rest of the house heats normally, the furnace is almost never at fault. Heat is being produced — it's not being delivered. Here's how to find out why.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-one-room-no-heat.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-one-room-no-heat.html">
+<meta property="og:title" content="Why One Room or Zone Has No Heat While Others Do | HomeownersRepairGuide.com">
+<meta property="og:description" content="Heat is being produced but not delivered. Here's how to tell whether it's an airflow problem or a zoning control failure.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --airflow:#2a6b7a;--airflow-light:#e8f4f7;
+  --zoning:#5a2a7a;--zoning-light:#f0e8f8;
+  --freeze:#1a3a7a;--freeze-light:#e8f0f8;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Heat Delivery vs Zoning Fault Separator */
+.separator{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.sep-header{background:var(--navy);padding:18px 22px;}
+.sep-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.sep-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+/* Branch selector */
+.sep-branch-q{padding:16px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);}
+.sep-branch-q-text{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:12px;}
+.sep-branches{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.sep-branch{padding:14px 16px;border-radius:var(--radius-lg);border:2px solid;cursor:pointer;transition:all 0.15s;}
+.sep-branch.airflow{border-color:var(--airflow);background:var(--airflow-light);}
+.sep-branch.zoning{border-color:var(--zoning);background:var(--zoning-light);}
+.sep-branch-icon{font-size:22px;margin-bottom:6px;}
+.sep-branch-label{font-size:13px;font-weight:700;margin-bottom:4px;}
+.sep-branch.airflow .sep-branch-label{color:var(--airflow-dark,#1a4a55);}
+.sep-branch.zoning .sep-branch-label{color:var(--zoning);}
+.sep-branch-desc{font-size:11px;color:var(--text-muted);line-height:1.4;}
+/* Branch panels */
+.sep-panels{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--gray-light);}
+.sep-panel{border-right:1px solid var(--gray-light);}
+.sep-panel:last-child{border-right:none;}
+.sep-panel-head{padding:12px 16px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;border-bottom:1px solid var(--gray-light);}
+.sep-panel.airflow .sep-panel-head{background:rgba(42,107,122,0.08);color:var(--airflow);}
+.sep-panel.zoning .sep-panel-head{background:rgba(90,42,122,0.08);color:var(--zoning);}
+.sep-checks{display:flex;flex-direction:column;}
+.sep-check{padding:12px 16px;border-bottom:1px solid var(--gray-light);display:flex;gap:10px;align-items:flex-start;}
+.sep-check:last-child{border-bottom:none;}
+.sep-check-icon{font-size:15px;flex-shrink:0;margin-top:1px;}
+.sep-check-body{}
+.sep-check-signal{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:3px;}
+.sep-panel.airflow .sep-check-signal{color:var(--airflow);}
+.sep-panel.zoning .sep-check-signal{color:var(--zoning);}
+.sep-check-desc{font-size:12px;color:var(--text-body);line-height:1.5;}
+.sep-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.sep-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.sep-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.sep-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Cause detail cards */
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.detail-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.detail-card.airflow-type{border-top:3px solid var(--airflow);}
+.detail-card.zoning-type{border-top:3px solid var(--zoning);}
+.detail-card.freeze-type{border-top:3px solid var(--freeze);border:2px solid var(--freeze);}
+.dc-type{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;margin-bottom:6px;}
+.airflow-type .dc-type{color:var(--airflow);}
+.zoning-type .dc-type{color:var(--zoning);}
+.freeze-type .dc-type{color:var(--freeze);}
+.dc-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.dc-desc{font-size:12px;color:var(--text-muted);line-height:1.55;margin-bottom:8px;}
+.dc-fix{font-size:11px;font-weight:700;padding:3px 8px;border-radius:2px;display:inline-block;}
+.airflow-type .dc-fix{background:var(--airflow-light);color:var(--hvac-dark);}
+.zoning-type .dc-fix{background:var(--zoning-light);color:var(--zoning);}
+.freeze-type .dc-fix{background:var(--freeze-light);color:var(--freeze);}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.alert{background:#fde8e8;border:1px solid #e08080;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.alert .callout-label{color:#c0402a;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:#b07800;}.sev-item.mod .sev-label{color:#b07800;}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--freeze);}.sev-item.crit .sev-label{color:var(--freeze);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:2px solid var(--freeze);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.detail-grid{grid-template-columns:1fr;}.sep-panels{grid-template-columns:1fr;}.sep-panel{border-right:none !important;border-bottom:1px solid var(--gray-light);}.sep-branches{grid-template-columns:1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-airflow-comfort.html">Airflow &amp; Comfort</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why One Room or Zone Has No Heat</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Airflow &amp; Comfort</span>
+  </div>
+
+  <h1 class="article-title">Why One Room or Zone Has No Heat While Others Do</h1>
+  <p class="article-subtitle">When one room stays cold while the rest of the house heats normally, the furnace is almost never the problem. Heat is being produced &#8212; it&#8217;s not being delivered. The diagnostic split point is whether you have a zoned system with dampers, or a standard single-zone system.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>The furnace is not the problem.</strong> If other rooms heat normally, the furnace is producing heat correctly. The failure is in distribution &#8212; the heat isn&#8217;t getting to that room or zone.</li>
+        <li>The first diagnostic question: do you have a zoned system (multiple thermostats, motorized dampers)? If yes, zone control is the primary suspect. If no, airflow and duct distribution are.</li>
+        <li>Closing vents in other rooms to force heat to the cold room almost always makes the problem worse by increasing static pressure throughout the system</li>
+        <li>In non-zoned systems: check airflow strength, door position effect, and duct condition for the affected room</li>
+        <li>In zoned systems: a zone that produces no heat while other zones work normally usually indicates a failed damper, zone board fault, or wiring issue &#8212; not furnace or duct problems</li>
+        <li>Freeze risk is real when a room approaches 32°F in cold climates &#8212; don&#8217;t wait on evaluation if temperatures are dropping</li>
+      </ul>
+    </div>
+
+    <h2 id="separator">Heat Delivery vs. Zoning Fault Separator</h2>
+    <p>The first step is determining which of two fundamentally different problems you have. Your answer changes the entire diagnostic path.</p>
+
+    <div class="separator">
+      <div class="sep-header">
+        <h3>Step One: What Kind of System Do You Have?</h3>
+        <p>Identify your system type below &#8212; then read the corresponding diagnostic signals in the columns underneath.</p>
+      </div>
+
+      <div class="sep-branch-q">
+        <div class="sep-branch-q-text">Does your home have multiple thermostats that control different areas, or have you been told it has a &#8220;zoning system&#8221;?</div>
+        <div class="sep-branches">
+          <div class="sep-branch airflow">
+            <div class="sep-branch-icon">&#128268;</div>
+            <div class="sep-branch-label">No &#8212; Single Thermostat / Standard System</div>
+            <div class="sep-branch-desc">One thermostat controls the whole house. The furnace runs the same for every room. Cold room = airflow or duct distribution failure.</div>
+          </div>
+          <div class="sep-branch zoning">
+            <div class="sep-branch-icon">&#9881;&#65039;</div>
+            <div class="sep-branch-label">Yes &#8212; Zoned System with Multiple Thermostats</div>
+            <div class="sep-branch-desc">Separate thermostats control different areas via motorized dampers. Entire zone cold = damper, zone board, or sensor failure.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sep-panels">
+        <div class="sep-panel airflow">
+          <div class="sep-panel-head">&#128268; Non-Zoned: Airflow Distribution Signals</div>
+          <div class="sep-checks">
+            <div class="sep-check">
+              <div class="sep-check-icon">&#128207;</div>
+              <div class="sep-check-body">
+                <div class="sep-check-signal">Weak airflow at register</div>
+                <div class="sep-check-desc">Hold your hand at the cold room&#8217;s register. Noticeably less airflow than comparable rooms = branch duct restriction, kink, disconnection, or excessive run length.</div>
+              </div>
+            </div>
+            <div class="sep-check">
+              <div class="sep-check-icon">&#128682;</div>
+              <div class="sep-check-body">
+                <div class="sep-check-signal">Comfort improves when door opens</div>
+                <div class="sep-check-desc">Open the door fully, wait 5 minutes. Improvement = return-air restriction. The supply air is arriving but can&#8217;t complete the loop back to the return.</div>
+              </div>
+            </div>
+            <div class="sep-check">
+              <div class="sep-check-icon">&#9650;</div>
+              <div class="sep-check-body">
+                <div class="sep-check-signal">Near rooms are warmest, far rooms coldest</div>
+                <div class="sep-check-desc">Distance-correlated pattern = duct friction and static pressure routing heat to shorter, easier paths. The cold room&#8217;s duct run is losing too much pressure over its length.</div>
+              </div>
+            </div>
+            <div class="sep-check">
+              <div class="sep-check-icon">&#127963;&#65039;</div>
+              <div class="sep-check-body">
+                <div class="sep-check-signal">Started after attic work or remodel</div>
+                <div class="sep-check-desc">A duct was kinked, compressed, or disconnected during the work. Visually inspect the duct run to the affected room if attic access is available.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sep-panel zoning">
+          <div class="sep-panel-head">&#9881;&#65039; Zoned System: Control &amp; Damper Signals</div>
+          <div class="sep-checks">
+            <div class="sep-check">
+              <div class="sep-check-icon">&#128268;</div>
+              <div class="sep-check-body">
+                <div class="sep-check-signal">No airflow from zone registers at all</div>
+                <div class="sep-check-desc">Zero airflow when that zone&#8217;s thermostat calls = damper stuck in closed position, wiring fault to zone, or zone board not sending open command. Requires professional inspection.</div>
+              </div>
+            </div>
+            <div class="sep-check">
+              <div class="sep-check-icon">&#128268;</div>
+              <div class="sep-check-body">
+                <div class="sep-check-signal">Thermostat calls but nothing happens</div>
+                <div class="sep-check-desc">Zone thermostat shows a call for heat, the furnace may run, but no air reaches that zone. Zone controller, damper actuator, or low-voltage wiring to the damper has failed.</div>
+              </div>
+            </div>
+            <div class="sep-check">
+              <div class="sep-check-icon">&#9889;</div>
+              <div class="sep-check-body">
+                <div class="sep-check-signal">Other zones overheat when this zone calls</div>
+                <div class="sep-check-desc">Bypass damper not opening, or the zone controller is misrouting air. Common when one damper gets stuck and the system pressure must go somewhere else.</div>
+              </div>
+            </div>
+            <div class="sep-check">
+              <div class="sep-check-icon">&#128337;</div>
+              <div class="sep-check-body">
+                <div class="sep-check-signal">Zone worked, then suddenly stopped</div>
+                <div class="sep-check-desc">Sudden zone failure (not gradual decline) almost always points to a damper actuator failure, wiring fault, or zone board fault &#8212; not duct or furnace issues. Diagnosable without major work.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sep-footer">
+        <div class="sep-footer-icon">&#9888;&#65039;</div>
+        <div>
+          <h4>The Closing-Vents Trap &#8212; Applies to Both System Types</h4>
+          <p>Closing supply vents in warm rooms to force heat to the cold room raises static pressure throughout the system. In non-zoned systems this starves all rooms proportionally. In zoned systems it can damage bypass components. Neither approach redirects heat to the cold room. Open all vents and registers fully before any other diagnostic step.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="causes">Cause Detail by System Type</h2>
+
+    <div class="detail-grid">
+      <div class="detail-card airflow-type">
+        <div class="dc-type">Non-Zoned &#8212; Airflow</div>
+        <div class="dc-title">Kinked, Crushed, or Disconnected Flex Duct</div>
+        <div class="dc-desc">A single kink or disconnected joint can reduce airflow to that room by 50&#8211;100%. Most common after attic work. Check the duct run to the cold room visually if attic access is available.</div>
+        <div class="dc-fix">Inspect duct run &#8594; straighten or reconnect</div>
+      </div>
+      <div class="detail-card airflow-type">
+        <div class="dc-type">Non-Zoned &#8212; Airflow</div>
+        <div class="dc-title">Excessive Run Length or Undersized Branch</div>
+        <div class="dc-desc">The cold room is simply too far from the air handler, or was served by an undersized duct from the start. Warm air follows the path of least resistance to nearby rooms first.</div>
+        <div class="dc-fix">Professional duct assessment &#8594; resize or boost</div>
+      </div>
+      <div class="detail-card airflow-type">
+        <div class="dc-type">Non-Zoned &#8212; Return</div>
+        <div class="dc-title">No Return-Air Pathway</div>
+        <div class="dc-desc">Room is pressurized by supply air with no exit route back to the return. Room resists further airflow delivery. Improvement when door opens confirms this cause.</div>
+        <div class="dc-fix">Door undercut, transfer grille, or jump duct</div>
+      </div>
+      <div class="detail-card zoning-type">
+        <div class="dc-type">Zoned System &#8212; Damper</div>
+        <div class="dc-title">Stuck Closed or Failed Zone Damper</div>
+        <div class="dc-desc">Motorized dampers open and close on zone commands. A damper stuck in the closed position blocks airflow to the entire zone regardless of thermostat setting. Actuator failure is the most common cause.</div>
+        <div class="dc-fix">Professional damper inspection and replacement</div>
+      </div>
+      <div class="detail-card zoning-type">
+        <div class="dc-type">Zoned System &#8212; Controls</div>
+        <div class="dc-title">Zone Board Fault or Wiring Failure</div>
+        <div class="dc-desc">The zone control board sends open/close commands to dampers and on/off signals to the furnace for each zone. A failed board, blown fuse, or broken low-voltage wire produces a dead zone even though all other zones work.</div>
+        <div class="dc-fix">Professional zone board diagnosis and repair</div>
+      </div>
+      <div class="detail-card freeze-type">
+        <div class="dc-type">&#9888; Safety Risk</div>
+        <div class="dc-title">Freeze Risk in Cold Climates</div>
+        <div class="dc-desc">A room with no heat in cold weather can drop below 32°F, freezing exposed pipes or water supply lines in exterior walls. Don&#8217;t evaluate this at a leisurely pace during a cold snap &#8212; use a portable space heater as an interim measure while you diagnose.</div>
+        <div class="dc-fix">Interim heat source + urgent professional evaluation</div>
+      </div>
+    </div>
+
+    <div class="callout-box alert">
+      <div class="callout-icon">&#9889;</div>
+      <div class="callout-content">
+        <div class="callout-label">Replacing the Furnace Does Not Fix Distribution</div>
+        <div class="callout-text">If every other room heats normally, the furnace is functioning correctly. A new furnace delivers the same amount of warm air through the same duct system with the same distribution imbalances. The cold room will remain cold. Address the distribution cause &#8212; duct, return, or damper &#8212; before any equipment decision.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Minor</div></div>
+        <div class="sev-desc">Room noticeably cooler but well above freezing. Mild weather only. Investigate and schedule correction.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Room persistently cold during typical winter. Significant temperature gap. Professional evaluation needed.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Large temperature gap in cold snaps. No functional heat to room or zone. Comfort and equipment stress. Service promptly.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical &#8212; Freeze Risk</div></div>
+        <div class="sev-desc">Room approaching 32°F. Pipe freeze risk in cold climate. Use interim heat source immediately. Urgent service.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"When I get a call about one cold room, the first question I ask is: do you have a zoning system? Because if the answer is yes, the entire diagnostic path changes. With a standard system, I&#8217;m going to the attic with a flashlight. With a zoned system, I&#8217;m going straight to the zone board and the damper. A completely dead zone with zero airflow is almost never a duct problem &#8212; the damper didn&#8217;t open, or the zone board didn&#8217;t tell it to. Those are quick, diagnosable, fixable faults. The mistake I see most often is when someone with a zoned system has had three different contractors look at the furnace and the ducts &#8212; and nobody ever checked the zone controls. The furnace is fine. The ducts are fine. The damper for that zone has been stuck closed for two years."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Confirm all supply registers and return grilles are fully open and unobstructed</li>
+          <li>Compare airflow at cold room register vs. nearby rooms &#8212; note whether it&#8217;s weak or absent</li>
+          <li>Open the door fully and wait &#8212; note whether comfort improves</li>
+          <li>Check zone thermostat settings, batteries, and whether it shows an active call for heat</li>
+          <li>Inspect visible flex duct connections in accessible basement or attic for obvious separation</li>
+          <li>Deploy a space heater as interim protection if room is approaching freezing temperatures</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Zone board inspection, testing, and replacement</li>
+          <li>Damper actuator inspection, manual override testing, and replacement</li>
+          <li>Low-voltage wiring diagnosis for zone systems</li>
+          <li>Static pressure testing and airflow measurement for non-zoned systems</li>
+          <li>Duct resizing, rerouting, or new branch duct installation</li>
+          <li>Transfer grille or jump duct installation for return restriction</li>
+          <li>Any situation with freeze risk &#8212; prioritize urgent professional service</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My thermostat shows it&#8217;s calling for heat but one zone stays cold. What&#8217;s happening?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">This is a zoning system fault pattern &#8212; specifically the zone is calling but the damper is not opening or the furnace is not receiving a run signal for that zone. Three common causes: (1) The damper actuator for that zone has failed. The zone controller sends an open command, but the actuator motor is burned out and the damper stays closed. (2) The zone control board has a fault on that zone&#8217;s output. The board receives the thermostat call but doesn&#8217;t relay it to the damper or furnace. (3) A wiring fault &#8212; broken or disconnected low-voltage wire &#8212; between the zone board and the thermostat or damper. All three require a technician with a multimeter and familiarity with zone control systems. Have the zone board model number ready when you call &#8212; it will help them prepare.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My addition always stays cold in winter. What&#8217;s different about additions?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Additions are among the most common single-room heating failures for three reasons. First, they are almost always the farthest point from the original air handler, meaning the longest, friction-highest duct run serves them. Second, many additions were connected to the existing duct system without a proper load calculation &#8212; the original system was sized for the original house, and the addition was simply tapped off an existing duct without verifying the system had capacity for the additional square footage. Third, additions typically have more exterior wall surface relative to their size, increasing heat loss. The combination of maximum duct friction, potentially undersized supply, and high heat loss makes additions the most challenging single-room heating scenario. A professional assessment that evaluates both the duct delivery and the thermal load of the addition is the correct starting point.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I boost airflow to a cold room with an inline duct booster fan?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Duct booster fans are a common DIY solution that sometimes works and sometimes doesn&#8217;t, depending on the cause. If the cold room problem is caused by duct friction or run length &#8212; an adequate duct that simply loses too much pressure over distance &#8212; a booster fan in the duct run to that room can meaningfully improve delivery. However, if the problem is a kinked or collapsed duct, a booster fan installed before the kink won&#8217;t help. If the problem is return-air restriction, a booster fan makes the pressure imbalance worse. And booster fans require installation in an accessible duct section, proper control wiring, and add maintenance obligations. They are a reasonable option for distance-related friction loss in a duct that is otherwise in good condition, but they are not a substitute for diagnosing and correcting the actual cause.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>When one room stays cold while others heat normally, the furnace is producing heat correctly. The problem is distribution &#8212; heat is not reaching that room or zone.</li>
+        <li>The first diagnostic question: do you have a zoned system? If yes, zone board and damper are the primary suspects. If no, duct distribution is the primary suspect.</li>
+        <li>For non-zoned systems: check airflow strength, test the door-open effect, and look at the duct run for the affected room &#8212; especially if any work was recently done in the attic.</li>
+        <li>For zoned systems: a completely dead zone (no airflow at all) with other zones working is almost always a damper actuator failure, zone board fault, or wiring issue &#8212; not a furnace or duct problem.</li>
+        <li>Closing vents in warm rooms does not redirect heat to cold rooms. It raises static pressure and starves all rooms proportionally.</li>
+        <li>When room temperatures approach freezing in cold climates, deploy a portable space heater as an interim measure while arranging service. Freeze risk is real and the timeline is short.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">one room no heat</a>
+      <a href="#" class="tag-pill">zone not heating</a>
+      <a href="#" class="tag-pill">HVAC zone damper stuck</a>
+      <a href="#" class="tag-pill">room cold furnace working</a>
+      <a href="#" class="tag-pill">addition no heat</a>
+      <a href="#" class="tag-pill">zone thermostat calling no heat</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Airflow &amp; Comfort Guides</h3>
+    <div class="related-list">
+      <a href="hvac-one-room-hot-or-cold.html" class="related-item">
+        <div><div class="related-item-title">Why One Room Is Always Hot or Cold</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-flex-duct-poor-design.html" class="related-item">
+        <div><div class="related-item-title">Why Your Duct Design Is Making Rooms Uncomfortable</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-closing-doors-temperature.html" class="related-item">
+        <div><div class="related-item-title">Why Closing Bedroom Doors Causes Temperature Problems</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-zoning-temperature-problems.html" class="related-item">
+        <div><div class="related-item-title">Why Zoning Sometimes Makes Temperature Problems Worse</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#separator">Heat Delivery vs. Zoning Separator</a></li>
+      <li><a href="#causes">Cause Detail by System Type</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

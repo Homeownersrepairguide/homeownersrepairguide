@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your Heat Pump Is Frozen | HomeownersRepairGuide.com</title>
+<meta name="description" content="Heat pumps routinely frost — but should defrost automatically. How the ice looks and whether the defrost cycle runs tells you whether it's normal frost management or a refrigerant, airflow, or control system failure.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-heat-pump-frozen.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-heat-pump-frozen.html">
+<meta property="og:title" content="Why Your Heat Pump Is Frozen | HomeownersRepairGuide.com">
+<meta property="og:description" content="Light frost that defrosts is normal. A completely iced coil that doesn't defrost is not. The ice pattern and defrost behavior together identify the cause.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --normal:#2a7a2a;--normal-light:#eaf5ea;
+  --airflow:#b07800;--airflow-light:#fff8e6;
+  --refrig:#5a2a7a;--refrig-light:#f0e8f5;
+  --defrost:#2a5a7a;--defrost-light:#e8f0f5;
+  --critical:#c0402a;--critical-light:#fde8e8;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Freeze Pattern & Defrost Behavior Identifier */
+.freeze-id{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.fi-header{background:var(--navy);padding:18px 22px;}
+.fi-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.fi-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.fi-legend{display:flex;gap:12px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.fi-leg{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;}
+.fi-leg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.fi-leg.normal{color:var(--normal);}.fi-leg.normal .fi-leg-dot{background:var(--normal);}
+.fi-leg.airflow{color:var(--airflow);}.fi-leg.airflow .fi-leg-dot{background:var(--airflow);}
+.fi-leg.refrig{color:var(--refrig);}.fi-leg.refrig .fi-leg-dot{background:var(--refrig);}
+.fi-leg.defrost{color:var(--defrost);}.fi-leg.defrost .fi-leg-dot{background:var(--defrost);}
+.fi-leg.critical{color:var(--critical);}.fi-leg.critical .fi-leg-dot{background:var(--critical);}
+/* Grid */
+.fi-col-heads{display:grid;grid-template-columns:175px 1fr 1fr;border-bottom:2px solid var(--gray-light);}
+.fi-col-head{padding:10px 12px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;border-right:1px solid var(--gray-light);}
+.fi-col-head:last-child{border-right:none;}
+.fi-col-head:nth-child(1){background:var(--cream-dark);color:var(--text-muted);}
+.fi-col-head:nth-child(2){background:var(--defrost-light);color:var(--defrost);}
+.fi-col-head:nth-child(3){background:var(--critical-light);color:var(--critical);}
+/* Rows */
+.fi-rows{display:flex;flex-direction:column;}
+.fi-row{display:grid;grid-template-columns:175px 1fr 1fr;border-bottom:1px solid var(--gray-light);}
+.fi-row:last-child{border-bottom:none;}
+.fi-row.critical-row{border:2px solid var(--critical);}
+.fi-ice{padding:13px 12px;background:var(--cream-dark);border-right:1px solid var(--gray-light);display:flex;flex-direction:column;justify-content:center;}
+.fi-ice-icon{font-size:20px;margin-bottom:4px;}
+.fi-ice-label{font-size:11px;font-weight:700;color:var(--navy);margin-bottom:3px;line-height:1.3;}
+.fi-ice-sub{font-size:10px;color:var(--text-muted);line-height:1.35;}
+.fi-cell{padding:12px 13px;border-right:1px solid var(--gray-light);font-size:12px;}
+.fi-cell:last-child{border-right:none;}
+.fi-cause-tag{font-size:10px;font-weight:700;padding:3px 7px;border-radius:20px;margin-bottom:5px;display:inline-block;}
+.fi-cause-tag.normal{background:var(--normal-light);color:var(--normal);}
+.fi-cause-tag.airflow{background:var(--airflow-light);color:var(--airflow);}
+.fi-cause-tag.refrig{background:var(--refrig-light);color:var(--refrig);}
+.fi-cause-tag.defrost{background:var(--defrost-light);color:var(--defrost);}
+.fi-cause-tag.critical{background:var(--critical-light);color:var(--critical);}
+.fi-cell-text{color:var(--text-muted);line-height:1.5;}
+.fi-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.fi-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.fi-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.fi-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Normal frost box */
+.normal-frost{background:var(--normal-light);border:1px solid #80c080;border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.nf-icon{font-size:20px;flex-shrink:0;margin-top:2px;}
+.nf-title{font-size:12px;font-weight:700;color:var(--normal);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:5px;}
+.nf-text{font-size:14px;color:var(--text-body);line-height:1.6;}
+/* Cause detail rows */
+.cause-rows{display:flex;flex-direction:column;gap:11px;margin:24px 0;}
+.cause-row{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 18px;box-shadow:var(--shadow-card);display:flex;gap:12px;align-items:flex-start;}
+.cause-row.airflow-t{border-left:4px solid var(--airflow);}
+.cause-row.refrig-t{border-left:4px solid var(--refrig);}
+.cause-row.defrost-t{border-left:4px solid var(--defrost);}
+.cause-row.critical-t{border-left:4px solid var(--critical);}
+.cr-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.cr-body{flex:1;}
+.cr-title{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.cr-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:2px;margin-left:7px;display:inline-block;vertical-align:middle;}
+.airflow-t .cr-badge{background:var(--airflow-light);color:var(--airflow);}
+.refrig-t .cr-badge{background:var(--refrig-light);color:var(--refrig);}
+.defrost-t .cr-badge{background:var(--defrost-light);color:var(--defrost);}
+.critical-t .cr-badge{background:var(--critical-light);color:var(--critical);}
+.cr-desc{font-size:12px;color:var(--text-muted);line-height:1.5;}
+/* Never do list */
+.never-list{background:var(--critical-light);border:1px solid #e08080;border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;}
+.never-head{display:flex;align-items:center;gap:8px;margin-bottom:12px;}
+.never-icon{font-size:20px;}
+.never-title{font-size:13px;font-weight:700;color:var(--critical);text-transform:uppercase;letter-spacing:0.07em;}
+.never-items{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.never-items li{font-size:13px;color:var(--text-body);line-height:1.45;display:flex;gap:8px;}
+.never-items li::before{content:'\2717';color:var(--critical);font-weight:700;flex-shrink:0;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--airflow-light);border:1px solid #f0c040;}
+.callout-box.tip{background:var(--normal-light);border:1px solid #80c080;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--airflow);}
+.callout-box.tip .callout-label{color:var(--normal);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--airflow);}.sev-item.mod .sev-label{color:var(--airflow);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--critical);}.sev-item.crit .sev-label{color:var(--critical);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--critical);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--critical);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--critical);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.fi-row,.fi-col-heads{grid-template-columns:1fr;}.fi-col-heads{display:none;}.fi-ice{border-right:none;border-bottom:1px solid var(--gray-light);}.fi-cell{border-right:none !important;border-bottom:1px solid var(--gray-light);}.fi-cell:last-child{border-bottom:none;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-furnace-heating.html">Furnace &amp; Heating</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your Heat Pump Is Frozen</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Furnace &amp; Heating</span>
+  </div>
+
+  <h1 class="article-title">Why Your Heat Pump Is Frozen</h1>
+  <p class="article-subtitle">Heat pumps routinely produce frost on the outdoor coil &#8212; and are designed to remove it automatically with a defrost cycle. The problem isn&#8217;t frost itself. It&#8217;s when ice accumulates faster than the defrost system can remove it. How much ice is present and whether the defrost cycle is running together identify the cause.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Light frost that defrosts normally is not a problem.</strong> Heat pumps routinely frost in cold or humid weather. The defrost cycle is designed to remove this frost automatically every 30&#8211;90 minutes. A frosted coil that clears is normal operation.</li>
+        <li>A coil that is completely encased in solid ice &#8212; especially if the ice extends into the fan blades &#8212; is never normal and always indicates a system failure.</li>
+        <li>Whether the defrost cycle is running is the second critical observation. Frost + defrost running = airflow or refrigerant issue. Frost + no defrost = defrost control board or sensor failure.</li>
+        <li>Defrost produces steam, an outdoor fan that temporarily stops, and a brief warm-air-from-outdoor-unit appearance &#8212; all of which are normal and frequently mistaken for a malfunction.</li>
+        <li>Ice that returns quickly after a successful defrost &#8212; within 30 minutes &#8212; indicates a refrigerant charge problem or metering device restriction causing the coil to stay below freezing even after clearing.</li>
+        <li>Never chip or break ice off the coil, pour hot water on it, or attempt to force the system into defrost manually. Coil tubes can be deformed by expanding ice and punctured by physical removal attempts.</li>
+      </ul>
+    </div>
+
+    <div class="normal-frost">
+      <div class="nf-icon">&#10052;&#65039;</div>
+      <div>
+        <div class="nf-title">Normal Frost vs. Abnormal Ice &#8212; Know the Difference First</div>
+        <div class="nf-text">Light frost covering part or all of the coil fins in cold or humid weather is normal and expected. The heat pump draws heat from outdoor air &#8212; which causes moisture in the air to condense and freeze on the coil. The defrost cycle (fan stops, refrigerant reverses) clears this frost every 30&#8211;90 minutes. After defrost you may see steam and hear the system sound different briefly &#8212; this is all correct operation. <strong>Abnormal: solid ice several inches thick, ice extending into fan blades, ice completely blocking airflow, or ice that returns minutes after defrost.</strong></div>
+      </div>
+    </div>
+
+    <h2 id="identifier">Freeze Pattern &amp; Defrost Behavior Identifier</h2>
+    <p>Observe two things: how much ice is present, and whether the defrost cycle is running. The combination of these two observations identifies the cause category.</p>
+
+    <div class="freeze-id">
+      <div class="fi-header">
+        <h3>Ice Amount &#8215; Defrost Behavior &#8212; Find Your Combination</h3>
+        <p>The defrost cycle: outdoor fan stops, you may hear the system sound different, steam appears. This runs for 2&#8211;10 minutes every 30&#8211;90 minutes in cold weather. Look for this before concluding the defrost isn&#8217;t running.</p>
+      </div>
+      <div class="fi-legend">
+        <div class="fi-leg normal"><span class="fi-leg-dot"></span>Normal Operation</div>
+        <div class="fi-leg airflow"><span class="fi-leg-dot"></span>Airflow Restriction</div>
+        <div class="fi-leg refrig"><span class="fi-leg-dot"></span>Refrigerant Issue</div>
+        <div class="fi-leg defrost"><span class="fi-leg-dot"></span>Defrost System Fault</div>
+        <div class="fi-leg critical"><span class="fi-leg-dot"></span>Critical &#8212; Shut Down</div>
+      </div>
+      <div class="fi-col-heads">
+        <div class="fi-col-head">Ice Pattern</div>
+        <div class="fi-col-head">&#10003; Defrost Cycle Running</div>
+        <div class="fi-col-head">&#10007; Defrost Not Running</div>
+      </div>
+
+      <div class="fi-rows">
+
+        <div class="fi-row">
+          <div class="fi-ice">
+            <div class="fi-ice-icon">&#10027;</div>
+            <div class="fi-ice-label">Light Frost Only</div>
+            <div class="fi-ice-sub">Thin frost on coil fins; airflow not blocked; clears during defrost</div>
+          </div>
+          <div class="fi-cell">
+            <div class="fi-cause-tag normal">&#10003; Normal Operation</div>
+            <div class="fi-cell-text">Light frost that defrosts normally is the designed operating pattern for cold weather. No action needed. Observe over the next few defrost cycles to confirm the coil is clearing completely each time.</div>
+          </div>
+          <div class="fi-cell">
+            <div class="fi-cause-tag defrost">&#9201; Defrost Sensor / Timing</div>
+            <div class="fi-cell-text">Light frost with no defrost running may indicate the defrost timer or coil temperature sensor has not triggered yet &#8212; or is slightly out of calibration. Observe for a full 90-minute window before concluding defrost is absent.</div>
+          </div>
+        </div>
+
+        <div class="fi-row">
+          <div class="fi-ice">
+            <div class="fi-ice-icon">&#10052;</div>
+            <div class="fi-ice-label">Partial Coil Freeze</div>
+            <div class="fi-ice-sub">Half or more of coil iced; some airflow still present; heating reduced</div>
+          </div>
+          <div class="fi-cell">
+            <div class="fi-cause-tag airflow">&#128268; Airflow Restriction</div>
+            <div class="fi-cell-text">Defrost running but coil still partially frozen between cycles = insufficient outdoor airflow. Debris, leaves, snow accumulation around the unit, or a failing condenser fan motor. Check clearances and clean debris from the unit base and sides. If fan is turning slowly or not at all &#8212; fan motor or capacitor failure.</div>
+          </div>
+          <div class="fi-cell">
+            <div class="fi-cause-tag defrost">&#128268; Defrost Sensor Drift</div>
+            <div class="fi-cell-text">Partial freeze without defrost running = defrost sensor that is reading the coil as warmer than it actually is. The sensor has drifted out of calibration &#8212; no defrost is triggered until ice is severe. Defrost sensor replacement is a professional repair.</div>
+          </div>
+        </div>
+
+        <div class="fi-row">
+          <div class="fi-ice">
+            <div class="fi-ice-icon">&#10052;&#10052;</div>
+            <div class="fi-ice-label">Coil Fully Frozen</div>
+            <div class="fi-ice-sub">Entire coil solid ice; minimal airflow through unit; significant heating loss</div>
+          </div>
+          <div class="fi-cell">
+            <div class="fi-cause-tag refrig">&#128167; Low Refrigerant / Restriction</div>
+            <div class="fi-cell-text">Full freeze with defrost running = refrigerant charge is low or the metering device is restricting flow. Low suction pressure drops coil temperature far below freezing &#8212; defrost runs but can&#8217;t fully clear the coil before ice reforms. The interval between full freeze events shortens over time. Refrigerant leak diagnosis and repair needed.</div>
+          </div>
+          <div class="fi-cell">
+            <div class="fi-cause-tag defrost">&#128268; Defrost Board Failure</div>
+            <div class="fi-cell-text">Full freeze with no defrost = the defrost control board is not initiating the defrost sequence. The board receives sensor inputs but does not signal the reversing valve. This is a complete defrost control failure. The heat pump will continue running and worsening ice accumulation until the fan is blocked. Professional board replacement required.</div>
+          </div>
+        </div>
+
+        <div class="fi-row critical-row">
+          <div class="fi-ice">
+            <div class="fi-ice-icon">&#9888;&#65039;&#10052;</div>
+            <div class="fi-ice-label">Ice Extending to Fan / Cabinet</div>
+            <div class="fi-ice-sub">Ice into fan blades, fan shroud, or several inches up the cabinet sides</div>
+          </div>
+          <div class="fi-cell critical-cell" style="border-right:1px solid var(--gray-light);">
+            <div class="fi-cause-tag critical">&#9888; Critical &#8212; Shut Down Immediately</div>
+            <div class="fi-cell-text">Ice reaching fan blades creates immediate fan motor overload risk &#8212; the blades contact the ice and the motor stalls, overheats, and fails. Shut the system off at the thermostat. Allow the ice to melt naturally (do not chip). Call for emergency service. Compressor damage from liquid refrigerant floodback is also a risk at this stage.</div>
+          </div>
+          <div class="fi-cell">
+            <div class="fi-cause-tag critical">&#9888; Critical &#8212; Both Refrigerant and Defrost Failed</div>
+            <div class="fi-cell-text">Severe ice with no defrost = both the refrigerant system and defrost system have failed simultaneously, or a single catastrophic event (compressor failure, reversing valve failure) has disabled both. Do not operate. Emergency service required.</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="fi-footer">
+        <div class="fi-footer-icon">&#9201;</div>
+        <div>
+          <h4>Watch for a Full 90 Minutes Before Concluding Defrost Is Absent</h4>
+          <p>Defrost cycles are initiated by time and temperature together &#8212; typically after 30&#8211;90 minutes of compressor runtime when the coil temperature drops below a threshold. If you check the unit and the coil is frosted but the fan is running &#8212; watch for the fan to stop temporarily (defrost starting) over the next 90 minutes before concluding the defrost system has failed. Also: defrost produces steam and a brief warm-air effect from the outdoor unit. This is normal and frequently triggers homeowner alarm calls.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="causes">The Four Root Cause Categories</h2>
+
+    <div class="cause-rows">
+      <div class="cause-row airflow-t">
+        <div class="cr-icon">&#128268;</div>
+        <div class="cr-body">
+          <div class="cr-title">Outdoor Airflow Restriction <span class="cr-badge">Most Common</span></div>
+          <div class="cr-desc">The outdoor coil must exchange heat with outdoor air &#8212; when airflow is restricted, coil temperature drops further below ambient and frost accumulates faster than defrost can remove it. Common airflow restrictions: debris, leaves, or grass clippings packed against the coil base; snow accumulation around the unit; the unit placed too close to a fence or wall limiting air circulation; or a failing condenser fan motor that is not moving adequate air volume. Annual clearance inspection and coil cleaning prevent most airflow-related freeze events.</div>
+        </div>
+      </div>
+      <div class="cause-row refrig-t">
+        <div class="cr-icon">&#128167;</div>
+        <div class="cr-body">
+          <div class="cr-title">Low Refrigerant Charge or Metering Restriction <span class="cr-badge">Refrigerant</span></div>
+          <div class="cr-desc">Low refrigerant reduces suction pressure, which drops coil surface temperature far below the point where frost can be managed by normal defrost cycles. Ice forms rapidly, defrosts partially, then returns quickly. The pattern is progressive &#8212; intervals between freeze events shorten as charge decreases. A metering device restriction produces the same low-suction-pressure symptom. Both require professional refrigerant gauges to diagnose. Refrigerant leaks must be found and repaired before recharging.</div>
+        </div>
+      </div>
+      <div class="cause-row defrost-t">
+        <div class="cr-icon">&#9201;</div>
+        <div class="cr-body">
+          <div class="cr-title">Defrost System Fault <span class="cr-badge">Board / Sensor / Valve</span></div>
+          <div class="cr-desc">The defrost system consists of a control board that monitors coil temperature and compressor runtime, a defrost sensor on the coil, and the reversing valve that temporarily switches refrigerant flow direction. A failed defrost board won&#8217;t initiate defrost regardless of conditions. A sensor that has drifted out of calibration may not trigger defrost until ice is severe. A reversing valve that is sticking will prevent the system from transitioning into defrost mode even when the board commands it. Each of these requires professional diagnosis to separate.</div>
+        </div>
+      </div>
+      <div class="cause-row airflow-t">
+        <div class="cr-icon">&#127968;</div>
+        <div class="cr-body">
+          <div class="cr-title">Indoor Airflow Issues <span class="cr-badge">Filter / Blower</span></div>
+          <div class="cr-desc">A severely clogged indoor filter or failing indoor blower reduces the heat the system can extract from the home, which reduces the thermal load the refrigerant can carry. When refrigerant returns to the outdoor coil carrying less heat &#8212; coil temperature drops lower than normal and frost accumulates faster. This is less common than outdoor airflow restriction but produces the same freeze pattern. Check and replace the indoor filter first on any heat pump freeze call.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="never-list">
+      <div class="never-head">
+        <div class="never-icon">&#9888;&#65039;</div>
+        <div class="never-title">Never Do &#8212; Actions That Damage the System</div>
+      </div>
+      <ul class="never-items">
+        <li>Chip, chisel, or break ice off the outdoor coil &#8212; coil tubes are thin copper and easily punctured</li>
+        <li>Pour hot water on a frozen coil &#8212; thermal shock to refrigerant fittings and sudden pressure changes can damage components</li>
+        <li>Use a heat gun or hair dryer on any part of the refrigerant circuit</li>
+        <li>Attempt to force the system into defrost mode by cycling the thermostat rapidly</li>
+        <li>Run the system when ice has reached the fan blades &#8212; fan motor overload and compressor floodback risk</li>
+        <li>Open refrigerant line connections to check charge</li>
+      </ul>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Light frost that defrosts completely every cycle. Heating performance normal. Monitor over the season.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Partial coil freeze between cycles. Reduced heating. Defrost running. Check filter and clearances. Schedule evaluation.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Complete coil freeze or ice returning rapidly after defrost. Refrigerant, sensor, or board fault. Service needed now.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Ice in fan blades, no defrost, no heating. Shut down. Fan motor and compressor at immediate risk. Emergency service.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The two questions I ask on every heat pump freeze call are: how much ice, and is the defrost running? If I see partial frost and the fan is stopping every 30&#8211;45 minutes for a few minutes &#8212; that&#8217;s defrost working. I&#8217;m looking at airflow next. Is there debris around the unit? Is the fan moving adequate air? Is the indoor filter clean? If the coil is fully encased and I don&#8217;t see any defrost cycles at all over a 90-minute window &#8212; I&#8217;m going straight to the defrost board and the defrost sensor. The one people misread most is the steam. Homeowner calls, says there&#8217;s smoke coming from the outdoor unit. That&#8217;s defrost. The refrigerant reverses, the auxiliary heat strip may engage briefly to prevent cold air indoors, and the ice melts &#8212; producing steam. That&#8217;s a functioning system doing exactly what it&#8217;s designed to do. The one I take most seriously is ice in the fan. Once ice reaches the blades, a service call becomes potentially a full outdoor unit repair if the fan motor burns out or the compressor floods on liquid refrigerant during the thaw."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Replace the indoor air filter &#8212; always the first step</li>
+          <li>Clear debris, leaves, and snow from around the outdoor unit &#8212; maintain 18&#8211;24 inches of clearance</li>
+          <li>Observe whether the outdoor fan stops periodically (defrost) &#8212; watch for a full 90-minute window</li>
+          <li>Note whether steam appears during fan-stop periods (normal defrost)</li>
+          <li>Note how much ice is present &#8212; light frost vs. partial vs. complete encasement vs. in fan blades</li>
+          <li>Note whether ice returns quickly after a defrost cycle (within 30 minutes)</li>
+          <li>Check whether auxiliary/emergency heat is running instead of heat pump mode</li>
+          <li>If ice reaches fan blades: shut off the system at the thermostat immediately</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Any complete coil freeze that doesn&#8217;t resolve after clearing debris and replacing filter</li>
+          <li>Ice returning within 30 minutes of defrost &#8212; refrigerant charge diagnosis</li>
+          <li>Defrost cycle never initiating &#8212; sensor, board, or reversing valve diagnosis</li>
+          <li>Condenser fan not running or running slowly &#8212; motor or capacitor replacement</li>
+          <li>Refrigerant gauges &#8212; suction and discharge pressure testing</li>
+          <li>Defrost board and sensor testing and replacement</li>
+          <li>Any ice in fan blades &#8212; shut down first, then call for emergency service</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My heat pump has steam coming from the outdoor unit and the fan stopped. Is something wrong?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">No &#8212; what you&#8217;re describing is a normal defrost cycle. Heat pumps initiate defrost by reversing refrigerant flow, which temporarily directs hot refrigerant gas through the outdoor coil instead of cold refrigerant. The outdoor fan stops (to avoid blowing cold air over the coil during defrost and to reduce energy). The hot refrigerant gas melts the frost &#8212; which produces steam from the melting ice. This cycle runs for 2&#8211;10 minutes, then the fan restarts and normal operation resumes. During defrost, your indoor unit may briefly blow cooler air &#8212; and the auxiliary/emergency heat strip may engage to compensate. This is all designed behavior. The trigger for the alarm call is almost always the steam, which understandably looks like smoke. If steam appears approximately every 30&#8211;90 minutes for a few minutes each time and then the system returns to normal, that is precisely how the system is designed to work.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My heat pump keeps icing up and the heating barely works. The defrost seems to run. What should I check first?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">If defrost is running but ice is still accumulating faster than it can clear, the most likely causes in order of ease of investigation are: (1) Indoor filter &#8212; a severely clogged filter reduces the heat load the system can carry, dropping outdoor coil temperature. Replace it first, always. (2) Outdoor unit clearances &#8212; check for debris, leaves, or snow packed against the coil base or sides. The unit needs 18&#8211;24 inches of clearance on all sides for adequate airflow. (3) Outdoor fan &#8212; confirm the fan is running during the heating cycle (not during defrost). A fan running at reduced speed from a failing capacitor dramatically reduces airflow and ice removal capacity. (4) Indoor blower &#8212; confirm adequate airflow from the indoor registers. A failing blower motor reduces heat extraction the same way a clogged filter does. If all of these check out and the coil is still icing severely despite running defrost cycles, the refrigerant charge is likely low &#8212; which requires a technician with gauges. Low suction pressure from reduced refrigerant is the most common refrigerant-related freeze cause.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Can I let the ice melt on its own or do I need to call for service?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">It depends entirely on how much ice is present. Light to moderate frost that melts during defrost cycles: no action needed, this is normal. Partial coil freeze with defrost running: shut the system off for a few hours in mild weather to allow natural thaw, then restart and monitor. If the issue was debris or filter, clearing these before restarting may prevent recurrence. Complete coil freeze that is not clearing through defrost: shut the system off and let it thaw naturally (typically 2&#8211;4 hours in above-freezing temperatures). Do not use external heat sources. After thawing, run the system in emergency/auxiliary heat mode while waiting for a technician &#8212; this uses the electric heat strip rather than the heat pump, avoiding another freeze cycle. Ice in fan blades: shut down immediately, let thaw naturally, call for emergency service before restarting. The fan motor is at immediate risk if ice contacts rotating blades. In all cases: if the ice returns after thawing and restarting &#8212; a professional diagnosis is needed regardless of how much ice was present. The underlying cause has not been resolved.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Light frost that defrosts every 30&#8211;90 minutes is normal operation. Steam, fan stopping, and a brief sound change during defrost are all designed behaviors &#8212; not malfunctions.</li>
+        <li>The two diagnostic observations: how much ice is present (light/partial/complete/fan blades) and whether the defrost cycle is running. The combination identifies the cause category.</li>
+        <li>Defrost running but ice accumulating between cycles = airflow restriction (debris, fan, filter) or low refrigerant charge dropping coil temperature below what defrost can manage.</li>
+        <li>Complete freeze with no defrost = defrost control board, sensor, or reversing valve failure. The system has no mechanism to remove ice. Shut down before ice reaches fan blades.</li>
+        <li>Ice returning within 30 minutes of defrost = refrigerant charge is low. Suction pressure is so reduced that coil temperature drops below freezing immediately after each defrost cycle. Professional refrigerant diagnosis needed.</li>
+        <li>Never chip ice off the coil, pour hot water on it, or operate the system with ice in the fan blades. The first two damage coil tubes; the last burns out the fan motor and risks compressor floodback.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">heat pump frozen outdoor unit</a>
+      <a href="#" class="tag-pill">heat pump iced over</a>
+      <a href="#" class="tag-pill">heat pump defrost not working</a>
+      <a href="#" class="tag-pill">heat pump keeps freezing up</a>
+      <a href="#" class="tag-pill">heat pump coil ice buildup</a>
+      <a href="#" class="tag-pill">heat pump steam from unit normal</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Furnace &amp; Heating Guides</h3>
+    <div class="related-list">
+      <a href="hvac-heat-pump-wont-heat.html" class="related-item">
+        <div><div class="related-item-title">Why Your Heat Pump Won&#8217;t Heat</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-freezes-up.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Freezes Up</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-dangerous-vs-inconvenient.html" class="related-item">
+        <div><div class="related-item-title">When Furnace Problems Are Dangerous vs. Inconvenient</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-wont-turn-on.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace Won&#8217;t Turn On At All</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#identifier">Freeze Pattern &amp; Defrost Identifier</a></li>
+      <li><a href="#causes">The Four Root Cause Categories</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

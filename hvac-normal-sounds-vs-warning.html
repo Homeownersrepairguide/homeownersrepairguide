@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How To Tell Normal HVAC Operating Sounds From Warning Noises | HomeownersRepairGuide.com</title>
+<meta name="description" content="Not every HVAC noise is a problem — but some are. The difference isn't loudness, it's timing, consistency, and change. Here's how to read what your system is telling you.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-normal-sounds-vs-warning.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-normal-sounds-vs-warning.html">
+<meta property="og:title" content="How To Tell Normal HVAC Operating Sounds From Warning Noises | HomeownersRepairGuide.com">
+<meta property="og:description" content="Not every HVAC noise is a problem — but some are. The difference isn't loudness, it's timing, consistency, and change. Here's how to read what your system is telling you.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --green:#2a7a2a;--green-light:#eaf5ea;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.tag.urgent{background:#7a1010;color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Sound Reference Guide */
+.sound-guide{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.sg-header{background:var(--navy);padding:18px 22px;}
+.sg-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.sg-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.sg-tabs{display:flex;background:var(--navy-mid);overflow-x:auto;}
+.sg-tab{padding:11px 16px;font-size:12px;font-weight:600;color:rgba(255,255,255,0.5);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;transition:all .18s;letter-spacing:0.04em;text-transform:uppercase;}
+.sg-tab.active{color:var(--white);border-bottom-color:var(--amber);}
+.sg-tab:hover{color:var(--white);}
+.sg-body{padding:0;}
+.sg-panel{display:none;}.sg-panel.active{display:block;}
+.sg-table{width:100%;border-collapse:collapse;}
+.sg-table th{background:var(--cream-dark);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--text-muted);padding:10px 16px;text-align:left;border-bottom:2px solid var(--gray-light);}
+.sg-table td{padding:13px 16px;border-bottom:1px solid var(--gray-light);font-size:13px;line-height:1.5;vertical-align:top;}
+.sg-table tr:last-child td{border-bottom:none;}
+.sg-table tr:hover td{background:var(--cream);}
+.sound-desc{font-weight:600;color:var(--navy);margin-bottom:3px;font-size:13px;}
+.sound-detail{font-size:12px;color:var(--text-muted);}
+.verdict{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:20px;font-size:11px;font-weight:700;white-space:nowrap;}
+.verdict.normal{background:var(--green-light);color:var(--green);}
+.verdict.warning{background:#fef2f0;color:#c0402a;}
+.verdict.critical{background:#fde8e8;color:#9a1010;}
+.verdict-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+.verdict.normal .verdict-dot{background:var(--green);}
+.verdict.warning .verdict-dot{background:#c0402a;}
+.verdict.critical .verdict-dot{background:#9a1010;}
+.sg-meaning{font-size:13px;color:var(--text-body);line-height:1.5;}
+.sg-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.sg-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.sg-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.sg-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Three-rule banner */
+.three-rules{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0;}
+.rule-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:18px;box-shadow:var(--shadow-card);text-align:center;}
+.rule-icon{font-size:28px;margin-bottom:10px;}
+.rule-title{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.rule-desc{font-size:12px;color:var(--text-muted);line-height:1.5;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-box.alert{background:#fef2f0;border:1px solid #e08080;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-box.alert .callout-label{color:#c0402a;}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--hvac);}.sev-item.mod .sev-label{color:var(--hvac-dark);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:#c0392b;}.sev-item.crit .sev-label{color:#c0392b;}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid #c0392b;}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+/* Tags / share */
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+/* Related */
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+/* Sidebar */
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.three-rules{grid-template-columns:1fr;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-noises.html">HVAC Noises</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Normal Sounds vs. Warning Noises</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">HVAC Noises</span>
+  </div>
+
+  <h1 class="article-title">How To Tell Normal HVAC Operating Sounds From Warning Noises</h1>
+  <p class="article-subtitle">All HVAC systems make noise. The question is never whether your system is quiet &#8212; it&#8217;s whether the sounds have changed. Normal operating sounds are predictable, stable, and consistent across seasons. Warning noises are new, changing, or tied to performance problems. Here&#8217;s how to read the difference.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="safety-box" style="background:#7a1010;border-radius:var(--radius-lg);padding:18px 22px;margin:0 0 28px;">
+      <h3 style="font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:#fff;margin-bottom:8px;">&#9888;&#65039; Combustion Sounds Require Immediate Shutdown</h3>
+      <p style="font-size:14px;color:rgba(255,255,255,0.88);line-height:1.55;">Banging, popping, or rumbling from a gas furnace or boiler &#8212; especially at startup or during the burner cycle &#8212; can indicate delayed ignition or combustion instability. These are not sounds to monitor. Shut the system off and call for service. Carbon monoxide risk is real when combustion is abnormal.</p>
+    </div>
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>The key diagnostic question isn&#8217;t loudness &#8212; it&#8217;s change.</strong> A system that was quiet and is now noisy is warning you. A system that has always made a particular sound usually isn&#8217;t.</li>
+        <li>Normal sounds: brief startup clicks, steady airflow, mild thermal expansion pops, consistent low hum during operation</li>
+        <li>Warning sounds: grinding, screeching, repeated clicking, buzzing tied to output loss, banging from combustion areas</li>
+        <li>Sounds that worsen over multiple cycles or appear earlier in each cycle indicate progressing mechanical failure</li>
+        <li>Familiarity with a sound does not make it safe &#8212; many homeowners habituate to warning noises that were always warnings</li>
+        <li>Any sound accompanied by odors, smoke, error codes, or performance loss is a warning regardless of type</li>
+      </ul>
+    </div>
+
+    <h2 id="reference">HVAC Sound Reference Guide</h2>
+    <p>Use the tabs below to find the sound your system is making. Each entry shows whether the sound is normal or a warning, and what it means when it is a warning.</p>
+
+    <div class="sound-guide">
+      <div class="sg-header">
+        <h3>Sound Reference Guide &#8212; Find Your Noise</h3>
+        <p>Select the category that best matches what you&#8217;re hearing. Green = normal. Red = warning. Dark red = stop operating.</p>
+      </div>
+      <div class="sg-tabs">
+        <div class="sg-tab active" onclick="showSG(event,'clicking')">Clicking</div>
+        <div class="sg-tab" onclick="showSG(event,'grinding')">Grinding / Screeching</div>
+        <div class="sg-tab" onclick="showSG(event,'banging')">Banging / Popping</div>
+        <div class="sg-tab" onclick="showSG(event,'buzzing')">Buzzing / Humming</div>
+        <div class="sg-tab" onclick="showSG(event,'airflow')">Airflow Noises</div>
+        <div class="sg-tab" onclick="showSG(event,'rattling')">Rattling / Vibrating</div>
+      </div>
+      <div class="sg-body">
+
+        <div class="sg-panel active" id="sg-clicking">
+          <table class="sg-table">
+            <thead><tr><th>Sound Description</th><th>Verdict</th><th>What It Means</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><div class="sound-desc">Single click at startup, then silence</div><div class="sound-detail">One click when the thermostat calls, system starts normally</div></td>
+                <td><span class="verdict normal"><span class="verdict-dot"></span>Normal</span></td>
+                <td class="sg-meaning">Relay or contactor engaging. This is the electrical switch closing to start the system. Expected and harmless.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Single click at shutdown</div><div class="sound-detail">One click when the system cycles off</div></td>
+                <td><span class="verdict normal"><span class="verdict-dot"></span>Normal</span></td>
+                <td class="sg-meaning">Relay opening at end of cycle. Normal switching behavior in all HVAC systems.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Repeated clicking that won&#8217;t stop</div><div class="sound-detail">Multiple clicks in succession, system may not start</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Ignition system attempting to light but failing, or a safety control cycling. Common with a dirty flame sensor, failed ignitor, or a control board in lockout. System needs service.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Rapid clicking throughout the cycle</div><div class="sound-detail">Clicking continues while system is supposed to be running</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Safety switch cycling repeatedly &#8212; limit switch, pressure switch, or flame sensor tripping and resetting. Something is triggering a safety shutdown on every cycle. Do not ignore.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sg-panel" id="sg-grinding">
+          <table class="sg-table">
+            <thead><tr><th>Sound Description</th><th>Verdict</th><th>What It Means</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><div class="sound-desc">Metal-on-metal grinding from air handler or furnace</div><div class="sound-detail">Harsh grinding sound during blower operation</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Blower wheel or motor bearing failure. The wheel may have slipped on the shaft and is contacting the housing, or bearings are severely worn. Continued operation accelerates damage rapidly. Turn off and call for service.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Screeching or squealing from blower</div><div class="sound-detail">High-pitched squeal during or at startup of fan operation</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Failing motor bearing or worn belt (older belt-drive systems). Early bearing failure squeals before it grinds. This is the time to catch it before the motor fails completely.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Screeching from outdoor AC unit</div><div class="sound-detail">High-pitched sound from the condenser during operation</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Condenser fan motor bearing failure or refrigerant pressure issue. High refrigerant pressure can cause a shrieking sound. Either condition requires professional evaluation.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Brief squeal at startup only, then stops</div><div class="sound-detail">Short squeal for 1&#8211;2 seconds when system first starts, normal after</div></td>
+                <td><span class="verdict normal"><span class="verdict-dot"></span>Usually Normal</span></td>
+                <td class="sg-meaning">Some motors produce a brief startup squeal as bearings come up to speed from cold. If it stops quickly and doesn&#8217;t worsen over time, it&#8217;s usually not a concern. Monitor for progression.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sg-panel" id="sg-banging">
+          <table class="sg-table">
+            <thead><tr><th>Sound Description</th><th>Verdict</th><th>What It Means</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><div class="sound-desc">Single loud bang from furnace at startup</div><div class="sound-detail">One thump when burners ignite</div></td>
+                <td><span class="verdict critical"><span class="verdict-dot"></span>Critical &#8212; Shut Off</span></td>
+                <td class="sg-meaning">Delayed ignition. Gas has accumulated before igniting, causing a small explosion when it finally lights. This stresses the heat exchanger and can cause cracks. Do not operate. Call for service immediately.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Popping or banging from ductwork</div><div class="sound-detail">One or several pops from ducts shortly after startup or shutdown</div></td>
+                <td><span class="verdict normal"><span class="verdict-dot"></span>Usually Normal</span></td>
+                <td class="sg-meaning">Thermal expansion of metal ducts as temperature changes. Sheet metal expands and contracts as air temperature shifts. Typically normal unless it becomes louder or more frequent over time.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Repeated banging from ductwork</div><div class="sound-detail">Continuous or frequent banging throughout the cycle</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Undersized ducts flexing under static pressure, or a supply-return imbalance creating pressure surges. Indicates airflow restriction or duct design problem that should be evaluated.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Banging or knocking from outdoor unit</div><div class="sound-detail">Impact sound from the condenser cabinet</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Loose or broken fan blade, debris inside the unit, or a failing compressor. Turn off the unit and inspect for visible debris before calling for service.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sg-panel" id="sg-buzzing">
+          <table class="sg-table">
+            <thead><tr><th>Sound Description</th><th>Verdict</th><th>What It Means</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><div class="sound-desc">Steady low hum during operation</div><div class="sound-detail">Consistent background hum while system runs normally</div></td>
+                <td><span class="verdict normal"><span class="verdict-dot"></span>Normal</span></td>
+                <td class="sg-meaning">Motor operating sound and transformer hum. Expected at normal operating volume. If it suddenly gets louder or changes pitch, reassess.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Buzzing from outdoor unit, AC not cooling</div><div class="sound-detail">Buzz from condenser with reduced or no cooling output</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Likely a failing capacitor or contactor. The compressor may be trying to start but unable to. Common in summer when capacitors are stressed by heat. Requires professional service.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Buzzing from electrical panel area of furnace</div><div class="sound-detail">Electrical buzzing sound from the furnace control area</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Arcing, a failing transformer, or a loose electrical connection. Electrical buzzing in HVAC controls can precede component failure or create a fire hazard. Evaluate promptly.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Humming from outdoor unit, fan not spinning</div><div class="sound-detail">Motor hum but the condenser fan is not moving</div></td>
+                <td><span class="verdict critical"><span class="verdict-dot"></span>Critical &#8212; Shut Off</span></td>
+                <td class="sg-meaning">Failed capacitor preventing the fan from starting. The motor is drawing locked-rotor current and will overheat quickly. Turn the system off immediately to prevent motor burnout.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sg-panel" id="sg-airflow">
+          <table class="sg-table">
+            <thead><tr><th>Sound Description</th><th>Verdict</th><th>What It Means</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><div class="sound-desc">Steady whooshing from registers</div><div class="sound-detail">Consistent airflow sound from supply vents</div></td>
+                <td><span class="verdict normal"><span class="verdict-dot"></span>Normal</span></td>
+                <td class="sg-meaning">Normal conditioned air delivery. Volume will vary with blower speed settings. Consistent sound at consistent volume is expected.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Whistling from a specific register or vent</div><div class="sound-detail">High-pitched whistle at one or more supply registers</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Air forced through a restriction &#8212; partially closed damper, undersized register, or obstructed duct near the outlet. The whistle is the sound of air velocity too high for the opening.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Roaring or loud rushing from the system</div><div class="sound-detail">Airflow sounds significantly louder than before</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Usually a severely clogged filter forcing the blower to work harder, or a collapsed duct creating high static pressure. Check and replace the filter first. If the sound persists, have ducts inspected.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Flapping or fluttering sound from a vent</div><div class="sound-detail">Intermittent flapping coinciding with airflow</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">A loose register louver, a piece of debris partially blocking a duct, or a disconnected duct liner flapping in the airstream. Usually a physical obstruction that should be investigated.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sg-panel" id="sg-rattling">
+          <table class="sg-table">
+            <thead><tr><th>Sound Description</th><th>Verdict</th><th>What It Means</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><div class="sound-desc">Light rattle from exterior panels or covers</div><div class="sound-detail">Metallic rattle from the furnace or air handler cabinet</div></td>
+                <td><span class="verdict normal"><span class="verdict-dot"></span>Usually Normal</span></td>
+                <td class="sg-meaning">Loose access panel or cabinet screw. Check that all access doors and panels are fully seated and fastened. A loose screw is the most common cause and takes seconds to fix.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Vibration from ductwork throughout operation</div><div class="sound-detail">Sustained vibration transmitted from the system into ducts or structure</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Blower imbalance, loose blower wheel, or a motor mount that has failed. Transmitted vibration often indicates a component operating out of balance. Evaluate the blower assembly.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Rattling from inside the unit, not panels</div><div class="sound-detail">Internal rattling, separate from cabinet vibration</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Debris inside the unit (especially in the condenser after storms), a loose component, or a failing blower wheel. Turn off and inspect visually before restarting.</td>
+              </tr>
+              <tr>
+                <td><div class="sound-desc">Vibration worsening over time or cycles</div><div class="sound-detail">Rattling or vibration that gets more pronounced</div></td>
+                <td><span class="verdict warning"><span class="verdict-dot"></span>Warning</span></td>
+                <td class="sg-meaning">Progressive mechanical loosening &#8212; components that were marginally tight are now working loose. The worsening pattern is the key indicator. Service before a component fails completely.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      <div class="sg-footer">
+        <div class="sg-footer-icon">&#128276;</div>
+        <div>
+          <h4>The Change Rule &#8212; Most Important Diagnostic</h4>
+          <p>A sound your system has always made is far less concerning than a sound that appeared recently or has changed character. When evaluating any noise, ask: is this new, or is it worse than it was? Change is the primary warning signal &#8212; not volume, not type.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="three-rules">Three Rules for Evaluating Any HVAC Sound</h2>
+
+    <div class="three-rules">
+      <div class="rule-card">
+        <div class="rule-icon">&#128337;</div>
+        <div class="rule-title">Rule 1: Timing</div>
+        <div class="rule-desc">When does the sound occur? Startup, steady operation, or shutdown? Sounds at specific points in the cycle indicate specific components. A sound that moves earlier in the cycle over time indicates progression.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-icon">&#128200;</div>
+        <div class="rule-title">Rule 2: Consistency</div>
+        <div class="rule-desc">Is it the same every time, or does it vary? Normal sounds are predictable and stable across seasons. Warning sounds change &#8212; they get louder, more frequent, or appear at different points in the cycle.</div>
+      </div>
+      <div class="rule-card">
+        <div class="rule-icon">&#9881;&#65039;</div>
+        <div class="rule-title">Rule 3: Performance</div>
+        <div class="rule-desc">Does comfort change when the sound occurs? Any noise that coincides with reduced heating, reduced cooling, short cycling, or error codes is a warning regardless of the sound type.</div>
+      </div>
+    </div>
+
+    <div class="callout-box alert">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Familiarity Is Not Safety</div>
+        <div class="callout-text">Many homeowners have habituated to warning noises that were always warnings &#8212; a furnace that has always banged at startup, a blower that has always squealed. Length of time a sound has been present does not make it normal or safe. If you are unsure whether a sound was always there or has gradually developed, the safest assumption is to have it evaluated.</div>
+      </div>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Minor</div></div>
+        <div class="sev-desc">Stable, predictable sounds with no performance impact. No change from baseline. No action required.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">New or changing sounds without shutdowns or performance loss. Schedule evaluation &#8212; do not ignore.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Sounds tied to cycling, shutdowns, or reduced output. Service needed promptly before failure.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Sounds with odors, smoke, sparks, alarms, or combustion bangs. Shut off immediately and call for service.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"Volume is a red herring. I&#8217;ve seen systems that sounded terrible and were completely safe, and systems that were nearly silent and about to fail. The question I ask every homeowner is: has anything changed? Did this sound start recently? Is it worse than it was last month? That&#8217;s the diagnostic question. A furnace that has always made a particular pop when the heat comes on is almost always just thermal expansion. A furnace that started making that pop six weeks ago is telling you something changed &#8212; and that&#8217;s worth knowing. The other thing I always flag: if a sound is accompanied by an odor &#8212; any odor &#8212; that combination should be treated as an emergency regardless of how minor the noise seems."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Check and replace the air filter &#8212; a clogged filter causes roaring airflow sounds and strains the blower</li>
+          <li>Inspect that all access panels and covers are fully seated and fastened</li>
+          <li>Look inside the outdoor unit for visible debris (leaves, sticks) that could cause rattling or banging</li>
+          <li>Note when the sound occurs: startup, steady operation, or shutdown</li>
+          <li>Check whether comfort (heating or cooling output) changes when the sound occurs</li>
+          <li>Read any error codes or status lights on the furnace or air handler</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Any banging or popping from furnace combustion area &#8212; shutdown first, then call</li>
+          <li>Grinding or screeching from any motor or blower component</li>
+          <li>Humming outdoor unit with fan not spinning &#8212; shut off immediately</li>
+          <li>Electrical buzzing from the furnace control area</li>
+          <li>Any sound accompanied by burning smell, smoke, or safety lockout</li>
+          <li>Internal vibration or rattling that does not clear after removing visible debris</li>
+          <li>Any sound that is worsening cycle-over-cycle</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My furnace makes a loud pop when it starts up. Should I be worried?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">It depends on whether it&#8217;s a duct pop or a combustion pop. A single pop from the ductwork at startup is usually thermal expansion &#8212; metal ducts expanding as warm air hits them. This is generally normal, especially if it has happened consistently for years. A bang or pop from the furnace itself &#8212; from the burner area &#8212; is different. This is delayed ignition: gas accumulates before the igniter fires, then ignites all at once. That pop stresses the heat exchanger and can cause cracks over time. If the sound is coming from the furnace cabinet rather than the ductwork, have it evaluated. To tell the difference: put your hand near the furnace cabinet and then near the nearest duct register. Which location produces the sound?</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My air conditioner makes a loud clicking when it tries to start, then stops. What is that?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">This is almost always a failed run capacitor. The capacitor is what gives the compressor and condenser fan motor the extra electrical boost they need to start. When it fails, the system tries to start, can&#8217;t, and the control board retries &#8212; producing the clicking sequence. You may also hear a hum or buzz as the motor tries to start. Turn the system off to prevent motor damage from repeated failed start attempts. Capacitors are a common, relatively inexpensive repair &#8212; but the system should not be left in this cycle.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My HVAC system has always made a particular noise. Does that mean it&#8217;s safe?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Not necessarily. Some warning sounds develop gradually enough that homeowners habituate to them before recognizing they are warnings. The most common example is a blower bearing that starts with a faint squeal and worsens over months until it grinds &#8212; at each stage the homeowner has calibrated to the "new normal." The better question is: has this sound changed at all recently? Even slight changes in pitch, frequency, or timing deserve attention. If you have never had the system professionally serviced and it makes sounds you&#8217;ve always accepted, a maintenance visit is worthwhile to establish a true baseline.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>The primary diagnostic question is not what the sound is &#8212; it&#8217;s whether it has changed. New sounds and worsening sounds are warnings. Stable, consistent sounds are usually not.</li>
+        <li>Timing tells you which component: startup sounds point to ignition and starting components; steady operation sounds point to motors and bearings; shutdown sounds often point to thermal expansion.</li>
+        <li>Any sound accompanied by an odor &#8212; any odor &#8212; should be treated as an emergency regardless of how minor the noise seems.</li>
+        <li>Combustion bangs (furnace startup bang) are never normal. They indicate delayed ignition and should prompt immediate shutdown and service.</li>
+        <li>A fan not spinning with a motor hum: turn off immediately. The motor is drawing locked-rotor current and will fail within minutes of continued operation.</li>
+        <li>Familiarity with a sound does not make it safe. Many warning noises develop gradually enough that homeowners adapt to them before they escalate.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">HVAC making noise</a>
+      <a href="#" class="tag-pill">furnace banging at startup</a>
+      <a href="#" class="tag-pill">AC clicking wont start</a>
+      <a href="#" class="tag-pill">HVAC grinding sound</a>
+      <a href="#" class="tag-pill">normal furnace sounds</a>
+      <a href="#" class="tag-pill">air conditioner buzzing</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More HVAC Noise Guides</h3>
+    <div class="related-list">
+      <a href="hvac-banging-popping-noises.html" class="related-item">
+        <div><div class="related-item-title">Why Your HVAC Makes Loud Banging or Popping Noises</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-buzzing-humming-noises.html" class="related-item">
+        <div><div class="related-item-title">Why Your HVAC Makes Buzzing or Humming Noises</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-screeching-squealing.html" class="related-item">
+        <div><div class="related-item-title">Why Your Furnace or Air Handler Makes Screeching or Squealing Sounds</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-furnace-control-vs-mechanical.html" class="related-item">
+        <div><div class="related-item-title">Furnace Control Problem vs. Mechanical Failure</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#reference">Sound Reference Guide</a></li>
+      <li><a href="#three-rules">Three Rules for Any Sound</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function showSG(e, id) {
+    document.querySelectorAll('.sg-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.sg-tab').forEach(t => t.classList.remove('active'));
+    document.getElementById('sg-' + id).classList.add('active');
+    e.target.classList.add('active');
+  }
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

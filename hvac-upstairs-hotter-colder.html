@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Upstairs Rooms Are Hotter in Summer and Colder in Winter | HomeownersRepairGuide.com</title>
+<meta name="description" content="Upstairs discomfort in multi-level homes isn't an equipment capacity problem — it's vertical physics. Stack effect, attic heat transfer, and floor-level pressure imbalance all work against the upper floor simultaneously.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-upstairs-hotter-colder.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-upstairs-hotter-colder.html">
+<meta property="og:title" content="Why Upstairs Rooms Are Hotter in Summer and Colder in Winter | HomeownersRepairGuide.com">
+<meta property="og:description" content="Stack effect, attic heat, and pressure imbalance all work against the upper floor simultaneously. Here's how to identify which force is dominant in your home.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --attic:#b05000;--attic-light:#fff0e0;
+  --stack:#5a2a7a;--stack-light:#f0e8f8;
+  --duct:#2a6b7a;--duct-light:#e8f4f7;
+  --return:#2a7a5a;--return-light:#e8f5f0;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Vertical Comfort Driver Matrix */
+.driver-matrix{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.dm-header{background:var(--navy);padding:18px 22px;}
+.dm-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.dm-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+/* Legend */
+.dm-legend{display:flex;gap:14px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.dm-leg{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;}
+.dm-leg-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.dm-leg.attic{color:var(--attic);}.dm-leg.attic .dm-leg-dot{background:var(--attic);}
+.dm-leg.stack{color:var(--stack);}.dm-leg.stack .dm-leg-dot{background:var(--stack);}
+.dm-leg.duct{color:var(--duct);}.dm-leg.duct .dm-leg-dot{background:var(--duct);}
+.dm-leg.ret{color:var(--return);}.dm-leg.ret .dm-leg-dot{background:var(--return);}
+/* Grid */
+.dm-grid{display:grid;grid-template-columns:140px repeat(3,1fr);}
+.dm-col-head{padding:10px 12px;text-align:center;border-right:1px solid var(--gray-light);border-bottom:2px solid var(--gray-light);background:var(--cream-dark);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--navy);}
+.dm-col-head:last-child{border-right:none;}
+.dm-row-label{padding:13px 12px;background:var(--cream-dark);border-right:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);display:flex;flex-direction:column;justify-content:center;}
+.dm-row-label:last-of-type{border-bottom:none;}
+.dm-season{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:3px;}
+.dm-time{font-size:10px;color:var(--text-muted);line-height:1.3;}
+.dm-cell{padding:12px;border-right:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);font-size:12px;}
+.dm-cell:last-child{border-right:none;}
+.dm-row-group:last-child .dm-cell,.dm-row-group:last-child .dm-row-label{border-bottom:none;}
+.dm-driver{display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:20px;font-size:10px;font-weight:700;margin-bottom:5px;}
+.dm-driver.attic{background:var(--attic-light);color:var(--attic);}
+.dm-driver.stack{background:var(--stack-light);color:var(--stack);}
+.dm-driver.duct{background:var(--duct-light);color:var(--duct-dark,#1a4a55);}
+.dm-driver.ret{background:var(--return-light);color:var(--return);}
+.dm-driver.combined{background:var(--cream-dark);color:var(--text-muted);}
+.dm-desc{color:var(--text-muted);font-size:11px;line-height:1.5;}
+.dm-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.dm-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.dm-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.dm-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Four forces */
+.forces-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.force-card{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.fc-head{padding:12px 16px;display:flex;align-items:center;gap:9px;}
+.fc-head.attic{background:var(--attic);}
+.fc-head.stack{background:var(--stack);}
+.fc-head.duct{background:var(--duct);}
+.fc-head.ret{background:var(--return);}
+.fc-icon{font-size:17px;color:var(--white);}
+.fc-title{font-size:13px;font-weight:700;color:var(--white);}
+.fc-body{background:var(--white);border:1px solid var(--gray-light);border-top:none;padding:13px 15px;}
+.fc-desc{font-size:12px;color:var(--text-body);line-height:1.55;margin-bottom:8px;}
+.fc-fix{font-size:11px;font-weight:700;padding:3px 8px;border-radius:2px;display:inline-block;}
+.force-card.attic .fc-fix{background:var(--attic-light);color:var(--attic);}
+.force-card.stack .fc-fix{background:var(--stack-light);color:var(--stack);}
+.force-card.duct .fc-fix{background:var(--duct-light);color:var(--duct-dark,#1a4a55);}
+.force-card.ret .fc-fix{background:var(--return-light);color:var(--return);}
+/* Solutions table */
+.solutions-table{width:100%;border-collapse:collapse;margin:24px 0;background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.solutions-table th{background:var(--navy);color:var(--white);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;padding:11px 14px;text-align:left;}
+.solutions-table td{padding:11px 14px;font-size:13px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.45;}
+.solutions-table tr:last-child td{border-bottom:none;}
+.solutions-table tr:hover td{background:var(--cream);}
+.sol-tag{font-size:10px;font-weight:700;padding:2px 7px;border-radius:2px;white-space:nowrap;}
+.sol-tag.high{background:var(--attic-light);color:var(--attic);}
+.sol-tag.mod{background:var(--duct-light);color:var(--duct-dark,#1a4a55);}
+.sol-tag.low{background:#eaf5ea;color:#2a7a2a;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:#fff8e6;border:1px solid #f0c040;}
+.callout-box.alert{background:#fde8e8;border:1px solid #e08080;}
+.callout-box.tip{background:#eaf5ea;border:1px solid #80c080;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:#b07800;}
+.callout-box.alert .callout-label{color:#c0402a;}
+.callout-box.tip .callout-label{color:#2a7a2a;}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:#b07800;}.sev-item.mod .sev-label{color:#b07800;}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:#c0402a;}.sev-item.crit .sev-label{color:#c0402a;}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid #c0402a;}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:#c0402a;}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:#c0402a;font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.forces-grid{grid-template-columns:1fr;}.dm-grid{grid-template-columns:120px 1fr;}.dm-col-head:nth-child(n+3){display:none;}.dm-cell:nth-child(n+3){display:none;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}.dm-grid{grid-template-columns:1fr;}.dm-col-head{display:none;}.dm-row-label{border-right:none;}.dm-cell{border-right:none !important;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-airflow-comfort.html">Airflow &amp; Comfort</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Upstairs Rooms Are Hotter in Summer &amp; Colder in Winter</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Airflow &amp; Comfort</span>
+  </div>
+
+  <h1 class="article-title">Why Upstairs Rooms Are Hotter in Summer and Colder in Winter</h1>
+  <p class="article-subtitle">Upper floors in multi-level homes face four simultaneous forces working against them: attic heat transfer, stack effect pressure, longer and more restrictive duct runs, and weaker return-air paths. No single fix addresses all four &#8212; but identifying which force dominates your situation points to the right solution.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>This is not an equipment capacity problem.</strong> A larger HVAC system delivers more air through the same long upstairs ducts with the same attic heat load. The floor-level temperature gap persists.</li>
+        <li>Four forces work against upper floors simultaneously: attic heat gain/loss, stack effect (warm air rises in winter, cool air settles in summer), longer duct runs losing pressure, and missing or undersized return air upstairs</li>
+        <li>The time-of-day pattern identifies the dominant cause: worst in late afternoon = attic load. Worst overnight in winter = stack effect. Consistent all day = duct distribution or return restriction.</li>
+        <li>Comfort that improves when upstairs doors are opened confirms return-air restriction is compounding the other forces</li>
+        <li>Attic insulation improvement is the highest single-impact intervention for most two-story homes &#8212; it reduces load on both floors and all seasons simultaneously</li>
+        <li>Fans provide temporary stratification relief but do not address any of the four root causes</li>
+      </ul>
+    </div>
+
+    <h2 id="matrix">Vertical Comfort Driver Matrix</h2>
+    <p>Match your pattern to the season and time of day when upstairs discomfort is worst. The dominant driver in each cell identifies the primary cause and target intervention.</p>
+
+    <div class="driver-matrix">
+      <div class="dm-header">
+        <h3>When Is Upstairs Worst? &#8212; Match to Find Your Dominant Driver</h3>
+        <p>Find your season row and time-of-day column. The intersection shows the dominant force and the primary fix.</p>
+      </div>
+      <div class="dm-legend">
+        <div class="dm-leg attic"><span class="dm-leg-dot"></span>Attic Heat Transfer</div>
+        <div class="dm-leg stack"><span class="dm-leg-dot"></span>Stack Effect</div>
+        <div class="dm-leg duct"><span class="dm-leg-dot"></span>Duct Distribution</div>
+        <div class="dm-leg ret"><span class="dm-leg-dot"></span>Return Air Restriction</div>
+      </div>
+      <div class="dm-grid">
+        <div class="dm-col-head">Season / Condition</div>
+        <div class="dm-col-head">Afternoon / Evening</div>
+        <div class="dm-col-head">Overnight / Morning</div>
+        <div class="dm-col-head">All Day / Consistent</div>
+
+        <!-- Summer rows -->
+        <div class="dm-row-label">
+          <div class="dm-season" style="color:var(--attic);">&#9728;&#65039; Summer</div>
+          <div class="dm-time">Cooling season</div>
+        </div>
+        <div class="dm-cell">
+          <div class="dm-driver attic">&#9650; Attic Load</div>
+          <div class="dm-desc">Attic reaches 130&#8211;150°F by afternoon. Ceiling radiates heat into rooms. Improves after sunset as attic cools. <strong>Fix: attic insulation and air sealing.</strong></div>
+        </div>
+        <div class="dm-cell">
+          <div class="dm-driver stack">&#9650; Stack Effect</div>
+          <div class="dm-desc">Attic has cooled but warm room air has risen overnight and stratified. Floor temperature stratification. <strong>Fix: ceiling fans on low, overnight door positions.</strong></div>
+        </div>
+        <div class="dm-cell">
+          <div class="dm-driver duct">&#8644; Duct Distribution</div>
+          <div class="dm-desc">Consistent upstairs heat regardless of time = system can't deliver enough cool air upstairs. Long duct runs losing pressure. <strong>Fix: duct inspection, possible upsizing.</strong></div>
+        </div>
+
+        <!-- Winter rows -->
+        <div class="dm-row-label">
+          <div class="dm-season" style="color:var(--stack);">&#10052;&#65039; Winter</div>
+          <div class="dm-time">Heating season</div>
+        </div>
+        <div class="dm-cell">
+          <div class="dm-driver attic">&#9660; Attic Cold Loss</div>
+          <div class="dm-desc">Under-insulated ceilings allow heat to escape into the cold attic. Upstairs rooms lose heat fastest in coldest part of the day. <strong>Fix: attic insulation increases R-value against cold.</strong></div>
+        </div>
+        <div class="dm-cell">
+          <div class="dm-driver stack">&#9660; Stack Effect</div>
+          <div class="dm-desc">Warm air from the furnace rises and escapes through upper-floor air leaks or stairwells. Cold air sinks. Upstairs rooms are cold despite adequate furnace output. <strong>Fix: air sealing at attic floor, stairwell doors.</strong></div>
+        </div>
+        <div class="dm-cell">
+          <div class="dm-driver duct">&#8644; Duct Distribution</div>
+          <div class="dm-desc">Consistent upstairs cold regardless of time = upstairs isn't receiving adequate heated air. Long runs, friction loss, or undersized branches. <strong>Fix: duct inspection, return air improvement.</strong></div>
+        </div>
+
+        <!-- Year-round row -->
+        <div class="dm-row-label" style="border-bottom:none;">
+          <div class="dm-season" style="color:var(--return);">&#8597; Year-Round</div>
+          <div class="dm-time">Both seasons</div>
+        </div>
+        <div class="dm-cell" style="border-bottom:none;">
+          <div class="dm-driver ret">&#8592; Return Restriction</div>
+          <div class="dm-desc">Doors closed upstairs worsens comfort. Opening them helps. Pressure builds upstairs. Return air cannot circulate back. <strong>Fix: transfer grilles, jump ducts, door undercuts.</strong></div>
+        </div>
+        <div class="dm-cell" style="border-bottom:none;">
+          <div class="dm-driver combined">Combined Factors</div>
+          <div class="dm-desc">Year-round, time-independent discomfort across all upstairs rooms indicates multiple causes. Start with attic insulation and return air evaluation simultaneously.</div>
+        </div>
+        <div class="dm-cell" style="border-bottom:none;">
+          <div class="dm-driver combined">Combined Factors</div>
+          <div class="dm-desc">Consistent year-round discomfort with no time-of-day variation suggests duct distribution is the base problem, with other factors amplifying it seasonally.</div>
+        </div>
+      </div>
+      <div class="dm-footer">
+        <div class="dm-footer-icon">&#128161;</div>
+        <div>
+          <h4>The Overnight Recovery Test</h4>
+          <p>In summer: is upstairs comfortable at 7 AM before the house heats up, then gets worse through the day? That&#8217;s attic-dominant. In winter: is upstairs warmest in the afternoon and coldest at dawn? That&#8217;s stack-effect-dominant. A room that is equally uncomfortable at 7 AM and 7 PM year-round is distribution-dominant. Timing is the primary separator.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="forces">The Four Forces Against Upper Floors</h2>
+
+    <div class="forces-grid">
+      <div class="force-card attic">
+        <div class="fc-head attic">
+          <div class="fc-icon">&#9728;&#65039;</div>
+          <div class="fc-title">Attic Heat Transfer</div>
+        </div>
+        <div class="fc-body">
+          <div class="fc-desc">Attic air reaches 130&#8211;150°F in summer. An under-insulated ceiling is a radiant heating panel working against your air conditioning. In winter, the attic is near outdoor temperature and draws heat out of the upstairs rooms through the same under-insulated ceiling. The attic is in constant thermal battle with the top floor &#8212; and in most homes, it&#8217;s winning.</div>
+          <div class="fc-fix">Fix: attic insulation upgrade to R-38&#8211;R-60 depending on climate</div>
+        </div>
+      </div>
+      <div class="force-card stack">
+        <div class="fc-head stack">
+          <div class="fc-icon">&#8597;&#65039;</div>
+          <div class="fc-title">Stack Effect</div>
+        </div>
+        <div class="fc-body">
+          <div class="fc-desc">Warm air is less dense and rises. Cold air is denser and sinks. In a multi-level home, this creates a continuous vertical pressure gradient &#8212; warm air accumulates upstairs and escapes through air leaks and stairwells, while cold air is drawn in from below. In heating mode this means the warmest air is at ceiling level upstairs and escapes before reaching occupants. Air sealing at the attic floor is the primary mitigation.</div>
+          <div class="fc-fix">Fix: attic floor air sealing at penetrations and top plates</div>
+        </div>
+      </div>
+      <div class="force-card duct">
+        <div class="fc-head duct">
+          <div class="fc-icon">&#128207;</div>
+          <div class="fc-title">Upstairs Duct Distribution</div>
+        </div>
+        <div class="fc-body">
+          <div class="fc-desc">Upstairs duct runs are typically longer than downstairs runs in a single air-handler system. They also run through attic space &#8212; which means in summer the duct itself is surrounded by 130°F air, reheating the conditioned air on its way to the room. Flex duct sagging in attic heat also loses structural integrity faster. The upstairs rooms receive less air that has already been partially reheated before it arrives.</div>
+          <div class="fc-fix">Fix: duct inspection, insulation, and possible supplemental zoning</div>
+        </div>
+      </div>
+      <div class="force-card ret">
+        <div class="fc-head ret">
+          <div class="fc-icon">&#127968;</div>
+          <div class="fc-title">Return Air Restriction Upstairs</div>
+        </div>
+        <div class="fc-body">
+          <div class="fc-desc">Many two-story homes have return grilles only on the main floor. Upstairs rooms rely on open stairwells and hallways to return air to the lower-floor return grille. When upstairs bedroom doors are closed, those rooms have no return path &#8212; they pressurize and resist further supply delivery. Adding return air pathways upstairs is one of the most effective and underutilized interventions in two-story home comfort.</div>
+          <div class="fc-fix">Fix: upstairs return grilles, jump ducts, or transfer grilles</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box warning">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Equipment Upsizing Does Not Fix Vertical Physics</div>
+        <div class="callout-text">A larger HVAC system delivers more conditioned air through the same long attic duct runs, into rooms still absorbing attic heat through under-insulated ceilings. The floor-level temperature gap between upstairs and downstairs does not improve. Address the four forces directly &#8212; the equipment is almost never the limiting factor.</div>
+      </div>
+    </div>
+
+    <h2 id="solutions">Solutions by Dominant Driver</h2>
+
+    <table class="solutions-table">
+      <thead>
+        <tr>
+          <th>Intervention</th>
+          <th>Addresses</th>
+          <th>Impact Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Attic insulation upgrade</strong> to R-38&#8211;R-60 with air sealing</td>
+          <td>Attic heat transfer (both seasons) + stack effect</td>
+          <td><span class="sol-tag high">High &#8212; Both Seasons</span></td>
+        </tr>
+        <tr>
+          <td><strong>Attic floor air sealing</strong> at penetrations, top plates, and stairwell</td>
+          <td>Stack effect (winter heating loss + summer stratification)</td>
+          <td><span class="sol-tag high">High &#8212; Winter Focus</span></td>
+        </tr>
+        <tr>
+          <td><strong>Upstairs return air improvement</strong> &#8212; grilles, jump ducts, or transfer grilles</td>
+          <td>Return restriction + pressure imbalance</td>
+          <td><span class="sol-tag high">High &#8212; Year-Round</span></td>
+        </tr>
+        <tr>
+          <td><strong>Duct inspection and correction</strong> for upstairs runs</td>
+          <td>Distribution loss, duct reheating in attic</td>
+          <td><span class="sol-tag mod">Moderate &#8212; Varies</span></td>
+        </tr>
+        <tr>
+          <td><strong>Ceiling fans on low</strong> (counterclockwise in summer, clockwise in winter)</td>
+          <td>Stratification &#8212; redistributes already-conditioned air</td>
+          <td><span class="sol-tag low">Low &#8212; Temporary</span></td>
+        </tr>
+        <tr>
+          <td><strong>Supplemental mini-split</strong> for top-floor bedroom zone</td>
+          <td>All four forces &#8212; bypasses central system limitations entirely</td>
+          <td><span class="sol-tag high">High &#8212; Complete</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Minor</div></div>
+        <div class="sev-desc">Predictable discomfort during peak conditions only. Fans manage adequately. Monitor attic insulation coverage.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Daily imbalance with elevated energy use. Attic insulation and return air improvements warranted.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Extended discomfort, condensation on surfaces, or drafts near exterior walls. Professional evaluation needed.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Moisture damage, mold risk, or freeze conditions at roofline plumbing or exterior framing. Act immediately.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"Two-story comfort calls are the most predictable in my work &#8212; and the most commonly mishandled. Almost every time, the homeowner has been told they need a bigger system. And almost every time, the attic hasn&#8217;t been touched in 20 years. I go up there and find 3 inches of blown insulation that should be 12&#8211;15 inches. The ceiling of the top floor is basically a direct connection to a 140°F oven in July. No HVAC system overcomes that. The second thing I always check is return air upstairs. Most two-story homes have zero return grilles on the upper floor. Every bedroom door that closes is a pressurized sealed room the system can&#8217;t cool. These are both fixable &#8212; and neither one involves replacing the equipment. The conversation I have with homeowners is: insulation and return air first. If we&#8217;ve done both and upstairs is still miserable, then we talk about zoning or supplemental equipment. In most cases, we never get to that conversation."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Note exactly when upstairs is worst &#8212; afternoon, overnight, or consistent &#8212; to identify the dominant driver</li>
+          <li>Open all upstairs bedroom doors and note whether comfort improves (confirms return restriction)</li>
+          <li>Visit the attic safely in the morning before it heats up &#8212; measure insulation depth and look for gaps near hatches, can lights, and exterior walls</li>
+          <li>Feel upstairs ceilings in summer afternoon &#8212; warm or hot ceiling = significant attic heat transfer</li>
+          <li>Check whether ceiling fans are set to the correct seasonal direction</li>
+          <li>Compare airflow at upstairs vs. downstairs registers of similar size</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Attic insulation installation &#8212; requires proper depth, coverage, and ventilation evaluation</li>
+          <li>Attic air sealing at penetrations, top plates, and stairwell &#8212; requires specialty materials</li>
+          <li>Upstairs return air addition &#8212; transfer grilles, jump ducts, or dedicated return grille runs</li>
+          <li>Duct inspection and correction for upstairs runs in attic space</li>
+          <li>Load calculation to determine whether zoning or supplemental equipment is warranted</li>
+          <li>Mini-split installation for top-floor supplemental conditioning</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My upstairs HVAC is a separate system from downstairs. Why is it still worse?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">A dedicated upstairs system addresses the duct distribution force but not the other three. The attic heat transfer is unchanged &#8212; an under-insulated ceiling still acts as a radiant heating panel regardless of which system is providing conditioned air. Stack effect is unchanged &#8212; warm air still rises and escapes through the same penetrations. Return air restriction may be improved if the dedicated upstairs system has adequate return grilles on that floor &#8212; which is worth verifying. If your dedicated upstairs system is still struggling, the priority is attic insulation and air sealing. The system may be properly sized for the floor's theoretical load but cannot overcome the additional real-time heat load from the attic above it.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How much difference does attic insulation actually make for upstairs comfort?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">In homes with significantly under-insulated attics &#8212; which is most homes built before the late 1990s &#8212; the difference can be dramatic. A ceiling with R-10 insulation above a 140°F attic is transferring heat into the room continuously at a rate that could require an additional 2&#8211;4 tons of cooling capacity just to offset it. Upgrading to R-38 or R-49 can reduce that heat transfer by 70&#8211;80%, fundamentally changing what the HVAC system is being asked to do. Beyond comfort, the energy impact is significant &#8212; attic insulation upgrades typically produce a 15&#8211;25% reduction in cooling energy costs in warm climates. The return on investment is typically 3&#8211;7 years. It is among the highest-ROI home improvements available in most US climates for homeowners with two-story houses.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Would a whole-house fan help with the upstairs-downstairs temperature difference?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">In the right climate and at the right time, yes. A whole-house fan draws outdoor air through open windows and exhausts it through the attic &#8212; this can ventilate the attic and cool the house structure on cool summer evenings and nights when outdoor temperatures drop below the indoor temperature. This directly addresses two of the four forces: it reduces attic temperature (reducing radiant ceiling heat transfer) and actively moves air through upper floors (reducing stratification). However, whole-house fans require outdoor temperatures below the indoor setpoint to be effective &#8212; they don&#8217;t help on hot humid evenings or in climates where nights don&#8217;t cool significantly. They also require proper attic ventilation to avoid pressurizing the attic. In appropriate climates they are a useful supplement &#8212; but they don&#8217;t replace insulation, air sealing, or return air improvements.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Upper floors face four simultaneous forces: attic heat transfer, stack effect, longer duct runs, and return-air restriction. A larger HVAC system addresses none of them.</li>
+        <li>The timing of peak discomfort identifies the dominant driver: afternoon/evening = attic load; overnight/morning = stack effect; consistent all day = duct distribution; door-open improvement = return restriction.</li>
+        <li>Attic insulation upgrade is the highest single-impact intervention for most two-story homes &#8212; it reduces load in both summer and winter simultaneously and improves energy costs year-round.</li>
+        <li>Many two-story homes have zero return grilles on the upper floor. Every upstairs bedroom door that closes is a sealed pressurized room the system cannot condition. Return air improvement upstairs is the most under-addressed intervention in two-story comfort.</li>
+        <li>Ceiling fans on the correct seasonal setting redistribute already-conditioned air but do not address any of the four root causes. They provide temporary relief, not correction.</li>
+        <li>When attic insulation, air sealing, and return air have been addressed and upstairs discomfort persists, a dedicated mini-split for the top floor bypasses all four central-system limitations simultaneously.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">upstairs too hot summer</a>
+      <a href="#" class="tag-pill">second floor cold winter</a>
+      <a href="#" class="tag-pill">upstairs downstairs temperature difference</a>
+      <a href="#" class="tag-pill">two story home HVAC problem</a>
+      <a href="#" class="tag-pill">stack effect home heating</a>
+      <a href="#" class="tag-pill">attic heat upstairs rooms</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Airflow &amp; Comfort Guides</h3>
+    <div class="related-list">
+      <a href="hvac-sun-exposure-overwhelms-hvac.html" class="related-item">
+        <div><div class="related-item-title">Why Sun Exposure and Room Location Overwhelm HVAC Airflow</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-return-air-uneven-temps.html" class="related-item">
+        <div><div class="related-item-title">Why Return Air Problems Cause Uneven Temperatures</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-airflow-vs-insulation-problem.html" class="related-item">
+        <div><div class="related-item-title">Airflow Problem vs. Insulation Problem</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-farthest-room-worst-comfort.html" class="related-item">
+        <div><div class="related-item-title">Why the Farthest Room Has the Worst Comfort</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#matrix">Vertical Comfort Driver Matrix</a></li>
+      <li><a href="#forces">The Four Forces</a></li>
+      <li><a href="#solutions">Solutions by Driver</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

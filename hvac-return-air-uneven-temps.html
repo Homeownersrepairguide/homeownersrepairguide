@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Return Air Problems Cause Uneven Room Temperatures | HomeownersRepairGuide.com</title>
+<meta name="description" content="Supply air gets the attention, but return air is half the system. When rooms can't relieve pressure back to the air handler, comfort breaks down even when supply and equipment are working perfectly.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-return-air-uneven-temps.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-return-air-uneven-temps.html">
+<meta property="og:title" content="Why Return Air Problems Cause Uneven Room Temperatures | HomeownersRepairGuide.com">
+<meta property="og:description" content="Supply air gets the attention, but return air is half the system. When rooms can't relieve pressure back to the air handler, comfort fails even when everything else works.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --ok:#2a7a2a;--ok-light:#eaf5ea;
+  --marginal:#b07800;--marginal-light:#fff8e6;
+  --restricted:#c0392b;--restricted-light:#fde8e8;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Return Air Health Checker */
+.return-checker{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.rc-header{background:var(--navy);padding:18px 22px;}
+.rc-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.rc-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+.rc-legend{display:flex;gap:16px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.rc-leg{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:600;}
+.rc-leg-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;}
+.rc-leg.ok{color:var(--ok);}.rc-leg.ok .rc-leg-dot{background:var(--ok);}
+.rc-leg.marginal{color:var(--marginal);}.rc-leg.marginal .rc-leg-dot{background:var(--marginal);}
+.rc-leg.restricted{color:var(--restricted);}.rc-leg.restricted .rc-leg-dot{background:var(--restricted);}
+/* Check rows */
+.rc-rows{display:flex;flex-direction:column;}
+.rc-row{display:grid;grid-template-columns:200px 1fr 1fr 1fr;border-bottom:1px solid var(--gray-light);}
+.rc-row:last-child{border-bottom:none;}
+.rc-col-heads{display:grid;grid-template-columns:200px 1fr 1fr 1fr;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);}
+.rc-col-head{padding:9px 14px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;border-right:1px solid var(--gray-light);}
+.rc-col-head:last-child{border-right:none;}
+.rc-col-head:first-child{color:var(--text-muted);}
+.rc-col-head.ok{color:var(--ok);}
+.rc-col-head.marginal{color:var(--marginal);}
+.rc-col-head.restricted{color:var(--restricted);}
+.rc-factor{padding:13px 14px;background:var(--cream-dark);border-right:1px solid var(--gray-light);display:flex;align-items:center;}
+.rc-factor-icon{font-size:16px;margin-right:8px;flex-shrink:0;}
+.rc-factor-text{font-size:12px;font-weight:700;color:var(--navy);line-height:1.3;}
+.rc-cell{padding:12px 14px;border-right:1px solid var(--gray-light);font-size:12px;line-height:1.5;}
+.rc-cell:last-child{border-right:none;}
+.rc-cell-verdict{display:flex;align-items:center;gap:5px;margin-bottom:4px;}
+.rc-verdict-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;}
+.rc-cell.ok-col .rc-verdict-dot{background:var(--ok);}
+.rc-cell.marginal-col .rc-verdict-dot{background:var(--marginal);}
+.rc-cell.restricted-col .rc-verdict-dot{background:var(--restricted);}
+.rc-verdict-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;}
+.rc-cell.ok-col .rc-verdict-label{color:var(--ok);}
+.rc-cell.marginal-col .rc-verdict-label{color:var(--marginal);}
+.rc-cell.restricted-col .rc-verdict-label{color:var(--restricted);}
+.rc-cell-desc{color:var(--text-muted);}
+.rc-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.rc-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.rc-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.rc-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* How return air works */
+.flow-diagram{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:24px 0;background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.flow-step{padding:18px 16px;text-align:center;}
+.flow-step:not(:last-child){border-right:1px solid var(--gray-light);}
+.flow-icon{font-size:28px;margin-bottom:8px;}
+.flow-num{width:22px;height:22px;border-radius:50%;background:var(--hvac);color:var(--white);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 8px;}
+.flow-title{font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--navy);margin-bottom:5px;}
+.flow-desc{font-size:11px;color:var(--text-muted);line-height:1.5;}
+.flow-break{padding:0 4px;display:flex;align-items:center;justify-content:center;font-size:20px;color:var(--gray-mid);}
+/* Fix options table */
+.fix-table{width:100%;border-collapse:collapse;margin:24px 0;background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.fix-table th{background:var(--navy);color:var(--white);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;padding:11px 14px;text-align:left;}
+.fix-table td{padding:12px 14px;font-size:13px;border-bottom:1px solid var(--gray-light);vertical-align:top;line-height:1.45;}
+.fix-table tr:last-child td{border-bottom:none;}
+.fix-table tr:hover td{background:var(--cream);}
+.fix-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:2px;white-space:nowrap;}
+.fix-badge.diy{background:var(--ok-light);color:var(--ok);}
+.fix-badge.pro{background:var(--hvac-light);color:var(--hvac-dark);}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--marginal-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--restricted-light);border:1px solid #e08080;}
+.callout-box.tip{background:var(--ok-light);border:1px solid #80c080;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--marginal);}
+.callout-box.alert .callout-label{color:var(--restricted);}
+.callout-box.tip .callout-label{color:var(--ok);}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--marginal);}.sev-item.mod .sev-label{color:var(--marginal);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--restricted);}.sev-item.crit .sev-label{color:var(--restricted);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--restricted);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--restricted);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--restricted);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.flow-diagram{grid-template-columns:1fr;}.rc-row,.rc-col-heads{grid-template-columns:1fr;}.rc-factor{border-right:none;border-bottom:1px solid var(--gray-light);}.rc-cell{border-right:none !important;border-bottom:1px solid var(--gray-light);}.rc-col-heads{display:none;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-airflow-comfort.html">Airflow &amp; Comfort</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Return Air Problems Cause Uneven Temperatures</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Airflow &amp; Comfort</span>
+  </div>
+
+  <h1 class="article-title">Why Return Air Problems Cause Uneven Room Temperatures</h1>
+  <p class="article-subtitle">Supply air gets all the attention &#8212; but return air is half the system. When rooms can&#8217;t relieve pressure back to the air handler, airflow stalls, pressure builds, and comfort fails. The equipment may be working perfectly. The house can&#8217;t breathe.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>HVAC is a loop, not a one-way delivery system.</strong> Supply air must enter a room and return air must exit &#8212; both in adequate volume. When the return path is blocked, restricted, or undersized, the supply side can&#8217;t deliver effectively even if ducts and equipment are perfect.</li>
+        <li>The single most reliable field test: open all interior doors. If comfort improves across multiple rooms within minutes, the return system is the limiting factor &#8212; not supply or equipment.</li>
+        <li>Most homes have a central return &#8212; one or two large grilles serving the whole house. Any room physically separated from that return by a closed door is potentially return-restricted.</li>
+        <li>Adding supply vents to a return-restricted room increases the pressure problem &#8212; more air comes in but still can&#8217;t get out</li>
+        <li>Long-term return restriction raises blower motor load, increases static pressure, and accelerates equipment wear</li>
+        <li>Remodeling is the most common trigger for new return-air problems: walls added, doors tightened, or original return pathways blocked</li>
+      </ul>
+    </div>
+
+    <h2 id="checker">Return Air Health Checker</h2>
+    <p>Evaluate your return system across four dimensions. Each factor has three states &#8212; match your situation to identify where your return system is failing.</p>
+
+    <div class="return-checker">
+      <div class="rc-header">
+        <h3>Four-Factor Return Air Assessment</h3>
+        <p>Read across each row. The column that best matches your situation indicates your return air health for that factor.</p>
+      </div>
+      <div class="rc-legend">
+        <div class="rc-leg ok"><span class="rc-leg-dot"></span>Adequate &#8212; Return path functioning</div>
+        <div class="rc-leg marginal"><span class="rc-leg-dot"></span>Marginal &#8212; Borderline restriction</div>
+        <div class="rc-leg restricted"><span class="rc-leg-dot"></span>Restricted &#8212; Significant problem</div>
+      </div>
+      <div class="rc-col-heads">
+        <div class="rc-col-head">Factor</div>
+        <div class="rc-col-head ok">&#9670; Adequate</div>
+        <div class="rc-col-head marginal">&#9670; Marginal</div>
+        <div class="rc-col-head restricted">&#9670; Restricted</div>
+      </div>
+      <div class="rc-rows">
+
+        <div class="rc-row">
+          <div class="rc-factor"><span class="rc-factor-icon">&#127968;</span><span class="rc-factor-text">Door-Open Test</span></div>
+          <div class="rc-cell ok-col">
+            <div class="rc-cell-verdict"><div class="rc-verdict-dot"></div><div class="rc-verdict-label">Adequate</div></div>
+            <div class="rc-cell-desc">Opening doors produces no noticeable comfort change. Rooms maintain temperature with doors open or closed.</div>
+          </div>
+          <div class="rc-cell marginal-col">
+            <div class="rc-cell-verdict"><div class="rc-verdict-dot"></div><div class="rc-verdict-label">Marginal</div></div>
+            <div class="rc-cell-desc">Slight improvement when doors open, especially in colder weather. Comfortable most of the time with doors closed in mild conditions.</div>
+          </div>
+          <div class="rc-cell restricted-col">
+            <div class="rc-cell-verdict"><div class="rc-verdict-dot"></div><div class="rc-verdict-label">Restricted</div></div>
+            <div class="rc-cell-desc">Immediate, noticeable comfort improvement when doors are opened. Multiple rooms affected. This is the clearest return restriction signal.</div>
+          </div>
+        </div>
+
+        <div class="rc-row">
+          <div class="rc-factor"><span class="rc-factor-icon">&#128268;</span><span class="rc-factor-text">Return Grille Coverage</span></div>
+          <div class="rc-cell ok-col">
+            <div class="rc-cell-verdict"><div class="rc-verdict-dot"></div><div class="rc-verdict-label">Adequate</div></div>
+            <div class="rc-cell-desc">Return grilles are located in hallways or common areas accessible from all rooms without a closed door. Multiple returns or a large central return.</div>
+          </div>
+          <div class="rc-cell marginal-col">
+            <div class="rc-cell-verdict"><div class="rc-verdict-dot"></div><div class="rc-verdict-label">Marginal</div></div>
+            <div class="rc-cell-desc">Single central return in hallway, serving several rooms that are sometimes closed. Works in mild weather, marginal during peak heating or cooling demand.</div>
+          </div>
+          <div class="rc-cell restricted-col">
+            <div class="rc-cell-verdict"><div class="rc-verdict-dot"></div><div class="rc-verdict-label">Restricted</div></div>
+            <div class="rc-cell-desc">Single small return serving many rooms, or return blocked by furniture or wall modifications. Rooms routinely door-closed have no return pathway.</div>
+          </div>
+        </div>
+
+        <div class="rc-row">
+          <div class="rc-factor"><span class="rc-factor-icon">&#128207;</span><span class="rc-factor-text">Door Undercut Clearance</span></div>
+          <div class="rc-cell ok-col">
+            <div class="rc-cell-verdict"><div class="rc-verdict-dot"></div><div class="rc-verdict-label">Adequate</div></div>
+            <div class="rc-cell-desc">Doors have at least 3/4&#8221; clearance beneath them above carpet/flooring. Air can flow back to the return even with doors closed.</div>
+          </div>
+          <div class="rc-cell marginal-col">
+            <div class="rc-cell-verdict"><div class="rc-verdict-dot"></div><div class="rc-verdict-label">Marginal</div></div>
+            <div class="rc-cell-desc">Clearance is less than 3/4&#8221; but some airflow passes beneath. Tight fit after new carpet installation. Works with doors cracked, fails when fully closed.</div>
+          </div>
+          <div class="rc-cell restricted-col">
+            <div class="rc-cell-verdict"><div class="rc-verdict-dot"></div><div class="rc-verdict-label">Restricted</div></div>
+            <div class="rc-cell-desc">Door nearly flush with carpet or floor. A door sweep has eliminated the undercut gap entirely. Zero undercut air pathway when door is closed.</div>
+          </div>
+        </div>
+
+        <div class="rc-row">
+          <div class="rc-factor"><span class="rc-factor-icon">&#9889;</span><span class="rc-factor-text">System Pressure Symptoms</span></div>
+          <div class="rc-cell ok-col">
+            <div class="rc-cell-verdict"><div class="rc-verdict-dot"></div><div class="rc-verdict-label">Adequate</div></div>
+            <div class="rc-cell-desc">No audible pressure noise at doors, no slamming, steady system cycling. Blower runs at consistent volume regardless of door positions.</div>
+          </div>
+          <div class="rc-cell marginal-col">
+            <div class="rc-cell-verdict"><div class="rc-verdict-dot"></div><div class="rc-verdict-label">Marginal</div></div>
+            <div class="rc-cell-desc">Slight draft at door bases when system runs. Blower slightly louder when multiple doors are closed. System still cycles normally.</div>
+          </div>
+          <div class="rc-cell restricted-col">
+            <div class="rc-cell-verdict"><div class="rc-verdict-dot"></div><div class="rc-verdict-label">Restricted</div></div>
+            <div class="rc-cell-desc">Audible whistling or rushing at door gaps. Doors slam or are pushed open by air pressure. Blower louder with doors closed. Cycling may increase.</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="rc-footer">
+        <div class="rc-footer-icon">&#128161;</div>
+        <div>
+          <h4>Two or More Restricted Factors = Significant Return Problem</h4>
+          <p>A single restricted factor may produce borderline comfort issues. Two or more restricted factors together create a compounding return-path failure that professional evaluation should address &#8212; adding supply air or replacing equipment will not fix it.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="loop">How the Supply-Return Loop Works</h2>
+
+    <div class="flow-diagram">
+      <div class="flow-step">
+        <div class="flow-icon">&#127777;&#65039;</div>
+        <div class="flow-num">1</div>
+        <div class="flow-title">Air Handler Conditions Air</div>
+        <div class="flow-desc">The air handler heats or cools air using the heat exchanger (heating) or evaporator coil (cooling).</div>
+      </div>
+      <div class="flow-step" style="border-top:1px solid var(--gray-light);">
+        <div class="flow-icon">&#8594;</div>
+        <div class="flow-num">2</div>
+        <div class="flow-title">Supply Delivers to Rooms</div>
+        <div class="flow-desc">Conditioned air travels through supply ducts and registers into each room. This is what most homeowners focus on.</div>
+      </div>
+      <div class="flow-step" style="border-top:1px solid var(--gray-light);">
+        <div class="flow-icon">&#8592;</div>
+        <div class="flow-num">3</div>
+        <div class="flow-title">Return Completes the Loop</div>
+        <div class="flow-desc">Room air must travel back through a return pathway &#8212; door undercut, hallway, return grille &#8212; to the air handler for reconditioning. Without this, Step 1 cannot function.</div>
+      </div>
+    </div>
+
+    <p>When the return pathway is blocked, rooms pressurize. The supply side is trying to push air in, but the room is pushing back. The pressure differential decreases and effective airflow delivery drops &#8212; not because the supply duct is restricted, but because the room is full and can&#8217;t accept more air.</p>
+
+    <div class="callout-box alert">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Adding Supply Vents Makes Return Problems Worse</div>
+        <div class="callout-text">If a room is return-restricted, adding another supply register pushes more air into a space that can&#8217;t accept it. The room pressurizes faster, resistance to supply delivery increases further, and the problem in adjacent rooms worsens as static pressure rises throughout the system. The fix must be on the return side.</div>
+      </div>
+    </div>
+
+    <h2 id="fixes">Return Air Fixes by Situation</h2>
+
+    <table class="fix-table">
+      <thead>
+        <tr>
+          <th>Situation</th>
+          <th>Fix</th>
+          <th>Effort</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Door undercut eliminated by new carpet or door sweep</td>
+          <td>Trim the door bottom or remove the sweep to restore 3/4&#8221;&#8211;1&#8221; clearance. Most effective low-cost first step.</td>
+          <td><span class="fix-badge diy">DIY</span></td>
+        </tr>
+        <tr>
+          <td>Door-open test confirms return restriction but undercut is adequate</td>
+          <td>Install a wall transfer grille between the room and the hallway. Allows pressure equalization with privacy maintained.</td>
+          <td><span class="fix-badge pro">Professional</span></td>
+        </tr>
+        <tr>
+          <td>Multiple rooms affected, single central return serving too many rooms</td>
+          <td>Jump duct from affected rooms over the partition wall back to the return plenum. More effective than transfer grilles for severe imbalance.</td>
+          <td><span class="fix-badge pro">Professional</span></td>
+        </tr>
+        <tr>
+          <td>Return grille blocked by furniture</td>
+          <td>Move furniture away from the return grille. A minimum 12&#8221; clearance in front of return grilles is required for adequate flow.</td>
+          <td><span class="fix-badge diy">DIY</span></td>
+        </tr>
+        <tr>
+          <td>Remodel added rooms without return access</td>
+          <td>Dedicated return duct run from new rooms back to the return plenum. Full duct work &#8212; most expensive but most complete solution.</td>
+          <td><span class="fix-badge pro">Professional</span></td>
+        </tr>
+        <tr>
+          <td>Return filter severely clogged</td>
+          <td>Replace the filter. A clogged return filter restricts airflow at the system level, not just one room &#8212; but affects rooms with marginal return paths first.</td>
+          <td><span class="fix-badge diy">DIY</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Minor</div></div>
+        <div class="sev-desc">Slight discomfort with doors closed in mild weather only. Check door undercut and filter first.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Persistent discomfort, audible pressure noise. Multiple rooms affected. Professional evaluation needed.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">High static pressure, increased cycling, blower running noticeably louder with doors closed. Equipment stress. Service needed.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Coil freeze-ups, safety limit cycling, or blower motor damage from sustained elevated static pressure.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"Return air is the most underdiagnosed HVAC problem in residential systems. Every homeowner knows what a supply register is. Most have never thought about whether their home has adequate return pathways &#8212; and most HVAC systems were designed with a single central return that was marginal even when the house was new. The test I do on every comfort call is to open all the doors and check if anything changes. If it does &#8212; and it usually does &#8212; that&#8217;s my answer. I don&#8217;t need to pull out the manometer yet. The house told me. Return restriction is also the one problem that worsens as the house is &#8216;improved&#8217; &#8212; new carpeting, new doors, added rooms, door sweeps for draft control. Every one of those improvements can make a marginal return system into a restricted one. I ask every homeowner: what changed in the last year or two? Nine times out of ten, something did."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Open all interior doors and note whether comfort improves across multiple rooms</li>
+          <li>Measure door undercut clearance &#8212; should be at least 3/4&#8221; above carpet</li>
+          <li>Check whether door sweeps have been installed that eliminate the undercut gap</li>
+          <li>Confirm all return grilles are unobstructed by furniture &#8212; minimum 12&#8221; clearance</li>
+          <li>Replace the return filter if it hasn&#8217;t been changed recently</li>
+          <li>Note whether problems started after carpet installation, remodeling, or door replacement</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Static pressure testing to measure whole-system return capacity</li>
+          <li>Room pressure differential measurements</li>
+          <li>Transfer grille installation through walls</li>
+          <li>Jump duct installation over partitions in the attic</li>
+          <li>Adding dedicated return duct runs to rooms without return access</li>
+          <li>Return trunk resizing for systems with chronically undersized return capacity</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My house has always had uneven temperatures. Does that mean it was built with inadequate return air?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">Quite possibly. Many homes &#8212; particularly those built before the 1990s &#8212; were designed with a single central return in the main hallway, intended to serve the entire house. This was an accepted design approach at the time, but it was always marginal for houses where bedroom doors are routinely closed. The single-return design can work adequately when doors are open &#8212; which was more common in older household patterns &#8212; but fails when modern privacy and noise-control habits involve keeping doors closed most of the time. If your house has always had uneven temperatures that improve when doors are open, the original design was adequate for open-door living and is now undersized for how you actually use the house. Transfer grilles or jump ducts are the standard correction.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Will a whole-house fan or exhaust fans affect my return air balance?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">Yes &#8212; exhaust fans, kitchen range hoods, and whole-house fans all extract air from the home, creating negative pressure relative to the outside. This negative pressure can partially counteract room-level pressure imbalances by creating a whole-house pull toward exhaust points. In some cases this provides temporary relief from return restriction symptoms. However, it does not correct the underlying return path deficiency &#8212; and the relief is intermittent, only when the exhaust fans are running. Running bathroom or kitchen exhaust continuously is not a substitute for adequate return air pathways, and it adds ongoing energy cost. Address the return system properly rather than relying on exhaust fans to manage the imbalance.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How do I know if my system has enough return air capacity overall, not just room by room?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">The whole-system return capacity test is static pressure measurement at the return plenum. A qualified technician measures the pressure difference between the return side and the supply side &#8212; the total external static pressure. Most residential systems are designed to operate at 0.5 inches of water column total static pressure. Systems operating significantly above this are working against excessive resistance, which usually means the return is undersized for the blower capacity. You can get a rough indication without instruments by measuring the return grille area and comparing it to the supply register area: the total return grille area should roughly equal the total supply area. If your home has one 14x24&#8221; return grille and eight supply registers, the return is almost certainly undersized for the whole house regardless of door positions.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>HVAC is a loop, not a one-way delivery system. Supply air must be matched by adequate return pathways, or the supply side cannot deliver effectively even with perfect ducts and equipment.</li>
+        <li>The door-open test is the fastest and most reliable field confirmation of return restriction: open all interior doors, wait 5 minutes, and note whether comfort improves across multiple rooms simultaneously.</li>
+        <li>Adding supply vents to a return-restricted room increases the pressure problem &#8212; more air comes in but still can&#8217;t exit. The fix must be on the return side.</li>
+        <li>Most homes have a single central return. Every room physically separated from that return by a closed door with inadequate undercut clearance is potentially return-restricted.</li>
+        <li>Remodeling is the most common trigger for new return problems: carpet reduces door undercuts, door sweeps eliminate them entirely, and added walls block original return pathways.</li>
+        <li>Long-term return restriction raises system static pressure, increases blower motor load, and contributes to premature equipment failure &#8212; beyond just causing comfort problems.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">return air HVAC problems</a>
+      <a href="#" class="tag-pill">uneven temperatures return air</a>
+      <a href="#" class="tag-pill">HVAC return grille sizing</a>
+      <a href="#" class="tag-pill">rooms uncomfortable closed doors</a>
+      <a href="#" class="tag-pill">static pressure return restriction</a>
+      <a href="#" class="tag-pill">transfer grille jump duct</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Airflow &amp; Comfort Guides</h3>
+    <div class="related-list">
+      <a href="hvac-closing-doors-temperature.html" class="related-item">
+        <div><div class="related-item-title">Why Closing Bedroom Doors Causes Temperature Problems</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-airflow-noises-louder.html" class="related-item">
+        <div><div class="related-item-title">Why Your HVAC Suddenly Gets Louder</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-one-room-hot-or-cold.html" class="related-item">
+        <div><div class="related-item-title">Why One Room Is Always Hot or Cold</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-airflow-vs-insulation-problem.html" class="related-item">
+        <div><div class="related-item-title">Airflow Problem vs. Insulation Problem</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#checker">Return Air Health Checker</a></li>
+      <li><a href="#loop">How the Loop Works</a></li>
+      <li><a href="#fixes">Fixes by Situation</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>

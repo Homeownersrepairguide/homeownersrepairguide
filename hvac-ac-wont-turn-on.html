@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Your AC Won't Turn On | HomeownersRepairGuide.com</title>
+<meta name="description" content="When your AC won't turn on, the cause is always in the power, control, safety, or mechanical circuit. A 6-step check traces exactly where the startup chain is broken.">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-ac-wont-turn-on.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-ac-wont-turn-on.html">
+<meta property="og:title" content="Why Your AC Won't Turn On | HomeownersRepairGuide.com">
+<meta property="og:description" content="AC startup failures always trace to a specific circuit. A 6-step check finds where the chain is broken — before a technician arrives.">
+<meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2236;--navy-mid:#1a3550;
+  --rust:#c8441a;--rust-light:#e05a2b;
+  --amber:#f0a500;
+  --hvac:#2a6b7a;--hvac-dark:#1a4a55;--hvac-light:#e8f4f7;
+  --hv:#c0402a;--hv-light:#fde8e8;
+  --lv:#5a2a7a;--lv-light:#f0e8f5;
+  --safety:#2a7a5a;--safety-light:#e8f5f0;
+  --mech:#b07800;--mech-light:#fff8e6;
+  --ok:#2a7a2a;--ok-light:#eaf5ea;
+  --cream:#faf7f2;--cream-dark:#f0ebe2;
+  --white:#ffffff;
+  --gray-light:#e8e4de;--gray-mid:#9a9490;
+  --text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;
+  --shadow-soft:0 4px 24px rgba(15,34,54,0.08);
+  --shadow-card:0 2px 12px rgba(15,34,54,0.10);
+  --shadow-hover:0 8px 32px rgba(15,34,54,0.16);
+  --radius:4px;--radius-lg:8px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;overflow-x:hidden;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.nav-cta:hover{background:var(--rust-light)!important;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.article-wrap{max-width:1200px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start;}
+.article-main{min-width:0;}
+.article-category{display:inline-flex;align-items:center;gap:8px;margin-bottom:14px;}
+.tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;padding:4px 10px;border-radius:2px;background:var(--hvac);color:var(--white);}
+.article-title{font-family:'Playfair Display',serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;color:var(--navy);line-height:1.15;letter-spacing:-0.02em;margin-bottom:16px;}
+.article-subtitle{font-size:17px;color:var(--text-muted);line-height:1.6;margin-bottom:24px;border-left:3px solid var(--hvac);padding-left:14px;}
+.article-byline{display:flex;align-items:center;gap:14px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:28px;}
+.byline-avatar{width:38px;height:38px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);flex-shrink:0;}
+.byline-info{flex:1;}
+.byline-name{font-size:14px;font-weight:600;color:var(--text-dark);}
+.byline-cred{font-size:11px;color:var(--text-muted);margin-top:2px;}
+.byline-meta{font-size:12px;color:var(--text-muted);text-align:right;}
+.byline-meta strong{color:var(--text-dark);}
+.article-body{font-size:16px;line-height:1.75;color:var(--text-body);}
+.article-body h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin:40px 0 14px;line-height:1.2;padding-top:8px;border-top:2px solid var(--gray-light);}
+.article-body p{margin-bottom:18px;}
+.article-body ul{margin:0 0 18px 0;padding-left:22px;}
+.article-body li{margin-bottom:7px;}
+.article-body strong{color:var(--text-dark);font-weight:600;}
+/* Quick summary */
+.quick-summary{background:var(--hvac);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:32px;}
+.quick-summary h3{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:12px;}
+.quick-summary ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.quick-summary li{font-size:14px;color:rgba(255,255,255,0.9);line-height:1.45;display:flex;gap:8px;}
+.quick-summary li::before{content:'\2192';color:rgba(255,255,255,0.5);font-weight:700;flex-shrink:0;}
+/* PRIMARY DIAGNOSTIC: Startup Circuit Tracer */
+.circuit-tracer{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;margin:28px 0;box-shadow:var(--shadow-card);}
+.ct-header{background:var(--navy);padding:18px 22px;}
+.ct-header h3{font-family:'Playfair Display',serif;font-size:17px;color:var(--white);margin-bottom:4px;}
+.ct-header p{font-size:13px;color:rgba(255,255,255,0.55);}
+/* Circuit type legend */
+.ct-legend{display:flex;gap:14px;padding:11px 18px;background:var(--cream-dark);border-bottom:2px solid var(--gray-light);flex-wrap:wrap;}
+.ct-leg{display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;}
+.ct-leg-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.ct-leg.hv{color:var(--hv);}.ct-leg.hv .ct-leg-dot{background:var(--hv);}
+.ct-leg.lv{color:var(--lv);}.ct-leg.lv .ct-leg-dot{background:var(--lv);}
+.ct-leg.safety{color:var(--safety);}.ct-leg.safety .ct-leg-dot{background:var(--safety);}
+.ct-leg.mech{color:var(--mech);}.ct-leg.mech .ct-leg-dot{background:var(--mech);}
+/* Steps */
+.ct-steps{display:flex;flex-direction:column;}
+.ct-step{border-bottom:1px solid var(--gray-light);display:grid;grid-template-columns:80px 1fr;}
+.ct-step:last-child{border-bottom:none;}
+.ct-step-num{padding:16px 12px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;background:var(--cream-dark);border-right:1px solid var(--gray-light);padding-top:18px;}
+.ct-num-circle{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:var(--white);margin-bottom:6px;}
+.ct-step.hv-step .ct-num-circle{background:var(--hv);}
+.ct-step.lv-step .ct-num-circle{background:var(--lv);}
+.ct-step.safety-step .ct-num-circle{background:var(--safety);}
+.ct-step.mech-step .ct-num-circle{background:var(--mech);}
+.ct-circuit-label{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;text-align:center;line-height:1.2;}
+.ct-step.hv-step .ct-circuit-label{color:var(--hv);}
+.ct-step.lv-step .ct-circuit-label{color:var(--lv);}
+.ct-step.safety-step .ct-circuit-label{color:var(--safety);}
+.ct-step.mech-step .ct-circuit-label{color:var(--mech);}
+.ct-step-body{padding:14px 16px;}
+.ct-step-action{font-size:13px;font-weight:700;color:var(--navy);margin-bottom:6px;}
+.ct-step-check{font-size:12px;color:var(--text-muted);line-height:1.55;margin-bottom:8px;}
+.ct-outcomes{display:flex;flex-direction:column;gap:5px;}
+.ct-outcome{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.4;}
+.ct-outcome-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:3px;}
+.ct-outcome-dot.ok{background:var(--ok);}
+.ct-outcome-dot.fault{background:var(--hv);}
+.ct-outcome.ok-out .ct-outcome-dot{background:var(--ok);}
+.ct-outcome.fault-out .ct-outcome-dot{background:var(--hv);}
+.ct-outcome-text{color:var(--text-body);}
+.ct-outcome-text strong{color:var(--navy);}
+.ct-footer{background:var(--navy);padding:14px 18px;display:flex;gap:12px;align-items:flex-start;}
+.ct-footer-icon{font-size:18px;flex-shrink:0;margin-top:2px;}
+.ct-footer h4{color:var(--amber);font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:4px;}
+.ct-footer p{color:rgba(255,255,255,0.8);font-size:13px;line-height:1.55;}
+/* Two circuits explainer */
+.two-circuits{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.circuit-card{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);}
+.cc-head{padding:12px 16px;display:flex;align-items:center;gap:9px;}
+.cc-head.hv{background:var(--hv);}
+.cc-head.lv{background:var(--lv);}
+.cc-icon{font-size:17px;color:var(--white);}
+.cc-title{font-size:13px;font-weight:700;color:var(--white);}
+.cc-body{background:var(--white);border:1px solid var(--gray-light);border-top:none;padding:13px 15px;}
+.cc-desc{font-size:12px;color:var(--text-body);line-height:1.55;margin-bottom:8px;}
+.cc-items{list-style:none;display:flex;flex-direction:column;gap:4px;}
+.cc-items li{font-size:12px;color:var(--text-muted);display:flex;gap:6px;line-height:1.4;}
+.cc-items li::before{content:'·';font-weight:700;color:var(--gray-mid);flex-shrink:0;}
+/* Donot list */
+.donot-list{background:var(--hv-light);border:1px solid #e08080;border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;}
+.donot-head{display:flex;align-items:center;gap:8px;margin-bottom:12px;}
+.donot-icon{font-size:20px;}
+.donot-title{font-size:13px;font-weight:700;color:var(--hv);text-transform:uppercase;letter-spacing:0.07em;}
+.donot-items{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.donot-items li{font-size:13px;color:var(--text-body);line-height:1.45;display:flex;gap:8px;}
+.donot-items li::before{content:'\2717';color:var(--hv);font-weight:700;flex-shrink:0;}
+/* Callout boxes */
+.callout-box{border-radius:var(--radius-lg);padding:18px 22px;margin:24px 0;display:flex;gap:12px;align-items:flex-start;}
+.callout-box.warning{background:var(--mech-light);border:1px solid #f0c040;}
+.callout-box.alert{background:var(--hv-light);border:1px solid #e08080;}
+.callout-box.tip{background:var(--ok-light);border:1px solid #80c080;}
+.callout-box.navy{background:var(--navy);border:none;}
+.callout-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+.callout-content{flex:1;}
+.callout-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:5px;}
+.callout-box.warning .callout-label{color:var(--mech);}
+.callout-box.alert .callout-label{color:var(--hv);}
+.callout-box.tip .callout-label{color:var(--ok);}
+.callout-box.navy .callout-label{color:var(--amber);}
+.callout-text{font-size:14px;line-height:1.6;color:var(--text-body);}
+.callout-box.navy .callout-text{color:rgba(255,255,255,0.85);}
+/* Severity */
+.severity-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0;}
+.sev-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:13px 14px;box-shadow:var(--shadow-card);}
+.sev-dot-row{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+.sev-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0;}
+.sev-label{font-size:11px;font-weight:700;}
+.sev-item.low .sev-dot{background:#4caf50;}.sev-item.low .sev-label{color:#4caf50;}
+.sev-item.mod .sev-dot{background:var(--mech);}.sev-item.mod .sev-label{color:var(--mech);}
+.sev-item.high .sev-dot{background:var(--rust);}.sev-item.high .sev-label{color:var(--rust);}
+.sev-item.crit .sev-dot{background:var(--hv);}.sev-item.crit .sev-label{color:var(--hv);}
+.sev-desc{font-size:12px;color:var(--text-body);line-height:1.4;}
+.sev-item.crit{border:1px solid var(--hv);}
+/* Expert */
+.expert-callout{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin:28px 0;display:flex;gap:14px;align-items:flex-start;}
+.expert-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;margin-top:2px;}
+.expert-label{font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--amber);margin-bottom:5px;}
+.expert-text{font-size:14px;color:rgba(255,255,255,0.88);line-height:1.65;font-style:italic;}
+.expert-attr{font-size:11px;color:rgba(255,255,255,0.45);margin-top:6px;}
+/* DIY vs Pro */
+.diy-pro{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:24px 0;}
+.diy-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:16px 18px;box-shadow:var(--shadow-card);}
+.diy-head{font-size:13px;font-weight:700;margin-bottom:10px;}
+.diy-head.safe{color:#2a7a2a;}.diy-head.stop{color:var(--hv);}
+.diy-items{list-style:none;display:flex;flex-direction:column;gap:6px;}
+.diy-items li{font-size:13px;color:var(--text-body);line-height:1.4;display:flex;gap:7px;}
+.diy-items.safe-list li::before{content:'\2713';color:#3a6b3a;font-weight:700;flex-shrink:0;}
+.diy-items.stop-list li::before{content:'\2717';color:var(--hv);font-weight:700;flex-shrink:0;}
+/* FAQ */
+.faq-block{margin:28px 0;}
+.faq-item{border-bottom:1px solid var(--gray-light);}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:15px 0;cursor:pointer;font-size:15px;font-weight:600;color:var(--navy);gap:14px;user-select:none;}
+.faq-question:hover{color:var(--hvac);}
+.faq-chevron{font-size:16px;color:var(--gray-mid);transition:transform 0.2s;flex-shrink:0;}
+.faq-answer{font-size:14px;color:var(--text-body);line-height:1.7;padding-bottom:15px;display:none;}
+.faq-item.open .faq-answer{display:block;}
+.faq-item.open .faq-chevron{transform:rotate(180deg);color:var(--hvac);}
+/* Summary */
+.summary-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:36px 0 28px;}
+.summary-box h3{font-family:'Playfair Display',serif;font-size:17px;font-weight:700;color:var(--white);margin-bottom:14px;}
+.summary-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.summary-list li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.8);line-height:1.5;}
+.summary-list li::before{content:'\2192';color:var(--amber);font-weight:700;flex-shrink:0;margin-top:1px;}
+.article-tags{display:flex;flex-wrap:wrap;gap:7px;margin:24px 0;padding-top:24px;border-top:1px solid var(--gray-light);}
+.tag-pill{font-size:12px;padding:4px 10px;background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:20px;color:var(--text-muted);text-decoration:none;transition:all 0.15s;}
+.tag-pill:hover{background:var(--hvac);color:var(--white);border-color:var(--hvac);}
+.share-bar{display:flex;align-items:center;gap:10px;padding:16px 0;border-top:1px solid var(--gray-light);border-bottom:1px solid var(--gray-light);margin-bottom:36px;flex-wrap:wrap;}
+.share-label{font-size:13px;font-weight:600;color:var(--text-dark);}
+.share-btn{padding:7px 14px;border-radius:var(--radius);font-size:12px;font-weight:600;text-decoration:none;transition:opacity 0.15s;}
+.share-btn:hover{opacity:0.85;}
+.share-fb{background:#1877f2;color:white;}.share-x{background:#000;color:white;}.share-pin{background:#e60023;color:white;}
+.share-copy{background:var(--cream-dark);color:var(--text-dark);border:1px solid var(--gray-light);cursor:pointer;font-family:'DM Sans',sans-serif;}
+.related{margin-top:36px;}
+.related h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px;}
+.related-list{display:flex;flex-direction:column;gap:10px;}
+.related-item{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:14px 16px;text-decoration:none;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.related-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-1px);}
+.related-item-title{font-size:14px;font-weight:600;color:var(--navy);line-height:1.35;}
+.related-item-meta{font-size:11px;color:var(--text-muted);margin-top:3px;}
+.related-arrow{color:var(--gray-mid);font-size:16px;flex-shrink:0;}
+.related-item:hover .related-arrow{color:var(--hvac);}
+.sidebar{position:sticky;top:88px;display:flex;flex-direction:column;gap:20px;}
+.sidebar-card{background:var(--white);border-radius:var(--radius-lg);padding:20px;box-shadow:var(--shadow-card);}
+.sidebar-card h4{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--gray-light);}
+.toc-list{list-style:none;display:flex;flex-direction:column;gap:3px;}
+.toc-list li a{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--text-muted);text-decoration:none;padding:5px 7px;border-radius:var(--radius);transition:all 0.15s;line-height:1.35;}
+.toc-list li a:hover{background:var(--cream);color:var(--hvac);}
+.toc-list li a::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gray-mid);flex-shrink:0;}
+.toc-list li.active a{color:var(--hvac);background:var(--hvac-light);font-weight:600;}
+.sidebar-expert{display:flex;gap:10px;align-items:flex-start;}
+.s-avatar{width:40px;height:40px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);flex-shrink:0;}
+.s-name{font-size:13px;font-weight:700;color:var(--navy);}
+.s-title{font-size:11px;color:var(--hvac);font-weight:600;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
+.s-bio{font-size:12px;color:var(--text-muted);line-height:1.5;}
+.sidebar-newsletter{background:var(--hvac);border-radius:var(--radius-lg);padding:20px;}
+.sidebar-newsletter h4{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--white);margin-bottom:8px;}
+.sidebar-newsletter p{font-size:12px;color:rgba(255,255,255,0.82);line-height:1.55;margin-bottom:14px;}
+.ad-placeholder{background:var(--cream-dark);border:2px dashed var(--gray-light);border-radius:var(--radius-lg);padding:28px 16px;text-align:center;}
+.ad-placeholder .ad-label{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray-mid);margin-bottom:4px;}
+.ad-placeholder .ad-size{font-size:12px;color:var(--text-muted);font-family:'DM Mono',monospace;}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
+.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:900px){.article-wrap{grid-template-columns:1fr;}.sidebar{position:static;}.diy-pro{grid-template-columns:1fr;}.severity-bar{grid-template-columns:1fr 1fr;}.two-circuits{grid-template-columns:1fr;}.ct-step{grid-template-columns:1fr;}.ct-step-num{border-right:none;border-bottom:1px solid var(--gray-light);flex-direction:row;gap:10px;padding:12px 14px;}}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.severity-bar{grid-template-columns:1fr 1fr;}}
+</style>
+<script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
+    <div class="topbar-links">
+      <a href="about-experts.html">About Our Experts</a>
+      <a href="how-we-verify.html">How We Verify</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
+      <span class="logo-sub">Real advice from real tradespeople</span>
+    </a>
+    <nav>
+      <a href="category-plumbing.html">Plumbing</a>
+      <a href="category-electrical.html">Electrical</a>
+      <a href="category-hvac.html" class="active">HVAC</a>
+      <a href="category-foundation.html">Foundation</a>
+      <a href="category-maintenance.html">Maintenance</a>
+      <a href="category-general-repair.html">General Repair</a>
+      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumb">
+  <div class="inner">
+    <a href="index.html">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="category-hvac.html">HVAC</a>
+    <span class="sep">&#8250;</span>
+    <a href="hvac-air-conditioning.html">Air Conditioning</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">Why Your AC Won&#8217;t Turn On</span>
+  </div>
+</div>
+
+<div class="article-wrap">
+<article class="article-main">
+
+  <div class="article-category">
+    <span class="tag">Air Conditioning</span>
+  </div>
+
+  <h1 class="article-title">Why Your AC Won&#8217;t Turn On</h1>
+  <p class="article-subtitle">An AC that won&#8217;t turn on has a broken startup chain. Every system depends on high-voltage line power and low-voltage control signals working together &#8212; a failure anywhere along either path prevents startup. A 6-step check traces the chain from thermostat to compressor and identifies exactly where it&#8217;s broken.</p>
+
+  <div class="article-byline">
+    <div class="byline-avatar">T.A.</div>
+    <div class="byline-info">
+      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
+      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+    </div>
+    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+  </div>
+
+  <div class="article-body">
+
+    <div class="quick-summary">
+      <h3>&#128205; Quick Summary</h3>
+      <ul>
+        <li><strong>Every AC startup failure is a broken chain.</strong> High-voltage line power and low-voltage control signals must both be present and uninterrupted. One break anywhere prevents startup.</li>
+        <li>Start with the simplest causes: thermostat settings, dead batteries, tripped breaker, outdoor disconnect. These are found in minutes without tools and account for a significant share of no-start calls.</li>
+        <li>The fan-only test is the fastest split: switch to Fan Only mode. If the blower runs &#8212; line power and the indoor control circuit are intact. If nothing runs &#8212; the problem is earlier in the chain.</li>
+        <li>A breaker that trips immediately when reset is not a nuisance &#8212; it is a symptom of a fault that will damage components if forced past it. Do not reset repeatedly.</li>
+        <li>Float switch activation from a clogged drain line is one of the most commonly misdiagnosed no-start conditions &#8212; always check the drain pan for standing water</li>
+        <li>A system that hums but doesn&#8217;t start when the thermostat calls is usually a failed capacitor &#8212; one of the most common and most fixable AC faults</li>
+      </ul>
+    </div>
+
+    <h2 id="tracer">Startup Circuit Tracer</h2>
+    <p>Work through these steps in order. Each step confirms one segment of the startup chain and identifies where it has failed if the check doesn&#8217;t pass.</p>
+
+    <div class="circuit-tracer">
+      <div class="ct-header">
+        <h3>Six-Step Startup Chain Check</h3>
+        <p>Each step narrows the failure to a specific circuit segment. Stop when you find a failed step &#8212; that&#8217;s your cause.</p>
+      </div>
+      <div class="ct-legend">
+        <div class="ct-leg hv"><span class="ct-leg-dot"></span>High-Voltage (Line Power)</div>
+        <div class="ct-leg lv"><span class="ct-leg-dot"></span>Low-Voltage (24V Control)</div>
+        <div class="ct-leg safety"><span class="ct-leg-dot"></span>Safety Switches</div>
+        <div class="ct-leg mech"><span class="ct-leg-dot"></span>Mechanical Components</div>
+      </div>
+
+      <div class="ct-steps">
+
+        <div class="ct-step lv-step">
+          <div class="ct-step-num">
+            <div class="ct-num-circle">1</div>
+            <div class="ct-circuit-label">Settings &amp; Power</div>
+          </div>
+          <div class="ct-step-body">
+            <div class="ct-step-action">Check thermostat settings, display, and batteries</div>
+            <div class="ct-step-check">Is the thermostat set to COOL with a setpoint below current room temperature? Is the display lit and responsive? If it&#8217;s a smart thermostat, is the display showing a call for cooling?</div>
+            <div class="ct-outcomes">
+              <div class="ct-outcome ok-out"><div class="ct-outcome-dot ok"></div><div class="ct-outcome-text"><strong>Display active, settings correct:</strong> Thermostat is issuing a call. Continue to Step 2.</div></div>
+              <div class="ct-outcome fault-out"><div class="ct-outcome-dot fault"></div><div class="ct-outcome-text"><strong>Display dim or blank:</strong> Replace batteries. If smart thermostat &#8212; C-wire may be missing or disconnected. Thermostat power loss stops the entire control circuit.</div></div>
+              <div class="ct-outcome fault-out"><div class="ct-outcome-dot fault"></div><div class="ct-outcome-text"><strong>Display active but wrong mode or setpoint:</strong> Set to COOL, lower setpoint below room temperature. If system then starts &#8212; settings were the entire problem.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ct-step lv-step">
+          <div class="ct-step-num">
+            <div class="ct-num-circle">2</div>
+            <div class="ct-circuit-label">Fan-Only Split Test</div>
+          </div>
+          <div class="ct-step-body">
+            <div class="ct-step-action">Switch thermostat to Fan Only mode and listen for the indoor blower</div>
+            <div class="ct-step-check">Set the system switch to Fan (not Auto, not Off &#8212; specifically Fan). Wait 30 seconds. Does the indoor blower start and push air from the vents?</div>
+            <div class="ct-outcomes">
+              <div class="ct-outcome ok-out"><div class="ct-outcome-dot ok"></div><div class="ct-outcome-text"><strong>Blower runs in fan-only:</strong> Line power is reaching the air handler and the low-voltage control circuit is intact up to the fan relay. The problem is in the cooling-specific circuit. Continue to Step 3.</div></div>
+              <div class="ct-outcome fault-out"><div class="ct-outcome-dot fault"></div><div class="ct-outcome-text"><strong>Nothing runs in fan-only:</strong> Either line power is not reaching the air handler, or the 24V control circuit has failed at the transformer or fuse. Check the breaker for the air handler specifically and look for a safety door switch on the air handler cabinet that may not be fully latched.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ct-step hv-step">
+          <div class="ct-step-num">
+            <div class="ct-num-circle">3</div>
+            <div class="ct-circuit-label">High-Voltage Power</div>
+          </div>
+          <div class="ct-step-body">
+            <div class="ct-step-action">Check the circuit breakers and outdoor disconnect</div>
+            <div class="ct-step-check">Go to the breaker panel. Is the AC breaker fully in the ON position (not tripped to the middle)? Is there a separate breaker for the air handler or furnace? Now go outside to the outdoor disconnect box &#8212; the grey box mounted on the wall near the outdoor unit. Is it fully inserted?</div>
+            <div class="ct-outcomes">
+              <div class="ct-outcome ok-out"><div class="ct-outcome-dot ok"></div><div class="ct-outcome-text"><strong>Breakers on, disconnect seated:</strong> Line power is present. Continue to Step 4.</div></div>
+              <div class="ct-outcome fault-out"><div class="ct-outcome-dot fault"></div><div class="ct-outcome-text"><strong>Breaker tripped:</strong> Reset once. If it holds and the system starts &#8212; it was a momentary trip. If it trips again immediately, do not reset again. A repeated trip indicates a fault &#8212; compressor, wiring, or motor overload. Professional diagnosis required.</div></div>
+              <div class="ct-outcome fault-out"><div class="ct-outcome-dot fault"></div><div class="ct-outcome-text"><strong>Disconnect pulled or missing:</strong> Re-seat the disconnect block. Outdoor service personnel sometimes leave the disconnect pulled after service. If the fuse block inside is visibly burned, professional replacement needed.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ct-step safety-step">
+          <div class="ct-step-num">
+            <div class="ct-num-circle">4</div>
+            <div class="ct-circuit-label">Safety Switches</div>
+          </div>
+          <div class="ct-step-body">
+            <div class="ct-step-action">Check the drain pan for water and look for ice on the system</div>
+            <div class="ct-step-check">Pull out the air handler or furnace access panel and look at the condensate drain pan. Is there standing water? Is a float switch visible in the pan with a sensor that may have activated? Also look at the evaporator coil area &#8212; is there ice on any surface?</div>
+            <div class="ct-outcomes">
+              <div class="ct-outcome ok-out"><div class="ct-outcome-dot ok"></div><div class="ct-outcome-text"><strong>Drain pan dry, no ice:</strong> Safety switches not triggered. Continue to Step 5.</div></div>
+              <div class="ct-outcome fault-out"><div class="ct-outcome-dot fault"></div><div class="ct-outcome-text"><strong>Standing water in pan:</strong> Float switch has disabled cooling to prevent flooding. Clear the drain line (see AC leaking water article). Once the pan is empty the float switch resets and cooling may resume. If drain line is clear but pan refills quickly, a different drainage fault exists.</div></div>
+              <div class="ct-outcome fault-out"><div class="ct-outcome-dot fault"></div><div class="ct-outcome-text"><strong>Ice visible:</strong> Freeze lockout. Switch to Fan Only to thaw (1&#8211;3 hours). Do not restart cooling until ice is completely gone. Replace filter before restarting.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ct-step lv-step">
+          <div class="ct-step-num">
+            <div class="ct-num-circle">5</div>
+            <div class="ct-circuit-label">24V Control Circuit</div>
+          </div>
+          <div class="ct-step-body">
+            <div class="ct-step-action">Check the air handler access panel seating and look for error codes on the control board</div>
+            <div class="ct-step-check">Many air handlers have a door interlock switch &#8212; the system will not run if the access panel is not fully latched. Press the panel firmly closed. Also look at the control board LED if visible &#8212; many boards flash error codes. Count the flashes and refer to the label on the inside of the panel.</div>
+            <div class="ct-outcomes">
+              <div class="ct-outcome ok-out"><div class="ct-outcome-dot ok"></div><div class="ct-outcome-text"><strong>Panel latched, no error codes or board flashing normally:</strong> The 24V control circuit is delivering power to the board. Continue to Step 6.</div></div>
+              <div class="ct-outcome fault-out"><div class="ct-outcome-dot fault"></div><div class="ct-outcome-text"><strong>Panel interlock open:</strong> Push firmly until it clicks. Interlock switches are often overlooked after filter changes or service visits.</div></div>
+              <div class="ct-outcome fault-out"><div class="ct-outcome-dot fault"></div><div class="ct-outcome-text"><strong>Error code flashing:</strong> Count the flash sequence and look it up on the label. Note the code and provide it to the technician &#8212; it identifies the specific fault the board has detected.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ct-step mech-step">
+          <div class="ct-step-num">
+            <div class="ct-num-circle">6</div>
+            <div class="ct-circuit-label">Outdoor Unit Response</div>
+          </div>
+          <div class="ct-step-body">
+            <div class="ct-step-action">Switch to Cool mode and observe the outdoor unit for 60 seconds</div>
+            <div class="ct-step-check">Set the thermostat to Cool with a setpoint well below room temperature. Go outside to the outdoor unit. Within 30&#8211;60 seconds of the call: does the condenser fan start spinning? Do you hear a hum from the compressor? Or is there silence, a brief hum-then-quiet, or clicking without startup?</div>
+            <div class="ct-outcomes">
+              <div class="ct-outcome ok-out"><div class="ct-outcome-dot ok"></div><div class="ct-outcome-text"><strong>Fan spins, compressor hums consistently:</strong> System is starting. If it runs but doesn&#8217;t cool &#8212; see AC Runs But Isn&#8217;t Cooling article.</div></div>
+              <div class="ct-outcome fault-out"><div class="ct-outcome-dot fault"></div><div class="ct-outcome-text"><strong>Fan spins, compressor hums then goes quiet:</strong> Failed run capacitor. The compressor is receiving power but cannot maintain rotation. This is one of the most common and most fixable AC faults. Requires professional capacitor replacement.</div></div>
+              <div class="ct-outcome fault-out"><div class="ct-outcome-dot fault"></div><div class="ct-outcome-text"><strong>Complete silence from outdoor unit:</strong> The 24V contactor coil is not receiving a signal, or the contactor contacts are burned open. Contactor or control board fault. Professional diagnosis required.</div></div>
+              <div class="ct-outcome fault-out"><div class="ct-outcome-dot fault"></div><div class="ct-outcome-text"><strong>Clicking without startup, or breaker trips:</strong> Locked compressor or major electrical fault. Do not restart. Immediate professional service required.</div></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="ct-footer">
+        <div class="ct-footer-icon">&#128161;</div>
+        <div>
+          <h4>The Door Switch &#8212; The Most Overlooked No-Start Cause</h4>
+          <p>Many homeowners change the filter, don&#8217;t fully re-seat the access panel, and then wonder why the AC doesn&#8217;t work. The door interlock switch is a safety device that cuts power to the system when the panel is open. If your system stopped working immediately after you changed the filter or opened a panel &#8212; check the panel first, before anything else.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="two-circuits">The Two Circuits Every AC Startup Needs</h2>
+    <p>Understanding why both circuits must work explains why so many different faults can produce the same symptom &#8212; a completely non-responsive AC.</p>
+
+    <div class="two-circuits">
+      <div class="circuit-card">
+        <div class="cc-head hv">
+          <div class="cc-icon">&#9889;</div>
+          <div class="cc-title">High-Voltage Circuit (Line Power)</div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-desc">240V power that runs the compressor, condenser fan motor, and indoor blower motor. This is the muscle of the system. Without it, nothing mechanical can operate.</div>
+          <ul class="cc-items">
+            <li>Circuit breaker at the main panel</li>
+            <li>Outdoor disconnect block and fuses</li>
+            <li>Wiring from disconnect to contactor</li>
+            <li>Contactor contacts (the high-voltage switch)</li>
+            <li>Compressor and condenser fan motor windings</li>
+          </ul>
+        </div>
+      </div>
+      <div class="circuit-card">
+        <div class="cc-head lv">
+          <div class="cc-icon">&#128268;</div>
+          <div class="cc-title">Low-Voltage Circuit (24V Control)</div>
+        </div>
+        <div class="cc-body">
+          <div class="cc-desc">24V signal circuit that communicates thermostat commands to the contactor and control board. This is the nervous system. Without it, the high-voltage circuit receives no instructions to operate.</div>
+          <ul class="cc-items">
+            <li>Transformer (converts 240V to 24V)</li>
+            <li>Low-voltage fuse on the control board</li>
+            <li>Thermostat wiring (R, C, Y, G wires)</li>
+            <li>Float switch and safety devices in series</li>
+            <li>Contactor coil (energized by the 24V signal)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout-box alert">
+      <div class="callout-icon">&#9888;&#65039;</div>
+      <div class="callout-content">
+        <div class="callout-label">Never Reset a Breaker More Than Once</div>
+        <div class="callout-text">A circuit breaker is a safety device that trips when it detects excessive current draw. Resetting it once after a momentary trip is reasonable. If it trips again immediately, there is an active fault &#8212; a short circuit, a failed compressor attempting to start, or an overloaded motor &#8212; that will not resolve by resetting. Forcing power through a faulted circuit can ignite wiring, destroy the compressor, or create a fire hazard. Do not reset more than once without professional diagnosis.</div>
+      </div>
+    </div>
+
+    <div class="donot-list">
+      <div class="donot-head">
+        <div class="donot-icon">&#9888;&#65039;</div>
+        <div class="donot-title">Do Not List &#8212; Actions That Create Additional Damage</div>
+      </div>
+      <ul class="donot-items">
+        <li>Reset a tripped breaker more than once &#8212; active fault will damage additional components</li>
+        <li>Open electrical panels, access covers, or the outdoor unit with power applied</li>
+        <li>Bypass float switches, pressure switches, or door interlock switches</li>
+        <li>Test or handle capacitors &#8212; they retain lethal charge even after power is disconnected</li>
+        <li>Jumper thermostat wires to test &#8212; this risks burning the control board</li>
+        <li>Add or modify thermostat wiring without confirming C-wire requirements and terminal compatibility</li>
+        <li>Continue attempting to start a system that hums and immediately goes quiet &#8212; compressor damage risk</li>
+      </ul>
+    </div>
+
+    <h2 id="severity">Severity Classification</h2>
+    <div class="severity-bar">
+      <div class="sev-item low">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Low</div></div>
+        <div class="sev-desc">Settings error, dead batteries, panel interlock open, or float switch from minor drain backup. DIY-resolvable.</div>
+      </div>
+      <div class="sev-item mod">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Moderate</div></div>
+        <div class="sev-desc">Float switch from significant drain clog, blown low-voltage fuse, disconnect issue. Professional service this week.</div>
+      </div>
+      <div class="sev-item high">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Major</div></div>
+        <div class="sev-desc">Failed capacitor, contactor, transformer, or blower motor. Professional repair needed promptly &#8212; system non-functional.</div>
+      </div>
+      <div class="sev-item crit">
+        <div class="sev-dot-row"><div class="sev-dot"></div><div class="sev-label">Critical</div></div>
+        <div class="sev-desc">Breaker repeatedly tripping, burning smell, locked compressor, or wiring damage. Do not restart. Emergency service.</div>
+      </div>
+    </div>
+
+    <div class="expert-callout">
+      <div class="expert-avatar">T.A.</div>
+      <div>
+        <div class="expert-label">From the Expert</div>
+        <div class="expert-text">"The fan-only test is the first thing I do on every no-start call &#8212; even before I touch the outdoor unit. Switch to fan, wait 30 seconds. Blower runs? Great &#8212; I have line power to the air handler and the 24V circuit is alive. That eliminates half the diagnostic tree immediately. Nothing runs? Then I&#8217;m looking at the breaker, the transformer, the low-voltage fuse, and the door interlock before I go anywhere near the outdoor unit. The float switch misdiagnosis happens all the time. Homeowner calls, says the AC just stopped working, no obvious reason. I check the drain pan &#8212; half an inch of water, float is activated. I clear the drain line, the pan empties, the float resets, the AC starts. That&#8217;s a five-minute call. The other one that gets me is the door panel &#8212; someone changed the filter, the panel isn&#8217;t fully seated, and they&#8217;re convinced the AC failed. The door interlock switch is your friend &#8212; it keeps you from running the system with the panels open. But it&#8217;ll also prevent startup if you don&#8217;t push the panel all the way home."</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+      </div>
+    </div>
+
+    <h2 id="diy-pro">What You Can Safely Check vs. When to Call</h2>
+    <div class="diy-pro">
+      <div class="diy-card">
+        <div class="diy-head safe">&#10003; Homeowner-Accessible Checks</div>
+        <ul class="diy-items safe-list">
+          <li>Verify thermostat is set to COOL with setpoint below room temperature</li>
+          <li>Replace thermostat batteries if display is dim or unresponsive</li>
+          <li>Run the fan-only test to confirm indoor blower is responsive</li>
+          <li>Check and reset the circuit breaker once &#8212; do not reset if it trips again</li>
+          <li>Verify the outdoor disconnect is fully inserted</li>
+          <li>Check the air handler access panel is fully latched (door interlock)</li>
+          <li>Inspect the drain pan for standing water &#8212; float switch may have activated</li>
+          <li>Look for ice on the evaporator or suction line &#8212; thaw before restarting</li>
+          <li>Note any error codes flashing on the control board LED</li>
+          <li>Listen to the outdoor unit &#8212; note whether fan starts, compressor hums, or silence</li>
+        </ul>
+      </div>
+      <div class="diy-card">
+        <div class="diy-head stop">&#10007; Professional Service Required</div>
+        <ul class="diy-items stop-list">
+          <li>Capacitor testing and replacement &#8212; stored charge is hazardous</li>
+          <li>Contactor inspection, coil testing, and replacement</li>
+          <li>Transformer primary/secondary voltage testing</li>
+          <li>Low-voltage fuse replacement and short-circuit diagnosis</li>
+          <li>Thermostat wiring verification and correction</li>
+          <li>Compressor amperage testing and locked-rotor diagnosis</li>
+          <li>Any situation where the breaker trips repeatedly</li>
+          <li>Any burning smell or visible wiring damage</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <div class="faq-block">
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My AC stopped working right after I changed the filter. What happened?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">This is almost always the door interlock switch. When you remove the access panel to change the filter and then replace it, the panel must be pushed fully home until the interlock switch clicks into contact. If the panel is even slightly unseated, the switch remains open and the system will not run &#8212; it thinks the panel is still off. Push the panel firmly closed, listen for a click, and try the system again. If the system doesn&#8217;t start after the panel is fully seated, a second possibility is that you disturbed a low-voltage wire connection at the control board while accessing the filter area. Visually inspect the wiring connections on the board for any loose connectors before calling for service.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">My thermostat display is on and showing a call for cool, but the outdoor unit never starts. What&#8217;s the chain that&#8217;s broken?<span class="faq-chevron">&#9662;</span></div>
+        <div class="faq-answer">If the thermostat is showing a call and the indoor blower runs in cooling mode but the outdoor unit never starts, the break is between the control board and the outdoor contactor. The most common causes in order of likelihood: (1) Failed run capacitor &#8212; the contactor may be closing but the compressor and/or condenser fan cannot start without the capacitor&#8217;s boost. You&#8217;d hear a hum or click at the outdoor unit if this is the cause. (2) Failed contactor coil &#8212; the 24V signal from the board reaches the contactor, but the coil has burned out and cannot close the contacts. Silence at the outdoor unit. (3) Blown outdoor disconnect fuse &#8212; if the disconnect uses cartridge fuses rather than a breaker, one blown fuse stops both the compressor and fan. (4) Pressure switch trip &#8212; high or low pressure switch has tripped and is interrupting the 24V signal before it reaches the contactor. All four require a technician with test equipment to confirm and correct.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">How do I know if my smart thermostat is the problem vs. the AC itself?<span class="faq-feudon">&#9662;</span></div>
+        <div class="faq-answer">The most reliable test: temporarily switch back to the old thermostat if you have it, or borrow a basic non-smart thermostat. Wire it identically to the smart thermostat (same terminals) and see if the system starts. If yes &#8212; the smart thermostat is the fault. If no &#8212; the problem is downstream of the thermostat in the AC system. For smart thermostats specifically, the most common installation-related no-start cause is a missing or incorrect C-wire. Smart thermostats draw continuous power and need the C-wire to function reliably. Without it, the thermostat may display correctly and appear functional while failing to maintain the 24V circuit stability needed to hold a cooling call. Some smart thermostats use a power-stealing adapter that works in some systems and not others &#8212; adding a proper C-wire is the definitive solution. If you installed the thermostat yourself and the system didn&#8217;t work immediately after, also verify that the Y (cooling) wire is connected at both the thermostat and the air handler terminals.</div>
+      </div>
+
+    </div>
+
+    <div class="summary-box">
+      <h3>Key Takeaways</h3>
+      <ul class="summary-list">
+        <li>Every AC startup failure is a broken chain. High-voltage line power and 24V control signals must both be present and uninterrupted from the breaker to the compressor.</li>
+        <li>The fan-only test splits the problem in half: blower runs = line power and basic control intact, problem is in the cooling circuit; nothing runs = problem is earlier, at power or transformer.</li>
+        <li>Always start with the simplest causes: thermostat settings, dead batteries, panel interlock, and float switch. These account for a large share of no-start calls and are resolved without tools.</li>
+        <li>A breaker that trips immediately on reset has an active fault. Do not reset it a second time. The safety device is protecting the system from further damage.</li>
+        <li>An outdoor unit that hums briefly then goes quiet when the thermostat calls is almost always a failed run capacitor &#8212; one of the most common and most fixable AC faults.</li>
+        <li>Complete silence from the outdoor unit despite a confirmed call from the thermostat indicates a failed contactor coil or a break in the 24V circuit between the board and the outdoor unit.</li>
+      </ul>
+    </div>
+
+    <div class="article-tags">
+      <a href="#" class="tag-pill">AC won&#39;t turn on</a>
+      <a href="#" class="tag-pill">air conditioner not starting</a>
+      <a href="#" class="tag-pill">AC no power</a>
+      <a href="#" class="tag-pill">outdoor unit not starting</a>
+      <a href="#" class="tag-pill">AC breaker keeps tripping</a>
+      <a href="#" class="tag-pill">thermostat calling but AC not starting</a>
+    </div>
+
+    <div class="share-bar">
+      <span class="share-label">Share:</span>
+      <a href="#" class="share-btn share-fb">Facebook</a>
+      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
+      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
+    </div>
+  </div>
+
+  <div class="related">
+    <h3>More Air Conditioning Guides</h3>
+    <div class="related-list">
+      <a href="hvac-ac-not-cooling.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Runs But Isn&#8217;t Cooling</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-short-cycling.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Is Short Cycling</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-freezes-up.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Freezes Up</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+      <a href="hvac-ac-leaking-water.html" class="related-item">
+        <div><div class="related-item-title">Why Your AC Is Leaking Water</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
+        <div class="related-arrow">&#8594;</div>
+      </a>
+    </div>
+  </div>
+
+</article>
+
+<aside class="sidebar">
+  <div class="sidebar-card">
+    <h4>In This Article</h4>
+    <ul class="toc-list">
+      <li class="active"><a href="#tracer">Startup Circuit Tracer</a></li>
+      <li><a href="#two-circuits">The Two Circuits</a></li>
+      <li><a href="#severity">Severity Classification</a></li>
+      <li><a href="#diy-pro">DIY vs. Call a Pro</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 250</div>
+  </div>
+
+  <div class="sidebar-card">
+    <h4>About the Author</h4>
+    <div class="sidebar-expert">
+      <div class="s-avatar">T.A.</div>
+      <div>
+        <div class="s-name">T.A.</div>
+        <div class="s-title">HVAC &amp; Electrical Safety</div>
+        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-newsletter">
+    <h4>Free Expert Advice</h4>
+    <p>HVAC maintenance guides and seasonal inspection reminders from our licensed trade professionals.</p>
+    <iframe src="https://subscribe-forms.beehiiv.com/8463bded-7f8f-495f-b4fc-b23b7db46f42" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:100%;height:291px;margin:0;border-radius:0;background-color:transparent;box-shadow:none;"></iframe>
+  </div>
+
+  <div class="ad-placeholder">
+    <div class="ad-label">Advertisement</div>
+    <div class="ad-size">300 &times; 600</div>
+  </div>
+</aside>
+</div>
+
+<div class="footer-nav">
+  <div class="inner">
+    <a href="category-plumbing.html">Plumbing</a>
+    <a href="category-electrical.html">Electrical &amp; Safety</a>
+    <a href="category-hvac.html">Heating &amp; Cooling</a>
+    <a href="category-foundation.html">Structure &amp; Foundation</a>
+    <a href="category-maintenance.html">Home Maintenance</a>
+    <a href="category-general-repair.html">General Repair</a>
+    <a href="about-experts.html">About Our Experts</a>
+    <a href="how-we-verify.html">How We Verify</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-bottom">
+    <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
+    <div>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){el.parentElement.classList.toggle('open');}
+  const sections=document.querySelectorAll('h2[id]');
+  const tocItems=document.querySelectorAll('.toc-list li');
+  window.addEventListener('scroll',()=>{
+    let current='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-120)current=s.id;});
+    tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
+  });
+</script>
+</body>
+</html>
