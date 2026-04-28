@@ -3,250 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HVAC Diagnostics & Controls | HVAC | HomeownersRepairGuide.com</title>
-<meta name="description" content="Diagnose HVAC control and thermostat problems: thermostat not working, blank screen, system won't turn on, and short cycling from controls. Guidance from a certified facility manager.">
+<title>Diagnostics & Controls | HVAC | HomeownersRepairGuide.com</title>
+<meta name="description" content="HVAC diagnostics and controls guides coming soon. Browse our air conditioning, furnace, airflow, and noise guides while this section is in development.">
 <link rel="canonical" href="https://homeownersrepairguide.com/hvac-diagnostics-controls.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#0f2236;--navy-mid:#1a3550;--rust:#c8441a;--rust-light:#e05a2b;--amber:#f0a500;--hvac:#2a7a8c;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
-  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;}
-  .topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
-  .topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
-  .topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}
-  .topbar a:hover{color:var(--amber);}
-  .topbar-links{display:flex;gap:20px;}
-  header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
-  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
-  .logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
-  .logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
-  .logo-main span{color:var(--rust);}
-  .logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
-  nav{display:flex;align-items:center;gap:4px;}
-  nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
-  nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
-  .nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
-  .breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
-  .breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);flex-wrap:wrap;}
-  .breadcrumb a{color:var(--text-muted);text-decoration:none;}
-  .breadcrumb a:hover{color:var(--rust);}
-  .breadcrumb .sep{color:var(--gray-light);}
-  .breadcrumb .current{color:var(--text-dark);font-weight:500;}
-  .subcat-hero{background:var(--hvac);padding:48px 24px 40px;}
-  .subcat-hero .inner{max-width:1200px;margin:0 auto;}
-  .subcat-eyebrow{font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:10px;}
-  .subcat-eyebrow a{color:rgba(255,255,255,0.6);text-decoration:none;}
-  .subcat-eyebrow a:hover{color:var(--amber);}
-  .subcat-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--white);line-height:1.1;letter-spacing:-0.02em;margin-bottom:12px;}
-  .subcat-desc{font-size:16px;color:rgba(255,255,255,0.78);max-width:640px;line-height:1.65;margin-bottom:24px;}
-  .subcat-meta{display:flex;gap:20px;flex-wrap:wrap;}
-  .subcat-meta-item{font-size:13px;color:rgba(255,255,255,0.55);display:flex;align-items:center;gap:6px;}
-  .subcat-tabs{background:var(--white);border-bottom:2px solid var(--gray-light);overflow-x:auto;}
-  .subcat-tabs .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:0;}
-  .subcat-tab{font-size:13px;font-weight:600;color:var(--text-muted);text-decoration:none;padding:14px 18px;white-space:nowrap;border-bottom:3px solid transparent;margin-bottom:-2px;transition:color 0.15s,border-color 0.15s;}
-  .subcat-tab:hover{color:var(--hvac);}
-  .subcat-tab.active{color:var(--hvac);border-bottom-color:var(--hvac);}
-  .page-inner{max-width:1200px;margin:0 auto;padding:40px 24px;}
-  .section-intro{margin-bottom:32px;}
-  .section-intro h2{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--navy);margin-bottom:10px;}
-  .section-intro p{font-size:15px;color:var(--text-muted);max-width:700px;line-height:1.65;}
-  .article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:48px;}
-  .article-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;text-decoration:none;display:flex;flex-direction:column;}
-  .article-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
-  .card-accent{height:4px;background:var(--hvac);}
-  .card-accent.warn{background:#b07800;}
-  .card-accent.alert{background:var(--rust);}
-  .card-body{padding:18px 20px;flex:1;display:flex;flex-direction:column;}
-  .card-tag{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--hvac);margin-bottom:8px;}
-  .card-tag.warn{color:#b07800;}
-  .card-tag.alert{color:var(--rust);}
-  .card-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:8px;}
-  .card-desc{font-size:13px;color:var(--text-muted);line-height:1.55;flex:1;margin-bottom:14px;}
-  .card-footer{display:flex;align-items:center;justify-content:space-between;}
-  .card-read{font-size:12px;color:var(--text-muted);}
-  .card-arrow{font-size:16px;color:var(--hvac);}
-  .flagship-callout{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin-bottom:48px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
-  .flagship-text h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--white);margin-bottom:6px;}
-  .flagship-text p{font-size:14px;color:rgba(255,255,255,0.7);line-height:1.55;}
-  .flagship-btn{background:var(--amber);color:var(--navy);font-size:13px;font-weight:700;padding:12px 22px;border-radius:var(--radius);text-decoration:none;white-space:nowrap;transition:opacity 0.15s;}
-  .flagship-btn:hover{opacity:0.88;}
-  .coming-soon-note{background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:48px;font-size:14px;color:var(--text-muted);line-height:1.65;}
-  .coming-soon-note strong{color:var(--text-dark);}
-  .expert-strip{background:var(--cream-dark);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:48px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;}
-  .expert-avatars{display:flex;gap:6px;flex-shrink:0;}
-  .expert-av{width:42px;height:42px;border-radius:50%;background:var(--hvac);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--white);}
-  .expert-info{flex:1;}
-  .expert-info strong{display:block;font-size:14px;color:var(--text-dark);margin-bottom:3px;}
-  .expert-info span{font-size:13px;color:var(--text-muted);}
-  footer{background:var(--navy);}
-  .footer-nav{background:var(--navy-mid);padding:20px 0;}
-  .footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
-  .footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;transition:color 0.15s;}
-  .footer-nav a:hover{color:var(--amber);}
-  .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
-  .footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
-  @media(max-width:900px){.article-grid{grid-template-columns:repeat(2,1fr);}}
-  @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.article-grid{grid-template-columns:1fr;}.flagship-callout{flex-direction:column;}.flagship-btn{width:100%;text-align:center;}}
+:root{--navy:#0f2236;--navy-mid:#1a3550;--rust:#c8441a;--amber:#f0a500;--hvac:#2a7a8c;--cream:#faf7f2;--cream-dark:#f0ebe2;--white:#ffffff;--gray-light:#e8e4de;--gray-mid:#9a9490;--text-dark:#1a1612;--text-body:#3d3830;--text-muted:#7a7570;--shadow-soft:0 4px 24px rgba(15,34,54,0.08);--shadow-card:0 2px 12px rgba(15,34,54,0.10);--shadow-hover:0 8px 32px rgba(15,34,54,0.16);--radius:4px;--radius-lg:8px;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text-body);line-height:1.6;}
+.topbar{background:var(--navy);padding:8px 0;font-size:12px;color:rgba(255,255,255,0.6);}
+.topbar .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;}
+.topbar a{color:rgba(255,255,255,0.6);text-decoration:none;}.topbar a:hover{color:var(--amber);}
+.topbar-links{display:flex;gap:20px;}
+header{background:var(--white);border-bottom:1px solid var(--gray-light);position:sticky;top:0;z-index:100;box-shadow:var(--shadow-soft);}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1200px;margin:0 auto;}
+.logo{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;}
+.logo-main{font-family:'Playfair Display',serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+.logo-main span{color:var(--rust);}
+.logo-sub{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gray-mid);font-weight:500;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{font-size:13px;font-weight:600;color:var(--text-dark);text-decoration:none;padding:8px 14px;border-radius:var(--radius);transition:background 0.18s,color 0.18s;}
+nav a:hover,nav a.active{background:var(--cream);color:var(--rust);}
+.nav-cta{background:var(--rust)!important;color:var(--white)!important;padding:8px 18px!important;margin-left:8px;}
+.breadcrumb{background:var(--cream-dark);border-bottom:1px solid var(--gray-light);padding:12px 0;}
+.breadcrumb .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-muted);}
+.breadcrumb a{color:var(--text-muted);text-decoration:none;}.breadcrumb a:hover{color:var(--rust);}
+.breadcrumb .sep{color:var(--gray-light);}.breadcrumb .current{color:var(--text-dark);font-weight:500;}
+.subcat-hero{background:var(--hvac);padding:48px 24px 40px;}
+.subcat-hero .inner{max-width:1200px;margin:0 auto;}
+.subcat-eyebrow{font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:10px;}
+.subcat-eyebrow a{color:rgba(255,255,255,0.6);text-decoration:none;}.subcat-eyebrow a:hover{color:var(--amber);}
+.subcat-title{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,42px);font-weight:800;color:var(--white);line-height:1.1;letter-spacing:-0.02em;margin-bottom:12px;}
+.subcat-desc{font-size:16px;color:rgba(255,255,255,0.78);max-width:640px;line-height:1.65;margin-bottom:24px;}
+.subcat-meta{display:flex;gap:20px;flex-wrap:wrap;}
+.subcat-meta-item{font-size:13px;color:rgba(255,255,255,0.55);}
+.subcat-tabs{background:var(--white);border-bottom:2px solid var(--gray-light);overflow-x:auto;}
+.subcat-tabs .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;}
+.subcat-tab{font-size:13px;font-weight:600;color:var(--text-muted);text-decoration:none;padding:14px 18px;white-space:nowrap;border-bottom:3px solid transparent;margin-bottom:-2px;transition:color 0.15s,border-color 0.15s;}
+.subcat-tab:hover{color:var(--hvac);}.subcat-tab.active{color:var(--hvac);border-bottom-color:var(--hvac);}
+.page-inner{max-width:1200px;margin:0 auto;padding:64px 24px;}
+.coming-soon{text-align:center;max-width:560px;margin:0 auto 64px;}
+.coming-soon h2{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:var(--navy);margin-bottom:14px;}
+.coming-soon p{font-size:16px;color:var(--text-muted);line-height:1.65;margin-bottom:28px;}
+.browse-label{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-muted);margin-bottom:20px;}
+.browse-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:700px;margin:0 auto;}
+.browse-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:20px 22px;text-decoration:none;display:flex;align-items:center;gap:14px;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;}
+.browse-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+.bc-icon{font-size:28px;flex-shrink:0;}
+.bc-text strong{display:block;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px;}
+.bc-text span{font-size:12px;color:var(--text-muted);}
+.bc-arrow{margin-left:auto;font-size:16px;color:var(--gray-mid);}
+.section-intro{margin-bottom:28px;}
+.section-intro h2{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+.section-intro p{font-size:15px;color:var(--text-muted);max-width:700px;line-height:1.65;}
+.article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:32px;}
+.article-card{background:var(--white);border:1px solid var(--gray-light);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-card);transition:box-shadow 0.18s,transform 0.18s;text-decoration:none;display:flex;flex-direction:column;}
+.article-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);}
+.card-accent{height:4px;background:var(--hvac);}
+.card-accent.info{background:#3a6b9a;}
+.card-body{padding:18px 20px;flex:1;display:flex;flex-direction:column;}
+.card-tag{font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--hvac);margin-bottom:8px;}
+.card-tag.info{color:#3a6b9a;}
+.card-title{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);line-height:1.3;margin-bottom:8px;}
+.card-desc{font-size:13px;color:var(--text-muted);line-height:1.55;flex:1;margin-bottom:14px;}
+.card-footer{display:flex;align-items:center;justify-content:space-between;}
+.card-read{font-size:12px;color:var(--text-muted);}.card-arrow{font-size:16px;color:var(--hvac);}
+footer{background:var(--navy);}
+.footer-nav{background:var(--navy-mid);padding:20px 0;}
+.footer-nav .inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;gap:28px;flex-wrap:wrap;}
+.footer-nav a{color:rgba(255,255,255,0.55);text-decoration:none;font-size:13px;}.footer-nav a:hover{color:var(--amber);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:16px 24px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,0.35);flex-wrap:wrap;gap:10px;}
+.footer-bottom a{color:rgba(255,255,255,0.35);text-decoration:none;margin-left:16px;}
+@media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.browse-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
-<div class="topbar">
-  <div class="inner">
-    <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
-    <div class="topbar-links">
-      <a href="about-experts.html">About Our Experts</a>
-      <a href="how-we-verify.html">How We Verify</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-</div>
-<header>
-  <div class="header-inner">
-    <a href="index.html" class="logo">
-      <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
-      <span class="logo-sub">Real advice from real tradespeople</span>
-    </a>
-    <nav>
-      <a href="category-plumbing.html">Plumbing</a>
-      <a href="category-electrical.html">Electrical</a>
-      <a href="category-hvac.html" class="active">HVAC</a>
-      <a href="category-foundation.html">Foundation</a>
-      <a href="category-maintenance.html">Maintenance</a>
-      <a href="category-general-repair.html">General Repair</a>
-      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
-    </nav>
-  </div>
-</header>
-<div class="breadcrumb">
-  <div class="inner">
-    <a href="index.html">Home</a>
-    <span class="sep">&#8250;</span>
-    <a href="category-hvac.html">Heating &amp; Cooling</a>
-    <span class="sep">&#8250;</span>
-    <span class="current">Diagnostics &amp; Controls</span>
-  </div>
-</div>
-<div class="subcat-hero">
-  <div class="inner">
-    <div class="subcat-eyebrow"><a href="category-hvac.html">Heating &amp; Cooling</a> &nbsp;&#8250;&nbsp; Subcategory</div>
-    <h1 class="subcat-title">Diagnostics &amp; Controls</h1>
-    <p class="subcat-desc">Thermostat problems, blank screens, systems that won't respond, and control-side short cycling — the control layer is often the first place to check when your HVAC isn't behaving as expected. Here's how to diagnose it.</p>
-    <div class="subcat-meta">
-      <span class="subcat-meta-item">&#128196; 4 guides</span>
-      <span class="subcat-meta-item">&#128100; T.A. — Certified Facility Manager &amp; HVAC Systems Specialist</span>
-    </div>
-  </div>
-</div>
-<div class="subcat-tabs">
-  <div class="inner">
-    <a href="hvac-air-conditioning.html" class="subcat-tab">Air Conditioning</a>
-    <a href="hvac-furnace-heating.html" class="subcat-tab">Furnace &amp; Heating</a>
-    <a href="hvac-airflow-comfort.html" class="subcat-tab">Airflow &amp; Comfort</a>
-    <a href="hvac-noises.html" class="subcat-tab">HVAC Noises</a>
-    <a href="hvac-diagnostics-controls.html" class="subcat-tab active">Diagnostics &amp; Controls</a>
-  </div>
-</div>
+<div class="topbar"><div class="inner"><span>Guidance from licensed trade professionals with 130+ combined years of experience</span><div class="topbar-links"><a href="about-experts.html">About Our Experts</a><a href="how-we-verify.html">How We Verify</a><a href="contact.html">Contact</a></div></div></div>
+<header><div class="header-inner"><a href="index.html" class="logo"><span class="logo-main">Homeowners<span>Repair</span>Guide</span><span class="logo-sub">Real advice from real tradespeople</span></a><nav><a href="category-plumbing.html">Plumbing</a><a href="category-electrical.html">Electrical</a><a href="category-hvac.html" class="active">HVAC</a><a href="category-foundation.html">Foundation</a><a href="category-maintenance.html">Maintenance</a><a href="category-general-repair.html">General Repair</a><a href="newsletter.html" class="nav-cta">Free Newsletter</a></nav></div></header>
+<div class="breadcrumb"><div class="inner"><a href="index.html">Home</a><span class="sep">&#8250;</span><a href="category-hvac.html">Heating &amp; Cooling</a><span class="sep">&#8250;</span><span class="current">Diagnostics &amp; Controls</span></div></div>
+<div class="subcat-hero"><div class="inner">
+  <div class="subcat-eyebrow"><a href="category-hvac.html">Heating &amp; Cooling</a> &nbsp;&#8250;&nbsp; Subcategory</div>
+  <h1 class="subcat-title">Diagnostics &amp; Controls</h1>
+  <p class="subcat-desc">Thermostat problems, control boards, wiring faults, and system-level diagnosis — this section is in development. The guides below cover the most common control-side failures in the HVAC category.</p>
+  <div class="subcat-meta"><span class="subcat-meta-item">&#128196; 1 guide (more in development)</span><span class="subcat-meta-item">&#128100; T.A. — Certified Facility Manager &amp; HVAC Systems Specialist</span></div>
+</div></div>
+<div class="subcat-tabs"><div class="inner">
+  <a href="hvac-air-conditioning.html" class="subcat-tab">Air Conditioning</a>
+  <a href="hvac-furnace-heating.html" class="subcat-tab">Furnace &amp; Heating</a>
+  <a href="hvac-airflow-comfort.html" class="subcat-tab">Airflow &amp; Comfort</a>
+  <a href="hvac-noises.html" class="subcat-tab">HVAC Noises</a>
+  <a href="hvac-diagnostics-controls.html" class="subcat-tab active">Diagnostics &amp; Controls</a>
+</div></div>
 <div class="page-inner">
-  <div class="flagship-callout">
-    <div class="flagship-text">
-      <h3>The Complete HVAC System Guide</h3>
-      <p>How every part of your HVAC system — equipment, controls, and ductwork — works together, and how to use that understanding to diagnose problems at the system level, not just the symptom level.</p>
-    </div>
-    <a href="hvac-guide.html" class="flagship-btn">Read the Master Guide &#8594;</a>
-  </div>
-  <div class="section-intro">
-    <h2>Diagnostics &amp; Controls Guides</h2>
-    <p>The control layer — thermostat, wiring, control board — is responsible for more "no heat" and "no cooling" calls than any equipment failure. These guides walk you through diagnosing control-side problems before assuming the equipment has failed.</p>
-  </div>
-  <div class="article-grid">
+  <div class="section-intro"><h2>Diagnostics &amp; Controls Guides</h2><p>One guide is available now. More are in development from T.A.</p></div>
 
-    <a href="hvac-thermostat-not-working.html" class="article-card">
-      <div class="card-accent alert"></div>
-      <div class="card-body">
-        <div class="card-tag alert">&#128308; No Response</div>
-        <div class="card-title">Why Your Thermostat Isn't Working</div>
-        <div class="card-desc">A thermostat that doesn't respond to changes, won't call for heating or cooling, or shows inaccurate temperatures has failed at the sensor, the wiring, the power supply, or the control board. Here's the diagnostic sequence.</div>
-        <div class="card-footer">
-          <span class="card-read">8 min read</span>
-          <span class="card-arrow">&#8594;</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="hvac-thermostat-short-cycling.html" class="article-card">
-      <div class="card-accent warn"></div>
-      <div class="card-body">
-        <div class="card-tag warn">&#9888; Control Issue</div>
-        <div class="card-title">Why Your Thermostat Is Causing Short Cycling</div>
-        <div class="card-desc">When short cycling originates at the control layer — not the equipment — the cause is usually thermostat location, a misconfigured anticipator, a heat pump balance point setting, or a bad temperature sensor.</div>
-        <div class="card-footer">
-          <span class="card-read">8 min read</span>
-          <span class="card-arrow">&#8594;</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="hvac-thermostat-blank-screen.html" class="article-card">
-      <div class="card-accent"></div>
-      <div class="card-body">
-        <div class="card-tag">Controls</div>
-        <div class="card-title">Why Your Thermostat Screen Is Blank</div>
-        <div class="card-desc">A blank thermostat screen means loss of power — from dead batteries, a tripped breaker, a blown fuse on the air handler control board, or a wiring fault. Here's how to restore power in the right order.</div>
-        <div class="card-footer">
-          <span class="card-read">7 min read</span>
-          <span class="card-arrow">&#8594;</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="hvac-system-wont-turn-on.html" class="article-card">
-      <div class="card-accent alert"></div>
-      <div class="card-body">
-        <div class="card-tag alert">&#128308; No Response</div>
-        <div class="card-title">Why Your HVAC System Won't Turn On</div>
-        <div class="card-desc">A completely unresponsive HVAC system — no fan, no heating, no cooling — has lost power or tripped a safety switch. Here's a systematic sequence for restoring operation without overlooking the safety reason it shut down.</div>
-        <div class="card-footer">
-          <span class="card-read">8 min read</span>
-          <span class="card-arrow">&#8594;</span>
-        </div>
-      </div>
-    </a>
-
+  <div class="article-grid" style="max-width:560px;">
+    <a href="hvac-furnace-control-vs-mechanical.html" class="article-card"><div class="card-accent info"></div><div class="card-body"><div class="card-tag info">Diagnostics</div><div class="card-title">Furnace Control Problems vs. Mechanical Failures</div><div class="card-desc">Is the failure in the controls — thermostat, control board, wiring — or in the mechanical system? This distinction changes the entire diagnostic approach and determines whether you need a tech or an electrician.</div><div class="card-footer"><span class="card-read">9 min read</span><span class="card-arrow">&#8594;</span></div></div></a>
   </div>
 
-  <div class="expert-strip">
-    <div class="expert-avatars">
-      <div class="expert-av">T.A.</div>
-    </div>
-    <div class="expert-info">
-      <strong>T.A. — Certified Facility Manager &amp; HVAC Systems Specialist</strong>
-      <span>NFPA CFI-1 · CHFM · CLSS-HC · OSHA 30. All HVAC diagnostics and controls guidance on this site is written and reviewed by T.A.</span>
-    </div>
+  <div class="coming-soon" style="margin-top:48px;">
+    <h2>More guides coming soon</h2>
+    <p>T.A. is developing a dedicated series on thermostat failures, control board diagnostics, wiring faults, and system-level HVAC troubleshooting. Browse the active subcategories below in the meantime.</p>
+  </div>
+  <div class="browse-label" style="text-align:center;">Browse active HVAC guides</div>
+  <div class="browse-grid">
+    <a href="hvac-air-conditioning.html" class="browse-card"><div class="bc-icon">&#10052;</div><div class="bc-text"><strong>Air Conditioning</strong><span>5 guides</span></div><div class="bc-arrow">&#8594;</div></a>
+    <a href="hvac-furnace-heating.html" class="browse-card"><div class="bc-icon">&#128293;</div><div class="bc-text"><strong>Furnace &amp; Heating</strong><span>12 guides</span></div><div class="bc-arrow">&#8594;</div></a>
+    <a href="hvac-airflow-comfort.html" class="browse-card"><div class="bc-icon">&#128168;</div><div class="bc-text"><strong>Airflow &amp; Comfort</strong><span>13 guides</span></div><div class="bc-arrow">&#8594;</div></a>
+    <a href="hvac-noises.html" class="browse-card"><div class="bc-icon">&#128266;</div><div class="bc-text"><strong>HVAC Noises</strong><span>10 guides</span></div><div class="bc-arrow">&#8594;</div></a>
   </div>
 </div>
-<div class="footer-nav">
-  <div class="inner">
-    <a href="category-plumbing.html">Plumbing</a>
-    <a href="category-electrical.html">Electrical &amp; Safety</a>
-    <a href="category-hvac.html">Heating &amp; Cooling</a>
-    <a href="category-foundation.html">Structure &amp; Foundation</a>
-    <a href="category-maintenance.html">Home Maintenance</a>
-    <a href="category-general-repair.html">General Repair</a>
-    <a href="about-experts.html">About Our Experts</a>
-    <a href="how-we-verify.html">How We Verify</a>
-  </div>
-</div>
-<footer>
-  <div class="footer-bottom">
-    <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
-    <div>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
-      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
-    </div>
-  </div>
-</footer>
+<div class="footer-nav"><div class="inner"><a href="category-plumbing.html">Plumbing</a><a href="category-electrical.html">Electrical &amp; Safety</a><a href="category-hvac.html">Heating &amp; Cooling</a><a href="category-foundation.html">Structure &amp; Foundation</a><a href="category-maintenance.html">Home Maintenance</a><a href="category-general-repair.html">General Repair</a><a href="about-experts.html">About Our Experts</a><a href="how-we-verify.html">How We Verify</a></div></div>
+<footer><div class="footer-bottom"><span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span><div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="affiliate-disclosure.html">Affiliate Disclosure</a></div></div></footer>
 </body>
 </html>
