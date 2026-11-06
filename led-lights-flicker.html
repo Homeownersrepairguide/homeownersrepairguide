@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Why Your LED Lights Flicker | HomeownersRepairGuide.com</title>
 <meta name="description" content="LED flicker is almost never random — it's a real electrical signal. Incompatible dimmer, loose wiring, voltage sag, or a failing driver each produce distinct patterns. Here's how to tell them apart in minutes.">
-<link rel="canonical" href="https://homeownersrepairguide.com/led-lights-flicker.html">
+<link rel="canonical" href="https://homeownersrepairguide.com/led-lights-flicker">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://homeownersrepairguide.com/led-lights-flicker.html">
+<meta property="og:url" content="https://homeownersrepairguide.com/led-lights-flicker">
 <meta property="og:title" content="Why Your LED Lights Flicker | HomeownersRepairGuide.com">
 <meta property="og:description" content="LED flicker is a real electrical signal, not a quirk. Here's how to diagnose whether it's a dimmer, loose wiring, voltage sag, or a failing driver.">
 <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
@@ -250,15 +252,15 @@ footer{background:var(--navy);}
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://homeownersrepairguide.com/led-lights-flicker.html#article",
-      "url": "https://homeownersrepairguide.com/led-lights-flicker.html",
+      "@id": "https://homeownersrepairguide.com/led-lights-flicker#article",
+      "url": "https://homeownersrepairguide.com/led-lights-flicker",
       "headline": "Why Your LED Lights Flicker",
       "description": "LED flicker is almost never random — it's a real electrical signal. Incompatible dimmer, loose wiring, voltage sag, or a failing driver each produce distinct patterns. Here's how to tell them apart in minutes.",
       "publisher": {
         "@id": "https://homeownersrepairguide.com/#organization"
       },
       "breadcrumb": {
-        "@id": "https://homeownersrepairguide.com/led-lights-flicker.html#breadcrumb"
+        "@id": "https://homeownersrepairguide.com/led-lights-flicker#breadcrumb"
       },
       "isPartOf": {
         "@id": "https://homeownersrepairguide.com/#website"
@@ -266,12 +268,20 @@ footer{background:var(--navy);}
       "author": {
         "@type": "Person",
         "name": "T.A.",
-        "description": "Certified Facility Manager (CHFM), NFPA CFI-1, CLSS-HC, OSHA 30"
+        "description": "NFPA Certified Fire Inspector (CFI-1), Certified Healthcare Facility Manager (CHFM), Certified Life Safety Specialist (CLSS-HC), OSHA 30; electrician-trained"
+      },
+      "datePublished": "2026-04-11T20:39:14-07:00",
+      "dateModified": "2026-05-10T17:02:20-07:00",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://homeownersrepairguide.com/og-image.jpg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://homeownersrepairguide.com/led-lights-flicker.html#breadcrumb",
+      "@id": "https://homeownersrepairguide.com/led-lights-flicker#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -283,13 +293,13 @@ footer{background:var(--navy);}
           "@type": "ListItem",
           "position": 2,
           "name": "Electrical & Safety",
-          "item": "https://homeownersrepairguide.com/category-electrical.html"
+          "item": "https://homeownersrepairguide.com/category-electrical"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Lighting & Fixtures",
-          "item": "https://homeownersrepairguide.com/electrical-lighting.html"
+          "item": "https://homeownersrepairguide.com/electrical-lighting"
         },
         {
           "@type": "ListItem",
@@ -297,10 +307,36 @@ footer{background:var(--navy);}
           "name": "Why Your LED Lights Flicker"
         }
       ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://homeownersrepairguide.com/#organization",
+      "name": "HomeownersRepairGuide.com",
+      "url": "https://homeownersrepairguide.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://homeownersrepairguide.com/logo.png",
+        "width": 512,
+        "height": 512
+      }
     }
   ]
 }
 </script>
+<style>
+.hrg-menu-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:10px;margin:-10px -6px -10px auto;cursor:pointer;}
+.hrg-menu-btn span{display:block;width:24px;height:2px;background:var(--navy,#0f2236);transition:transform .2s,opacity .2s;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.hrg-mobile-nav{display:none;flex-direction:column;background:var(--white,#fff);border-top:1px solid var(--gray-light,#e8e4de);padding:8px 0;box-shadow:var(--shadow-soft,0 4px 24px rgba(15,34,54,.08));}
+.hrg-mobile-nav.open{display:flex;}
+.hrg-mobile-nav a{padding:12px 24px;font-size:15px;font-weight:600;color:var(--text-dark,#1a1612);text-decoration:none;border-bottom:1px solid var(--gray-light,#e8e4de);}
+.hrg-mobile-nav a:last-child{border-bottom:none;color:var(--rust,#c8441a);}
+@media(max-width:600px){.hrg-menu-btn{display:flex;}}
+@media(min-width:601px){.hrg-mobile-nav{display:none!important;}}
+@media(max-width:640px){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}}
+</style>
 </head>
 <body>
 
@@ -308,37 +344,48 @@ footer{background:var(--navy);}
   <div class="inner">
     <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
     <div class="topbar-links">
-      <a href="about-experts.html">About Our Experts</a>
-      <a href="how-we-verify.html">How We Verify</a>
-      <a href="contact.html">Contact</a>
+      <a href="/about-experts">About Our Experts</a>
+      <a href="/how-we-verify">How We Verify</a>
+      <a href="/contact">Contact</a>
     </div>
   </div>
 </div>
 
 <header>
   <div class="header-inner">
-    <a href="index.html" class="logo">
+    <a href="/" class="logo">
       <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
       <span class="logo-sub">Real advice from real tradespeople</span>
     </a>
     <nav>
-      <a href="category-plumbing.html">Plumbing</a>
-      <a href="category-electrical.html" class="active">Electrical</a>
-      <a href="category-hvac.html">HVAC</a>
-      <a href="category-foundation.html">Foundation</a>
-      <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+      <a href="/category-plumbing">Plumbing</a>
+      <a href="/category-electrical" class="active">Electrical</a>
+      <a href="/category-hvac">HVAC</a>
+      <a href="/category-foundation">Foundation</a>
+      <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+      <a href="/newsletter" class="nav-cta">Free Newsletter</a>
     </nav>
+    <button class="hrg-menu-btn" id="hrgMenuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="hrgMobileNav" onclick="hrgToggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+  <div class="hrg-mobile-nav" id="hrgMobileNav">
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical</a>
+    <a href="/category-hvac">HVAC</a>
+    <a href="/category-foundation">Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/contact">Contact</a>
+    <a href="/newsletter">Free Newsletter</a>
   </div>
 </header>
 
 <div class="breadcrumb">
   <div class="inner">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <span class="sep">&#8250;</span>
-    <a href="category-electrical.html">Electrical</a>
+    <a href="/category-electrical">Electrical</a>
     <span class="sep">&#8250;</span>
-    <a href="electrical-lighting.html">Lighting &amp; Fixtures</a>
+    <a href="/electrical-lighting">Lighting &amp; Fixtures</a>
     <span class="sep">&#8250;</span>
     <span class="current">Why Your LED Lights Flicker</span>
   </div>
@@ -358,10 +405,10 @@ footer{background:var(--navy);}
   <div class="article-byline">
     <div class="byline-avatar">T.A.</div>
     <div class="byline-info">
-      <div class="byline-name">T.A. &#8212; Licensed Electrician &amp; Fire Investigator</div>
+      <div class="byline-name">T.A. &#8212; Certified Fire Inspector &amp; Facility Manager</div>
       <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Licensed Electrician</div>
     </div>
-    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+    <div class="byline-meta"><strong>Updated:</strong> May 2026 &middot; 8 min read</div>
   </div>
 
   <div class="article-body">
@@ -478,7 +525,7 @@ footer{background:var(--navy);}
       <div class="callout-icon">&#9888;&#65039;</div>
       <div class="callout-content">
         <div class="callout-label">Flicker Before a Breaker Trip Is a Warning Sign</div>
-        <div class="callout-text">If your lights flicker briefly just before a breaker trips &#8212; whether at switch closure or during appliance startup &#8212; the flicker is the circuit's last visible symptom before the fault crosses the breaker's trip threshold. This pattern indicates a developing wiring fault or failing driver that is now severe enough to trip the circuit. Don't treat the flicker as a separate problem from the tripping &#8212; they're the same fault at different stages. See the companion articles on <a href="breaker-trips-lights.html">breakers tripping when lights are switched on</a> and <a href="breakers-keep-tripping.html">repeated breaker trips</a> for the next diagnostic steps.</div>
+        <div class="callout-text">If your lights flicker briefly just before a breaker trips &#8212; whether at switch closure or during appliance startup &#8212; the flicker is the circuit's last visible symptom before the fault crosses the breaker's trip threshold. This pattern indicates a developing wiring fault or failing driver that is now severe enough to trip the circuit. Don't treat the flicker as a separate problem from the tripping &#8212; they're the same fault at different stages. See the companion articles on <a href="/breaker-trips-lights">breakers tripping when lights are switched on</a> and <a href="/breakers-keep-tripping">repeated breaker trips</a> for the next diagnostic steps.</div>
       </div>
     </div>
 
@@ -552,7 +599,7 @@ footer{background:var(--navy);}
       <div>
         <div class="expert-label">From the Expert</div>
         <div class="expert-text">"The dimmer incompatibility issue is the one I see most often, and it's almost always the same story: someone converted from incandescent to LED bulbs and the flickering started immediately, or gradually worsened over months. The dimmer is 15 or 20 years old and was designed for a 40&#8211;60 watt minimum load. With a 9-watt LED bulb, the dimmer's internal circuits are running in a range they were never designed for. The fix is a $20&#8211;$30 LED-compatible dimmer, and it solves the problem immediately. What concerns me more is when homeowners describe flicker that changes when they tap the switch. That's almost always a loose back-stab terminal at the switch &#8212; and those can arc. I've seen switch boxes where the back-stabbed wire had been arcing for months, leaving black carbon deposits on the box interior. The flicker was the only warning they had."</div>
-        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; OSHA 30</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Electrician-Trained &middot; CHFM &middot; OSHA 30</div>
       </div>
     </div>
 
@@ -619,19 +666,19 @@ footer{background:var(--navy);}
     </div>
 
     <div class="article-tags">
-      <a href="#" class="tag-pill">LED lights flickering</a>
-      <a href="#" class="tag-pill">LED flicker cause</a>
-      <a href="#" class="tag-pill">LED dimmer flicker</a>
-      <a href="#" class="tag-pill">why do LED lights flicker</a>
-      <a href="#" class="tag-pill">LED bulb keeps flickering</a>
-      <a href="#" class="tag-pill">lights flicker when appliance starts</a>
+      <span class="tag-pill">LED lights flickering</span>
+      <span class="tag-pill">LED flicker cause</span>
+      <span class="tag-pill">LED dimmer flicker</span>
+      <span class="tag-pill">why do LED lights flicker</span>
+      <span class="tag-pill">LED bulb keeps flickering</span>
+      <span class="tag-pill">lights flicker when appliance starts</span>
     </div>
 
     <div class="share-bar">
       <span class="share-label">Share:</span>
-      <a href="#" class="share-btn share-fb">Facebook</a>
-      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
-      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhomeownersrepairguide.com%2Fled-lights-flicker" class="share-btn share-fb" target="_blank" rel="noopener nofollow">Facebook</a>
+      <a href="https://x.com/intent/post?url=https%3A%2F%2Fhomeownersrepairguide.com%2Fled-lights-flicker&amp;text=Why%20Your%20LED%20Lights%20Flicker" class="share-btn share-x" target="_blank" rel="noopener nofollow">&#120143; Twitter</a>
+      <a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fhomeownersrepairguide.com%2Fled-lights-flicker&amp;media=https%3A%2F%2Fhomeownersrepairguide.com%2Fog-image.jpg&amp;description=Why%20Your%20LED%20Lights%20Flicker" class="share-btn share-pin" target="_blank" rel="noopener nofollow">Pinterest</a>
       <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
     </div>
   </div>
@@ -639,15 +686,15 @@ footer{background:var(--navy);}
   <div class="related">
     <h3>More Electrical Guides</h3>
     <div class="related-list">
-      <a href="breaker-trips-lights.html" class="related-item">
+      <a href="/breaker-trips-lights" class="related-item">
         <div><div class="related-item-title">Why Your Breaker Trips When You Turn the Lights On</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
         <div class="related-arrow">&#8594;</div>
       </a>
-      <a href="breakers-keep-tripping.html" class="related-item">
+      <a href="/breakers-keep-tripping" class="related-item">
         <div><div class="related-item-title">Why Your Circuit Breaker Keeps Tripping</div><div class="related-item-meta">T.A. &middot; 10 min read</div></div>
         <div class="related-arrow">&#8594;</div>
       </a>
-      <a href="lighting-circuits-guide.html" class="related-item">
+      <a href="/lighting-circuits-guide" class="related-item">
         <div><div class="related-item-title">Home Lighting Circuits: The Complete Guide</div><div class="related-item-meta">T.A. &middot; 22 min read &middot; Flagship</div></div>
         <div class="related-arrow">&#8594;</div>
       </a>
@@ -682,8 +729,8 @@ footer{background:var(--navy);}
       <div class="s-avatar">T.A.</div>
       <div>
         <div class="s-name">T.A.</div>
-        <div class="s-title">Licensed Electrician &amp; Fire Investigator</div>
-        <div class="s-bio">NFPA Certified Fire Investigator (CFI-1), Certified Healthcare Facility Manager (CHFM), CLSS-HC, OSHA 30, and licensed electrician. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
+        <div class="s-title">Certified Fire Inspector &amp; Facility Manager</div>
+        <div class="s-bio">NFPA Certified Fire Inspector (CFI-1), Certified Healthcare Facility Manager (CHFM), Certified Life Safety Specialist (CLSS-HC), OSHA 30, and electrician-trained. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
       </div>
     </div>
   </div>
@@ -704,22 +751,22 @@ footer{background:var(--navy);}
 
 <div class="footer-nav">
   <div class="inner">
-    <a href="category-plumbing.html">Plumbing</a>
-    <a href="category-electrical.html">Electrical &amp; Safety</a>
-    <a href="category-hvac.html">Heating &amp; Cooling</a>
-    <a href="category-foundation.html">Structure &amp; Foundation</a>
-    <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-    <a href="about-experts.html">About Our Experts</a>
-    <a href="how-we-verify.html">How We Verify</a>
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical &amp; Safety</a>
+    <a href="/category-hvac">Heating &amp; Cooling</a>
+    <a href="/category-foundation">Structure &amp; Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/how-we-verify">How We Verify</a>
   </div>
 </div>
 <footer>
   <div class="footer-bottom">
     <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
     <div>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
-      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
+      <a href="/affiliate-disclosure">Affiliate Disclosure</a>
     </div>
   </div>
 </footer>
@@ -734,5 +781,6 @@ footer{background:var(--navy);}
     tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
   });
 </script>
+<script>function hrgToggleMenu(){var n=document.getElementById("hrgMobileNav"),b=document.getElementById("hrgMenuBtn");var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");}</script>
 </body>
 </html>

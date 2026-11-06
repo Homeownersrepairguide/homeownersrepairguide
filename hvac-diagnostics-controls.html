@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Diagnostics & Controls | HVAC | HomeownersRepairGuide.com</title>
 <meta name="description" content="HVAC diagnostics and controls guides coming soon. Browse our air conditioning, furnace, airflow, and noise guides while this section is in development.">
-<link rel="canonical" href="https://homeownersrepairguide.com/hvac-diagnostics-controls.html">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-diagnostics-controls">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -79,7 +81,7 @@ footer{background:var(--navy);}
 </style>
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://homeownersrepairguide.com/hvac-diagnostics-controls.html">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-diagnostics-controls">
 <meta property="og:title" content="Diagnostics & Controls">
 <meta property="og:description" content="HVAC diagnostics and controls guides coming soon. Browse our air conditioning, furnace, airflow, and noise guides while this section is in development.">
 <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
@@ -92,40 +94,65 @@ footer{background:var(--navy);}
 <meta name="twitter:image" content="https://homeownersrepairguide.com/og-image.jpg">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-  {"@type":"CollectionPage","@id":"https://homeownersrepairguide.com/hvac-diagnostics-controls.html#webpage","url":"https://homeownersrepairguide.com/hvac-diagnostics-controls.html","name":"Diagnostics & Controls | HVAC | HomeownersRepairGuide.com","description":"HVAC diagnostics and controls guides coming soon. Browse our air conditioning, furnace, airflow, and noise guides while this section is in development.","breadcrumb":{"@id":"https://homeownersrepairguide.com/hvac-diagnostics-controls.html#breadcrumb"},"isPartOf":{"@id":"https://homeownersrepairguide.com/#website"},
+  {"@type":"CollectionPage","@id":"https://homeownersrepairguide.com/hvac-diagnostics-controls#webpage","url":"https://homeownersrepairguide.com/hvac-diagnostics-controls","name":"Diagnostics & Controls | HVAC | HomeownersRepairGuide.com","description":"HVAC diagnostics and controls guides coming soon. Browse our air conditioning, furnace, airflow, and noise guides while this section is in development.","breadcrumb":{"@id":"https://homeownersrepairguide.com/hvac-diagnostics-controls#breadcrumb"},"isPartOf":{"@id":"https://homeownersrepairguide.com/#website"},
       "mainEntity":{"@type":"ItemList","itemListElement":[
-          {"@type":"ListItem","position":1,"url":"https://homeownersrepairguide.com/hvac-furnace-control-vs-mechanical.html","name":"Furnace Control Problems vs. Mechanical Failures"}
+          {"@type":"ListItem","position":1,"url":"https://homeownersrepairguide.com/hvac-furnace-control-vs-mechanical","name":"Furnace Control Problems vs. Mechanical Failures"}
         ]}},
-  {"@type":"BreadcrumbList","@id":"https://homeownersrepairguide.com/hvac-diagnostics-controls.html#breadcrumb","itemListElement":[
+  {"@type":"BreadcrumbList","@id":"https://homeownersrepairguide.com/hvac-diagnostics-controls#breadcrumb","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Home","item":"https://homeownersrepairguide.com/"},
-        {"@type":"ListItem","position":2,"name":"Heating & Cooling","item":"https://homeownersrepairguide.com/category-hvac.html"},
+        {"@type":"ListItem","position":2,"name":"Heating & Cooling","item":"https://homeownersrepairguide.com/category-hvac"},
         {"@type":"ListItem","position":3,"name":"Diagnostics & Controls"}
       ]}
 ]}
 </script>
+<style>
+.hrg-menu-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:10px;margin:-10px -6px -10px auto;cursor:pointer;}
+.hrg-menu-btn span{display:block;width:24px;height:2px;background:var(--navy,#0f2236);transition:transform .2s,opacity .2s;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.hrg-mobile-nav{display:none;flex-direction:column;background:var(--white,#fff);border-top:1px solid var(--gray-light,#e8e4de);padding:8px 0;box-shadow:var(--shadow-soft,0 4px 24px rgba(15,34,54,.08));}
+.hrg-mobile-nav.open{display:flex;}
+.hrg-mobile-nav a{padding:12px 24px;font-size:15px;font-weight:600;color:var(--text-dark,#1a1612);text-decoration:none;border-bottom:1px solid var(--gray-light,#e8e4de);}
+.hrg-mobile-nav a:last-child{border-bottom:none;color:var(--rust,#c8441a);}
+@media(max-width:600px){.hrg-menu-btn{display:flex;}}
+@media(min-width:601px){.hrg-mobile-nav{display:none!important;}}
+@media(max-width:640px){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}}
+</style>
 </head>
 <body>
-<div class="topbar"><div class="inner"><span>Guidance from licensed trade professionals with 130+ combined years of experience</span><div class="topbar-links"><a href="about-experts.html">About Our Experts</a><a href="how-we-verify.html">How We Verify</a><a href="contact.html">Contact</a></div></div></div>
-<header><div class="header-inner"><a href="index.html" class="logo"><span class="logo-main">Homeowners<span>Repair</span>Guide</span><span class="logo-sub">Real advice from real tradespeople</span></a><nav><a href="category-plumbing.html">Plumbing</a><a href="category-electrical.html">Electrical</a><a href="category-hvac.html" class="active">HVAC</a><a href="category-foundation.html">Foundation</a><a href="category-maintenance-repair.html">Maintenance &amp; Repair</a><a href="newsletter.html" class="nav-cta">Free Newsletter</a></nav></div></header>
-<div class="breadcrumb"><div class="inner"><a href="index.html">Home</a><span class="sep">&#8250;</span><a href="category-hvac.html">Heating &amp; Cooling</a><span class="sep">&#8250;</span><span class="current">Diagnostics &amp; Controls</span></div></div>
+<div class="topbar"><div class="inner"><span>Guidance from licensed trade professionals with 130+ combined years of experience</span><div class="topbar-links"><a href="/about-experts">About Our Experts</a><a href="/how-we-verify">How We Verify</a><a href="/contact">Contact</a></div></div></div>
+<header><div class="header-inner"><a href="/" class="logo"><span class="logo-main">Homeowners<span>Repair</span>Guide</span><span class="logo-sub">Real advice from real tradespeople</span></a><nav><a href="/category-plumbing">Plumbing</a><a href="/category-electrical">Electrical</a><a href="/category-hvac" class="active">HVAC</a><a href="/category-foundation">Foundation</a><a href="/category-maintenance-repair">Maintenance &amp; Repair</a><a href="/newsletter" class="nav-cta">Free Newsletter</a></nav>
+    <button class="hrg-menu-btn" id="hrgMenuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="hrgMobileNav" onclick="hrgToggleMenu()"><span></span><span></span><span></span></button></div>  <div class="hrg-mobile-nav" id="hrgMobileNav">
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical</a>
+    <a href="/category-hvac">HVAC</a>
+    <a href="/category-foundation">Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/contact">Contact</a>
+    <a href="/newsletter">Free Newsletter</a>
+  </div>
+</header>
+<div class="breadcrumb"><div class="inner"><a href="/">Home</a><span class="sep">&#8250;</span><a href="/category-hvac">Heating &amp; Cooling</a><span class="sep">&#8250;</span><span class="current">Diagnostics &amp; Controls</span></div></div>
 <div class="subcat-hero"><div class="inner">
-  <div class="subcat-eyebrow"><a href="category-hvac.html">Heating &amp; Cooling</a> &nbsp;&#8250;&nbsp; Subcategory</div>
+  <div class="subcat-eyebrow"><a href="/category-hvac">Heating &amp; Cooling</a> &nbsp;&#8250;&nbsp; Subcategory</div>
   <h1 class="subcat-title">Diagnostics &amp; Controls</h1>
   <p class="subcat-desc">Thermostat problems, control boards, wiring faults, and system-level diagnosis — this section is in development. The guides below cover the most common control-side failures in the HVAC category.</p>
-  <div class="subcat-meta"><span class="subcat-meta-item">&#128196; 1 guide (more in development)</span><span class="subcat-meta-item">&#128100; T.A. — Certified Facility Manager &amp; HVAC Systems Specialist</span></div>
+  <div class="subcat-meta"><span class="subcat-meta-item">&#128196; 1 guide (more in development)</span><span class="subcat-meta-item">&#128100; T.A. — Certified Healthcare Facility Manager &amp; HVAC Systems Specialist</span></div>
 </div></div>
 <div class="subcat-tabs"><div class="inner">
-  <a href="hvac-air-conditioning.html" class="subcat-tab">Air Conditioning</a>
-  <a href="hvac-furnace-heating.html" class="subcat-tab">Furnace &amp; Heating</a>
-  <a href="hvac-airflow-comfort.html" class="subcat-tab">Airflow &amp; Comfort</a>
-  <a href="hvac-noises.html" class="subcat-tab">HVAC Noises</a>
-  <a href="hvac-diagnostics-controls.html" class="subcat-tab active">Diagnostics &amp; Controls</a>
+  <a href="/hvac-air-conditioning" class="subcat-tab">Air Conditioning</a>
+  <a href="/hvac-furnace-heating" class="subcat-tab">Furnace &amp; Heating</a>
+  <a href="/hvac-airflow-comfort" class="subcat-tab">Airflow &amp; Comfort</a>
+  <a href="/hvac-noises" class="subcat-tab">HVAC Noises</a>
+  <a href="/hvac-diagnostics-controls" class="subcat-tab active">Diagnostics &amp; Controls</a>
 </div></div>
 <div class="page-inner">
   <div class="section-intro"><h2>Diagnostics &amp; Controls Guides</h2><p>One guide is available now. More are in development from T.A.</p></div>
 
   <div class="article-grid" style="max-width:560px;">
-    <a href="hvac-furnace-control-vs-mechanical.html" class="article-card"><div class="card-accent info"></div><div class="card-body"><div class="card-tag info">Diagnostics</div><div class="card-title">Furnace Control Problems vs. Mechanical Failures</div><div class="card-desc">Is the failure in the controls — thermostat, control board, wiring — or in the mechanical system? This distinction changes the entire diagnostic approach and determines whether you need a tech or an electrician.</div><div class="card-footer"><span class="card-read">9 min read</span><span class="card-arrow">&#8594;</span></div></div></a>
+    <a href="/hvac-furnace-control-vs-mechanical" class="article-card"><div class="card-accent info"></div><div class="card-body"><div class="card-tag info">Diagnostics</div><div class="card-title">Furnace Control Problems vs. Mechanical Failures</div><div class="card-desc">Is the failure in the controls — thermostat, control board, wiring — or in the mechanical system? This distinction changes the entire diagnostic approach and determines whether you need a tech or an electrician.</div><div class="card-footer"><span class="card-read">9 min read</span><span class="card-arrow">&#8594;</span></div></div></a>
   </div>
 
   <div class="coming-soon" style="margin-top:48px;">
@@ -134,13 +161,14 @@ footer{background:var(--navy);}
   </div>
   <div class="browse-label" style="text-align:center;">Browse active HVAC guides</div>
   <div class="browse-grid">
-    <a href="hvac-air-conditioning.html" class="browse-card"><div class="bc-icon">&#10052;</div><div class="bc-text"><strong>Air Conditioning</strong><span>5 guides</span></div><div class="bc-arrow">&#8594;</div></a>
-    <a href="hvac-furnace-heating.html" class="browse-card"><div class="bc-icon">&#128293;</div><div class="bc-text"><strong>Furnace &amp; Heating</strong><span>12 guides</span></div><div class="bc-arrow">&#8594;</div></a>
-    <a href="hvac-airflow-comfort.html" class="browse-card"><div class="bc-icon">&#128168;</div><div class="bc-text"><strong>Airflow &amp; Comfort</strong><span>13 guides</span></div><div class="bc-arrow">&#8594;</div></a>
-    <a href="hvac-noises.html" class="browse-card"><div class="bc-icon">&#128266;</div><div class="bc-text"><strong>HVAC Noises</strong><span>10 guides</span></div><div class="bc-arrow">&#8594;</div></a>
+    <a href="/hvac-air-conditioning" class="browse-card"><div class="bc-icon">&#10052;</div><div class="bc-text"><strong>Air Conditioning</strong><span>5 guides</span></div><div class="bc-arrow">&#8594;</div></a>
+    <a href="/hvac-furnace-heating" class="browse-card"><div class="bc-icon">&#128293;</div><div class="bc-text"><strong>Furnace &amp; Heating</strong><span>12 guides</span></div><div class="bc-arrow">&#8594;</div></a>
+    <a href="/hvac-airflow-comfort" class="browse-card"><div class="bc-icon">&#128168;</div><div class="bc-text"><strong>Airflow &amp; Comfort</strong><span>13 guides</span></div><div class="bc-arrow">&#8594;</div></a>
+    <a href="/hvac-noises" class="browse-card"><div class="bc-icon">&#128266;</div><div class="bc-text"><strong>HVAC Noises</strong><span>10 guides</span></div><div class="bc-arrow">&#8594;</div></a>
   </div>
 </div>
-<div class="footer-nav"><div class="inner"><a href="category-plumbing.html">Plumbing</a><a href="category-electrical.html">Electrical &amp; Safety</a><a href="category-hvac.html">Heating &amp; Cooling</a><a href="category-foundation.html">Structure &amp; Foundation</a><a href="category-maintenance-repair.html">Maintenance &amp; Repair</a><a href="about-experts.html">About Our Experts</a><a href="how-we-verify.html">How We Verify</a></div></div>
-<footer><div class="footer-bottom"><span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span><div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="affiliate-disclosure.html">Affiliate Disclosure</a></div></div></footer>
+<div class="footer-nav"><div class="inner"><a href="/category-plumbing">Plumbing</a><a href="/category-electrical">Electrical &amp; Safety</a><a href="/category-hvac">Heating &amp; Cooling</a><a href="/category-foundation">Structure &amp; Foundation</a><a href="/category-maintenance-repair">Maintenance &amp; Repair</a><a href="/about-experts">About Our Experts</a><a href="/how-we-verify">How We Verify</a></div></div>
+<footer><div class="footer-bottom"><span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span><div><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="/affiliate-disclosure">Affiliate Disclosure</a></div></div></footer>
+<script>function hrgToggleMenu(){var n=document.getElementById("hrgMobileNav"),b=document.getElementById("hrgMenuBtn");var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");}</script>
 </body>
 </html>

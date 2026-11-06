@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Maintenance & General Repair Guides | HomeownersRepairGuide.com</title>
 <meta name="description" content="Expert guides for home maintenance and general repair: exterior failures, interior damage, roof leaks, repair diagnostics, and seasonal maintenance checklists. From licensed tradespeople with 130+ combined years of experience.">
-<link rel="canonical" href="https://homeownersrepairguide.com/category-maintenance-repair.html">
+<link rel="canonical" href="https://homeownersrepairguide.com/category-maintenance-repair">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://homeownersrepairguide.com/category-maintenance-repair.html">
+<meta property="og:url" content="https://homeownersrepairguide.com/category-maintenance-repair">
 <meta property="og:title" content="Maintenance & General Repair Guides">
 <meta property="og:description" content="Expert guides for home maintenance and general repair: exterior failures, interior damage, roof leaks, repair diagnostics, and seasonal maintenance checklists.">
 <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
@@ -25,16 +27,16 @@
   "@graph": [
     {
       "@type": "CollectionPage",
-      "@id": "https://homeownersrepairguide.com/category-maintenance-repair.html#webpage",
-      "url": "https://homeownersrepairguide.com/category-maintenance-repair.html",
+      "@id": "https://homeownersrepairguide.com/category-maintenance-repair#webpage",
+      "url": "https://homeownersrepairguide.com/category-maintenance-repair",
       "name": "Maintenance & General Repair Guides | HomeownersRepairGuide.com",
       "description": "Expert guides for home maintenance and general repair: exterior failures, interior damage, roof leaks, repair diagnostics, and seasonal maintenance checklists.",
-      "breadcrumb": {"@id": "https://homeownersrepairguide.com/category-maintenance-repair.html#breadcrumb"},
+      "breadcrumb": {"@id": "https://homeownersrepairguide.com/category-maintenance-repair#breadcrumb"},
       "isPartOf": {"@id": "https://homeownersrepairguide.com/#website"}
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://homeownersrepairguide.com/category-maintenance-repair.html#breadcrumb",
+      "@id": "https://homeownersrepairguide.com/category-maintenance-repair#breadcrumb",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://homeownersrepairguide.com/"},
         {"@type": "ListItem", "position": 2, "name": "Maintenance & General Repair"}
@@ -212,11 +214,36 @@ footer{background:var(--navy);}
 @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.grid-3,.grid-2,.ms-grid{grid-template-columns:1fr;}.hero-stats{gap:18px;}.team-grid{grid-template-columns:1fr 1fr;}}
 </style>
 <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+<style>
+.hrg-menu-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:10px;margin:-10px -6px -10px auto;cursor:pointer;}
+.hrg-menu-btn span{display:block;width:24px;height:2px;background:var(--navy,#0f2236);transition:transform .2s,opacity .2s;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.hrg-mobile-nav{display:none;flex-direction:column;background:var(--white,#fff);border-top:1px solid var(--gray-light,#e8e4de);padding:8px 0;box-shadow:var(--shadow-soft,0 4px 24px rgba(15,34,54,.08));}
+.hrg-mobile-nav.open{display:flex;}
+.hrg-mobile-nav a{padding:12px 24px;font-size:15px;font-weight:600;color:var(--text-dark,#1a1612);text-decoration:none;border-bottom:1px solid var(--gray-light,#e8e4de);}
+.hrg-mobile-nav a:last-child{border-bottom:none;color:var(--rust,#c8441a);}
+@media(max-width:600px){.hrg-menu-btn{display:flex;}}
+@media(min-width:601px){.hrg-mobile-nav{display:none!important;}}
+@media(max-width:640px){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}}
+</style>
 </head>
 <body>
-<div class="topbar"><div class="inner"><span>Guidance from licensed trade professionals with 130+ combined years of experience</span><div class="topbar-links"><a href="about-experts.html">About Our Experts</a><a href="how-we-verify.html">How We Verify</a><a href="contact.html">Contact</a></div></div></div>
-<header><div class="header-inner"><a href="index.html" class="logo"><span class="logo-main">Homeowners<span>Repair</span>Guide</span><span class="logo-sub">Real advice from real tradespeople</span></a><nav><a href="category-plumbing.html">Plumbing</a><a href="category-electrical.html">Electrical</a><a href="category-hvac.html">HVAC</a><a href="category-foundation.html">Foundation</a><a href="category-maintenance-repair.html" class="active">Maintenance &amp; Repair</a><a href="newsletter.html" class="nav-cta">Free Newsletter</a></nav></div></header>
-<div class="breadcrumb"><div class="inner"><a href="index.html">Home</a><span class="sep">&#8250;</span><span class="current">Maintenance &amp; General Repair</span></div></div>
+<div class="topbar"><div class="inner"><span>Guidance from licensed trade professionals with 130+ combined years of experience</span><div class="topbar-links"><a href="/about-experts">About Our Experts</a><a href="/how-we-verify">How We Verify</a><a href="/contact">Contact</a></div></div></div>
+<header><div class="header-inner"><a href="/" class="logo"><span class="logo-main">Homeowners<span>Repair</span>Guide</span><span class="logo-sub">Real advice from real tradespeople</span></a><nav><a href="/category-plumbing">Plumbing</a><a href="/category-electrical">Electrical</a><a href="/category-hvac">HVAC</a><a href="/category-foundation">Foundation</a><a href="/category-maintenance-repair" class="active">Maintenance &amp; Repair</a><a href="/newsletter" class="nav-cta">Free Newsletter</a></nav>
+    <button class="hrg-menu-btn" id="hrgMenuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="hrgMobileNav" onclick="hrgToggleMenu()"><span></span><span></span><span></span></button></div>  <div class="hrg-mobile-nav" id="hrgMobileNav">
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical</a>
+    <a href="/category-hvac">HVAC</a>
+    <a href="/category-foundation">Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/contact">Contact</a>
+    <a href="/newsletter">Free Newsletter</a>
+  </div>
+</header>
+<div class="breadcrumb"><div class="inner"><a href="/">Home</a><span class="sep">&#8250;</span><span class="current">Maintenance &amp; General Repair</span></div></div>
 
 <div class="cat-hero">
   <div class="hero-inner">
@@ -235,10 +262,10 @@ footer{background:var(--navy);}
   <div class="hero-experts">
     <div class="hero-experts-inner">
       <div class="experts-label">Expert Authors</div>
-      <a href="about-experts.html" class="expert-pill"><div class="pill-av">M.A.</div><div><div class="pill-n">M.A.</div><div class="pill-t">Licensed Contractor</div></div></a>
-      <a href="about-experts.html" class="expert-pill"><div class="pill-av">T.A.</div><div><div class="pill-n">T.A.</div><div class="pill-t">CHFM &middot; NFPA CFI-1</div></div></a>
-      <a href="about-experts.html" class="expert-pill"><div class="pill-av">C.M.</div><div><div class="pill-n">C.M.</div><div class="pill-t">Foundation &amp; Structural</div></div></a>
-      <a href="about-experts.html" class="expert-pill"><div class="pill-av">J.G.</div><div><div class="pill-n">J.G.</div><div class="pill-t">Master Plumber</div></div></a>
+      <a href="/about-experts" class="expert-pill"><div class="pill-av">M.A.</div><div><div class="pill-n">M.A.</div><div class="pill-t">Licensed Contractor</div></div></a>
+      <a href="/about-experts" class="expert-pill"><div class="pill-av">T.A.</div><div><div class="pill-n">T.A.</div><div class="pill-t">CHFM &middot; NFPA CFI-1</div></div></a>
+      <a href="/about-experts" class="expert-pill"><div class="pill-av">C.M.</div><div><div class="pill-n">C.M.</div><div class="pill-t">Foundation &amp; Structural</div></div></a>
+      <a href="/about-experts" class="expert-pill"><div class="pill-av">J.G.</div><div><div class="pill-n">J.G.</div><div class="pill-t">Master Plumber</div></div></a>
     </div>
   </div>
 </div>
@@ -250,34 +277,34 @@ footer{background:var(--navy);}
       <div>
         <div class="sf-col-head">&#127968; Exterior &amp; Roof</div>
         <div class="sf-links">
-          <a href="exterior-repairs-keep-failing-in-the-same-spot.html" class="sf-link">Exterior repair keeps failing <span class="sf-badge urgent">Pattern</span></a>
-          <a href="gutters-cause-so-much-exterior-damage.html" class="sf-link">Gutter-related exterior damage <span class="sf-badge watch">Watch</span></a>
-          <a href="paint-keeps-peeling-on-the-same-exterior-wall.html" class="sf-link">Paint peeling on same wall <span class="sf-badge watch">Watch</span></a>
-          <a href="roof-leaks-only-during-heavy-rain.html" class="sf-link">Roof leaks only in heavy rain <span class="sf-badge urgent">Urgent</span></a>
-          <a href="ice-dams-cause-roof-leaks.html" class="sf-link">Ice dam causing roof leak <span class="sf-badge urgent">Urgent</span></a>
-          <a href="maintenance-repair-exterior.html" class="sf-link" style="color:var(--amber);margin-top:4px;">All exterior guides &#8594;</a>
+          <a href="/exterior-repairs-keep-failing-in-the-same-spot" class="sf-link">Exterior repair keeps failing <span class="sf-badge urgent">Pattern</span></a>
+          <a href="/gutters-cause-so-much-exterior-damage" class="sf-link">Gutter-related exterior damage <span class="sf-badge watch">Watch</span></a>
+          <a href="/paint-keeps-peeling-on-the-same-exterior-wall" class="sf-link">Paint peeling on same wall <span class="sf-badge watch">Watch</span></a>
+          <a href="/roof-leaks-only-during-heavy-rain" class="sf-link">Roof leaks only in heavy rain <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/ice-dams-cause-roof-leaks" class="sf-link">Ice dam causing roof leak <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/maintenance-repair-exterior" class="sf-link" style="color:var(--amber);margin-top:4px;">All exterior guides &#8594;</a>
         </div>
       </div>
       <div>
         <div class="sf-col-head">&#127959; Interior &amp; Indoor</div>
         <div class="sf-links">
-          <a href="ceiling-stains-reappear-after-painting.html" class="sf-link">Ceiling stain keeps coming back <span class="sf-badge watch">Watch</span></a>
-          <a href="drywall-cracks-keep-coming-back.html" class="sf-link">Drywall cracks reappearing <span class="sf-badge watch">Watch</span></a>
-          <a href="paint-bubbles-peels-or-fails-indoors.html" class="sf-link">Indoor paint bubbling or peeling <span class="sf-badge watch">Watch</span></a>
-          <a href="moisture-causes-hidden-interior-damage.html" class="sf-link">Hidden moisture damage inside <span class="sf-badge urgent">Urgent</span></a>
-          <a href="tell-cosmetic-interior-damage-from-structural-warning-signs.html" class="sf-link">Is this cosmetic or structural? <span class="sf-badge urgent">Safety</span></a>
-          <a href="maintenance-repair-interior.html" class="sf-link" style="color:var(--amber);margin-top:4px;">All interior guides &#8594;</a>
+          <a href="/ceiling-stains-reappear-after-painting" class="sf-link">Ceiling stain keeps coming back <span class="sf-badge watch">Watch</span></a>
+          <a href="/drywall-cracks-keep-coming-back" class="sf-link">Drywall cracks reappearing <span class="sf-badge watch">Watch</span></a>
+          <a href="/paint-bubbles-peels-or-fails-indoors" class="sf-link">Indoor paint bubbling or peeling <span class="sf-badge watch">Watch</span></a>
+          <a href="/moisture-causes-hidden-interior-damage" class="sf-link">Hidden moisture damage inside <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/cosmetic-vs-structural-interior-damage" class="sf-link">Is this cosmetic or structural? <span class="sf-badge urgent">Safety</span></a>
+          <a href="/maintenance-repair-interior" class="sf-link" style="color:var(--amber);margin-top:4px;">All interior guides &#8594;</a>
         </div>
       </div>
       <div>
         <div class="sf-col-head">&#128295; Repair Patterns</div>
         <div class="sf-links">
-          <a href="quick-fixes-work-at-first-then-fail-later.html" class="sf-link">Fix worked then failed again <span class="sf-badge watch">Pattern</span></a>
-          <a href="water-damage-shows-up-below-the-real-problem.html" class="sf-link">Damage below the real problem <span class="sf-badge urgent">Urgent</span></a>
-          <a href="painting-over-problems-almost-always-backfires.html" class="sf-link">Painted over it — now worse <span class="sf-badge watch">Watch</span></a>
-          <a href="diy-repairs-fail-even-when-instructions-are-followed.html" class="sf-link">DIY failed even done correctly <span class="sf-badge diy">DIY</span></a>
-          <a href="diagnose-home-problems-by-timing-triggers-patterns.html" class="sf-link">Don't know where to start <span class="sf-badge diy">Start Here</span></a>
-          <a href="maintenance-repair-diagnostics.html" class="sf-link" style="color:var(--amber);margin-top:4px;">All diagnostic guides &#8594;</a>
+          <a href="/quick-fixes-work-at-first-then-fail-later" class="sf-link">Fix worked then failed again <span class="sf-badge watch">Pattern</span></a>
+          <a href="/water-damage-shows-up-below-the-real-problem" class="sf-link">Damage below the real problem <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/painting-over-problems-almost-always-backfires" class="sf-link">Painted over it — now worse <span class="sf-badge watch">Watch</span></a>
+          <a href="/diy-repairs-fail-even-when-instructions-followed" class="sf-link">DIY failed even done correctly <span class="sf-badge diy">DIY</span></a>
+          <a href="/diagnose-home-problems-by-timing" class="sf-link">Don't know where to start <span class="sf-badge diy">Start Here</span></a>
+          <a href="/maintenance-repair-diagnostics" class="sf-link" style="color:var(--amber);margin-top:4px;">All diagnostic guides &#8594;</a>
         </div>
       </div>
     </div>
@@ -289,7 +316,7 @@ footer{background:var(--navy);}
 
   <!-- FLAGSHIP -->
   <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--rust);margin-bottom:14px;display:flex;align-items:center;gap:10px;">Start Here &mdash; Flagship Guide <span style="flex:1;height:1px;background:var(--gray-light);display:block;"></span></div>
-  <a href="everyday-repairs-guide.html" class="flagship">
+  <a href="/everyday-repairs-guide" class="flagship">
     <div class="flagship-img">&#128296;</div>
     <div class="flagship-body">
       <span class="f-tag">Flagship Guide</span>
@@ -304,16 +331,16 @@ footer{background:var(--navy);}
 
   <!-- EXTERIOR -->
   <section class="art-section" aria-label="Exterior repair guides">
-    <div class="sec-head"><h2 class="sec-h2"><span class="sec-dot"></span> Exterior Repairs</h2><a href="maintenance-repair-exterior.html" class="see-all">All 9 guides &#8594;</a></div>
+    <div class="sec-head"><h2 class="sec-h2"><span class="sec-dot"></span> Exterior Repairs</h2><a href="/maintenance-repair-exterior" class="see-all">All 9 guides &#8594;</a></div>
     <div class="grid-3" style="margin-bottom:16px;">
-      <a href="exterior-repairs-keep-failing-in-the-same-spot.html" class="art-card"><div class="card-stripe urgent"></div><div class="card-body"><span class="card-tag urgent">&#128308; Pattern</span><div class="card-title">Why Exterior Repairs Keep Failing in the Same Spot</div><div class="card-meta"><span><strong>M.A.</strong> &middot; 9 min</span><span class="card-arrow">&#8594;</span></div></div></a>
-      <a href="gutters-cause-so-much-exterior-damage.html" class="art-card"><div class="card-stripe warn"></div><div class="card-body"><span class="card-tag watch">&#9888; Watch</span><div class="card-title">Why Gutters Cause So Much Exterior Damage</div><div class="card-meta"><span><strong>M.A.</strong> &middot; 8 min</span><span class="card-arrow">&#8594;</span></div></div></a>
-      <a href="windows-doors-are-the-most-common-exterior-leak-points.html" class="art-card"><div class="card-stripe urgent"></div><div class="card-body"><span class="card-tag urgent">&#128308; Leak Risk</span><div class="card-title">Why Windows &amp; Doors Are the Most Common Exterior Leak Points</div><div class="card-meta"><span><strong>M.A.</strong> &middot; 9 min</span><span class="card-arrow">&#8594;</span></div></div></a>
+      <a href="/exterior-repairs-keep-failing-in-the-same-spot" class="art-card"><div class="card-stripe urgent"></div><div class="card-body"><span class="card-tag urgent">&#128308; Pattern</span><div class="card-title">Why Exterior Repairs Keep Failing in the Same Spot</div><div class="card-meta"><span><strong>M.A.</strong> &middot; 9 min</span><span class="card-arrow">&#8594;</span></div></div></a>
+      <a href="/gutters-cause-so-much-exterior-damage" class="art-card"><div class="card-stripe warn"></div><div class="card-body"><span class="card-tag watch">&#9888; Watch</span><div class="card-title">Why Gutters Cause So Much Exterior Damage</div><div class="card-meta"><span><strong>M.A.</strong> &middot; 8 min</span><span class="card-arrow">&#8594;</span></div></div></a>
+      <a href="/windows-doors-are-the-most-common-exterior-leak-points" class="art-card"><div class="card-stripe urgent"></div><div class="card-body"><span class="card-tag urgent">&#128308; Leak Risk</span><div class="card-title">Why Windows &amp; Doors Are the Most Common Exterior Leak Points</div><div class="card-meta"><span><strong>M.A.</strong> &middot; 9 min</span><span class="card-arrow">&#8594;</span></div></div></a>
     </div>
     <div class="art-list">
-      <a href="paint-keeps-peeling-on-the-same-exterior-wall.html" class="art-row"><div class="row-num">04</div><div class="row-body"><div class="row-title">Why Paint Keeps Peeling on the Same Exterior Wall</div><div class="row-meta">M.A. &middot; 8 min &middot; Moisture behind the paint, not the paint itself</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
-      <a href="exterior-trim-rots-again-after-replacement.html" class="art-row"><div class="row-num">05</div><div class="row-body"><div class="row-title">Why Exterior Trim Rots Again After Replacement</div><div class="row-meta">M.A. &middot; 8 min &middot; Source moisture not addressed</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
-      <a href="exterior-damage-gets-worse-after-storms-or-heavy-rain.html" class="art-row"><div class="row-num">06</div><div class="row-body"><div class="row-title">Why Exterior Damage Gets Worse After Storms or Heavy Rain</div><div class="row-meta">M.A. &middot; 8 min &middot; Latent failures made visible by water load</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
+      <a href="/paint-keeps-peeling-on-the-same-exterior-wall" class="art-row"><div class="row-num">04</div><div class="row-body"><div class="row-title">Why Paint Keeps Peeling on the Same Exterior Wall</div><div class="row-meta">M.A. &middot; 8 min &middot; Moisture behind the paint, not the paint itself</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
+      <a href="/exterior-trim-rots-again-after-replacement" class="art-row"><div class="row-num">05</div><div class="row-body"><div class="row-title">Why Exterior Trim Rots Again After Replacement</div><div class="row-meta">M.A. &middot; 8 min &middot; Source moisture not addressed</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
+      <a href="/exterior-damage-gets-worse-after-storms" class="art-row"><div class="row-num">06</div><div class="row-body"><div class="row-title">Why Exterior Damage Gets Worse After Storms or Heavy Rain</div><div class="row-meta">M.A. &middot; 8 min &middot; Latent failures made visible by water load</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
     </div>
   </section>
 
@@ -322,42 +349,42 @@ footer{background:var(--navy);}
   <!-- INTERIOR + ROOF side by side -->
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:48px;">
     <section aria-label="Interior repair guides">
-      <div class="sec-head"><h2 class="sec-h2"><span class="sec-dot"></span> Interior Repairs</h2><a href="maintenance-repair-interior.html" class="see-all">All 6 &#8594;</a></div>
+      <div class="sec-head"><h2 class="sec-h2"><span class="sec-dot"></span> Interior Repairs</h2><a href="/maintenance-repair-interior" class="see-all">All 6 &#8594;</a></div>
       <div class="art-list">
-        <a href="ceiling-stains-reappear-after-painting.html" class="art-row"><div class="row-num">01</div><div class="row-body"><div class="row-title">Why Ceiling Stains Reappear After Painting</div><div class="row-meta">C.M. &middot; 8 min</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
-        <a href="drywall-cracks-keep-coming-back.html" class="art-row"><div class="row-num">02</div><div class="row-body"><div class="row-title">Why Drywall Cracks Keep Coming Back</div><div class="row-meta">C.M. &middot; 8 min</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
-        <a href="paint-bubbles-peels-or-fails-indoors.html" class="art-row"><div class="row-num">03</div><div class="row-body"><div class="row-title">Why Paint Bubbles, Peels, or Fails Indoors</div><div class="row-meta">C.M. &middot; 7 min</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
-        <a href="moisture-causes-hidden-interior-damage.html" class="art-row"><div class="row-num">04</div><div class="row-body"><div class="row-title">How Moisture Causes Hidden Interior Damage</div><div class="row-meta">C.M. &middot; 9 min</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
-        <a href="tell-cosmetic-interior-damage-from-structural-warning-signs.html" class="art-row"><div class="row-num">05</div><div class="row-body"><div class="row-title">Cosmetic Interior Damage vs. Structural Warning Signs</div><div class="row-meta">C.M. &middot; 9 min</div></div><span class="row-badge urgent">Safety</span><div class="row-arrow">&#8594;</div></a>
-        <a href="ceilings-sag-crack-at-seams-or-separates-at-corners.html" class="art-row"><div class="row-num">06</div><div class="row-body"><div class="row-title">Why Ceilings Sag, Crack at Seams, or Separate at Corners</div><div class="row-meta">C.M. &middot; 8 min</div></div><span class="row-badge urgent">Safety</span><div class="row-arrow">&#8594;</div></a>
+        <a href="/ceiling-stains-reappear-after-painting" class="art-row"><div class="row-num">01</div><div class="row-body"><div class="row-title">Why Ceiling Stains Reappear After Painting</div><div class="row-meta">C.M. &middot; 8 min</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
+        <a href="/drywall-cracks-keep-coming-back" class="art-row"><div class="row-num">02</div><div class="row-body"><div class="row-title">Why Drywall Cracks Keep Coming Back</div><div class="row-meta">C.M. &middot; 8 min</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
+        <a href="/paint-bubbles-peels-or-fails-indoors" class="art-row"><div class="row-num">03</div><div class="row-body"><div class="row-title">Why Paint Bubbles, Peels, or Fails Indoors</div><div class="row-meta">C.M. &middot; 7 min</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
+        <a href="/moisture-causes-hidden-interior-damage" class="art-row"><div class="row-num">04</div><div class="row-body"><div class="row-title">How Moisture Causes Hidden Interior Damage</div><div class="row-meta">C.M. &middot; 9 min</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
+        <a href="/cosmetic-vs-structural-interior-damage" class="art-row"><div class="row-num">05</div><div class="row-body"><div class="row-title">Cosmetic Interior Damage vs. Structural Warning Signs</div><div class="row-meta">C.M. &middot; 9 min</div></div><span class="row-badge urgent">Safety</span><div class="row-arrow">&#8594;</div></a>
+        <a href="/ceilings-sag-crack-at-seams" class="art-row"><div class="row-num">06</div><div class="row-body"><div class="row-title">Why Ceilings Sag, Crack at Seams, or Separate at Corners</div><div class="row-meta">C.M. &middot; 8 min</div></div><span class="row-badge urgent">Safety</span><div class="row-arrow">&#8594;</div></a>
       </div>
     </section>
     <section aria-label="Roof leak guides">
-      <div class="sec-head"><h2 class="sec-h2"><span class="sec-dot"></span> Roof Leaks</h2><a href="maintenance-repair-roof.html" class="see-all">All 6 &#8594;</a></div>
+      <div class="sec-head"><h2 class="sec-h2"><span class="sec-dot"></span> Roof Leaks</h2><a href="/maintenance-repair-roof" class="see-all">All 6 &#8594;</a></div>
       <div class="art-list">
-        <a href="roof-leaks-only-during-heavy-rain.html" class="art-row"><div class="row-num">01</div><div class="row-body"><div class="row-title">Why Your Roof Leaks Only During Heavy Rain</div><div class="row-meta">T.A. &middot; 8 min</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
-        <a href="ice-dams-cause-roof-leaks.html" class="art-row"><div class="row-num">02</div><div class="row-body"><div class="row-title">Why Ice Dams Cause Roof Leaks</div><div class="row-meta">T.A. &middot; 8 min</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
-        <a href="roof-is-leaking-around-flashing.html" class="art-row"><div class="row-num">03</div><div class="row-body"><div class="row-title">Why Your Roof Is Leaking Around Flashing</div><div class="row-meta">T.A. &middot; 8 min</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
-        <a href="roof-is-leaking-around-a-vent-pipe.html" class="art-row"><div class="row-num">04</div><div class="row-body"><div class="row-title">Why Your Roof Is Leaking Around a Vent Pipe</div><div class="row-meta">T.A. &middot; 7 min</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
-        <a href="tell-your-roof-leak-is-actually-attic-condensation.html" class="art-row"><div class="row-num">05</div><div class="row-body"><div class="row-title">How to Tell if a Roof Leak Is Actually Attic Condensation</div><div class="row-meta">T.A. &middot; 8 min</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
-        <a href="roof-leaks-in-wind-driven-rain.html" class="art-row"><div class="row-num">06</div><div class="row-body"><div class="row-title">Why Your Roof Leaks in Wind-Driven Rain</div><div class="row-meta">T.A. &middot; 7 min</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
+        <a href="/roof-leaks-only-during-heavy-rain" class="art-row"><div class="row-num">01</div><div class="row-body"><div class="row-title">Why Your Roof Leaks Only During Heavy Rain</div><div class="row-meta">T.A. &middot; 8 min</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
+        <a href="/ice-dams-cause-roof-leaks" class="art-row"><div class="row-num">02</div><div class="row-body"><div class="row-title">Why Ice Dams Cause Roof Leaks</div><div class="row-meta">T.A. &middot; 8 min</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
+        <a href="/roof-is-leaking-around-flashing" class="art-row"><div class="row-num">03</div><div class="row-body"><div class="row-title">Why Your Roof Is Leaking Around Flashing</div><div class="row-meta">T.A. &middot; 8 min</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
+        <a href="/roof-is-leaking-around-a-vent-pipe" class="art-row"><div class="row-num">04</div><div class="row-body"><div class="row-title">Why Your Roof Is Leaking Around a Vent Pipe</div><div class="row-meta">T.A. &middot; 7 min</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
+        <a href="/tell-your-roof-leak-is-actually-attic-condensation" class="art-row"><div class="row-num">05</div><div class="row-body"><div class="row-title">How to Tell if a Roof Leak Is Actually Attic Condensation</div><div class="row-meta">T.A. &middot; 8 min</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
+        <a href="/roof-leaks-in-wind-driven-rain" class="art-row"><div class="row-num">06</div><div class="row-body"><div class="row-title">Why Your Roof Leaks in Wind-Driven Rain</div><div class="row-meta">T.A. &middot; 7 min</div></div><span class="row-badge urgent">Urgent</span><div class="row-arrow">&#8594;</div></a>
       </div>
     </section>
   </div>
 
   <!-- DIAGNOSTICS -->
   <section class="art-section" aria-label="Repair diagnostic guides">
-    <div class="sec-head"><h2 class="sec-h2"><span class="sec-dot"></span> Repair Diagnostics</h2><a href="maintenance-repair-diagnostics.html" class="see-all">All 11 guides &#8594;</a></div>
+    <div class="sec-head"><h2 class="sec-h2"><span class="sec-dot"></span> Repair Diagnostics</h2><a href="/maintenance-repair-diagnostics" class="see-all">All 11 guides &#8594;</a></div>
     <div class="grid-2" style="margin-bottom:16px;">
-      <a href="diagnose-home-problems-by-timing-triggers-patterns.html" class="art-card"><div class="card-stripe"></div><div class="card-body"><span class="card-tag diy">Start Here</span><div class="card-title">How to Diagnose Home Problems by Timing, Triggers &amp; Patterns</div><div class="card-meta"><span><strong>M.A.</strong> &middot; 10 min</span><span class="card-arrow">&#8594;</span></div></div></a>
-      <a href="water-damage-shows-up-below-the-real-problem.html" class="art-card"><div class="card-stripe urgent"></div><div class="card-body"><span class="card-tag urgent">&#128308; Key Concept</span><div class="card-title">Why Water Damage Shows Up Below the Real Problem</div><div class="card-meta"><span><strong>M.A.</strong> &middot; 8 min</span><span class="card-arrow">&#8594;</span></div></div></a>
+      <a href="/diagnose-home-problems-by-timing" class="art-card"><div class="card-stripe"></div><div class="card-body"><span class="card-tag diy">Start Here</span><div class="card-title">How to Diagnose Home Problems by Timing, Triggers &amp; Patterns</div><div class="card-meta"><span><strong>M.A.</strong> &middot; 10 min</span><span class="card-arrow">&#8594;</span></div></div></a>
+      <a href="/water-damage-shows-up-below-the-real-problem" class="art-card"><div class="card-stripe urgent"></div><div class="card-body"><span class="card-tag urgent">&#128308; Key Concept</span><div class="card-title">Why Water Damage Shows Up Below the Real Problem</div><div class="card-meta"><span><strong>M.A.</strong> &middot; 8 min</span><span class="card-arrow">&#8594;</span></div></div></a>
     </div>
     <div class="art-list">
-      <a href="quick-fixes-work-at-first-then-fail-later.html" class="art-row"><div class="row-num">03</div><div class="row-body"><div class="row-title">Why Quick Fixes Work at First Then Fail Later</div><div class="row-meta">M.A. &middot; 8 min &middot; The difference between treating symptoms and causes</div></div><span class="row-badge watch">Pattern</span><div class="row-arrow">&#8594;</div></a>
-      <a href="diy-repairs-fail-even-when-instructions-are-followed.html" class="art-row"><div class="row-num">04</div><div class="row-body"><div class="row-title">Why DIY Repairs Fail Even When Instructions Are Followed</div><div class="row-meta">M.A. &middot; 8 min &middot; Conditions matter as much as technique</div></div><span class="row-badge diy">DIY</span><div class="row-arrow">&#8594;</div></a>
-      <a href="tell-when-a-repair-is-cosmetic-vs-corrective.html" class="art-row"><div class="row-num">05</div><div class="row-body"><div class="row-title">How to Tell When a Repair Is Cosmetic vs. Corrective</div><div class="row-meta">M.A. &middot; 8 min &middot; The most important distinction in home repair</div></div><span class="row-badge diy">Framework</span><div class="row-arrow">&#8594;</div></a>
-      <a href="painting-over-problems-almost-always-backfires.html" class="art-row"><div class="row-num">06</div><div class="row-body"><div class="row-title">Why Painting Over Problems Almost Always Backfires</div><div class="row-meta">M.A. &middot; 7 min &middot; Traps moisture, hides evidence, accelerates failure</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
-      <a href="when-temporary-fixes-are-appropriate-when-theyre-dangerous.html" class="art-row"><div class="row-num">07</div><div class="row-body"><div class="row-title">When Temporary Fixes Are Appropriate &amp; When They're Dangerous</div><div class="row-meta">M.A. &middot; 8 min &middot; Not all band-aids are wrong</div></div><span class="row-badge urgent">Safety</span><div class="row-arrow">&#8594;</div></a>
+      <a href="/quick-fixes-work-at-first-then-fail-later" class="art-row"><div class="row-num">03</div><div class="row-body"><div class="row-title">Why Quick Fixes Work at First Then Fail Later</div><div class="row-meta">M.A. &middot; 8 min &middot; The difference between treating symptoms and causes</div></div><span class="row-badge watch">Pattern</span><div class="row-arrow">&#8594;</div></a>
+      <a href="/diy-repairs-fail-even-when-instructions-followed" class="art-row"><div class="row-num">04</div><div class="row-body"><div class="row-title">Why DIY Repairs Fail Even When Instructions Are Followed</div><div class="row-meta">M.A. &middot; 8 min &middot; Conditions matter as much as technique</div></div><span class="row-badge diy">DIY</span><div class="row-arrow">&#8594;</div></a>
+      <a href="/cosmetic-vs-corrective-repairs" class="art-row"><div class="row-num">05</div><div class="row-body"><div class="row-title">How to Tell When a Repair Is Cosmetic vs. Corrective</div><div class="row-meta">M.A. &middot; 8 min &middot; The most important distinction in home repair</div></div><span class="row-badge diy">Framework</span><div class="row-arrow">&#8594;</div></a>
+      <a href="/painting-over-problems-almost-always-backfires" class="art-row"><div class="row-num">06</div><div class="row-body"><div class="row-title">Why Painting Over Problems Almost Always Backfires</div><div class="row-meta">M.A. &middot; 7 min &middot; Traps moisture, hides evidence, accelerates failure</div></div><span class="row-badge watch">Watch</span><div class="row-arrow">&#8594;</div></a>
+      <a href="/temporary-fixes-appropriate-vs-dangerous" class="art-row"><div class="row-num">07</div><div class="row-body"><div class="row-title">When Temporary Fixes Are Appropriate &amp; When They're Dangerous</div><div class="row-meta">M.A. &middot; 8 min &middot; Not all band-aids are wrong</div></div><span class="row-badge urgent">Safety</span><div class="row-arrow">&#8594;</div></a>
     </div>
   </section>
 
@@ -365,11 +392,11 @@ footer{background:var(--navy);}
 
   <!-- MAINTENANCE -->
   <section class="art-section" aria-label="Home maintenance guides">
-    <div class="sec-head"><h2 class="sec-h2"><span class="sec-dot"></span> Home Maintenance</h2><a href="maintenance-repair-maintenance.html" class="see-all">All 3 guides &#8594;</a></div>
+    <div class="sec-head"><h2 class="sec-h2"><span class="sec-dot"></span> Home Maintenance</h2><a href="/maintenance-repair-maintenance" class="see-all">All 3 guides &#8594;</a></div>
     <div class="grid-3">
-      <a href="the-spring-home-maintenance-checklist.html" class="art-card"><div class="card-stripe"></div><div class="card-body"><span class="card-tag diy">Spring</span><div class="card-title">The Spring Home Maintenance Checklist</div><div class="card-meta"><span><strong>M.A. &amp; T.A.</strong> &middot; 10 min</span><span class="card-arrow">&#8594;</span></div></div></a>
-      <a href="the-fall-maintenance-checklist.html" class="art-card"><div class="card-stripe"></div><div class="card-body"><span class="card-tag diy">Fall</span><div class="card-title">The Fall Maintenance Checklist</div><div class="card-meta"><span><strong>M.A. &amp; T.A.</strong> &middot; 10 min</span><span class="card-arrow">&#8594;</span></div></div></a>
-      <a href="small-problems-escalate-after-being-ignored.html" class="art-card"><div class="card-stripe warn"></div><div class="card-body"><span class="card-tag watch">&#9888; Key Concept</span><div class="card-title">Why Small Problems Escalate After Being Ignored</div><div class="card-meta"><span><strong>M.A.</strong> &middot; 8 min</span><span class="card-arrow">&#8594;</span></div></div></a>
+      <a href="/the-spring-home-maintenance-checklist" class="art-card"><div class="card-stripe"></div><div class="card-body"><span class="card-tag diy">Spring</span><div class="card-title">The Spring Home Maintenance Checklist</div><div class="card-meta"><span><strong>M.A. &amp; T.A.</strong> &middot; 10 min</span><span class="card-arrow">&#8594;</span></div></div></a>
+      <a href="/the-fall-maintenance-checklist" class="art-card"><div class="card-stripe"></div><div class="card-body"><span class="card-tag diy">Fall</span><div class="card-title">The Fall Maintenance Checklist</div><div class="card-meta"><span><strong>M.A. &amp; T.A.</strong> &middot; 10 min</span><span class="card-arrow">&#8594;</span></div></div></a>
+      <a href="/small-problems-escalate-after-being-ignored" class="art-card"><div class="card-stripe warn"></div><div class="card-body"><span class="card-tag watch">&#9888; Key Concept</span><div class="card-title">Why Small Problems Escalate After Being Ignored</div><div class="card-meta"><span><strong>M.A.</strong> &middot; 8 min</span><span class="card-arrow">&#8594;</span></div></div></a>
     </div>
   </section>
 
@@ -378,15 +405,15 @@ footer{background:var(--navy);}
     <div class="ms-head">Most-Searched Maintenance &amp; Repair Questions</div>
     <div class="ms-sub">Long-tail queries our guides answer directly</div>
     <div class="ms-grid">
-      <a href="exterior-repairs-keep-failing-in-the-same-spot.html" class="ms-link">why does my exterior repair keep failing</a>
-      <a href="ceiling-stains-reappear-after-painting.html" class="ms-link">ceiling stain coming back after painting</a>
-      <a href="roof-leaks-only-during-heavy-rain.html" class="ms-link">roof only leaks in heavy rain</a>
-      <a href="quick-fixes-work-at-first-then-fail-later.html" class="ms-link">why do my home repairs keep failing</a>
-      <a href="drywall-cracks-keep-coming-back.html" class="ms-link">drywall crack keeps coming back</a>
-      <a href="ice-dams-cause-roof-leaks.html" class="ms-link">ice dam causing roof leak</a>
-      <a href="painting-over-problems-almost-always-backfires.html" class="ms-link">painted over water stain now worse</a>
-      <a href="moisture-causes-hidden-interior-damage.html" class="ms-link">hidden moisture damage inside walls</a>
-      <a href="the-spring-home-maintenance-checklist.html" class="ms-link">spring home maintenance checklist</a>
+      <a href="/exterior-repairs-keep-failing-in-the-same-spot" class="ms-link">why does my exterior repair keep failing</a>
+      <a href="/ceiling-stains-reappear-after-painting" class="ms-link">ceiling stain coming back after painting</a>
+      <a href="/roof-leaks-only-during-heavy-rain" class="ms-link">roof only leaks in heavy rain</a>
+      <a href="/quick-fixes-work-at-first-then-fail-later" class="ms-link">why do my home repairs keep failing</a>
+      <a href="/drywall-cracks-keep-coming-back" class="ms-link">drywall crack keeps coming back</a>
+      <a href="/ice-dams-cause-roof-leaks" class="ms-link">ice dam causing roof leak</a>
+      <a href="/painting-over-problems-almost-always-backfires" class="ms-link">painted over water stain now worse</a>
+      <a href="/moisture-causes-hidden-interior-damage" class="ms-link">hidden moisture damage inside walls</a>
+      <a href="/the-spring-home-maintenance-checklist" class="ms-link">spring home maintenance checklist</a>
     </div>
   </div>
 
@@ -407,21 +434,21 @@ footer{background:var(--navy);}
     <h4>What's your problem?</h4>
     <p>Jump straight to the right subcategory.</p>
     <div class="quick-options">
-      <a href="maintenance-repair-exterior.html" class="quick-opt"><div class="quick-opt-icon">&#127968;</div><div class="quick-opt-text">Exterior failure</div></a>
-      <a href="maintenance-repair-interior.html" class="quick-opt"><div class="quick-opt-icon">&#127959;</div><div class="quick-opt-text">Interior damage</div></a>
-      <a href="maintenance-repair-roof.html" class="quick-opt"><div class="quick-opt-icon">&#9928;</div><div class="quick-opt-text">Roof leak</div></a>
-      <a href="maintenance-repair-diagnostics.html" class="quick-opt"><div class="quick-opt-icon">&#128295;</div><div class="quick-opt-text">Repair keeps failing</div></a>
-      <a href="maintenance-repair-maintenance.html" class="quick-opt"><div class="quick-opt-icon">&#128197;</div><div class="quick-opt-text">Seasonal maintenance</div></a>
+      <a href="/maintenance-repair-exterior" class="quick-opt"><div class="quick-opt-icon">&#127968;</div><div class="quick-opt-text">Exterior failure</div></a>
+      <a href="/maintenance-repair-interior" class="quick-opt"><div class="quick-opt-icon">&#127959;</div><div class="quick-opt-text">Interior damage</div></a>
+      <a href="/maintenance-repair-roof" class="quick-opt"><div class="quick-opt-icon">&#9928;</div><div class="quick-opt-text">Roof leak</div></a>
+      <a href="/maintenance-repair-diagnostics" class="quick-opt"><div class="quick-opt-icon">&#128295;</div><div class="quick-opt-text">Repair keeps failing</div></a>
+      <a href="/maintenance-repair-maintenance" class="quick-opt"><div class="quick-opt-icon">&#128197;</div><div class="quick-opt-text">Seasonal maintenance</div></a>
     </div>
   </div>
   <div class="sidebar-card">
     <h4>All Categories</h4>
     <ul class="cat-nav-list">
-      <li><a href="category-plumbing.html"><span class="cnl"><span class="cni">&#128703;</span>Plumbing</span><span class="cat-ct">27</span></a></li>
-      <li><a href="category-electrical.html"><span class="cnl"><span class="cni">&#9889;</span>Electrical</span><span class="cat-ct">23</span></a></li>
-      <li><a href="category-hvac.html"><span class="cnl"><span class="cni">&#127777;</span>HVAC</span><span class="cat-ct">40</span></a></li>
-      <li><a href="category-foundation.html"><span class="cnl"><span class="cni">&#127959;</span>Foundation</span><span class="cat-ct">19</span></a></li>
-      <li><a href="category-maintenance-repair.html" class="active"><span class="cnl"><span class="cni">&#128296;</span>Maintenance &amp; Repair</span><span class="cat-ct">35</span></a></li>
+      <li><a href="/category-plumbing"><span class="cnl"><span class="cni">&#128703;</span>Plumbing</span><span class="cat-ct">27</span></a></li>
+      <li><a href="/category-electrical"><span class="cnl"><span class="cni">&#9889;</span>Electrical</span><span class="cat-ct">23</span></a></li>
+      <li><a href="/category-hvac"><span class="cnl"><span class="cni">&#127777;</span>HVAC</span><span class="cat-ct">40</span></a></li>
+      <li><a href="/category-foundation"><span class="cnl"><span class="cni">&#127959;</span>Foundation</span><span class="cat-ct">19</span></a></li>
+      <li><a href="/category-maintenance-repair" class="active"><span class="cnl"><span class="cni">&#128296;</span>Maintenance &amp; Repair</span><span class="cat-ct">35</span></a></li>
     </ul>
   </div>
   <div class="ad-placeholder"><div class="ad-label">Advertisement</div><div class="ad-size">300 &times; 250</div></div>
@@ -434,7 +461,8 @@ footer{background:var(--navy);}
 </aside>
 </div>
 
-<div class="footer-nav"><div class="inner"><a href="category-plumbing.html">Plumbing</a><a href="category-electrical.html">Electrical &amp; Safety</a><a href="category-hvac.html">Heating &amp; Cooling</a><a href="category-foundation.html">Structure &amp; Foundation</a><a href="category-maintenance-repair.html">Maintenance &amp; Repair</a><a href="about-experts.html">About Our Experts</a><a href="how-we-verify.html">How We Verify</a></div></div>
-<footer><div class="footer-bottom"><span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span><div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="affiliate-disclosure.html">Affiliate Disclosure</a></div></div></footer>
+<div class="footer-nav"><div class="inner"><a href="/category-plumbing">Plumbing</a><a href="/category-electrical">Electrical &amp; Safety</a><a href="/category-hvac">Heating &amp; Cooling</a><a href="/category-foundation">Structure &amp; Foundation</a><a href="/category-maintenance-repair">Maintenance &amp; Repair</a><a href="/about-experts">About Our Experts</a><a href="/how-we-verify">How We Verify</a></div></div>
+<footer><div class="footer-bottom"><span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span><div><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="/affiliate-disclosure">Affiliate Disclosure</a></div></div></footer>
+<script>function hrgToggleMenu(){var n=document.getElementById("hrgMobileNav"),b=document.getElementById("hrgMenuBtn");var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");}</script>
 </body>
 </html>

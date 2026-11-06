@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Why Your Outlet Is Warm or Hot | HomeownersRepairGuide.com</title>
 <meta name="description" content="A warm or hot electrical outlet is never normal. Noticeable heat means excessive resistance, loose connections, or overload — conditions that can escalate to fire before a breaker trips. Here's what to do and when to call.">
-<link rel="canonical" href="https://homeownersrepairguide.com/outlet-warm-hot.html">
+<link rel="canonical" href="https://homeownersrepairguide.com/outlet-warm-hot">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://homeownersrepairguide.com/outlet-warm-hot.html">
+<meta property="og:url" content="https://homeownersrepairguide.com/outlet-warm-hot">
 <meta property="og:title" content="Why Your Outlet Is Warm or Hot | HomeownersRepairGuide.com">
 <meta property="og:description" content="A warm outlet is never normal. Here's why outlets overheat, how serious yours is, and when to call an electrician immediately.">
 <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
@@ -237,15 +239,15 @@ footer{background:var(--navy);}
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://homeownersrepairguide.com/outlet-warm-hot.html#article",
-      "url": "https://homeownersrepairguide.com/outlet-warm-hot.html",
+      "@id": "https://homeownersrepairguide.com/outlet-warm-hot#article",
+      "url": "https://homeownersrepairguide.com/outlet-warm-hot",
       "headline": "Why Your Outlet Is Warm or Hot",
       "description": "A warm or hot electrical outlet is never normal. Noticeable heat means excessive resistance, loose connections, or overload — conditions that can escalate to fire before a breaker trips. Here's what to do and when to call.",
       "publisher": {
         "@id": "https://homeownersrepairguide.com/#organization"
       },
       "breadcrumb": {
-        "@id": "https://homeownersrepairguide.com/outlet-warm-hot.html#breadcrumb"
+        "@id": "https://homeownersrepairguide.com/outlet-warm-hot#breadcrumb"
       },
       "isPartOf": {
         "@id": "https://homeownersrepairguide.com/#website"
@@ -253,12 +255,20 @@ footer{background:var(--navy);}
       "author": {
         "@type": "Person",
         "name": "T.A.",
-        "description": "Certified Facility Manager (CHFM), NFPA CFI-1, CLSS-HC, OSHA 30"
+        "description": "NFPA Certified Fire Inspector (CFI-1), Certified Healthcare Facility Manager (CHFM), Certified Life Safety Specialist (CLSS-HC), OSHA 30; electrician-trained"
+      },
+      "datePublished": "2026-04-11T20:39:14-07:00",
+      "dateModified": "2026-05-10T17:02:20-07:00",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://homeownersrepairguide.com/og-image.jpg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://homeownersrepairguide.com/outlet-warm-hot.html#breadcrumb",
+      "@id": "https://homeownersrepairguide.com/outlet-warm-hot#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -270,13 +280,13 @@ footer{background:var(--navy);}
           "@type": "ListItem",
           "position": 2,
           "name": "Electrical & Safety",
-          "item": "https://homeownersrepairguide.com/category-electrical.html"
+          "item": "https://homeownersrepairguide.com/category-electrical"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Outlets & Wiring",
-          "item": "https://homeownersrepairguide.com/electrical-outlets-wiring.html"
+          "item": "https://homeownersrepairguide.com/electrical-outlets-wiring"
         },
         {
           "@type": "ListItem",
@@ -284,10 +294,36 @@ footer{background:var(--navy);}
           "name": "Why Your Outlet Is Warm or Hot"
         }
       ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://homeownersrepairguide.com/#organization",
+      "name": "HomeownersRepairGuide.com",
+      "url": "https://homeownersrepairguide.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://homeownersrepairguide.com/logo.png",
+        "width": 512,
+        "height": 512
+      }
     }
   ]
 }
 </script>
+<style>
+.hrg-menu-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:10px;margin:-10px -6px -10px auto;cursor:pointer;}
+.hrg-menu-btn span{display:block;width:24px;height:2px;background:var(--navy,#0f2236);transition:transform .2s,opacity .2s;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.hrg-mobile-nav{display:none;flex-direction:column;background:var(--white,#fff);border-top:1px solid var(--gray-light,#e8e4de);padding:8px 0;box-shadow:var(--shadow-soft,0 4px 24px rgba(15,34,54,.08));}
+.hrg-mobile-nav.open{display:flex;}
+.hrg-mobile-nav a{padding:12px 24px;font-size:15px;font-weight:600;color:var(--text-dark,#1a1612);text-decoration:none;border-bottom:1px solid var(--gray-light,#e8e4de);}
+.hrg-mobile-nav a:last-child{border-bottom:none;color:var(--rust,#c8441a);}
+@media(max-width:600px){.hrg-menu-btn{display:flex;}}
+@media(min-width:601px){.hrg-mobile-nav{display:none!important;}}
+@media(max-width:640px){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}}
+</style>
 </head>
 <body>
 
@@ -295,37 +331,48 @@ footer{background:var(--navy);}
   <div class="inner">
     <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
     <div class="topbar-links">
-      <a href="about-experts.html">About Our Experts</a>
-      <a href="how-we-verify.html">How We Verify</a>
-      <a href="contact.html">Contact</a>
+      <a href="/about-experts">About Our Experts</a>
+      <a href="/how-we-verify">How We Verify</a>
+      <a href="/contact">Contact</a>
     </div>
   </div>
 </div>
 
 <header>
   <div class="header-inner">
-    <a href="index.html" class="logo">
+    <a href="/" class="logo">
       <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
       <span class="logo-sub">Real advice from real tradespeople</span>
     </a>
     <nav>
-      <a href="category-plumbing.html">Plumbing</a>
-      <a href="category-electrical.html" class="active">Electrical</a>
-      <a href="category-hvac.html">HVAC</a>
-      <a href="category-foundation.html">Foundation</a>
-      <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+      <a href="/category-plumbing">Plumbing</a>
+      <a href="/category-electrical" class="active">Electrical</a>
+      <a href="/category-hvac">HVAC</a>
+      <a href="/category-foundation">Foundation</a>
+      <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+      <a href="/newsletter" class="nav-cta">Free Newsletter</a>
     </nav>
+    <button class="hrg-menu-btn" id="hrgMenuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="hrgMobileNav" onclick="hrgToggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+  <div class="hrg-mobile-nav" id="hrgMobileNav">
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical</a>
+    <a href="/category-hvac">HVAC</a>
+    <a href="/category-foundation">Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/contact">Contact</a>
+    <a href="/newsletter">Free Newsletter</a>
   </div>
 </header>
 
 <div class="breadcrumb">
   <div class="inner">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <span class="sep">&#8250;</span>
-    <a href="category-electrical.html">Electrical</a>
+    <a href="/category-electrical">Electrical</a>
     <span class="sep">&#8250;</span>
-    <a href="electrical-outlets-wiring.html">Outlets &amp; Wiring</a>
+    <a href="/electrical-outlets-wiring">Outlets &amp; Wiring</a>
     <span class="sep">&#8250;</span>
     <span class="current">Why Your Outlet Is Warm or Hot</span>
   </div>
@@ -345,10 +392,10 @@ footer{background:var(--navy);}
   <div class="article-byline">
     <div class="byline-avatar">T.A.</div>
     <div class="byline-info">
-      <div class="byline-name">T.A. &#8212; Licensed Electrician &amp; Fire Investigator</div>
+      <div class="byline-name">T.A. &#8212; Certified Fire Inspector &amp; Facility Manager</div>
       <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Licensed Electrician</div>
     </div>
-    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 8 min read</div>
+    <div class="byline-meta"><strong>Updated:</strong> May 2026 &middot; 8 min read</div>
   </div>
 
   <div class="article-body">
@@ -554,7 +601,7 @@ footer{background:var(--navy);}
       <div>
         <div class="expert-label">From the Expert</div>
         <div class="expert-text">"The back-stab connection failure is the single most common outlet overheating cause I encounter, and it's been that way for decades. Most people don't know that the push-in terminal on the back of a standard outlet is a significantly weaker connection than the screw terminal on the side &#8212; it was designed for speed of installation, not long-term reliability. After 15&#8211;20 years of thermal cycling, those spring clips lose their grip. The connection heats under load, which accelerates the spring fatigue further. It's a self-worsening failure. The fix is simple and cheap: re-terminate the wire under the screw terminal instead of the back-stab. What worries me more is the homeowner who smells something plastic from an outlet, assumes it's the appliance, and doesn't investigate. I've investigated residential fires that started at outlet boxes where the scorch pattern made it clear the heating had been occurring for months &#8212; the telltale sign being that the plastic faceplate was browned on the inside face. By the time there's a smell, the insulation inside the box is already degraded. When I get a call about a warm outlet, I always check three things: back-stab status, connection integrity at the outlet box and any upstream boxes on that circuit, and whether the problem is isolated to one outlet or systemic."</div>
-        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; CHFM &middot; OSHA 30</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Electrician-Trained &middot; CHFM &middot; OSHA 30</div>
       </div>
     </div>
 
@@ -621,19 +668,19 @@ footer{background:var(--navy);}
     </div>
 
     <div class="article-tags">
-      <a href="#" class="tag-pill">outlet warm to touch</a>
-      <a href="#" class="tag-pill">hot electrical outlet</a>
-      <a href="#" class="tag-pill">outlet overheating</a>
-      <a href="#" class="tag-pill">warm outlet dangerous</a>
-      <a href="#" class="tag-pill">outlet hot when charging</a>
-      <a href="#" class="tag-pill">burning smell from outlet</a>
+      <span class="tag-pill">outlet warm to touch</span>
+      <span class="tag-pill">hot electrical outlet</span>
+      <span class="tag-pill">outlet overheating</span>
+      <span class="tag-pill">warm outlet dangerous</span>
+      <span class="tag-pill">outlet hot when charging</span>
+      <span class="tag-pill">burning smell from outlet</span>
     </div>
 
     <div class="share-bar">
       <span class="share-label">Share:</span>
-      <a href="#" class="share-btn share-fb">Facebook</a>
-      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
-      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhomeownersrepairguide.com%2Foutlet-warm-hot" class="share-btn share-fb" target="_blank" rel="noopener nofollow">Facebook</a>
+      <a href="https://x.com/intent/post?url=https%3A%2F%2Fhomeownersrepairguide.com%2Foutlet-warm-hot&amp;text=Why%20Your%20Outlet%20Is%20Warm%20or%20Hot" class="share-btn share-x" target="_blank" rel="noopener nofollow">&#120143; Twitter</a>
+      <a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fhomeownersrepairguide.com%2Foutlet-warm-hot&amp;media=https%3A%2F%2Fhomeownersrepairguide.com%2Fog-image.jpg&amp;description=Why%20Your%20Outlet%20Is%20Warm%20or%20Hot" class="share-btn share-pin" target="_blank" rel="noopener nofollow">Pinterest</a>
       <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
     </div>
   </div>
@@ -641,15 +688,15 @@ footer{background:var(--navy);}
   <div class="related">
     <h3>More Electrical Guides</h3>
     <div class="related-list">
-      <a href="gfci-keeps-tripping.html" class="related-item">
+      <a href="/gfci-keeps-tripping" class="related-item">
         <div><div class="related-item-title">Why Your GFCI Breaker Keeps Tripping</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
         <div class="related-arrow">&#8594;</div>
       </a>
-      <a href="breaker-trips-plug-in.html" class="related-item">
+      <a href="/breaker-trips-plug-in" class="related-item">
         <div><div class="related-item-title">Why Your Breaker Trips When You Plug Something In</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
         <div class="related-arrow">&#8594;</div>
       </a>
-      <a href="electrical-fire-prevention-guide.html" class="related-item">
+      <a href="/electrical-fire-prevention-guide" class="related-item">
         <div><div class="related-item-title">Electrical Fire Prevention: The Complete Guide</div><div class="related-item-meta">T.A. &middot; 28 min read &middot; Flagship</div></div>
         <div class="related-arrow">&#8594;</div>
       </a>
@@ -683,8 +730,8 @@ footer{background:var(--navy);}
       <div class="s-avatar">T.A.</div>
       <div>
         <div class="s-name">T.A.</div>
-        <div class="s-title">Licensed Electrician &amp; Fire Investigator</div>
-        <div class="s-bio">NFPA Certified Fire Investigator (CFI-1), Certified Healthcare Facility Manager (CHFM), CLSS-HC, OSHA 30, and licensed electrician. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
+        <div class="s-title">Certified Fire Inspector &amp; Facility Manager</div>
+        <div class="s-bio">NFPA Certified Fire Inspector (CFI-1), Certified Healthcare Facility Manager (CHFM), Certified Life Safety Specialist (CLSS-HC), OSHA 30, and electrician-trained. Specializes in electrical fire cause and origin, hazard identification, and code compliance.</div>
       </div>
     </div>
   </div>
@@ -704,22 +751,22 @@ footer{background:var(--navy);}
 
 <div class="footer-nav">
   <div class="inner">
-    <a href="category-plumbing.html">Plumbing</a>
-    <a href="category-electrical.html">Electrical &amp; Safety</a>
-    <a href="category-hvac.html">Heating &amp; Cooling</a>
-    <a href="category-foundation.html">Structure &amp; Foundation</a>
-    <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-    <a href="about-experts.html">About Our Experts</a>
-    <a href="how-we-verify.html">How We Verify</a>
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical &amp; Safety</a>
+    <a href="/category-hvac">Heating &amp; Cooling</a>
+    <a href="/category-foundation">Structure &amp; Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/how-we-verify">How We Verify</a>
   </div>
 </div>
 <footer>
   <div class="footer-bottom">
     <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
     <div>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
-      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
+      <a href="/affiliate-disclosure">Affiliate Disclosure</a>
     </div>
   </div>
 </footer>
@@ -734,5 +781,6 @@ footer{background:var(--navy);}
     tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
   });
 </script>
+<script>function hrgToggleMenu(){var n=document.getElementById("hrgMobileNav"),b=document.getElementById("hrgMenuBtn");var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");}</script>
 </body>
 </html>

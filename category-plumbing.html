@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Plumbing Repair Guides | Diagnose Any Plumbing Problem | HomeownersRepairGuide.com</title>
 <meta name="description" content="Licensed plumbers diagnose every common home plumbing problem — drains, leaks, water heaters, low pressure, frozen pipes. Find your symptom and get a real answer.">
-<link rel="canonical" href="https://homeownersrepairguide.com/category-plumbing.html">
+<link rel="canonical" href="https://homeownersrepairguide.com/category-plumbing">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://homeownersrepairguide.com/category-plumbing.html">
+<meta property="og:url" content="https://homeownersrepairguide.com/category-plumbing">
 <meta property="og:title" content="Plumbing Repair Guides | HomeownersRepairGuide.com">
 <meta property="og:description" content="Licensed plumbers diagnose every common home plumbing problem. Find your symptom and get a real answer.">
 <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
@@ -290,12 +292,12 @@ footer{background:var(--navy);}
   "@graph": [
     {
       "@type": "CollectionPage",
-      "@id": "https://homeownersrepairguide.com/category-plumbing.html#webpage",
-      "url": "https://homeownersrepairguide.com/category-plumbing.html",
+      "@id": "https://homeownersrepairguide.com/category-plumbing#webpage",
+      "url": "https://homeownersrepairguide.com/category-plumbing",
       "name": "Plumbing Repair Guides | Diagnose Any Plumbing Problem | HomeownersRepairGuide.com",
       "description": "Licensed plumbers diagnose every common home plumbing problem — drains, leaks, water heaters, low pressure, frozen pipes. Find your symptom and get a real answer.",
       "breadcrumb": {
-        "@id": "https://homeownersrepairguide.com/category-plumbing.html#breadcrumb"
+        "@id": "https://homeownersrepairguide.com/category-plumbing#breadcrumb"
       },
       "isPartOf": {
         "@id": "https://homeownersrepairguide.com/#website"
@@ -303,7 +305,7 @@ footer{background:var(--navy);}
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://homeownersrepairguide.com/category-plumbing.html#breadcrumb",
+      "@id": "https://homeownersrepairguide.com/category-plumbing#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -321,6 +323,20 @@ footer{background:var(--navy);}
   ]
 }
 </script>
+<style>
+.hrg-menu-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:10px;margin:-10px -6px -10px auto;cursor:pointer;}
+.hrg-menu-btn span{display:block;width:24px;height:2px;background:var(--navy,#0f2236);transition:transform .2s,opacity .2s;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.hrg-mobile-nav{display:none;flex-direction:column;background:var(--white,#fff);border-top:1px solid var(--gray-light,#e8e4de);padding:8px 0;box-shadow:var(--shadow-soft,0 4px 24px rgba(15,34,54,.08));}
+.hrg-mobile-nav.open{display:flex;}
+.hrg-mobile-nav a{padding:12px 24px;font-size:15px;font-weight:600;color:var(--text-dark,#1a1612);text-decoration:none;border-bottom:1px solid var(--gray-light,#e8e4de);}
+.hrg-mobile-nav a:last-child{border-bottom:none;color:var(--rust,#c8441a);}
+@media(max-width:600px){.hrg-menu-btn{display:flex;}}
+@media(min-width:601px){.hrg-mobile-nav{display:none!important;}}
+@media(max-width:640px){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}}
+</style>
 </head>
 <body>
 
@@ -328,33 +344,44 @@ footer{background:var(--navy);}
   <div class="inner">
     <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
     <div class="topbar-links">
-      <a href="about-experts.html">About Our Experts</a>
-      <a href="how-we-verify.html">How We Verify</a>
-      <a href="contact.html">Contact</a>
+      <a href="/about-experts">About Our Experts</a>
+      <a href="/how-we-verify">How We Verify</a>
+      <a href="/contact">Contact</a>
     </div>
   </div>
 </div>
 
 <header>
   <div class="header-inner">
-    <a href="index.html" class="logo">
+    <a href="/" class="logo">
       <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
       <span class="logo-sub">Real advice from real tradespeople</span>
     </a>
     <nav>
-      <a href="category-plumbing.html" class="active">Plumbing</a>
-      <a href="category-electrical.html">Electrical</a>
-      <a href="category-hvac.html">HVAC</a>
-      <a href="category-foundation.html">Foundation</a>
-      <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+      <a href="/category-plumbing" class="active">Plumbing</a>
+      <a href="/category-electrical">Electrical</a>
+      <a href="/category-hvac">HVAC</a>
+      <a href="/category-foundation">Foundation</a>
+      <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+      <a href="/newsletter" class="nav-cta">Free Newsletter</a>
     </nav>
+    <button class="hrg-menu-btn" id="hrgMenuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="hrgMobileNav" onclick="hrgToggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+  <div class="hrg-mobile-nav" id="hrgMobileNav">
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical</a>
+    <a href="/category-hvac">HVAC</a>
+    <a href="/category-foundation">Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/contact">Contact</a>
+    <a href="/newsletter">Free Newsletter</a>
   </div>
 </header>
 
 <div class="breadcrumb">
   <div class="inner">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <span class="sep">&#8250;</span>
     <span class="current">Plumbing</span>
   </div>
@@ -379,11 +406,11 @@ footer{background:var(--navy);}
     <div class="hero-experts-inner">
       <div class="experts-label">Expert Authors</div>
       <div class="expert-pills">
-        <a href="about-experts.html" class="expert-pill">
+        <a href="/about-experts" class="expert-pill">
           <div class="pill-av">M.A.</div>
           <div><div class="pill-n">M.A.</div><div class="pill-t">Roto-Rooter Owner</div></div>
         </a>
-        <a href="about-experts.html" class="expert-pill">
+        <a href="/about-experts" class="expert-pill">
           <div class="pill-av" style="background:#2a7a8c;">J.G.</div>
           <div><div class="pill-n">J.G.</div><div class="pill-t">50+ Yrs &middot; Licensed Plumber</div></div>
         </a>
@@ -401,42 +428,42 @@ footer{background:var(--navy);}
       <div>
         <div class="sf-col-head"><span class="sf-icon">&#128308;</span> Drain &amp; Sewer Problems</div>
         <div class="sf-links">
-          <a href="multiple-drains-backing-up.html" class="sf-link">Multiple drains backing up <span class="sf-badge urgent">Urgent</span></a>
-          <a href="water-backs-up-into-bathtub-when-flush-toilet.html" class="sf-link">Toilet flush backs up to tub <span class="sf-badge urgent">Urgent</span></a>
-          <a href="drain-gurgling.html" class="sf-link">Drains gurgling or bubbling <span class="sf-badge watch">Watch</span></a>
-          <a href="why-house-smells-like-sewer.html" class="sf-link">House smells like sewer <span class="sf-badge urgent">Urgent</span></a>
-          <a href="sink-draining-slowly.html" class="sf-link">Sink draining slowly <span class="sf-badge diy">DIY</span></a>
-          <a href="toilet-gurgles-bubbles.html" class="sf-link">Toilet gurgles or bubbles <span class="sf-badge watch">Watch</span></a>
-          <a href="washer-drain-overflow.html" class="sf-link">Washer drain overflowing <span class="sf-badge watch">Watch</span></a>
-          <a href="plumbing-drains-sewer.html" class="sf-link" style="color:var(--amber);margin-top:4px;">See all drain guides &#8594;</a>
+          <a href="/multiple-drains-backing-up" class="sf-link">Multiple drains backing up <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/water-backs-up-into-bathtub-when-flush-toilet" class="sf-link">Toilet flush backs up to tub <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/drain-gurgling" class="sf-link">Drains gurgling or bubbling <span class="sf-badge watch">Watch</span></a>
+          <a href="/why-house-smells-like-sewer" class="sf-link">House smells like sewer <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/sink-draining-slowly" class="sf-link">Sink draining slowly <span class="sf-badge diy">DIY</span></a>
+          <a href="/toilet-gurgles-bubbles" class="sf-link">Toilet gurgles or bubbles <span class="sf-badge watch">Watch</span></a>
+          <a href="/washer-drain-overflow" class="sf-link">Washer drain overflowing <span class="sf-badge watch">Watch</span></a>
+          <a href="/plumbing-drains-sewer" class="sf-link" style="color:var(--amber);margin-top:4px;">See all drain guides &#8594;</a>
         </div>
       </div>
 
       <div>
         <div class="sf-col-head"><span class="sf-icon">&#128293;</span> Water Heater &amp; Pressure</div>
         <div class="sf-links">
-          <a href="why-you-have-no-hot-water.html" class="sf-link">No hot water <span class="sf-badge urgent">Urgent</span></a>
-          <a href="water-heater-leaking.html" class="sf-link">Water heater leaking <span class="sf-badge urgent">Urgent</span></a>
-          <a href="hot-water-smells-rotten-eggs.html" class="sf-link">Hot water smells bad <span class="sf-badge diy">DIY</span></a>
-          <a href="water-heater-rumbling-noise.html" class="sf-link">Water heater rumbling <span class="sf-badge watch">Watch</span></a>
-          <a href="low-water-pressure.html" class="sf-link">Low pressure whole house <span class="sf-badge watch">Watch</span></a>
-          <a href="hot-water-pressure-low.html" class="sf-link">Hot water pressure low only <span class="sf-badge diy">DIY</span></a>
-          <a href="shower-low-hot-water-pressure.html" class="sf-link">Shower pressure weak <span class="sf-badge diy">DIY</span></a>
-          <a href="plumbing-water-heaters.html" class="sf-link" style="color:var(--amber);margin-top:4px;">See all water heater guides &#8594;</a>
+          <a href="/why-you-have-no-hot-water" class="sf-link">No hot water <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/water-heater-leaking" class="sf-link">Water heater leaking <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/hot-water-smells-rotten-eggs" class="sf-link">Hot water smells bad <span class="sf-badge diy">DIY</span></a>
+          <a href="/water-heater-rumbling-noise" class="sf-link">Water heater rumbling <span class="sf-badge watch">Watch</span></a>
+          <a href="/low-water-pressure" class="sf-link">Low pressure whole house <span class="sf-badge watch">Watch</span></a>
+          <a href="/hot-water-pressure-low" class="sf-link">Hot water pressure low only <span class="sf-badge diy">DIY</span></a>
+          <a href="/shower-low-hot-water-pressure" class="sf-link">Shower pressure weak <span class="sf-badge diy">DIY</span></a>
+          <a href="/plumbing-water-heaters" class="sf-link" style="color:var(--amber);margin-top:4px;">See all water heater guides &#8594;</a>
         </div>
       </div>
 
       <div>
         <div class="sf-col-head"><span class="sf-icon">&#128296;</span> Pipes, Leaks &amp; Fixtures</div>
         <div class="sf-links">
-          <a href="pipes-freeze-burst.html" class="sf-link">Pipe froze or burst <span class="sf-badge urgent">Urgent</span></a>
-          <a href="pipes-leaking.html" class="sf-link">Pipe is actively leaking <span class="sf-badge urgent">Urgent</span></a>
-          <a href="water-bill-spiked.html" class="sf-link">Water bill spiked suddenly <span class="sf-badge watch">Watch</span></a>
-          <a href="hear-water-running-no-fixtures-on.html" class="sf-link">Hear water running, nothing on <span class="sf-badge watch">Watch</span></a>
-          <a href="toilet-keeps-running.html" class="sf-link">Toilet keeps running <span class="sf-badge diy">DIY</span></a>
-          <a href="dripping-faucet.html" class="sf-link">Faucet dripping <span class="sf-badge diy">DIY</span></a>
-          <a href="pipes-banging-knocking.html" class="sf-link">Pipes banging or knocking <span class="sf-badge diy">DIY</span></a>
-          <a href="plumbing-leak-detection.html" class="sf-link" style="color:var(--amber);margin-top:4px;">See all leak guides &#8594;</a>
+          <a href="/pipes-freeze-burst" class="sf-link">Pipe froze or burst <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/pipes-leaking" class="sf-link">Pipe is actively leaking <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/water-bill-spiked" class="sf-link">Water bill spiked suddenly <span class="sf-badge watch">Watch</span></a>
+          <a href="/hear-water-running-no-fixtures-on" class="sf-link">Hear water running, nothing on <span class="sf-badge watch">Watch</span></a>
+          <a href="/toilet-keeps-running" class="sf-link">Toilet keeps running <span class="sf-badge diy">DIY</span></a>
+          <a href="/dripping-faucet" class="sf-link">Faucet dripping <span class="sf-badge diy">DIY</span></a>
+          <a href="/pipes-banging-knocking" class="sf-link">Pipes banging or knocking <span class="sf-badge diy">DIY</span></a>
+          <a href="/plumbing-leak-detection" class="sf-link" style="color:var(--amber);margin-top:4px;">See all leak guides &#8594;</a>
         </div>
       </div>
 
@@ -450,7 +477,7 @@ footer{background:var(--navy);}
 
   <!-- FLAGSHIP -->
   <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--rust);margin-bottom:14px;display:flex;align-items:center;gap:10px;">Start Here &mdash; Flagship Guide <span style="flex:1;height:1px;background:var(--gray-light);display:block;"></span></div>
-  <a href="plumbing-guide.html" class="flagship">
+  <a href="/plumbing-guide" class="flagship">
     <div class="flagship-img">&#128703;</div>
     <div class="flagship-body">
       <span class="f-tag">Flagship Guide</span>
@@ -459,7 +486,7 @@ footer{background:var(--navy);}
       <div class="f-meta">
         <strong>M.A.</strong> &amp; <strong>J.G.</strong>
         <span class="dot"></span><span>30 min read</span>
-        <span class="dot"></span><span>Updated Jan 2025</span>
+        <span class="dot"></span><span>Updated May 2026</span>
       </div>
       <span class="read-btn">Read the Full Guide &#8594;</span>
     </div>
@@ -475,11 +502,11 @@ footer{background:var(--navy);}
   <section class="art-section" aria-label="Drains and Sewer guides">
     <div class="sec-head">
       <h2 class="sec-h2"><span class="sec-dot"></span> Drains &amp; Sewer</h2>
-      <a href="plumbing-drains-sewer.html" class="see-all">All 10 guides &#8594;</a>
+      <a href="/plumbing-drains-sewer" class="see-all">All 10 guides &#8594;</a>
     </div>
     <!-- Top 3 cards: highest urgency / traffic -->
     <div class="grid-3" style="margin-bottom:16px;">
-      <a href="multiple-drains-backing-up.html" class="art-card">
+      <a href="/multiple-drains-backing-up" class="art-card">
         <div class="card-stripe urgent"></div>
         <div class="card-body">
           <span class="card-tag urgent">&#128308; Urgent</span>
@@ -488,7 +515,7 @@ footer{background:var(--navy);}
           <div class="card-meta"><span><strong>M.A.</strong> &amp; J.G. &middot; 9 min</span><span class="card-arrow">&#8594;</span></div>
         </div>
       </a>
-      <a href="water-backs-up-into-bathtub-when-flush-toilet.html" class="art-card">
+      <a href="/water-backs-up-into-bathtub-when-flush-toilet" class="art-card">
         <div class="card-stripe urgent"></div>
         <div class="card-body">
           <span class="card-tag urgent">&#128308; Main Line</span>
@@ -497,7 +524,7 @@ footer{background:var(--navy);}
           <div class="card-meta"><span><strong>M.A.</strong> &amp; J.G. &middot; 8 min</span><span class="card-arrow">&#8594;</span></div>
         </div>
       </a>
-      <a href="why-house-smells-like-sewer.html" class="art-card">
+      <a href="/why-house-smells-like-sewer" class="art-card">
         <div class="card-stripe urgent"></div>
         <div class="card-body">
           <span class="card-tag urgent">&#128308; Health Risk</span>
@@ -509,7 +536,7 @@ footer{background:var(--navy);}
     </div>
     <!-- List rows: remaining articles -->
     <div class="art-list">
-      <a href="drain-gurgling.html" class="art-row">
+      <a href="/drain-gurgling" class="art-row">
         <div class="row-num">04</div>
         <div class="row-body">
           <div class="row-title">Why Your Drains Gurgle (And What It Really Means)</div>
@@ -518,7 +545,7 @@ footer{background:var(--navy);}
         <span class="row-badge watch">Watch</span>
         <div class="row-arrow">&#8594;</div>
       </a>
-      <a href="sink-draining-slowly.html" class="art-row">
+      <a href="/sink-draining-slowly" class="art-row">
         <div class="row-num">05</div>
         <div class="row-body">
           <div class="row-title">Why Your Sink Is Draining Slowly</div>
@@ -527,7 +554,7 @@ footer{background:var(--navy);}
         <span class="row-badge diy">DIY</span>
         <div class="row-arrow">&#8594;</div>
       </a>
-      <a href="house-sometimes-smells-like-sewer.html" class="art-row">
+      <a href="/house-sometimes-smells-like-sewer" class="art-row">
         <div class="row-num">06</div>
         <div class="row-body">
           <div class="row-title">Why Your House Sometimes Smells Like Sewer</div>
@@ -536,7 +563,7 @@ footer{background:var(--navy);}
         <span class="row-badge watch">Watch</span>
         <div class="row-arrow">&#8594;</div>
       </a>
-      <a href="dishwasher-backs-up-into-sink.html" class="art-row">
+      <a href="/dishwasher-backs-up-into-sink" class="art-row">
         <div class="row-num">07</div>
         <div class="row-body">
           <div class="row-title">Why Your Dishwasher Backs Up Into the Sink</div>
@@ -545,7 +572,7 @@ footer{background:var(--navy);}
         <span class="row-badge diy">DIY</span>
         <div class="row-arrow">&#8594;</div>
       </a>
-      <a href="toilet-gurgles-bubbles.html" class="art-row">
+      <a href="/toilet-gurgles-bubbles" class="art-row">
         <div class="row-num">08</div>
         <div class="row-body">
           <div class="row-title">Why Your Toilet Gurgles or Bubbles</div>
@@ -567,10 +594,10 @@ footer{background:var(--navy);}
   <section class="art-section" aria-label="Water heater guides">
     <div class="sec-head">
       <h2 class="sec-h2"><span class="sec-dot wh"></span> Water Heaters</h2>
-      <a href="plumbing-water-heaters.html" class="see-all">All 4 guides &#8594;</a>
+      <a href="/plumbing-water-heaters" class="see-all">All 4 guides &#8594;</a>
     </div>
     <div class="grid-2" style="margin-bottom:16px;">
-      <a href="water-heater-leaking.html" class="art-card">
+      <a href="/water-heater-leaking" class="art-card">
         <div class="card-stripe urgent"></div>
         <div class="card-body">
           <span class="card-tag urgent">&#128308; Act Promptly</span>
@@ -579,7 +606,7 @@ footer{background:var(--navy);}
           <div class="card-meta"><span><strong>M.A.</strong> &amp; J.G. &middot; 8 min</span><span class="card-arrow">&#8594;</span></div>
         </div>
       </a>
-      <a href="why-you-have-no-hot-water.html" class="art-card">
+      <a href="/why-you-have-no-hot-water" class="art-card">
         <div class="card-stripe urgent"></div>
         <div class="card-body">
           <span class="card-tag urgent">&#128308; No Hot Water</span>
@@ -590,7 +617,7 @@ footer{background:var(--navy);}
       </a>
     </div>
     <div class="art-list">
-      <a href="hot-water-smells-rotten-eggs.html" class="art-row">
+      <a href="/hot-water-smells-rotten-eggs" class="art-row">
         <div class="row-num">03</div>
         <div class="row-body">
           <div class="row-title">Why Your Hot Water Smells Like Rotten Eggs</div>
@@ -599,7 +626,7 @@ footer{background:var(--navy);}
         <span class="row-badge diy">DIY</span>
         <div class="row-arrow">&#8594;</div>
       </a>
-      <a href="water-heater-rumbling-noise.html" class="art-row">
+      <a href="/water-heater-rumbling-noise" class="art-row">
         <div class="row-num">04</div>
         <div class="row-body">
           <div class="row-title">Why Your Water Heater Makes Rumbling or Popping Noises</div>
@@ -617,10 +644,10 @@ footer{background:var(--navy);}
     <section aria-label="Pipes and supply guides">
       <div class="sec-head">
         <h2 class="sec-h2"><span class="sec-dot pipes"></span> Pipes &amp; Supply</h2>
-        <a href="plumbing-pipes-supply.html" class="see-all">All 3 &#8594;</a>
+        <a href="/plumbing-pipes-supply" class="see-all">All 3 &#8594;</a>
       </div>
       <div class="art-list">
-        <a href="pipes-freeze-burst.html" class="art-row">
+        <a href="/pipes-freeze-burst" class="art-row">
           <div class="row-num">01</div>
           <div class="row-body">
             <div class="row-title">Why Your Pipes Froze or Burst</div>
@@ -629,7 +656,7 @@ footer{background:var(--navy);}
           <span class="row-badge urgent">Urgent</span>
           <div class="row-arrow">&#8594;</div>
         </a>
-        <a href="pipes-leaking.html" class="art-row">
+        <a href="/pipes-leaking" class="art-row">
           <div class="row-num">02</div>
           <div class="row-body">
             <div class="row-title">Why Your Pipes Are Leaking</div>
@@ -638,7 +665,7 @@ footer{background:var(--navy);}
           <span class="row-badge urgent">Urgent</span>
           <div class="row-arrow">&#8594;</div>
         </a>
-        <a href="pipes-banging-knocking.html" class="art-row">
+        <a href="/pipes-banging-knocking" class="art-row">
           <div class="row-num">03</div>
           <div class="row-body">
             <div class="row-title">Why Your Pipes Are Banging or Knocking</div>
@@ -653,10 +680,10 @@ footer{background:var(--navy);}
     <section aria-label="Fixtures and faucets guides">
       <div class="sec-head">
         <h2 class="sec-h2"><span class="sec-dot"></span> Fixtures &amp; Faucets</h2>
-        <a href="plumbing-fixtures-faucets.html" class="see-all">All 5 &#8594;</a>
+        <a href="/plumbing-fixtures-faucets" class="see-all">All 5 &#8594;</a>
       </div>
       <div class="art-list">
-        <a href="toilet-keeps-running.html" class="art-row">
+        <a href="/toilet-keeps-running" class="art-row">
           <div class="row-num">01</div>
           <div class="row-body">
             <div class="row-title">Why Your Toilet Keeps Running</div>
@@ -665,7 +692,7 @@ footer{background:var(--navy);}
           <span class="row-badge diy">DIY</span>
           <div class="row-arrow">&#8594;</div>
         </a>
-        <a href="dripping-faucet.html" class="art-row">
+        <a href="/dripping-faucet" class="art-row">
           <div class="row-num">02</div>
           <div class="row-body">
             <div class="row-title">Why Your Faucet Is Dripping</div>
@@ -674,7 +701,7 @@ footer{background:var(--navy);}
           <span class="row-badge diy">DIY</span>
           <div class="row-arrow">&#8594;</div>
         </a>
-        <a href="toilet-leaks-around-base.html" class="art-row">
+        <a href="/toilet-leaks-around-base" class="art-row">
           <div class="row-num">03</div>
           <div class="row-body">
             <div class="row-title">Why Your Toilet Leaks Around the Base</div>
@@ -683,7 +710,7 @@ footer{background:var(--navy);}
           <span class="row-badge watch">Watch</span>
           <div class="row-arrow">&#8594;</div>
         </a>
-        <a href="toilet-wont-flush-properly.html" class="art-row">
+        <a href="/toilet-wont-flush-properly" class="art-row">
           <div class="row-num">04</div>
           <div class="row-body">
             <div class="row-title">Why Your Toilet Won't Flush Properly</div>
@@ -709,10 +736,10 @@ footer{background:var(--navy);}
     <section aria-label="Water pressure guides">
       <div class="sec-head">
         <h2 class="sec-h2"><span class="sec-dot"></span> Water Pressure</h2>
-        <a href="plumbing-water-pressure.html" class="see-all">All 3 &#8594;</a>
+        <a href="/plumbing-water-pressure" class="see-all">All 3 &#8594;</a>
       </div>
       <div class="art-list">
-        <a href="low-water-pressure.html" class="art-row">
+        <a href="/low-water-pressure" class="art-row">
           <div class="row-num">01</div>
           <div class="row-body">
             <div class="row-title">Low Water Pressure Throughout the House</div>
@@ -721,7 +748,7 @@ footer{background:var(--navy);}
           <span class="row-badge watch">Watch</span>
           <div class="row-arrow">&#8594;</div>
         </a>
-        <a href="hot-water-pressure-low.html" class="art-row">
+        <a href="/hot-water-pressure-low" class="art-row">
           <div class="row-num">02</div>
           <div class="row-body">
             <div class="row-title">Hot Water Pressure Low (Cold Fine)</div>
@@ -730,7 +757,7 @@ footer{background:var(--navy);}
           <span class="row-badge diy">DIY</span>
           <div class="row-arrow">&#8594;</div>
         </a>
-        <a href="shower-low-hot-water-pressure.html" class="art-row">
+        <a href="/shower-low-hot-water-pressure" class="art-row">
           <div class="row-num">03</div>
           <div class="row-body">
             <div class="row-title">Shower Has Low Hot Water Pressure</div>
@@ -745,10 +772,10 @@ footer{background:var(--navy);}
     <section aria-label="Leak detection guides">
       <div class="sec-head">
         <h2 class="sec-h2"><span class="sec-dot detect"></span> Leak Detection</h2>
-        <a href="plumbing-leak-detection.html" class="see-all">All 2 &#8594;</a>
+        <a href="/plumbing-leak-detection" class="see-all">All 2 &#8594;</a>
       </div>
       <div class="art-list">
-        <a href="water-bill-spiked.html" class="art-row">
+        <a href="/water-bill-spiked" class="art-row">
           <div class="row-num">01</div>
           <div class="row-body">
             <div class="row-title">Why Your Water Bill Spiked Suddenly</div>
@@ -757,7 +784,7 @@ footer{background:var(--navy);}
           <span class="row-badge watch">Watch</span>
           <div class="row-arrow">&#8594;</div>
         </a>
-        <a href="hear-water-running-no-fixtures-on.html" class="art-row">
+        <a href="/hear-water-running-no-fixtures-on" class="art-row">
           <div class="row-num">02</div>
           <div class="row-body">
             <div class="row-title">Hear Water Running With Nothing On</div>
@@ -776,18 +803,18 @@ footer{background:var(--navy);}
     <div class="ms-head">Most-Searched Plumbing Problems</div>
     <div class="ms-sub">The questions homeowners search most — answered by licensed plumbers.</div>
     <div class="ms-grid">
-      <a href="multiple-drains-backing-up.html" class="ms-link">Why are all my drains backing up?</a>
-      <a href="toilet-keeps-running.html" class="ms-link">Why won't my toilet stop running?</a>
-      <a href="why-you-have-no-hot-water.html" class="ms-link">Why do I suddenly have no hot water?</a>
-      <a href="drain-gurgling.html" class="ms-link">Why do my drains gurgle?</a>
-      <a href="why-house-smells-like-sewer.html" class="ms-link">Why does my house smell like sewer?</a>
-      <a href="low-water-pressure.html" class="ms-link">Why is my water pressure so low?</a>
-      <a href="water-heater-leaking.html" class="ms-link">Why is my water heater leaking?</a>
-      <a href="water-bill-spiked.html" class="ms-link">Why did my water bill spike?</a>
-      <a href="pipes-freeze-burst.html" class="ms-link">What to do when a pipe bursts?</a>
-      <a href="dripping-faucet.html" class="ms-link">How do I fix a dripping faucet?</a>
-      <a href="toilet-leaks-around-base.html" class="ms-link">Why is my toilet leaking at the base?</a>
-      <a href="hear-water-running-no-fixtures-on.html" class="ms-link">I can hear water but nothing is on?</a>
+      <a href="/multiple-drains-backing-up" class="ms-link">Why are all my drains backing up?</a>
+      <a href="/toilet-keeps-running" class="ms-link">Why won't my toilet stop running?</a>
+      <a href="/why-you-have-no-hot-water" class="ms-link">Why do I suddenly have no hot water?</a>
+      <a href="/drain-gurgling" class="ms-link">Why do my drains gurgle?</a>
+      <a href="/why-house-smells-like-sewer" class="ms-link">Why does my house smell like sewer?</a>
+      <a href="/low-water-pressure" class="ms-link">Why is my water pressure so low?</a>
+      <a href="/water-heater-leaking" class="ms-link">Why is my water heater leaking?</a>
+      <a href="/water-bill-spiked" class="ms-link">Why did my water bill spike?</a>
+      <a href="/pipes-freeze-burst" class="ms-link">What to do when a pipe bursts?</a>
+      <a href="/dripping-faucet" class="ms-link">How do I fix a dripping faucet?</a>
+      <a href="/toilet-leaks-around-base" class="ms-link">Why is my toilet leaking at the base?</a>
+      <a href="/hear-water-running-no-fixtures-on" class="ms-link">I can hear water but nothing is on?</a>
     </div>
   </div>
 
@@ -801,19 +828,19 @@ footer{background:var(--navy);}
     <h4>&#128680; Is This an Emergency?</h4>
     <p>If water is actively flooding or you can't shut it off, go here first.</p>
     <div class="emergency-links">
-      <a href="pipes-freeze-burst.html" class="em-link">
+      <a href="/pipes-freeze-burst" class="em-link">
         <div class="em-icon">&#10052;</div>
         <div class="em-text">Pipe burst or frozen</div>
       </a>
-      <a href="pipes-leaking.html" class="em-link">
+      <a href="/pipes-leaking" class="em-link">
         <div class="em-icon">&#128167;</div>
         <div class="em-text">Active pipe leak</div>
       </a>
-      <a href="water-heater-leaking.html" class="em-link">
+      <a href="/water-heater-leaking" class="em-link">
         <div class="em-icon">&#128308;</div>
         <div class="em-text">Water heater leaking</div>
       </a>
-      <a href="multiple-drains-backing-up.html" class="em-link">
+      <a href="/multiple-drains-backing-up" class="em-link">
         <div class="em-icon">&#127754;</div>
         <div class="em-text">Sewage backing up</div>
       </a>
@@ -825,22 +852,22 @@ footer{background:var(--navy);}
     <h4>Find Your Guide Fast</h4>
     <p>Choose what's happening and jump straight to the answer.</p>
     <div class="quick-opts">
-      <a href="plumbing-drains-sewer.html" class="q-opt">
+      <a href="/plumbing-drains-sewer" class="q-opt">
         <div class="q-icon">&#127754;</div><div class="q-text">Drain or sewer problem</div>
       </a>
-      <a href="plumbing-water-heaters.html" class="q-opt">
+      <a href="/plumbing-water-heaters" class="q-opt">
         <div class="q-icon">&#128293;</div><div class="q-text">Water heater issue</div>
       </a>
-      <a href="plumbing-water-pressure.html" class="q-opt">
+      <a href="/plumbing-water-pressure" class="q-opt">
         <div class="q-icon">&#128200;</div><div class="q-text">Low water pressure</div>
       </a>
-      <a href="plumbing-fixtures-faucets.html" class="q-opt">
+      <a href="/plumbing-fixtures-faucets" class="q-opt">
         <div class="q-icon">&#128692;</div><div class="q-text">Toilet or faucet problem</div>
       </a>
-      <a href="plumbing-leak-detection.html" class="q-opt">
+      <a href="/plumbing-leak-detection" class="q-opt">
         <div class="q-icon">&#128204;</div><div class="q-text">Hidden leak or high bill</div>
       </a>
-      <a href="plumbing-pipes-supply.html" class="q-opt">
+      <a href="/plumbing-pipes-supply" class="q-opt">
         <div class="q-icon">&#128296;</div><div class="q-text">Pipes leaking or noisy</div>
       </a>
     </div>
@@ -856,11 +883,11 @@ footer{background:var(--navy);}
   <div class="sidebar-card">
     <h4>All Categories</h4>
     <ul class="cat-nav-list">
-      <li><a href="category-plumbing.html" class="active"><span class="cnl"><span class="cni">&#128703;</span> Plumbing</span><span class="cat-ct">27</span></a></li>
-      <li><a href="category-electrical.html"><span class="cnl"><span class="cni">&#9889;</span> Electrical &amp; Safety</span><span class="cat-ct">6</span></a></li>
-      <li><a href="category-hvac.html"><span class="cnl"><span class="cni">&#127777;</span> Heating &amp; Cooling</span><span class="cat-ct">5</span></a></li>
-      <li><a href="category-foundation.html"><span class="cnl"><span class="cni">&#127959;</span> Structure &amp; Foundation</span><span class="cat-ct">3</span></a></li>
-      <li><a href="category-maintenance-repair.html"><span class="cnl"><span class="cni">&#128296;</span> Maintenance &amp; Repair</span><span class="cat-ct">5</span></a></li>
+      <li><a href="/category-plumbing" class="active"><span class="cnl"><span class="cni">&#128703;</span> Plumbing</span><span class="cat-ct">27</span></a></li>
+      <li><a href="/category-electrical"><span class="cnl"><span class="cni">&#9889;</span> Electrical &amp; Safety</span><span class="cat-ct">6</span></a></li>
+      <li><a href="/category-hvac"><span class="cnl"><span class="cni">&#127777;</span> Heating &amp; Cooling</span><span class="cat-ct">5</span></a></li>
+      <li><a href="/category-foundation"><span class="cnl"><span class="cni">&#127959;</span> Structure &amp; Foundation</span><span class="cat-ct">3</span></a></li>
+      <li><a href="/category-maintenance-repair"><span class="cnl"><span class="cni">&#128296;</span> Maintenance &amp; Repair</span><span class="cat-ct">5</span></a></li>
     </ul>
   </div>
 
@@ -882,25 +909,26 @@ footer{background:var(--navy);}
 
 <div class="footer-nav">
   <div class="inner">
-    <a href="category-plumbing.html">Plumbing</a>
-    <a href="category-electrical.html">Electrical &amp; Safety</a>
-    <a href="category-hvac.html">Heating &amp; Cooling</a>
-    <a href="category-foundation.html">Structure &amp; Foundation</a>
-    <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-    <a href="about-experts.html">About Our Experts</a>
-    <a href="how-we-verify.html">How We Verify</a>
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical &amp; Safety</a>
+    <a href="/category-hvac">Heating &amp; Cooling</a>
+    <a href="/category-foundation">Structure &amp; Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/how-we-verify">How We Verify</a>
   </div>
 </div>
 <footer>
   <div class="footer-bottom">
     <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
     <div>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
-      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
+      <a href="/affiliate-disclosure">Affiliate Disclosure</a>
     </div>
   </div>
 </footer>
 
+<script>function hrgToggleMenu(){var n=document.getElementById("hrgMobileNav"),b=document.getElementById("hrgMenuBtn");var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");}</script>
 </body>
 </html>

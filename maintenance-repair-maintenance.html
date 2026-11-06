@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Home Maintenance Guides | Maintenance & Repair | HomeownersRepairGuide.com</title>
 <meta name="description" content="Seasonal home maintenance checklists and the framework professionals use to prevent small problems from becoming expensive ones. Spring and fall guides from licensed tradespeople.">
-<link rel="canonical" href="https://homeownersrepairguide.com/maintenance-repair-maintenance.html">
+<link rel="canonical" href="https://homeownersrepairguide.com/maintenance-repair-maintenance">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://homeownersrepairguide.com/maintenance-repair-maintenance.html">
+<meta property="og:url" content="https://homeownersrepairguide.com/maintenance-repair-maintenance">
 <meta property="og:title" content="Home Maintenance Guides">
 <meta property="og:description" content="Seasonal home maintenance checklists and the framework professionals use to prevent small problems from becoming expensive ones. Spring and fall guides from licensed tradespeople.">
 <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
@@ -25,27 +27,27 @@
   "@graph": [
     {
       "@type": "CollectionPage",
-      "@id": "https://homeownersrepairguide.com/maintenance-repair-maintenance.html#webpage",
-      "url": "https://homeownersrepairguide.com/maintenance-repair-maintenance.html",
+      "@id": "https://homeownersrepairguide.com/maintenance-repair-maintenance#webpage",
+      "url": "https://homeownersrepairguide.com/maintenance-repair-maintenance",
       "name": "Home Maintenance Guides | Maintenance & Repair | HomeownersRepairGuide.com",
       "description": "Seasonal home maintenance checklists and the framework professionals use to prevent small problems from becoming expensive ones. Spring and fall guides from licensed tradespeople.",
-      "breadcrumb": {"@id": "https://homeownersrepairguide.com/maintenance-repair-maintenance.html#breadcrumb"},
+      "breadcrumb": {"@id": "https://homeownersrepairguide.com/maintenance-repair-maintenance#breadcrumb"},
       "isPartOf": {"@id": "https://homeownersrepairguide.com/#website"},
       "mainEntity": {
         "@type": "ItemList",
         "itemListElement": [
-          {"@type":"ListItem","position":1,"url":"https://homeownersrepairguide.com/the-fall-maintenance-checklist.html","name":"The Fall Maintenance Checklist"}
-          {"@type":"ListItem","position":2,"url":"https://homeownersrepairguide.com/the-spring-home-maintenance-checklist.html","name":"The Spring Home Maintenance Checklist"}
-          {"@type":"ListItem","position":3,"url":"https://homeownersrepairguide.com/small-problems-escalate-after-being-ignored.html","name":"Why Small Problems Escalate After Being Ignored"}
+          {"@type":"ListItem","position":1,"url":"https://homeownersrepairguide.com/the-fall-maintenance-checklist","name":"The Fall Maintenance Checklist"},
+          {"@type":"ListItem","position":2,"url":"https://homeownersrepairguide.com/the-spring-home-maintenance-checklist","name":"The Spring Home Maintenance Checklist"},
+          {"@type":"ListItem","position":3,"url":"https://homeownersrepairguide.com/small-problems-escalate-after-being-ignored","name":"Why Small Problems Escalate After Being Ignored"}
         ]
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://homeownersrepairguide.com/maintenance-repair-maintenance.html#breadcrumb",
+      "@id": "https://homeownersrepairguide.com/maintenance-repair-maintenance#breadcrumb",
       "itemListElement": [
         {"@type":"ListItem","position":1,"name":"Home","item":"https://homeownersrepairguide.com/"},
-        {"@type":"ListItem","position":2,"name":"Maintenance & General Repair","item":"https://homeownersrepairguide.com/category-maintenance-repair.html"},
+        {"@type":"ListItem","position":2,"name":"Maintenance & General Repair","item":"https://homeownersrepairguide.com/category-maintenance-repair"},
         {"@type":"ListItem","position":3,"name":"Home Maintenance"}
       ]
     }
@@ -126,40 +128,66 @@ footer{background:var(--navy);}
 @media(max-width:600px){nav{display:none;}.topbar .topbar-links{display:none;}.article-grid,.article-grid-2{grid-template-columns:1fr;}.flagship-callout{flex-direction:column;}}
 
 </style>
+<style>
+.hrg-menu-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:10px;margin:-10px -6px -10px auto;cursor:pointer;}
+.hrg-menu-btn span{display:block;width:24px;height:2px;background:var(--navy,#0f2236);transition:transform .2s,opacity .2s;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.hrg-mobile-nav{display:none;flex-direction:column;background:var(--white,#fff);border-top:1px solid var(--gray-light,#e8e4de);padding:8px 0;box-shadow:var(--shadow-soft,0 4px 24px rgba(15,34,54,.08));}
+.hrg-mobile-nav.open{display:flex;}
+.hrg-mobile-nav a{padding:12px 24px;font-size:15px;font-weight:600;color:var(--text-dark,#1a1612);text-decoration:none;border-bottom:1px solid var(--gray-light,#e8e4de);}
+.hrg-mobile-nav a:last-child{border-bottom:none;color:var(--rust,#c8441a);}
+@media(max-width:600px){.hrg-menu-btn{display:flex;}}
+@media(min-width:601px){.hrg-mobile-nav{display:none!important;}}
+@media(max-width:640px){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}}
+</style>
 </head>
 <body>
-<div class="topbar"><div class="inner"><span>Guidance from licensed trade professionals with 130+ combined years of experience</span><div class="topbar-links"><a href="about-experts.html">About Our Experts</a><a href="how-we-verify.html">How We Verify</a><a href="contact.html">Contact</a></div></div></div>
-<header><div class="header-inner"><a href="index.html" class="logo"><span class="logo-main">Homeowners<span>Repair</span>Guide</span><span class="logo-sub">Real advice from real tradespeople</span></a><nav><a href="category-plumbing.html">Plumbing</a><a href="category-electrical.html">Electrical</a><a href="category-hvac.html">HVAC</a><a href="category-foundation.html">Foundation</a><a href="category-maintenance-repair.html" class="active">Maintenance &amp; Repair</a><a href="newsletter.html" class="nav-cta">Free Newsletter</a></nav></div></header>
-<div class="breadcrumb"><div class="inner"><a href="index.html">Home</a><span class="sep">&#8250;</span><a href="category-maintenance-repair.html">Maintenance &amp; General Repair</a><span class="sep">&#8250;</span><span class="current">Home Maintenance</span></div></div>
+<div class="topbar"><div class="inner"><span>Guidance from licensed trade professionals with 130+ combined years of experience</span><div class="topbar-links"><a href="/about-experts">About Our Experts</a><a href="/how-we-verify">How We Verify</a><a href="/contact">Contact</a></div></div></div>
+<header><div class="header-inner"><a href="/" class="logo"><span class="logo-main">Homeowners<span>Repair</span>Guide</span><span class="logo-sub">Real advice from real tradespeople</span></a><nav><a href="/category-plumbing">Plumbing</a><a href="/category-electrical">Electrical</a><a href="/category-hvac">HVAC</a><a href="/category-foundation">Foundation</a><a href="/category-maintenance-repair" class="active">Maintenance &amp; Repair</a><a href="/newsletter" class="nav-cta">Free Newsletter</a></nav>
+    <button class="hrg-menu-btn" id="hrgMenuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="hrgMobileNav" onclick="hrgToggleMenu()"><span></span><span></span><span></span></button></div>  <div class="hrg-mobile-nav" id="hrgMobileNav">
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical</a>
+    <a href="/category-hvac">HVAC</a>
+    <a href="/category-foundation">Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/contact">Contact</a>
+    <a href="/newsletter">Free Newsletter</a>
+  </div>
+</header>
+<div class="breadcrumb"><div class="inner"><a href="/">Home</a><span class="sep">&#8250;</span><a href="/category-maintenance-repair">Maintenance &amp; General Repair</a><span class="sep">&#8250;</span><span class="current">Home Maintenance</span></div></div>
 <div class="subcat-hero"><div class="inner">
-  <div class="subcat-eyebrow"><a href="category-maintenance-repair.html">Maintenance &amp; General Repair</a> &nbsp;&#8250;&nbsp; Subcategory</div>
+  <div class="subcat-eyebrow"><a href="/category-maintenance-repair">Maintenance &amp; General Repair</a> &nbsp;&#8250;&nbsp; Subcategory</div>
   <h1 class="subcat-title">Home Maintenance</h1>
   <p class="subcat-desc">Most expensive home repairs were preventable. The spring and fall maintenance frameworks here come from licensed tradespeople who have seen what gets missed — and what it costs when it is.</p>
   <div class="subcat-meta"><span class="subcat-meta-item">&#128196; 3 guides</span><span class="subcat-meta-item">&#128100; M.A. &amp; T.A.</span></div>
 </div></div>
 <div class="subcat-tabs"><div class="inner">
-  <a href="maintenance-repair-exterior.html" class="subcat-tab ">Exterior Repairs</a>
-  <a href="maintenance-repair-interior.html" class="subcat-tab ">Interior Repairs</a>
-  <a href="maintenance-repair-diagnostics.html" class="subcat-tab ">Repair Diagnostics</a>
-  <a href="maintenance-repair-roof.html" class="subcat-tab ">Roof Leaks</a>
-  <a href="maintenance-repair-maintenance.html" class="subcat-tab active">Home Maintenance</a>
+  <a href="/maintenance-repair-exterior" class="subcat-tab ">Exterior Repairs</a>
+  <a href="/maintenance-repair-interior" class="subcat-tab ">Interior Repairs</a>
+  <a href="/maintenance-repair-diagnostics" class="subcat-tab ">Repair Diagnostics</a>
+  <a href="/maintenance-repair-roof" class="subcat-tab ">Roof Leaks</a>
+  <a href="/maintenance-repair-maintenance" class="subcat-tab active">Home Maintenance</a>
 </div></div>
 <div class="page-inner">
-  <div class="flagship-callout"><div class="flagship-text"><h3>The Complete Annual Home Maintenance Guide</h3><p>The annual maintenance framework that licensed contractors and facility managers actually use — prioritized by failure risk, not just season.</p></div><a href="maintenance-guide.html" class="flagship-btn">Read the Master Guide &#8594;</a></div>
+  <div class="flagship-callout"><div class="flagship-text"><h3>The Complete Annual Home Maintenance Guide</h3><p>The annual maintenance framework that licensed contractors and facility managers actually use — prioritized by failure risk, not just season.</p></div><a href="/maintenance-guide" class="flagship-btn">Read the Master Guide &#8594;</a></div>
   <div class="section-intro"><h2>Home Maintenance Guides</h2><p>Three focused guides covering the seasonal tasks that prevent the most common and most expensive repair failures.</p></div>
   <div class="article-grid">
-    <a href="the-spring-home-maintenance-checklist.html" class="article-card"><div class="card-accent diy"></div><div class="card-body"><div class="card-tag diy">Spring</div><div class="card-title">The Spring Home Maintenance Checklist</div><div class="card-desc">What to inspect, test, and address every spring — prioritized by what winter damage reveals and what summer stress exposes. The checklist licensed contractors follow on their own homes.</div><div class="card-footer"><span class="card-read">10 min read</span><span class="card-arrow">&#8594;</span></div></div></a>
-    <a href="the-fall-maintenance-checklist.html" class="article-card"><div class="card-accent diy"></div><div class="card-body"><div class="card-tag diy">Fall</div><div class="card-title">The Fall Home Maintenance Checklist</div><div class="card-desc">What to button up, inspect, and prepare before winter — the tasks that prevent the most common cold-weather failures: frozen pipes, ice dams, heating system failures, and water intrusion.</div><div class="card-footer"><span class="card-read">10 min read</span><span class="card-arrow">&#8594;</span></div></div></a>
-    <a href="small-problems-escalate-after-being-ignored.html" class="article-card"><div class="card-accent warn"></div><div class="card-body"><div class="card-tag warn">&#9888; Key Concept</div><div class="card-title">Why Small Problems Escalate After Being Ignored</div><div class="card-desc">The failure chain that turns a $200 repair into a $6,000 one — and the specific thresholds where small problems cross into expensive ones if left alone another season.</div><div class="card-footer"><span class="card-read">8 min read</span><span class="card-arrow">&#8594;</span></div></div></a>
+    <a href="/the-spring-home-maintenance-checklist" class="article-card"><div class="card-accent diy"></div><div class="card-body"><div class="card-tag diy">Spring</div><div class="card-title">The Spring Home Maintenance Checklist</div><div class="card-desc">What to inspect, test, and address every spring — prioritized by what winter damage reveals and what summer stress exposes. The checklist licensed contractors follow on their own homes.</div><div class="card-footer"><span class="card-read">10 min read</span><span class="card-arrow">&#8594;</span></div></div></a>
+    <a href="/the-fall-maintenance-checklist" class="article-card"><div class="card-accent diy"></div><div class="card-body"><div class="card-tag diy">Fall</div><div class="card-title">The Fall Home Maintenance Checklist</div><div class="card-desc">What to button up, inspect, and prepare before winter — the tasks that prevent the most common cold-weather failures: frozen pipes, ice dams, heating system failures, and water intrusion.</div><div class="card-footer"><span class="card-read">10 min read</span><span class="card-arrow">&#8594;</span></div></div></a>
+    <a href="/small-problems-escalate-after-being-ignored" class="article-card"><div class="card-accent warn"></div><div class="card-body"><div class="card-tag warn">&#9888; Key Concept</div><div class="card-title">Why Small Problems Escalate After Being Ignored</div><div class="card-desc">The failure chain that turns a $200 repair into a $6,000 one — and the specific thresholds where small problems cross into expensive ones if left alone another season.</div><div class="card-footer"><span class="card-read">8 min read</span><span class="card-arrow">&#8594;</span></div></div></a>
   </div>
   <div style="background:var(--maint-light);border:1px solid var(--gray-light);border-radius:var(--radius-lg);padding:24px 28px;margin:40px 0;">
     <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px;">More maintenance guides are coming</div>
     <p style="font-size:14px;color:var(--text-muted);line-height:1.6;">Summer and winter checklists, system-specific maintenance schedules (HVAC, plumbing, electrical), and a whole-home inspection framework are in development. Check back or subscribe for updates.</p>
   </div>
   <div class="expert-strip" style="margin-top:0;">
-    <div class="expert-av">M.A.</div><div class="expert-info"><strong>M.A. &amp; T.A. — Joint Authors</strong><span>Maintenance guides on this site are co-authored by M.A. (licensed contractor, franchise owner) and T.A. (CHFM, certified facility manager), combining trade and facilities management perspectives.</span></div>
+    <div class="expert-av">M.A.</div><div class="expert-info"><strong>M.A. &amp; T.A. — Joint Authors</strong><span>Maintenance guides on this site are co-authored by M.A. (licensed contractor, franchise owner) and T.A. (CHFM, certified healthcare facility manager), combining trade and facilities management perspectives.</span></div>
   </div>
 </div>
-<div class="footer-nav"><div class="inner"><a href="category-plumbing.html">Plumbing</a><a href="category-electrical.html">Electrical &amp; Safety</a><a href="category-hvac.html">Heating &amp; Cooling</a><a href="category-foundation.html">Structure &amp; Foundation</a><a href="category-maintenance-repair.html">Maintenance &amp; Repair</a><a href="about-experts.html">About Our Experts</a><a href="how-we-verify.html">How We Verify</a></div></div>
-<footer><div class="footer-bottom"><span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span><div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="affiliate-disclosure.html">Affiliate Disclosure</a></div></div></footer>
+<div class="footer-nav"><div class="inner"><a href="/category-plumbing">Plumbing</a><a href="/category-electrical">Electrical &amp; Safety</a><a href="/category-hvac">Heating &amp; Cooling</a><a href="/category-foundation">Structure &amp; Foundation</a><a href="/category-maintenance-repair">Maintenance &amp; Repair</a><a href="/about-experts">About Our Experts</a><a href="/how-we-verify">How We Verify</a></div></div>
+<footer><div class="footer-bottom"><span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span><div><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Use</a><a href="/affiliate-disclosure">Affiliate Disclosure</a></div></div></footer>
+<script>function hrgToggleMenu(){var n=document.getElementById("hrgMobileNav"),b=document.getElementById("hrgMenuBtn");var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");}</script>
 </body></html>

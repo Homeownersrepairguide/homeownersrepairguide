@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Privacy Policy | HomeownersRepairGuide.com</title>
 <meta name="description" content="Privacy Policy for HomeownersRepairGuide.com — how we collect, use, and protect your information.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,9 +68,9 @@
   @media(max-width:640px){nav{display:none;}.topbar .topbar-links{display:none;}}
 </style>
   <!-- SEO: Open Graph & Canonical -->
-  <link rel="canonical" href="https://homeownersrepairguide.com/privacy.html">
+  <link rel="canonical" href="https://homeownersrepairguide.com/privacy">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://homeownersrepairguide.com/privacy.html">
+  <meta property="og:url" content="https://homeownersrepairguide.com/privacy">
   <meta property="og:title" content="Privacy Policy | HomeownersRepairGuide.com">
   <meta property="og:description" content="Privacy Policy for HomeownersRepairGuide.com — how we collect, use, and protect your information.">
   <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
@@ -93,8 +95,8 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://homeownersrepairguide.com/privacy.html#webpage",
-      "url": "https://homeownersrepairguide.com/privacy.html",
+      "@id": "https://homeownersrepairguide.com/privacy#webpage",
+      "url": "https://homeownersrepairguide.com/privacy",
       "name": "Privacy Policy | HomeownersRepairGuide.com",
       "description": "Privacy Policy for HomeownersRepairGuide.com — how we collect, use, and protect your information.",
       "isPartOf": {
@@ -104,6 +106,20 @@
   ]
 }
 </script>
+<style>
+.hrg-menu-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:10px;margin:-10px -6px -10px auto;cursor:pointer;}
+.hrg-menu-btn span{display:block;width:24px;height:2px;background:var(--navy,#0f2236);transition:transform .2s,opacity .2s;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.hrg-mobile-nav{display:none;flex-direction:column;background:var(--white,#fff);border-top:1px solid var(--gray-light,#e8e4de);padding:8px 0;box-shadow:var(--shadow-soft,0 4px 24px rgba(15,34,54,.08));}
+.hrg-mobile-nav.open{display:flex;}
+.hrg-mobile-nav a{padding:12px 24px;font-size:15px;font-weight:600;color:var(--text-dark,#1a1612);text-decoration:none;border-bottom:1px solid var(--gray-light,#e8e4de);}
+.hrg-mobile-nav a:last-child{border-bottom:none;color:var(--rust,#c8441a);}
+@media(max-width:640px){.hrg-menu-btn{display:flex;}}
+@media(min-width:641px){.hrg-mobile-nav{display:none!important;}}
+@media(max-width:640px){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}}
+</style>
 </head>
 <body>
 
@@ -111,33 +127,44 @@
   <div class="inner">
     <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
     <div class="topbar-links">
-      <a href="about-experts.html">About Our Experts</a>
-      <a href="how-we-verify.html">How We Verify</a>
-      <a href="contact.html">Contact</a>
+      <a href="/about-experts">About Our Experts</a>
+      <a href="/how-we-verify">How We Verify</a>
+      <a href="/contact">Contact</a>
     </div>
   </div>
 </div>
 
 <header>
   <div class="header-inner">
-    <a href="index.html" class="logo">
+    <a href="/" class="logo">
       <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
       <span class="logo-sub">Real advice from real tradespeople</span>
     </a>
     <nav>
-      <a href="category-plumbing.html">Plumbing</a>
-      <a href="category-electrical.html">Electrical</a>
-      <a href="category-hvac.html">HVAC</a>
-      <a href="category-foundation.html">Foundation</a>
-      <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+      <a href="/category-plumbing">Plumbing</a>
+      <a href="/category-electrical">Electrical</a>
+      <a href="/category-hvac">HVAC</a>
+      <a href="/category-foundation">Foundation</a>
+      <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+      <a href="/newsletter" class="nav-cta">Free Newsletter</a>
     </nav>
+    <button class="hrg-menu-btn" id="hrgMenuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="hrgMobileNav" onclick="hrgToggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+  <div class="hrg-mobile-nav" id="hrgMobileNav">
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical</a>
+    <a href="/category-hvac">HVAC</a>
+    <a href="/category-foundation">Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/contact">Contact</a>
+    <a href="/newsletter">Free Newsletter</a>
   </div>
 </header>
 
 <div class="breadcrumb">
   <div class="inner">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <span class="sep">&#8250;</span>
     <span class="current">Privacy Policy</span>
   </div>
@@ -147,7 +174,7 @@
   <div class="page-hero-inner">
     <div class="page-eyebrow">Legal</div>
     <h1>Privacy Policy</h1>
-    <div class="effective-date">Effective date: January 1, 2025 &nbsp;&#183;&nbsp; Last updated: January 1, 2025</div>
+    <div class="effective-date">Effective date: January 1, 2025 &nbsp;&#183;&nbsp; Last updated: May 10, 2026</div>
   </div>
 </div>
 
@@ -233,8 +260,8 @@
     <p>If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:</p>
     <div class="contact-info">
       <p><strong>HomeownersRepairGuide.com</strong></p>
-      <p>Email: <a href="/cdn-cgi/l/email-protection#78080a110e191b01381017151d170f161d0a0b0a1d0819110a1f0d111c1d561b1715"><span class="__cf_email__" data-cfemail="2c5c5e455a4d4f556c44434149435b42495e5f5e495c4d455e4b59454849024f4341">[email&#160;protected]</span></a></p>
-      <p>Contact form: <a href="contact.html">homeownersrepairguide.com/contact</a></p>
+      <p>Email: <a href="mailto:privacy@homeownersrepairguide.com">privacy@homeownersrepairguide.com</a></p>
+      <p>Contact form: <a href="/contact">homeownersrepairguide.com/contact</a></p>
     </div>
 
   </div>
@@ -242,16 +269,16 @@
 
 <div class="footer-nav">
   <div class="inner">
-    <a href="category-plumbing.html">Plumbing</a>
-    <a href="category-electrical.html">Electrical &amp; Safety</a>
-    <a href="category-hvac.html">Heating &amp; Cooling</a>
-    <a href="category-foundation.html">Structure &amp; Foundation</a>
-    <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-    <a href="about-experts.html">About Our Experts</a>
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical &amp; Safety</a>
+    <a href="/category-hvac">Heating &amp; Cooling</a>
+    <a href="/category-foundation">Structure &amp; Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
   </div>
 </div>
 <footer>
   <div class="footer-bottom">
     <span>&#169; 2025 HomeownersRepairGuide.com &#183; All rights reserved</span>
     <div>
-      <a href="privacy.html">Privacy Policy
+      <a href="/privacy">Privacy Policy

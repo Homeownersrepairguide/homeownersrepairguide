@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Meet Our Experts | HomeownersRepairGuide.com</title>
 <meta name="description" content="The licensed trade professionals behind HomeownersRepairGuide.com — over 130 years of combined field experience in plumbing, electrical, foundation, and facility management.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -281,9 +283,9 @@
   }
 </style>
   <!-- SEO: Open Graph & Canonical -->
-  <link rel="canonical" href="https://homeownersrepairguide.com/about-experts.html">
+  <link rel="canonical" href="https://homeownersrepairguide.com/about-experts">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://homeownersrepairguide.com/about-experts.html">
+  <meta property="og:url" content="https://homeownersrepairguide.com/about-experts">
   <meta property="og:title" content="Meet Our Experts | HomeownersRepairGuide.com">
   <meta property="og:description" content="The licensed trade professionals behind HomeownersRepairGuide.com — over 130 years of combined field experience in plumbing, electrical, foundation, and faci...">
   <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
@@ -308,8 +310,8 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://homeownersrepairguide.com/about-experts.html#webpage",
-      "url": "https://homeownersrepairguide.com/about-experts.html",
+      "@id": "https://homeownersrepairguide.com/about-experts#webpage",
+      "url": "https://homeownersrepairguide.com/about-experts",
       "name": "Meet Our Experts | HomeownersRepairGuide.com",
       "description": "The licensed trade professionals behind HomeownersRepairGuide.com — over 130 years of combined field experience in plumbing, electrical, foundation, and facility management.",
       "isPartOf": {
@@ -319,6 +321,20 @@
   ]
 }
 </script>
+<style>
+.hrg-menu-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:10px;margin:-10px -6px -10px auto;cursor:pointer;}
+.hrg-menu-btn span{display:block;width:24px;height:2px;background:var(--navy,#0f2236);transition:transform .2s,opacity .2s;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.hrg-mobile-nav{display:none;flex-direction:column;background:var(--white,#fff);border-top:1px solid var(--gray-light,#e8e4de);padding:8px 0;box-shadow:var(--shadow-soft,0 4px 24px rgba(15,34,54,.08));}
+.hrg-mobile-nav.open{display:flex;}
+.hrg-mobile-nav a{padding:12px 24px;font-size:15px;font-weight:600;color:var(--text-dark,#1a1612);text-decoration:none;border-bottom:1px solid var(--gray-light,#e8e4de);}
+.hrg-mobile-nav a:last-child{border-bottom:none;color:var(--rust,#c8441a);}
+@media(max-width:768px){.hrg-menu-btn{display:flex;}}
+@media(min-width:769px){.hrg-mobile-nav{display:none!important;}}
+@media(max-width:640px){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}}
+</style>
 </head>
 <body>
 
@@ -327,9 +343,9 @@
   <div class="inner">
     <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
     <div class="topbar-links">
-      <a href="about-experts.html" style="color:var(--amber);">About Our Experts</a>
-      <a href="how-we-verify.html">How We Verify</a>
-      <a href="contact.html">Contact</a>
+      <a href="/about-experts" style="color:var(--amber);">About Our Experts</a>
+      <a href="/how-we-verify">How We Verify</a>
+      <a href="/contact">Contact</a>
     </div>
   </div>
 </div>
@@ -337,25 +353,36 @@
 <!-- HEADER -->
 <header>
   <div class="header-inner">
-    <a href="index.html" class="logo">
+    <a href="/" class="logo">
       <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
       <span class="logo-sub">Real advice from real tradespeople</span>
     </a>
     <nav>
-      <a href="category-plumbing.html">Plumbing</a>
-      <a href="category-electrical.html">Electrical</a>
-      <a href="category-hvac.html">HVAC</a>
-      <a href="category-foundation.html">Foundation</a>
-      <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+      <a href="/category-plumbing">Plumbing</a>
+      <a href="/category-electrical">Electrical</a>
+      <a href="/category-hvac">HVAC</a>
+      <a href="/category-foundation">Foundation</a>
+      <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+      <a href="/newsletter" class="nav-cta">Free Newsletter</a>
     </nav>
+    <button class="hrg-menu-btn" id="hrgMenuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="hrgMobileNav" onclick="hrgToggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+  <div class="hrg-mobile-nav" id="hrgMobileNav">
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical</a>
+    <a href="/category-hvac">HVAC</a>
+    <a href="/category-foundation">Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/contact">Contact</a>
+    <a href="/newsletter">Free Newsletter</a>
   </div>
 </header>
 
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
   <div class="inner">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <span class="sep">›</span>
     <span class="current">Meet Our Experts</span>
   </div>
@@ -461,7 +488,7 @@
             <div class="expertise-item">Emergency plumbing response</div>
           </div>
         </div>
-        <a href="#" class="expert-articles-link">Read M.A.'s Articles →</a>
+        <a href="/category-maintenance-repair" class="expert-articles-link">Read M.A.'s Articles →</a>
       </div>
     </div>
 
@@ -499,7 +526,7 @@
             <div class="expertise-item">Facility maintenance & operations</div>
           </div>
         </div>
-        <a href="#" class="expert-articles-link">Read T.A.'s Articles →</a>
+        <a href="/category-hvac" class="expert-articles-link">Read T.A.'s Articles →</a>
       </div>
     </div>
 
@@ -536,7 +563,7 @@
             <div class="expertise-item">Repair design validation</div>
           </div>
         </div>
-        <a href="#" class="expert-articles-link">Read C.M.'s Articles →</a>
+        <a href="/category-foundation" class="expert-articles-link">Read C.M.'s Articles →</a>
       </div>
     </div>
 
@@ -573,7 +600,7 @@
             <div class="expertise-item">Code compliance & installation standards</div>
           </div>
         </div>
-        <a href="#" class="expert-articles-link">Read J.G.'s Articles →</a>
+        <a href="/category-plumbing" class="expert-articles-link">Read J.G.'s Articles →</a>
       </div>
     </div>
 
@@ -581,14 +608,14 @@
 
   <div class="process-block">
     <h2>How our articles are developed</h2>
-    <p style="font-size:17px; line-height:1.75; color:var(--text-body);">Every article is developed with direct expert input, reviewed for technical accuracy before publication, and updated on a regular schedule as codes and standards change. For a full explanation of our editorial and verification process, see our <a href="how-we-verify.html" style="color:var(--rust);">How We Verify Information</a> page.</p>
+    <p style="font-size:17px; line-height:1.75; color:var(--text-body);">Every article is developed with direct expert input, reviewed for technical accuracy before publication, and updated on a regular schedule as codes and standards change. For a full explanation of our editorial and verification process, see our <a href="/how-we-verify" style="color:var(--rust);">How We Verify Information</a> page.</p>
   </div>
 
   <!-- CONTACT CTA -->
   <div class="contact-cta">
     <h3>Have a question our articles don't answer?</h3>
     <p>Use our contact form and we'll do our best to point you toward the right resource — or tell you honestly when your situation requires a local professional assessment.</p>
-    <a href="contact.html" class="cta-btn">Contact Us →</a>
+    <a href="/contact" class="cta-btn">Contact Us →</a>
   </div>
 
 </div><!-- /page-wrap -->
@@ -596,25 +623,26 @@
 <!-- FOOTER -->
 <div class="footer-nav">
   <div class="inner">
-    <a href="category-plumbing.html">Plumbing</a>
-    <a href="#">Electrical & Safety</a>
-    <a href="#">Heating & Cooling</a>
-    <a href="#">Structure & Foundation</a>
-    <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-    <a href="#">All Guides</a>
-    <a href="about-experts.html">About Our Experts</a>
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical & Safety</a>
+    <a href="/category-hvac">Heating & Cooling</a>
+    <a href="/category-foundation">Structure & Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/">All Guides</a>
+    <a href="/about-experts">About Our Experts</a>
   </div>
 </div>
 <footer>
   <div class="footer-bottom">
     <span>© 2025 HomeownersRepairGuide.com · All rights reserved</span>
     <div>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
-      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
+      <a href="/affiliate-disclosure">Affiliate Disclosure</a>
     </div>
   </div>
 </footer>
 
+<script>function hrgToggleMenu(){var n=document.getElementById("hrgMobileNav"),b=document.getElementById("hrgMenuBtn");var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");}</script>
 </body>
 </html>

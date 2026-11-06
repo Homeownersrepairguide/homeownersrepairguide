@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Why HVAC Noises Change With Temperature or Time of Day | HomeownersRepairGuide.com</title>
 <meta name="description" content="HVAC noises that appear only at certain temperatures or times aren't random — they're your system hitting tolerance limits. Here's how to read what the timing is telling you.">
-<link rel="canonical" href="https://homeownersrepairguide.com/hvac-noises-change-temperature-time.html">
+<link rel="canonical" href="https://homeownersrepairguide.com/hvac-noises-change-temperature-time">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://homeownersrepairguide.com/hvac-noises-change-temperature-time.html">
+<meta property="og:url" content="https://homeownersrepairguide.com/hvac-noises-change-temperature-time">
 <meta property="og:title" content="Why HVAC Noises Change With Temperature or Time of Day | HomeownersRepairGuide.com">
 <meta property="og:description" content="HVAC noises that appear at specific times or temperatures aren't random — they reveal tolerance limits being crossed. Here's how to read the timing.">
 <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
@@ -256,15 +258,15 @@ footer{background:var(--navy);}
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://homeownersrepairguide.com/hvac-noises-change-temperature-time.html#article",
-      "url": "https://homeownersrepairguide.com/hvac-noises-change-temperature-time.html",
+      "@id": "https://homeownersrepairguide.com/hvac-noises-change-temperature-time#article",
+      "url": "https://homeownersrepairguide.com/hvac-noises-change-temperature-time",
       "headline": "Why HVAC Noises Change With Temperature or Time of Day",
       "description": "HVAC noises that appear only at certain temperatures or times aren't random — they're your system hitting tolerance limits. Here's how to read what the timing is telling you.",
       "publisher": {
         "@id": "https://homeownersrepairguide.com/#organization"
       },
       "breadcrumb": {
-        "@id": "https://homeownersrepairguide.com/hvac-noises-change-temperature-time.html#breadcrumb"
+        "@id": "https://homeownersrepairguide.com/hvac-noises-change-temperature-time#breadcrumb"
       },
       "isPartOf": {
         "@id": "https://homeownersrepairguide.com/#website"
@@ -272,12 +274,20 @@ footer{background:var(--navy);}
       "author": {
         "@type": "Person",
         "name": "T.A.",
-        "description": "Certified Facility Manager (CHFM), NFPA CFI-1, CLSS-HC, OSHA 30"
+        "description": "NFPA Certified Fire Inspector (CFI-1), Certified Healthcare Facility Manager (CHFM), Certified Life Safety Specialist (CLSS-HC), OSHA 30; electrician-trained"
+      },
+      "datePublished": "2026-04-26T13:54:57-07:00",
+      "dateModified": "2026-05-10T17:02:20-07:00",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://homeownersrepairguide.com/og-image.jpg",
+        "width": 1024,
+        "height": 1024
       }
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://homeownersrepairguide.com/hvac-noises-change-temperature-time.html#breadcrumb",
+      "@id": "https://homeownersrepairguide.com/hvac-noises-change-temperature-time#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -289,13 +299,13 @@ footer{background:var(--navy);}
           "@type": "ListItem",
           "position": 2,
           "name": "Heating & Cooling",
-          "item": "https://homeownersrepairguide.com/category-hvac.html"
+          "item": "https://homeownersrepairguide.com/category-hvac"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "HVAC Noises",
-          "item": "https://homeownersrepairguide.com/hvac-noises.html"
+          "item": "https://homeownersrepairguide.com/hvac-noises"
         },
         {
           "@type": "ListItem",
@@ -303,10 +313,36 @@ footer{background:var(--navy);}
           "name": "Why HVAC Noises Change With Temperature or Time of Day"
         }
       ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://homeownersrepairguide.com/#organization",
+      "name": "HomeownersRepairGuide.com",
+      "url": "https://homeownersrepairguide.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://homeownersrepairguide.com/logo.png",
+        "width": 512,
+        "height": 512
+      }
     }
   ]
 }
 </script>
+<style>
+.hrg-menu-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:10px;margin:-10px -6px -10px auto;cursor:pointer;}
+.hrg-menu-btn span{display:block;width:24px;height:2px;background:var(--navy,#0f2236);transition:transform .2s,opacity .2s;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.hrg-mobile-nav{display:none;flex-direction:column;background:var(--white,#fff);border-top:1px solid var(--gray-light,#e8e4de);padding:8px 0;box-shadow:var(--shadow-soft,0 4px 24px rgba(15,34,54,.08));}
+.hrg-mobile-nav.open{display:flex;}
+.hrg-mobile-nav a{padding:12px 24px;font-size:15px;font-weight:600;color:var(--text-dark,#1a1612);text-decoration:none;border-bottom:1px solid var(--gray-light,#e8e4de);}
+.hrg-mobile-nav a:last-child{border-bottom:none;color:var(--rust,#c8441a);}
+@media(max-width:600px){.hrg-menu-btn{display:flex;}}
+@media(min-width:601px){.hrg-mobile-nav{display:none!important;}}
+@media(max-width:640px){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}}
+</style>
 </head>
 <body>
 
@@ -314,37 +350,48 @@ footer{background:var(--navy);}
   <div class="inner">
     <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
     <div class="topbar-links">
-      <a href="about-experts.html">About Our Experts</a>
-      <a href="how-we-verify.html">How We Verify</a>
-      <a href="contact.html">Contact</a>
+      <a href="/about-experts">About Our Experts</a>
+      <a href="/how-we-verify">How We Verify</a>
+      <a href="/contact">Contact</a>
     </div>
   </div>
 </div>
 
 <header>
   <div class="header-inner">
-    <a href="index.html" class="logo">
+    <a href="/" class="logo">
       <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
       <span class="logo-sub">Real advice from real tradespeople</span>
     </a>
     <nav>
-      <a href="category-plumbing.html">Plumbing</a>
-      <a href="category-electrical.html">Electrical</a>
-      <a href="category-hvac.html" class="active">HVAC</a>
-      <a href="category-foundation.html">Foundation</a>
-      <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+      <a href="/category-plumbing">Plumbing</a>
+      <a href="/category-electrical">Electrical</a>
+      <a href="/category-hvac" class="active">HVAC</a>
+      <a href="/category-foundation">Foundation</a>
+      <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+      <a href="/newsletter" class="nav-cta">Free Newsletter</a>
     </nav>
+    <button class="hrg-menu-btn" id="hrgMenuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="hrgMobileNav" onclick="hrgToggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+  <div class="hrg-mobile-nav" id="hrgMobileNav">
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical</a>
+    <a href="/category-hvac">HVAC</a>
+    <a href="/category-foundation">Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/contact">Contact</a>
+    <a href="/newsletter">Free Newsletter</a>
   </div>
 </header>
 
 <div class="breadcrumb">
   <div class="inner">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <span class="sep">&#8250;</span>
-    <a href="category-hvac.html">HVAC</a>
+    <a href="/category-hvac">HVAC</a>
     <span class="sep">&#8250;</span>
-    <a href="hvac-noises.html">HVAC Noises</a>
+    <a href="/hvac-noises">HVAC Noises</a>
     <span class="sep">&#8250;</span>
     <span class="current">Why HVAC Noises Change With Temperature or Time of Day</span>
   </div>
@@ -363,10 +410,10 @@ footer{background:var(--navy);}
   <div class="article-byline">
     <div class="byline-avatar">T.A.</div>
     <div class="byline-info">
-      <div class="byline-name">T.A. &#8212; HVAC &amp; Electrical Safety Specialist</div>
-      <div class="byline-cred">NFPA CFI-1 Certified Fire Investigator &middot; Licensed Electrician &middot; OSHA 30</div>
+      <div class="byline-name">T.A. &#8212; Certified Fire Inspector &amp; Facility Manager</div>
+      <div class="byline-cred">NFPA CFI-1 &middot; CHFM &middot; CLSS-HC &middot; OSHA 30 &middot; Electrician-Trained</div>
     </div>
-    <div class="byline-meta"><strong>Updated:</strong> Jan 2025 &middot; 9 min read</div>
+    <div class="byline-meta"><strong>Updated:</strong> May 2026 &middot; 9 min read</div>
   </div>
 
   <div class="article-body">
@@ -580,7 +627,7 @@ footer{background:var(--navy);}
       <div>
         <div class="expert-label">From the Expert</div>
         <div class="expert-text">"I always ask homeowners to tell me when the noise happens &#8212; not just what it sounds like. &#8216;It bangs every cold morning&#8217; tells me immediately that we&#8217;re probably looking at delayed ignition or combustion timing under cold gas conditions. &#8216;It buzzes on hot afternoons and the AC doesn&#8217;t cool as well&#8217; tells me we&#8217;re heading toward a capacitor failure. The timing is the diagnosis half the time &#8212; before I even look at the equipment. What I also pay close attention to is when homeowners say &#8216;it only does it in really cold weather&#8217; and then a year later they say &#8216;it&#8217;s doing it more often now.&#8217; That threshold creeping down &#8212; from really cold to just kind of cold &#8212; means a component is degrading and we&#8217;re running out of time before it fails mid-season. I&#8217;d always rather service something before peak season than get a call at 10 p.m. in January."</div>
-        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Licensed Electrician &middot; OSHA 30</div>
+        <div class="expert-attr">&#8212; T.A., NFPA CFI-1 &middot; Electrician-Trained &middot; OSHA 30</div>
       </div>
     </div>
 
@@ -643,19 +690,19 @@ footer{background:var(--navy);}
     </div>
 
     <div class="article-tags">
-      <a href="#" class="tag-pill">HVAC noise changes with temperature</a>
-      <a href="#" class="tag-pill">furnace loud in cold weather</a>
-      <a href="#" class="tag-pill">AC buzzing hot afternoons</a>
-      <a href="#" class="tag-pill">HVAC noise morning vs evening</a>
-      <a href="#" class="tag-pill">furnace bang cold startup</a>
-      <a href="#" class="tag-pill">HVAC noise worse in summer</a>
+      <span class="tag-pill">HVAC noise changes with temperature</span>
+      <span class="tag-pill">furnace loud in cold weather</span>
+      <span class="tag-pill">AC buzzing hot afternoons</span>
+      <span class="tag-pill">HVAC noise morning vs evening</span>
+      <span class="tag-pill">furnace bang cold startup</span>
+      <span class="tag-pill">HVAC noise worse in summer</span>
     </div>
 
     <div class="share-bar">
       <span class="share-label">Share:</span>
-      <a href="#" class="share-btn share-fb">Facebook</a>
-      <a href="#" class="share-btn share-x">&#120143; Twitter</a>
-      <a href="#" class="share-btn share-pin">Pinterest</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhomeownersrepairguide.com%2Fhvac-noises-change-temperature-time" class="share-btn share-fb" target="_blank" rel="noopener nofollow">Facebook</a>
+      <a href="https://x.com/intent/post?url=https%3A%2F%2Fhomeownersrepairguide.com%2Fhvac-noises-change-temperature-time&amp;text=Why%20HVAC%20Noises%20Change%20With%20Temperature%20or%20Time%20of%20Day" class="share-btn share-x" target="_blank" rel="noopener nofollow">&#120143; Twitter</a>
+      <a href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fhomeownersrepairguide.com%2Fhvac-noises-change-temperature-time&amp;media=https%3A%2F%2Fhomeownersrepairguide.com%2Fog-image.jpg&amp;description=Why%20HVAC%20Noises%20Change%20With%20Temperature%20or%20Time%20of%20Day" class="share-btn share-pin" target="_blank" rel="noopener nofollow">Pinterest</a>
       <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='Copied!'">Copy Link</button>
     </div>
   </div>
@@ -663,19 +710,19 @@ footer{background:var(--navy);}
   <div class="related">
     <h3>More HVAC Noise Guides</h3>
     <div class="related-list">
-      <a href="hvac-normal-sounds-vs-warning.html" class="related-item">
+      <a href="/hvac-normal-sounds-vs-warning" class="related-item">
         <div><div class="related-item-title">Normal HVAC Sounds vs. Warning Noises &#8212; Full Reference</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
         <div class="related-arrow">&#8594;</div>
       </a>
-      <a href="hvac-noises-dangerous-vs-annoying.html" class="related-item">
+      <a href="/hvac-noises-dangerous-vs-annoying" class="related-item">
         <div><div class="related-item-title">When HVAC Noises Are Dangerous vs. Just Annoying</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
         <div class="related-arrow">&#8594;</div>
       </a>
-      <a href="hvac-furnace-dangerous-vs-inconvenient.html" class="related-item">
+      <a href="/hvac-furnace-dangerous-vs-inconvenient" class="related-item">
         <div><div class="related-item-title">When Furnace Problems Are Dangerous vs. Inconvenient</div><div class="related-item-meta">T.A. &middot; 9 min read</div></div>
         <div class="related-arrow">&#8594;</div>
       </a>
-      <a href="hvac-buzzing-humming-noises.html" class="related-item">
+      <a href="/hvac-buzzing-humming-noises" class="related-item">
         <div><div class="related-item-title">Why Your HVAC Makes Buzzing or Humming Noises</div><div class="related-item-meta">T.A. &middot; 8 min read</div></div>
         <div class="related-arrow">&#8594;</div>
       </a>
@@ -708,7 +755,7 @@ footer{background:var(--navy);}
       <div>
         <div class="s-name">T.A.</div>
         <div class="s-title">HVAC &amp; Electrical Safety</div>
-        <div class="s-bio">NFPA CFI-1 certified fire investigator and licensed electrician with OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
+        <div class="s-bio">NFPA Certified Fire Inspector (CFI-1), Certified Healthcare Facility Manager (CHFM), and Certified Life Safety Specialist (CLSS-HC). Electrician-trained, OSHA 30. Specializes in residential HVAC systems, electrical safety, and failure analysis.</div>
       </div>
     </div>
   </div>
@@ -728,22 +775,22 @@ footer{background:var(--navy);}
 
 <div class="footer-nav">
   <div class="inner">
-    <a href="category-plumbing.html">Plumbing</a>
-    <a href="category-electrical.html">Electrical &amp; Safety</a>
-    <a href="category-hvac.html">Heating &amp; Cooling</a>
-    <a href="category-foundation.html">Structure &amp; Foundation</a>
-    <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-    <a href="about-experts.html">About Our Experts</a>
-    <a href="how-we-verify.html">How We Verify</a>
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical &amp; Safety</a>
+    <a href="/category-hvac">Heating &amp; Cooling</a>
+    <a href="/category-foundation">Structure &amp; Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/how-we-verify">How We Verify</a>
   </div>
 </div>
 <footer>
   <div class="footer-bottom">
     <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
     <div>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
-      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
+      <a href="/affiliate-disclosure">Affiliate Disclosure</a>
     </div>
   </div>
 </footer>
@@ -758,5 +805,6 @@ footer{background:var(--navy);}
     tocItems.forEach(li=>{li.classList.remove('active');if(li.querySelector('a')?.getAttribute('href')==='#'+current)li.classList.add('active');});
   });
 </script>
+<script>function hrgToggleMenu(){var n=document.getElementById("hrgMobileNav"),b=document.getElementById("hrgMenuBtn");var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");}</script>
 </body>
 </html>

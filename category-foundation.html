@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Structure & Foundation Guides | HomeownersRepairGuide.com</title>
 <meta name="description" content="19 foundation diagnostic guides written by a foundation and structural specialist with 30+ years of experience. Find your symptom — wet basement, cracking walls, sagging floors, settling foundation — and get a real answer.">
-<link rel="canonical" href="https://homeownersrepairguide.com/category-foundation.html">
+<link rel="canonical" href="https://homeownersrepairguide.com/category-foundation">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://homeownersrepairguide.com/category-foundation.html">
+<meta property="og:url" content="https://homeownersrepairguide.com/category-foundation">
 <meta property="og:title" content="Structure & Foundation Guides | HomeownersRepairGuide.com">
 <meta property="og:description" content="19 foundation diagnostic guides from a structural specialist with 30+ years of experience. Find your symptom and get a real answer.">
 <meta property="og:image" content="https://homeownersrepairguide.com/og-image.jpg">
@@ -246,12 +248,12 @@ footer{background:var(--navy);}
   "@graph": [
     {
       "@type": "CollectionPage",
-      "@id": "https://homeownersrepairguide.com/category-foundation.html#webpage",
-      "url": "https://homeownersrepairguide.com/category-foundation.html",
+      "@id": "https://homeownersrepairguide.com/category-foundation#webpage",
+      "url": "https://homeownersrepairguide.com/category-foundation",
       "name": "Structure & Foundation Guides | HomeownersRepairGuide.com",
       "description": "19 foundation diagnostic guides written by a foundation and structural specialist with 30+ years of experience. Find your symptom — wet basement, cracking walls, sagging floors, settling foundation — and get a real answer.",
       "breadcrumb": {
-        "@id": "https://homeownersrepairguide.com/category-foundation.html#breadcrumb"
+        "@id": "https://homeownersrepairguide.com/category-foundation#breadcrumb"
       },
       "isPartOf": {
         "@id": "https://homeownersrepairguide.com/#website"
@@ -259,7 +261,7 @@ footer{background:var(--navy);}
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://homeownersrepairguide.com/category-foundation.html#breadcrumb",
+      "@id": "https://homeownersrepairguide.com/category-foundation#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -277,6 +279,20 @@ footer{background:var(--navy);}
   ]
 }
 </script>
+<style>
+.hrg-menu-btn{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;padding:10px;margin:-10px -6px -10px auto;cursor:pointer;}
+.hrg-menu-btn span{display:block;width:24px;height:2px;background:var(--navy,#0f2236);transition:transform .2s,opacity .2s;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;}
+.hrg-menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+.hrg-mobile-nav{display:none;flex-direction:column;background:var(--white,#fff);border-top:1px solid var(--gray-light,#e8e4de);padding:8px 0;box-shadow:var(--shadow-soft,0 4px 24px rgba(15,34,54,.08));}
+.hrg-mobile-nav.open{display:flex;}
+.hrg-mobile-nav a{padding:12px 24px;font-size:15px;font-weight:600;color:var(--text-dark,#1a1612);text-decoration:none;border-bottom:1px solid var(--gray-light,#e8e4de);}
+.hrg-mobile-nav a:last-child{border-bottom:none;color:var(--rust,#c8441a);}
+@media(max-width:600px){.hrg-menu-btn{display:flex;}}
+@media(min-width:601px){.hrg-mobile-nav{display:none!important;}}
+@media(max-width:640px){table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;}}
+</style>
 </head>
 <body>
 
@@ -284,33 +300,44 @@ footer{background:var(--navy);}
   <div class="inner">
     <span>Guidance from licensed trade professionals with 130+ combined years of experience</span>
     <div class="topbar-links">
-      <a href="about-experts.html">About Our Experts</a>
-      <a href="how-we-verify.html">How We Verify</a>
-      <a href="contact.html">Contact</a>
+      <a href="/about-experts">About Our Experts</a>
+      <a href="/how-we-verify">How We Verify</a>
+      <a href="/contact">Contact</a>
     </div>
   </div>
 </div>
 
 <header>
   <div class="header-inner">
-    <a href="index.html" class="logo">
+    <a href="/" class="logo">
       <span class="logo-main">Homeowners<span>Repair</span>Guide</span>
       <span class="logo-sub">Real advice from real tradespeople</span>
     </a>
     <nav>
-      <a href="category-plumbing.html">Plumbing</a>
-      <a href="category-electrical.html">Electrical</a>
-      <a href="category-hvac.html">HVAC</a>
-      <a href="category-foundation.html" class="active">Foundation</a>
-      <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-      <a href="newsletter.html" class="nav-cta">Free Newsletter</a>
+      <a href="/category-plumbing">Plumbing</a>
+      <a href="/category-electrical">Electrical</a>
+      <a href="/category-hvac">HVAC</a>
+      <a href="/category-foundation" class="active">Foundation</a>
+      <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+      <a href="/newsletter" class="nav-cta">Free Newsletter</a>
     </nav>
+    <button class="hrg-menu-btn" id="hrgMenuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="hrgMobileNav" onclick="hrgToggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+  <div class="hrg-mobile-nav" id="hrgMobileNav">
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical</a>
+    <a href="/category-hvac">HVAC</a>
+    <a href="/category-foundation">Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/contact">Contact</a>
+    <a href="/newsletter">Free Newsletter</a>
   </div>
 </header>
 
 <div class="breadcrumb">
   <div class="inner">
-    <a href="index.html">Home</a>
+    <a href="/">Home</a>
     <span class="sep">&#8250;</span>
     <span class="current">Structure &amp; Foundation</span>
   </div>
@@ -335,7 +362,7 @@ footer{background:var(--navy);}
     <div class="cat-experts-inner">
       <div class="cat-experts-label">Expert Author</div>
       <div class="cat-expert-pills">
-        <a href="about-experts.html" class="cat-expert-pill">
+        <a href="/about-experts" class="cat-expert-pill">
           <div class="pill-avatar">C.M.</div>
           <div>
             <div class="pill-name">C.M.</div>
@@ -356,47 +383,47 @@ footer{background:var(--navy);}
       <div>
         <div class="sf-col-head"><span>&#128167;</span> Water &amp; Drainage</div>
         <div class="sf-links">
-          <a href="foundation-basement-floods-water-use.html" class="sf-link">Basement floods when water is used <span class="sf-badge urgent">Emergency</span></a>
-          <a href="foundation-basement-water-walls.html" class="sf-link">Water through basement walls <span class="sf-badge urgent">Urgent</span></a>
-          <a href="foundation-basement-wet-after-rain.html" class="sf-link">Basement wet after rain <span class="sf-badge watch">Diagnose</span></a>
-          <a href="foundation-basement-floor-wet.html" class="sf-link">Basement floor is wet <span class="sf-badge watch">Diagnose</span></a>
-          <a href="foundation-basement-musty-smell.html" class="sf-link">Basement smells musty <span class="sf-badge diy">Investigate</span></a>
-          <a href="foundation-drainage-failure.html" class="sf-link">Drainage system failing <span class="sf-badge urgent">Urgent</span></a>
-          <a href="foundation-water-drainage.html" class="sf-link" style="color:var(--amber);margin-top:4px;">See all 6 water guides &#8594;</a>
+          <a href="/foundation-basement-floods-water-use" class="sf-link">Basement floods when water is used <span class="sf-badge urgent">Emergency</span></a>
+          <a href="/foundation-basement-water-walls" class="sf-link">Water through basement walls <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/foundation-basement-wet-after-rain" class="sf-link">Basement wet after rain <span class="sf-badge watch">Diagnose</span></a>
+          <a href="/foundation-basement-floor-wet" class="sf-link">Basement floor is wet <span class="sf-badge watch">Diagnose</span></a>
+          <a href="/foundation-basement-musty-smell" class="sf-link">Basement smells musty <span class="sf-badge diy">Investigate</span></a>
+          <a href="/foundation-drainage-failure" class="sf-link">Drainage system failing <span class="sf-badge urgent">Urgent</span></a>
+          <a href="/foundation-water-drainage" class="sf-link" style="color:var(--amber);margin-top:4px;">See all 6 water guides &#8594;</a>
         </div>
       </div>
 
       <div>
         <div class="sf-col-head"><span>&#127968;</span> Crawlspace</div>
         <div class="sf-links">
-          <a href="foundation-crawlspace-damp.html" class="sf-link">Crawlspace is damp <span class="sf-badge watch">Moisture Risk</span></a>
-          <a href="foundation-crawlspace-musty-smell.html" class="sf-link">Crawlspace smells musty <span class="sf-badge watch">Air Quality</span></a>
-          <a href="foundation-crawlspace.html" class="sf-link" style="color:var(--amber);margin-top:4px;">See all 2 crawlspace guides &#8594;</a>
+          <a href="/foundation-crawlspace-damp" class="sf-link">Crawlspace is damp <span class="sf-badge watch">Moisture Risk</span></a>
+          <a href="/foundation-crawlspace-musty-smell" class="sf-link">Crawlspace smells musty <span class="sf-badge watch">Air Quality</span></a>
+          <a href="/foundation-crawlspace" class="sf-link" style="color:var(--amber);margin-top:4px;">See all 2 crawlspace guides &#8594;</a>
         </div>
       </div>
 
       <div>
         <div class="sf-col-head"><span>&#8659;</span> Settlement &amp; Movement</div>
         <div class="sf-links">
-          <a href="foundation-roofline-sagging.html" class="sf-link">Roofline is sagging <span class="sf-badge urgent">Structural</span></a>
-          <a href="foundation-wall-load-bearing.html" class="sf-link">Is this wall load-bearing? <span class="sf-badge pro">Engineer First</span></a>
-          <a href="foundation-floors-sagging.html" class="sf-link">Floors are sagging <span class="sf-badge watch">Diagnose</span></a>
-          <a href="foundation-doors-windows-sticking.html" class="sf-link">Doors or windows sticking <span class="sf-badge watch">Early Warning</span></a>
-          <a href="foundation-subfloor-soft.html" class="sf-link">Subfloor soft or spongy <span class="sf-badge watch">Investigate</span></a>
-          <a href="foundation-porch-deck-settling.html" class="sf-link">Porch or deck settling <span class="sf-badge diy">Diagnose</span></a>
-          <a href="foundation-walls-ceilings-cracking.html" class="sf-link">Walls or ceilings cracking <span class="sf-badge watch">Read Pattern</span></a>
-          <a href="foundation-settlement-movement.html" class="sf-link" style="color:var(--amber);margin-top:4px;">See all 7 movement guides &#8594;</a>
+          <a href="/foundation-roofline-sagging" class="sf-link">Roofline is sagging <span class="sf-badge urgent">Structural</span></a>
+          <a href="/foundation-wall-load-bearing" class="sf-link">Is this wall load-bearing? <span class="sf-badge pro">Engineer First</span></a>
+          <a href="/foundation-floors-sagging" class="sf-link">Floors are sagging <span class="sf-badge watch">Diagnose</span></a>
+          <a href="/foundation-doors-windows-sticking" class="sf-link">Doors or windows sticking <span class="sf-badge watch">Early Warning</span></a>
+          <a href="/foundation-subfloor-soft" class="sf-link">Subfloor soft or spongy <span class="sf-badge watch">Investigate</span></a>
+          <a href="/foundation-porch-deck-settling" class="sf-link">Porch or deck settling <span class="sf-badge diy">Diagnose</span></a>
+          <a href="/foundation-walls-ceilings-cracking" class="sf-link">Walls or ceilings cracking <span class="sf-badge watch">Read Pattern</span></a>
+          <a href="/foundation-settlement-movement" class="sf-link" style="color:var(--amber);margin-top:4px;">See all 7 movement guides &#8594;</a>
         </div>
       </div>
 
       <div>
         <div class="sf-col-head"><span>&#9892;</span> Cracks &amp; Settlement</div>
         <div class="sf-links">
-          <a href="foundation-cracks-walls.html" class="sf-link">Cracks in foundation walls <span class="sf-badge urgent">Evaluate</span></a>
-          <a href="foundation-moving.html" class="sf-link">Foundation is moving <span class="sf-badge urgent">Active</span></a>
-          <a href="foundation-settling-unevenly.html" class="sf-link">Foundation settling unevenly <span class="sf-badge watch">Diagnose</span></a>
-          <a href="foundation-seasonal-shifting.html" class="sf-link">Seasonal shifting <span class="sf-badge diy">Identify</span></a>
-          <a href="foundation-cracks-settlement.html" class="sf-link" style="color:var(--amber);margin-top:4px;">See all 4 crack guides &#8594;</a>
+          <a href="/foundation-cracks-walls" class="sf-link">Cracks in foundation walls <span class="sf-badge urgent">Evaluate</span></a>
+          <a href="/foundation-moving" class="sf-link">Foundation is moving <span class="sf-badge urgent">Active</span></a>
+          <a href="/foundation-settling-unevenly" class="sf-link">Foundation settling unevenly <span class="sf-badge watch">Diagnose</span></a>
+          <a href="/foundation-seasonal-shifting" class="sf-link">Seasonal shifting <span class="sf-badge diy">Identify</span></a>
+          <a href="/foundation-cracks-settlement" class="sf-link" style="color:var(--amber);margin-top:4px;">See all 4 crack guides &#8594;</a>
         </div>
       </div>
 
@@ -410,7 +437,7 @@ footer{background:var(--navy);}
 
   <!-- FLAGSHIP -->
   <div style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--rust);margin-bottom:14px;display:flex;align-items:center;gap:10px;">Start Here &mdash; Flagship Guide <span style="flex:1;height:1px;background:var(--gray-light);display:block;"></span></div>
-  <a href="structural-integrity-guide.html" class="flagship">
+  <a href="/structural-integrity-guide" class="flagship">
     <div class="flagship-img">&#127959;</div>
     <div class="flagship-body">
       <span class="f-tag">Flagship Guide</span>
@@ -419,7 +446,7 @@ footer{background:var(--navy);}
       <div class="f-meta">
         <strong>C.M.</strong>
         <span class="dot"></span><span>35 min read</span>
-        <span class="dot"></span><span>Updated Apr 2025</span>
+        <span class="dot"></span><span>Updated May 2026</span>
       </div>
       <span class="read-btn">Read the Full Guide &#8594;</span>
     </div>
@@ -435,10 +462,10 @@ footer{background:var(--navy);}
   <section class="art-section" aria-label="Water and Drainage guides">
     <div class="sec-head">
       <h2 class="sec-h2"><span class="sec-dot"></span> Water &amp; Drainage</h2>
-      <a href="foundation-water-drainage.html" class="see-all">All 6 guides &#8594;</a>
+      <a href="/foundation-water-drainage" class="see-all">All 6 guides &#8594;</a>
     </div>
     <div class="grid-3" style="margin-bottom:18px;">
-      <a href="foundation-basement-water-walls.html" class="art-card">
+      <a href="/foundation-basement-water-walls" class="art-card">
         <div class="card-stripe urgent"></div>
         <div class="card-body">
           <span class="card-tag urgent">&#128308; Urgent</span>
@@ -447,7 +474,7 @@ footer{background:var(--navy);}
           <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 9 min <span class="card-arrow">&#8594;</span></div>
         </div>
       </a>
-      <a href="foundation-basement-wet-after-rain.html" class="art-card">
+      <a href="/foundation-basement-wet-after-rain" class="art-card">
         <div class="card-stripe"></div>
         <div class="card-body">
           <span class="card-tag diagnosis">Rain-Triggered</span>
@@ -456,7 +483,7 @@ footer{background:var(--navy);}
           <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 8 min <span class="card-arrow">&#8594;</span></div>
         </div>
       </a>
-      <a href="foundation-drainage-failure.html" class="art-card">
+      <a href="/foundation-drainage-failure" class="art-card">
         <div class="card-stripe urgent"></div>
         <div class="card-body">
           <span class="card-tag urgent">&#9888; High Risk</span>
@@ -467,7 +494,7 @@ footer{background:var(--navy);}
       </a>
     </div>
     <div class="art-list">
-      <a href="foundation-basement-floods-water-use.html" class="art-row">
+      <a href="/foundation-basement-floods-water-use" class="art-row">
         <div class="row-num">04</div>
         <div class="row-body">
           <div class="row-title">Basement Floods When Water Is Used</div>
@@ -476,7 +503,7 @@ footer{background:var(--navy);}
         <span class="row-badge urgent">Plumbing/Drain Issue</span>
         <div class="row-arrow">&#8594;</div>
       </a>
-      <a href="foundation-basement-floor-wet.html" class="art-row">
+      <a href="/foundation-basement-floor-wet" class="art-row">
         <div class="row-num">05</div>
         <div class="row-body">
           <div class="row-title">Why Your Basement Floor Is Wet</div>
@@ -485,7 +512,7 @@ footer{background:var(--navy);}
         <span class="row-badge watch">Diagnose Source</span>
         <div class="row-arrow">&#8594;</div>
       </a>
-      <a href="foundation-basement-musty-smell.html" class="art-row">
+      <a href="/foundation-basement-musty-smell" class="art-row">
         <div class="row-num">06</div>
         <div class="row-body">
           <div class="row-title">Why Your Basement Smells Musty</div>
@@ -507,10 +534,10 @@ footer{background:var(--navy);}
   <section class="art-section" aria-label="Crawlspace guides">
     <div class="sec-head">
       <h2 class="sec-h2"><span class="sec-dot"></span> Crawlspace</h2>
-      <a href="foundation-crawlspace.html" class="see-all">All 2 guides &#8594;</a>
+      <a href="/foundation-crawlspace" class="see-all">All 2 guides &#8594;</a>
     </div>
     <div class="grid-2" style="margin-bottom:18px;">
-      <a href="foundation-crawlspace-damp.html" class="art-card">
+      <a href="/foundation-crawlspace-damp" class="art-card">
         <div class="card-stripe"></div>
         <div class="card-body">
           <span class="card-tag safety">&#9888; Moisture Risk</span>
@@ -519,7 +546,7 @@ footer{background:var(--navy);}
           <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 9 min <span class="card-arrow">&#8594;</span></div>
         </div>
       </a>
-      <a href="foundation-crawlspace-musty-smell.html" class="art-card">
+      <a href="/foundation-crawlspace-musty-smell" class="art-card">
         <div class="card-stripe"></div>
         <div class="card-body">
           <span class="card-tag safety">&#9888; Air Quality</span>
@@ -535,10 +562,10 @@ footer{background:var(--navy);}
   <section class="art-section" aria-label="Settlement and Movement guides">
     <div class="sec-head">
       <h2 class="sec-h2"><span class="sec-dot"></span> Settlement &amp; Movement</h2>
-      <a href="foundation-settlement-movement.html" class="see-all">All 7 guides &#8594;</a>
+      <a href="/foundation-settlement-movement" class="see-all">All 7 guides &#8594;</a>
     </div>
     <div class="grid-3" style="margin-bottom:18px;">
-      <a href="foundation-roofline-sagging.html" class="art-card">
+      <a href="/foundation-roofline-sagging" class="art-card">
         <div class="card-stripe critical"></div>
         <div class="card-body">
           <span class="card-tag urgent">&#128308; Structural Concern</span>
@@ -547,7 +574,7 @@ footer{background:var(--navy);}
           <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 9 min <span class="card-arrow">&#8594;</span></div>
         </div>
       </a>
-      <a href="foundation-wall-load-bearing.html" class="art-card">
+      <a href="/foundation-wall-load-bearing" class="art-card">
         <div class="card-stripe critical"></div>
         <div class="card-body">
           <span class="card-tag urgent">&#128308; Engineer First</span>
@@ -556,7 +583,7 @@ footer{background:var(--navy);}
           <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 9 min <span class="card-arrow">&#8594;</span></div>
         </div>
       </a>
-      <a href="foundation-floors-sagging.html" class="art-card">
+      <a href="/foundation-floors-sagging" class="art-card">
         <div class="card-stripe"></div>
         <div class="card-body">
           <span class="card-tag safety">&#9888; Structural</span>
@@ -567,7 +594,7 @@ footer{background:var(--navy);}
       </a>
     </div>
     <div class="art-list">
-      <a href="foundation-doors-windows-sticking.html" class="art-row">
+      <a href="/foundation-doors-windows-sticking" class="art-row">
         <div class="row-num">04</div>
         <div class="row-body">
           <div class="row-title">Why Your Doors or Windows Are Sticking</div>
@@ -576,7 +603,7 @@ footer{background:var(--navy);}
         <span class="row-badge watch">Early Warning Sign</span>
         <div class="row-arrow">&#8594;</div>
       </a>
-      <a href="foundation-subfloor-soft.html" class="art-row">
+      <a href="/foundation-subfloor-soft" class="art-row">
         <div class="row-num">05</div>
         <div class="row-body">
           <div class="row-title">Why Your Subfloor Is Soft or Spongy</div>
@@ -585,7 +612,7 @@ footer{background:var(--navy);}
         <span class="row-badge urgent">Investigate Now</span>
         <div class="row-arrow">&#8594;</div>
       </a>
-      <a href="foundation-porch-deck-settling.html" class="art-row">
+      <a href="/foundation-porch-deck-settling" class="art-row">
         <div class="row-num">06</div>
         <div class="row-body">
           <div class="row-title">Why Your Porch or Deck Is Settling</div>
@@ -594,7 +621,7 @@ footer{background:var(--navy);}
         <span class="row-badge diy">Diagnose</span>
         <div class="row-arrow">&#8594;</div>
       </a>
-      <a href="foundation-walls-ceilings-cracking.html" class="art-row">
+      <a href="/foundation-walls-ceilings-cracking" class="art-row">
         <div class="row-num">07</div>
         <div class="row-body">
           <div class="row-title">Why Your Walls &amp; Ceilings Are Cracking</div>
@@ -616,10 +643,10 @@ footer{background:var(--navy);}
   <section class="art-section" aria-label="Cracks and Settlement guides">
     <div class="sec-head">
       <h2 class="sec-h2"><span class="sec-dot"></span> Cracks &amp; Settlement</h2>
-      <a href="foundation-cracks-settlement.html" class="see-all">All 4 guides &#8594;</a>
+      <a href="/foundation-cracks-settlement" class="see-all">All 4 guides &#8594;</a>
     </div>
     <div class="grid-2" style="margin-bottom:18px;">
-      <a href="foundation-cracks-walls.html" class="art-card">
+      <a href="/foundation-cracks-walls" class="art-card">
         <div class="card-stripe urgent"></div>
         <div class="card-body">
           <span class="card-tag urgent">&#128308; Evaluate Carefully</span>
@@ -628,7 +655,7 @@ footer{background:var(--navy);}
           <div class="card-meta"><strong>C.M.</strong> <span class="dot"></span> 10 min <span class="card-arrow">&#8594;</span></div>
         </div>
       </a>
-      <a href="foundation-moving.html" class="art-card">
+      <a href="/foundation-moving" class="art-card">
         <div class="card-stripe urgent"></div>
         <div class="card-body">
           <span class="card-tag urgent">&#128308; Active Movement</span>
@@ -639,7 +666,7 @@ footer{background:var(--navy);}
       </a>
     </div>
     <div class="art-list">
-      <a href="foundation-settling-unevenly.html" class="art-row">
+      <a href="/foundation-settling-unevenly" class="art-row">
         <div class="row-num">03</div>
         <div class="row-body">
           <div class="row-title">Why Your Foundation Is Settling Unevenly</div>
@@ -648,7 +675,7 @@ footer{background:var(--navy);}
         <span class="row-badge watch">Differential Settlement</span>
         <div class="row-arrow">&#8594;</div>
       </a>
-      <a href="foundation-seasonal-shifting.html" class="art-row">
+      <a href="/foundation-seasonal-shifting" class="art-row">
         <div class="row-num">04</div>
         <div class="row-body">
           <div class="row-title">Seasonal Foundation Shifting</div>
@@ -665,15 +692,15 @@ footer{background:var(--navy);}
     <div class="ms-head">Most-Searched Foundation Questions</div>
     <div class="ms-sub">Long-tail searches that bring people here</div>
     <div class="ms-grid">
-      <a href="foundation-basement-wet-after-rain.html" class="ms-link">Basement leaks only when it rains hard</a>
-      <a href="foundation-cracks-walls.html" class="ms-link">Horizontal crack in basement wall</a>
-      <a href="foundation-doors-windows-sticking.html" class="ms-link">Door suddenly won't close all the way</a>
-      <a href="foundation-settling-unevenly.html" class="ms-link">House settling on one side</a>
-      <a href="foundation-crawlspace-damp.html" class="ms-link">Crawl space smells after rain</a>
-      <a href="foundation-walls-ceilings-cracking.html" class="ms-link">Diagonal crack at door corner recurring</a>
-      <a href="foundation-seasonal-shifting.html" class="ms-link">Cracks open in winter close in summer</a>
-      <a href="foundation-subfloor-soft.html" class="ms-link">Soft spot in floor near bathroom</a>
-      <a href="foundation-drainage-failure.html" class="ms-link">Water pooling next to foundation</a>
+      <a href="/foundation-basement-wet-after-rain" class="ms-link">Basement leaks only when it rains hard</a>
+      <a href="/foundation-cracks-walls" class="ms-link">Horizontal crack in basement wall</a>
+      <a href="/foundation-doors-windows-sticking" class="ms-link">Door suddenly won't close all the way</a>
+      <a href="/foundation-settling-unevenly" class="ms-link">House settling on one side</a>
+      <a href="/foundation-crawlspace-damp" class="ms-link">Crawl space smells after rain</a>
+      <a href="/foundation-walls-ceilings-cracking" class="ms-link">Diagonal crack at door corner recurring</a>
+      <a href="/foundation-seasonal-shifting" class="ms-link">Cracks open in winter close in summer</a>
+      <a href="/foundation-subfloor-soft" class="ms-link">Soft spot in floor near bathroom</a>
+      <a href="/foundation-drainage-failure" class="ms-link">Water pooling next to foundation</a>
     </div>
   </div>
 
@@ -687,19 +714,19 @@ footer{background:var(--navy);}
     <h4>&#128308; Structural Emergency?</h4>
     <p>Horizontal foundation cracks with bowing, rapid crack propagation, visible wall deflection, or roofline sagging — these are not watch-and-wait situations.</p>
     <div class="emergency-links">
-      <a href="foundation-cracks-walls.html" class="em-link">
+      <a href="/foundation-cracks-walls" class="em-link">
         <div class="em-icon">&#9892;</div>
         <div class="em-text">Horizontal crack in foundation wall</div>
       </a>
-      <a href="foundation-roofline-sagging.html" class="em-link">
+      <a href="/foundation-roofline-sagging" class="em-link">
         <div class="em-icon">&#8659;</div>
         <div class="em-text">Roofline visibly sagging</div>
       </a>
-      <a href="foundation-moving.html" class="em-link">
+      <a href="/foundation-moving" class="em-link">
         <div class="em-icon">&#9888;&#65039;</div>
         <div class="em-text">Foundation actively moving</div>
       </a>
-      <a href="foundation-wall-load-bearing.html" class="em-link">
+      <a href="/foundation-wall-load-bearing" class="em-link">
         <div class="em-icon">&#127959;</div>
         <div class="em-text">Wall removed without engineering</div>
       </a>
@@ -711,27 +738,27 @@ footer{background:var(--navy);}
     <h4>Find Your Guide</h4>
     <p>Pick the symptom that matches what you're seeing right now.</p>
     <div class="quick-options">
-      <a href="foundation-basement-water-walls.html" class="quick-opt">
+      <a href="/foundation-basement-water-walls" class="quick-opt">
         <div class="quick-opt-icon">&#128167;</div>
         <div class="quick-opt-text">Water in my basement</div>
       </a>
-      <a href="foundation-cracks-walls.html" class="quick-opt">
+      <a href="/foundation-cracks-walls" class="quick-opt">
         <div class="quick-opt-icon">&#9892;</div>
         <div class="quick-opt-text">Cracks in foundation</div>
       </a>
-      <a href="foundation-floors-sagging.html" class="quick-opt">
+      <a href="/foundation-floors-sagging" class="quick-opt">
         <div class="quick-opt-icon">&#8659;</div>
         <div class="quick-opt-text">Floors sagging</div>
       </a>
-      <a href="foundation-doors-windows-sticking.html" class="quick-opt">
+      <a href="/foundation-doors-windows-sticking" class="quick-opt">
         <div class="quick-opt-icon">&#128682;</div>
         <div class="quick-opt-text">Doors sticking</div>
       </a>
-      <a href="foundation-crawlspace-damp.html" class="quick-opt">
+      <a href="/foundation-crawlspace-damp" class="quick-opt">
         <div class="quick-opt-icon">&#127968;</div>
         <div class="quick-opt-text">Crawlspace problems</div>
       </a>
-      <a href="foundation-walls-ceilings-cracking.html" class="quick-opt">
+      <a href="/foundation-walls-ceilings-cracking" class="quick-opt">
         <div class="quick-opt-icon">&#128683;</div>
         <div class="quick-opt-text">Walls or ceilings cracking</div>
       </a>
@@ -742,11 +769,11 @@ footer{background:var(--navy);}
   <div class="sidebar-card">
     <h4>All Categories</h4>
     <ul class="cat-nav-list">
-      <li><a href="category-plumbing.html"><span class="cat-nav-left"><span class="cat-nav-icon">&#128703;</span> Plumbing</span><span class="cat-count">27</span></a></li>
-      <li><a href="category-electrical.html"><span class="cat-nav-left"><span class="cat-nav-icon">&#9889;</span> Electrical &amp; Safety</span><span class="cat-count">23</span></a></li>
-      <li><a href="category-hvac.html"><span class="cat-nav-left"><span class="cat-nav-icon">&#127777;</span> Heating &amp; Cooling</span><span class="cat-count">&#8212;</span></a></li>
-      <li><a href="category-foundation.html" class="active"><span class="cat-nav-left"><span class="cat-nav-icon">&#127959;</span> Structure &amp; Foundation</span><span class="cat-count">19</span></a></li>
-      <li><a href="category-maintenance-repair.html"><span class="cat-nav-left"><span class="cat-nav-icon">&#128296;</span> Maintenance &amp; Repair</span><span class="cat-count">&#8212;</span></a></li>
+      <li><a href="/category-plumbing"><span class="cat-nav-left"><span class="cat-nav-icon">&#128703;</span> Plumbing</span><span class="cat-count">27</span></a></li>
+      <li><a href="/category-electrical"><span class="cat-nav-left"><span class="cat-nav-icon">&#9889;</span> Electrical &amp; Safety</span><span class="cat-count">23</span></a></li>
+      <li><a href="/category-hvac"><span class="cat-nav-left"><span class="cat-nav-icon">&#127777;</span> Heating &amp; Cooling</span><span class="cat-count">&#8212;</span></a></li>
+      <li><a href="/category-foundation" class="active"><span class="cat-nav-left"><span class="cat-nav-icon">&#127959;</span> Structure &amp; Foundation</span><span class="cat-count">19</span></a></li>
+      <li><a href="/category-maintenance-repair"><span class="cat-nav-left"><span class="cat-nav-icon">&#128296;</span> Maintenance &amp; Repair</span><span class="cat-count">&#8212;</span></a></li>
     </ul>
   </div>
 
@@ -774,25 +801,26 @@ footer{background:var(--navy);}
 
 <div class="footer-nav">
   <div class="inner">
-    <a href="category-plumbing.html">Plumbing</a>
-    <a href="category-electrical.html">Electrical &amp; Safety</a>
-    <a href="category-hvac.html">Heating &amp; Cooling</a>
-    <a href="category-foundation.html">Structure &amp; Foundation</a>
-    <a href="category-maintenance-repair.html">Maintenance &amp; Repair</a>
-    <a href="about-experts.html">About Our Experts</a>
-    <a href="how-we-verify.html">How We Verify</a>
+    <a href="/category-plumbing">Plumbing</a>
+    <a href="/category-electrical">Electrical &amp; Safety</a>
+    <a href="/category-hvac">Heating &amp; Cooling</a>
+    <a href="/category-foundation">Structure &amp; Foundation</a>
+    <a href="/category-maintenance-repair">Maintenance &amp; Repair</a>
+    <a href="/about-experts">About Our Experts</a>
+    <a href="/how-we-verify">How We Verify</a>
   </div>
 </div>
 <footer>
   <div class="footer-bottom">
     <span>&#169; 2025 HomeownersRepairGuide.com &middot; All rights reserved</span>
     <div>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Use</a>
-      <a href="affiliate-disclosure.html">Affiliate Disclosure</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/terms">Terms of Use</a>
+      <a href="/affiliate-disclosure">Affiliate Disclosure</a>
     </div>
   </div>
 </footer>
 
+<script>function hrgToggleMenu(){var n=document.getElementById("hrgMobileNav"),b=document.getElementById("hrgMenuBtn");var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");}</script>
 </body>
 </html>
